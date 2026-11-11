@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "pif-top-bottom-content-20261106",
+  "title": "第二题67 · 预条件投影top/bottom8 · 共同特征对照审查",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-06T14:29:38.091953+00:00",
+  "sources": {
+    "status": "runs/pif-top-bottom-content-20261106/state.json",
+    "results": "runs/pif-top-bottom-content-20261106/result.json"
+  },
+  "parameters": {
+    "created_at": "2026-11-06T14:29:37.987540+00:00",
+    "question": "Does read-state -> compute/branch on returned information -> act distinguish PIF top from bottom?",
+    "scope": "Question67 F128/K128, top8 and bottom8 each, exactly matching previous top8 review; all selected extremes, no outcome-based example filtering.",
+    "definition": {
+      "yes": "At least one observed read-only tool response supplies a value/entity/status used to calculate an action argument or decide a subsequent state-changing operation. Tool names alone and mere read-then-write ordering do not suffice.",
+      "no": "No demonstrated qualifying chain in the saved trajectory.",
+      "uncertain": "Evidence does not establish the dependence; preserve uncertainty."
+    },
+    "secondary": "Error -> information gathering/changed arguments -> retry; annotate actual attempts, not general quality.",
+    "limitations": [
+      "Post-hoc unblinded manual review; reviewer has seen earlier top8.",
+      "Counts refer to fixed extremes, not semantic annotation of all200 or all bottom100.",
+      "Broad trait occurrence is not sufficient for correctness or causal training benefit."
+    ],
+    "candidate_sha256": "cec309acd0e0ae87b3e0b5112d711479e9c4d2653c7eae8eabcd71439fc957ba"
+  },
+  "artifacts": [
+    {
+      "label": "对照分析",
+      "path": "runs/pif-top-bottom-content-20261106/REPORT.md"
+    },
+    {
+      "label": "逐条标签和证据",
+      "path": "runs/pif-top-bottom-content-20261106/annotations.json"
+    },
+    {
+      "label": "完整入选轨迹",
+      "path": "runs/pif-top-bottom-content-20261106/CASES.md"
+    },
+    {
+      "label": "固定判定标准",
+      "path": "runs/pif-top-bottom-content-20261106/protocol.json"
+    },
+    {
+      "label": "特征比例图",
+      "path": "runs/pif-top-bottom-content-20261106/comparison.png"
+    },
+    {
+      "label": "实际probe成功/失败样例",
+      "path": "runs/pif-top-bottom-content-20261106/probe-examples.json"
+    }
+  ]
+}

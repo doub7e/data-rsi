@@ -1,0 +1,13 @@
+[Unit]
+Description=Data RSI official 1K SFT H100 queue and memory fallback
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k
+ExecStart=/usr/bin/python3 -u scripts/monitor_training.py
+StandardOutput=append:/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/runs/repro-1k-4gpu-20261031/controller.log
+StandardError=inherit
+
+[Install]
+WantedBy=default.target

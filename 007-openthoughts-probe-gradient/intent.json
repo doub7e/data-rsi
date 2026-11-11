@@ -1,0 +1,7 @@
+{
+  "created_at": "2026-11-05T19:29:21.160634+00:00",
+  "model_choice": "original Qwen3-8B explicitly selected by user",
+  "training_reference": "002-openthoughts-qwen3-8b/configs/reproduction-10k-4h200.yaml",
+  "scope": "Several benchmark problems; fresh rollout reward-weighted training-loss gradients and split-half cosine; no SFT training or candidate selection requested",
+  "pending": "Contracts andimplementation frozen; runstatefiles trackqueued inference andsubsequent actualrollouts/gradients."
+}

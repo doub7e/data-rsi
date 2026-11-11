@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "harness-smoke",
+  "title": "OTA全70×4 · 复用009 · harness-smoke",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T10:39:26.467321+00:00",
+  "tags": [
+    "full70-r4",
+    "missing-as-zero",
+    "Qwen3-8B"
+  ],
+  "parameters": {
+    "reused_from": "009-ota-environment-resampling/runs/harness-smoke",
+    "new_execution": false
+  },
+  "sources": {
+    "status": "runs/harness-smoke/state.json",
+    "results": "runs/harness-smoke/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "模型和数据版本",
+      "path": "configs/resources.json"
+    },
+    {
+      "label": "复用来源与完成证据",
+      "path": "runs/harness-smoke/reference.json"
+    }
+  ]
+}

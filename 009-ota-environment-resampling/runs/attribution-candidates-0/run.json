@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "attribution-candidates-0",
+  "title": "OTA重采样 · Checkpoint1 · 候选轨迹dot · 分片0",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-06T23:24:50.888059+00:00",
+  "tags": [
+    "environment-resampling",
+    "Qwen3-8B"
+  ],
+  "parameters": {},
+  "sources": {
+    "status": "runs/attribution-candidates-0/state.json",
+    "results": "runs/attribution-candidates-0/result.json",
+    "progress": "runs/attribution-candidates-0/progress.json",
+    "training_data": "runs/attribution-candidates-0/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    }
+  ],
+  "job": {
+    "name": "ota-rs-attribution-candidates-0-1107",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

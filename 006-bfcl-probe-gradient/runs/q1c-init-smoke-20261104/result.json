@@ -1,0 +1,15 @@
+{
+  "candidate": {
+    "gradient_norm": 1.691506369980362,
+    "meta_index": 106,
+    "target_tokens": 11751
+  },
+  "probe": {
+    "gradient_norm": 17179.245581444084,
+    "repeat": 105,
+    "target_tokens": 8126
+  },
+  "note": "Initialization and nonzero finite gradient preflight only. Raw helper default cosine/dot/probe_norm fields were placeholders, not measurements, and are preserved in raw-norm-helper-output.json. No scores are substituted into the selector.",
+  "peak_cuda_bytes": 44627664896,
+  "at": "2026-11-04T03:24:03.584584+00:00"
+}

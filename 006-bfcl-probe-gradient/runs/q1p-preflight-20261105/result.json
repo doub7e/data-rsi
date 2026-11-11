@@ -1,0 +1,23 @@
+{
+  "algebra": {
+    "dual_vs_primal_max_error": 4.3298697960381105e-15,
+    "dual_vs_lorif_max_error": 4.368727601899991e-14,
+    "solve_residual": 2.5933089990635536e-16,
+    "nested_projection_max_error": 4.76837158203125e-07,
+    "linearity_max_error": 4.023313522338867e-07,
+    "rank_c": "No approximation; identity factors only in tiny upstream-equivalence test"
+  },
+  "gradient": {
+    "standard_loss": 4.850480556488037,
+    "custom_loss": 4.850480556488037,
+    "post_sgd_loss": 4.834413528442383,
+    "max_gradient_error": 1.043081283569336e-07,
+    "supervised_tokens": 6,
+    "variable_turn_token_normalization_error": 5.960464477539063e-08
+  },
+  "integration": "Projected block kernels, damping and summed dual scores match direct primal solves for200 candidates and6 queries, two widths/two seeds.",
+  "quality_gate": {
+    "identical_scores_pass": true,
+    "reversed_scores_rejected": true
+  }
+}

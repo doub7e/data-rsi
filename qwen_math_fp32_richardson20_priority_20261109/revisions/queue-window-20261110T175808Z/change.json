@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-10T17:58:08.938870+00:00",
+  "reason": "~20h waiting for an entire8H200 node must not consume the time needed for requested20steps+evaluation; operational window only, no additional runs/steps/GPUs",
+  "revised_not_started_specs": [
+    "train-fp32-richardson20",
+    "export20",
+    "eval20",
+    "eval-base",
+    "summary"
+  ],
+  "source_snapshots_modified": false,
+  "training_steps": 20,
+  "max_active_gpus": 8,
+  "job_resubmitted": false,
+  "deadline_utc": "2026-11-13T17:58:08.938870+00:00"
+}

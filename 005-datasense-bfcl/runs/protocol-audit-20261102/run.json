@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "protocol-audit-20261102",
+  "title": "BFCL复现计划 · 协议与公开结果核验",
+  "kind": "analysis",
+  "created_at": "2026-11-02T17:17:33.751137+00:00",
+  "status": "succeeded",
+  "parameters": {
+    "upstream_commit": "ca38f2606b3c9c4111d0516381f044797a81436c",
+    "gpu_execution": false
+  },
+  "results": {
+    "assignments_checked": 18,
+    "groups_checked": 90,
+    "pool_rows": 8962,
+    "validation_rows": 60
+  },
+  "artifacts": [
+    {
+      "label": "官方分数重算",
+      "path": "runs/protocol-audit-20261102/released-metrics.json"
+    },
+    {
+      "label": "分组完整性检查",
+      "path": "runs/protocol-audit-20261102/assignment-audit.json"
+    },
+    {
+      "label": "复现计划",
+      "path": "PLAN.md"
+    },
+    {
+      "label": "协议版本与预算",
+      "path": "plan.json"
+    }
+  ],
+  "notes": "完成公开分组与指标的离线核验，尚未执行SFT、BFCL推理或新的agent选择。"
+}

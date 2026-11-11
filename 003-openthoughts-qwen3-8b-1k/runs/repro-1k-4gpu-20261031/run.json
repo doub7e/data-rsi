@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "repro-1k-4gpu-20261031",
+  "title": "Qwen3-8B · 官方1K · 4×H100",
+  "kind": "training",
+  "created_at": "2026-10-31T00:03:23.970916+00:00",
+  "status": "planned",
+  "tags": [
+    "paper-reproduction",
+    "1K",
+    "32K"
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "ota-qwen3-8b-1k-4h100-1031",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "parameters": {
+    "model": "Qwen/Qwen3-8B",
+    "data_rows": 1000,
+    "gpus": 4,
+    "gpu_type": "H100",
+    "epochs": 7,
+    "global_batch_size": 96,
+    "gradient_accumulation": 24,
+    "cutoff_len": 32768,
+    "learning_rate": 4e-05,
+    "weight_decay": 0.04,
+    "max_grad_norm": 1.0,
+    "template": "qwen3_nothink",
+    "disable_shuffling": true,
+    "fallback_gpu_type": "H200",
+    "dataset": "open-thoughts/OpenThoughts-Agent-SFT-1K",
+    "dataset_revision": "704dc6620eb61c0e4bef5a4943416866081beea6",
+    "save_steps": 10
+  },
+  "results": {},
+  "notes": "使用作者公开1K数据集固定revision；训练参数与10K保持一致，checkpoint每10步保存以便恢复。根据10K训练约55GiB/卡的实测占用优先H100 80GB；真实CUDA OOM才切换H200，保留排队。",
+  "sources": {
+    "metrics": "runs/repro-1k-4gpu-20261031/checkpoint/trainer_log.jsonl",
+    "status": "runs/repro-1k-4gpu-20261031/state.json",
+    "results": "runs/repro-1k-4gpu-20261031/result.json",
+    "training_data": "runs/repro-1k-4gpu-20261031/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "训练配置",
+      "path": "configs/reproduction-1k-4gpu.yaml"
+    },
+    {
+      "label": "数据适配记录",
+      "path": "runs/repro-1k-4gpu-20261031/preprocessing.json"
+    },
+    {
+      "label": "用户批准的存储清理记录",
+      "path": "runs/repro-1k-4gpu-20261031/storage-cleanup-20261109.json"
+    }
+  ]
+}

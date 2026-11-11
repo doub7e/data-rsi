@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "q1p-numerics-20261105",
+  "title": "Projected influence numerical equivalence tests",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-04T23:59:42.694529+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "q1p-numerics-1105",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "sources": {
+    "status": "runs/q1p-numerics-20261105/state.json",
+    "results": "runs/q1p-numerics-20261105/result.json"
+  }
+}

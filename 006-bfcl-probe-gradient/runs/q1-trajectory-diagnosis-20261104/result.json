@@ -1,0 +1,1133 @@
+{
+  "at": "2026-11-04T14:52:44.429614+00:00",
+  "models": {
+    "starting": {
+      "model": "starting",
+      "n": 256,
+      "successes": 132,
+      "failure_types": {
+        "multi_turn:empty_turn_model_response": 111,
+        "multi_turn:execution_response_mismatch": 13
+      },
+      "first_failure_turns": {
+        "5": 111,
+        "0": 13
+      },
+      "flags": {
+        "support_called": 139,
+        "support_no_call": 117,
+        "support_no_call_clarification_keywords": 116,
+        "cost_called_turn0": 256,
+        "correct_cost_args_attempted_turn0": 243,
+        "any_length_cap": 0,
+        "any_handler_error": 1,
+        "historical_protocol_checks_passed": 256
+      },
+      "output_tokens": {
+        "mean": 8610.94140625,
+        "median": 8473.5,
+        "p90": 10034,
+        "max": 13111
+      },
+      "reasoning_tokens": {
+        "mean": 7270.65625,
+        "median": 7121.5,
+        "p90": 8579,
+        "max": 11614
+      },
+      "model_calls": {
+        "mean": 13.74609375,
+        "median": 14.0,
+        "p90": 15,
+        "max": 15
+      },
+      "length_capped_calls": 0,
+      "all_output_tokens": 2204401,
+      "all_reasoning_tokens": 1861288,
+      "turns": [
+        {
+          "turn": 0,
+          "function_attempt_counts": {
+            "list_all_airports": 256,
+            "get_flight_cost": 265,
+            "get_all_airports": 1
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 2340.51171875,
+          "mean_model_calls": 3.0390625,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 1,
+          "function_attempt_counts": {
+            "book_flight": 256,
+            "retrieve_invoice": 3,
+            "get_flight_cost": 1,
+            "get_credit_card_balance": 1
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1121.078125,
+          "mean_model_calls": 2.01953125,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 2,
+          "function_attempt_counts": {
+            "purchase_insurance": 256
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 961.49609375,
+          "mean_model_calls": 2,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 3,
+          "function_attempt_counts": {
+            "retrieve_invoice": 258
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1482.64453125,
+          "mean_model_calls": 2.0078125,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 4,
+          "function_attempt_counts": {},
+          "trajectories_with_any_tool_attempt": 0,
+          "mean_output_tokens": 443.3515625,
+          "mean_model_calls": 1,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 5,
+          "function_attempt_counts": {
+            "contact_customer_support": 140
+          },
+          "trajectories_with_any_tool_attempt": 139,
+          "mean_output_tokens": 873.66796875,
+          "mean_model_calls": 1.54296875,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 6,
+          "function_attempt_counts": {
+            "cancel_booking": 256,
+            "get_credit_card_balance": 34,
+            "contact_customer_support": 3
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1388.19140625,
+          "mean_model_calls": 2.13671875,
+          "length_capped_calls": 0
+        }
+      ],
+      "support_called_outcomes": {
+        "called_success": 132,
+        "called_failure": 7,
+        "not_called_success": 0,
+        "not_called_failure": 117
+      }
+    },
+    "random50": {
+      "model": "random50",
+      "n": 256,
+      "successes": 99,
+      "failure_types": {
+        "multi_turn:empty_turn_model_response": 153,
+        "multi_turn:execution_response_mismatch": 4
+      },
+      "first_failure_turns": {
+        "5": 152,
+        "0": 5
+      },
+      "flags": {
+        "support_called": 102,
+        "support_no_call": 154,
+        "support_no_call_clarification_keywords": 153,
+        "cost_called_turn0": 255,
+        "correct_cost_args_attempted_turn0": 251,
+        "any_length_cap": 1,
+        "any_handler_error": 0,
+        "historical_protocol_checks_passed": 256
+      },
+      "output_tokens": {
+        "mean": 8045.68359375,
+        "median": 7924.0,
+        "p90": 9242,
+        "max": 11708
+      },
+      "reasoning_tokens": {
+        "mean": 6708.5390625,
+        "median": 6554.5,
+        "p90": 7821,
+        "max": 10385
+      },
+      "model_calls": {
+        "mean": 13.54296875,
+        "median": 13.0,
+        "p90": 14,
+        "max": 15
+      },
+      "length_capped_calls": 1,
+      "all_output_tokens": 2059695,
+      "all_reasoning_tokens": 1717386,
+      "turns": [
+        {
+          "turn": 0,
+          "function_attempt_counts": {
+            "list_all_airports": 255,
+            "get_flight_cost": 265,
+            "get_nearest_airport_by_city": 1
+          },
+          "trajectories_with_any_tool_attempt": 255,
+          "mean_output_tokens": 2093.05078125,
+          "mean_model_calls": 3.03515625,
+          "length_capped_calls": 1
+        },
+        {
+          "turn": 1,
+          "function_attempt_counts": {
+            "book_flight": 256,
+            "list_all_airports": 1,
+            "get_flight_cost": 1,
+            "get_credit_card_balance": 6
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1100.9296875,
+          "mean_model_calls": 2.03125,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 2,
+          "function_attempt_counts": {
+            "purchase_insurance": 256
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1009.53125,
+          "mean_model_calls": 2,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 3,
+          "function_attempt_counts": {
+            "retrieve_invoice": 258
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1433.76171875,
+          "mean_model_calls": 2.0078125,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 4,
+          "function_attempt_counts": {},
+          "trajectories_with_any_tool_attempt": 0,
+          "mean_output_tokens": 423.5546875,
+          "mean_model_calls": 1,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 5,
+          "function_attempt_counts": {
+            "contact_customer_support": 102
+          },
+          "trajectories_with_any_tool_attempt": 102,
+          "mean_output_tokens": 749.7265625,
+          "mean_model_calls": 1.3984375,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 6,
+          "function_attempt_counts": {
+            "cancel_booking": 256,
+            "get_credit_card_balance": 18
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1235.12890625,
+          "mean_model_calls": 2.0703125,
+          "length_capped_calls": 0
+        }
+      ],
+      "support_called_outcomes": {
+        "called_success": 99,
+        "called_failure": 3,
+        "not_called_success": 0,
+        "not_called_failure": 154
+      }
+    },
+    "f008": {
+      "model": "f008",
+      "n": 256,
+      "successes": 106,
+      "failure_types": {
+        "multi_turn:empty_turn_model_response": 146,
+        "multi_turn:execution_response_mismatch": 3,
+        "multi_turn:instance_state_mismatch": 1
+      },
+      "first_failure_turns": {
+        "5": 145,
+        "0": 4,
+        "None": 1
+      },
+      "flags": {
+        "support_called": 108,
+        "support_no_call": 148,
+        "support_no_call_clarification_keywords": 148,
+        "cost_called_turn0": 255,
+        "correct_cost_args_attempted_turn0": 252,
+        "any_length_cap": 1,
+        "any_handler_error": 1,
+        "historical_protocol_checks_passed": 256
+      },
+      "output_tokens": {
+        "mean": 8449.625,
+        "median": 8277.5,
+        "p90": 10072,
+        "max": 12331
+      },
+      "reasoning_tokens": {
+        "mean": 7166.37890625,
+        "median": 6992.0,
+        "p90": 8590,
+        "max": 11096
+      },
+      "model_calls": {
+        "mean": 13.6015625,
+        "median": 14.0,
+        "p90": 14,
+        "max": 16
+      },
+      "length_capped_calls": 1,
+      "all_output_tokens": 2163104,
+      "all_reasoning_tokens": 1834593,
+      "turns": [
+        {
+          "turn": 0,
+          "function_attempt_counts": {
+            "list_all_airports": 255,
+            "get_flight_cost": 263,
+            "authenticate_travel": 1,
+            "get_nearest_airport_by_city": 1
+          },
+          "trajectories_with_any_tool_attempt": 255,
+          "mean_output_tokens": 2281.8046875,
+          "mean_model_calls": 3.03125,
+          "length_capped_calls": 1
+        },
+        {
+          "turn": 1,
+          "function_attempt_counts": {
+            "book_flight": 257,
+            "get_credit_card_balance": 1,
+            "list_all_airports": 1,
+            "get_flight_cost": 1,
+            "travel_get_login_status": 1
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1139.90234375,
+          "mean_model_calls": 2.01953125,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 2,
+          "function_attempt_counts": {
+            "purchase_insurance": 256
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 970.33203125,
+          "mean_model_calls": 2,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 3,
+          "function_attempt_counts": {
+            "retrieve_invoice": 260
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1515.96875,
+          "mean_model_calls": 2.015625,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 4,
+          "function_attempt_counts": {},
+          "trajectories_with_any_tool_attempt": 0,
+          "mean_output_tokens": 400.4921875,
+          "mean_model_calls": 1,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 5,
+          "function_attempt_counts": {
+            "contact_customer_support": 110
+          },
+          "trajectories_with_any_tool_attempt": 108,
+          "mean_output_tokens": 821.12890625,
+          "mean_model_calls": 1.4296875,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 6,
+          "function_attempt_counts": {
+            "cancel_booking": 257,
+            "get_credit_card_balance": 25,
+            "contact_customer_support": 1
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1319.99609375,
+          "mean_model_calls": 2.10546875,
+          "length_capped_calls": 0
+        }
+      ],
+      "support_called_outcomes": {
+        "called_success": 106,
+        "called_failure": 2,
+        "not_called_success": 0,
+        "not_called_failure": 148
+      }
+    },
+    "f032": {
+      "model": "f032",
+      "n": 256,
+      "successes": 88,
+      "failure_types": {
+        "multi_turn:empty_turn_model_response": 159,
+        "multi_turn:execution_response_mismatch": 8,
+        "multi_turn:instance_state_mismatch": 1
+      },
+      "first_failure_turns": {
+        "5": 157,
+        "0": 9,
+        "6": 1,
+        "None": 1
+      },
+      "flags": {
+        "support_called": 94,
+        "support_no_call": 162,
+        "support_no_call_clarification_keywords": 160,
+        "cost_called_turn0": 255,
+        "correct_cost_args_attempted_turn0": 247,
+        "any_length_cap": 2,
+        "any_handler_error": 0,
+        "historical_protocol_checks_passed": 256
+      },
+      "output_tokens": {
+        "mean": 8115.8671875,
+        "median": 7991.5,
+        "p90": 9214,
+        "max": 13961
+      },
+      "reasoning_tokens": {
+        "mean": 6808.109375,
+        "median": 6687.0,
+        "p90": 7837,
+        "max": 12819
+      },
+      "model_calls": {
+        "mean": 13.4765625,
+        "median": 13.0,
+        "p90": 14,
+        "max": 16
+      },
+      "length_capped_calls": 2,
+      "all_output_tokens": 2077662,
+      "all_reasoning_tokens": 1742876,
+      "turns": [
+        {
+          "turn": 0,
+          "function_attempt_counts": {
+            "list_all_airports": 255,
+            "get_flight_cost": 260,
+            "authenticate_travel": 1
+          },
+          "trajectories_with_any_tool_attempt": 255,
+          "mean_output_tokens": 2274.203125,
+          "mean_model_calls": 3.015625,
+          "length_capped_calls": 2
+        },
+        {
+          "turn": 1,
+          "function_attempt_counts": {
+            "book_flight": 257,
+            "list_all_airports": 1,
+            "get_flight_cost": 1
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1121.62890625,
+          "mean_model_calls": 2.01171875,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 2,
+          "function_attempt_counts": {
+            "purchase_insurance": 256
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1020.29296875,
+          "mean_model_calls": 2,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 3,
+          "function_attempt_counts": {
+            "retrieve_invoice": 258
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1351.9765625,
+          "mean_model_calls": 2.0078125,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 4,
+          "function_attempt_counts": {},
+          "trajectories_with_any_tool_attempt": 0,
+          "mean_output_tokens": 414.80859375,
+          "mean_model_calls": 1,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 5,
+          "function_attempt_counts": {
+            "contact_customer_support": 94
+          },
+          "trajectories_with_any_tool_attempt": 94,
+          "mean_output_tokens": 739.015625,
+          "mean_model_calls": 1.3671875,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 6,
+          "function_attempt_counts": {
+            "cancel_booking": 256,
+            "get_credit_card_balance": 20
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1193.94140625,
+          "mean_model_calls": 2.07421875,
+          "length_capped_calls": 0
+        }
+      ],
+      "support_called_outcomes": {
+        "called_success": 88,
+        "called_failure": 6,
+        "not_called_success": 0,
+        "not_called_failure": 162
+      }
+    },
+    "f128": {
+      "model": "f128",
+      "n": 256,
+      "successes": 113,
+      "failure_types": {
+        "multi_turn:empty_turn_model_response": 136,
+        "multi_turn:execution_response_mismatch": 7
+      },
+      "first_failure_turns": {
+        "5": 134,
+        "0": 8,
+        "3": 1
+      },
+      "flags": {
+        "support_called": 121,
+        "support_no_call": 135,
+        "support_no_call_clarification_keywords": 134,
+        "cost_called_turn0": 254,
+        "correct_cost_args_attempted_turn0": 248,
+        "any_length_cap": 3,
+        "any_handler_error": 0,
+        "historical_protocol_checks_passed": 256
+      },
+      "output_tokens": {
+        "mean": 8184.80078125,
+        "median": 8063.0,
+        "p90": 9333,
+        "max": 17106
+      },
+      "reasoning_tokens": {
+        "mean": 6859.80078125,
+        "median": 6687.5,
+        "p90": 7917,
+        "max": 16234
+      },
+      "model_calls": {
+        "mean": 13.609375,
+        "median": 14.0,
+        "p90": 14,
+        "max": 16
+      },
+      "length_capped_calls": 4,
+      "all_output_tokens": 2095309,
+      "all_reasoning_tokens": 1756109,
+      "turns": [
+        {
+          "turn": 0,
+          "function_attempt_counts": {
+            "list_all_airports": 255,
+            "get_flight_cost": 262
+          },
+          "trajectories_with_any_tool_attempt": 255,
+          "mean_output_tokens": 2206.48828125,
+          "mean_model_calls": 3.01953125,
+          "length_capped_calls": 3
+        },
+        {
+          "turn": 1,
+          "function_attempt_counts": {
+            "book_flight": 257,
+            "retrieve_invoice": 1,
+            "get_credit_card_balance": 2,
+            "get_flight_cost": 2,
+            "list_all_airports": 1
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1127.9453125,
+          "mean_model_calls": 2.02734375,
+          "length_capped_calls": 1
+        },
+        {
+          "turn": 2,
+          "function_attempt_counts": {
+            "purchase_insurance": 256
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 991.6796875,
+          "mean_model_calls": 2,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 3,
+          "function_attempt_counts": {
+            "retrieve_invoice": 256
+          },
+          "trajectories_with_any_tool_attempt": 255,
+          "mean_output_tokens": 1427.43359375,
+          "mean_model_calls": 2,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 4,
+          "function_attempt_counts": {},
+          "trajectories_with_any_tool_attempt": 0,
+          "mean_output_tokens": 423.6484375,
+          "mean_model_calls": 1,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 5,
+          "function_attempt_counts": {
+            "contact_customer_support": 121
+          },
+          "trajectories_with_any_tool_attempt": 121,
+          "mean_output_tokens": 837.18359375,
+          "mean_model_calls": 1.47265625,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 6,
+          "function_attempt_counts": {
+            "cancel_booking": 256,
+            "get_credit_card_balance": 23
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1170.421875,
+          "mean_model_calls": 2.08984375,
+          "length_capped_calls": 0
+        }
+      ],
+      "support_called_outcomes": {
+        "called_success": 113,
+        "called_failure": 8,
+        "not_called_success": 0,
+        "not_called_failure": 135
+      }
+    },
+    "k008": {
+      "model": "k008",
+      "n": 256,
+      "successes": 92,
+      "failure_types": {
+        "multi_turn:empty_turn_model_response": 154,
+        "multi_turn:execution_response_mismatch": 10
+      },
+      "first_failure_turns": {
+        "5": 153,
+        "0": 11
+      },
+      "flags": {
+        "support_called": 94,
+        "support_no_call": 162,
+        "support_no_call_clarification_keywords": 162,
+        "cost_called_turn0": 254,
+        "correct_cost_args_attempted_turn0": 245,
+        "any_length_cap": 2,
+        "any_handler_error": 0,
+        "historical_protocol_checks_passed": 256
+      },
+      "output_tokens": {
+        "mean": 8098.20703125,
+        "median": 8003.0,
+        "p90": 9337,
+        "max": 12497
+      },
+      "reasoning_tokens": {
+        "mean": 6801.296875,
+        "median": 6704.5,
+        "p90": 7900,
+        "max": 10975
+      },
+      "model_calls": {
+        "mean": 13.4921875,
+        "median": 13.0,
+        "p90": 14,
+        "max": 16
+      },
+      "length_capped_calls": 2,
+      "all_output_tokens": 2073141,
+      "all_reasoning_tokens": 1741132,
+      "turns": [
+        {
+          "turn": 0,
+          "function_attempt_counts": {
+            "list_all_airports": 255,
+            "get_flight_cost": 264
+          },
+          "trajectories_with_any_tool_attempt": 255,
+          "mean_output_tokens": 2245.26171875,
+          "mean_model_calls": 3.02734375,
+          "length_capped_calls": 2
+        },
+        {
+          "turn": 1,
+          "function_attempt_counts": {
+            "book_flight": 256,
+            "get_flight_cost": 1
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1109.2109375,
+          "mean_model_calls": 2.00390625,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 2,
+          "function_attempt_counts": {
+            "purchase_insurance": 256
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 981.54296875,
+          "mean_model_calls": 2,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 3,
+          "function_attempt_counts": {
+            "retrieve_invoice": 256
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1417.83984375,
+          "mean_model_calls": 2,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 4,
+          "function_attempt_counts": {},
+          "trajectories_with_any_tool_attempt": 0,
+          "mean_output_tokens": 409.59765625,
+          "mean_model_calls": 1,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 5,
+          "function_attempt_counts": {
+            "contact_customer_support": 94
+          },
+          "trajectories_with_any_tool_attempt": 94,
+          "mean_output_tokens": 786.64453125,
+          "mean_model_calls": 1.3671875,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 6,
+          "function_attempt_counts": {
+            "cancel_booking": 256,
+            "get_credit_card_balance": 25
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1148.109375,
+          "mean_model_calls": 2.09375,
+          "length_capped_calls": 0
+        }
+      ],
+      "support_called_outcomes": {
+        "called_success": 92,
+        "called_failure": 2,
+        "not_called_success": 0,
+        "not_called_failure": 162
+      }
+    },
+    "k032": {
+      "model": "k032",
+      "n": 256,
+      "successes": 58,
+      "failure_types": {
+        "multi_turn:empty_turn_model_response": 192,
+        "multi_turn:execution_response_mismatch": 5,
+        "multi_turn:instance_state_mismatch": 1
+      },
+      "first_failure_turns": {
+        "5": 190,
+        "0": 5,
+        "3": 1,
+        "None": 1,
+        "2": 1
+      },
+      "flags": {
+        "support_called": 64,
+        "support_no_call": 192,
+        "support_no_call_clarification_keywords": 191,
+        "cost_called_turn0": 256,
+        "correct_cost_args_attempted_turn0": 251,
+        "any_length_cap": 0,
+        "any_handler_error": 0,
+        "historical_protocol_checks_passed": 256
+      },
+      "output_tokens": {
+        "mean": 8346.1171875,
+        "median": 8190.5,
+        "p90": 9492,
+        "max": 12926
+      },
+      "reasoning_tokens": {
+        "mean": 7050.94140625,
+        "median": 6890.0,
+        "p90": 8093,
+        "max": 11300
+      },
+      "model_calls": {
+        "mean": 13.4453125,
+        "median": 13.0,
+        "p90": 14,
+        "max": 16
+      },
+      "length_capped_calls": 0,
+      "all_output_tokens": 2136606,
+      "all_reasoning_tokens": 1805041,
+      "turns": [
+        {
+          "turn": 0,
+          "function_attempt_counts": {
+            "list_all_airports": 256,
+            "get_flight_cost": 268
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 2336.60546875,
+          "mean_model_calls": 3.046875,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 1,
+          "function_attempt_counts": {
+            "book_flight": 256,
+            "get_credit_card_balance": 3,
+            "get_flight_cost": 1
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1118,
+          "mean_model_calls": 2.015625,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 2,
+          "function_attempt_counts": {
+            "purchase_insurance": 257
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 978.68359375,
+          "mean_model_calls": 2,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 3,
+          "function_attempt_counts": {
+            "retrieve_invoice": 259
+          },
+          "trajectories_with_any_tool_attempt": 255,
+          "mean_output_tokens": 1487.61328125,
+          "mean_model_calls": 2.0078125,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 4,
+          "function_attempt_counts": {},
+          "trajectories_with_any_tool_attempt": 0,
+          "mean_output_tokens": 427.0078125,
+          "mean_model_calls": 1,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 5,
+          "function_attempt_counts": {
+            "contact_customer_support": 64
+          },
+          "trajectories_with_any_tool_attempt": 64,
+          "mean_output_tokens": 659.49609375,
+          "mean_model_calls": 1.24609375,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 6,
+          "function_attempt_counts": {
+            "cancel_booking": 256,
+            "get_credit_card_balance": 36
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1338.7109375,
+          "mean_model_calls": 2.12890625,
+          "length_capped_calls": 0
+        }
+      ],
+      "support_called_outcomes": {
+        "called_success": 58,
+        "called_failure": 6,
+        "not_called_success": 0,
+        "not_called_failure": 192
+      }
+    },
+    "k128": {
+      "model": "k128",
+      "n": 256,
+      "successes": 98,
+      "failure_types": {
+        "multi_turn:empty_turn_model_response": 153,
+        "multi_turn:execution_response_mismatch": 5
+      },
+      "first_failure_turns": {
+        "5": 152,
+        "0": 5,
+        "1": 1
+      },
+      "flags": {
+        "support_called": 102,
+        "support_no_call": 154,
+        "support_no_call_clarification_keywords": 153,
+        "cost_called_turn0": 256,
+        "correct_cost_args_attempted_turn0": 251,
+        "any_length_cap": 0,
+        "any_handler_error": 0,
+        "historical_protocol_checks_passed": 256
+      },
+      "output_tokens": {
+        "mean": 8257.609375,
+        "median": 8165.0,
+        "p90": 9390,
+        "max": 11772
+      },
+      "reasoning_tokens": {
+        "mean": 6941.47265625,
+        "median": 6865.0,
+        "p90": 8072,
+        "max": 10306
+      },
+      "model_calls": {
+        "mean": 13.51171875,
+        "median": 13.0,
+        "p90": 14,
+        "max": 16
+      },
+      "length_capped_calls": 0,
+      "all_output_tokens": 2113948,
+      "all_reasoning_tokens": 1777017,
+      "turns": [
+        {
+          "turn": 0,
+          "function_attempt_counts": {
+            "list_all_airports": 256,
+            "get_flight_cost": 267
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 2314.2265625,
+          "mean_model_calls": 3.04296875,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 1,
+          "function_attempt_counts": {
+            "book_flight": 255,
+            "get_credit_card_balance": 2
+          },
+          "trajectories_with_any_tool_attempt": 255,
+          "mean_output_tokens": 1115.87890625,
+          "mean_model_calls": 2.00390625,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 2,
+          "function_attempt_counts": {
+            "purchase_insurance": 256
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 996.15625,
+          "mean_model_calls": 2,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 3,
+          "function_attempt_counts": {
+            "retrieve_invoice": 259
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1414.453125,
+          "mean_model_calls": 2.01171875,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 4,
+          "function_attempt_counts": {},
+          "trajectories_with_any_tool_attempt": 0,
+          "mean_output_tokens": 428.05078125,
+          "mean_model_calls": 1,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 5,
+          "function_attempt_counts": {
+            "contact_customer_support": 102,
+            "book_flight": 1,
+            "purchase_insurance": 1,
+            "retrieve_invoice": 1
+          },
+          "trajectories_with_any_tool_attempt": 102,
+          "mean_output_tokens": 834.98046875,
+          "mean_model_calls": 1.41015625,
+          "length_capped_calls": 0
+        },
+        {
+          "turn": 6,
+          "function_attempt_counts": {
+            "cancel_booking": 256,
+            "get_credit_card_balance": 9,
+            "contact_customer_support": 2
+          },
+          "trajectories_with_any_tool_attempt": 256,
+          "mean_output_tokens": 1153.86328125,
+          "mean_model_calls": 2.04296875,
+          "length_capped_calls": 0
+        }
+      ],
+      "support_called_outcomes": {
+        "called_success": 98,
+        "called_failure": 4,
+        "not_called_success": 0,
+        "not_called_failure": 154
+      }
+    }
+  },
+  "transitions": {
+    "random50": {
+      "lost_successes": 74,
+      "gained_successes": 41,
+      "lost_first_failure_turns": {
+        "5": 71,
+        "0": 3
+      },
+      "lost_failure_types": {
+        "multi_turn:empty_turn_model_response": 71,
+        "multi_turn:execution_response_mismatch": 3
+      },
+      "support_called_to_not_called": 78,
+      "support_not_called_to_called": 41
+    },
+    "f008": {
+      "lost_successes": 79,
+      "gained_successes": 53,
+      "lost_first_failure_turns": {
+        "5": 77,
+        "0": 2
+      },
+      "lost_failure_types": {
+        "multi_turn:empty_turn_model_response": 78,
+        "multi_turn:execution_response_mismatch": 1
+      },
+      "support_called_to_not_called": 80,
+      "support_not_called_to_called": 49
+    },
+    "f032": {
+      "lost_successes": 76,
+      "gained_successes": 32,
+      "lost_first_failure_turns": {
+        "5": 71,
+        "0": 4,
+        "6": 1
+      },
+      "lost_failure_types": {
+        "multi_turn:empty_turn_model_response": 73,
+        "multi_turn:execution_response_mismatch": 3
+      },
+      "support_called_to_not_called": 79,
+      "support_not_called_to_called": 34
+    },
+    "f128": {
+      "lost_successes": 78,
+      "gained_successes": 59,
+      "lost_first_failure_turns": {
+        "5": 73,
+        "0": 4,
+        "3": 1
+      },
+      "lost_failure_types": {
+        "multi_turn:empty_turn_model_response": 75,
+        "multi_turn:execution_response_mismatch": 3
+      },
+      "support_called_to_not_called": 75,
+      "support_not_called_to_called": 57
+    },
+    "k008": {
+      "lost_successes": 86,
+      "gained_successes": 46,
+      "lost_first_failure_turns": {
+        "5": 79,
+        "0": 7
+      },
+      "lost_failure_types": {
+        "multi_turn:empty_turn_model_response": 80,
+        "multi_turn:execution_response_mismatch": 6
+      },
+      "support_called_to_not_called": 88,
+      "support_not_called_to_called": 43
+    },
+    "k032": {
+      "lost_successes": 101,
+      "gained_successes": 27,
+      "lost_first_failure_turns": {
+        "5": 97,
+        "0": 2,
+        "3": 1,
+        "2": 1
+      },
+      "lost_failure_types": {
+        "multi_turn:empty_turn_model_response": 99,
+        "multi_turn:execution_response_mismatch": 2
+      },
+      "support_called_to_not_called": 104,
+      "support_not_called_to_called": 29
+    },
+    "k128": {
+      "lost_successes": 78,
+      "gained_successes": 44,
+      "lost_first_failure_turns": {
+        "5": 74,
+        "0": 4
+      },
+      "lost_failure_types": {
+        "multi_turn:empty_turn_model_response": 74,
+        "multi_turn:execution_response_mismatch": 4
+      },
+      "support_called_to_not_called": 81,
+      "support_not_called_to_called": 44
+    }
+  },
+  "cautions": [
+    "Official verifier reports the first observed error, not all independent errors.",
+    "No-call and function arguments are direct trajectory observations; clarification keyword matching is only a text proxy, checked with selected examples.",
+    "Same RNG seed is paired for statistics, but does not hold intermediate trajectory states fixed.",
+    "Trajectory evidence alone cannot establish conventional overfitting; matched training/unselected/heldout losses are a separate diagnostic."
+  ]
+}

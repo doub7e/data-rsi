@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "download-random100-20261102",
+  "title": "DataSense pinned model/data download",
+  "kind": "environment",
+  "status": "succeeded",
+  "created_at": "2026-11-02T22:34:01.424734+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "ds-r100-fetch-1102",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "notes": "CPU-only download in existing validated image. Actual preparation and training use isolated pinned DataSense image.",
+  "sources": {
+    "results": "runs/random100-s42-20261102/download-complete.json"
+  }
+}

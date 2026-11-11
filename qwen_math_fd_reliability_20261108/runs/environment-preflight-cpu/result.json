@@ -1,0 +1,81 @@
+{
+  "python": "3.10.19 (main, Oct 10 2025, 08:52:10) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "torch": "2.5.1+cu124",
+    "transformers": "4.51.3",
+    "vllm": "0.7.3",
+    "flash-attn": "2.7.3",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1",
+    "math-verify": "0.9.0",
+    "sympy": "1.13.1",
+    "accelerate": "1.12.0"
+  },
+  "imports": {
+    "torch": "ok",
+    "transformers": "ok",
+    "vllm": "ok"
+  },
+  "assets": {
+    "student": {
+      "path": "/scratch/cvlab/home/shuli/.cache/huggingface/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
+      "exists": true,
+      "files": [
+        "LICENSE",
+        ".gitattributes",
+        "config.json",
+        "README.md",
+        "generation_config.json",
+        "merges.txt",
+        "model.safetensors.index.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json",
+        "model-00003-of-00003.safetensors",
+        "model-00002-of-00003.safetensors",
+        "model-00001-of-00003.safetensors"
+      ]
+    },
+    "teacher": {
+      "path": "/scratch/cvlab/home/shuli/.cache/huggingface/models--Keven16--Qwen3-4B-Non-Thinking-RL-Math-Step500/snapshots/05d82d02780d4a6f8295b2909dbbd89e8a8b5aaa",
+      "exists": true,
+      "files": [
+        "README.md",
+        "config.json",
+        "added_tokens.json",
+        ".gitattributes",
+        "generation_config.json",
+        "merges.txt",
+        "model.safetensors.index.json",
+        "special_tokens_map.json",
+        "tokenizer_config.json",
+        "vocab.json",
+        "tokenizer.json",
+        "model-00002-of-00002.safetensors",
+        "model-00001-of-00002.safetensors"
+      ]
+    },
+    "dataset": {
+      "path": "/scratch/cvlab/home/shuli/.cache/huggingface/datasets--Keven16--G-OPD-Training-Data/snapshots/c9bc6783733858dd4892f26f95e4aea0942e91f1",
+      "exists": true,
+      "files": [
+        "DeepMath-103K",
+        "AIME2024",
+        "AIME2025",
+        ".gitattributes",
+        "Eurus",
+        "README.md",
+        "math_and_code"
+      ]
+    }
+  },
+  "cuda": "12.4",
+  "gpu": [],
+  "metrics": {
+    "visible_gpu_count": 0,
+    "available_assets": 3
+  }
+}

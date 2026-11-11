@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "eval-base",
+  "title": "FD训练消融 · base · Math四项30×32评测",
+  "kind": "evaluation",
+  "status": "planned",
+  "created_at": "2026-11-08T11:52:36.174639+00:00",
+  "updated_at": "2026-11-08T11:52:36.174653+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "model_role": "base",
+    "total_trials": 3840,
+    "questions": 120,
+    "samples_per_question": 32,
+    "max_tokens": 16384,
+    "temperature": 1.0,
+    "seed_rule": "42+globalquestionindex*32+sampleindex",
+    "scope": "non-agent math eval; raw predictions, no fabricated agent traces",
+    "torch_compile_disabled": false
+  },
+  "sources": {
+    "status": "runs/eval-base/state.json",
+    "progress": "runs/eval-base/progress.json",
+    "results": "runs/eval-base/result.json",
+    "evaluation_plan": "runs/eval-base/evaluation-plan.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/eval-base/result.json"
+    },
+    {
+      "label": "per-question.json",
+      "path": "runs/eval-base/per-question.json"
+    },
+    {
+      "label": "sample.json",
+      "path": "runs/eval-base/sample.json"
+    },
+    {
+      "label": "eval-config.json",
+      "path": "runs/eval-base/eval-config.json"
+    }
+  ],
+  "tags": [],
+  "notes": "8xH200 restart protocol; upstream train8-*; original unsubmitted plan archived",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-eval-base-1108a",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "planning_revisions": [
+    {
+      "at": "2026-11-09T00:07:52.178183+00:00",
+      "reason": "User authorized8xH200; new training run mapping and restored compilation; prior planned source preserved",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/eval-base/planning-revisions/2026-11-09T00-07-43.482647+00-00/source"
+    }
+  ]
+}

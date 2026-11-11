@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "eval-bf16-h1em5",
+  "title": "FD训练消融 · bf16-h1em5 · Math四项30×32评测",
+  "kind": "evaluation",
+  "status": "planned",
+  "created_at": "2026-11-08T11:52:41.307758+00:00",
+  "updated_at": "2026-11-08T11:52:41.307769+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "model_role": "bf16-h1em5",
+    "total_trials": 3840,
+    "questions": 120,
+    "samples_per_question": 32,
+    "max_tokens": 16384,
+    "temperature": 1.0,
+    "seed_rule": "42+globalquestionindex*32+sampleindex",
+    "scope": "non-agent math eval; raw predictions, no fabricated agent traces",
+    "torch_compile_disabled": false
+  },
+  "sources": {
+    "status": "runs/eval-bf16-h1em5/state.json",
+    "progress": "runs/eval-bf16-h1em5/progress.json",
+    "results": "runs/eval-bf16-h1em5/result.json",
+    "evaluation_plan": "runs/eval-bf16-h1em5/evaluation-plan.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/eval-bf16-h1em5/result.json"
+    },
+    {
+      "label": "per-question.json",
+      "path": "runs/eval-bf16-h1em5/per-question.json"
+    },
+    {
+      "label": "sample.json",
+      "path": "runs/eval-bf16-h1em5/sample.json"
+    },
+    {
+      "label": "eval-config.json",
+      "path": "runs/eval-bf16-h1em5/eval-config.json"
+    }
+  ],
+  "tags": [],
+  "notes": "8xH200 restart protocol; upstream train8-*; original unsubmitted plan archived",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-eval-bf16-1108a",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "planning_revisions": [
+    {
+      "at": "2026-11-09T00:07:58.088372+00:00",
+      "reason": "User authorized8xH200; new training run mapping and restored compilation; prior planned source preserved",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/eval-bf16-h1em5/planning-revisions/2026-11-09T00-07-52.196480+00-00/source"
+    }
+  ]
+}

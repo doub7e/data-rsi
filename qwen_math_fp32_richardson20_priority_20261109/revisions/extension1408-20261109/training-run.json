@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "train-fp32-richardson20",
+  "title": "优先FP32-20 · 最高优先级 · FP32 Richardson h1e-5 · sigmoid3s/fallback0 · 20step",
+  "kind": "training",
+  "status": "planned",
+  "created_at": "2026-11-09T18:38:09.917472+00:00",
+  "tags": [
+    "priority1",
+    "FP32",
+    "20step"
+  ],
+  "parameters": {
+    "protocol": "protocol.json",
+    "priority": 1,
+    "gpus": 8,
+    "steps": 20,
+    "fd_precision": "fp32",
+    "h_rel": 1e-05,
+    "sigmoid": "sigmoid(3s)",
+    "fallback": 0,
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "data_pool": "new320; original1600 unavailable"
+  },
+  "sources": {
+    "status": "runs/train-fp32-richardson20/state.json",
+    "progress": "runs/train-fp32-richardson20/progress.json",
+    "results": "runs/train-fp32-richardson20/result.json",
+    "metrics": "runs/train-fp32-richardson20/metrics.jsonl",
+    "training_data": "runs/train-fp32-richardson20/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "完整协议",
+      "path": "protocol.json"
+    },
+    {
+      "label": "result.json",
+      "path": "runs/train-fp32-richardson20/result.json"
+    },
+    {
+      "label": "resolved-launch.json",
+      "path": "runs/train-fp32-richardson20/resolved-launch.json"
+    },
+    {
+      "label": "metrics.jsonl",
+      "path": "runs/train-fp32-richardson20/metrics.jsonl"
+    },
+    {
+      "label": "data/train.jsonl",
+      "path": "runs/train-fp32-richardson20/data/train.jsonl"
+    },
+    {
+      "label": "long-sequence-preflight.json",
+      "path": "runs/train-fp32-richardson20/long-sequence-preflight.json"
+    },
+    {
+      "label": "题目记录与原清单缺失的证据",
+      "path": "DATA_PROVENANCE.md"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "opd-p20-fp32-1109a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

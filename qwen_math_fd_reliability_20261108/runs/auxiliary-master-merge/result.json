@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "verified_artifacts": 2
+  },
+  "artifacts": [
+    "model/metadata.json",
+    "model/model.safetensors.index.json"
+  ],
+  "scope": "Auxiliary checkpoint only; does not replace unavailable best Math checkpoint",
+  "elapsed_seconds": 167.44081132672727
+}

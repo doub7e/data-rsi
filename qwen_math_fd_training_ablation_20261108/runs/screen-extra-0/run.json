@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "screen-extra-0",
+  "title": "FD训练消融 · 条件补充筛选分片0",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T12:11:12.274638+00:00",
+  "updated_at": "2026-11-08T12:11:12.274652+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "conditional_gpu_execution": true,
+    "rule": "Only ifinitial384teacher-screened pool yields<80eligible; next256samepermutation; retain1..7/8 criterion; no student outcomes used"
+  },
+  "sources": {
+    "status": "runs/screen-extra-0/state.json",
+    "progress": "runs/screen-extra-0/progress.json",
+    "results": "runs/screen-extra-0/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/screen-extra-0/result.json"
+    },
+    {
+      "label": "cancellation/request.json",
+      "path": "runs/screen-extra-0/cancellation/request.json"
+    },
+    {
+      "label": "cancellation/published-data.json",
+      "path": "runs/screen-extra-0/cancellation/published-data.json"
+    },
+    {
+      "label": "sample.json",
+      "path": "runs/screen-extra-0/sample.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-extra0-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

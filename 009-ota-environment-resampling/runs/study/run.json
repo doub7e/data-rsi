@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "study",
+  "title": "OTA重采样 · 环境重采样完整对照",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-06T23:02:56.059605+00:00",
+  "tags": [
+    "environment-resampling",
+    "Qwen3-8B"
+  ],
+  "parameters": {
+    "teacher": "Qwen/Qwen3.8-27B",
+    "teacher_revision": "8c0b3d30f3ae96f5c7f774de704bf0ada83e422a",
+    "student": "Qwen/Qwen3-8B",
+    "seed": 20261107
+  },
+  "sources": {
+    "status": "runs/study/state.json",
+    "results": "runs/study/result.json",
+    "progress": "runs/study/progress.json"
+  },
+  "artifacts": [
+    {
+      "label": "固定资源版本",
+      "path": "configs/resources.json"
+    },
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "实际训练精度核验",
+      "path": "runs/gradient-bf16-contract-check/result.json"
+    },
+    {
+      "label": "梯度精度纠正记录",
+      "path": "runs/study/gradient-precision-correction.json"
+    },
+    {
+      "label": "并行probe等价检查",
+      "path": "runs/study/probe-shard-check.json"
+    },
+    {
+      "label": "学生推理故障与恢复记录",
+      "path": "runs/study/student-serving-recovery.json"
+    },
+    {
+      "label": "训练集与评测集任务类别核查",
+      "path": "configs/domain-audit.json"
+    },
+    {
+      "label": "沙箱调度迁移恢复",
+      "path": "runs/study/native-reschedule-recovery.json"
+    },
+    {
+      "label": "无完整响应的超时结果处理",
+      "path": "runs/study/empty-model-outcome-recovery.json"
+    },
+    {
+      "label": "模型耗尽沙箱存储的失败轨迹说明",
+      "path": "runs/study/model-storage-budget-case.json"
+    },
+    {
+      "label": "当前进度、已完成基线与待确认事项",
+      "path": "runs/study/current-status-summary.json"
+    },
+    {
+      "label": "最终配对报告",
+      "path": "runs/comparison/REPORT.md"
+    },
+    {
+      "label": "评测比较图",
+      "path": "runs/comparison/comparison.png"
+    },
+    {
+      "label": "采样概率",
+      "path": "runs/comparison/sampling.png"
+    },
+    {
+      "label": "训练曲线",
+      "path": "runs/comparison/training-curves.png"
+    },
+    {
+      "label": "逐题结果、评分覆盖率与置信区间",
+      "path": "runs/comparison/result.json"
+    },
+    {
+      "label": "高概率环境的再生成结果",
+      "path": "runs/comparison/regeneration-audit.json"
+    }
+  ]
+}

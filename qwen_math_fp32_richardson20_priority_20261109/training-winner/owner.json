@@ -1,0 +1,7 @@
+{
+  "run_id": "train-b300-fp32-richardson20-r2",
+  "at": "2026-11-11T10:32:57.978592+00:00",
+  "hostname": "opd-p20-b300r2-1111a-0-0",
+  "pid": 205,
+  "policy": "permanent atomic claim; no automatic takeover after failure"
+}

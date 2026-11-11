@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-10T23:22:55.947209+00:00",
+  "pid": 1217990,
+  "state": "winner_selected_loser_cancelled",
+  "jobs": {
+    "train-fp32-richardson20": [
+      {
+        "name": "opd-p20-fp32-1109a-0-0",
+        "phase": "Pending",
+        "node": null
+      }
+    ],
+    "train-b300-fp32-richardson20": [
+      {
+        "name": "opd-p20-b300-1111a-0-0",
+        "phase": "Running",
+        "node": "gpu404.rcp.epfl.ch"
+      }
+    ]
+  },
+  "winner": {
+    "run_id": "train-b300-fp32-richardson20",
+    "at": "2026-11-10T23:22:41.711516+00:00",
+    "hostname": "opd-p20-b300-1111a-0-0",
+    "pid": 205,
+    "policy": "permanent atomic claim; no automatic takeover after failure"
+  }
+}

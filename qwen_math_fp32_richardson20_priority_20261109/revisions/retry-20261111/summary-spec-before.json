@@ -1,0 +1,29 @@
+{
+  "stage": "20step训练完成验收及四项评测报告",
+  "source_snapshot": true,
+  "deadline_utc": "2026-11-13T17:58:08.938870+00:00",
+  "commands": [
+    [
+      "{python}",
+      "tools/fd_priority20.py",
+      "report",
+      "--output",
+      "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/summary"
+    ]
+  ],
+  "source_files": [
+    "tools/fd_priority20.py"
+  ],
+  "required_artifacts": [
+    "result.json",
+    "report.md"
+  ],
+  "dependencies": [
+    "runs/eval20/result.json",
+    "runs/eval20/state.json",
+    "runs/eval-base/result.json",
+    "runs/eval-base/state.json",
+    "runs/train-b300-fp32-richardson20/result.json",
+    "runs/train-b300-fp32-richardson20/state.json"
+  ]
+}

@@ -1,0 +1,638 @@
+{
+  "protocol": "fd_reliability_selected_token_weighted_gradient_v1",
+  "status": "complete",
+  "fingerprint": "62741bc5f885b908e234458607c0c40038360a5c0b5f747b23c1aca829e013b6",
+  "scope": "One audited target-prefix token SUBSET, one fixed-N probe case, FP32 master-center OPD ascent gradients with SUM reduction; not full-batch training, AdamW updates, or accuracy effects",
+  "audit_case": {
+    "id": "n0032_r00_probe_bf16",
+    "probe_n": 32,
+    "probe_precision": "bf16",
+    "repeat": 0,
+    "h_rel": 1e-05
+  },
+  "model": {
+    "path": "/scratch/cvlab/home/shuli/.cache/huggingface/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "metadata_sha256": {
+      "config.json": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+      "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+      "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "model.safetensors.index.json": "6dc0981b8829fead746441f68f38f24c5ca4a3a66351f652c26c6df0efc43ab2"
+    },
+    "weight_identity_kind": "resolved_path_size_mtime",
+    "weights": [
+      {
+        "name": "model-00001-of-00003.safetensors",
+        "resolved_path": "/scratch/cvlab/home/shuli/.cache/huggingface/models--Qwen--Qwen3-4B/blobs/328a91d3122359d5547f9d79521205bc0a46e1f79a792dfe650e99fc2d651223",
+        "size_bytes": 3957900840,
+        "mtime_ns": 1783879912291875102
+      },
+      {
+        "name": "model-00002-of-00003.safetensors",
+        "resolved_path": "/scratch/cvlab/home/shuli/.cache/huggingface/models--Qwen--Qwen3-4B/blobs/6cd087b316306a68c562436b5492edbcf6e16c6dba3a1308279caa5a58e21ca5",
+        "size_bytes": 3987450520,
+        "mtime_ns": 1783879910392793645
+      },
+      {
+        "name": "model-00003-of-00003.safetensors",
+        "resolved_path": "/scratch/cvlab/home/shuli/.cache/huggingface/models--Qwen--Qwen3-4B/blobs/e4bf436957184f4eeb86a80e9db394503f1f56446b2e6b7edeac5b81470f4ca1",
+        "size_bytes": 99630640,
+        "mtime_ns": 1783879871115672980
+      }
+    ]
+  },
+  "master_precision_provenance": {
+    "parameter_elements": 4022468096,
+    "master_dtype_element_counts": {
+      "torch.float32": 4022468096
+    },
+    "sample_method": "uniform stride across concatenated model parameter elements",
+    "sample_stride": 4023,
+    "sample_elements": 999868,
+    "sample_finite_fraction": 1.0,
+    "sample_exactly_on_bf16_grid_fraction": 1.0,
+    "interpretation": "BF16 Base weights promoted to FP32 may be on-grid; trained FP32 masters may be off-grid"
+  },
+  "subset": {
+    "count": 24,
+    "selection_strata_counts": {
+      "extreme_only": 8,
+      "random_only": 16
+    },
+    "full_target_tokens": 515,
+    "audited_prefix_tokens": 515,
+    "target_prefix_only": false,
+    "tokens": [
+      {
+        "position": 6,
+        "token_id": 3070,
+        "selection_strata": {
+          "random": false,
+          "extreme": true
+        },
+        "residual": -1.0,
+        "scores": {
+          "exact": -12.482061403182092,
+          "fp32_fd": -12.498609841141105,
+          "bf16_fd": -12.8128650613195
+        },
+        "weights_fp32": {
+          "exact": 5.4617124499043164e-17,
+          "fp32_fd": 5.1971847222212885e-17,
+          "bf16_fd": 2.0245579673202824e-17,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 16,
+        "token_id": 400,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": 0.008783632889389992,
+        "scores": {
+          "exact": 0.0031601930181681666,
+          "fp32_fd": 0.0031697995079428398,
+          "bf16_fd": 0.002074904706074204
+        },
+        "weights_fp32": {
+          "exact": 0.5023701190948486,
+          "fp32_fd": 0.5023773312568665,
+          "bf16_fd": 0.5015561580657959,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 30,
+        "token_id": 311,
+        "selection_strata": {
+          "random": false,
+          "extreme": true
+        },
+        "residual": -1.0,
+        "scores": {
+          "exact": 111.18741543194679,
+          "fp32_fd": 61.949699011724725,
+          "bf16_fd": 45.553181458664
+        },
+        "weights_fp32": {
+          "exact": 1.0,
+          "fp32_fd": 1.0,
+          "bf16_fd": 1.0,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 32,
+        "token_id": 1447,
+        "selection_strata": {
+          "random": false,
+          "extreme": true
+        },
+        "residual": -1.0,
+        "scores": {
+          "exact": 6.326990251708786,
+          "fp32_fd": 6.255433497186618,
+          "bf16_fd": 2.821900151967672
+        },
+        "weights_fp32": {
+          "exact": 1.0,
+          "fp32_fd": 1.0,
+          "bf16_fd": 0.9997894763946533,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 75,
+        "token_id": 374,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": 0.00017426826980226906,
+        "scores": {
+          "exact": -2.9312845463126664e-07,
+          "fp32_fd": -2.684997964705464e-07,
+          "bf16_fd": 6.250966423417737e-08
+        },
+        "weights_fp32": {
+          "exact": 0.4999997913837433,
+          "fp32_fd": 0.4999997913837433,
+          "bf16_fd": 0.5000000596046448,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 77,
+        "token_id": 3070,
+        "selection_strata": {
+          "random": false,
+          "extreme": true
+        },
+        "residual": -1.0,
+        "scores": {
+          "exact": -9.272832677025862,
+          "fp32_fd": -9.43552148808682,
+          "bf16_fd": -5.2760517057944405
+        },
+        "weights_fp32": {
+          "exact": 8.290482558272194e-13,
+          "fp32_fd": 5.088798306351894e-13,
+          "bf16_fd": 1.3363478501560166e-07,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 86,
+        "token_id": 1447,
+        "selection_strata": {
+          "random": false,
+          "extreme": true
+        },
+        "residual": -1.0,
+        "scores": {
+          "exact": 20.407842944783994,
+          "fp32_fd": 20.323575736489364,
+          "bf16_fd": 10.692727942422529
+        },
+        "weights_fp32": {
+          "exact": 1.0,
+          "fp32_fd": 1.0,
+          "bf16_fd": 1.0,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 191,
+        "token_id": 400,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": -0.5650707185268402,
+        "scores": {
+          "exact": 0.16723668099186914,
+          "fp32_fd": 0.20413759449026758,
+          "bf16_fd": -0.9342966022823121
+        },
+        "weights_fp32": {
+          "exact": 0.6228610873222351,
+          "fp32_fd": 0.6484909653663635,
+          "bf16_fd": 0.05716821551322937,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 198,
+        "token_id": 17,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": 0.026516124606132507,
+        "scores": {
+          "exact": 0.38990518326939566,
+          "fp32_fd": 0.394866874941186,
+          "bf16_fd": 0.07547657153447304
+        },
+        "weights_fp32": {
+          "exact": 0.7630935907363892,
+          "fp32_fd": 0.7657740116119385,
+          "bf16_fd": 0.5563668012619019,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 200,
+        "token_id": 1124,
+        "selection_strata": {
+          "random": false,
+          "extreme": true
+        },
+        "residual": -1.0,
+        "scores": {
+          "exact": -89.2240376918404,
+          "fp32_fd": -89.81720193997421,
+          "bf16_fd": -30.553245754137503
+        },
+        "weights_fp32": {
+          "exact": 0.0,
+          "fp32_fd": 0.0,
+          "bf16_fd": 1.5584120481449156e-40,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 260,
+        "token_id": 1959,
+        "selection_strata": {
+          "random": false,
+          "extreme": true
+        },
+        "residual": -1.0,
+        "scores": {
+          "exact": -15.83842904829109,
+          "fp32_fd": -15.87917609085263,
+          "bf16_fd": -7.492964074507742
+        },
+        "weights_fp32": {
+          "exact": 2.3140512941593413e-21,
+          "fp32_fd": 2.0477849649837544e-21,
+          "bf16_fd": 1.7279896957766994e-10,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 282,
+        "token_id": 2390,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": 0.00023892673198133707,
+        "scores": {
+          "exact": 4.6764382101202285e-07,
+          "fp32_fd": 4.905432222444051e-07,
+          "bf16_fd": 8.958148760541846e-07
+        },
+        "weights_fp32": {
+          "exact": 0.5000003576278687,
+          "fp32_fd": 0.5000003576278687,
+          "bf16_fd": 0.5000006556510925,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 332,
+        "token_id": 400,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": -0.020977468346245587,
+        "scores": {
+          "exact": -0.00028821108954733707,
+          "fp32_fd": -0.00030686398234569225,
+          "bf16_fd": -0.0004962652683134567
+        },
+        "weights_fp32": {
+          "exact": 0.49978384375572205,
+          "fp32_fd": 0.4997698664665222,
+          "bf16_fd": 0.4996277987957001,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 418,
+        "token_id": 5116,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": 0.08537042140960693,
+        "scores": {
+          "exact": -0.22047959590989613,
+          "fp32_fd": -0.23075471600893047,
+          "bf16_fd": -0.004012965656418134
+        },
+        "weights_fp32": {
+          "exact": 0.34041649103164673,
+          "fp32_fd": 0.33352959156036377,
+          "bf16_fd": 0.4969903230667114,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 423,
+        "token_id": 354,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": 6.126950756879523e-05,
+        "scores": {
+          "exact": -1.3615909002686464e-08,
+          "fp32_fd": -1.3399661626784086e-08,
+          "bf16_fd": 5.8419722119850815e-08
+        },
+        "weights_fp32": {
+          "exact": 0.5,
+          "fp32_fd": 0.5,
+          "bf16_fd": 0.5000000596046448,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 432,
+        "token_id": 11778,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": 0.06322169303894043,
+        "scores": {
+          "exact": 0.6989841475864168,
+          "fp32_fd": 0.6935925270229468,
+          "bf16_fd": 0.6364205263493351
+        },
+        "weights_fp32": {
+          "exact": 0.8906066417694092,
+          "fp32_fd": 0.8890208005905151,
+          "bf16_fd": 0.8709361553192139,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 436,
+        "token_id": 14085,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": -1.0,
+        "scores": {
+          "exact": -3.6013738955580377,
+          "fp32_fd": -3.675419112594264,
+          "bf16_fd": 0.9041915188458333
+        },
+        "weights_fp32": {
+          "exact": 2.0315183064667508e-05,
+          "fp32_fd": 1.6268601029878482e-05,
+          "bf16_fd": 0.937764585018158,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 441,
+        "token_id": 18,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": 0.0,
+        "scores": {
+          "exact": 0.0,
+          "fp32_fd": 0.0,
+          "bf16_fd": 0.0
+        },
+        "weights_fp32": {
+          "exact": 0.5,
+          "fp32_fd": 0.5,
+          "bf16_fd": 0.5,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 465,
+        "token_id": 2493,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": 0.0,
+        "scores": {
+          "exact": -0.0,
+          "fp32_fd": 0.0,
+          "bf16_fd": 0.0
+        },
+        "weights_fp32": {
+          "exact": 0.5,
+          "fp32_fd": 0.5,
+          "bf16_fd": 0.5,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 466,
+        "token_id": 62,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": 0.0,
+        "scores": {
+          "exact": -0.0,
+          "fp32_fd": 0.0,
+          "bf16_fd": 0.0
+        },
+        "weights_fp32": {
+          "exact": 0.5,
+          "fp32_fd": 0.5,
+          "bf16_fd": 0.5,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 469,
+        "token_id": 61,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": 0.0,
+        "scores": {
+          "exact": -0.0,
+          "fp32_fd": 0.0,
+          "bf16_fd": 0.0
+        },
+        "weights_fp32": {
+          "exact": 0.5,
+          "fp32_fd": 0.5,
+          "bf16_fd": 0.5,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 498,
+        "token_id": 25521,
+        "selection_strata": {
+          "random": false,
+          "extreme": true
+        },
+        "residual": -1.0,
+        "scores": {
+          "exact": -20.338468225068272,
+          "fp32_fd": -20.521763717841054,
+          "bf16_fd": -5.584298476522014
+        },
+        "weights_fp32": {
+          "exact": 3.1720969445201692e-27,
+          "fp32_fd": 1.8303483523632306e-27,
+          "bf16_fd": 5.300415750753018e-08,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 501,
+        "token_id": 21806,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": -0.0008152866230375366,
+        "scores": {
+          "exact": -1.1900470133788336e-06,
+          "fp32_fd": -1.0321304770511173e-06,
+          "bf16_fd": -9.567645565513143e-07
+        },
+        "weights_fp32": {
+          "exact": 0.49999910593032837,
+          "fp32_fd": 0.4999992251396179,
+          "bf16_fd": 0.4999992847442627,
+          "unweighted": 1.0
+        }
+      },
+      {
+        "position": 510,
+        "token_id": 90,
+        "selection_strata": {
+          "random": true,
+          "extreme": false
+        },
+        "residual": 0.0,
+        "scores": {
+          "exact": -0.0,
+          "fp32_fd": -0.0,
+          "bf16_fd": 0.0
+        },
+        "weights_fp32": {
+          "exact": 0.5,
+          "fp32_fd": 0.5,
+          "bf16_fd": 0.5,
+          "unweighted": 1.0
+        }
+      }
+    ]
+  },
+  "metrics": {
+    "exact": {
+      "gradient_norm": 774.5671755807815,
+      "reference_exact_weighted_gradient_norm": 774.5671755807815,
+      "dot_with_exact_weighted": 599954.3094871892,
+      "absolute_l2_vs_exact_weighted": 0.0,
+      "relative_l2_vs_exact_weighted": 0.0,
+      "cosine_to_exact_weighted": 1.0,
+      "zero_reference_gradient": false,
+      "zero_candidate_gradient": false,
+      "weight_mae_vs_exact": 0.0,
+      "weight_max_abs_error_vs_exact": 0.0,
+      "mean_weight": 0.4632979929447174,
+      "objective_value": 2.472541093826294,
+      "backward_calls": 1,
+      "elapsed_seconds": 45.576799361006124,
+      "peak_allocated_gpu_bytes": 35543614464,
+      "unused_parameter_tensors": 0
+    },
+    "fp32_fd": {
+      "gradient_norm": 774.5627204776345,
+      "reference_exact_weighted_gradient_norm": 774.5671755807815,
+      "dot_with_exact_weighted": 599949.8890453336,
+      "absolute_l2_vs_exact_weighted": 1.3926055563215451,
+      "relative_l2_vs_exact_weighted": 0.0017979145001559738,
+      "cosine_to_exact_weighted": 0.9999983837589697,
+      "zero_reference_gradient": false,
+      "zero_candidate_gradient": false,
+      "weight_mae_vs_exact": 0.0015336830401793122,
+      "weight_max_abs_error_vs_exact": 0.025629878044128418,
+      "mean_weight": 0.46412408351898193,
+      "objective_value": 2.476728677749634,
+      "backward_calls": 1,
+      "elapsed_seconds": 17.788721318996977,
+      "peak_allocated_gpu_bytes": 35541081088,
+      "unused_parameter_tensors": 0
+    },
+    "bf16_fd": {
+      "gradient_norm": 868.4609197766248,
+      "reference_exact_weighted_gradient_norm": 774.5671755807815,
+      "dot_with_exact_weighted": 602846.451959984,
+      "absolute_l2_vs_exact_weighted": 385.338519676508,
+      "relative_l2_vs_exact_weighted": 0.49748883224695867,
+      "cosine_to_exact_weighted": 0.8961843186106282,
+      "zero_reference_gradient": false,
+      "zero_candidate_gradient": false,
+      "weight_mae_vs_exact": 0.07864957302808762,
+      "weight_max_abs_error_vs_exact": 0.9377442598342896,
+      "mean_weight": 0.4758416712284088,
+      "objective_value": 4.093687057495117,
+      "backward_calls": 1,
+      "elapsed_seconds": 17.478909654018935,
+      "peak_allocated_gpu_bytes": 35541081088,
+      "unused_parameter_tensors": 0
+    },
+    "unweighted": {
+      "gradient_norm": 1487.5287799497398,
+      "reference_exact_weighted_gradient_norm": 774.5671755807815,
+      "dot_with_exact_weighted": 643181.3019475314,
+      "absolute_l2_vs_exact_weighted": 1235.4487349829176,
+      "relative_l2_vs_exact_weighted": 1.5950181907160739,
+      "cosine_to_exact_weighted": 0.5582245661573075,
+      "zero_reference_gradient": false,
+      "zero_candidate_gradient": false,
+      "weight_mae_vs_exact": 0.536702036857605,
+      "weight_max_abs_error_vs_exact": 1.0,
+      "mean_weight": 1.0,
+      "objective_value": 9.639742851257324,
+      "backward_calls": 1,
+      "elapsed_seconds": 17.587065613013692,
+      "peak_allocated_gpu_bytes": 35541081088,
+      "unused_parameter_tensors": 0
+    }
+  },
+  "parameter_restoration": {
+    "before_sha256": "025ab09242500c3d50a50606bebfac833ae3166c06cd3fd86d2f2de6594e3647",
+    "after_sha256": "025ab09242500c3d50a50606bebfac833ae3166c06cd3fd86d2f2de6594e3647",
+    "exact_bytes_equal": true,
+    "storage_and_versions_unchanged": true
+  },
+  "elapsed_seconds": 166.95418743399205,
+  "limitations": [
+    "Selected audited token subset only; no estimate of whole-response or full-minibatch gradient",
+    "Gradient sum only; no AdamW preconditioning, optimizer momentum, clipping, PPO ratio, or loss reduction from trainer",
+    "Fixed weights and residuals; no differentiation through score or sigmoid; no model update or accuracy claim",
+    "All gradient recipes use FP32 target backward; FD precision changes only frozen token weights"
+  ]
+}

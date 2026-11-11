@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "eval-sandbox-api",
+  "title": "评测沙箱 · 初次传输检查",
+  "kind": "validation",
+  "created_at": "2026-10-30T18:05:39.096696+00:00",
+  "status": "failed",
+  "parameters": {},
+  "results": {},
+  "notes": "Docker API cp 在 rootless UID 映射下失败。保留原始错误，后续 native copy 验证单独记录。",
+  "tags": [],
+  "sources": {},
+  "artifacts": [
+    {
+      "label": "原始结果",
+      "path": "eval/smoke/results/sandbox-check-1030/result.json"
+    }
+  ]
+}

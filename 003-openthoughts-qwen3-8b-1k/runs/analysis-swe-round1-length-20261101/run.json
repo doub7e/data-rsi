@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "analysis-swe-round1-length-20261101",
+  "title": "SWE第一轮 · 轨迹长度分布",
+  "kind": "analysis",
+  "created_at": "2026-11-01T00:30:52.886614+00:00",
+  "status": "succeeded",
+  "parameters": {
+    "evaluation_run": "eval-native-1k-20261031",
+    "benchmark": "swebench100",
+    "repeat": 1,
+    "final_attempt_only": true
+  },
+  "results": {
+    "tasks": 100,
+    "median_turns": 129.0,
+    "p90_turns": 845.300000000001,
+    "median_output_tokens": 54426.5,
+    "p90_output_tokens": 283620.70000000036,
+    "total_output_tokens": 10316201,
+    "summarization_tasks": 88
+  },
+  "sources": {
+    "status": "runs/analysis-swe-round1-length-20261101/state.json"
+  },
+  "notes": "统计100个任务最终尝试；累计输出含摘要调用，不重复加总续段的累计指标。 分组为正常通过30、正常未通过53、超时17；超时中2例验证reward=1，避免把执行状态和验证结果混为一谈。",
+  "artifacts": [
+    {
+      "label": "长度分布统计",
+      "path": "runs/analysis-swe-round1-length-20261101/result.json"
+    },
+    {
+      "label": "长度分布图",
+      "path": "runs/analysis-swe-round1-length-20261101/length-distribution.png"
+    },
+    {
+      "label": "图表PDF",
+      "path": "runs/analysis-swe-round1-length-20261101/length-distribution.pdf"
+    },
+    {
+      "label": "逐任务数据",
+      "path": "runs/analysis-swe-round1-length-20261101/per-task.csv"
+    },
+    {
+      "label": "训练长度与评测重复行为核查",
+      "path": "runs/analysis-swe-round1-length-20261101/behavior-check.json"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "center-audit-aux-homotopy",
+  "title": "FD可靠性 · 同一训练后master · BF16格点中心敏感性",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T02:23:13.632231+00:00",
+  "updated_at": "2026-11-08T02:23:13.632241+00:00",
+  "parameters": {
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+    "source_audit": "audit-aux-homotopy",
+    "scope": "same aux checkpoint, fixed A1024 direction/target/residual; original versus BF16-rounded center, own-center exact references",
+    "new_rollouts": 0,
+    "purpose": "isolate center/grid sensitivity without confounding checkpoint/prompt/direction differences"
+  },
+  "sources": {
+    "status": "runs/center-audit-aux-homotopy/state.json",
+    "progress": "runs/center-audit-aux-homotopy/progress.json",
+    "results": "runs/center-audit-aux-homotopy/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "中心敏感性结果",
+      "path": "runs/center-audit-aux-homotopy/result.json"
+    },
+    {
+      "label": "逐方法对照",
+      "path": "runs/center-audit-aux-homotopy/report/summary.json"
+    },
+    {
+      "label": "两中心exact变化",
+      "path": "runs/center-audit-aux-homotopy/cross_center_exact.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-center-aux-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "top100": {
+    "step": 126,
+    "epoch": 2.0,
+    "samples": 1999,
+    "weight_tensors": 398,
+    "weight_shards": 4
+  },
+  "bottom100": {
+    "step": 104,
+    "epoch": 2.0,
+    "samples": 1634,
+    "weight_tensors": 398,
+    "weight_shards": 4
+  },
+  "random100": {
+    "step": 116,
+    "epoch": 2.0,
+    "samples": 1853,
+    "weight_tensors": 398,
+    "weight_shards": 4
+  },
+  "data": {
+    "candidate_count": 200,
+    "original100_included": true,
+    "validation_overlap": 0,
+    "disjoint_groups": true,
+    "ranking_matches": true
+  },
+  "gradient_files": "Both full-parameter probe shards match their original SHA256 manifests",
+  "finite_difference": {
+    "timing": "post-hoc completion audit; original pre-scoring checks were autograd equivalence and descent/sign checks",
+    "epsilon": 0.001,
+    "analytic_directional_derivative": 2.6220466454486715,
+    "central_difference": 2.6221275329589844,
+    "relative_error": 3.084899746283344e-05,
+    "reference_checks": {
+      "standard_loss": 4.850480556488037,
+      "custom_loss": 4.850480556488037,
+      "post_sgd_loss": 4.834413528442383,
+      "max_gradient_error": 1.043081283569336e-07,
+      "supervised_tokens": 6,
+      "variable_turn_token_normalization_error": 5.960464477539063e-08
+    }
+  },
+  "probe": {
+    "scorer_replays": 8,
+    "rollouts": 256,
+    "advantage_centering_verified": true,
+    "sampling_and_token_capture_verified": true
+  },
+  "evaluation": {
+    "model_scorer_replays": 9,
+    "verified_model_trials": 7200,
+    "heldout_tasks": 768,
+    "probe_ids_excluded": 32,
+    "means_and_bootstrap_recomputed": true
+  },
+  "metrics": {
+    "audited_model_trials": 7200,
+    "audited_probe_rollouts": 256,
+    "heldout_tasks": 768
+  },
+  "finished_at": "2026-11-03T07:52:23.590607+00:00",
+  "protocol_timing_deviation": "Finite-difference validation was completed post hoc, not before scoring. Pre-scoring gradient-equivalence and descent/sign checks existed; no ranking or model was changed by this audit."
+}

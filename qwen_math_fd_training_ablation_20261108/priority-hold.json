@@ -1,0 +1,7 @@
+{
+  "at": "2026-11-09T18:38:09.917472+00:00",
+  "reason": "User requested20stepFP32Richardson ahead of all otherFD experiments",
+  "priority_experiment": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109",
+  "preserved_plan": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/revisions/priority20-20261109/dispatch-plan-before.json",
+  "resume_condition": "priority experiment summary succeeded; then explicit queue review"
+}

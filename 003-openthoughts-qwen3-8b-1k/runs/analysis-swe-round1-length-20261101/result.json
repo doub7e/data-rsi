@@ -1,0 +1,896 @@
+{
+  "created_at": "2026-11-01T00:31:50.399760+00:00",
+  "tasks": 100,
+  "outcomes": {
+    "passed": 30,
+    "not_passed": 53,
+    "timeout": 17
+  },
+  "verifier_passed_tasks": 32,
+  "timeout_with_verifier_pass": 2,
+  "definition": {
+    "outcome": "Disjoint execution groups: timeout takes priority over verifier reward; two timeout trials nevertheless received verifier reward 1.",
+    "agent_turns": "Harbor agent_result.metadata.n_episodes: agent loop iterations; not all are successful model replies.",
+    "output_tokens": "Harbor final agent_result.n_output_tokens; cumulative generated tokens including summarization subcalls, across continuation segments, final attempt only.",
+    "input_tokens": "Sum of prompt tokens over API calls, including repeated history; NOT unique transcript size or context-window length.",
+    "selection": "Exactly 100 final trial attempts; historical retries and archived recovery attempts excluded.",
+    "quantiles": "Linear interpolation at (n-1)*q."
+  },
+  "statistics": {
+    "all": {
+      "agent_turns": {
+        "n": 100,
+        "sum": 29844,
+        "min": 8,
+        "mean": 298.44,
+        "p25": 68.5,
+        "median": 129.0,
+        "p75": 341.75,
+        "p90": 845.300000000001,
+        "p95": 1020.0,
+        "max": 1761
+      },
+      "output_tokens": {
+        "n": 100,
+        "sum": 10316201,
+        "min": 2881,
+        "mean": 103162.01,
+        "p25": 25173.5,
+        "median": 54426.5,
+        "p75": 109090.25,
+        "p90": 283620.70000000036,
+        "p95": 395331.0,
+        "max": 553363
+      },
+      "input_tokens": {
+        "n": 100,
+        "sum": 541891781,
+        "min": 49552,
+        "mean": 5418917.81,
+        "p25": 1161172.0,
+        "median": 2359174.5,
+        "p75": 6391621.75,
+        "p90": 15613348.700000005,
+        "p95": 18557193.149999995,
+        "max": 33331645
+      },
+      "summarizations": {
+        "n": 100,
+        "sum": 863,
+        "min": 0,
+        "mean": 8.63,
+        "p25": 1.75,
+        "median": 4.5,
+        "p75": 10.25,
+        "p90": 25.200000000000017,
+        "p95": 35.0,
+        "max": 47
+      },
+      "agent_seconds": {
+        "n": 100,
+        "sum": 216487.500057,
+        "min": 27.825466,
+        "mean": 2164.87500057,
+        "p25": 546.872623,
+        "median": 1051.9796905,
+        "p75": 3741.4951712499997,
+        "p90": 6000.004844,
+        "p95": 6000.00799355,
+        "max": 6001.742488
+      }
+    },
+    "not_passed": {
+      "agent_turns": {
+        "n": 53,
+        "sum": 14316,
+        "min": 16,
+        "mean": 270.1132075471698,
+        "p25": 65,
+        "median": 146,
+        "p75": 282,
+        "p90": 716.6000000000006,
+        "p95": 979.1999999999999,
+        "max": 1680
+      },
+      "output_tokens": {
+        "n": 53,
+        "sum": 4838349,
+        "min": 4448,
+        "mean": 91289.60377358491,
+        "p25": 27508,
+        "median": 57348,
+        "p75": 102238,
+        "p90": 228862.80000000008,
+        "p95": 286524.39999999985,
+        "max": 440106
+      },
+      "input_tokens": {
+        "n": 53,
+        "sum": 263230518,
+        "min": 160240,
+        "mean": 4966613.547169811,
+        "p25": 1198209,
+        "median": 2535848,
+        "p75": 4827728,
+        "p90": 13141059.400000006,
+        "p95": 17741178.599999998,
+        "max": 33331645
+      },
+      "summarizations": {
+        "n": 53,
+        "sum": 407,
+        "min": 0,
+        "mean": 7.679245283018868,
+        "p25": 2,
+        "median": 5,
+        "p75": 8,
+        "p90": 19.800000000000004,
+        "p95": 24.4,
+        "max": 47
+      },
+      "agent_seconds": {
+        "n": 53,
+        "sum": 90582.467443,
+        "min": 81.412185,
+        "mean": 1709.1031593018868,
+        "p25": 616.752754,
+        "median": 1145.405179,
+        "p75": 2290.34364,
+        "p90": 4020.9584244000002,
+        "p95": 4348.444154,
+        "max": 5743.632243
+      }
+    },
+    "passed": {
+      "agent_turns": {
+        "n": 30,
+        "sum": 2978,
+        "min": 8,
+        "mean": 99.26666666666667,
+        "p25": 49.5,
+        "median": 75.0,
+        "p75": 121.25,
+        "p90": 217.00000000000003,
+        "p95": 279.74999999999983,
+        "max": 309
+      },
+      "output_tokens": {
+        "n": 30,
+        "sum": 1089041,
+        "min": 2881,
+        "mean": 36301.36666666667,
+        "p25": 18485.75,
+        "median": 30324.5,
+        "p75": 35757.25,
+        "p90": 72568.70000000004,
+        "p95": 101343.0,
+        "max": 125839
+      },
+      "input_tokens": {
+        "n": 30,
+        "sum": 49863580,
+        "min": 49552,
+        "mean": 1662119.3333333333,
+        "p25": 791322.25,
+        "median": 1304783.0,
+        "p75": 2175481.25,
+        "p90": 3090632.5000000023,
+        "p95": 4912010.449999998,
+        "max": 5366743
+      },
+      "summarizations": {
+        "n": 30,
+        "sum": 81,
+        "min": 0,
+        "mean": 2.7,
+        "p25": 1.0,
+        "median": 2.0,
+        "p75": 3.0,
+        "p90": 6.300000000000004,
+        "p95": 10.099999999999994,
+        "max": 12
+      },
+      "agent_seconds": {
+        "n": 30,
+        "sum": 23902.119709,
+        "min": 27.825466,
+        "mean": 796.7373236333333,
+        "p25": 345.9037555,
+        "median": 550.9210145,
+        "p75": 838.3633652499999,
+        "p90": 1871.9875913000003,
+        "p95": 2427.1664030499987,
+        "max": 3504.480802
+      }
+    },
+    "timeout": {
+      "agent_turns": {
+        "n": 17,
+        "sum": 12550,
+        "min": 126,
+        "mean": 738.2352941176471,
+        "p25": 494,
+        "median": 742,
+        "p75": 971,
+        "p90": 1079.6000000000001,
+        "p95": 1287.3999999999996,
+        "max": 1761
+      },
+      "output_tokens": {
+        "n": 17,
+        "sum": 4388811,
+        "min": 19239,
+        "mean": 258165.35294117648,
+        "p25": 137249,
+        "median": 263172,
+        "p75": 380369,
+        "p90": 403836.0,
+        "p95": 438042.1999999999,
+        "max": 553363
+      },
+      "input_tokens": {
+        "n": 17,
+        "sum": 228797683,
+        "min": 2839085,
+        "mean": 13458687.235294119,
+        "p25": 9135780,
+        "median": 13539505,
+        "p75": 16974951,
+        "p90": 20352353.200000003,
+        "p95": 23556028.599999994,
+        "max": 31750315
+      },
+      "summarizations": {
+        "n": 17,
+        "sum": 375,
+        "min": 2,
+        "mean": 22.058823529411764,
+        "p25": 11,
+        "median": 25,
+        "p75": 34,
+        "p90": 35.0,
+        "p95": 35.2,
+        "max": 36
+      },
+      "agent_seconds": {
+        "n": 17,
+        "sum": 102002.912905,
+        "min": 6000.000952,
+        "mean": 6000.171347352941,
+        "p25": 6000.002951,
+        "median": 6000.005341,
+        "p75": 6000.01587,
+        "p90": 6000.502461,
+        "p95": 6000.942960799999,
+        "max": 6001.742488
+      }
+    }
+  },
+  "histograms": {
+    "turns": [
+      {
+        "lower_inclusive": 0,
+        "upper_exclusive": 20,
+        "count": 6,
+        "passed": 3
+      },
+      {
+        "lower_inclusive": 20,
+        "upper_exclusive": 50,
+        "count": 10,
+        "passed": 5
+      },
+      {
+        "lower_inclusive": 50,
+        "upper_exclusive": 100,
+        "count": 23,
+        "passed": 12
+      },
+      {
+        "lower_inclusive": 100,
+        "upper_exclusive": 200,
+        "count": 20,
+        "passed": 6
+      },
+      {
+        "lower_inclusive": 200,
+        "upper_exclusive": 400,
+        "count": 17,
+        "passed": 4
+      },
+      {
+        "lower_inclusive": 400,
+        "upper_exclusive": 800,
+        "count": 11,
+        "passed": 0
+      },
+      {
+        "lower_inclusive": 800,
+        "upper_exclusive": null,
+        "count": 13,
+        "passed": 0
+      }
+    ],
+    "output_tokens": [
+      {
+        "lower_inclusive": 0,
+        "upper_exclusive": 8192,
+        "count": 10,
+        "passed": 4
+      },
+      {
+        "lower_inclusive": 8192,
+        "upper_exclusive": 16384,
+        "count": 5,
+        "passed": 2
+      },
+      {
+        "lower_inclusive": 16384,
+        "upper_exclusive": 32768,
+        "count": 20,
+        "passed": 13
+      },
+      {
+        "lower_inclusive": 32768,
+        "upper_exclusive": 65536,
+        "count": 23,
+        "passed": 6
+      },
+      {
+        "lower_inclusive": 65536,
+        "upper_exclusive": 131072,
+        "count": 19,
+        "passed": 5
+      },
+      {
+        "lower_inclusive": 131072,
+        "upper_exclusive": 262144,
+        "count": 11,
+        "passed": 0
+      },
+      {
+        "lower_inclusive": 262144,
+        "upper_exclusive": null,
+        "count": 12,
+        "passed": 0
+      }
+    ]
+  },
+  "summarization_tasks": 88,
+  "output_over_32k": 65,
+  "top10_output_share": 0.3903838244330447,
+  "top10_longest": [
+    {
+      "task": "django__django-11477",
+      "trial": "django__django-11477__FDLAzP2",
+      "attempt": "001",
+      "outcome": "timeout",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "agent_turns": 1761,
+      "output_tokens": 553363,
+      "input_tokens": 31750315,
+      "summarizations": 36,
+      "agent_seconds": 6000.002671
+    },
+    {
+      "task": "pydata__xarray-4687",
+      "trial": "pydata__xarray-4687__ZQwN4Bv",
+      "attempt": "001",
+      "outcome": "not_passed",
+      "reward": 0.0,
+      "exception": null,
+      "agent_turns": 1680,
+      "output_tokens": 440106,
+      "input_tokens": 33331645,
+      "summarizations": 41,
+      "agent_seconds": 5743.632243
+    },
+    {
+      "task": "pytest-dev__pytest-7521",
+      "trial": "pytest-dev__pytest-7521__3LHjXFr",
+      "attempt": "001",
+      "outcome": "not_passed",
+      "reward": 0.0,
+      "exception": null,
+      "agent_turns": 1171,
+      "output_tokens": 423009,
+      "input_tokens": 22679514,
+      "summarizations": 47,
+      "agent_seconds": 5679.134159
+    },
+    {
+      "task": "sphinx-doc__sphinx-9230",
+      "trial": "sphinx-doc__sphinx-9230__qe9nQ7K",
+      "attempt": "000",
+      "outcome": "timeout",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "agent_turns": 1169,
+      "output_tokens": 409212,
+      "input_tokens": 21507457,
+      "summarizations": 35,
+      "agent_seconds": 6000.004276
+    },
+    {
+      "task": "pytest-dev__pytest-7324",
+      "trial": "pytest-dev__pytest-7324__aBLVNb3",
+      "attempt": "000",
+      "outcome": "timeout",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "agent_turns": 981,
+      "output_tokens": 400252,
+      "input_tokens": 16974951,
+      "summarizations": 27,
+      "agent_seconds": 6000.342049
+    },
+    {
+      "task": "django__django-11728",
+      "trial": "django__django-11728__2NPMim6",
+      "attempt": "001",
+      "outcome": "timeout",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "agent_turns": 1020,
+      "output_tokens": 395072,
+      "input_tokens": 17826501,
+      "summarizations": 34,
+      "agent_seconds": 6000.000952
+    },
+    {
+      "task": "sympy__sympy-19495",
+      "trial": "sympy__sympy-19495__iVyb2z3",
+      "attempt": "000",
+      "outcome": "timeout",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "agent_turns": 805,
+      "output_tokens": 380369,
+      "input_tokens": 14702384,
+      "summarizations": 35,
+      "agent_seconds": 6000.001175
+    },
+    {
+      "task": "astropy__astropy-14369",
+      "trial": "astropy__astropy-14369__ZbBwqQz",
+      "attempt": "001",
+      "outcome": "not_passed",
+      "reward": 0.0,
+      "exception": null,
+      "agent_turns": 952,
+      "output_tokens": 358936,
+      "input_tokens": 17233137,
+      "summarizations": 24,
+      "agent_seconds": 4422.002402
+    },
+    {
+      "task": "matplotlib__matplotlib-24870",
+      "trial": "matplotlib__matplotlib-24870__ZhAeGPa",
+      "attempt": "001",
+      "outcome": "timeout",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "agent_turns": 694,
+      "output_tokens": 347107,
+      "input_tokens": 13539505,
+      "summarizations": 30,
+      "agent_seconds": 6000.006601
+    },
+    {
+      "task": "sympy__sympy-23413",
+      "trial": "sympy__sympy-23413__2BWQupQ",
+      "attempt": "001",
+      "outcome": "timeout",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "agent_turns": 810,
+      "output_tokens": 319852,
+      "input_tokens": 14455897,
+      "summarizations": 35,
+      "agent_seconds": 6000.006131
+    }
+  ],
+  "inputs": [
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/astropy__astropy-13236__ctgfEL3/result.json",
+      "sha256": "7c7d5cab703ed7afed2bdce8e5ac0d560a1141f2d96723f6d96c44bfb477d5ca"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/astropy__astropy-14369__ZbBwqQz/result.json",
+      "sha256": "b4dcaacc2c85c3faadd2066987fd82a00df22ae8138e37b47bf8b8dd7e853055"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/astropy__astropy-14508__gMyCXhD/result.json",
+      "sha256": "02f693ca89e7fae176ce8e1c2bb8c035923b0059dc8027160601046c49d5ae7f"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/astropy__astropy-14598__5YP3MiU/result.json",
+      "sha256": "184adb85d09f02823755b1bd01acf027af166d4f6ff0d0869c2a0ad8b0368494"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/astropy__astropy-14995__YR82Xm4/result.json",
+      "sha256": "da912b8e2a37a8d521b6a9b0d3785a3401effe041862a013c5aaf3e096ef9727"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/astropy__astropy-8872__BthBjxx/result.json",
+      "sha256": "d4d470716dc15c965c7e4119065773a949790d089a0eb714e41bbcbf05d43542"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-10097__6sn5GZM/result.json",
+      "sha256": "331b650fa13e228e42224e48a17230de8f15e1be093253a541ff853b77698758"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-11138__rE4mDcX/result.json",
+      "sha256": "b10b1722a7cf47e20feb29834860802011a664ab8a916a63859d571c155d33ce"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-11141__mDEoQgt/result.json",
+      "sha256": "bdeb62ee0d009be3eb32d8dec954f36f50bd6f9de94692b7c12f5bc93981f62c"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-11206__FGb6quv/result.json",
+      "sha256": "8810a4cecf493c0e09ba0c93d92597e13d4997c93fd1d547ad912e1b468a3ece"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-11276__8xo63Ti/result.json",
+      "sha256": "a1455616c0bc470919d0839a24397b5622ed88a3cceebd5490a37f5fbf1a24ba"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-11333__6dhWizo/result.json",
+      "sha256": "c3bb8d4de91fe600f8fc715e8e3e57b199255e113a561dc76334e7c304ec40a7"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-11433__rLgog5w/result.json",
+      "sha256": "830f67376f6cdbf378d07bc28a6434a68f780ece594fcedbebac86e2a3f33c69"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-11477__FDLAzP2/result.json",
+      "sha256": "3145342281a84e58fedbe0f7fe35aa6f3f8f7ed6e48c301d50d0f8bef6ba584e"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-11490__NRDWija/result.json",
+      "sha256": "3a2cf2ba0823a7164f0b7caa3eeb0d6381f37b6433ccc82281367430985335fc"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-11728__2NPMim6/result.json",
+      "sha256": "a31d2c09115239475eff7ee6d99dcd334f14996ff7849b2445a4170af4e69835"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-11820__TPWpYVP/result.json",
+      "sha256": "ea0f2370f2612037597c64e16b0513b62d90478fe2b173f7d73175693b15f0be"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-12050__HnAijUv/result.json",
+      "sha256": "39f7a945eba3c6f0c64ce7bf22aaa035e418d162d65a766e59cd1cde5bd5268e"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-12276__GX3MGkq/result.json",
+      "sha256": "ef12a14f2a4ba014c2a8dcc9fcdf7a3c0bce3ee6f073c9cc74e3fbd9daf2003e"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-12308__e9ADDaV/result.json",
+      "sha256": "0ba12ad85a293a9aba428e7c06e6e8fc9feec31e7b3af3bd29e7e16dbdd5508e"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-12406__hE3BVEu/result.json",
+      "sha256": "70c04479b0c79a5e9c678cd41f5523a1ba046adc54c1199d19a45acfa13267a3"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-13109__6BksPaj/result.json",
+      "sha256": "dfba1533c1a2c05b5adae12c6917ef76164f5a408f0b05b261c1ac76b45b2c26"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-13128__JzLoG7V/result.json",
+      "sha256": "af398214c6c43a73e963d1ac03bfa74792bdccf0be75656847c594038ad2a43d"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-13315__eLPW8Sd/result.json",
+      "sha256": "c6ef556afe877215a79381b74afcf9a5512261b31c9246d27a8aec5a8b24ed4d"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-13346__3st3PKt/result.json",
+      "sha256": "7c130991eb4a399b9161fd6ccf1f3072903e1be5aa8ceea8ee380f369ad4acb3"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-13363__3ASS4Q7/result.json",
+      "sha256": "7d80f7ebfe52d6f1b8a331c3b3d978a24293f3b841fbf62ca82c941bcc1ce4d2"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-13401__mHcztUb/result.json",
+      "sha256": "12f349100c2030f8dcecdf570ea102e6b218cd096da5b01d2dc286cafe5b8f83"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-13410__q6tSq2D/result.json",
+      "sha256": "331f03c764ced9c82d413fa92061bee058ca492021a641ee6adfc31e5fc08742"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-13449__NF73Vad/result.json",
+      "sha256": "c78eb15ac554cf9652fac1595cb2f44c21e46d576f81698c9bff7316594cf1f9"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-13516__m2JETaV/result.json",
+      "sha256": "2606ab54ca36c61c72ef2903284d34445c3a29e18acf79be7e0558f11c23b997"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-13670__vYAymec/result.json",
+      "sha256": "3ee4d5e1de9b64ee6ed884e8891833ad78c3955440755765bc2264cea80a7b62"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-13925__LeJRHjM/result.json",
+      "sha256": "b450b3a408020e67381e24436928863e402c0867c5f8c41e7d6bac9c0c049717"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-13933__coxezBv/result.json",
+      "sha256": "c930aa1c48c473fec1d0d5003f6b33f726648c11193641e3d943aee345ce96de"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-14017__gbN6cAn/result.json",
+      "sha256": "62de3a084d2aa7457b865c6d4c5ee4ab5495a65f76e820462ecc4a8d81528e2d"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-14053__q3bDkeG/result.json",
+      "sha256": "140aeb661306ec465d3eab2b64a795134666f98befb3427ffdf1173dc86e45bc"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-14238__wHSQrdc/result.json",
+      "sha256": "b329866f8b312d327c8e96101c5fb826e50df0ac96551e38a8f202287093f4ce"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-14315__NGQTsHJ/result.json",
+      "sha256": "5c0f4a620dd51fcfe625912cd691f40fa4965ad4e35bd71e04815dffcbab3cab"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-14855__c4aLYiT/result.json",
+      "sha256": "8cf202f10281d73003184948acfb026673c7c2a9623ae9bde5141300879c1af6"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-14999__rf27QsE/result.json",
+      "sha256": "fb65775692b5703edfbad91c20836bb056189388ddbf3ccfaf8e9583eec161cb"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-15037__KshGSRM/result.json",
+      "sha256": "bda31c4d55bc4b1b9c8b99cc51c0c84e441874a9066e5299242af287894695cd"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-15128__vVDAUjz/result.json",
+      "sha256": "def730fd676e8def21c056915fbc71dd509b7b0cf88c25fb1c2b36d6f2e0f1e2"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-15252__RRtxuDF/result.json",
+      "sha256": "b268f846cf4171afc09c31046e7e4aa441e952ee322cd0af066b57b74c3864c4"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-15277__cDYXEtW/result.json",
+      "sha256": "df787283274f98ea54c40de61940f5513177ac72585fa0eaa0625d6905bc30b3"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-15278__idHsVFR/result.json",
+      "sha256": "99bad77a74e63362511a4311d1350efe1244877736ab1ee29bfeadfddcee0801"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-15368__bVmHsSR/result.json",
+      "sha256": "d9fcf0e9f66e01e7f7325a94d2547f430a8c55a34ca63400099facdc4fbc04c9"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-15467__XhWigM9/result.json",
+      "sha256": "61de9d8626c62463d76497aeef4ed73b73e674989ff3d84bfdcdc0bfc91dabc1"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-15499__3vJLg3o/result.json",
+      "sha256": "60e7f397d287824aec14ba4f89b862162f92ad9b8f06703b3b1789f011eea858"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-15987__tfz9BnG/result.json",
+      "sha256": "0e981e5dd97ddbfd5daafc9d30ef0268f008217227adac4b58e86300c4740775"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-16082__8ttSoDG/result.json",
+      "sha256": "d45caa79b747237d2e91fa9bca7d2ebda895c530a4434a9d0c2715a4a25ba1d7"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-16485__cXnGke2/result.json",
+      "sha256": "e2a29f7604009f376e0f3fd81ed481ad01590ef2c92bd81caa76cac1b6f1b08e"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-16527__oKPs5Ge/result.json",
+      "sha256": "219ea34655c96848096a5db55e7cc4aeebed5daa8042f8385e6e5dbbcd7c8cd2"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/django__django-16595__JYujcz3/result.json",
+      "sha256": "e5261b13c78e0823b1d3555b877166257438fbb186e637408b28d8dab3635cc4"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/matplotlib__matplotlib-20826__YzH7cfD/result.json",
+      "sha256": "2db521746e9b69c6a30a2d8967d8a8e2ca1d33668ffec28bd0f53c7da46d309b"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/matplotlib__matplotlib-24870__ZhAeGPa/result.json",
+      "sha256": "ba4bb35a25c88aa33602997fc0241993e59502ce2d72d1a63f30e4b1b4954c4b"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/matplotlib__matplotlib-25332__hVm9xty/result.json",
+      "sha256": "fa30a69fc08e5be17e3ce1938a943fe7e2a2e20fa341a951f22fa062f1977f2f"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/matplotlib__matplotlib-25960__ybJTzrz/result.json",
+      "sha256": "304aaa8fa341c56d062a89127e6ac21735cabeeb23a2a92b55f020e7eef21efc"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/matplotlib__matplotlib-26466__qeencuG/result.json",
+      "sha256": "8a1cae04a2be4371464cc12f6b9a4d5b9489a8eb44a20dc2f95d0b35c356aa81"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/psf__requests-2317__uCGJeaq/result.json",
+      "sha256": "d944c35c1471be69f92c72080d5c3ed6a41358b2ad2654fd030859f42d59ca42"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/pydata__xarray-3151__Rv3ikJT/result.json",
+      "sha256": "16a04158f1f01c02f2413eecaaf649ae789b8bede4bf45ddb88c782a90452c2b"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/pydata__xarray-3305__HtpeTXZ/result.json",
+      "sha256": "b26704e88f310df0ec902b0cb539cc7395f064731a537d0eab4e66b0c1a82a10"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/pydata__xarray-4629__FoRFUA6/result.json",
+      "sha256": "5103d80a601c80e187113fac483d0ff5d0000e05f017c73daad8c4a9e1833dff"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/pydata__xarray-4687__ZQwN4Bv/result.json",
+      "sha256": "728a74a77d138b6fa1d9d105d2f477d4fdb0da01d8e22d91c892adac6594360f"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/pydata__xarray-6938__ZvNJ2HH/result.json",
+      "sha256": "030704af428ee3e88e64c2f56678499b455e6980a85268b80d31f83929e8fbfa"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/pylint-dev__pylint-4551__nNAEcNo/result.json",
+      "sha256": "d5394e2169ee6e0f42319b7a0a34bb7dcc38c59dac1503ae5f0e422c1e0c0eef"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/pylint-dev__pylint-6386__ooEv7hY/result.json",
+      "sha256": "84bc1f81ea0c7c8c43dd9eb0b0721463072d97463c13ccf03662ee2821de1e8f"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/pylint-dev__pylint-6903__LiLAVuE/result.json",
+      "sha256": "587092d4d8fd454850eeff96d0d97aaf9f54253116bd295496168f4c6dc94343"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/pytest-dev__pytest-10051__FxZZABi/result.json",
+      "sha256": "2002890013e4a25e0ac02fe251b8f7568ceef0541070b9874e2db558b60b86d6"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/pytest-dev__pytest-10081__hsJ6hSY/result.json",
+      "sha256": "4594260a237de399dad60e473334e8be2876254c4d4201266d90d1138eb78d87"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/pytest-dev__pytest-5840__uB79L2B/result.json",
+      "sha256": "5c5cc47bb4098eb43d3d803fba105d3fd5d62ff165a31cf7c36f54299c906592"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/pytest-dev__pytest-7324__aBLVNb3/result.json",
+      "sha256": "20ce834e169e3c42b7081697656c4288d0469c75cb447aaf8129314a25da065c"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/pytest-dev__pytest-7521__3LHjXFr/result.json",
+      "sha256": "1c469fadba6ff1e302d515f94575878f852264412b3036b96d07d58b3153580a"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/pytest-dev__pytest-8399__T4aJwzw/result.json",
+      "sha256": "c66554c81ddb9cf4eb8057da07cc33166d6a9b3be1a583890e30abd5af308c3c"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/scikit-learn__scikit-learn-12973__WVN2nUZ/result.json",
+      "sha256": "0f68db94e24cb2d1187c655296a5993ef72d24070a9e97f1ed50e5b16f151858"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/scikit-learn__scikit-learn-13135__XVCFgVU/result.json",
+      "sha256": "9bf1ce74059780f772b6f98479ee776d0642842f0f0f648d35f520f6ba9bb858"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/scikit-learn__scikit-learn-13142__RyqUmS9/result.json",
+      "sha256": "2146491a720348e546ab5f18e12fb84fc5ea9268f144385719e256f57c732546"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/scikit-learn__scikit-learn-14087__FVqKBha/result.json",
+      "sha256": "c601b16b128e24e72e9645dde211b388ea81ffd66fd1c13b32b160b3831f80ed"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/scikit-learn__scikit-learn-15100__avkkje4/result.json",
+      "sha256": "67c28959e1f39df16a8e6d8e6b30bca9dc2777cba682b6ce8c916f7afaf70312"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/scikit-learn__scikit-learn-25931__wT4N3Lb/result.json",
+      "sha256": "456b5a59313a88cc473674863801ff584b67eab417a8fae23f2117758e990c08"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/scikit-learn__scikit-learn-26194__7gyAQFw/result.json",
+      "sha256": "2e4acaa2af4120ccb48f6828ddd250a5c37db38ce88e6abd5da00810e506a5df"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sphinx-doc__sphinx-11445__dinKWwb/result.json",
+      "sha256": "56dcb2799acf67f1a302015e347c5dde740af6b97be59bed79445fc3da4fcf93"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sphinx-doc__sphinx-7440__chujH9R/result.json",
+      "sha256": "471ea5f42b2e5cc59a6892e71940425b4a37558b5264162082fb84d8e023011f"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sphinx-doc__sphinx-7757__DffpdFf/result.json",
+      "sha256": "f08e1b89efc90d5ad3f6a745b2caa0c6ad112b929eaee566215cbf3bee090e39"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sphinx-doc__sphinx-8721__SqGF2xj/result.json",
+      "sha256": "8ba2611fe616183bd710f90e322bd20c6cdf5b9c39ae5030795d9b6cddd90a31"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sphinx-doc__sphinx-9229__qsGRmEj/result.json",
+      "sha256": "7d0849c70671e82aba05c6eb2d5d9502c992bb6374b1e4181bf8cad1098d497c"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sphinx-doc__sphinx-9230__qe9nQ7K/result.json",
+      "sha256": "289abd5886fcfb10204bd8a96d972ef75f7005ca094db9bfc846e0ccd7c11db0"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sphinx-doc__sphinx-9698__Tj2j6yy/result.json",
+      "sha256": "9b35d523e11872f67038a9080daccb082dc34dcd0d909fab7ba970435a518306"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sympy__sympy-13372__cbVmnge/result.json",
+      "sha256": "7efeb0e8f4ca5b3c8e406c9f12f16f33db74945dabdb0c8306ef9bdb6f4a5b1a"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sympy__sympy-13480__WJGjCa8/result.json",
+      "sha256": "1ccd19e1cf7016510e04409e5e486668ad1e19e5c6d09ea61710129015dd325f"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sympy__sympy-14531__CeKryyj/result.json",
+      "sha256": "151d03fa8ec608e30779f7e72c4cf476bebc2d2bbf14a7872fbeebb2cd6b2388"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sympy__sympy-15017__RwRmy97/result.json",
+      "sha256": "892c4cfc4749890ced4a782a0fed329f4f11e1708bbed00c3932589e014788d1"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sympy__sympy-16450__X7XDN6y/result.json",
+      "sha256": "08170440e9f125b8721681e03c8e6cdc2f731776fb23dc8e78fe658277417a2c"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sympy__sympy-16597__ZkKhLij/result.json",
+      "sha256": "f654c38bee1235ddefe6a4432324c0b5a457a35390d4f0b4f5f952eb616a0477"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sympy__sympy-18199__xDg57sR/result.json",
+      "sha256": "560670ed546c87fdddc3129c2c8b2cee46720ff29804db5aef3603315b7326ac"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sympy__sympy-19495__iVyb2z3/result.json",
+      "sha256": "30cc2f0bc985373ebb009099cfe003b1663bb8527f6020b793a1f237ed1801a2"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sympy__sympy-20801__Mn6euvx/result.json",
+      "sha256": "392e0651c2f29cfdaa36977639a96d3c465119b89004c608e86b3df1fd5085e7"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sympy__sympy-21379__2ygrw4e/result.json",
+      "sha256": "b73be5c080cc69b0ef8b996b2a96dcb92684ea9b5179b0e55c03e56005163252"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sympy__sympy-21847__a8BqpPY/result.json",
+      "sha256": "d585a26b9feec794af1b8fb43e3edafe82c62afa7ea3d2d82eeb742f0e99b8ce"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sympy__sympy-22456__7vb5TvF/result.json",
+      "sha256": "f8e3f863209563e390277ff097afdb19dcf55958922898bce92e59a4428d93f8"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sympy__sympy-23413__2BWQupQ/result.json",
+      "sha256": "ce433158bbb391b49d97b05b52a173e18c4fdda02cfc57f71ffe8d404ba8d9b9"
+    },
+    {
+      "path": "runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/sympy__sympy-24443__veyTANc/result.json",
+      "sha256": "b30da009977bf1a3dc002d37d14d6fdca7cae7b713eef167d6ba5e2fdb8242e3"
+    }
+  ]
+}

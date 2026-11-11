@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "runtime-preflight-pytorch",
+  "title": "FD训练消融 · 原生采样生产链路验证",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T11:03:39.612765+00:00",
+  "updated_at": "2026-11-08T11:03:39.612782+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "fix": "VLLM_USE_FLASHINFER_SAMPLER=0 uses supported PyTorch-native sampler onB300; same setting for allarms",
+    "source": "https://raw.githubusercontent.com/vllm-project/vllm/v0.11.0/vllm/v1/sample/ops/topk_topp_sampler.py",
+    "previous_failed_run": "runtime-preflight-isolated"
+  },
+  "sources": {
+    "status": "runs/runtime-preflight-pytorch/state.json",
+    "progress": "runs/runtime-preflight-pytorch/progress.json",
+    "results": "runs/runtime-preflight-pytorch/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "inventory.json",
+      "path": "runs/runtime-preflight-pytorch/inventory.json"
+    },
+    {
+      "label": "result.json",
+      "path": "runs/runtime-preflight-pytorch/result.json"
+    },
+    {
+      "label": "sample.json",
+      "path": "runs/runtime-preflight-pytorch/sample.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-runtime-1108d",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

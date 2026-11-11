@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "runtime-preflight-isolated",
+  "title": "FD训练消融 · 原生Hydra+独立原版判题器 · 生产链路验证",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T10:58:52.722028+00:00",
+  "updated_at": "2026-11-08T10:58:52.722067+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "previous_failed_run": "runtime-preflight-native",
+    "fix": "explicit USER/LOGNAME; native HydraANTLR4.9; original MathVerify scorer in isolated ANTLR4.13 childprocess",
+    "grader_overlay_source": "qwen_math_fd_reliability_20261108/runtime/grader"
+  },
+  "sources": {
+    "status": "runs/runtime-preflight-isolated/state.json",
+    "progress": "runs/runtime-preflight-isolated/progress.json",
+    "results": "runs/runtime-preflight-isolated/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "inventory.json",
+      "path": "runs/runtime-preflight-isolated/inventory.json"
+    },
+    {
+      "label": "result.json",
+      "path": "runs/runtime-preflight-isolated/result.json"
+    },
+    {
+      "label": "sample.json",
+      "path": "runs/runtime-preflight-isolated/sample.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-runtime-1108c",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

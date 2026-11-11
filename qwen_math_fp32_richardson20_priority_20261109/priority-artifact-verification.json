@@ -1,0 +1,32 @@
+[
+  {
+    "run": "prepare-data",
+    "path": "protocol.json",
+    "download_matches_disk": true,
+    "sha256": "0709ca6b53baccbec07eb782111418e309bb4ea75ab15f33e8f848ee6ce08fa9"
+  },
+  {
+    "run": "prepare-data",
+    "path": "runs/prepare-data/known-screen.json",
+    "download_matches_disk": true,
+    "sha256": "5f570a2ba342bf7b2b5acd05ace3be678b5b73869c0f56bb5756abf422048f0f"
+  },
+  {
+    "run": "prepare-data",
+    "path": "DATA_PROVENANCE.md",
+    "download_matches_disk": true,
+    "sha256": "e9d4d1b19b2fa6082c2827647d1e1a9b878f19433f255c35834ee30af6df1af8"
+  },
+  {
+    "run": "train-fp32-richardson20",
+    "path": "protocol.json",
+    "download_matches_disk": true,
+    "sha256": "0709ca6b53baccbec07eb782111418e309bb4ea75ab15f33e8f848ee6ce08fa9"
+  },
+  {
+    "run": "train-fp32-richardson20",
+    "path": "DATA_PROVENANCE.md",
+    "download_matches_disk": true,
+    "sha256": "e9d4d1b19b2fa6082c2827647d1e1a9b878f19433f255c35834ee30af6df1af8"
+  }
+]

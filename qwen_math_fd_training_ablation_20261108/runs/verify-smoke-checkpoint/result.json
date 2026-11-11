@@ -1,0 +1,17 @@
+{
+  "metrics": {
+    "verified_checkpoint": 1,
+    "training_steps": 1,
+    "optimizer_steps": 1,
+    "actual_training_trajectories": 128,
+    "new_gpu_training_steps": 0,
+    "restore_logp_error": 0
+  },
+  "source_training_run": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/smoke-training-h200",
+  "checkpoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/smoke-training-h200/checkpoints/global_step_1/actor",
+  "scope": "reuse actual saved update after identified FileLogger serialization failure; original failed run remains failed; no GPU replay",
+  "all_rank_optimizer_steps": [
+    1,
+    1
+  ]
+}

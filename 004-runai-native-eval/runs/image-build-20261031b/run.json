@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "image-build-20261031b",
+  "title": "SWE原生沙箱镜像构建",
+  "kind": "image-build",
+  "created_at": "2026-10-31T13:18:08.858175+00:00",
+  "status": "planned",
+  "parameters": {
+    "cpu": 2,
+    "gpus": 0,
+    "destination": "registry.rcp.epfl.ch/shuli/ota-eval-native:astropy13236-v2"
+  },
+  "job": {
+    "name": "ota-native-image-1031b",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  },
+  "sources": {
+    "status": "runs/image-build-20261031b/state.json",
+    "results": "runs/image-build-20261031b/result.json"
+  },
+  "results": {},
+  "notes": "固定SWE基础镜像，执行原始Dockerfile并添加tmux。仅1个CPU构建，不触碰Daytona评测。",
+  "artifacts": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "task9288-trajectory-audit-20261111",
+  "title": "OTA全70×4 · task_9288轨迹与过拟合假设审计",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-10T23:29:15.247254+00:00",
+  "tags": [
+    "trajectory-audit",
+    "task9288",
+    "guided-vs-uniform"
+  ],
+  "parameters": {
+    "scope": "Existing trajectories/verifier/data and paired evaluation analysis; no new rollout or retraining",
+    "hypothesis": "Oversampling task9288 failure behavior contributes to Guided degradation"
+  },
+  "sources": {
+    "status": "runs/task9288-trajectory-audit-20261111/state.json",
+    "results": "runs/task9288-trajectory-audit-20261111/result.json",
+    "training_data": "runs/task9288-trajectory-audit-20261111/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "具体轨迹与证据报告",
+      "path": "runs/task9288-trajectory-audit-20261111/REPORT.md"
+    },
+    {
+      "label": "逐条task9288审计",
+      "path": "runs/task9288-trajectory-audit-20261111/task9288-records.json"
+    },
+    {
+      "label": "评测逐题对照",
+      "path": "runs/task9288-trajectory-audit-20261111/evaluation-comparison.json"
+    },
+    {
+      "label": "四个配对评测案例完整证据",
+      "path": "runs/task9288-trajectory-audit-20261111/matched-evaluation-examples.json"
+    },
+    {
+      "label": "人工复核与结论边界",
+      "path": "runs/task9288-trajectory-audit-20261111/manual-review.json"
+    },
+    {
+      "label": "统计及选择分数",
+      "path": "runs/task9288-trajectory-audit-20261111/result.json"
+    },
+    {
+      "label": "统计脚本",
+      "path": "scripts/audit_task9288.py"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+[Unit]
+Description=Short-lived Kubernetes access token for native sandbox controller
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -u /mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/004-runai-native-eval/scripts/sync_kubeconfig.py
+Restart=on-failure
+RestartSec=10

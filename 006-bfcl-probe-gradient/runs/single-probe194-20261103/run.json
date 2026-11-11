@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "single-probe194-20261103",
+  "title": "Single clean probe · TravelAPI · candidate200 analysis",
+  "kind": "analysis",
+  "status": "succeeded",
+  "created_at": "2026-11-03T17:11:27.450950+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "pg-single194-1103",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "parameters": {
+    "probe": "multi_turn_miss_func_194",
+    "rollouts": 8,
+    "candidate_trajectories": 200,
+    "gpu_type": "H200",
+    "gpus": 2,
+    "training": false,
+    "actual_gpu_elapsed_seconds": 1773,
+    "allocated_gpu_hours": 0.985
+  },
+  "sources": {
+    "status": "runs/single-probe194-20261103/state.json",
+    "results": "runs/single-probe194-20261103/result.json",
+    "training_data": "runs/single-probe194-20261103/ranked-trajectories.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "Scores",
+      "path": "runs/single-probe194-20261103/scores.json"
+    },
+    {
+      "label": "Probe outcomes",
+      "path": "runs/single-probe194-20261103/probe-outcomes.json"
+    },
+    {
+      "label": "Analysis figure",
+      "path": "runs/single-probe194-20261103/analysis.png"
+    },
+    {
+      "label": "Case study report",
+      "path": "runs/single-probe194-20261103/REPORT.md"
+    },
+    {
+      "label": "Scores with half ranks",
+      "path": "runs/single-probe194-20261103/scores-enriched.json"
+    },
+    {
+      "label": "Stratified statistics",
+      "path": "runs/single-probe194-20261103/extra-stats.json"
+    },
+    {
+      "label": "Manual case review",
+      "path": "runs/single-probe194-20261103/manual-review.json"
+    },
+    {
+      "label": "PDF figure",
+      "path": "runs/single-probe194-20261103/analysis.pdf"
+    }
+  ],
+  "completed_at": "2026-11-03T17:55:17.211687+00:00"
+}

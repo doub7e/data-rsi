@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "eval-repro-1k-20261031",
+  "title": "1K 评测 · XML格式不匹配（已停止）",
+  "kind": "evaluation",
+  "created_at": "2026-10-31T08:47:58.034802+00:00",
+  "status": "planned",
+  "parameters": {
+    "training_run": "repro-1k-4gpu-20261031",
+    "inference_gpus": 4,
+    "inference_node_pool": "h200",
+    "tensor_parallel_size": 4,
+    "sandbox_backend": "Daytona",
+    "benchmarks": {
+      "swebench100": 100,
+      "tblite": 100,
+      "tb2": 89
+    },
+    "repeats": 3,
+    "total_trials": 867,
+    "planned_concurrency": {
+      "swebench100": 2,
+      "tblite": 1,
+      "tb2": 1
+    },
+    "max_context": 32768,
+    "max_output_tokens": 16384,
+    "temperature": 0.6,
+    "served_model_name": "ota-qwen3-8b-1k",
+    "model_readiness": "passed",
+    "daytona_serialization": "workspace file lock",
+    "inference_preflight": {
+      "concurrency": 32,
+      "wall_sec": 1.6510035619139671,
+      "output_tokens_per_sec": 4961.830603504707,
+      "note": "Short synthetic prompts; not benchmark sustained throughput"
+    },
+    "invalid_configuration": true
+  },
+  "results": {},
+  "notes": "SWE XML parser与训练JSON格式不匹配，产生格式纠错循环；本轮无效，保留全部轨迹，不计作模型得分。已停止且确认无残留沙箱。",
+  "sources": {
+    "status": "runs/eval-repro-1k-20261031/state.json",
+    "metrics": "runs/eval-repro-1k-20261031/metrics.jsonl",
+    "results": "runs/eval-repro-1k-20261031/result.json",
+    "trajectories": "runs/eval-repro-1k-20261031/jobs",
+    "evaluation_plan": "runs/eval-repro-1k-20261031/evaluation-plan.json"
+  },
+  "artifacts": [
+    {
+      "label": "评测配置",
+      "path": "eval/harbor-template.json"
+    },
+    {
+      "label": "固定任务版本",
+      "path": "eval/benchmarks/manifest.json"
+    },
+    {
+      "label": "模型实际生成检查",
+      "path": "runs/eval-repro-1k-20261031/serving-probe.json"
+    },
+    {
+      "label": "运行版本与checkpoint记录",
+      "path": "runs/eval-repro-1k-20261031/execution-manifest.json"
+    },
+    {
+      "label": "并发推理检查",
+      "path": "runs/eval-repro-1k-20261031/inference-load-probe.json"
+    },
+    {
+      "label": "格式不匹配诊断",
+      "path": "runs/eval-repro-1k-20261031/parser-mismatch.json"
+    },
+    {
+      "label": "沙箱清理确认",
+      "path": "runs/eval-repro-1k-20261031/daytona-cleanup-confirmation.json"
+    }
+  ],
+  "job": {
+    "name": "ota-daytona-1k-eval-1031",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  },
+  "serving_job": {
+    "name": "ota-qwen3-8b-1k-eval-1031",
+    "namespace": "runai-cvlab-shuli",
+    "gpus": 4,
+    "node_pool": "h200"
+  }
+}

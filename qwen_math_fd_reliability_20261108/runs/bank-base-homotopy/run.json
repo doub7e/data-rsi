@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": "bank-base-homotopy",
+  "title": "FD可靠性 · Qwen3-4B Base · 同伦题 · 2048 probes +16 targets",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T00:24:18.507384+00:00",
+  "updated_at": "2026-11-08T00:47:21.855150+00:00",
+  "parameters": {
+    "initialization": "Base; best N64 trained checkpoint unavailable",
+    "physical_row": 20589,
+    "probe_responses": 2048,
+    "target_responses": 16,
+    "seed_start": 681150000,
+    "image": "vllm/vllm-openai@sha256:6ee133356d49ed24cee03dd0cda3d3980279a11c107ce3e752c89e76540f41c9",
+    "dtype": "bfloat16",
+    "max_tokens": 16384,
+    "selection": "existing intervention prompt chosen before observing new outcomes; no filtering"
+  },
+  "sources": {
+    "status": "runs/bank-base-homotopy/state.json",
+    "progress": "runs/bank-base-homotopy/progress.json",
+    "results": "runs/bank-base-homotopy/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结生成协议",
+      "path": "runs/bank-base-homotopy/bank/manifest.json"
+    },
+    {
+      "label": "题目",
+      "path": "runs/bank-base-homotopy/bank/row_00020589/prompt.json"
+    },
+    {
+      "label": "生成完成统计",
+      "path": "runs/bank-base-homotopy/bank/row_00020589/complete.json"
+    },
+    {
+      "label": "运行环境",
+      "path": "runs/bank-base-homotopy/runtime.json"
+    },
+    {
+      "label": "首个 seed 的真实 probe 样本（原始评分）",
+      "path": "runs/bank-base-homotopy/first_probe_sample.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-bank-base-p1-1108e",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

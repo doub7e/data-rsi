@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "gradient-candidates-0",
+  "title": "gradient-candidates-0",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-02T23:09:09.343311+00:00",
+  "sources": {
+    "status": "runs/gradient-candidates-0/state.json",
+    "results": "runs/gradient-candidates-0/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "Frozen method protocol",
+      "path": "PROTOCOL.md"
+    },
+    {
+      "label": "Runtime progress",
+      "path": "runs/gradient-candidates-0/progress.json"
+    },
+    {
+      "label": "Numerical gradient test",
+      "path": "runs/gradient-candidates-0/gradient-unit-check.json"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "pg-gcand0-1103",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

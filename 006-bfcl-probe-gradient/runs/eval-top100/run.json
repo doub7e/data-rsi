@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "eval-top100",
+  "title": "eval-top100",
+  "kind": "evaluation",
+  "status": "planned",
+  "created_at": "2026-11-02T23:09:09.343311+00:00",
+  "sources": {
+    "status": "runs/eval-top100/state.json",
+    "results": "runs/eval-top100/result.json",
+    "metrics": "runs/eval-top100/metrics.jsonl",
+    "trajectories": "runs/eval-top100/jobs",
+    "evaluation_plan": "runs/eval-top100/evaluation-plan.json"
+  },
+  "artifacts": [
+    {
+      "label": "Frozen method protocol",
+      "path": "PROTOCOL.md"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "pg-top-eval-1103",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "parameters": {
+    "model": "Qwen3-4B top100",
+    "trials": 2400,
+    "heldout_tasks": 768,
+    "probe_tasks_excluded_from_main": 32,
+    "gpu_type": "H200",
+    "gpus": 1
+  }
+}

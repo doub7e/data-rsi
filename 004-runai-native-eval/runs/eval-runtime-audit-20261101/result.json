@@ -1,0 +1,654 @@
+{
+  "checked_at": "2026-11-01T16:50:12.925632+00:00",
+  "benchmarks": {
+    "swebench100": {
+      "tasks": 100,
+      "base_agent_timeout_counts": {
+        "3000": 100
+      },
+      "effective_agent_timeout_counts": {
+        "6000": 100
+      },
+      "all_tasks_hit_agent_timeout_sum_hours": 166.66666666666666,
+      "all_tasks_hit_agent_timeout_work_div32_hours": 5.208333333333333
+    },
+    "tblite": {
+      "tasks": 100,
+      "base_agent_timeout_counts": {
+        "300.0": 2,
+        "360.0": 3,
+        "500.0": 1,
+        "600.0": 13,
+        "720.0": 1,
+        "800.0": 2,
+        "900.0": 32,
+        "1200.0": 2,
+        "1800": 4,
+        "3600.0": 40
+      },
+      "effective_agent_timeout_counts": {
+        "600.0": 2,
+        "720.0": 3,
+        "1000.0": 1,
+        "1200.0": 13,
+        "1440.0": 1,
+        "1600.0": 2,
+        "1800.0": 32,
+        "2400.0": 2,
+        "3600": 4,
+        "7200.0": 40
+      },
+      "all_tasks_hit_agent_timeout_sum_hours": 108.16666666666667,
+      "all_tasks_hit_agent_timeout_work_div32_hours": 3.3802083333333335
+    },
+    "tb2": {
+      "tasks": 89,
+      "base_agent_timeout_counts": {
+        "600.0": 1,
+        "750.0": 1,
+        "900.0": 49,
+        "1200.0": 6,
+        "1800.0": 16,
+        "2400.0": 2,
+        "3600.0": 12,
+        "7200.0": 1,
+        "12000.0": 1
+      },
+      "effective_agent_timeout_counts": {
+        "1200.0": 1,
+        "1500.0": 1,
+        "1800.0": 49,
+        "2400.0": 6,
+        "3600.0": 16,
+        "4800.0": 2,
+        "7200.0": 14
+      },
+      "all_tasks_hit_agent_timeout_sum_hours": 75.91666666666667,
+      "all_tasks_hit_agent_timeout_work_div32_hours": 2.3723958333333335
+    }
+  },
+  "runs": [
+    {
+      "experiment": "002-openthoughts-qwen3-8b",
+      "job": "swebench100-repeat-1",
+      "tasks": 100,
+      "job_timestamp_wall_seconds": 10583.631741,
+      "retained_final_attempt_span_seconds": 10581.587486,
+      "earliest_final_attempt_start": "2026-11-01T04:51:20.105714+00:00",
+      "latest_final_attempt_end": "2026-11-01T07:47:41.693200+00:00",
+      "phase_times": {
+        "environment_setup": {
+          "n": 100,
+          "sum_seconds": 2059.354076,
+          "mean_seconds": 20.59354076,
+          "median_seconds": 13.4704715,
+          "p90_seconds": 40.419301,
+          "max_seconds": 91.533718
+        },
+        "agent_setup": {
+          "n": 100,
+          "sum_seconds": 93.601189,
+          "mean_seconds": 0.93601189,
+          "median_seconds": 0.912702,
+          "p90_seconds": 1.128625,
+          "max_seconds": 1.257138
+        },
+        "agent_execution": {
+          "n": 100,
+          "sum_seconds": 237610.82361,
+          "mean_seconds": 2376.1082361,
+          "median_seconds": 1026.551613,
+          "p90_seconds": 6000.002562,
+          "max_seconds": 6000.032355
+        },
+        "verifier": {
+          "n": 100,
+          "sum_seconds": 3446.207317,
+          "mean_seconds": 34.46207317,
+          "median_seconds": 15.210518,
+          "p90_seconds": 82.155001,
+          "max_seconds": 445.160324
+        }
+      },
+      "recorded_model_api_times": {
+        "n": 100,
+        "sum_seconds": 113087.7293407917,
+        "mean_seconds": 1130.877293407917,
+        "median_seconds": 454.2256808280945,
+        "p90_seconds": 3070.507660627365,
+        "max_seconds": 3759.9865605831146
+      },
+      "errors": {
+        "none": 81,
+        "AgentTimeoutError": 19
+      },
+      "output_tokens": 13001027,
+      "agent_turns": {
+        "n": 100,
+        "sum": 20647,
+        "mean": 206.47,
+        "median": 91.0,
+        "p90": 528,
+        "max": 817
+      }
+    },
+    {
+      "experiment": "002-openthoughts-qwen3-8b",
+      "job": "swebench100-repeat-2",
+      "tasks": 100,
+      "job_timestamp_wall_seconds": 16675.736992,
+      "retained_final_attempt_span_seconds": 16674.513593,
+      "earliest_final_attempt_start": "2026-11-01T07:47:52.726569+00:00",
+      "latest_final_attempt_end": "2026-11-01T12:25:47.240162+00:00",
+      "phase_times": {
+        "environment_setup": {
+          "n": 100,
+          "sum_seconds": 2267.30948,
+          "mean_seconds": 22.6730948,
+          "median_seconds": 17.430005,
+          "p90_seconds": 40.536357,
+          "max_seconds": 101.443602
+        },
+        "agent_setup": {
+          "n": 100,
+          "sum_seconds": 97.447196,
+          "mean_seconds": 0.97447196,
+          "median_seconds": 0.900328,
+          "p90_seconds": 1.154136,
+          "max_seconds": 2.328154
+        },
+        "agent_execution": {
+          "n": 100,
+          "sum_seconds": 242562.980939,
+          "mean_seconds": 2425.62980939,
+          "median_seconds": 845.6918475,
+          "p90_seconds": 6000.005691,
+          "max_seconds": 6000.068113
+        },
+        "verifier": {
+          "n": 100,
+          "sum_seconds": 3638.947759,
+          "mean_seconds": 36.38947759,
+          "median_seconds": 15.1353185,
+          "p90_seconds": 90.810334,
+          "max_seconds": 444.290555
+        }
+      },
+      "recorded_model_api_times": {
+        "n": 100,
+        "sum_seconds": 116082.54127573967,
+        "mean_seconds": 1160.8254127573966,
+        "median_seconds": 361.4882974624634,
+        "p90_seconds": 3107.149124622345,
+        "max_seconds": 3738.8571791648865
+      },
+      "errors": {
+        "none": 72,
+        "AgentTimeoutError": 28
+      },
+      "output_tokens": 13485151,
+      "agent_turns": {
+        "n": 100,
+        "sum": 20408,
+        "mean": 204.08,
+        "median": 75.0,
+        "p90": 581,
+        "max": 822
+      }
+    },
+    {
+      "experiment": "002-openthoughts-qwen3-8b",
+      "job": "swebench100-repeat-3",
+      "tasks": 100,
+      "job_timestamp_wall_seconds": 28552.262967,
+      "retained_final_attempt_span_seconds": 13529.530471,
+      "earliest_final_attempt_start": "2026-11-01T12:25:58.796373+00:00",
+      "latest_final_attempt_end": "2026-11-01T16:11:28.326844+00:00",
+      "phase_times": {
+        "environment_setup": {
+          "n": 100,
+          "sum_seconds": 3700.185272,
+          "mean_seconds": 37.00185272,
+          "median_seconds": 15.7652765,
+          "p90_seconds": 66.050925,
+          "max_seconds": 407.277279
+        },
+        "agent_setup": {
+          "n": 100,
+          "sum_seconds": 92.515788,
+          "mean_seconds": 0.92515788,
+          "median_seconds": 0.8733815,
+          "p90_seconds": 1.049128,
+          "max_seconds": 2.18282
+        },
+        "agent_execution": {
+          "n": 100,
+          "sum_seconds": 250419.417639,
+          "mean_seconds": 2504.19417639,
+          "median_seconds": 1265.7345495,
+          "p90_seconds": 6000.002916,
+          "max_seconds": 6000.100014
+        },
+        "verifier": {
+          "n": 100,
+          "sum_seconds": 3458.442174,
+          "mean_seconds": 34.584421739999996,
+          "median_seconds": 15.4191225,
+          "p90_seconds": 83.790247,
+          "max_seconds": 444.140711
+        }
+      },
+      "recorded_model_api_times": {
+        "n": 100,
+        "sum_seconds": 116852.14441204071,
+        "mean_seconds": 1168.521444120407,
+        "median_seconds": 601.6915109157562,
+        "p90_seconds": 3029.2700040340424,
+        "max_seconds": 3773.8686344623566
+      },
+      "errors": {
+        "none": 76,
+        "AgentTimeoutError": 24
+      },
+      "output_tokens": 13890948,
+      "agent_turns": {
+        "n": 100,
+        "sum": 21676,
+        "mean": 216.76,
+        "median": 120.5,
+        "p90": 580,
+        "max": 1101
+      }
+    },
+    {
+      "experiment": "003-openthoughts-qwen3-8b-1k",
+      "job": "swebench100-repeat-1",
+      "tasks": 100,
+      "job_timestamp_wall_seconds": 16674.336755,
+      "retained_final_attempt_span_seconds": 16672.525045,
+      "earliest_final_attempt_start": "2026-10-31T19:37:24.396359+00:00",
+      "latest_final_attempt_end": "2026-11-01T00:15:16.921404+00:00",
+      "phase_times": {
+        "environment_setup": {
+          "n": 100,
+          "sum_seconds": 3440.570509,
+          "mean_seconds": 34.40570509,
+          "median_seconds": 28.469797,
+          "p90_seconds": 75.664199,
+          "max_seconds": 123.730962
+        },
+        "agent_setup": {
+          "n": 100,
+          "sum_seconds": 106.355155,
+          "mean_seconds": 1.06355155,
+          "median_seconds": 0.8781775,
+          "p90_seconds": 1.424019,
+          "max_seconds": 4.383764
+        },
+        "agent_execution": {
+          "n": 100,
+          "sum_seconds": 216487.500057,
+          "mean_seconds": 2164.87500057,
+          "median_seconds": 1051.9796905,
+          "p90_seconds": 6000.005195,
+          "max_seconds": 6001.742488
+        },
+        "verifier": {
+          "n": 100,
+          "sum_seconds": 3524.077522,
+          "mean_seconds": 35.24077522,
+          "median_seconds": 15.691786,
+          "p90_seconds": 85.171515,
+          "max_seconds": 441.493531
+        }
+      },
+      "recorded_model_api_times": {
+        "n": 100,
+        "sum_seconds": 77907.25822091103,
+        "mean_seconds": 779.0725822091102,
+        "median_seconds": 474.36201524734497,
+        "p90_seconds": 2124.8349072933197,
+        "max_seconds": 3264.938017845154
+      },
+      "errors": {
+        "none": 83,
+        "AgentTimeoutError": 17
+      },
+      "output_tokens": 10316201,
+      "agent_turns": {
+        "n": 100,
+        "sum": 29844,
+        "mean": 298.44,
+        "median": 129.0,
+        "p90": 947,
+        "max": 1761
+      }
+    },
+    {
+      "experiment": "003-openthoughts-qwen3-8b-1k",
+      "job": "swebench100-repeat-2",
+      "tasks": 100,
+      "job_timestamp_wall_seconds": 10759.532408,
+      "retained_final_attempt_span_seconds": 10758.446092,
+      "earliest_final_attempt_start": "2026-11-01T00:15:28.172002+00:00",
+      "latest_final_attempt_end": "2026-11-01T03:14:46.618094+00:00",
+      "phase_times": {
+        "environment_setup": {
+          "n": 100,
+          "sum_seconds": 2543.568652,
+          "mean_seconds": 25.43568652,
+          "median_seconds": 18.9116175,
+          "p90_seconds": 42.653481,
+          "max_seconds": 102.926233
+        },
+        "agent_setup": {
+          "n": 100,
+          "sum_seconds": 102.161167,
+          "mean_seconds": 1.02161167,
+          "median_seconds": 0.9612265,
+          "p90_seconds": 1.285462,
+          "max_seconds": 2.371187
+        },
+        "agent_execution": {
+          "n": 100,
+          "sum_seconds": 265776.082179,
+          "mean_seconds": 2657.76082179,
+          "median_seconds": 1733.43473,
+          "p90_seconds": 6000.006561,
+          "max_seconds": 6001.210379
+        },
+        "verifier": {
+          "n": 100,
+          "sum_seconds": 3727.730374,
+          "mean_seconds": 37.27730374,
+          "median_seconds": 16.1316595,
+          "p90_seconds": 94.909259,
+          "max_seconds": 447.758391
+        }
+      },
+      "recorded_model_api_times": {
+        "n": 100,
+        "sum_seconds": 110153.27983212471,
+        "mean_seconds": 1101.5327983212471,
+        "median_seconds": 611.0512082576752,
+        "p90_seconds": 2815.166812181473,
+        "max_seconds": 3278.400761604309
+      },
+      "errors": {
+        "none": 79,
+        "AgentTimeoutError": 21
+      },
+      "output_tokens": 13102824,
+      "agent_turns": {
+        "n": 100,
+        "sum": 37764,
+        "mean": 377.64,
+        "median": 215.5,
+        "p90": 979,
+        "max": 1257
+      }
+    },
+    {
+      "experiment": "003-openthoughts-qwen3-8b-1k",
+      "job": "swebench100-repeat-3",
+      "tasks": 100,
+      "job_timestamp_wall_seconds": 12062.748796,
+      "retained_final_attempt_span_seconds": 12061.508092,
+      "earliest_final_attempt_start": "2026-11-01T03:15:02.118930+00:00",
+      "latest_final_attempt_end": "2026-11-01T06:36:03.627022+00:00",
+      "phase_times": {
+        "environment_setup": {
+          "n": 100,
+          "sum_seconds": 5219.164937,
+          "mean_seconds": 52.19164937,
+          "median_seconds": 15.539521,
+          "p90_seconds": 87.99848,
+          "max_seconds": 583.992412
+        },
+        "agent_setup": {
+          "n": 100,
+          "sum_seconds": 107.424563,
+          "mean_seconds": 1.07424563,
+          "median_seconds": 0.9916775,
+          "p90_seconds": 1.332365,
+          "max_seconds": 2.379027
+        },
+        "agent_execution": {
+          "n": 100,
+          "sum_seconds": 239090.359982,
+          "mean_seconds": 2390.90359982,
+          "median_seconds": 1583.3568420000001,
+          "p90_seconds": 6000.002958,
+          "max_seconds": 6001.218745
+        },
+        "verifier": {
+          "n": 100,
+          "sum_seconds": 3601.339985,
+          "mean_seconds": 36.01339985,
+          "median_seconds": 15.944254,
+          "p90_seconds": 78.746026,
+          "max_seconds": 445.405522
+        }
+      },
+      "recorded_model_api_times": {
+        "n": 100,
+        "sum_seconds": 88978.64736914635,
+        "mean_seconds": 889.7864736914635,
+        "median_seconds": 503.6007114648819,
+        "p90_seconds": 2599.754549741745,
+        "max_seconds": 3272.0412673950195
+      },
+      "errors": {
+        "none": 80,
+        "AgentTimeoutError": 20
+      },
+      "output_tokens": 11428573,
+      "agent_turns": {
+        "n": 100,
+        "sum": 32414,
+        "mean": 324.14,
+        "median": 174.5,
+        "p90": 919,
+        "max": 1478
+      }
+    },
+    {
+      "experiment": "003-openthoughts-qwen3-8b-1k",
+      "job": "tblite-repeat-1",
+      "tasks": 100,
+      "job_timestamp_wall_seconds": 20693.370034,
+      "retained_final_attempt_span_seconds": 20687.110589,
+      "earliest_final_attempt_start": "2026-11-01T06:36:25.761308+00:00",
+      "latest_final_attempt_end": "2026-11-01T12:21:12.871897+00:00",
+      "phase_times": {
+        "environment_setup": {
+          "n": 100,
+          "sum_seconds": 1598.730735,
+          "mean_seconds": 15.98730735,
+          "median_seconds": 14.661704,
+          "p90_seconds": 26.589825,
+          "max_seconds": 38.046614
+        },
+        "agent_setup": {
+          "n": 100,
+          "sum_seconds": 55.943466,
+          "mean_seconds": 0.55943466,
+          "median_seconds": 0.5209125,
+          "p90_seconds": 0.630204,
+          "max_seconds": 1.760423
+        },
+        "agent_execution": {
+          "n": 100,
+          "sum_seconds": 129467.629806,
+          "mean_seconds": 1294.67629806,
+          "median_seconds": 980.7724555,
+          "p90_seconds": 3049.84731,
+          "max_seconds": 7200.006653
+        },
+        "verifier": {
+          "n": 100,
+          "sum_seconds": 1350.807175,
+          "mean_seconds": 13.50807175,
+          "median_seconds": 5.8117415,
+          "p90_seconds": 39.550826,
+          "max_seconds": 262.41656
+        }
+      },
+      "recorded_model_api_times": {
+        "n": 100,
+        "sum_seconds": 60962.08160328865,
+        "mean_seconds": 609.6208160328865,
+        "median_seconds": 434.08968245983124,
+        "p90_seconds": 1342.1982998847961,
+        "max_seconds": 4468.266822099686
+      },
+      "errors": {
+        "none": 64,
+        "AgentTimeoutError": 36
+      },
+      "output_tokens": 8193898,
+      "agent_turns": {
+        "n": 100,
+        "sum": 15630,
+        "mean": 156.3,
+        "median": 65.0,
+        "p90": 345,
+        "max": 1493
+      }
+    },
+    {
+      "experiment": "003-openthoughts-qwen3-8b-1k",
+      "job": "tblite-repeat-2",
+      "tasks": 100,
+      "job_timestamp_wall_seconds": 28618.058723,
+      "retained_final_attempt_span_seconds": 12849.497576,
+      "earliest_final_attempt_start": "2026-11-01T12:21:25.209225+00:00",
+      "latest_final_attempt_end": "2026-11-01T15:55:34.706801+00:00",
+      "phase_times": {
+        "environment_setup": {
+          "n": 100,
+          "sum_seconds": 1522.618777,
+          "mean_seconds": 15.22618777,
+          "median_seconds": 14.0867935,
+          "p90_seconds": 23.142611,
+          "max_seconds": 47.823465
+        },
+        "agent_setup": {
+          "n": 100,
+          "sum_seconds": 59.357525,
+          "mean_seconds": 0.59357525,
+          "median_seconds": 0.5312665,
+          "p90_seconds": 0.727826,
+          "max_seconds": 2.588346
+        },
+        "agent_execution": {
+          "n": 100,
+          "sum_seconds": 159289.102409,
+          "mean_seconds": 1592.89102409,
+          "median_seconds": 1007.796692,
+          "p90_seconds": 7200.00145,
+          "max_seconds": 7200.603661
+        },
+        "verifier": {
+          "n": 99,
+          "sum_seconds": 2232.611517,
+          "mean_seconds": 22.551631484848485,
+          "median_seconds": 5.96764,
+          "p90_seconds": 48.158804,
+          "max_seconds": 512.081687
+        }
+      },
+      "recorded_model_api_times": {
+        "n": 100,
+        "sum_seconds": 68629.77121138573,
+        "mean_seconds": 686.2977121138573,
+        "median_seconds": 433.996430516243,
+        "p90_seconds": 1429.272432088852,
+        "max_seconds": 4279.546700954437
+      },
+      "errors": {
+        "none": 60,
+        "AgentTimeoutError": 38,
+        "RuntimeError": 1,
+        "VerifierTimeoutError": 1
+      },
+      "output_tokens": 8674957,
+      "agent_turns": {
+        "n": 100,
+        "sum": 16887,
+        "mean": 168.87,
+        "median": 68.5,
+        "p90": 495,
+        "max": 1228
+      }
+    }
+  ],
+  "official_tblite_comparison": {
+    "revision": "5c37b41f00ce04719a4453061076ae9f46b74b7d",
+    "tasks_checked": 100,
+    "differences": []
+  },
+  "caveats": [
+    "Job started_at may predate pauses and resumed sessions; do not interpret full timestamp span as uninterrupted runtime.",
+    "Phase times sum overlapping task time, not wall-clock time.",
+    "Recorded API durations are a subset of agent wall time and depend on harness instrumentation.",
+    "API model runtimes in the TBLite blog use default timeouts; paper reproduction uses 2x timeout for 8B and three repeats."
+  ],
+  "focus_1k_tblite_repeat2": {
+    "uninterrupted_final_attempt_span_minutes": 214.15829293333334,
+    "legacy_job_timestamp_span_minutes": 476.9676453833333,
+    "average_simultaneous_agent_executions": 12.415464758395887,
+    "minutes_with_1_to_4_active_agents": 73.29819888273875,
+    "minutes_with_at_least_24_active_agents": 51.78804998000463,
+    "tasks_reaching_two_hour_agent_cap": 10,
+    "environment_setup_median_seconds": 13.8,
+    "verifier_median_seconds": 6,
+    "interpretation": "Long task tails and 2x timeout dominate this clean round. Mean active-agent count is not GPU utilization or simultaneous vLLM request count."
+  },
+  "published_protocols": {
+    "tblite_blog": {
+      "url": "https://www.openthoughts.ai/blog/openthoughts-tblite",
+      "concurrent_sandboxes": 32,
+      "timeout": "default",
+      "tblite_minutes": {
+        "Kimi-K2.5": 84,
+        "GLM-4.7": 65,
+        "gpt-5-mini": 51,
+        "claude-haiku-4-5": 76
+      },
+      "tb2_minutes": {
+        "Kimi-K2.5": 220,
+        "GLM-4.7": 300,
+        "gpt-5-mini": 397,
+        "claude-haiku-4-5": 605
+      },
+      "unspecified": [
+        "Whether runtime includes repeated evaluations",
+        "Serving hardware / API throughput",
+        "Full sampling and context settings for runtime table"
+      ]
+    },
+    "paper_2606_24855_appendix_g": {
+      "url": "https://arxiv.org/pdf/2606.24855#page=33",
+      "repeats": 3,
+      "concurrency": 32,
+      "context": 32768,
+      "max_output": 16384,
+      "summarization_threshold": 2048,
+      "timeout_multiplier_8b": 2,
+      "agent_cap_seconds": 7200,
+      "per_benchmark_8b_runtime_reported": false
+    }
+  },
+  "new_infrastructure_incident": {
+    "model": "10K",
+    "old_serving_pod_stopped_utc": "2026-11-01T16:28:31Z",
+    "replacement_pod_unschedulable": true,
+    "worker_failed_model_api_health_check_utc": "2026-11-01T16:29:57Z",
+    "resume_requested_utc": "2026-11-01T16:49:08Z",
+    "root_cause_of_pod_stop": "Not established from retained events",
+    "new_endpoint_propagation_fixed": true,
+    "regression_tests_passed": 29
+  },
+  "completed_at": "2026-11-01T16:54:05.686413+00:00"
+}

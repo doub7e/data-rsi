@@ -1,0 +1,8 @@
+{
+  "metrics": {
+    "reused_baselines": 3,
+    "reused_candidate_scores": 728,
+    "reused_probe_questions": 20,
+    "new_gradient_jobs": 0
+  }
+}

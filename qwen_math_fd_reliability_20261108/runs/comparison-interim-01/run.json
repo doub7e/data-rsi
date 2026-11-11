@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "comparison-interim-01",
+  "title": "FD可靠性 · 阶段性汇总 · 数值误差、probe噪声与权重",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T01:56:10.012694+00:00",
+  "updated_at": "2026-11-08T01:56:10.012703+00:00",
+  "parameters": {
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+    "scope": "snapshot of completed primary cases; explicitly partial until all4runs finish",
+    "derived_analysis": "central2 from saved forwards; random/extreme strata; practical weights include fallback0"
+  },
+  "sources": {
+    "status": "runs/comparison-interim-01/state.json",
+    "progress": "runs/comparison-interim-01/progress.json",
+    "results": "runs/comparison-interim-01/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "阶段报告",
+      "path": "runs/comparison-interim-01/report.md"
+    },
+    {
+      "label": "结果",
+      "path": "runs/comparison-interim-01/result.json"
+    },
+    {
+      "label": "comparisons.csv",
+      "path": "runs/comparison-interim-01/comparisons.csv"
+    },
+    {
+      "label": "paired_primary.csv",
+      "path": "runs/comparison-interim-01/paired_primary.csv"
+    },
+    {
+      "label": "practical_weights.csv",
+      "path": "runs/comparison-interim-01/practical_weights.csv"
+    },
+    {
+      "label": "comparisons.json",
+      "path": "runs/comparison-interim-01/comparisons.json"
+    },
+    {
+      "label": "source-manifest.json",
+      "path": "runs/comparison-interim-01/source-manifest.json"
+    },
+    {
+      "label": "error_vs_h.png",
+      "path": "runs/comparison-interim-01/figures/error_vs_h.png"
+    },
+    {
+      "label": "error_vs_h.pdf",
+      "path": "runs/comparison-interim-01/figures/error_vs_h.pdf"
+    },
+    {
+      "label": "weight_mae_vs_n.png",
+      "path": "runs/comparison-interim-01/figures/weight_mae_vs_n.png"
+    },
+    {
+      "label": "weight_mae_vs_n.pdf",
+      "path": "runs/comparison-interim-01/figures/weight_mae_vs_n.pdf"
+    },
+    {
+      "label": "gradient_cosine_vs_n.png",
+      "path": "runs/comparison-interim-01/figures/gradient_cosine_vs_n.png"
+    },
+    {
+      "label": "gradient_cosine_vs_n.pdf",
+      "path": "runs/comparison-interim-01/figures/gradient_cosine_vs_n.pdf"
+    },
+    {
+      "label": "practical_weight_stability_vs_n.png",
+      "path": "runs/comparison-interim-01/figures/practical_weight_stability_vs_n.png"
+    },
+    {
+      "label": "practical_weight_stability_vs_n.pdf",
+      "path": "runs/comparison-interim-01/figures/practical_weight_stability_vs_n.pdf"
+    },
+    {
+      "label": "selected_scatter_panels.png",
+      "path": "runs/comparison-interim-01/figures/selected_scatter_panels.png"
+    },
+    {
+      "label": "selected_scatter_panels.pdf",
+      "path": "runs/comparison-interim-01/figures/selected_scatter_panels.pdf"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-report-mid-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

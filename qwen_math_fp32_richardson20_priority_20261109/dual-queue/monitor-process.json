@@ -1,0 +1,13 @@
+{
+  "pid": 1217990,
+  "started_at": "2026-11-10T23:21:08.457411+00:00",
+  "command": [
+    "/usr/bin/python",
+    "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/dual-queue/control/fd_priority20_dual_monitor.py",
+    "--experiment",
+    "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109",
+    "--interval",
+    "15"
+  ],
+  "interval_seconds": 15
+}

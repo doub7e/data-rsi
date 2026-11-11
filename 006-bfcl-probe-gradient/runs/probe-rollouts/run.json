@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "probe-rollouts",
+  "title": "probe-rollouts",
+  "kind": "evaluation",
+  "status": "planned",
+  "created_at": "2026-11-02T23:09:09.343311+00:00",
+  "sources": {
+    "status": "runs/probe-rollouts/state.json",
+    "results": "runs/probe-rollouts/result.json",
+    "trajectories": "runs/probe-rollouts/jobs",
+    "evaluation_plan": "runs/probe-rollouts/evaluation-plan.json"
+  },
+  "artifacts": [
+    {
+      "label": "Frozen method protocol",
+      "path": "PROTOCOL.md"
+    },
+    {
+      "label": "Frozen probe IDs",
+      "path": "runs/probe-rollouts/selection.json"
+    },
+    {
+      "label": "Probe rewards and variance",
+      "path": "runs/probe-rollouts/result.json"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "pg-probe-1103c",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "parameters": {
+    "model": "Qwen3-4B original",
+    "probe_questions": 32,
+    "rollouts_per_question": 8,
+    "total_trials": 256,
+    "gpus": 1,
+    "gpu_type": "H200",
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": -1
+  }
+}

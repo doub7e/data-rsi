@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-10T23:22:56.578005+00:00",
+  "winner": "train-b300-fp32-richardson20",
+  "loser": "train-fp32-richardson20",
+  "loser_job": "opd-p20-fp32-1109a",
+  "delete_returncode": 0,
+  "output": "Job opd-p20-fp32-1109a deleted successfully.\n"
+}

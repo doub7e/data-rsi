@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "eval-environments-20261030",
+  "title": "评测环境准备 · 三项核心 benchmark",
+  "kind": "analysis",
+  "created_at": "2026-10-30T18:05:39.096696+00:00",
+  "status": "planned",
+  "parameters": {},
+  "results": {},
+  "notes": "已获用户授权：完整训练成功后开始。复用 89 个公开镜像，其余最多 200 个环境通过 RunAI/Kaniko 构建，最多 2 并发、0 GPU。",
+  "tags": [],
+  "sources": {
+    "metrics": "eval/builds/metrics.jsonl",
+    "status": "eval/builds/state.json",
+    "results": "eval/builds/summary.json"
+  },
+  "artifacts": []
+}

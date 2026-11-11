@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "q1-f008-train-20261104",
+  "title": "Q1 F008 · top100 SFT",
+  "kind": "training",
+  "status": "planned",
+  "created_at": "2026-11-04T01:21:11.863959+00:00",
+  "sources": {
+    "status": "runs/q1-f008-train-20261104/state.json",
+    "results": "runs/q1-f008-train-20261104/result.json",
+    "metrics": "runs/q1-f008-train-20261104/checkpoint/trainer_log.jsonl",
+    "training_data": "runs/q1-f008-train-20261104/data/train.jsonl"
+  },
+  "parameters": {
+    "epochs": 2,
+    "learning_rate": 5e-06,
+    "batch_size": 32,
+    "micro_batch": 1,
+    "gradient_accumulation": 16,
+    "gpus": 2,
+    "cutoff": 16384,
+    "seed": 42,
+    "initialization": "original Qwen3-4B for every group",
+    "save_steps": 20,
+    "save_total_limit": 1,
+    "completed_resume_checkpoint_policy": "After final exported weights are verified, remove only this new run checkpoint-* resume copies; retain final weights, logs and trainer state. Record cleanup.",
+    "variant": "f008",
+    "data_rows": 100,
+    "expanded_rows": 1904,
+    "sampling": "full_parameter_cosine_top100",
+    "retry_note": "Fresh restart from original pretrained Qwen3-4B; the earlier quota-failed attempt reached20 steps but left no resumable checkpoint. Its logs are retained."
+  },
+  "artifacts": [
+    {
+      "label": "Frozen study protocol",
+      "path": "runs/q1-selection-20261104/protocol.json"
+    },
+    {
+      "label": "Selection audit",
+      "path": "runs/q1-f008-train-20261104/data/audit.json"
+    },
+    {
+      "label": "All200 scores",
+      "path": "runs/q1-f008-train-20261104/data/ranking.json"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "q1-f008-train-1104",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "job_history": [
+    {
+      "name": "q1-f008-train-1104",
+      "pod_uid": "173f0d78-dd49-4c59-ada2-bfd568d38f4d",
+      "phase": "failed_checkpoint_save",
+      "completed_steps": 20,
+      "resume_checkpoint_available": false,
+      "records": "runs/q1-selection-20261104/quota-recovery"
+    }
+  ]
+}

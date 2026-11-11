@@ -1,0 +1,115 @@
+{
+  "at": "2026-11-04T15:33:19.077755+00:00",
+  "models": {
+    "starting": {
+      "actual_successes": 132,
+      "original_replay_match_count": 256,
+      "prefix_0_to_4_pass": 243,
+      "oracle_calls_inserted": 118,
+      "mechanical_oracle_repair_pass_count": 241,
+      "still_failed_after_repair": {
+        "multi_turn:empty_turn_model_response": 2,
+        "multi_turn:execution_response_mismatch": 13
+      },
+      "trials_with_thought_tool_tags": 0,
+      "trials_with_visible_parser_miss": 3
+    },
+    "random50": {
+      "actual_successes": 99,
+      "original_replay_match_count": 256,
+      "prefix_0_to_4_pass": 251,
+      "oracle_calls_inserted": 154,
+      "mechanical_oracle_repair_pass_count": 251,
+      "still_failed_after_repair": {
+        "multi_turn:execution_response_mismatch": 4,
+        "multi_turn:empty_turn_model_response": 1
+      },
+      "trials_with_thought_tool_tags": 0,
+      "trials_with_visible_parser_miss": 0
+    },
+    "f008": {
+      "actual_successes": 106,
+      "original_replay_match_count": 256,
+      "prefix_0_to_4_pass": 251,
+      "oracle_calls_inserted": 148,
+      "mechanical_oracle_repair_pass_count": 251,
+      "still_failed_after_repair": {
+        "multi_turn:execution_response_mismatch": 3,
+        "multi_turn:instance_state_mismatch": 1,
+        "multi_turn:empty_turn_model_response": 1
+      },
+      "trials_with_thought_tool_tags": 0,
+      "trials_with_visible_parser_miss": 1
+    },
+    "f032": {
+      "actual_successes": 88,
+      "original_replay_match_count": 256,
+      "prefix_0_to_4_pass": 246,
+      "oracle_calls_inserted": 162,
+      "mechanical_oracle_repair_pass_count": 245,
+      "still_failed_after_repair": {
+        "multi_turn:execution_response_mismatch": 8,
+        "multi_turn:empty_turn_model_response": 2,
+        "multi_turn:instance_state_mismatch": 1
+      },
+      "trials_with_thought_tool_tags": 0,
+      "trials_with_visible_parser_miss": 1
+    },
+    "f128": {
+      "actual_successes": 113,
+      "original_replay_match_count": 256,
+      "prefix_0_to_4_pass": 247,
+      "oracle_calls_inserted": 135,
+      "mechanical_oracle_repair_pass_count": 247,
+      "still_failed_after_repair": {
+        "multi_turn:execution_response_mismatch": 7,
+        "multi_turn:empty_turn_model_response": 2
+      },
+      "trials_with_thought_tool_tags": 0,
+      "trials_with_visible_parser_miss": 0
+    },
+    "k008": {
+      "actual_successes": 92,
+      "original_replay_match_count": 256,
+      "prefix_0_to_4_pass": 245,
+      "oracle_calls_inserted": 162,
+      "mechanical_oracle_repair_pass_count": 244,
+      "still_failed_after_repair": {
+        "multi_turn:execution_response_mismatch": 10,
+        "multi_turn:empty_turn_model_response": 2
+      },
+      "trials_with_thought_tool_tags": 0,
+      "trials_with_visible_parser_miss": 1
+    },
+    "k032": {
+      "actual_successes": 58,
+      "original_replay_match_count": 256,
+      "prefix_0_to_4_pass": 248,
+      "oracle_calls_inserted": 193,
+      "mechanical_oracle_repair_pass_count": 246,
+      "still_failed_after_repair": {
+        "multi_turn:execution_response_mismatch": 5,
+        "multi_turn:empty_turn_model_response": 4,
+        "multi_turn:instance_state_mismatch": 1
+      },
+      "trials_with_thought_tool_tags": 0,
+      "trials_with_visible_parser_miss": 3
+    },
+    "k128": {
+      "actual_successes": 98,
+      "original_replay_match_count": 256,
+      "prefix_0_to_4_pass": 250,
+      "oracle_calls_inserted": 154,
+      "mechanical_oracle_repair_pass_count": 250,
+      "still_failed_after_repair": {
+        "multi_turn:execution_response_mismatch": 5,
+        "multi_turn:empty_turn_model_response": 1
+      },
+      "trials_with_thought_tool_tags": 0,
+      "trials_with_visible_parser_miss": 0
+    }
+  },
+  "oracle_call": "contact_customer_support(booking_id='3426812', message='Booking-related query.')",
+  "caution": "Not model accuracy. Only a mechanical intervention on saved decoded calls; a ground-truth call is inserted at turn5 if the model emitted no executable call. All other generated calls are held fixed. Formal model evaluation files are read-only and unchanged.",
+  "original_replay_mismatches": []
+}

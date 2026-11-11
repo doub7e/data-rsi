@@ -1,0 +1,9 @@
+{
+  "version": "0.9.6.dev0",
+  "sources": {
+    "loader": "ed132ebc37129345f88c882cb928e3ca5294954e4040d4eb7d64324f38022ae9",
+    "patcher": "a6d1e7c5de4ddfc8aaf30840441bab24d2a38f1441486a2b421ce4e609107237",
+    "adapter": "27889b4a7a4eaa6c45d96a8cc344aa0c7910ac748256fe9b2e7ca3d10f339834",
+    "hparams_parser": "35616c3337fab6a34d22caced28907bddb5e8d01891826f466fe8db1c3c8813f"
+  }
+}

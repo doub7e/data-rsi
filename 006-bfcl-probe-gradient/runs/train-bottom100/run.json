@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "train-bottom100",
+  "title": "train-bottom100",
+  "kind": "training",
+  "status": "planned",
+  "created_at": "2026-11-02T23:09:09.343311+00:00",
+  "sources": {
+    "status": "runs/train-bottom100/state.json",
+    "results": "runs/train-bottom100/result.json",
+    "metrics": "runs/train-bottom100/checkpoint/trainer_log.jsonl",
+    "training_data": "runs/train-bottom100/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "Frozen method protocol",
+      "path": "PROTOCOL.md"
+    },
+    {
+      "label": "Selection audit",
+      "path": "runs/train-bottom100/data/audit.json"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "pg-bottom-train-1103b",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "parameters": {
+    "model": "Qwen3-4B",
+    "data_rows": 100,
+    "expanded_rows": 1634,
+    "gpus": 2,
+    "gpu_type": "H200",
+    "epochs": 2,
+    "learning_rate": 5e-06,
+    "global_batch_size": 32,
+    "cutoff_len": 16384,
+    "sampling": "cosine-bottom100",
+    "save_steps": 10,
+    "save_total_limit": 2,
+    "scheduler_preemptions_observed": 1
+  }
+}

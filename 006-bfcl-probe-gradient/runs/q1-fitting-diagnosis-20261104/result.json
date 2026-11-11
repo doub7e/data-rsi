@@ -1,0 +1,181 @@
+{
+  "at": "2026-11-04T15:32:27.898736+00:00",
+  "summary": {
+    "random50": {
+      "selected_seen": {
+        "n_trajectories": 16,
+        "target_tokens": 170227,
+        "before_token_weighted_nll": 0.37744531003648213,
+        "after_token_weighted_nll": 0.2838128041569014,
+        "mean_paired_trajectory_nll_change": -0.09173026727790348,
+        "reason_before_nll": 0.40488156994803465,
+        "reason_after_nll": 0.30589726801388045,
+        "visible_before_nll": 0.13095826943839267,
+        "visible_after_nll": 0.08540623516050494
+      },
+      "unselected_seen": {
+        "n_trajectories": 16,
+        "target_tokens": 186502,
+        "before_token_weighted_nll": 0.39683523496581175,
+        "after_token_weighted_nll": 0.41477283922868524,
+        "mean_paired_trajectory_nll_change": 0.017059570240051888,
+        "reason_before_nll": 0.4261350891402821,
+        "reason_after_nll": 0.44587703571666537,
+        "visible_before_nll": 0.19429455834326922,
+        "visible_after_nll": 0.19975931022198432
+      },
+      "heldout": {
+        "n_trajectories": 16,
+        "target_tokens": 163706,
+        "before_token_weighted_nll": 0.5049027312479243,
+        "after_token_weighted_nll": 0.5445889489917779,
+        "mean_paired_trajectory_nll_change": 0.03893339209020595,
+        "reason_before_nll": 0.5447260827702953,
+        "reason_after_nll": 0.5874547773543108,
+        "visible_before_nll": 0.1784103250164121,
+        "visible_after_nll": 0.19315274426255286
+      }
+    },
+    "k032": {
+      "selected_seen": {
+        "n_trajectories": 16,
+        "target_tokens": 171906,
+        "before_token_weighted_nll": 0.3961274305881794,
+        "after_token_weighted_nll": 0.2916516910101541,
+        "mean_paired_trajectory_nll_change": -0.10135926281218988,
+        "reason_before_nll": 0.4207549751076533,
+        "reason_after_nll": 0.31190932779854186,
+        "visible_before_nll": 0.19779190776021602,
+        "visible_after_nll": 0.12850879604751084
+      },
+      "unselected_seen": {
+        "n_trajectories": 16,
+        "target_tokens": 184823,
+        "before_token_weighted_nll": 0.37963492476846766,
+        "after_token_weighted_nll": 0.39574547686381684,
+        "mean_paired_trajectory_nll_change": 0.015660585828982266,
+        "reason_before_nll": 0.411227195741324,
+        "reason_after_nll": 0.42882001070839937,
+        "visible_before_nll": 0.14130401671248471,
+        "visible_after_nll": 0.14623243473072872
+      },
+      "heldout": {
+        "n_trajectories": 16,
+        "target_tokens": 163706,
+        "before_token_weighted_nll": 0.5049027312479243,
+        "after_token_weighted_nll": 0.5416621027556201,
+        "mean_paired_trajectory_nll_change": 0.03598113216690452,
+        "reason_before_nll": 0.5447260827702953,
+        "reason_after_nll": 0.5841791176206547,
+        "visible_before_nll": 0.1784103250164121,
+        "visible_after_nll": 0.19308565034061118
+      }
+    },
+    "f128": {
+      "selected_seen": {
+        "n_trajectories": 15,
+        "target_tokens": 146270,
+        "before_token_weighted_nll": 0.3826778535139431,
+        "after_token_weighted_nll": 0.2803943688890919,
+        "mean_paired_trajectory_nll_change": -0.10164875316408933,
+        "reason_before_nll": 0.4139213170803457,
+        "reason_after_nll": 0.3051628053408053,
+        "visible_before_nll": 0.12913403903755763,
+        "visible_after_nll": 0.07939604545559044
+      },
+      "unselected_seen": {
+        "n_trajectories": 17,
+        "target_tokens": 210459,
+        "before_token_weighted_nll": 0.39099139570980385,
+        "after_token_weighted_nll": 0.4078754640733194,
+        "mean_paired_trajectory_nll_change": 0.017049789855561385,
+        "reason_before_nll": 0.41717779127842164,
+        "reason_after_nll": 0.4355530128433714,
+        "visible_before_nll": 0.1929006352354114,
+        "visible_after_nll": 0.1985046556902039
+      },
+      "heldout": {
+        "n_trajectories": 16,
+        "target_tokens": 163706,
+        "before_token_weighted_nll": 0.5049027312479243,
+        "after_token_weighted_nll": 0.5409442434017218,
+        "mean_paired_trajectory_nll_change": 0.03527102504393338,
+        "reason_before_nll": 0.5447260827702953,
+        "reason_after_nll": 0.5835571305869697,
+        "visible_before_nll": 0.1784103250164121,
+        "visible_after_nll": 0.1915817808870329
+      }
+    }
+  },
+  "protocol": {
+    "at": "2026-11-04T15:16:42.598697+00:00",
+    "models": [
+      "starting",
+      "random50",
+      "k032",
+      "f128"
+    ],
+    "model_selection": "starting checkpoint, random50 control, worst observed K32, best observed F128; diagnostic selection after outcome observation, not a new efficacy test",
+    "seen_meta_indices": [
+      410,
+      435,
+      1314,
+      1661,
+      1681,
+      2054,
+      2630,
+      2693,
+      2820,
+      3170,
+      3277,
+      3503,
+      3604,
+      3620,
+      3756,
+      3834,
+      4034,
+      4036,
+      5914,
+      5963,
+      6010,
+      6237,
+      6252,
+      6521,
+      6612,
+      6914,
+      7479,
+      7578,
+      8139,
+      8235,
+      8406,
+      8889
+    ],
+    "heldout_meta_indices": [
+      366,
+      1052,
+      1084,
+      1108,
+      1900,
+      2200,
+      2397,
+      3545,
+      4615,
+      4952,
+      5311,
+      5418,
+      6602,
+      7151,
+      7193,
+      7803
+    ],
+    "stratification": "8 trajectories from each2x2 random50-membership ×K32-membership cell;32 seen,16 never used in these SFT stages from officialval60",
+    "objective": "Exact common per-turn inputs, native model context,16K cutoff, all target tokens; FP32 saved parameters with BF16 autocast, no gradient updates",
+    "limitations": [
+      "Only48 diagnostic trajectories, not a full generalization benchmark.",
+      "Teacher-forced NLL measures fit to EnvScaler targets, not directly Q1 task reward.",
+      "Sample membership and evaluation protocol frozen before any new loss measurements."
+    ]
+  },
+  "elapsed_seconds": 915.6001125331968,
+  "peak_gpu_bytes": 98234859008
+}

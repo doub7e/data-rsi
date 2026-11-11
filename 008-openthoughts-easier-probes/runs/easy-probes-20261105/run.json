@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "easy-probes-20261105",
+  "title": "OTA · Base8B · 简单任务 score-based probe 梯度",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-05T22:13:03.685087+00:00",
+  "tags": [
+    "OpenThoughts-Agent",
+    "base",
+    "Qwen3-8B",
+    "easy-tasks",
+    "reward-gradient"
+  ],
+  "parameters": {
+    "model": "Qwen/Qwen3-8B",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "rollouts": 144,
+    "phase": "screening",
+    "probe_reward": "official_score_v1"
+  },
+  "sources": {
+    "status": "runs/easy-probes-20261105/state.json",
+    "results": "runs/easy-probes-20261105/result.json",
+    "progress": "runs/easy-probes-20261105/progress.json"
+  },
+  "artifacts": [
+    {
+      "label": "协议与筛选规则",
+      "path": "runs/easy-probes-20261105/protocol.json"
+    },
+    {
+      "label": "部分得分故障与恢复记录",
+      "path": "runs/easy-probes-20261105/reward-recovery.json"
+    },
+    {
+      "label": "score-based方法变更",
+      "path": "runs/easy-probes-20261105/score-migration.json"
+    },
+    {
+      "label": "全部筛查结果与选题",
+      "path": "runs/easy-probes-20261105/screening-results.json"
+    },
+    {
+      "label": "独立正式采样协议",
+      "path": "runs/easy-probes-20261105/formal-protocol.json"
+    },
+    {
+      "label": "分析报告",
+      "path": "runs/easy-probes-20261105/REPORT.md"
+    },
+    {
+      "label": "Cosine图表",
+      "path": "runs/easy-probes-20261105/comparison.png"
+    },
+    {
+      "label": "完整统计",
+      "path": "runs/easy-probes-20261105/result.json"
+    },
+    {
+      "label": "最终score-based分析",
+      "path": "runs/easy-probes-20261105/ANALYSIS.md"
+    },
+    {
+      "label": "结构化梯度分解",
+      "path": "runs/easy-probes-20261105/interpretation.json"
+    }
+  ]
+}

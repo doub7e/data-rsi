@@ -1,0 +1,8 @@
+{
+  "dual_vs_primal_max_error": 4.3298697960381105e-15,
+  "dual_vs_lorif_max_error": 4.368727601899991e-14,
+  "solve_residual": 2.5933089990635536e-16,
+  "nested_projection_max_error": 4.76837158203125e-07,
+  "linearity_max_error": 4.023313522338867e-07,
+  "rank_c": "No approximation; identity factors only in tiny upstream-equivalence test"
+}

@@ -1,0 +1,228 @@
+{
+  "checked_at_utc": "2026-10-29T23:01:32.972161+00:00",
+  "scope": "Host CLI, local build recipes, cluster access, public HF metadata; no GPU validation",
+  "tools": {
+    "runai": "/usr/local/bin/runai",
+    "kubectl": "/usr/bin/kubectl",
+    "docker": null,
+    "uv": null,
+    "python3": "/usr/bin/python3"
+  },
+  "recipes": {
+    "docker/Dockerfile": {
+      "sha256": "b9714c502a9ce0c52e6a424e6ac7c5fab5da770565bc3fde361611bce4099497",
+      "text": "FROM nvidia/cuda:12.6.1-devel-ubuntu24.04\n\nENV DEBIAN_FRONTEND=noninteractive \\\n    PYTHONUNBUFFERED=1 \\\n    VENV_PATH=/opt/archer-venv\n\n# Base tooling for ML workloads (no Claude Code dependencies)\nRUN apt-get update && apt-get install -y --no-install-recommends \\\n    software-properties-common \\\n    git \\\n    wget \\\n    curl \\\n    ca-certificates \\\n    git-lfs \\\n    build-essential \\\n    pkg-config \\\n    libglib2.0-0 \\\n    libsm6 \\\n    libxrender1 \\\n    libxext6 \\\n    libssl-dev \\\n    libffi-dev \\\n    ninja-build \\\n    less \\\n    procps \\\n    sudo \\\n    vim && \\\n    add-apt-repository ppa:deadsnakes/ppa -y && \\\n    apt-get update && apt-get install -y --no-install-recommends \\\n    python3.10 \\\n    python3.10-dev \\\n    python3.10-venv && \\\n    apt-get clean && \\\n    rm -rf /var/lib/apt/lists/*\n\n# Create a clean Python 3.10 virtual environment for Archer\nRUN python3.10 -m venv ${VENV_PATH}\nENV PATH=${VENV_PATH}/bin:$PATH\n\nCOPY archer-requirements.txt /tmp/archer-requirements.txt\n\nRUN python -m pip install --no-cache-dir --upgrade pip setuptools wheel && \\\n    python -m pip install --no-cache-dir torch==2.5.1 --index-url https://download.pytorch.org/whl/cu124 && \\\n    wget -nv https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.3/flash_attn-2.7.3+cu12torch2.5cxx11abiFALSE-cp310-cp310-linux_x86_64.whl -O /tmp/flash_attn-2.7.3+cu12torch2.5cxx11abiFALSE-cp310-cp310-linux_x86_64.whl && \\\n    python -m pip install --no-cache-dir /tmp/flash_attn-2.7.3+cu12torch2.5cxx11abiFALSE-cp310-cp310-linux_x86_64.whl && \\\n    rm -f /tmp/flash_attn-2.7.3+cu12torch2.5cxx11abiFALSE-cp310-cp310-linux_x86_64.whl && \\\n    python -m pip install --no-cache-dir -r /tmp/archer-requirements.txt\n\n# Build arguments for user creation\nARG LDAP_USERNAME\nARG LDAP_GROUPNAME\nARG LDAP_UID\nARG LDAP_GID\n\n# Create local user and group\nRUN groupadd ${LDAP_GROUPNAME} --gid ${LDAP_GID} && \\\n    useradd -m -U -s /bin/bash -G ${LDAP_GROUPNAME},sudo -u ${LDAP_UID} ${LDAP_USERNAME} && \\\n    echo \"${LDAP_USERNAME} ALL=(ALL) NOPASSWD:ALL\" >> /etc/sudoers\n\n# Do not chown shared /scratch paths during image build (can fail on PVC/root-squash)\nRUN mkdir -p /workspace && \\\n    chown -R ${LDAP_USERNAME}:${LDAP_GROUPNAME} /workspace\n\nUSER ${LDAP_USERNAME}\nWORKDIR /scratch/cvlab/home/shuli\nCMD [\"bash\"]\n"
+    },
+    "docker/archer-requirements.txt": {
+      "sha256": "23975ccdc2a78790752b8748bff9fed049f8681fe3ad7b3f721bb3c002780916",
+      "text": "jsonlines\ntenacity\nwandb\nmpi4py\naccelerate\ncodetiming\ndatasets\ndill\nhydra-core\nliger-kernel\nnumpy\npandas\npeft\npyarrow>=15.0.0\npybind11\nray[default]\ntorchdata\ntensordict==0.5.0\ntransformers==4.51.3\ngoogle-cloud-aiplatform\nlatex2sympy2\npylatexenc\nsentence_transformers\ntabulate\nflash_attn==2.7.3\nvllm==0.7.3\ndm-tree\ngdown\npytest\nsortedcontainers\ntorchmetrics\ngym\nselenium\nPyMuPDF\nbrowsergym\ngradio\nfire\nvertexai\ne2b_code_interpreter\nfirecrawl\nantlr4-python3-runtime==4.9.3\nmath-verify[antlr4_9_3]\npolars\nmodelscope"
+    },
+    "docker/Dockerfile.asft": {
+      "sha256": "28e992ff1dd0b770a2677a10cc3bc7949e5aed85d7c99a4f108dd724edcf2a53",
+      "text": "FROM registry.rcp.epfl.ch/shuli/archer:latest\n\n# Switch to root to install into the shared venv (base image ends with USER shuli)\nUSER root\n\n# Install ASFT-specific extra dependencies\nCOPY asft-extra-requirements.txt /tmp/asft-extra-requirements.txt\nRUN python -m pip install --no-cache-dir -r /tmp/asft-extra-requirements.txt && \\\n    python -m pip install --no-cache-dir torch==2.5.1 --index-url https://download.pytorch.org/whl/cu124 && \\\n    rm -f /tmp/asft-extra-requirements.txt\n\nUSER shuli\n"
+    },
+    "docker/asft-extra-requirements.txt": {
+      "sha256": "8a3496d658406efc2637b3f73ab2dbb94b5871dce9120cc7155a7b791437b061",
+      "text": "# ASFT extra dependencies on top of archer base image\n# vllm: archer already has 0.7.3 (ASFT targets 0.6.3.post1; 0.7.3 is compatible for eval)\n# transformers: archer pins 4.51.3, within ASFT's >=4.49,<=4.57 range — no reinstall needed\n\ndeepspeed\ntrl>=0.8.6,<=0.9.6\neinops\ntyro<0.9.0\nscipy\nsentencepiece\ntiktoken\nhf-transfer\nsafetensors<=0.5.3\nomegaconf\nprotobuf\npydantic<=2.10.6\nuvicorn\nfastapi\nsse-starlette\nword2number\nPebble\ntimeout-decorator\nopenai>=1.5.0\npatsy\nscikit-learn\npropcache!=0.4.0\npython-dateutil\nav\nlibrosa\nsympy==1.12\n"
+    },
+    "LINEAGE-final/docker/Dockerfile": {
+      "sha256": "c7484cba97897aa56ff97476439efa34b14fe457f1a7807bb54ba2affdf3bf05",
+      "text": "ARG BASE_IMAGE=vllm/vllm-openai:v0.11.0\nFROM ${BASE_IMAGE}\n\nENV DEBIAN_FRONTEND=noninteractive \\\n    PIP_NO_CACHE_DIR=1 \\\n    PYTHONUNBUFFERED=1 \\\n    TOKENIZERS_PARALLELISM=false\n\nRUN apt-get update \\\n    && apt-get install -y --no-install-recommends \\\n      build-essential \\\n      ca-certificates \\\n      git \\\n      util-linux \\\n    && rm -rf /var/lib/apt/lists/* \\\n    && ln -sf \"$(command -v python3)\" /usr/local/bin/python\n\n# Keep the image generic. Research code, Python packages, and pinned evaluator\n# checkouts live on the PVC and can change without rebuilding this image.\nWORKDIR /workspace\nENTRYPOINT []\nCMD [\"bash\"]\n"
+    }
+  },
+  "cluster": {
+    "command": [
+      "runai",
+      "list"
+    ],
+    "returncode": 1,
+    "stdout": "Post \"https://caas-prod.rcp.epfl.ch:443/apis/authorization.k8s.io/v1/selfsubjectaccessreviews\": failed to refresh token: oauth2: \"invalid_grant\" \"Token is not active\"\n",
+    "stderr": ""
+  },
+  "hf_datasets": {
+    "url": "https://huggingface.co/api/datasets?author=FACET-Terminal",
+    "data": [
+      {
+        "_id": "6a8574e325d0580509424a80",
+        "id": "FACET-Terminal/FACET-Terminal-Tasks-6k",
+        "author": "FACET-Terminal",
+        "disabled": false,
+        "gated": false,
+        "lastModified": "2026-08-21T01:59:53.000Z",
+        "likes": 1,
+        "trendingScore": 0,
+        "private": false,
+        "sha": "b2d02645932e3989c8332a41e57d0f0855de7002",
+        "description": "\n\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tFACET-Terminal-Tasks-6k\n\t\n\n6,020 execution-grounded tasks for terminal agents, coding agents, and executable workflow research\n\n\n\n🌐 FACET Project Website\n📄 FACET Paper\n💻 FACET-Terminal GitHub Repository\n🤗 FACET-Terminal Models & Data\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Overview\n\t\n\nFACET-Terminal-Tasks-6k contains 6,020 public-release-ready Harbor tasks produced by FACET. Each task is an executable environment rather than a standalone prompt: it includes a natural-language instruction… See the full description on the dataset page: https://huggingface.co/datasets/FACET-Terminal/FACET-Terminal-Tasks-6k.",
+        "downloads": 3443,
+        "tags": [
+          "task_categories:text-generation",
+          "language:en",
+          "license:apache-2.0",
+          "size_categories:1K<n<10K",
+          "format:parquet",
+          "modality:text",
+          "library:datasets",
+          "library:dask",
+          "library:polars",
+          "library:mlcroissant",
+          "library:harbor",
+          "arxiv:2608.18580",
+          "region:us",
+          "facet",
+          "terminal-agent",
+          "agentic-ai",
+          "harbor",
+          "executable-tasks",
+          "code",
+          "datasets"
+        ],
+        "createdAt": "2026-08-19T09:18:27.000Z",
+        "key": ""
+      }
+    ]
+  },
+  "hf_task_files": {
+    "url": "https://huggingface.co/api/datasets/FACET-Terminal/FACET-Terminal-Tasks-6k/tree/main?recursive=true",
+    "data": [
+      {
+        "type": "directory",
+        "oid": "0bb8ee475d3e78d9b152d9a8ade9e61053f09459",
+        "size": 0,
+        "path": "assets"
+      },
+      {
+        "type": "directory",
+        "oid": "60e03d908381acb6be8774d30d11ef16dff5bcd2",
+        "size": 0,
+        "path": "data"
+      },
+      {
+        "type": "file",
+        "oid": "bed0738c7eeb449bca98b5d2f33c89a1ee56349a",
+        "size": 2504,
+        "path": ".gitattributes"
+      },
+      {
+        "type": "file",
+        "oid": "ad9247a655cedce24b8783fc49e119f58a1a0549",
+        "size": 158889886,
+        "lfs": {
+          "oid": "7355ea41afac98cd0b322fd9b317b5b0fc61eddf3a3b01091fbeb3d75d9555a6",
+          "size": 158889886,
+          "pointerSize": 134
+        },
+        "xetHash": "02e289b29a35bfab12379f5d28e106ba2c73ebf85062f876e26037041d63eb32",
+        "path": "FACET-Terminal-Tasks.zip"
+      },
+      {
+        "type": "file",
+        "oid": "641eff24330405773144aebfecc4e9d08c0bc12b",
+        "size": 742,
+        "path": "LICENSE"
+      },
+      {
+        "type": "file",
+        "oid": "0f4aac7c343d0432388810cb50fa29c9a0fae8b7",
+        "size": 6645,
+        "path": "README.md"
+      },
+      {
+        "type": "file",
+        "oid": "173d4d4fc472c258d8a88a3632bbad2b77f34e07",
+        "size": 1498034,
+        "lfs": {
+          "oid": "e0e7200d5a51635dc76093f4b4b2f8255f6401ed97b342f1e2246a7ad6a46b02",
+          "size": 1498034,
+          "pointerSize": 132
+        },
+        "xetHash": "c4e2e82c52b351db113fe58bda9ad5601546ad5352159f76db7edc6c07cdf593",
+        "path": "assets/facet-banner.png"
+      },
+      {
+        "type": "file",
+        "oid": "a19259175fa81bf43a19485fa4082e51a51ee0d4",
+        "size": 10319508,
+        "lfs": {
+          "oid": "47e47ad89dff9a9521cfc60322d9132f9dc51d03b4120f5d328b4186d2a43c9c",
+          "size": 10319508,
+          "pointerSize": 133
+        },
+        "xetHash": "c5c66ca9c7c35d918982e77c763be42e0579cf605833e8fc6bbe4b7c9893c769",
+        "path": "data/train-00000-of-00007.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "ca30b16010ed3b45b84d6f5b13074583cd430297",
+        "size": 10272044,
+        "lfs": {
+          "oid": "18a896f0de5180728b14161c588a20c8a5ffa084a963f38d89fd32fc5123ceae",
+          "size": 10272044,
+          "pointerSize": 133
+        },
+        "xetHash": "29ebd6bc589e34d4eadffe62c5cd71ac6aba82feae65db42e39eb6765941b011",
+        "path": "data/train-00001-of-00007.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "3187e338118734ff275201242bb4fcffe984bc62",
+        "size": 10296706,
+        "lfs": {
+          "oid": "a7a4c482033cf0bda368267faee3b39c6c81db52bd90bff93e34ffddf7a332e6",
+          "size": 10296706,
+          "pointerSize": 133
+        },
+        "xetHash": "f7d4ebe6a59f1068cfa056b922641f7056b84dcf94e45f888d497b534628184f",
+        "path": "data/train-00002-of-00007.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "d92c3cee2bc951ff8a1315560392a58ce422a319",
+        "size": 10312031,
+        "lfs": {
+          "oid": "a456a9bab7eb9dda53856b855afb4b70deb3f1d3f0fce195d4ad43f7f6f69fa8",
+          "size": 10312031,
+          "pointerSize": 133
+        },
+        "xetHash": "91d9a1c1ec1dcba0e5d670d1344abf7b0302a268961fe19c205d84b8cbaa9489",
+        "path": "data/train-00003-of-00007.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "4a5a72650dcaf1b9999f9001e3b7571c159469d4",
+        "size": 10325604,
+        "lfs": {
+          "oid": "dde775f4af187977a318101c5f1fd5323275111013a7f5d58a70cd4bf6643b13",
+          "size": 10325604,
+          "pointerSize": 133
+        },
+        "xetHash": "92bb8738c35b62180b3f094c0a69b13d3841d2906d11e73b72d96b9a87fed470",
+        "path": "data/train-00004-of-00007.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "03be30a6497a6063bd92d6f65efbb46de041f031",
+        "size": 10329863,
+        "lfs": {
+          "oid": "39857969fc4becc3fca1a499e08fdc2ff4513efa133de807c3673b30fa010dd3",
+          "size": 10329863,
+          "pointerSize": 133
+        },
+        "xetHash": "e6ce57de7ba7e997cc42f5e7c90f13d9f2fd1e7d231324a8854293fa725989d2",
+        "path": "data/train-00005-of-00007.parquet"
+      },
+      {
+        "type": "file",
+        "oid": "7c6cee60115520bf9a99b36b7daf4d3f461bca37",
+        "size": 227676,
+        "lfs": {
+          "oid": "e396ae5cde7613776d70cca7c87766c51d510a6779a4c051d517e21c9b924eb9",
+          "size": 227676,
+          "pointerSize": 131
+        },
+        "xetHash": "e3d27bace695c0e3716a3318d550d656c16658bf8369a19707b3130a23aa69c7",
+        "path": "data/train-00006-of-00007.parquet"
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "eval-repro-10k-20261030",
+  "title": "10K 复现 · 训练后评测与论文对比",
+  "kind": "evaluation",
+  "created_at": "2026-10-30T18:05:39.096696+00:00",
+  "status": "planned",
+  "parameters": {
+    "sandbox_backend": "Daytona",
+    "inference_gpus": 4,
+    "inference_node_pool": "h200",
+    "tensor_parallel_size": 4,
+    "target_concurrent_trials": 32,
+    "concurrency_policy": "min(32, 90% measured regional quota / worst task resource per benchmark)",
+    "trials": 867,
+    "controller": "RunAI CPU worker",
+    "sandbox_start_concurrency": 2,
+    "auto_stop_minutes": 10,
+    "auto_delete_minutes": 0,
+    "daytona_quota": {
+      "cpu": 10,
+      "memory_gib": 10,
+      "disk_gib": 30
+    },
+    "planned_concurrency": {
+      "swebench100": 2,
+      "tblite": 1,
+      "tb2": 1
+    }
+  },
+  "results": {},
+  "notes": "Daytona 完整云端 smoke 已通过；自动控制器已恢复，等待完整训练成功。推理固定4×H200/TP4；按用户当前配额 SWE100 2并发、TBLite/TB2 1并发。正式评测未开始。",
+  "tags": [],
+  "sources": {
+    "metrics": "runs/eval-repro-10k-20261030/metrics.jsonl",
+    "status": "runs/eval-repro-10k-20261030/state.json",
+    "results": "runs/eval-repro-10k-20261030/result.json",
+    "trajectories": "runs/eval-repro-10k-20261030/jobs",
+    "evaluation_plan": "runs/eval-repro-10k-20261030/evaluation-plan.json"
+  },
+  "artifacts": []
+}

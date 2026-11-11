@@ -1,0 +1,10 @@
+{
+  "gradient_norm": 440.8101044596985,
+  "probe_norm": 0.0,
+  "dot": 0.0,
+  "cosine": 0.0,
+  "rollouts": 72,
+  "steps": 760,
+  "target_tokens": 541940,
+  "elapsed_seconds": 725.1448981482536
+}

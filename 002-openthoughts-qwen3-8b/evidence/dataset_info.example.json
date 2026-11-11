@@ -1,0 +1,14 @@
+{
+  "ota_sft_10k": {
+    "hf_hub_url": "open-thoughts/OpenThoughts-Agent-SFT-10K",
+    "formatting": "sharegpt",
+    "columns": {"messages": "conversations"},
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant",
+      "system_tag": "system"
+    }
+  }
+}

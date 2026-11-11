@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "comparison",
+  "title": "OTA重采样 · Qwen3-8B · Uniform vs Probe-dot guided · TB-dev配对比较",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-07T12:36:27.417837+00:00",
+  "tags": [
+    "environment-resampling",
+    "Qwen3-8B"
+  ],
+  "parameters": {},
+  "sources": {
+    "status": "runs/comparison/state.json",
+    "results": "runs/comparison/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "训练集与评测集任务类别核查",
+      "path": "configs/domain-audit.json"
+    },
+    {
+      "label": "沙箱调度迁移恢复",
+      "path": "runs/study/native-reschedule-recovery.json"
+    },
+    {
+      "label": "无完整响应的超时结果处理",
+      "path": "runs/study/empty-model-outcome-recovery.json"
+    },
+    {
+      "label": "模型耗尽沙箱存储的失败轨迹说明",
+      "path": "runs/study/model-storage-budget-case.json"
+    },
+    {
+      "label": "最终配对报告",
+      "path": "runs/comparison/REPORT.md"
+    },
+    {
+      "label": "评测比较图",
+      "path": "runs/comparison/comparison.png"
+    },
+    {
+      "label": "采样概率",
+      "path": "runs/comparison/sampling.png"
+    },
+    {
+      "label": "训练曲线",
+      "path": "runs/comparison/training-curves.png"
+    },
+    {
+      "label": "逐题结果、评分覆盖率与置信区间",
+      "path": "runs/comparison/result.json"
+    },
+    {
+      "label": "高概率环境的再生成结果",
+      "path": "runs/comparison/regeneration-audit.json"
+    },
+    {
+      "label": "task_9288 一条失败轨迹的具体原因",
+      "path": "runs/comparison/explanation-case-task9288.json"
+    }
+  ],
+  "job": {
+    "name": "ota-rs-comparison-1107",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

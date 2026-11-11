@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-11T10:31:46.702933+00:00",
+  "old_run": "train-b300-fp32-richardson20",
+  "new_run": "train-b300-fp32-richardson20-r2",
+  "prior_claim_archived": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/revisions/retry-20261111/interrupted-training-winner",
+  "prior_pods_verified_nonactive": true,
+  "periodic_save": 5,
+  "source_hashes_updated": true,
+  "no_auto_takeover": true
+}

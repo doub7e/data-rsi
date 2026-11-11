@@ -1,0 +1,66 @@
+{
+  "job_name": "config-validation-only",
+  "jobs_dir": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/eval/results",
+  "n_attempts": 1,
+  "n_concurrent_trials": 32,
+  "timeout_multiplier": 2.0,
+  "retry": {
+    "max_retries": 2,
+    "exclude_exceptions": [
+      "AgentTimeoutError",
+      "AgentEnvironmentTimeoutError",
+      "VerifierTimeoutError",
+      "BadRequestError",
+      "ContextLengthExceededError",
+      "SummarizationTimeoutError",
+      "AuthenticationUnavailable"
+    ],
+    "wait_multiplier": 1.0,
+    "min_wait_sec": 1.0,
+    "max_wait_sec": 60.0
+  },
+  "environment": {
+    "type": null,
+    "import_path": "runai_env:RunAIEnvironment",
+    "force_build": false,
+    "delete": true,
+    "kwargs": {
+      "startup_timeout_sec": 1800
+    }
+  },
+  "verifier": {
+    "max_timeout_sec": 14400
+  },
+  "agents": [
+    {
+      "name": "terminus-2",
+      "model_name": "hosted_vllm/ota-qwen3-8b-1k",
+      "max_timeout_sec": 7200,
+      "kwargs": {
+        "api_base": "http://127.0.0.1:8000/v1",
+        "temperature": 0.6,
+        "llm_kwargs": {
+          "api_key": "EMPTY",
+          "timeout": 1800
+        },
+        "model_info": {
+          "max_input_tokens": 32768,
+          "max_output_tokens": 16384,
+          "input_cost_per_token": 0,
+          "output_cost_per_token": 0
+        },
+        "parser_name": "json",
+        "enable_summarize": true,
+        "proactive_summarization_threshold": 2048,
+        "interleaved_thinking": false,
+        "record_terminal_session": false,
+        "trajectory_config": {
+          "raw_content": true,
+          "linear_history": true
+        }
+      }
+    }
+  ],
+  "datasets": [],
+  "tasks": []
+}

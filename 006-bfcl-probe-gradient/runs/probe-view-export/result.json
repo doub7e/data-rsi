@@ -1,0 +1,10 @@
+{
+  "finished_at": "2026-11-03T02:04:49.813207+00:00",
+  "exported_trials": 256,
+  "passed_trials": 106,
+  "raw_rollout_sha256": "d09418d2c72ac9f8e70466a84895049b16538b29225522af4783c2f9a65e0ac3",
+  "metrics": {
+    "exported_trials": 256,
+    "passed_trials": 106
+  }
+}

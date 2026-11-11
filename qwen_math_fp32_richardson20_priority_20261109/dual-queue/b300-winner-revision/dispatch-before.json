@@ -1,0 +1,264 @@
+{
+  "deadline_utc": "2026-11-13T17:58:08.938870+00:00",
+  "max_active_gpus": 8,
+  "entries": [
+    {
+      "run_id": "storage-preflight",
+      "job_name": "opd-p20-storage-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 8,
+      "memory": "64G",
+      "run_as_user": true,
+      "dependencies": [],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/storage-preflight/source/scripts/run_fd_priority20_job.sh"
+    },
+    {
+      "run_id": "prepare-data",
+      "job_name": "opd-p20-data-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 12,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/storage-preflight/result.json",
+        "runs/storage-preflight/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/prepare-data/source/scripts/run_fd_priority20_job.sh"
+    },
+    {
+      "run_id": "screen-0",
+      "job_name": "opd-p20-screen0-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "b300",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/prepare-data/result.json",
+        "runs/prepare-data/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/screen-0/source/scripts/run_fd_priority20_job.sh"
+    },
+    {
+      "run_id": "screen-1",
+      "job_name": "opd-p20-screen1-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "b300",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/prepare-data/result.json",
+        "runs/prepare-data/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/screen-1/source/scripts/run_fd_priority20_job.sh"
+    },
+    {
+      "run_id": "select320",
+      "job_name": "opd-p20-select-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 12,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/prepare-data/result.json",
+        "runs/prepare-data/state.json",
+        "runs/screen-0/result.json",
+        "runs/screen-0/state.json",
+        "runs/screen-1/result.json",
+        "runs/screen-1/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/select320/source/scripts/run_fd_priority20_job.sh"
+    },
+    {
+      "run_id": "train-fp32-richardson20",
+      "job_name": "opd-p20-fp32-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200",
+      "gpu": 8,
+      "cpu": 32,
+      "memory": "384G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/select320-v2/result.json",
+        "runs/select320-v2/state.json",
+        "runs/storage-preflight/result.json",
+        "runs/storage-preflight/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/train-fp32-richardson20/source/scripts/run_fd_priority20_job.sh"
+    },
+    {
+      "run_id": "export20",
+      "job_name": "opd-p20-export-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 12,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/train-fp32-richardson20/result.json",
+        "runs/train-fp32-richardson20/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/export20/source/scripts/run_fd_priority20_job.sh"
+    },
+    {
+      "run_id": "eval20",
+      "job_name": "opd-p20-eval20-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "b300",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/export20/result.json",
+        "runs/export20/state.json",
+        "runs/train-fp32-richardson20/result.json",
+        "runs/train-fp32-richardson20/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/eval20/source/scripts/run_fd_priority20_job.sh"
+    },
+    {
+      "run_id": "eval-base",
+      "job_name": "opd-p20-eval-base-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "b300",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/train-fp32-richardson20/result.json",
+        "runs/train-fp32-richardson20/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/eval-base/source/scripts/run_fd_priority20_job.sh"
+    },
+    {
+      "run_id": "summary",
+      "job_name": "opd-p20-report-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 4,
+      "memory": "32G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/eval20/result.json",
+        "runs/eval20/state.json",
+        "runs/eval-base/result.json",
+        "runs/eval-base/state.json",
+        "runs/train-fp32-richardson20/result.json",
+        "runs/train-fp32-richardson20/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/summary/source/scripts/run_fd_priority20_job.sh"
+    },
+    {
+      "run_id": "prepare-more",
+      "job_name": "opd-p20-moredata-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 12,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/prepare-data/result.json",
+        "runs/prepare-data/state.json",
+        "runs/screen-0/result.json",
+        "runs/screen-0/state.json",
+        "runs/screen-1/result.json",
+        "runs/screen-1/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/prepare-more/source/scripts/run_fd_priority20_job.sh"
+    },
+    {
+      "run_id": "screen-more-0",
+      "job_name": "opd-p20-more0-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "b300",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/prepare-more/result.json",
+        "runs/prepare-more/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/screen-more-0/source/scripts/run_fd_priority20_job.sh"
+    },
+    {
+      "run_id": "screen-more-1",
+      "job_name": "opd-p20-more1-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "b300",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/prepare-more/result.json",
+        "runs/prepare-more/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/screen-more-1/source/scripts/run_fd_priority20_job.sh"
+    },
+    {
+      "run_id": "select320-v2",
+      "job_name": "opd-p20-select-1109b",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 12,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/prepare-more/result.json",
+        "runs/prepare-more/state.json",
+        "runs/screen-more-0/result.json",
+        "runs/screen-more-0/state.json",
+        "runs/screen-more-1/result.json",
+        "runs/screen-more-1/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/select320-v2/source/scripts/run_fd_priority20_job.sh"
+    },
+    {
+      "run_id": "train-b300-fp32-richardson20",
+      "job_name": "opd-p20-b300-1111a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "b300",
+      "gpu": 4,
+      "cpu": 32,
+      "memory": "384G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/select320-v2/result.json",
+        "runs/select320-v2/state.json",
+        "runs/storage-preflight/result.json",
+        "runs/storage-preflight/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/train-b300-fp32-richardson20/source/scripts/run_fd_priority20_job.sh"
+    }
+  ],
+  "completion_run_id": "summary",
+  "finalize_command": [
+    "/usr/bin/python",
+    "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/dual-queue/control/fd_priority20_finalize_dual.py",
+    "--experiment",
+    "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109"
+  ],
+  "operational_revisions": [
+    {
+      "at": "2026-11-10T17:58:08.938870+00:00",
+      "reason": "~20h waiting for an entire8H200 node must not consume the time needed for requested20steps+evaluation; operational window only, no additional runs/steps/GPUs",
+      "new_deadline_utc": "2026-11-13T17:58:08.938870+00:00"
+    }
+  ]
+}

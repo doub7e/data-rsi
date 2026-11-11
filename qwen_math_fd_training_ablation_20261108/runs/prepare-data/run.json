@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "prepare-data",
+  "title": "FD训练消融 · 冻结候选训练题与四项标准评测数据",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T11:03:45.392173+00:00",
+  "updated_at": "2026-11-08T11:03:45.392185+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "candidate_count": 384,
+    "teacher_draws_per_candidate": 8,
+    "training_prompts": 80,
+    "selection": "source-only frozen permutation before teacher/student outcomes",
+    "same_frozen_pool_allarms": true
+  },
+  "sources": {
+    "status": "runs/prepare-data/state.json",
+    "progress": "runs/prepare-data/progress.json",
+    "results": "runs/prepare-data/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "selection.json",
+      "path": "runs/prepare-data/selection.json"
+    },
+    {
+      "label": "candidates.json",
+      "path": "runs/prepare-data/candidates.json"
+    },
+    {
+      "label": "result.json",
+      "path": "runs/prepare-data/result.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-data-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

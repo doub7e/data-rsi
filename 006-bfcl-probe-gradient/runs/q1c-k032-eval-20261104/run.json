@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "q1c-k032-eval-20261104",
+  "title": "Q1 continuation k032 ·256 independent trials",
+  "kind": "evaluation",
+  "status": "planned",
+  "created_at": "2026-11-04T02:53:31.966893+00:00",
+  "sources": {
+    "status": "runs/q1c-k032-eval-20261104/state.json",
+    "results": "runs/q1c-k032-eval-20261104/result.json",
+    "trajectories": "runs/q1c-k032-eval-20261104/jobs",
+    "evaluation_plan": "runs/q1c-k032-eval-20261104/evaluation-plan.json"
+  },
+  "parameters": {
+    "rollouts_per_model": 256,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_output_per_call": 4096,
+    "context": 65536,
+    "max_step_limit": 20,
+    "history_protocol": "strict-v2",
+    "seed_offset": 423400000,
+    "seed_rule": "423400000 + repeat*1000 + call_index; reuse existing independent256-trial starting-checkpoint control, disjoint from523400000 probe seeds.",
+    "metric": "official BFCL whole-task binary success",
+    "controls": [
+      "random50",
+      "starting_checkpoint"
+    ],
+    "primary_comparison": "six selected50 continuations versus random50 continuation",
+    "secondary_comparison": "six selected50 continuations versus unchanged starting checkpoint; random50 versus starting checkpoint is also reported",
+    "statistics": "Wilson95% rates; paired-seed bootstrap deltas; exact McNemar with Holm across13 planned contrasts; fixed256 trials/model"
+  },
+  "artifacts": [
+    {
+      "label": "Frozen continuation protocol",
+      "path": "runs/q1-continuation-20261104/protocol.json"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "q1c-k032-eval-1104",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

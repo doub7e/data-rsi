@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "summary",
+  "title": "优先FP32-20 · 20step训练完成验收及四项评测报告",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-09T18:38:09.917472+00:00",
+  "tags": [
+    "priority1",
+    "FP32",
+    "20step"
+  ],
+  "parameters": {
+    "protocol": "protocol.json",
+    "priority": 1,
+    "gpus": 0,
+    "steps": null,
+    "fd_precision": "fp32",
+    "h_rel": 1e-05,
+    "sigmoid": "sigmoid(3s)",
+    "fallback": 0,
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "data_pool": "new320; original1600 unavailable"
+  },
+  "sources": {
+    "status": "runs/summary/state.json",
+    "progress": "runs/summary/progress.json",
+    "results": "runs/summary/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "完整协议",
+      "path": "protocol.json"
+    },
+    {
+      "label": "result.json",
+      "path": "runs/summary/result.json"
+    },
+    {
+      "label": "report.md",
+      "path": "runs/summary/report.md"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "opd-p20-report-1109a",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "planning_revisions": [
+    {
+      "at": "2026-11-09T20:45:27.940205+00:00",
+      "reason": "Before submission: resolve selection/prepare nodes from protocol after274unique eligibility failure",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/summary/planning-revisions/2026-11-09T20-45-22.263662+00-00/source"
+    }
+  ]
+}

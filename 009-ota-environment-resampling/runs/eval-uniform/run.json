@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "eval-uniform",
+  "title": "OTA重采样 · uniform续训模型 · TB-dev",
+  "kind": "evaluation",
+  "status": "planned",
+  "created_at": "2026-11-06T23:02:56.160791+00:00",
+  "tags": [
+    "environment-resampling",
+    "Qwen3-8B"
+  ],
+  "parameters": {
+    "teacher": "Qwen/Qwen3.8-27B",
+    "teacher_revision": "8c0b3d30f3ae96f5c7f774de704bf0ada83e422a",
+    "student": "Qwen/Qwen3-8B",
+    "seed": 20261107,
+    "planned_rollouts": 70,
+    "served_model": "ota-resample-sft-uniform",
+    "reward_policy": "original_verifier_only"
+  },
+  "sources": {
+    "status": "runs/eval-uniform/state.json",
+    "results": "runs/eval-uniform/result.json",
+    "progress": "runs/eval-uniform/verifier-only-progress.json",
+    "trajectories": "runs/eval-uniform/jobs",
+    "evaluation_plan": "runs/eval-uniform/evaluation-plan.json",
+    "training_data": "runs/eval-uniform/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "固定资源版本",
+      "path": "configs/resources.json"
+    },
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "均匀分支：完整集、留出集与probe子集结果",
+      "path": "runs/eval-uniform/baseline-subsets.json"
+    },
+    {
+      "label": "原verifier分数核查与保留的旧统计",
+      "path": "runs/verifier-authority-audit/result.json"
+    }
+  ],
+  "job": {
+    "name": "ota-rs-eval-uniform-1107",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "dense-repeats-base-homotopy",
+  "title": "FD可靠性 · Base同伦题 · 全515 tokens · 56组独立block重复",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T02:16:04.918728+00:00",
+  "updated_at": "2026-11-08T02:16:04.918742+00:00",
+  "parameters": {
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+    "source_audit": "audit-base-homotopy",
+    "probe_precision": "bf16",
+    "counts_repetitions": {
+      "16": 32,
+      "32": 16,
+      "128": 8
+    },
+    "reference_A": 1024,
+    "new_rollouts": 0,
+    "scope": "all frozenprefix tokens; disjoint blocks withinN, shared finiteB acrossN; eagerJVP oracle versus SDPA FD",
+    "methods": {
+      "BF16_Richardson_h": 1e-05,
+      "FP32_Richardson_control_h": 1e-06
+    },
+    "calibration_choice": "FP32h1e-6 chosen after initial homotopy sweeps; not a held-out training-result claim"
+  },
+  "sources": {
+    "status": "runs/dense-repeats-base-homotopy/state.json",
+    "progress": "runs/dense-repeats-base-homotopy/progress.json",
+    "results": "runs/dense-repeats-base-homotopy/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "重复稳定性汇总",
+      "path": "runs/dense-repeats-base-homotopy/dense_summary.json"
+    },
+    {
+      "label": "各N汇总CSV",
+      "path": "runs/dense-repeats-base-homotopy/dense_summary.csv"
+    },
+    {
+      "label": "每token权重变化",
+      "path": "runs/dense-repeats-base-homotopy/dense_per_token_weight_variation.csv"
+    },
+    {
+      "label": "oracle核验",
+      "path": "runs/dense-repeats-base-homotopy/dense_reference_A.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-dense-p1-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "packages": {
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "deepspeed": "0.17.6",
+    "flash-attn": "2.8.3",
+    "liger-kernel": "0.6.2",
+    "llamafactory": "0.9.4.dev0"
+  },
+  "cuda": "12.8",
+  "gpus": [
+    "NVIDIA H200",
+    "NVIDIA H200"
+  ],
+  "nvidia_smi": "NVIDIA H200, 580.159.04, 143771 MiB\nNVIDIA H200, 580.159.04, 143771 MiB\n",
+  "flash_attention_forward_backward": "passed"
+}

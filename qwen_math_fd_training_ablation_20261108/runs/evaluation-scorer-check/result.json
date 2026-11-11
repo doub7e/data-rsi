@@ -1,0 +1,57 @@
+{
+  "metrics": {
+    "evaluation_scorer_contract_cases": 5,
+    "passed": 5
+  },
+  "cases": [
+    {
+      "response": "\\boxed{2}",
+      "answer": "2",
+      "expected": 1.0,
+      "actual": 1.0
+    },
+    {
+      "response": "\\boxed{3}",
+      "answer": "2",
+      "expected": 0.0,
+      "actual": 0.0
+    },
+    {
+      "response": "\\boxed{\\frac{1}{2}}",
+      "answer": "0.5",
+      "expected": 1.0,
+      "actual": 1.0
+    },
+    {
+      "response": "no boxed answer",
+      "answer": "2",
+      "expected": 0.0,
+      "actual": 0.0
+    },
+    {
+      "response": "\\boxed{3} then \\boxed{2}",
+      "answer": "2",
+      "expected": 1.0,
+      "actual": 1.0
+    }
+  ],
+  "metadata": {
+    "description": "verbatim project math_verify.compute_score, same DeepMath default dispatch",
+    "project_source": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/evaluation-scorer-check/source/verl/verl/utils/reward_score/math_verify.py",
+    "project_source_sha256": "779aaebe576c022f6206d29d058fe103cb3052d1fea7882185c96866bbd810bd",
+    "dispatch_source": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/evaluation-scorer-check/source/verl/verl/utils/reward_score/__init__.py",
+    "dispatch_source_sha256": "ec7a936517bd5788b994ea29728447472fb8a7b8843f043e0242515e6eb82fb2",
+    "module_name": "_opd_fd_verbatim_math_verify_779aaebe576c022f",
+    "module_file": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/evaluation-scorer-check/source/verl/verl/utils/reward_score/math_verify.py",
+    "module_spec_origin": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/evaluation-scorer-check/source/verl/verl/utils/reward_score/math_verify.py",
+    "dependency_module_file": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runtime/grader/math_verify/__init__.py",
+    "dependency_module_sha256": "b98dfd79aa33cbb6ee36476a717aca4546b56704af6343b9eb790dca9960c706",
+    "sanity": {
+      "boxed2_ground_truth2": 1.0,
+      "boxed3_ground_truth2": 0.0,
+      "passed": true
+    },
+    "evaluation_source_sha256": "a971ab882ee861a96391cf3d1bccc1563300ce4d1cf5d9eccffb2e6fd0916e2b"
+  },
+  "scope": "ordinary scorer contract checks; no model generation/evaluation accuracy claim"
+}

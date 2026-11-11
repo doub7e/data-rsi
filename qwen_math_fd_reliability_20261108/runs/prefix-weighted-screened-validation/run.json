@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "prefix-weighted-screened-validation",
+  "title": "FD可靠性 · 新筛选题完整冻结prefix · 加权梯度方向",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T09:46:11.131621+00:00",
+  "updated_at": "2026-11-08T09:46:11.131634+00:00",
+  "parameters": {
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+    "row": 46947,
+    "scope": "reuse full-prefix-screened-validation sameA1024 scores; exhaustive frozenprefix max2048, not complete originalresponse; no newrollouts oroptimizersteps",
+    "recipes": [
+      "exact_JVP",
+      "FP32_FD_h1e-5",
+      "FP32_FD_h1e-6",
+      "BF16_FD_h1e-5",
+      "unweighted"
+    ],
+    "selection": "same recipes as original homotopy followup, fixed before inspecting this prompt numerical results"
+  },
+  "sources": {
+    "status": "runs/prefix-weighted-screened-validation/state.json",
+    "progress": "runs/prefix-weighted-screened-validation/progress.json",
+    "results": "runs/prefix-weighted-screened-validation/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/prefix-weighted-screened-validation/result.json"
+    },
+    {
+      "label": "report.md",
+      "path": "runs/prefix-weighted-screened-validation/report.md"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-weight-screen-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

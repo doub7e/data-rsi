@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "id": "001-facet-reproduction",
+  "title": "FACET 复现预研",
+  "description": "检查环境、公开任务与训练轨迹的可获取性。",
+  "tags": [
+    "FACET",
+    "预研"
+  ],
+  "created_at": "2026-10-30T17:33:56.618022+00:00"
+}

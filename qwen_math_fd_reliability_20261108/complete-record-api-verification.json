@@ -1,0 +1,38 @@
+{
+  "verified_at": "2026-11-09T11:54:55.720708+00:00",
+  "checks": [
+    {
+      "experiment": "qwen_math_fd_reliability_20261108",
+      "run": "comparison",
+      "path": "COMPLETE_RECORD_20261108.md",
+      "download_matches_disk": true,
+      "sha256": "4eb30f56ca1dd68bfc73707c96ef335400530da68333dd46e8a3752cf82f61c2"
+    },
+    {
+      "experiment": "qwen_math_fd_reliability_20261108",
+      "run": "comparison",
+      "path": "complete-record-snapshot.json",
+      "download_matches_disk": true,
+      "sha256": "a10d1c97fdf888514cf5cd082e522d27283ca7c4b850e6949d90a59e36a62848"
+    },
+    {
+      "experiment": "qwen_math_fd_training_ablation_20261108",
+      "run": "train8-bf16-h1em5",
+      "path": "runs/train8-bf16-h1em5/startup-failure-cluster.json",
+      "download_matches_disk": true,
+      "sha256": "6626b6cd1fb5dcec617544d115b64a7ec1f880f5db66acdeee6d3747db57ce76"
+    },
+    {
+      "experiment": "qwen_math_fd_training_ablation_20261108",
+      "run": "train8-bf16-h1em5",
+      "path": "runs/train8-bf16-h1em5/startup-failure-cluster.log",
+      "download_matches_disk": true,
+      "sha256": "e5dec472618ebab295b649877507043cf6f1887d612da09936924dee0e5dba9b"
+    },
+    {
+      "run": "train8-bf16-h1em5",
+      "live_state": "failed",
+      "recorded_state": "failed"
+    }
+  ]
+}

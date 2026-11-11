@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "fsdp-real-base-n32",
+  "title": "FD可靠性 · 实际 Qwen3-4B · N32 BF16 probe · 双 GPU FSDP",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T01:26:53.168238+00:00",
+  "updated_at": "2026-11-08T01:26:53.168247+00:00",
+  "parameters": {
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+    "gpu_count": 2,
+    "source_case": "audit-base-homotopy/n0032_r00_probe_bf16",
+    "purpose": "check same mathematical estimator on actual sharded4B model and production cache/precision utilities",
+    "scope": "root FSDP with unpadded batch1; not complete trainer/optimizer equivalence"
+  },
+  "sources": {
+    "status": "runs/fsdp-real-base-n32/state.json",
+    "progress": "runs/fsdp-real-base-n32/progress.json",
+    "results": "runs/fsdp-real-base-n32/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "结果",
+      "path": "runs/fsdp-real-base-n32/result.json"
+    },
+    {
+      "label": "与独立实现对照",
+      "path": "runs/fsdp-real-base-n32/main_case_comparison.json"
+    },
+    {
+      "label": "FSDP配置",
+      "path": "runs/fsdp-real-base-n32/fsdp_config.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-realfsdp-n32-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

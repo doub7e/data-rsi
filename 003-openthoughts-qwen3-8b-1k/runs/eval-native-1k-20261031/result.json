@@ -1,0 +1,128 @@
+{
+  "status": "succeeded",
+  "training_rows": 1000,
+  "backend": "runai-native",
+  "metrics": {
+    "swebench100_accuracy_pct": 29.333333333333332,
+    "tblite_accuracy_pct": 17.333333333333332,
+    "tb2_accuracy_pct": 9.363295880149812
+  },
+  "benchmarks": {
+    "swebench100": {
+      "accuracy_pct": 29.333333333333332,
+      "se_pct": 1.452966314513558,
+      "repeats": [
+        {
+          "passed": 32,
+          "tasks": 100,
+          "accuracy_pct": 32.0,
+          "errors": {
+            "AgentTimeoutError": 17
+          },
+          "result_path": "/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/runs/eval-native-1k-20261031/jobs/swebench100-repeat-1/result.json"
+        },
+        {
+          "passed": 27,
+          "tasks": 100,
+          "accuracy_pct": 27.0,
+          "errors": {
+            "AgentTimeoutError": 21
+          },
+          "result_path": "/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/runs/eval-native-1k-20261031/jobs/swebench100-repeat-2/result.json"
+        },
+        {
+          "passed": 29,
+          "tasks": 100,
+          "accuracy_pct": 28.999999999999996,
+          "errors": {
+            "AgentTimeoutError": 20
+          },
+          "result_path": "/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/runs/eval-native-1k-20261031/jobs/swebench100-repeat-3/result.json"
+        }
+      ],
+      "paper_10k_reference_pct": 24.3,
+      "paper_10k_reference_se_pct": 1.9
+    },
+    "tblite": {
+      "accuracy_pct": 17.333333333333332,
+      "se_pct": 2.6034165586355518,
+      "repeats": [
+        {
+          "passed": 22,
+          "tasks": 100,
+          "accuracy_pct": 22.0,
+          "errors": {
+            "AgentTimeoutError": 36
+          },
+          "result_path": "/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/runs/eval-native-1k-20261031/jobs/tblite-repeat-1/result.json"
+        },
+        {
+          "passed": 17,
+          "tasks": 100,
+          "accuracy_pct": 17.0,
+          "errors": {
+            "AgentTimeoutError": 38,
+            "RuntimeError": 1,
+            "VerifierTimeoutError": 1
+          },
+          "result_path": "/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/runs/eval-native-1k-20261031/jobs/tblite-repeat-2/result.json"
+        },
+        {
+          "passed": 13,
+          "tasks": 100,
+          "accuracy_pct": 13.0,
+          "errors": {
+            "AgentTimeoutError": 41,
+            "VerifierTimeoutError": 2
+          },
+          "result_path": "/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/runs/eval-native-1k-20261031/jobs/tblite-repeat-3/result.json"
+        }
+      ],
+      "paper_10k_reference_pct": 15.6,
+      "paper_10k_reference_se_pct": 1.5
+    },
+    "tb2": {
+      "accuracy_pct": 9.363295880149812,
+      "se_pct": 0.7490636704119848,
+      "repeats": [
+        {
+          "passed": 9,
+          "tasks": 89,
+          "accuracy_pct": 10.112359550561797,
+          "errors": {
+            "AddTestsDirError": 5,
+            "AgentTimeoutError": 36,
+            "DownloadVerifierDirError": 2
+          },
+          "result_path": "/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/runs/eval-native-1k-20261031/jobs/tb2-repeat-1/result.json"
+        },
+        {
+          "passed": 9,
+          "tasks": 89,
+          "accuracy_pct": 10.112359550561797,
+          "errors": {
+            "AddTestsDirError": 4,
+            "AgentTimeoutError": 46,
+            "DownloadVerifierDirError": 1
+          },
+          "result_path": "/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/runs/eval-native-1k-20261031/jobs/tb2-repeat-2/result.json"
+        },
+        {
+          "passed": 7,
+          "tasks": 89,
+          "accuracy_pct": 7.865168539325842,
+          "errors": {
+            "AgentTimeoutError": 42,
+            "DownloadVerifierDirError": 3,
+            "VerifierTimeoutError": 1,
+            "AddTestsDirError": 1
+          },
+          "result_path": "/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/runs/eval-native-1k-20261031/jobs/tb2-repeat-3/result.json"
+        }
+      ],
+      "paper_10k_reference_pct": 7.9,
+      "paper_10k_reference_se_pct": 1.4
+    }
+  },
+  "completed_at": "2026-11-02T08:16:35.108700+00:00"
+}

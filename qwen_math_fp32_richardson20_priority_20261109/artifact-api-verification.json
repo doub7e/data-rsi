@@ -1,0 +1,24 @@
+{
+  "verified_at": "2026-11-09T20:47:07.264836+00:00",
+  "checks": [
+    {
+      "run": "screen-0",
+      "path": "runs/screen-0/sample.json",
+      "download_matches_disk": true,
+      "sha256": "ef2136a379da5b73594f2c5e8a0c565b74e2eb2abd91e33b7ed28bdfd07ea9a7",
+      "preview_truncated": false,
+      "downloaded_json_parses": true,
+      "preview_matches_disk": true
+    },
+    {
+      "run": "screen-1",
+      "path": "runs/screen-1/sample.json",
+      "download_matches_disk": true,
+      "sha256": "1f8b133b3034110289964827f38e41dc5188c619f294ae9cbb9729d33cfdd0f9",
+      "preview_truncated": false,
+      "downloaded_json_parses": true,
+      "preview_matches_disk": true
+    }
+  ],
+  "verified": true
+}

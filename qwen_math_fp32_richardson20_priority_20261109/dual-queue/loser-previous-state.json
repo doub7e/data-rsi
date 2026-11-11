@@ -1,0 +1,8 @@
+{
+  "state": "queued",
+  "updated_at": "2026-11-10T23:22:51.016220+00:00",
+  "stage": "waiting for resources",
+  "dispatch_job_name": "opd-p20-fp32-1109a",
+  "monitor_job_name": "opd-p20-fp32-1109a",
+  "monitor_source": "current mapped RunAI pods"
+}

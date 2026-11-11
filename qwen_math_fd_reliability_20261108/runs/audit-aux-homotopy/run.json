@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "audit-aux-homotopy",
+  "title": "FD可靠性 · 辅助 MOPD step20 · 同伦题 · N16/32/128/1024 三方法",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T00:54:17.535799+00:00",
+  "updated_at": "2026-11-08T00:54:17.535807+00:00",
+  "parameters": {
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+    "initialization": "辅助 MOPD step20 · 同伦题",
+    "probe_counts": [
+      16,
+      32,
+      128,
+      1024
+    ],
+    "independent_reference": 1024,
+    "small_N_repeats": 3,
+    "probe_precisions": [
+      "fp32",
+      "bf16"
+    ],
+    "residual": "fixed clipped BF16 teacher-current student",
+    "weight": "sigmoid(3s)",
+    "target_positions": "16 uniform plus8 extreme raw residual, overlap retained",
+    "physical_row": 20589
+  },
+  "sources": {
+    "status": "runs/audit-aux-homotopy/state.json",
+    "progress": "runs/audit-aux-homotopy/progress.json",
+    "results": "runs/audit-aux-homotopy/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "审计报告",
+      "path": "runs/audit-aux-homotopy/report/report.md"
+    },
+    {
+      "label": "结构化比较",
+      "path": "runs/audit-aux-homotopy/report/summary.json"
+    },
+    {
+      "label": "冻结位置",
+      "path": "runs/audit-aux-homotopy/frozen_plan.json"
+    },
+    {
+      "label": "执行配置",
+      "path": "runs/audit-aux-homotopy/audit_config.json"
+    },
+    {
+      "label": "源码清单",
+      "path": "runs/audit-aux-homotopy/source/source-manifest.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-audit-aux-p1-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

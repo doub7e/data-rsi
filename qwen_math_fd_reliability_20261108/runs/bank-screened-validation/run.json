@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "bank-screened-validation",
+  "title": "FD可靠性 · 新教师筛选合格题 · 独立2048 probes",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T08:40:07.663170+00:00",
+  "updated_at": "2026-11-08T08:40:07.663182+00:00",
+  "parameters": {
+    "scope": "Base initialization with best N64 clipped sigmoid3s recipe; not unavailable best step20 weights",
+    "selection": "first previously unused eligible row in preregistered frozen teacher-screening order; row46947 has7/8correct; one truncated screening draw retained",
+    "image": "vllm/vllm-openai@sha256:6ee133356d49ed24cee03dd0cda3d3980279a11c107ce3e752c89e76540f41c9"
+  },
+  "sources": {
+    "status": "runs/bank-screened-validation/state.json",
+    "progress": "runs/bank-screened-validation/progress.json",
+    "results": "runs/bank-screened-validation/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "bank/manifest.json",
+      "path": "runs/bank-screened-validation/bank/manifest.json"
+    },
+    {
+      "label": "bank/row_00046947/complete.json",
+      "path": "runs/bank-screened-validation/bank/row_00046947/complete.json"
+    },
+    {
+      "label": "tokenization-preflight.json",
+      "path": "runs/bank-screened-validation/tokenization-preflight.json"
+    },
+    {
+      "label": "首个 seed 的真实 probe 样本（原始评分）",
+      "path": "runs/bank-screened-validation/first_probe_sample.json"
+    }
+  ],
+  "tags": [],
+  "notes": "Base initialization with best N64 clipped sigmoid3s recipe; not unavailable best step20 weights",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-bank-screen-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

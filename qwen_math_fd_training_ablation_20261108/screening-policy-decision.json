@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-08T12:38:18.806726+00:00",
+  "initial_candidates": 384,
+  "eligible": 78,
+  "target": 80,
+  "selection_rule_unchanged": true,
+  "extension_required": true,
+  "max_candidates": 640
+}

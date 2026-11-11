@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "worker-image",
+  "title": "OTA重采样 · CPU轨迹控制器 · 相同Harbor依赖的轻量镜像",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-07T00:28:15.776706+00:00",
+  "tags": [
+    "environment-resampling",
+    "Qwen3-8B"
+  ],
+  "parameters": {},
+  "sources": {
+    "status": "runs/worker-image/state.json",
+    "results": "runs/worker-image/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    }
+  ]
+}

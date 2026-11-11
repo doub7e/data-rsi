@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-10-29T23:59:33.279819+00:00",
+  "target_repository": "registry.rcp.epfl.ch/shuli/data-rsi-sft",
+  "credential_source": "/mnt/cvlab/scratch/cvlab/home/shuli/.docker/config.json",
+  "upload_start_http": 202,
+  "upload_cancel_http": 204,
+  "push_permission_preflight_passed": true
+}

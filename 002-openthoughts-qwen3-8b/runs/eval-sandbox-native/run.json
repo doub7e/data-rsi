@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "eval-sandbox-native",
+  "title": "评测沙箱 · 文件传输与 verifier",
+  "kind": "validation",
+  "created_at": "2026-10-30T18:05:39.096696+00:00",
+  "status": "succeeded",
+  "parameters": {},
+  "results": {
+    "oracle_reward": 1.0
+  },
+  "notes": "Native Podman copy 修复传输；1 个 oracle trial，reward=1，0 exceptions。只改文件传输，不改 solver/verifier。",
+  "tags": [],
+  "sources": {},
+  "artifacts": [
+    {
+      "label": "原始结果",
+      "path": "eval/smoke/results/sandbox-check-1030b/result.json"
+    }
+  ]
+}

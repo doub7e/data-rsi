@@ -1,0 +1,36 @@
+# Candidate Qwen3-only SFT stack. Resolve/build and GPU validation are separate gates.
+torch==2.8.0
+torchvision==0.23.0
+transformers==4.57.6
+tokenizers==0.22.2
+accelerate==1.10.1
+datasets==4.1.1
+pyarrow==21.0.0
+peft==0.17.1
+trl==0.22.2
+torchao==0.13.0
+liger-kernel==0.6.2
+huggingface-hub==0.36.0
+numpy==2.2.6
+wandb==0.21.4
+ninja==1.11.1.4
+packaging==25.0
+# Compiled packages installed separately after torch: DeepSpeed 0.17.6, FA2 2.8.3.
+
+# Runtime dependency metadata of the separately built packages.
+einops
+hjson
+msgpack
+ninja
+numpy
+packaging>=20.0
+psutil
+py-cpuinfo
+pydantic>=2.0.0
+torch
+tqdm
+torch
+einops
+# Build tooling must survive the locked runtime installation unchanged.
+setuptools==75.8.0
+wheel==0.45.1

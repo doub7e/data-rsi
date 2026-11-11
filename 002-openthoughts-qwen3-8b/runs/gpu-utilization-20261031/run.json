@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "gpu-utilization-20261031",
+  "title": "10K 训练 GPU 利用率与显存检查",
+  "kind": "validation",
+  "created_at": "2026-10-31T00:01:11.098485+00:00",
+  "status": "running",
+  "parameters": {
+    "sample_interval_seconds": 2,
+    "duration_seconds": 180,
+    "training_job": "ota-qwen3-8b-10k-4h200-1030"
+  },
+  "results": {
+    "gpu_util_min_mean_pct": 99.84,
+    "max_sampled_memory_gib": 55.2998046875,
+    "recent_step_median_seconds": 128.0
+  },
+  "notes": "180秒、每2秒采样：GPU平均利用率99.84–99.90%，显存54.8–55.3GiB，NVLink正常；设备利用率不等于MFU。H10080GB有约24GiB显存余量，1K优先H100。",
+  "sources": {
+    "status": "runs/gpu-utilization-20261031/state.json",
+    "metrics": "runs/gpu-utilization-20261031/metrics.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "GPU采样",
+      "path": "runs/gpu-utilization-20261031/gpu.csv"
+    },
+    {
+      "label": "分析结果",
+      "path": "runs/gpu-utilization-20261031/result.json"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "metrics": {
+    "verified_artifacts": 1
+  },
+  "artifacts": [
+    "model/metadata.json"
+  ],
+  "scope": null,
+  "elapsed_seconds": 181.4152077138424
+}

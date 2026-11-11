@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "teacher-smoke",
+  "title": "OTA cap3 · 固定教师API检查",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-11T00:25:23.256362+00:00",
+  "tags": [
+    "cap3",
+    "full70-r4",
+    "Qwen3-8B"
+  ],
+  "parameters": {},
+  "sources": {
+    "status": "runs/teacher-smoke/state.json",
+    "results": "runs/teacher-smoke/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "原始版本与资源",
+      "path": "configs/resources.json"
+    }
+  ]
+}

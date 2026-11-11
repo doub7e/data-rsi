@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "serve-base-20261105",
+  "title": "OTA · Easy probes · 原始8B · 4H200推理",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-05T22:13:03.693132+00:00",
+  "tags": [
+    "OpenThoughts-Agent",
+    "base",
+    "Qwen3-8B",
+    "easy-tasks",
+    "reward-gradient"
+  ],
+  "parameters": {
+    "model": "Qwen/Qwen3-8B",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "rollouts": null,
+    "phase": "screening",
+    "probe_reward": "official_score_v1"
+  },
+  "sources": {
+    "status": "runs/serve-base-20261105/state.json",
+    "results": "runs/serve-base-20261105/result.json",
+    "progress": "runs/serve-base-20261105/progress.json"
+  },
+  "artifacts": [
+    {
+      "label": "协议与筛选规则",
+      "path": "runs/easy-probes-20261105/protocol.json"
+    }
+  ],
+  "job": {
+    "name": "ota-easy-base-serve-1105",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

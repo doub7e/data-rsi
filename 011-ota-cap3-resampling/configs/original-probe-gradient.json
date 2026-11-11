@@ -1,0 +1,13 @@
+{
+  "finished_at": "2026-11-08T20:40:01.842956+00:00",
+  "valid_questions": 20,
+  "excluded_questions": 50,
+  "probe_norm": 0.07920901160028299,
+  "gradient_file": "runs/probe-gradient/probe-accumulator.pt",
+  "loss_reference_sha256": "6f6a9d01c5f7ec87838056d1bfb6e89b98e65371343917f30616d273615e9dcc",
+  "no_signal": false,
+  "shards": 4,
+  "forward_precision": "training_bf16",
+  "gradient_accumulation": "FP32",
+  "reduction": "SUM of per-shard vectors already divided by GLOBAL valid-question count; FP32 accumulation, full parameter dimension."
+}

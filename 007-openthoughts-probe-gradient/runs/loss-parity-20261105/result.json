@@ -1,0 +1,22 @@
+{
+  "finished_at": "2026-11-05T19:52:37.899108+00:00",
+  "target_counts": [
+    68,
+    1223
+  ],
+  "shared_denominator": 1291,
+  "trainer_batch_loss": 1.5966463387012482,
+  "sum_ce_div_shared_denominator": 1.5966463096376355,
+  "relative_loss_error": 1.820291189300426e-08,
+  "gradient_cosine": 0.9999863343010996,
+  "gradient_relative_l2": 0.005228129233810058,
+  "full_training_row_length": 9383,
+  "full_training_row_targets": 3532,
+  "full_training_row_loss": 1.1405143737792969,
+  "peak_gpu_bytes": 89652577280,
+  "metrics": {
+    "loss_parity_relative_error": 1.820291189300426e-08,
+    "gradient_parity_cosine": 0.9999863343010996
+  },
+  "interpretation": "The original Trainer/Liger loss is called directly. Test compares its accumulated-token denominator with algebraically equivalent token-sum accumulation, on unchanged original base weights; not a full optimizer or ZeRO training equivalence claim."
+}

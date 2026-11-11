@@ -1,0 +1,18 @@
+{
+  "finished_at": "2026-11-07T01:50:49.269258+00:00",
+  "training_dtype_evidence": "zero3 bf16.enabled=true; actualDeepSpeed _configure_distributed_model source and savedcheckpointdtypeBF16",
+  "sample_index": 174,
+  "task": "task_2983",
+  "input_tokens": 7350,
+  "target_tokens": 4923,
+  "legacy_fp32_autocast_loss": 0.48551204800605774,
+  "bf16_model_loss": 0.4858688414096832,
+  "metrics": {
+    "relative_loss_difference": 0.0007343409850903386,
+    "gradient_cosine": 0.7859685189437638,
+    "gradient_relative_l2_difference": 0.7109736197511102,
+    "legacy_gradient_norm": 2.142912964021433,
+    "bf16_gradient_norm": 1.8846916807681309
+  },
+  "note": "Checks numericalforward/gradientprecision only. Dataset templates, labels and token normalization are identical."
+}

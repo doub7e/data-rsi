@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "screen-more-0",
+  "title": "优先FP32-20 · 补足不同题目 · 新候选1024..1407 · 分片0/2",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-09T20:45:15.868298+00:00",
+  "updated_at": "2026-11-09T20:45:15.868311+00:00",
+  "parameters": {
+    "priority": 1,
+    "scope": "append384candidates; preserve all1024completed screens and insufficient-pool failure",
+    "gpus": 1,
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d"
+  },
+  "sources": {
+    "status": "runs/screen-more-0/state.json",
+    "progress": "runs/screen-more-0/progress.json",
+    "results": "runs/screen-more-0/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/screen-more-0/result.json"
+    },
+    {
+      "label": "sample.json",
+      "path": "runs/screen-more-0/sample.json"
+    },
+    {
+      "label": "screen-config.json",
+      "path": "runs/screen-more-0/screen-config.json"
+    },
+    {
+      "label": "协议",
+      "path": "protocol.json"
+    }
+  ],
+  "tags": [
+    "priority1",
+    "data-extension"
+  ],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-p20-more0-1109a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "eval-native-10k-20261031",
+  "title": "Qwen3-8B · 10K · 原生RunAI评测",
+  "kind": "evaluation",
+  "created_at": "2026-10-31T15:45:26.062791+00:00",
+  "status": "cancelled",
+  "parameters": {
+    "backend": "runai-native",
+    "inference_gpus": 4,
+    "gpu_type": "H200",
+    "tensor_parallel_size": 4,
+    "concurrency": 32,
+    "repeats": 3,
+    "trials": 867,
+    "parser": "json",
+    "training_rows": 10000,
+    "parallel_evaluation": true
+  },
+  "results": {},
+  "notes": "2026-11-01：用户授权与1K并行评测，独立申请4×H200；每模型最多32个原生RunAI CPU沙箱，共867个评测任务。保留32K上下文、16K输出上限、JSON解析器及原有采样和超时设置。\n2026-11-02：用户要求先停止10K评测。已停止并禁用自动恢复服务，释放推理GPU、CPU worker及沙箱；保留所有已有结果与日志，等待用户明确要求恢复。",
+  "sources": {
+    "status": "runs/eval-native-10k-20261031/state.json",
+    "metrics": "runs/eval-native-10k-20261031/metrics.jsonl",
+    "results": "runs/eval-native-10k-20261031/result.json",
+    "trajectories": "runs/eval-native-10k-20261031/jobs",
+    "evaluation_plan": "runs/eval-native-10k-20261031/evaluation-plan.json"
+  },
+  "artifacts": [
+    {
+      "label": "认证过期影响范围与补跑记录",
+      "path": "runs/eval-native-10k-20261031/recovery/auth-expiry-20261101/audit.json"
+    },
+    {
+      "label": "控制作业中断恢复记录",
+      "path": "runs/eval-native-10k-20261031/recovery/worker-interruption-20261101/repair.json"
+    },
+    {
+      "label": "用户停止与资源释放记录",
+      "path": "runs/eval-native-10k-20261031/user-stop-20261102/cleanup.json"
+    }
+  ],
+  "serving_job": {
+    "name": "ota-qwen3-8b-repro-eval-1030",
+    "namespace": "runai-cvlab-shuli",
+    "gpus": 4
+  },
+  "job": {
+    "name": "ota-native-eval-10k-1031",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

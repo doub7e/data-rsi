@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "full-prefix-screened-validation",
+  "title": "FD可靠性 · 新筛选题完整冻结prefix · JVP与BF16/FP32 FD",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T09:33:07.741604+00:00",
+  "updated_at": "2026-11-08T09:33:07.741615+00:00",
+  "parameters": {
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+    "row": 46947,
+    "scope": "same independent A1024 direction as validation-screened; no new generation/probes; exhaustive within frozen prefix max2048, may not be complete original response",
+    "preregistered_primary_comparison": "BF16 h1e-5 versus FP32 h1e-6, selected from prior Base results before observing this prompt FD outcomes",
+    "secondary_sensitivity": "h1e-7 and sameh comparisons; not an independently tuned default",
+    "oracle_gate": "selected24 reverse-mode versus eagerJVP rtol.002 atol.0005; do not relax after outcomes"
+  },
+  "sources": {
+    "status": "runs/full-prefix-screened-validation/state.json",
+    "progress": "runs/full-prefix-screened-validation/progress.json",
+    "results": "runs/full-prefix-screened-validation/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/full-prefix-screened-validation/result.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-fulljvp-screen-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "eval-bottleneck-20261031",
+  "title": "1K评测 · 推理与沙箱瓶颈分析",
+  "kind": "analysis",
+  "created_at": "2026-10-31T11:15:24.242595+00:00",
+  "status": "running",
+  "parameters": {
+    "evaluation_run": "eval-repro-1k-json-20261031",
+    "metrics_window_seconds": 60
+  },
+  "results": {
+    "model_request_mean_sec": 1.7099849011035675,
+    "model_request_queue_mean_ms": 0.03695107520894802,
+    "model_ttft_mean_ms": 28.510456499846086,
+    "two_agent_model_time_fraction": 0.6671466049269039,
+    "output_tokens_per_sec": 308.15024196018675,
+    "sandbox_count": 2,
+    "sandbox_ram_used_gib": 8,
+    "sandbox_ram_quota_gib": 10,
+    "first_task_wall_minutes": 17.0370061,
+    "first_task_api_minutes": 7.759911028544108,
+    "first_task_non_api_agent_minutes": 8.356765371455891,
+    "first_task_api_wall_fraction": 0.45547386571306725
+  },
+  "notes": "整批吞吐受Daytona内存配额限制为2个SWE并发。首个完整任务17分02秒：模型API7分46秒，工具/框架8分21秒，验证52秒；一分钟窗口约67%为模型请求，不能代表全程。vLLM无请求积压，agent存在大量纠错和重复编辑。",
+  "sources": {
+    "status": "runs/eval-bottleneck-20261031/state.json"
+  },
+  "artifacts": [
+    {
+      "label": "测量与结论",
+      "path": "runs/eval-bottleneck-20261031/result.json"
+    },
+    {
+      "label": "请求时延测量",
+      "path": "runs/eval-bottleneck-20261031/inference-timing.json"
+    },
+    {
+      "label": "首个完整任务耗时分解",
+      "path": "runs/eval-bottleneck-20261031/completed-task-timing.json"
+    }
+  ]
+}

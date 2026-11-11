@@ -1,0 +1,496 @@
+{
+  "verified_at": "2026-11-08T13:41:26.367980+00:00",
+  "base": "http://127.0.0.1:18765",
+  "require_terminal": false,
+  "verified": true,
+  "runs": [
+    {
+      "run_id": "comparison",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "eval-base",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "eval-bf16-h1em5",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "eval-fp32-h1em5",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "eval-fp32-h1em6",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "evaluation-scorer-check",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "export-smoke-training",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "export-train-bf16-h1em5",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "export-train-fp32-h1em5",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "export-train-fp32-h1em6",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "prepare-data",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "failed",
+      "verified": true
+    },
+    {
+      "run_id": "prepare-data-extended",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "prepare-data-selected",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "prepare-smoke",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "runtime-preflight",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "failed",
+      "verified": true
+    },
+    {
+      "run_id": "runtime-preflight-isolated",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "failed",
+      "verified": true
+    },
+    {
+      "run_id": "runtime-preflight-native",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "failed",
+      "verified": true
+    },
+    {
+      "run_id": "runtime-preflight-pytorch",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/runtime-preflight-pytorch/sample.json",
+          "download_matches_disk": true,
+          "sha256": "ac089226867dbbac5a7681b87978594e682f3a32e97b5e1ee69b1adf022800ee",
+          "preview_truncated": false,
+          "downloaded_json_parses": true,
+          "preview_matches_disk": true
+        }
+      ],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "screen-0",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "failed",
+      "verified": true
+    },
+    {
+      "run_id": "screen-0-fixed",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/screen-0-fixed/sample.json",
+          "download_matches_disk": true,
+          "sha256": "0caa56d703f970c2f0a3761d000dfcbef13546b26067945165041419d5d9497b",
+          "preview_truncated": false,
+          "downloaded_json_parses": true,
+          "preview_matches_disk": true
+        }
+      ],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "screen-1",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "failed",
+      "verified": true
+    },
+    {
+      "run_id": "screen-1-fixed",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/screen-1-fixed/sample.json",
+          "download_matches_disk": true,
+          "sha256": "1a479c95da8233852b9f90d43302b6c9ed79344b14784ea59290caca3c369962",
+          "preview_truncated": false,
+          "downloaded_json_parses": true,
+          "preview_matches_disk": true
+        }
+      ],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "screen-extra-0",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/screen-extra-0/sample.json",
+          "download_matches_disk": true,
+          "sha256": "745c5ea0a890626ebf7ac25b087b2108674393df7aa48cab04de8d7bf2278ec9",
+          "preview_truncated": false,
+          "downloaded_json_parses": true,
+          "preview_matches_disk": true
+        }
+      ],
+      "state": "cancelled",
+      "verified": true
+    },
+    {
+      "run_id": "screen-extra-1",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/screen-extra-1/sample.json",
+          "download_matches_disk": true,
+          "sha256": "c9bb2a0b82bf8e1c15bd1470ef586af90ba72285a8203020a028b0a625cbe3ad",
+          "preview_truncated": false,
+          "downloaded_json_parses": true,
+          "preview_matches_disk": true
+        }
+      ],
+      "state": "cancelled",
+      "verified": true
+    },
+    {
+      "run_id": "select-training",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "cancelled",
+      "verified": true
+    },
+    {
+      "run_id": "select-training-fixed",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "smoke-training",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "failed",
+      "verified": true
+    },
+    {
+      "run_id": "smoke-training-eager",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "failed",
+      "verified": true
+    },
+    {
+      "run_id": "smoke-training-h200",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "failed",
+      "verified": true
+    },
+    {
+      "run_id": "train-bf16-h1em5",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "queued",
+      "verified": true
+    },
+    {
+      "run_id": "train-fp32-h1em5",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "train-fp32-h1em6",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "verify-smoke-checkpoint",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/verify-smoke-checkpoint/sample.json",
+          "download_matches_disk": true,
+          "sha256": "b4f43be568d6d4e04bba8bc8a56f76ecfb89a817d74cc725b800a63d3e8f7cb8",
+          "preview_truncated": false,
+          "downloaded_json_parses": true,
+          "preview_matches_disk": true
+        }
+      ],
+      "state": "succeeded",
+      "verified": true
+    }
+  ],
+  "metrics": {
+    "runs_checked": 33,
+    "runs_verified": 33,
+    "artifacts_downloaded": 6
+  }
+}

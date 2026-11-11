@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "prepare-data-selected",
+  "title": "FD训练消融 · 固定候选数据导出（保留原schema）",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T11:06:08.126050+00:00",
+  "updated_at": "2026-11-08T11:06:08.126062+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "previous_failed_run": "prepare-data",
+    "fix": "construct selected-row Arrow table from already selected Python rows using original schema; avoid whole-column concatenation offsetoverflow",
+    "selection": "unchanged seed27115 and384candidate rule"
+  },
+  "sources": {
+    "status": "runs/prepare-data-selected/state.json",
+    "progress": "runs/prepare-data-selected/progress.json",
+    "results": "runs/prepare-data-selected/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "selection.json",
+      "path": "runs/prepare-data-selected/selection.json"
+    },
+    {
+      "label": "candidates.json",
+      "path": "runs/prepare-data-selected/candidates.json"
+    },
+    {
+      "label": "result.json",
+      "path": "runs/prepare-data-selected/result.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-data-1108b",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

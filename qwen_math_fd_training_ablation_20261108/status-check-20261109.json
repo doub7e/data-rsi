@@ -1,0 +1,25 @@
+{
+  "observed_at": "2026-11-09T17:15:06.423543+00:00",
+  "new_completed_training_or_eval": false,
+  "active_experiment_gpu_jobs": 0,
+  "train4_bf16": {
+    "state": "failed",
+    "recorded_steps": 2,
+    "planned_steps": 5,
+    "reason": "CUDA OOM"
+  },
+  "train8_bf16": {
+    "state": "failed",
+    "steps": 0,
+    "reason": "Disk quota exceeded before training"
+  },
+  "fp32_arms": "planned, no completed result",
+  "evaluations": "planned, no completed result",
+  "controller": {
+    "pid": 3943491,
+    "process_exists": false,
+    "last_heartbeat": "2026-11-09T04:40:32.230330+00:00",
+    "previous_reported_state": "running"
+  },
+  "quota_current": "not established; quota utility unavailable; filesystem free space is not user quota evidence"
+}

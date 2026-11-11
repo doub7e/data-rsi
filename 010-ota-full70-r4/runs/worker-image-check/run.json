@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "worker-image-check",
+  "title": "OTA全70×4 · 复用009 · worker-image-check",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T10:39:26.457203+00:00",
+  "tags": [
+    "full70-r4",
+    "missing-as-zero",
+    "Qwen3-8B"
+  ],
+  "parameters": {
+    "reused_from": "009-ota-environment-resampling/runs/worker-image-check",
+    "new_execution": false
+  },
+  "sources": {
+    "status": "runs/worker-image-check/state.json",
+    "results": "runs/worker-image-check/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "模型和数据版本",
+      "path": "configs/resources.json"
+    },
+    {
+      "label": "复用来源与完成证据",
+      "path": "runs/worker-image-check/reference.json"
+    }
+  ]
+}

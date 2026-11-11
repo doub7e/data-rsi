@@ -1,0 +1,63 @@
+{
+  "finished_at": "2026-11-03T02:19:52.075598+00:00",
+  "elapsed_seconds": 8872.954478511587,
+  "total_trials": 2400,
+  "accuracy": 0.3695833333333333,
+  "accuracy_std": 0.0026020824993326637,
+  "repeat_accuracy": [
+    0.36875,
+    0.3725,
+    0.3675
+  ],
+  "token_usage": {
+    "input_tokens": 208777828,
+    "output_tokens": 19705133
+  },
+  "inference_error_count": 5,
+  "subsets": {
+    "base": {
+      "mean": 0.42333333333333334,
+      "counts": [
+        83,
+        86,
+        85
+      ]
+    },
+    "miss_func": {
+      "mean": 0.38166666666666665,
+      "counts": [
+        83,
+        77,
+        69
+      ]
+    },
+    "miss_param": {
+      "mean": 0.30333333333333334,
+      "counts": [
+        60,
+        59,
+        63
+      ]
+    },
+    "long_context": {
+      "mean": 0.37,
+      "counts": [
+        69,
+        76,
+        77
+      ]
+    }
+  },
+  "reference_note": "Random100 is a new setting; released random50 is not an equal-budget comparison.",
+  "metrics": {
+    "bfcl_accuracy_percent": 36.95833333333333,
+    "bfcl_std_percent": 0.26020824993326636,
+    "evaluated_trials": 2400,
+    "inference_errors": 5,
+    "evaluation_hours": 2.4647095773643297,
+    "base_accuracy_percent": 42.333333333333336,
+    "miss_func_accuracy_percent": 38.166666666666664,
+    "miss_param_accuracy_percent": 30.333333333333336,
+    "long_context_accuracy_percent": 37.0
+  }
+}

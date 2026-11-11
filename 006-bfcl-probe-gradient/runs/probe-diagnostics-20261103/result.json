@@ -1,0 +1,2182 @@
+{
+  "finished_at": "2026-11-03T20:33:59.838643+00:00",
+  "repeat_gradient_all_pass": true,
+  "likelihood_aggregate": {
+    "fresh_actual_decode": {
+      "mixed_train_logprobs": {
+        "tokens": 756,
+        "mean_signed_difference": -0.003972676765006662,
+        "mean_absolute_difference": 0.015279115889910665,
+        "p99_absolute_difference": 0.24862198829650886,
+        "max_absolute_difference": 0.4911998510360718,
+        "rmse": 0.05314383828448099,
+        "nll_reference": 165.16573259772963,
+        "nll_hf": 168.16907623207467
+      },
+      "mixed_eval_logprobs": {
+        "tokens": 756,
+        "mean_signed_difference": -0.003972676765006662,
+        "mean_absolute_difference": 0.015279115889910665,
+        "p99_absolute_difference": 0.24862198829650886,
+        "max_absolute_difference": 0.4911998510360718,
+        "rmse": 0.05314383828448099,
+        "nll_reference": 165.16573259772963,
+        "nll_hf": 168.16907623207467
+      },
+      "bf16_eval_logprobs": {
+        "tokens": 756,
+        "mean_signed_difference": -0.0005492893337260055,
+        "mean_absolute_difference": 0.0173206369648237,
+        "p99_absolute_difference": 0.24438315331935934,
+        "max_absolute_difference": 0.6650803983211517,
+        "rmse": 0.06302252862486672,
+        "nll_reference": 165.16573259772963,
+        "nll_hf": 165.5809953340265
+      }
+    },
+    "recorded_forced_prefill": {
+      "mixed_train_logprobs": {
+        "tokens": 20771,
+        "mean_signed_difference": -0.0008460467002966024,
+        "mean_absolute_difference": 0.016398359845990144,
+        "p99_absolute_difference": 0.24180150032043427,
+        "max_absolute_difference": 1.5866279602050781,
+        "rmse": 0.057743753742294984,
+        "nll_reference": 4547.163236664965,
+        "nll_hf": 4564.7364726768255
+      },
+      "mixed_eval_logprobs": {
+        "tokens": 20771,
+        "mean_signed_difference": -0.0008460467002966024,
+        "mean_absolute_difference": 0.016398359845990144,
+        "p99_absolute_difference": 0.24180150032043427,
+        "max_absolute_difference": 1.5866279602050781,
+        "rmse": 0.057743753742294984,
+        "nll_reference": 4547.163236664965,
+        "nll_hf": 4564.7364726768255
+      },
+      "bf16_eval_logprobs": {
+        "tokens": 20771,
+        "mean_signed_difference": -0.0009223971132995316,
+        "mean_absolute_difference": 0.019766189553090393,
+        "p99_absolute_difference": 0.28926126956939596,
+        "max_absolute_difference": 2.3167364597320557,
+        "rmse": 0.07197965236493299,
+        "nll_reference": 4547.163236664965,
+        "nll_hf": 4566.32234710531
+      }
+    }
+  },
+  "likelihood_per_case": [
+    {
+      "id": "r001-s00",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 1193,
+          "mean_signed_difference": -0.0010769178526212374,
+          "mean_absolute_difference": 0.016470684706223995,
+          "p99_absolute_difference": 0.24761304855346675,
+          "max_absolute_difference": 0.7472419738769531,
+          "rmse": 0.05607382483829248,
+          "nll_reference": 250.27610132233391,
+          "nll_hf": 251.56086432051106
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 1193,
+          "mean_signed_difference": -0.0010769178526212374,
+          "mean_absolute_difference": 0.016470684706223995,
+          "p99_absolute_difference": 0.24761304855346675,
+          "max_absolute_difference": 0.7472419738769531,
+          "rmse": 0.05607382483829248,
+          "nll_reference": 250.27610132233391,
+          "nll_hf": 251.56086432051106
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 1193,
+          "mean_signed_difference": 0.0012856463701647171,
+          "mean_absolute_difference": 0.02024843080118854,
+          "p99_absolute_difference": 0.3066287624835965,
+          "max_absolute_difference": 0.9990177154541016,
+          "rmse": 0.06830418958260691,
+          "nll_reference": 250.27610132233391,
+          "nll_hf": 248.74232520272741
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 1193,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 251.56086432051106,
+        "nll_hf": 251.56086432051106
+      }
+    },
+    {
+      "id": "r001-s01",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 1295,
+          "mean_signed_difference": -0.001060109257744332,
+          "mean_absolute_difference": 0.01671681702281981,
+          "p99_absolute_difference": 0.21755351185798594,
+          "max_absolute_difference": 0.48116254806518555,
+          "rmse": 0.05110082057209519,
+          "nll_reference": 254.57855597854424,
+          "nll_hf": 255.95139746732315
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 1295,
+          "mean_signed_difference": -0.001060109257744332,
+          "mean_absolute_difference": 0.01671681702281981,
+          "p99_absolute_difference": 0.21755351185798594,
+          "max_absolute_difference": 0.48116254806518555,
+          "rmse": 0.05110082057209519,
+          "nll_reference": 254.57855597854424,
+          "nll_hf": 255.95139746732315
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 1295,
+          "mean_signed_difference": -0.00016361827617342647,
+          "mean_absolute_difference": 0.021470268526360727,
+          "p99_absolute_difference": 0.2507178962230681,
+          "max_absolute_difference": 1.6962806060910225,
+          "rmse": 0.08458979169551475,
+          "nll_reference": 254.57855597854424,
+          "nll_hf": 254.79044164618884
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 1295,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 255.95139746732315,
+        "nll_hf": 255.95139746732315
+      }
+    },
+    {
+      "id": "r001-s02",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 902,
+          "mean_signed_difference": -0.002503907920499981,
+          "mean_absolute_difference": 0.015183719483227357,
+          "p99_absolute_difference": 0.24015056610107424,
+          "max_absolute_difference": 0.43998050689697266,
+          "rmse": 0.05062881902236358,
+          "nll_reference": 172.05050812199704,
+          "nll_hf": 174.309033066288
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 902,
+          "mean_signed_difference": -0.002503907920499981,
+          "mean_absolute_difference": 0.015183719483227357,
+          "p99_absolute_difference": 0.24015056610107424,
+          "max_absolute_difference": 0.43998050689697266,
+          "rmse": 0.05062881902236358,
+          "nll_reference": 172.05050812199704,
+          "nll_hf": 174.309033066288
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 902,
+          "mean_signed_difference": -0.005674190912929147,
+          "mean_absolute_difference": 0.022146657360749764,
+          "p99_absolute_difference": 0.35354601860046403,
+          "max_absolute_difference": 0.9017415046691895,
+          "rmse": 0.07712747323807101,
+          "nll_reference": 172.05050812199704,
+          "nll_hf": 177.1686283254591
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 902,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 174.309033066288,
+        "nll_hf": 174.309033066288
+      }
+    },
+    {
+      "id": "r001-s03",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 472,
+          "mean_signed_difference": -0.002961732981798111,
+          "mean_absolute_difference": 0.009374313383019833,
+          "p99_absolute_difference": 0.20447781205177343,
+          "max_absolute_difference": 0.2892531156539917,
+          "rmse": 0.03878340706226964,
+          "nll_reference": 41.683266386416555,
+          "nll_hf": 43.081204353825264
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 472,
+          "mean_signed_difference": -0.002961732981798111,
+          "mean_absolute_difference": 0.009374313383019833,
+          "p99_absolute_difference": 0.20447781205177343,
+          "max_absolute_difference": 0.2892531156539917,
+          "rmse": 0.03878340706226964,
+          "nll_reference": 41.683266386416555,
+          "nll_hf": 43.081204353825264
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 472,
+          "mean_signed_difference": -0.0033354255390676533,
+          "mean_absolute_difference": 0.009765627277982247,
+          "p99_absolute_difference": 0.20038581728935248,
+          "max_absolute_difference": 0.4399760961532593,
+          "rmse": 0.04055892681284816,
+          "nll_reference": 41.683266386416555,
+          "nll_hf": 43.25758724085649
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 472,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 43.081204353825264,
+        "nll_hf": 43.081204353825264
+      }
+    },
+    {
+      "id": "r001-s04",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 413,
+          "mean_signed_difference": -0.001532845303922485,
+          "mean_absolute_difference": 0.012478028166952999,
+          "p99_absolute_difference": 0.24433095693588242,
+          "max_absolute_difference": 0.5964775085449219,
+          "rmse": 0.05320296434683052,
+          "nll_reference": 37.60155557921451,
+          "nll_hf": 38.2346206897345
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 413,
+          "mean_signed_difference": -0.001532845303922485,
+          "mean_absolute_difference": 0.012478028166952999,
+          "p99_absolute_difference": 0.24433095693588242,
+          "max_absolute_difference": 0.5964775085449219,
+          "rmse": 0.05320296434683052,
+          "nll_reference": 37.60155557921451,
+          "nll_hf": 38.2346206897345
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 413,
+          "mean_signed_difference": 0.000763840010961389,
+          "mean_absolute_difference": 0.013430253728363173,
+          "p99_absolute_difference": 0.20439278841018674,
+          "max_absolute_difference": 0.5425479710102081,
+          "rmse": 0.05192106016690938,
+          "nll_reference": 37.60155557921451,
+          "nll_hf": 37.28608965468746
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 413,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 38.2346206897345,
+        "nll_hf": 38.2346206897345
+      }
+    },
+    {
+      "id": "r001-s05",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 302,
+          "mean_signed_difference": -0.004403694577971856,
+          "mean_absolute_difference": 0.012046227466410896,
+          "p99_absolute_difference": 0.33800225943327017,
+          "max_absolute_difference": 0.596064567565918,
+          "rmse": 0.06192675431784127,
+          "nll_reference": 20.491448736409005,
+          "nll_hf": 21.821364498956505
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 302,
+          "mean_signed_difference": -0.004403694577971856,
+          "mean_absolute_difference": 0.012046227466410896,
+          "p99_absolute_difference": 0.33800225943327017,
+          "max_absolute_difference": 0.596064567565918,
+          "rmse": 0.06192675431784127,
+          "nll_reference": 20.491448736409005,
+          "nll_hf": 21.821364498956505
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 302,
+          "mean_signed_difference": 0.004809408285302168,
+          "mean_absolute_difference": 0.01640213300850027,
+          "p99_absolute_difference": 0.33677905082702636,
+          "max_absolute_difference": 1.3062862157821655,
+          "rmse": 0.09364016943163236,
+          "nll_reference": 20.491448736409005,
+          "nll_hf": 19.03900743424775
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 302,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 21.821364498956505,
+        "nll_hf": 21.821364498956505
+      }
+    },
+    {
+      "id": "r001-s06",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 316,
+          "mean_signed_difference": -0.001311347942956048,
+          "mean_absolute_difference": 0.016467393382814395,
+          "p99_absolute_difference": 0.27185364067554535,
+          "max_absolute_difference": 0.40181851387023926,
+          "rmse": 0.05850038835985247,
+          "nll_reference": 42.505791543882,
+          "nll_hf": 42.92017749385611
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 316,
+          "mean_signed_difference": -0.001311347942956048,
+          "mean_absolute_difference": 0.016467393382814395,
+          "p99_absolute_difference": 0.27185364067554535,
+          "max_absolute_difference": 0.40181851387023926,
+          "rmse": 0.05850038835985247,
+          "nll_reference": 42.505791543882,
+          "nll_hf": 42.92017749385611
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 316,
+          "mean_signed_difference": 0.004776668371723206,
+          "mean_absolute_difference": 0.022828979458162483,
+          "p99_absolute_difference": 0.4612394988536844,
+          "max_absolute_difference": 0.8127397298812866,
+          "rmse": 0.08986956891203426,
+          "nll_reference": 42.505791543882,
+          "nll_hf": 40.996364338417465
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 316,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 42.92017749385611,
+        "nll_hf": 42.92017749385611
+      }
+    },
+    {
+      "id": "r001-s07",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 243,
+          "mean_signed_difference": -0.00037401150339408054,
+          "mean_absolute_difference": 0.014261796166004643,
+          "p99_absolute_difference": 0.4293530213832847,
+          "max_absolute_difference": 0.5322675704956055,
+          "rmse": 0.06753779180317633,
+          "nll_reference": 23.28487667577314,
+          "nll_hf": 23.375761471097903
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 243,
+          "mean_signed_difference": -0.00037401150339408054,
+          "mean_absolute_difference": 0.014261796166004643,
+          "p99_absolute_difference": 0.4293530213832847,
+          "max_absolute_difference": 0.5322675704956055,
+          "rmse": 0.06753779180317633,
+          "nll_reference": 23.28487667577314,
+          "nll_hf": 23.375761471097903
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 243,
+          "mean_signed_difference": 0.0070608425538427975,
+          "mean_absolute_difference": 0.013833860006003099,
+          "p99_absolute_difference": 0.25152122735977017,
+          "max_absolute_difference": 0.8774712085723877,
+          "rmse": 0.07259221885386619,
+          "nll_reference": 23.28487667577314,
+          "nll_hf": 21.56909193518934
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 243,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 23.375761471097903,
+        "nll_hf": 23.375761471097903
+      }
+    },
+    {
+      "id": "r001-s08",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 762,
+          "mean_signed_difference": -0.0008655002885566107,
+          "mean_absolute_difference": 0.014564644297703658,
+          "p99_absolute_difference": 0.26455671370029443,
+          "max_absolute_difference": 1.0349313020706177,
+          "rmse": 0.05966021230707625,
+          "nll_reference": 95.83903024835207,
+          "nll_hf": 96.49854146823222
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 762,
+          "mean_signed_difference": -0.0008655002885566107,
+          "mean_absolute_difference": 0.014564644297703658,
+          "p99_absolute_difference": 0.26455671370029443,
+          "max_absolute_difference": 1.0349313020706177,
+          "rmse": 0.05966021230707625,
+          "nll_reference": 95.83903024835207,
+          "nll_hf": 96.49854146823222
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 762,
+          "mean_signed_difference": -0.004161431380123404,
+          "mean_absolute_difference": 0.01959997054089798,
+          "p99_absolute_difference": 0.2954450944066044,
+          "max_absolute_difference": 0.6991077661514282,
+          "rmse": 0.06765111352041288,
+          "nll_reference": 95.83903024835207,
+          "nll_hf": 99.01004096000611
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 762,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 96.49854146823222,
+        "nll_hf": 96.49854146823222
+      }
+    },
+    {
+      "id": "r001-s09",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 280,
+          "mean_signed_difference": 0.009176466414247412,
+          "mean_absolute_difference": 0.022474428336000458,
+          "p99_absolute_difference": 0.40517412424087357,
+          "max_absolute_difference": 0.6201552152633667,
+          "rmse": 0.07856112348273803,
+          "nll_reference": 50.92454137412791,
+          "nll_hf": 48.35513077813864
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 280,
+          "mean_signed_difference": 0.009176466414247412,
+          "mean_absolute_difference": 0.022474428336000458,
+          "p99_absolute_difference": 0.40517412424087357,
+          "max_absolute_difference": 0.6201552152633667,
+          "rmse": 0.07856112348273803,
+          "nll_reference": 50.92454137412791,
+          "nll_hf": 48.35513077813864
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 280,
+          "mean_signed_difference": 0.004676305340196839,
+          "mean_absolute_difference": 0.022518908248295156,
+          "p99_absolute_difference": 0.37827630281448127,
+          "max_absolute_difference": 0.8392071425914764,
+          "rmse": 0.08226777996749696,
+          "nll_reference": 50.92454137412791,
+          "nll_hf": 49.6151758788728
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 280,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 48.35513077813864,
+        "nll_hf": 48.35513077813864
+      }
+    },
+    {
+      "id": "r001-s10",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 244,
+          "mean_signed_difference": -0.0002784478531376975,
+          "mean_absolute_difference": 0.01710292952685834,
+          "p99_absolute_difference": 0.3321052479743956,
+          "max_absolute_difference": 0.6487971544265747,
+          "rmse": 0.07071283873757345,
+          "nll_reference": 24.538514871585093,
+          "nll_hf": 24.60645614775069
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 244,
+          "mean_signed_difference": -0.0002784478531376975,
+          "mean_absolute_difference": 0.01710292952685834,
+          "p99_absolute_difference": 0.3321052479743956,
+          "max_absolute_difference": 0.6487971544265747,
+          "rmse": 0.07071283873757345,
+          "nll_reference": 24.538514871585093,
+          "nll_hf": 24.60645614775069
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 244,
+          "mean_signed_difference": 0.0014193360505024462,
+          "mean_absolute_difference": 0.013973108406007245,
+          "p99_absolute_difference": 0.20024543762207017,
+          "max_absolute_difference": 0.48737478256225586,
+          "rmse": 0.052658970554514184,
+          "nll_reference": 24.538514871585093,
+          "nll_hf": 24.192196875262496
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 244,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 24.60645614775069,
+        "nll_hf": 24.60645614775069
+      }
+    },
+    {
+      "id": "r001-s11",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 247,
+          "mean_signed_difference": 0.004640353456990033,
+          "mean_absolute_difference": 0.02427584247189257,
+          "p99_absolute_difference": 0.4291318988800036,
+          "max_absolute_difference": 0.7826364040374756,
+          "rmse": 0.08941767024313717,
+          "nll_reference": 37.42066964686001,
+          "nll_hf": 36.274502342983475
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 247,
+          "mean_signed_difference": 0.004640353456990033,
+          "mean_absolute_difference": 0.02427584247189257,
+          "p99_absolute_difference": 0.4291318988800036,
+          "max_absolute_difference": 0.7826364040374756,
+          "rmse": 0.08941767024313717,
+          "nll_reference": 37.42066964686001,
+          "nll_hf": 36.274502342983475
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 247,
+          "mean_signed_difference": 0.004631706010511148,
+          "mean_absolute_difference": 0.025079828266393364,
+          "p99_absolute_difference": 0.41786282479762993,
+          "max_absolute_difference": 0.5000109076499939,
+          "rmse": 0.07652451532572993,
+          "nll_reference": 37.42066964686001,
+          "nll_hf": 36.27663826226376
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 247,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 36.274502342983475,
+        "nll_hf": 36.274502342983475
+      }
+    },
+    {
+      "id": "r001-s12",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 740,
+          "mean_signed_difference": -0.0012131751462527056,
+          "mean_absolute_difference": 0.015918235359558098,
+          "p99_absolute_difference": 0.24273851990699777,
+          "max_absolute_difference": 0.6855955123901367,
+          "rmse": 0.05576067748241911,
+          "nll_reference": 143.29409098834918,
+          "nll_hf": 144.19184059657618
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 740,
+          "mean_signed_difference": -0.0012131751462527056,
+          "mean_absolute_difference": 0.015918235359558098,
+          "p99_absolute_difference": 0.24273851990699777,
+          "max_absolute_difference": 0.6855955123901367,
+          "rmse": 0.05576067748241911,
+          "nll_reference": 143.29409098834918,
+          "nll_hf": 144.19184059657618
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 740,
+          "mean_signed_difference": -0.0007545984368683979,
+          "mean_absolute_difference": 0.02250081999161014,
+          "p99_absolute_difference": 0.37846374630928103,
+          "max_absolute_difference": 0.6917071342468262,
+          "rmse": 0.07245281553669901,
+          "nll_reference": 143.29409098834918,
+          "nll_hf": 143.8524938316318
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 740,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 144.19184059657618,
+        "nll_hf": 144.19184059657618
+      }
+    },
+    {
+      "id": "r001-s13",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 425,
+          "mean_signed_difference": 0.0013227989773107773,
+          "mean_absolute_difference": 0.01835537845653714,
+          "p99_absolute_difference": 0.3391979122161865,
+          "max_absolute_difference": 0.4436541795730591,
+          "rmse": 0.06299518149041625,
+          "nll_reference": 55.87770865449667,
+          "nll_hf": 55.31551908913959
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 425,
+          "mean_signed_difference": 0.0013227989773107773,
+          "mean_absolute_difference": 0.01835537845653714,
+          "p99_absolute_difference": 0.3391979122161865,
+          "max_absolute_difference": 0.4436541795730591,
+          "rmse": 0.06299518149041625,
+          "nll_reference": 55.87770865449667,
+          "nll_hf": 55.31551908913959
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 425,
+          "mean_signed_difference": -0.0024805955778306136,
+          "mean_absolute_difference": 0.027084025720077922,
+          "p99_absolute_difference": 0.40486257076263416,
+          "max_absolute_difference": 2.2158985137939453,
+          "rmse": 0.1360613738516611,
+          "nll_reference": 55.87770865449667,
+          "nll_hf": 56.93196177507468
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 425,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 55.31551908913959,
+        "nll_hf": 55.31551908913959
+      }
+    },
+    {
+      "id": "r001-s14",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 671,
+          "mean_signed_difference": -0.001052944840536125,
+          "mean_absolute_difference": 0.01819972321562608,
+          "p99_absolute_difference": 0.28947795629501233,
+          "max_absolute_difference": 0.4676659107208252,
+          "rmse": 0.05675182081053218,
+          "nll_reference": 116.40318197416696,
+          "nll_hf": 117.10970796216668
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 671,
+          "mean_signed_difference": -0.001052944840536125,
+          "mean_absolute_difference": 0.01819972321562608,
+          "p99_absolute_difference": 0.28947795629501233,
+          "max_absolute_difference": 0.4676659107208252,
+          "rmse": 0.05675182081053218,
+          "nll_reference": 116.40318197416696,
+          "nll_hf": 117.10970796216668
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 671,
+          "mean_signed_difference": -0.0030507294197772337,
+          "mean_absolute_difference": 0.0253429580489125,
+          "p99_absolute_difference": 0.45114953517913425,
+          "max_absolute_difference": 0.8211753368377686,
+          "rmse": 0.08755297604317791,
+          "nll_reference": 116.40318197416696,
+          "nll_hf": 118.45022141483747
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 671,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 117.10970796216668,
+        "nll_hf": 117.10970796216668
+      }
+    },
+    {
+      "id": "r002-s00",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 1240,
+          "mean_signed_difference": -0.0021910015663240893,
+          "mean_absolute_difference": 0.02069208305951622,
+          "p99_absolute_difference": 0.27376669824123273,
+          "max_absolute_difference": 0.8392508029937744,
+          "rmse": 0.06733609345178959,
+          "nll_reference": 323.8570073596711,
+          "nll_hf": 326.57384930191296
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 1240,
+          "mean_signed_difference": -0.0021910015663240893,
+          "mean_absolute_difference": 0.02069208305951622,
+          "p99_absolute_difference": 0.27376669824123273,
+          "max_absolute_difference": 0.8392508029937744,
+          "rmse": 0.06733609345178959,
+          "nll_reference": 323.8570073596711,
+          "nll_hf": 326.57384930191296
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 1240,
+          "mean_signed_difference": -0.0030372931669911587,
+          "mean_absolute_difference": 0.023463739095311614,
+          "p99_absolute_difference": 0.2830241203308098,
+          "max_absolute_difference": 1.2054951190948486,
+          "rmse": 0.07986696059499607,
+          "nll_reference": 323.8570073596711,
+          "nll_hf": 327.6232508867401
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 1240,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 326.57384930191296,
+        "nll_hf": 326.57384930191296
+      }
+    },
+    {
+      "id": "r002-s01",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 722,
+          "mean_signed_difference": -0.00314943036842457,
+          "mean_absolute_difference": 0.013469517983465257,
+          "p99_absolute_difference": 0.22769598484039288,
+          "max_absolute_difference": 1.5866279602050781,
+          "rmse": 0.07650606440493184,
+          "nll_reference": 73.32049483912314,
+          "nll_hf": 75.5943835651257
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 722,
+          "mean_signed_difference": -0.00314943036842457,
+          "mean_absolute_difference": 0.013469517983465257,
+          "p99_absolute_difference": 0.22769598484039288,
+          "max_absolute_difference": 1.5866279602050781,
+          "rmse": 0.07650606440493184,
+          "nll_reference": 73.32049483912314,
+          "nll_hf": 75.5943835651257
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 722,
+          "mean_signed_difference": -0.005204842617429618,
+          "mean_absolute_difference": 0.017773300893032123,
+          "p99_absolute_difference": 0.2946843546628924,
+          "max_absolute_difference": 2.3167364597320557,
+          "rmse": 0.1068711434619692,
+          "nll_reference": 73.32049483912314,
+          "nll_hf": 77.07839120890733
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 722,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 75.5943835651257,
+        "nll_hf": 75.5943835651257
+      }
+    },
+    {
+      "id": "r002-s02",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 1259,
+          "mean_signed_difference": -0.003473905158986258,
+          "mean_absolute_difference": 0.016092984003822038,
+          "p99_absolute_difference": 0.22182457327842728,
+          "max_absolute_difference": 1.5570011138916016,
+          "rmse": 0.06502089224309533,
+          "nll_reference": 249.19748290967925,
+          "nll_hf": 253.57112950484296
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 1259,
+          "mean_signed_difference": -0.003473905158986258,
+          "mean_absolute_difference": 0.016092984003822038,
+          "p99_absolute_difference": 0.22182457327842728,
+          "max_absolute_difference": 1.5570011138916016,
+          "rmse": 0.06502089224309533,
+          "nll_reference": 249.19748290967925,
+          "nll_hf": 253.57112950484296
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 1259,
+          "mean_signed_difference": -0.0009363869925445394,
+          "mean_absolute_difference": 0.017990971130358437,
+          "p99_absolute_difference": 0.27713237404823315,
+          "max_absolute_difference": 0.8311949968338013,
+          "rmse": 0.0632913776749776,
+          "nll_reference": 249.19748290967925,
+          "nll_hf": 250.37639413329282
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 1259,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 253.57112950484296,
+        "nll_hf": 253.57112950484296
+      }
+    },
+    {
+      "id": "r002-s03",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 468,
+          "mean_signed_difference": 0.0010651136066866399,
+          "mean_absolute_difference": 0.012232865062957394,
+          "p99_absolute_difference": 0.33196789860725395,
+          "max_absolute_difference": 0.4999852180480957,
+          "rmse": 0.055515590326651564,
+          "nll_reference": 51.99125600328254,
+          "nll_hf": 51.49278283535319
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 468,
+          "mean_signed_difference": 0.0010651136066866399,
+          "mean_absolute_difference": 0.012232865062957394,
+          "p99_absolute_difference": 0.33196789860725395,
+          "max_absolute_difference": 0.4999852180480957,
+          "rmse": 0.055515590326651564,
+          "nll_reference": 51.99125600328254,
+          "nll_hf": 51.49278283535319
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 468,
+          "mean_signed_difference": -0.0013109314797747336,
+          "mean_absolute_difference": 0.015898920575796574,
+          "p99_absolute_difference": 0.35265152931213345,
+          "max_absolute_difference": 0.5129838287830353,
+          "rmse": 0.06597975731353233,
+          "nll_reference": 51.99125600328254,
+          "nll_hf": 52.60477193581711
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 468,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 51.49278283535319,
+        "nll_hf": 51.49278283535319
+      }
+    },
+    {
+      "id": "r002-s04",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 359,
+          "mean_signed_difference": 0.0045081699286371605,
+          "mean_absolute_difference": 0.011891226515524487,
+          "p99_absolute_difference": 0.19738547265529663,
+          "max_absolute_difference": 0.49483299255371094,
+          "rmse": 0.048083910878857446,
+          "nll_reference": 55.37461230916538,
+          "nll_hf": 53.75617930478464
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 359,
+          "mean_signed_difference": 0.0045081699286371605,
+          "mean_absolute_difference": 0.011891226515524487,
+          "p99_absolute_difference": 0.19738547265529663,
+          "max_absolute_difference": 0.49483299255371094,
+          "rmse": 0.048083910878857446,
+          "nll_reference": 55.37461230916538,
+          "nll_hf": 53.75617930478464
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 359,
+          "mean_signed_difference": 0.004859792186926663,
+          "mean_absolute_difference": 0.016868875812372553,
+          "p99_absolute_difference": 0.3240026140213015,
+          "max_absolute_difference": 0.6167755126953125,
+          "rmse": 0.06652836116048594,
+          "nll_reference": 55.37461230916538,
+          "nll_hf": 53.629946914058706
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 359,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 53.75617930478464,
+        "nll_hf": 53.75617930478464
+      }
+    },
+    {
+      "id": "r002-s05",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 353,
+          "mean_signed_difference": -0.0020713310455367302,
+          "mean_absolute_difference": 0.0066362638844192036,
+          "p99_absolute_difference": 0.15698056578636185,
+          "max_absolute_difference": 0.4616711139678955,
+          "rmse": 0.03543607148141522,
+          "nll_reference": 14.09699272492886,
+          "nll_hf": 14.828172584003326
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 353,
+          "mean_signed_difference": -0.0020713310455367302,
+          "mean_absolute_difference": 0.0066362638844192036,
+          "p99_absolute_difference": 0.15698056578636185,
+          "max_absolute_difference": 0.4616711139678955,
+          "rmse": 0.03543607148141522,
+          "nll_reference": 14.09699272492886,
+          "nll_hf": 14.828172584003326
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 353,
+          "mean_signed_difference": -0.0010797421916702158,
+          "mean_absolute_difference": 0.005351257732098263,
+          "p99_absolute_difference": 0.13452209711074894,
+          "max_absolute_difference": 0.2809298038482666,
+          "rmse": 0.02744792691517761,
+          "nll_reference": 14.09699272492886,
+          "nll_hf": 14.478141718588446
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 353,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 14.828172584003326,
+        "nll_hf": 14.828172584003326
+      }
+    },
+    {
+      "id": "r002-s06",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 322,
+          "mean_signed_difference": 0.004743161340251629,
+          "mean_absolute_difference": 0.018827852149655964,
+          "p99_absolute_difference": 0.3215547299385088,
+          "max_absolute_difference": 0.43998241424560547,
+          "rmse": 0.0618833765060075,
+          "nll_reference": 41.824815092160925,
+          "nll_hf": 40.2975171405999
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 322,
+          "mean_signed_difference": 0.004743161340251629,
+          "mean_absolute_difference": 0.018827852149655964,
+          "p99_absolute_difference": 0.3215547299385088,
+          "max_absolute_difference": 0.43998241424560547,
+          "rmse": 0.0618833765060075,
+          "nll_reference": 41.824815092160925,
+          "nll_hf": 40.2975171405999
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 322,
+          "mean_signed_difference": -0.008179264984884181,
+          "mean_absolute_difference": 0.022359842176934153,
+          "p99_absolute_difference": 0.4743261245638135,
+          "max_absolute_difference": 0.6249101161956787,
+          "rmse": 0.08183595388715055,
+          "nll_reference": 41.824815092160925,
+          "nll_hf": 44.45853841729363
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 322,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 40.2975171405999,
+        "nll_hf": 40.2975171405999
+      }
+    },
+    {
+      "id": "r002-s07",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 279,
+          "mean_signed_difference": 0.0003441709213122842,
+          "mean_absolute_difference": 0.008434589499800235,
+          "p99_absolute_difference": 0.19935319423675538,
+          "max_absolute_difference": 0.26265501976013184,
+          "rmse": 0.03575734564695622,
+          "nll_reference": 17.341430133065217,
+          "nll_hf": 17.24540644601909
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 279,
+          "mean_signed_difference": 0.0003441709213122842,
+          "mean_absolute_difference": 0.008434589499800235,
+          "p99_absolute_difference": 0.19935319423675538,
+          "max_absolute_difference": 0.26265501976013184,
+          "rmse": 0.03575734564695622,
+          "nll_reference": 17.341430133065217,
+          "nll_hf": 17.24540644601909
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 279,
+          "mean_signed_difference": 0.0045465146006354335,
+          "mean_absolute_difference": 0.009576007198668563,
+          "p99_absolute_difference": 0.19707405418157464,
+          "max_absolute_difference": 0.34315791726112366,
+          "rmse": 0.0414908011013872,
+          "nll_reference": 17.341430133065217,
+          "nll_hf": 16.07295255948793
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 279,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 17.24540644601909,
+        "nll_hf": 17.24540644601909
+      }
+    },
+    {
+      "id": "r002-s08",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 650,
+          "mean_signed_difference": -0.0034013917363380566,
+          "mean_absolute_difference": 0.015852588859640606,
+          "p99_absolute_difference": 0.39645483970642087,
+          "max_absolute_difference": 0.7057075500488281,
+          "rmse": 0.06707050455204981,
+          "nll_reference": 83.74937298646088,
+          "nll_hf": 85.96027761508063
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 650,
+          "mean_signed_difference": -0.0034013917363380566,
+          "mean_absolute_difference": 0.015852588859640606,
+          "p99_absolute_difference": 0.39645483970642087,
+          "max_absolute_difference": 0.7057075500488281,
+          "rmse": 0.06707050455204981,
+          "nll_reference": 83.74937298646088,
+          "nll_hf": 85.96027761508063
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 650,
+          "mean_signed_difference": -0.005930925215913972,
+          "mean_absolute_difference": 0.016678312241481755,
+          "p99_absolute_difference": 0.38392120689153664,
+          "max_absolute_difference": 0.7520241737365723,
+          "rmse": 0.07318236890059772,
+          "nll_reference": 83.74937298646088,
+          "nll_hf": 87.60447437680497
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 650,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 85.96027761508063,
+        "nll_hf": 85.96027761508063
+      }
+    },
+    {
+      "id": "r002-s09",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 290,
+          "mean_signed_difference": -0.0035558792617359615,
+          "mean_absolute_difference": 0.019211278066071775,
+          "p99_absolute_difference": 0.31831475533545045,
+          "max_absolute_difference": 0.6059261560440063,
+          "rmse": 0.06531055437460452,
+          "nll_reference": 55.5977234570853,
+          "nll_hf": 56.62892844298873
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 290,
+          "mean_signed_difference": -0.0035558792617359615,
+          "mean_absolute_difference": 0.019211278066071775,
+          "p99_absolute_difference": 0.31831475533545045,
+          "max_absolute_difference": 0.6059261560440063,
+          "rmse": 0.06531055437460452,
+          "nll_reference": 55.5977234570853,
+          "nll_hf": 56.62892844298873
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 290,
+          "mean_signed_difference": -0.0002536619344442523,
+          "mean_absolute_difference": 0.025714773053504607,
+          "p99_absolute_difference": 0.34968411922454856,
+          "max_absolute_difference": 0.6822041869163513,
+          "rmse": 0.07775044264875074,
+          "nll_reference": 55.5977234570853,
+          "nll_hf": 55.671285418074135
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 290,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 56.62892844298873,
+        "nll_hf": 56.62892844298873
+      }
+    },
+    {
+      "id": "r002-s10",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 777,
+          "mean_signed_difference": 0.0021026770051094062,
+          "mean_absolute_difference": 0.02064997777593625,
+          "p99_absolute_difference": 0.2546965789794925,
+          "max_absolute_difference": 0.8590495586395264,
+          "rmse": 0.06762635746844733,
+          "nll_reference": 186.34113278370629,
+          "nll_hf": 184.70735275073628
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 777,
+          "mean_signed_difference": 0.0021026770051094062,
+          "mean_absolute_difference": 0.02064997777593625,
+          "p99_absolute_difference": 0.2546965789794925,
+          "max_absolute_difference": 0.8590495586395264,
+          "rmse": 0.06762635746844733,
+          "nll_reference": 186.34113278370629,
+          "nll_hf": 184.70735275073628
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 777,
+          "mean_signed_difference": 0.0005775782476319515,
+          "mean_absolute_difference": 0.02057573247632268,
+          "p99_absolute_difference": 0.27213211774826057,
+          "max_absolute_difference": 1.354640245437622,
+          "rmse": 0.0739266653807919,
+          "nll_reference": 186.34113278370629,
+          "nll_hf": 185.89235448529624
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 777,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 184.70735275073628,
+        "nll_hf": 184.70735275073628
+      }
+    },
+    {
+      "id": "r002-s11",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 219,
+          "mean_signed_difference": 0.0004682689788983804,
+          "mean_absolute_difference": 0.015687755198272382,
+          "p99_absolute_difference": 0.22437063097953794,
+          "max_absolute_difference": 0.48140954971313477,
+          "rmse": 0.05476559718034052,
+          "nll_reference": 26.171908242819256,
+          "nll_hf": 26.06935733644051
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 219,
+          "mean_signed_difference": 0.0004682689788983804,
+          "mean_absolute_difference": 0.015687755198272382,
+          "p99_absolute_difference": 0.22437063097953794,
+          "max_absolute_difference": 0.48140954971313477,
+          "rmse": 0.05476559718034052,
+          "nll_reference": 26.171908242819256,
+          "nll_hf": 26.06935733644051
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 219,
+          "mean_signed_difference": 0.0012988818854329982,
+          "mean_absolute_difference": 0.017718061704002835,
+          "p99_absolute_difference": 0.42294810295104845,
+          "max_absolute_difference": 0.5872059762477875,
+          "rmse": 0.07253079211700791,
+          "nll_reference": 26.171908242819256,
+          "nll_hf": 25.88745310990943
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 219,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 26.06935733644051,
+        "nll_hf": 26.06935733644051
+      }
+    },
+    {
+      "id": "r002-s12",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 250,
+          "mean_signed_difference": 0.0015001421431576035,
+          "mean_absolute_difference": 0.019640149818275263,
+          "p99_absolute_difference": 0.4232032841444008,
+          "max_absolute_difference": 0.5245246887207031,
+          "rmse": 0.07313056452123241,
+          "nll_reference": 26.888233565270546,
+          "nll_hf": 26.513198029481146
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 250,
+          "mean_signed_difference": 0.0015001421431576035,
+          "mean_absolute_difference": 0.019640149818275263,
+          "p99_absolute_difference": 0.4232032841444008,
+          "max_absolute_difference": 0.5245246887207031,
+          "rmse": 0.07313056452123241,
+          "nll_reference": 26.888233565270546,
+          "nll_hf": 26.513198029481146
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 250,
+          "mean_signed_difference": 0.0018098940274838924,
+          "mean_absolute_difference": 0.016375918902201705,
+          "p99_absolute_difference": 0.24047531843185418,
+          "max_absolute_difference": 0.38961493968963623,
+          "rmse": 0.05516399938548838,
+          "nll_reference": 26.888233565270546,
+          "nll_hf": 26.435760058399573
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 250,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 26.513198029481146,
+        "nll_hf": 26.513198029481146
+      }
+    },
+    {
+      "id": "r002-s13",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 344,
+          "mean_signed_difference": -0.00875885373668428,
+          "mean_absolute_difference": 0.019062479022293556,
+          "p99_absolute_difference": 0.4027394616603838,
+          "max_absolute_difference": 1.4367902278900146,
+          "rmse": 0.0980371296675467,
+          "nll_reference": 58.07361026713721,
+          "nll_hf": 61.086655952556605
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 344,
+          "mean_signed_difference": -0.00875885373668428,
+          "mean_absolute_difference": 0.019062479022293556,
+          "p99_absolute_difference": 0.4027394616603838,
+          "max_absolute_difference": 1.4367902278900146,
+          "rmse": 0.0980371296675467,
+          "nll_reference": 58.07361026713721,
+          "nll_hf": 61.086655952556605
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 344,
+          "mean_signed_difference": -0.007476949899664897,
+          "mean_absolute_difference": 0.023474202134664904,
+          "p99_absolute_difference": 0.3837023416161537,
+          "max_absolute_difference": 0.8497095108032227,
+          "rmse": 0.08340656984519841,
+          "nll_reference": 58.07361026713721,
+          "nll_hf": 60.64568103262194
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 344,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 61.086655952556605,
+        "nll_hf": 61.086655952556605
+      }
+    },
+    {
+      "id": "r023-s00",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 4096,
+          "mean_signed_difference": 0.0001756810243913661,
+          "mean_absolute_difference": 0.017470996763567573,
+          "p99_absolute_difference": 0.16649507284164453,
+          "max_absolute_difference": 0.551743745803833,
+          "rmse": 0.041056901149467445,
+          "nll_reference": 1835.6534153858408,
+          "nll_hf": 1834.933825909934
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 4096,
+          "mean_signed_difference": 0.0001756810243913661,
+          "mean_absolute_difference": 0.017470996763567573,
+          "p99_absolute_difference": 0.16649507284164453,
+          "max_absolute_difference": 0.551743745803833,
+          "rmse": 0.041056901149467445,
+          "nll_reference": 1835.6534153858408,
+          "nll_hf": 1834.933825909934
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 4096,
+          "mean_signed_difference": 0.00048699328713745077,
+          "mean_absolute_difference": 0.02086535277834988,
+          "p99_absolute_difference": 0.20097184181213418,
+          "max_absolute_difference": 0.8774100542068481,
+          "rmse": 0.050995263089751365,
+          "nll_reference": 1835.6534153858408,
+          "nll_hf": 1833.6586908817262
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 4096,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 1834.933825909934,
+        "nll_hf": 1834.933825909934
+      }
+    },
+    {
+      "id": "r023-s12",
+      "source": "recorded_forced_prefill",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 638,
+          "mean_signed_difference": -0.0015006703876588494,
+          "mean_absolute_difference": 0.015042501368773603,
+          "p99_absolute_difference": 0.22137211680412291,
+          "max_absolute_difference": 0.40829503536224365,
+          "rmse": 0.04694939448325196,
+          "nll_reference": 80.91390650305972,
+          "nll_hf": 81.87133421038607
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 638,
+          "mean_signed_difference": -0.0015006703876588494,
+          "mean_absolute_difference": 0.015042501368773603,
+          "p99_absolute_difference": 0.22137211680412291,
+          "max_absolute_difference": 0.40829503536224365,
+          "rmse": 0.04694939448325196,
+          "nll_reference": 80.91390650305972,
+          "nll_hf": 81.87133421038607
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 638,
+          "mean_signed_difference": -0.0033104838393548095,
+          "mean_absolute_difference": 0.017705535682738544,
+          "p99_absolute_difference": 0.3010785290598869,
+          "max_absolute_difference": 0.57366943359375,
+          "rmse": 0.06233994782554943,
+          "nll_reference": 80.91390650305972,
+          "nll_hf": 83.02599519256809
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 638,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 81.87133421038607,
+        "nll_hf": 81.87133421038607
+      }
+    },
+    {
+      "id": "r001-s00-start",
+      "source": "fresh_actual_decode",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.004847795199776406,
+          "mean_absolute_difference": 0.010239186155142854,
+          "p99_absolute_difference": 0.23053432136773963,
+          "max_absolute_difference": 0.4745802879333496,
+          "rmse": 0.060793369774744255,
+          "nll_reference": 4.0073636939464095,
+          "nll_hf": 4.317622586732099
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.004847795199776406,
+          "mean_absolute_difference": 0.010239186155142854,
+          "p99_absolute_difference": 0.23053432136773963,
+          "max_absolute_difference": 0.4745802879333496,
+          "rmse": 0.060793369774744255,
+          "nll_reference": 4.0073636939464095,
+          "nll_hf": 4.317622586732099
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.004440481725030643,
+          "mean_absolute_difference": 0.012722633929815097,
+          "p99_absolute_difference": 0.29079513013362795,
+          "max_absolute_difference": 0.5121121406555176,
+          "rmse": 0.06798674797822148,
+          "nll_reference": 4.0073636939464095,
+          "nll_hf": 4.291554524348371
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 64,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 4.317622586732099,
+        "nll_hf": 4.317622586732099
+      },
+      "vllm_decode_vs_prefill": {
+        "tokens": 64,
+        "mean_signed_difference": 8.379691706428272e-05,
+        "mean_absolute_difference": 0.0036497473935203084,
+        "p99_absolute_difference": 0.07857703298330304,
+        "max_absolute_difference": 0.0872059166431427,
+        "rmse": 0.015140912820584551,
+        "nll_reference": 4.0127266966385235,
+        "nll_hf": 4.0073636939464095
+      }
+    },
+    {
+      "id": "r001-s00-near_end",
+      "source": "fresh_actual_decode",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": 9.435912500155297e-05,
+          "mean_absolute_difference": 0.012088702798903839,
+          "p99_absolute_difference": 0.16030952692031825,
+          "max_absolute_difference": 0.2478177547454834,
+          "rmse": 0.03947529092762101,
+          "nll_reference": 7.717681492689948,
+          "nll_hf": 7.711642508689849
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": 9.435912500155297e-05,
+          "mean_absolute_difference": 0.012088702798903839,
+          "p99_absolute_difference": 0.16030952692031825,
+          "max_absolute_difference": 0.2478177547454834,
+          "rmse": 0.03947529092762101,
+          "nll_reference": 7.717681492689948,
+          "nll_hf": 7.711642508689849
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": 0.002481875470619621,
+          "mean_absolute_difference": 0.014673068837627867,
+          "p99_absolute_difference": 0.18790470361709577,
+          "max_absolute_difference": 0.23409008979797363,
+          "rmse": 0.0439009292629303,
+          "nll_reference": 7.717681492689948,
+          "nll_hf": 7.558841462570292
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 64,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 7.711642508689849,
+        "nll_hf": 7.711642508689849
+      },
+      "vllm_decode_vs_prefill": {
+        "tokens": 64,
+        "mean_signed_difference": -0.003197411822803975,
+        "mean_absolute_difference": 0.006730214526573075,
+        "p99_absolute_difference": 0.11368236362934105,
+        "max_absolute_difference": 0.13396590948104858,
+        "rmse": 0.024597958758925335,
+        "nll_reference": 7.513047136030494,
+        "nll_hf": 7.717681492689948
+      }
+    },
+    {
+      "id": "r001-s14-start",
+      "source": "fresh_actual_decode",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.003948369820812148,
+          "mean_absolute_difference": 0.013665464793909066,
+          "p99_absolute_difference": 0.3092881023883814,
+          "max_absolute_difference": 0.44372379779815674,
+          "rmse": 0.06356183474494836,
+          "nll_reference": 5.502503661343248,
+          "nll_hf": 5.755199329875225
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.003948369820812148,
+          "mean_absolute_difference": 0.013665464793909066,
+          "p99_absolute_difference": 0.3092881023883814,
+          "max_absolute_difference": 0.44372379779815674,
+          "rmse": 0.06356183474494836,
+          "nll_reference": 5.502503661343248,
+          "nll_hf": 5.755199329875225
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.011920431137417253,
+          "mean_absolute_difference": 0.022641382484421158,
+          "p99_absolute_difference": 0.36749048352241415,
+          "max_absolute_difference": 0.6201145648956299,
+          "rmse": 0.08938828547862551,
+          "nll_reference": 5.502503661343248,
+          "nll_hf": 6.265411254137952
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 64,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 5.755199329875225,
+        "nll_hf": 5.755199329875225
+      },
+      "vllm_decode_vs_prefill": {
+        "tokens": 64,
+        "mean_signed_difference": 0.005611995820955729,
+        "mean_absolute_difference": 0.005729505678153002,
+        "p99_absolute_difference": 0.1155241030454635,
+        "max_absolute_difference": 0.13279223442077637,
+        "rmse": 0.023781804988007922,
+        "nll_reference": 5.861671393884414,
+        "nll_hf": 5.502503661343248
+      }
+    },
+    {
+      "id": "r001-s14-near_end",
+      "source": "fresh_actual_decode",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 54,
+          "mean_signed_difference": -0.004841729608815344,
+          "mean_absolute_difference": 0.021251718920965418,
+          "p99_absolute_difference": 0.22707484602928157,
+          "max_absolute_difference": 0.2476668357849121,
+          "rmse": 0.05599749294728418,
+          "nll_reference": 18.998410626966177,
+          "nll_hf": 19.259864025842205
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 54,
+          "mean_signed_difference": -0.004841729608815344,
+          "mean_absolute_difference": 0.021251718920965418,
+          "p99_absolute_difference": 0.22707484602928157,
+          "max_absolute_difference": 0.2476668357849121,
+          "rmse": 0.05599749294728418,
+          "nll_reference": 18.998410626966177,
+          "nll_hf": 19.259864025842205
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 54,
+          "mean_signed_difference": -0.014932406995200154,
+          "mean_absolute_difference": 0.024766151032693,
+          "p99_absolute_difference": 0.3025651156902311,
+          "max_absolute_difference": 0.4082949161529541,
+          "rmse": 0.07149791761183681,
+          "nll_reference": 18.998410626966177,
+          "nll_hf": 19.804760604706985
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 54,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 19.259864025842205,
+        "nll_hf": 19.259864025842205
+      },
+      "vllm_decode_vs_prefill": {
+        "tokens": 54,
+        "mean_signed_difference": 0.005675464669793571,
+        "mean_absolute_difference": 0.01123436225276464,
+        "p99_absolute_difference": 0.2037925744056698,
+        "max_absolute_difference": 0.3732290267944336,
+        "rmse": 0.051972849567704905,
+        "nll_reference": 19.30488571913503,
+        "nll_hf": 18.998410626966177
+      }
+    },
+    {
+      "id": "r002-s00-start",
+      "source": "fresh_actual_decode",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.0007826598577679311,
+          "mean_absolute_difference": 0.010578502098984033,
+          "p99_absolute_difference": 0.23316544711589807,
+          "max_absolute_difference": 0.24999994039535522,
+          "rmse": 0.04431751333730959,
+          "nll_reference": 5.234560928520857,
+          "nll_hf": 5.284651159418004
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.0007826598577679311,
+          "mean_absolute_difference": 0.010578502098984033,
+          "p99_absolute_difference": 0.23316544711589807,
+          "max_absolute_difference": 0.24999994039535522,
+          "rmse": 0.04431751333730959,
+          "nll_reference": 5.234560928520857,
+          "nll_hf": 5.284651159418004
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": 0.009100784362100378,
+          "mean_absolute_difference": 0.011648678192268336,
+          "p99_absolute_difference": 0.2805614113807663,
+          "max_absolute_difference": 0.6538427770137787,
+          "rmse": 0.08211789101167945,
+          "nll_reference": 5.234560928520857,
+          "nll_hf": 4.6521107293464325
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 64,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 5.284651159418004,
+        "nll_hf": 5.284651159418004
+      },
+      "vllm_decode_vs_prefill": {
+        "tokens": 64,
+        "mean_signed_difference": 0.0012156699541487903,
+        "mean_absolute_difference": 0.006522476117722942,
+        "p99_absolute_difference": 0.18106497287750228,
+        "max_absolute_difference": 0.22327852249145508,
+        "rmse": 0.034176328172361624,
+        "nll_reference": 5.312363805586379,
+        "nll_hf": 5.234560928520857
+      }
+    },
+    {
+      "id": "r002-s00-near_end",
+      "source": "fresh_actual_decode",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.00900556731824409,
+          "mean_absolute_difference": 0.024518869070437432,
+          "p99_absolute_difference": 0.1820606195926664,
+          "max_absolute_difference": 0.24012494087219238,
+          "rmse": 0.051828190043692615,
+          "nll_reference": 26.668279983486904,
+          "nll_hf": 27.244636291854526
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.00900556731824409,
+          "mean_absolute_difference": 0.024518869070437432,
+          "p99_absolute_difference": 0.1820606195926664,
+          "max_absolute_difference": 0.24012494087219238,
+          "rmse": 0.051828190043692615,
+          "nll_reference": 26.668279983486904,
+          "nll_hf": 27.244636291854526
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": 0.005018303080293052,
+          "mean_absolute_difference": 0.023984650794306006,
+          "p99_absolute_difference": 0.15715451657772056,
+          "max_absolute_difference": 0.1750239133834839,
+          "rmse": 0.04565257768144245,
+          "nll_reference": 26.668279983486904,
+          "nll_hf": 26.34710858634815
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 64,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 27.244636291854526,
+        "nll_hf": 27.244636291854526
+      },
+      "vllm_decode_vs_prefill": {
+        "tokens": 64,
+        "mean_signed_difference": -0.0037279554535700754,
+        "mean_absolute_difference": 0.01781580412628614,
+        "p99_absolute_difference": 0.1160989642143249,
+        "max_absolute_difference": 0.12720727920532227,
+        "rmse": 0.037046325174991394,
+        "nll_reference": 26.42969083445842,
+        "nll_hf": 26.668279983486904
+      }
+    },
+    {
+      "id": "r002-s13-start",
+      "source": "fresh_actual_decode",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.00179422966788223,
+          "mean_absolute_difference": 0.015176335249679096,
+          "p99_absolute_difference": 0.21145984590053543,
+          "max_absolute_difference": 0.2496049404144287,
+          "rmse": 0.0490113143901023,
+          "nll_reference": 6.290171642172318,
+          "nll_hf": 6.405002340916781
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.00179422966788223,
+          "mean_absolute_difference": 0.015176335249679096,
+          "p99_absolute_difference": 0.21145984590053543,
+          "max_absolute_difference": 0.2496049404144287,
+          "rmse": 0.0490113143901023,
+          "nll_reference": 6.290171642172318,
+          "nll_hf": 6.405002340916781
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": 0.010771440843194924,
+          "mean_absolute_difference": 0.021516282155358724,
+          "p99_absolute_difference": 0.40389934331178556,
+          "max_absolute_difference": 0.6650803983211517,
+          "rmse": 0.09199431789555404,
+          "nll_reference": 6.290171642172318,
+          "nll_hf": 5.600799428207843
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 64,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 6.405002340916781,
+        "nll_hf": 6.405002340916781
+      },
+      "vllm_decode_vs_prefill": {
+        "tokens": 64,
+        "mean_signed_difference": -0.0023065988312032104,
+        "mean_absolute_difference": 0.010803732237461894,
+        "p99_absolute_difference": 0.17343793869018548,
+        "max_absolute_difference": 0.18905717134475708,
+        "rmse": 0.036928881923364555,
+        "nll_reference": 6.1425493169753125,
+        "nll_hf": 6.290171642172318
+      }
+    },
+    {
+      "id": "r002-s13-near_end",
+      "source": "fresh_actual_decode",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.00511740153048823,
+          "mean_absolute_difference": 0.020579695193897685,
+          "p99_absolute_difference": 0.23629979550838454,
+          "max_absolute_difference": 0.27600550651550293,
+          "rmse": 0.054319621340676576,
+          "nll_reference": 15.527345947345275,
+          "nll_hf": 15.854859645296521
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.00511740153048823,
+          "mean_absolute_difference": 0.020579695193897685,
+          "p99_absolute_difference": 0.23629979550838454,
+          "max_absolute_difference": 0.27600550651550293,
+          "rmse": 0.054319621340676576,
+          "nll_reference": 15.527345947345275,
+          "nll_hf": 15.854859645296521
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": 0.0003099349715873778,
+          "mean_absolute_difference": 0.024948551718219303,
+          "p99_absolute_difference": 0.3282411813735961,
+          "max_absolute_difference": 0.350034236907959,
+          "rmse": 0.07157554531919984,
+          "nll_reference": 15.527345947345275,
+          "nll_hf": 15.507510109163682
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 64,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 15.854859645296521,
+        "nll_hf": 15.854859645296521
+      },
+      "vllm_decode_vs_prefill": {
+        "tokens": 64,
+        "mean_signed_difference": 0.0013499817337701003,
+        "mean_absolute_difference": 0.011453570020962367,
+        "p99_absolute_difference": 0.16348355025053007,
+        "max_absolute_difference": 0.20822155475616455,
+        "rmse": 0.037103416063589925,
+        "nll_reference": 15.613744778306561,
+        "nll_hf": 15.527345947345275
+      }
+    },
+    {
+      "id": "r023-s00-start",
+      "source": "fresh_actual_decode",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.0049414148328477125,
+          "mean_absolute_difference": 0.010637760817624908,
+          "p99_absolute_difference": 0.2366836160421361,
+          "max_absolute_difference": 0.4911998510360718,
+          "rmse": 0.06272283298372508,
+          "nll_reference": 2.760201658841801,
+          "nll_hf": 3.0764522081440546
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.0049414148328477125,
+          "mean_absolute_difference": 0.010637760817624908,
+          "p99_absolute_difference": 0.2366836160421361,
+          "max_absolute_difference": 0.4911998510360718,
+          "rmse": 0.06272283298372508,
+          "nll_reference": 2.760201658841801,
+          "nll_hf": 3.0764522081440546
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": 0.00031056265445073006,
+          "mean_absolute_difference": 0.005899679308970174,
+          "p99_absolute_difference": 0.1645649281144142,
+          "max_absolute_difference": 0.1709492802619934,
+          "rmse": 0.029521914655123813,
+          "nll_reference": 2.760201658841801,
+          "nll_hf": 2.7403256489569543
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 64,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 3.0764522081440546,
+        "nll_hf": 3.0764522081440546
+      },
+      "vllm_decode_vs_prefill": {
+        "tokens": 64,
+        "mean_signed_difference": -0.0027070307902175017,
+        "mean_absolute_difference": 0.0028456242519308006,
+        "p99_absolute_difference": 0.08840908050537108,
+        "max_absolute_difference": 0.09045755863189697,
+        "rmse": 0.015715084890336413,
+        "nll_reference": 2.586951688267881,
+        "nll_hf": 2.760201658841801
+      }
+    },
+    {
+      "id": "r023-s00-near_end",
+      "source": "fresh_actual_decode",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": 0.003875256196685939,
+          "mean_absolute_difference": 0.014817393337231977,
+          "p99_absolute_difference": 0.10116446614265441,
+          "max_absolute_difference": 0.10156738758087158,
+          "rmse": 0.03204034659053725,
+          "nll_reference": 44.58559871843593,
+          "nll_hf": 44.33758232184803
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": 0.003875256196685939,
+          "mean_absolute_difference": 0.014817393337231977,
+          "p99_absolute_difference": 0.10116446614265441,
+          "max_absolute_difference": 0.10156738758087158,
+          "rmse": 0.03204034659053725,
+          "nll_reference": 44.58559871843593,
+          "nll_hf": 44.33758232184803
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.006790783574367132,
+          "mean_absolute_difference": 0.02078389143908732,
+          "p99_absolute_difference": 0.16183743476867646,
+          "max_absolute_difference": 0.2381138801574707,
+          "rmse": 0.04637582322890536,
+          "nll_reference": 44.58559871843593,
+          "nll_hf": 45.02020886719543
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 64,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 44.33758232184803,
+        "nll_hf": 44.33758232184803
+      },
+      "vllm_decode_vs_prefill": {
+        "tokens": 64,
+        "mean_signed_difference": 0.006530880088369884,
+        "mean_absolute_difference": 0.015688295099359095,
+        "p99_absolute_difference": 0.10767305850982661,
+        "max_absolute_difference": 0.11870431900024414,
+        "rmse": 0.03304352467129139,
+        "nll_reference": 45.003575044091605,
+        "nll_hf": 44.58559871843593
+      }
+    },
+    {
+      "id": "r023-s12-start",
+      "source": "fresh_actual_decode",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.001725257021158666,
+          "mean_absolute_difference": 0.008373812204846343,
+          "p99_absolute_difference": 0.1005663542449472,
+          "max_absolute_difference": 0.16081556677818298,
+          "rmse": 0.02651918699467339,
+          "nll_reference": 1.779074761428042,
+          "nll_hf": 1.8894912107821966
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.001725257021158666,
+          "mean_absolute_difference": 0.008373812204846343,
+          "p99_absolute_difference": 0.1005663542449472,
+          "max_absolute_difference": 0.16081556677818298,
+          "rmse": 0.02651918699467339,
+          "nll_reference": 1.779074761428042,
+          "nll_hf": 1.8894912107821966
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 64,
+          "mean_signed_difference": -0.0006551864986774625,
+          "mean_absolute_difference": 0.010319351794238596,
+          "p99_absolute_difference": 0.13419075608253478,
+          "max_absolute_difference": 0.13962306082248688,
+          "rmse": 0.030550332764385423,
+          "nll_reference": 1.779074761428042,
+          "nll_hf": 1.8210066973433996
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 64,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 1.8894912107821966,
+        "nll_hf": 1.8894912107821966
+      },
+      "vllm_decode_vs_prefill": {
+        "tokens": 64,
+        "mean_signed_difference": -0.0008430150498958122,
+        "mean_absolute_difference": 0.005222619518633009,
+        "p99_absolute_difference": 0.09152554206550093,
+        "max_absolute_difference": 0.1608157455921173,
+        "rmse": 0.02238474408215898,
+        "nll_reference": 1.72512179823471,
+        "nll_hf": 1.779074761428042
+      }
+    },
+    {
+      "id": "r023-s12-near_end",
+      "source": "fresh_actual_decode",
+      "comparisons": {
+        "mixed_train_logprobs": {
+          "tokens": 62,
+          "mean_signed_difference": -0.015121501937458913,
+          "mean_absolute_difference": 0.02258342904706883,
+          "p99_absolute_difference": 0.33074867248535167,
+          "max_absolute_difference": 0.4519009590148926,
+          "rmse": 0.07707370408223811,
+          "nll_reference": 26.094539482552733,
+          "nll_hf": 27.032072602675186
+        },
+        "mixed_eval_logprobs": {
+          "tokens": 62,
+          "mean_signed_difference": -0.015121501937458913,
+          "mean_absolute_difference": 0.02258342904706883,
+          "p99_absolute_difference": 0.33074867248535167,
+          "max_absolute_difference": 0.4519009590148926,
+          "rmse": 0.07707370408223811,
+          "nll_reference": 26.094539482552733,
+          "nll_hf": 27.032072602675186
+        },
+        "bf16_eval_logprobs": {
+          "tokens": 62,
+          "mean_signed_difference": 0.0019868074330922298,
+          "mean_absolute_difference": 0.0150352656091176,
+          "p99_absolute_difference": 0.17523874580860144,
+          "max_absolute_difference": 0.23937249183654785,
+          "rmse": 0.0418326303836355,
+          "nll_reference": 26.094539482552733,
+          "nll_hf": 25.971357421701015
+        }
+      },
+      "mixed_train_vs_eval": {
+        "tokens": 62,
+        "mean_signed_difference": 0.0,
+        "mean_absolute_difference": 0.0,
+        "p99_absolute_difference": 0.0,
+        "max_absolute_difference": 0.0,
+        "rmse": 0.0,
+        "nll_reference": 27.032072602675186,
+        "nll_hf": 27.032072602675186
+      },
+      "vllm_decode_vs_prefill": {
+        "tokens": 62,
+        "mean_signed_difference": 0.001226077906457865,
+        "mean_absolute_difference": 0.0067712195043734555,
+        "p99_absolute_difference": 0.12220672845840458,
+        "max_absolute_difference": 0.16352534294128418,
+        "rmse": 0.024974557731527194,
+        "nll_reference": 26.17055631275312,
+        "nll_hf": 26.094539482552733
+      }
+    }
+  ],
+  "interpretation_thresholds": {
+    "repeat_cosine_min": 0.9999,
+    "repeat_relative_l2_max": 0.01,
+    "logprob_investigation_mean_abs": 0.03,
+    "logprob_investigation_p99_abs": 0.2,
+    "note": "Logprob thresholds are investigation triggers, not proof of identical policies."
+  },
+  "diagnostic_status": {
+    "gradient_replay": "passes registered tolerance",
+    "hf_vllm_likelihood": "nonzero backend differences; p99 exceeds investigation threshold",
+    "ablation_decision": "Keep original HF forward method for controlled comparisons; no claim of exact on-policy equivalence."
+  }
+}

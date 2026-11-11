@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "q1-oracle-replay-20261104",
+  "title": "Q1 diagnostic only · official replay and single-call oracle repair",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-04T15:26:35.898356+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "q1-oracle-audit-1104",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "sources": {
+    "status": "runs/q1-oracle-replay-20261104/state.json",
+    "results": "runs/q1-oracle-replay-20261104/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "Diagnostic replay report (not model performance)",
+      "path": "runs/q1-oracle-replay-20261104/REPORT.md"
+    }
+  ]
+}

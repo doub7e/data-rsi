@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-03T17:55:17.211687+00:00",
+  "probe_id": "multi_turn_miss_func_194",
+  "candidate_count": 200,
+  "score_min": 0.0220248959011907,
+  "score_max": 0.04499707324072811,
+  "positive_scores": 200,
+  "probe_gradient": {
+    "norms": {
+      "a": 9268.187844396552,
+      "b": 8913.173111677934,
+      "full": 6424.722709493328
+    },
+    "half_cosine": -0.0014266804162391365,
+    "squared_norm_by_group": {
+      "embedding_lm_head": 621076.7573973462,
+      "attention": 19969715.059133936,
+      "mlp": 20562392.29529704,
+      "norm_other": 123877.78205091838
+    }
+  },
+  "half_rank_spearman": -0.10771619290482265,
+  "half_top20_overlap": 1,
+  "half_top100_overlap": 48,
+  "correlations": {
+    "steps": 0.08466822717656304,
+    "input_tokens": 0.07545191459233809,
+    "target_tokens": 0.21196137851999486,
+    "gradient_norm": 0.08044401110027752,
+    "mean_turn_nll": -0.10654766369159231,
+    "aggregate_original_cosine": 0.3185344633615841
+  },
+  "metrics": {
+    "candidate_count": 200,
+    "positive_scores": 200,
+    "half_rank_spearman": -0.10771619290482265,
+    "half_top20_overlap": 1,
+    "half_top100_overlap": 48
+  }
+}

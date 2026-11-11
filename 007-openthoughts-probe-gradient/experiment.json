@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "007-openthoughts-probe-gradient",
+  "title": "OpenThoughts-Agent · Qwen3-8B base · probe reward gradient",
+  "description": "在原始Qwen3-8B上，对不同benchmark题目计算与OTA训练loss一致的reward加权梯度，分析split-half cosine。与BFCL分支隔离。",
+  "created_at": "2026-11-05T19:29:21.149954+00:00",
+  "tags": [
+    "OpenThoughts-Agent",
+    "Qwen3-8B",
+    "base",
+    "probe-gradient",
+    "split-half"
+  ]
+}

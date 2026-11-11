@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "id": "004-runai-native-eval",
+  "title": "原生 RunAI 沙箱 · 容量与效率",
+  "description": "独立验证 Harbor 原生 RunAI CPU 环境，保持既有 Daytona 评测运行。",
+  "tags": [
+    "evaluation",
+    "RunAI",
+    "sandbox"
+  ],
+  "created_at": "2026-10-31T13:02:04.964261+00:00"
+}

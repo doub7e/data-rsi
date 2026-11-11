@@ -1,0 +1,15 @@
+{
+  "algebra": {
+    "three_partitions_match_direct_centered_gradients": true,
+    "constant_reward_cosine_is_undefined": true
+  },
+  "autograd": {
+    "standard_loss": 4.850480556488037,
+    "custom_loss": 4.850480556488037,
+    "post_sgd_loss": 4.834413528442383,
+    "max_gradient_error": 1.043081283569336e-07,
+    "supervised_tokens": 6,
+    "variable_turn_token_normalization_error": 5.960464477539063e-08
+  },
+  "fp32_block_sum_matches_direct_centering": true
+}

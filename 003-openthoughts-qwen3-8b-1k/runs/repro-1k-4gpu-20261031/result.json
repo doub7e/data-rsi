@@ -1,0 +1,19 @@
+{
+  "status": "succeeded",
+  "global_step": 77,
+  "epoch": 7.0,
+  "metrics": {
+    "epoch": 7.0,
+    "loss_nan_ranks": 0,
+    "loss_rank_avg": 0.005804268643260002,
+    "total_flos": 4.120596353615135e+17,
+    "train_loss": 0.33199835307412334,
+    "train_runtime": 9404.7628,
+    "train_samples_per_second": 0.744,
+    "train_steps_per_second": 0.008,
+    "valid_targets_mean": 2754.8,
+    "valid_targets_min": 2552
+  },
+  "checkpoint": "/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/runs/repro-1k-4gpu-20261031/checkpoint",
+  "completed_at": "2026-10-31T06:55:48.696564+00:00"
+}

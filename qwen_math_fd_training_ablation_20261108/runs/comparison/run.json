@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "comparison",
+  "title": "FD训练消融 · 三组配对5-step结果与不确定性",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T11:52:56.827934+00:00",
+  "updated_at": "2026-11-08T11:52:56.827949+00:00",
+  "parameters": {
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+    "primary": "fp32-h1em6 minus bf16-h1em5",
+    "secondary": [
+      "sameh dtype control",
+      "FP32 h control"
+    ],
+    "bootstrap": "5000 stratified question resamples; one training seed; not training-seed CI",
+    "torch_compile_disabled": false
+  },
+  "sources": {
+    "status": "runs/comparison/state.json",
+    "progress": "runs/comparison/progress.json",
+    "results": "runs/comparison/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/comparison/result.json"
+    },
+    {
+      "label": "REPORT.md",
+      "path": "runs/comparison/REPORT.md"
+    },
+    {
+      "label": "comparison.png",
+      "path": "runs/comparison/comparison.png"
+    },
+    {
+      "label": "comparison.pdf",
+      "path": "runs/comparison/comparison.pdf"
+    },
+    {
+      "label": "PROTOCOL.md",
+      "path": "PROTOCOL.md"
+    },
+    {
+      "label": "protocol.json",
+      "path": "protocol.json"
+    },
+    {
+      "label": "screening-prefix-request.json",
+      "path": "screening-prefix-request.json"
+    },
+    {
+      "label": "supervisor-process.json",
+      "path": "supervisor-process.json"
+    },
+    {
+      "label": "当前训练阻塞与控制器核验",
+      "path": "status-check-20261109.json"
+    }
+  ],
+  "tags": [],
+  "notes": "8xH200 restart protocol; upstream train8-*; original unsubmitted plan archived",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-report-1108a",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "planning_revisions": [
+    {
+      "at": "2026-11-09T00:08:17.343132+00:00",
+      "reason": "User authorized8xH200; new training run mapping and restored compilation; prior planned source preserved",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/comparison/planning-revisions/2026-11-09T00-08-11.424936+00-00/source"
+    }
+  ]
+}

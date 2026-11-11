@@ -1,0 +1,19 @@
+{
+  "finished_at": "2026-11-06T23:55:52.602664+00:00",
+  "versions": {
+    "torch": "2.13.0+cu130",
+    "torchcodec": "0.17.0+cu130",
+    "vllm": "0.32.0",
+    "transformers": "5.19.0"
+  },
+  "torch_cuda": "13.0",
+  "architecture": [
+    "Qwen3_5ForConditionalGeneration"
+  ],
+  "metrics": {
+    "torchcodec_import_passed": 1,
+    "vllm_api_import_passed": 1,
+    "teacher_config_supported": 1
+  },
+  "scope": "CPU import/configuration only; actual GPU serving remains a separate required smoke test."
+}

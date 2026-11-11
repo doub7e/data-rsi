@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "eligible_initial": 78,
+  "next_candidate_range": [
+    384,
+    640
+  ],
+  "rule": "first80 eligible in unchanged frozen order"
+}

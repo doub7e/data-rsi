@@ -1,0 +1,12 @@
+{
+  "allowed": true,
+  "start_after": "immediate",
+  "max_concurrent": 2,
+  "max_new_builds": 288,
+  "cpu_per_build": 2,
+  "memory_per_build": "12G",
+  "gpu_per_build": 0,
+  "approved_at": "2026-10-31T16:17:29.731799+00:00",
+  "approval_text": "允许现在开始（推荐）",
+  "supersedes": "Earlier post-10K-training-only build timing condition"
+}

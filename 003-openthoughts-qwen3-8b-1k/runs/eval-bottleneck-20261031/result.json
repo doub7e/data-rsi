@@ -1,0 +1,101 @@
+{
+  "measured_at": "2026-10-31T11:19:47.562100+00:00",
+  "inference": {
+    "window_seconds": 60.23360514640808,
+    "delta": {
+      "generation_tokens_total": 18561.0,
+      "prompt_tokens_total": 875605.0,
+      "request_queue_time_seconds_sum": 0.0017367005348205566,
+      "request_inference_time_seconds_sum": 80.1319809500128,
+      "request_prefill_time_seconds_sum": 1.0766642056405544,
+      "request_decode_time_seconds_sum": 79.05531674437225,
+      "e2e_request_latency_seconds_sum": 80.36929035186768,
+      "e2e_request_latency_seconds_count": 47.0,
+      "time_to_first_token_seconds_sum": 1.31148099899292,
+      "time_to_first_token_seconds_count": 46.0
+    },
+    "output_tokens_per_second": 308.15024196018675,
+    "mean_completed_request_seconds": 1.7099849011035675,
+    "mean_queue_seconds": 3.6951075208948016e-05,
+    "mean_first_token_seconds": 0.028510456499846085,
+    "mean_inference_seconds": 1.7049357648938894,
+    "approx_model_request_time_fraction_for_two_agents": 0.6671466049269039,
+    "running_requests_at_samples": [
+      2.0,
+      1.0
+    ],
+    "waiting_requests_at_samples": [
+      0.0,
+      0.0
+    ]
+  },
+  "daytona": {
+    "checked_at": "2026-10-31T11:15:30.868815+00:00",
+    "sandboxes": [
+      {
+        "id": "35b11b9a-f73d-4dfa-98f8-ece895564525",
+        "state": "started",
+        "cpu": 1,
+        "memory": 4,
+        "disk": 10,
+        "createdAt": "2026-10-31T11:00:10.871Z"
+      },
+      {
+        "id": "face998e-b612-47c9-91b3-9b3d95d49ad1",
+        "state": "started",
+        "cpu": 1,
+        "memory": 4,
+        "disk": 10,
+        "createdAt": "2026-10-31T11:00:10.919Z"
+      }
+    ],
+    "nextCursor": null
+  },
+  "partial_trajectories": [
+    {
+      "trial": "astropy__astropy-13236__Qaf8553",
+      "saved_unique_agent_steps": 174,
+      "parse_error_steps": 75,
+      "parse_error_fraction": 0.43103448275862066,
+      "partial_trace_only": true
+    },
+    {
+      "trial": "astropy__astropy-14369__kDMzy6b",
+      "saved_unique_agent_steps": 675,
+      "parse_error_steps": 479,
+      "parse_error_fraction": 0.7096296296296296,
+      "partial_trace_only": true
+    },
+    {
+      "trial": "astropy__astropy-14508__aBU75Lm",
+      "saved_unique_agent_steps": 43,
+      "parse_error_steps": 0,
+      "parse_error_fraction": 0.0,
+      "partial_trace_only": true
+    }
+  ],
+  "conclusions": {
+    "batch_throughput": "SWE concurrency is bounded by sandbox memory: each uses 1 CPU, 4 GiB RAM, 10 GiB disk. Two consume 2/10 CPUs, 8/10 GiB RAM, 20/30 GiB disk. Third would require 12 GiB RAM.",
+    "individual_task_latency": "Approx 67% of two-agent time during a 60s window is represented by completed model-request latency, mostly decode. This is not exact stage profiling; boundary requests and client/network overhead are not fully attributed.",
+    "model_service_capacity": "No observed request queue; 28.5ms mean TTFT and ~0.037ms queue time. This excludes a scheduling backlog but does not prove an optimal inference implementation.",
+    "agent_efficiency": "Many saved steps still fail JSON parsing or repeat unsuccessful edits. These differ from the corrected XML mismatch and can reflect model output quality. Extra quota would parallelize these slow trajectories, not eliminate them.",
+    "context_recovery": "21 HTTP400 responses among the recent logged requests involved output-budget/context limits; the pinned harness has provider-rejection recovery that trims copied history. Not treated as proof of another configuration defect."
+  },
+  "first_completed_task": {
+    "trial": "astropy__astropy-13236__Qaf8553",
+    "wall_sec": 1022.220366,
+    "environment_setup_sec": 1.917512,
+    "agent_setup_sec": 0.193106,
+    "agent_execution_sec": 967.000584,
+    "model_api_wait_sec": 465.5946617126465,
+    "agent_non_api_sec": 501.4059222873535,
+    "verifier_sec": 52.00908,
+    "agent_episodes": 168,
+    "llm_calls": 189,
+    "output_tokens": 106456,
+    "reward": {
+      "reward": 0.0
+    },
+    "notes": "Single completed task only. Non-API time includes sandbox command execution, tool HTTP transport and controller overhead; not isolated sandbox CPU time."
+  }
+}

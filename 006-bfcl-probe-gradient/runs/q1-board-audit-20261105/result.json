@@ -1,0 +1,116 @@
+{
+  "checked_at": "2026-11-05T09:48:57.333279+00:00",
+  "health": {
+    "last_refresh": "2026-11-05T09:48:55.570911+00:00",
+    "cluster_ok": true,
+    "error": null,
+    "refreshing": false
+  },
+  "refresh_seconds": 30,
+  "dot": {
+    "f008": {
+      "training_steps": 124,
+      "training_curve_points": 124,
+      "evaluated": 256,
+      "passed": 155,
+      "success_percent": 60.546875
+    },
+    "f032": {
+      "training_steps": 108,
+      "training_curve_points": 108,
+      "evaluated": 256,
+      "passed": 141,
+      "success_percent": 55.078125
+    },
+    "f128": {
+      "training_steps": 102,
+      "training_curve_points": 102,
+      "evaluated": 256,
+      "passed": 115,
+      "success_percent": 44.921875
+    },
+    "k008": {
+      "training_steps": 122,
+      "training_curve_points": 122,
+      "evaluated": 256,
+      "passed": 120,
+      "success_percent": 46.875
+    },
+    "k032": {
+      "training_steps": 118,
+      "training_curve_points": 118,
+      "evaluated": 256,
+      "passed": 154,
+      "success_percent": 60.15625
+    },
+    "k128": {
+      "training_steps": 106,
+      "training_curve_points": 106,
+      "evaluated": 256,
+      "passed": 137,
+      "success_percent": 53.515625
+    }
+  },
+  "pif_attribution": {
+    "state": "running",
+    "progress": {
+      "stage": "candidate_gradients",
+      "done": 81,
+      "total": 200,
+      "elapsed_seconds": 2882.0945296492428,
+      "updated_at": "2026-11-05T09:48:51.736259+00:00",
+      "current_steps": 81,
+      "total_steps": 200,
+      "percentage": 40.5,
+      "scope": "phase"
+    },
+    "job": "q1p-prepare-1105r1"
+  },
+  "waiting_runs_without_false_stale": 12,
+  "live_training_sample_response_keys": [
+    "index",
+    "task",
+    "trial_name",
+    "total",
+    "sample_count",
+    "items",
+    "offset",
+    "limit",
+    "source"
+  ],
+  "live_evaluation_trial_response_keys": [
+    "task",
+    "trial",
+    "attempt",
+    "attempts",
+    "segments",
+    "started_at",
+    "finished_at",
+    "status",
+    "reward",
+    "error",
+    "error_message"
+  ],
+  "live_evaluation_trial_list_response_keys": [
+    "items",
+    "total",
+    "offset",
+    "limit",
+    "note"
+  ],
+  "summary_numeric_results": {
+    "f008_q1_success_percent": 60.546875,
+    "f032_q1_success_percent": 55.078125,
+    "f128_q1_success_percent": 44.921875,
+    "k008_q1_success_percent": 46.875,
+    "k032_q1_success_percent": 60.15625,
+    "k128_q1_success_percent": 53.515625
+  },
+  "configuration_inline_preview": true,
+  "tests": "40 pytest checks passed; node --check passed",
+  "metrics": {
+    "dot_training_runs_verified": 6,
+    "dot_evaluation_runs_verified": 6,
+    "waiting_runs_verified": 12
+  }
+}

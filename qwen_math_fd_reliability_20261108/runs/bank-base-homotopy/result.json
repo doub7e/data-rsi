@@ -1,0 +1,185 @@
+{
+  "metrics": {
+    "verified_artifacts": 3,
+    "probe_records": 2048,
+    "probe_correct": 954,
+    "probe_accuracy_percent": 46.58203125,
+    "probe_truncations": 0,
+    "probe_mean_tokens": 496.34814453125,
+    "target_records": 16,
+    "target_correct": 12,
+    "target_accuracy_percent": 75.0,
+    "target_truncations": 0,
+    "target_mean_tokens": 467.25
+  },
+  "artifacts": [
+    "bank/manifest.json",
+    "bank/row_00020589/complete.json",
+    "tokenization-preflight.json"
+  ],
+  "scope": "Base initialization of selected best configuration; not best trained step20 checkpoint",
+  "elapsed_seconds": 497.38661373592913,
+  "bank_recording": {
+    "fingerprints_verified": true,
+    "verified_at": "2026-11-08T01:06:34.945079+00:00",
+    "config_fingerprint": "32b6af1b59d05ba77723d767b9b7036009ac4b909fd41a46c0eb7ded66b5eed5",
+    "source_inventory": {
+      "manifest_sha256": "001d97eb6f28bfe67efd03de59737cdf13d73acf551cfccccbe7f261536e6e11",
+      "rows": {
+        "20589": {
+          "prompt.json": "fd02ed31670aead0214de0e217f4bffb7aa60edbe67bfe3f550f9fa518895881",
+          "complete.json": "c8c7c38642387196237a91ee52af223fd93755022dfad2e3c6544f41bee98300"
+        }
+      },
+      "chunks": {
+        "bank/row_00020589/probe/chunk_000000_000064.json": {
+          "size_bytes": 547254,
+          "mtime_ns": 1794098947223893268
+        },
+        "bank/row_00020589/probe/chunk_000064_000128.json": {
+          "size_bytes": 555416,
+          "mtime_ns": 1794098960404458477
+        },
+        "bank/row_00020589/probe/chunk_000128_000192.json": {
+          "size_bytes": 543544,
+          "mtime_ns": 1794098973006500039
+        },
+        "bank/row_00020589/probe/chunk_000192_000256.json": {
+          "size_bytes": 569124,
+          "mtime_ns": 1794098992129114429
+        },
+        "bank/row_00020589/probe/chunk_000256_000320.json": {
+          "size_bytes": 547251,
+          "mtime_ns": 1794099003693175733
+        },
+        "bank/row_00020589/probe/chunk_000320_000384.json": {
+          "size_bytes": 539224,
+          "mtime_ns": 1794099016257296588
+        },
+        "bank/row_00020589/probe/chunk_000384_000448.json": {
+          "size_bytes": 535793,
+          "mtime_ns": 1794099026024953609
+        },
+        "bank/row_00020589/probe/chunk_000448_000512.json": {
+          "size_bytes": 557661,
+          "mtime_ns": 1794099037283137587
+        },
+        "bank/row_00020589/probe/chunk_000512_000576.json": {
+          "size_bytes": 529442,
+          "mtime_ns": 1794099048285965352
+        },
+        "bank/row_00020589/probe/chunk_000576_000640.json": {
+          "size_bytes": 542176,
+          "mtime_ns": 1794099058063137490
+        },
+        "bank/row_00020589/probe/chunk_000640_000704.json": {
+          "size_bytes": 538174,
+          "mtime_ns": 1794099070538400482
+        },
+        "bank/row_00020589/probe/chunk_000704_000768.json": {
+          "size_bytes": 566173,
+          "mtime_ns": 1794099088567826576
+        },
+        "bank/row_00020589/probe/chunk_000768_000832.json": {
+          "size_bytes": 536826,
+          "mtime_ns": 1794099098758825014
+        },
+        "bank/row_00020589/probe/chunk_000832_000896.json": {
+          "size_bytes": 548078,
+          "mtime_ns": 1794099113467364119
+        },
+        "bank/row_00020589/probe/chunk_000896_000960.json": {
+          "size_bytes": 538155,
+          "mtime_ns": 1794099124871649874
+        },
+        "bank/row_00020589/probe/chunk_000960_001024.json": {
+          "size_bytes": 570886,
+          "mtime_ns": 1794099141548247905
+        },
+        "bank/row_00020589/probe/chunk_001024_001088.json": {
+          "size_bytes": 555230,
+          "mtime_ns": 1794099153119804273
+        },
+        "bank/row_00020589/probe/chunk_001088_001152.json": {
+          "size_bytes": 548673,
+          "mtime_ns": 1794099164242173906
+        },
+        "bank/row_00020589/probe/chunk_001152_001216.json": {
+          "size_bytes": 538185,
+          "mtime_ns": 1794099179378743925
+        },
+        "bank/row_00020589/probe/chunk_001216_001280.json": {
+          "size_bytes": 532599,
+          "mtime_ns": 1794099188224727471
+        },
+        "bank/row_00020589/probe/chunk_001280_001344.json": {
+          "size_bytes": 541749,
+          "mtime_ns": 1794099198654404760
+        },
+        "bank/row_00020589/probe/chunk_001344_001408.json": {
+          "size_bytes": 550807,
+          "mtime_ns": 1794099216235589069
+        },
+        "bank/row_00020589/probe/chunk_001408_001472.json": {
+          "size_bytes": 546780,
+          "mtime_ns": 1794099225407280422
+        },
+        "bank/row_00020589/probe/chunk_001472_001536.json": {
+          "size_bytes": 545411,
+          "mtime_ns": 1794099239021015861
+        },
+        "bank/row_00020589/probe/chunk_001536_001600.json": {
+          "size_bytes": 512627,
+          "mtime_ns": 1794099248781614933
+        },
+        "bank/row_00020589/probe/chunk_001600_001664.json": {
+          "size_bytes": 551076,
+          "mtime_ns": 1794099257941712125
+        },
+        "bank/row_00020589/probe/chunk_001664_001728.json": {
+          "size_bytes": 539793,
+          "mtime_ns": 1794099271207117024
+        },
+        "bank/row_00020589/probe/chunk_001728_001792.json": {
+          "size_bytes": 537213,
+          "mtime_ns": 1794099281852677289
+        },
+        "bank/row_00020589/probe/chunk_001792_001856.json": {
+          "size_bytes": 545240,
+          "mtime_ns": 1794099291960789112
+        },
+        "bank/row_00020589/probe/chunk_001856_001920.json": {
+          "size_bytes": 523639,
+          "mtime_ns": 1794099300630524661
+        },
+        "bank/row_00020589/probe/chunk_001920_001984.json": {
+          "size_bytes": 555055,
+          "mtime_ns": 1794099318805216650
+        },
+        "bank/row_00020589/probe/chunk_001984_002048.json": {
+          "size_bytes": 556912,
+          "mtime_ns": 1794099334838147264
+        },
+        "bank/row_00020589/target/chunk_000000_000016.json": {
+          "size_bytes": 129941,
+          "mtime_ns": 1794099343835360874
+        }
+      }
+    },
+    "metrics": {
+      "probe_records": 2048,
+      "probe_correct": 954,
+      "probe_accuracy_percent": 46.58203125,
+      "probe_truncations": 0,
+      "probe_mean_tokens": 496.34814453125,
+      "target_records": 16,
+      "target_correct": 12,
+      "target_accuracy_percent": 75.0,
+      "target_truncations": 0,
+      "target_mean_tokens": 467.25
+    },
+    "sample_artifact": "runs/bank-base-homotopy/first_probe_sample.json",
+    "sample_sha256": "69e3f5c04c353f7cc162fc3c4eca6c5661de3ae171e82abdbd38c22c500933e6",
+    "scope": "Existing generated records and unchanged project-verifier outcomes; no new generation or relabeling"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "stage": "最高优先级 · FP32 Richardson h1e-5 · sigmoid3s/fallback0 · 20step",
+  "source_snapshot": true,
+  "deadline_utc": "2026-11-11T18:38:09.917472+00:00",
+  "commands": [
+    [
+      "{python}",
+      "tools/fd_training_launch.py",
+      "--output",
+      "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/train-fp32-richardson20",
+      "--train-file",
+      "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/select320-v2/train.parquet",
+      "--arm",
+      "fp32-h1em5",
+      "--steps",
+      "20",
+      "--prompts",
+      "16",
+      "--gpus",
+      "8"
+    ]
+  ],
+  "source_files": [
+    "tools/fd_training_launch.py"
+  ],
+  "required_artifacts": [
+    "result.json",
+    "resolved-launch.json",
+    "metrics.jsonl",
+    "data/train.jsonl",
+    "long-sequence-preflight.json"
+  ],
+  "dependencies": [
+    "runs/select320-v2/result.json",
+    "runs/select320-v2/state.json",
+    "runs/storage-preflight/result.json",
+    "runs/storage-preflight/state.json"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "resource_limits_verified": {
+    "limits": {
+      "cpu": "1",
+      "ephemeral-storage": "10Gi",
+      "memory": "4Gi"
+    },
+    "requests": {
+      "cpu": "1",
+      "ephemeral-storage": "10Gi",
+      "memory": "4Gi"
+    }
+  },
+  "command_tokenization_issue": true
+}

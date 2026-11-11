@@ -1,0 +1,9 @@
+{
+  "finished_at": "2026-11-07T00:29:48.098678+00:00",
+  "image": "registry.rcp.epfl.ch/shuli/ota-resample-worker@sha256:9fe543d474e27cd9d29c1f192a4ca8e043a9aaf0aebafde3ba426212829bc6d4",
+  "source_requirements_sha256": "0b3781ab21e0b8142ca11506b44eb98a6c3eedcbf583c96bf33a480dcabde907",
+  "metrics": {
+    "image_published": 1
+  },
+  "note": "Exact same pinned Harbor/dependency lock; no CUDA/training stack needed in CPU rollout controller."
+}

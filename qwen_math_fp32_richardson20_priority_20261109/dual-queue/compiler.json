@@ -1,0 +1,8 @@
+{
+  "package": "nvidia-cuda-nvcc-cu12==12.9.86",
+  "source": "https://pypi.org/project/nvidia-cuda-nvcc-cu12/12.9.86/",
+  "wheel_sha256": "5d6a0d32fdc7ea39917c20065614ae93add6f577d840233237ff08e9a38f58f0",
+  "ptxas_sha256": "983b0e9283855979f42cebfd80d43f9b6e786eb84f03f7570bf941c4d3a3c461",
+  "binary": "runtime/cuda129/ptxas",
+  "purpose": "sm_103a compiler override, production kernel gate before training claim"
+}

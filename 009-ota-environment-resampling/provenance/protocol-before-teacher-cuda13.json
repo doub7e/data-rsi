@@ -1,0 +1,126 @@
+{
+  "created_at": "2026-11-06T23:07:55.500759+00:00",
+  "status": "frozen_before_generation",
+  "resources": "configs/resources.json",
+  "student": "Qwen/Qwen3-8B",
+  "student_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "student_base_path": "/scratch/cvlab/home/shuli/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218",
+  "teacher": "Qwen/Qwen3.8-27B",
+  "n_environments": 728,
+  "benchmark_tasks": 70,
+  "probe_questions": 14,
+  "probe_seed": 20261107,
+  "probe_rollouts_per_question": 32,
+  "seed_bases": {
+    "teacher_batch1": 1100000000,
+    "teacher_uniform": 1300000000,
+    "teacher_guided": 1500000000,
+    "probe": 1700000000,
+    "eval_uniform": 1900000000,
+    "eval_guided": 1900000000
+  },
+  "sampling_seed": 20261109,
+  "train_image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+  "student_serve_image": "vllm/vllm-openai@sha256:014a95f21c9edf6abe0aea6b07353f96baa4ec291c427bb1176dc7c93a85845c",
+  "teacher_serve_image": "vllm/vllm-openai@sha256:be7326dd2f0731b3c49bd7c09975b46323733dcac74757aa5d5ada60acdee217",
+  "teacher_serve_tag_reference": "v0.32.0-cu129, amd64 manifest",
+  "harness_revision": "2b53c2beea0e06d0a864b9cf81cfc4fbd576f7e4",
+  "agent": "Terminus2 JSON / nativeRunAI",
+  "context": 32768,
+  "max_output_tokens": 16384,
+  "agent_timeout_sec": 1800,
+  "verifier_timeout_sec": 1800,
+  "timeout_multiplier": 1.0,
+  "enable_summarize": true,
+  "interleaved_thinking": false,
+  "teacher_sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0
+  },
+  "student_sampling": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20
+  },
+  "concurrent_sandboxes": 32,
+  "max_concurrent_image_builds": 2,
+  "serving_gpus": 4,
+  "training_gpus": 4,
+  "gradient_gpus_per_worker": 1,
+  "max_candidate_gradient_workers": 2,
+  "training": {
+    "epochs_per_stage": 1,
+    "template": "qwen3_nothink",
+    "cutoff_len": 32768,
+    "mask_history": false,
+    "train_on_prompt": false,
+    "packing": false,
+    "per_device_batch": 1,
+    "gradient_accumulation_steps": 8,
+    "global_batch": 32,
+    "learning_rate": 4e-05,
+    "warmup_ratio": 0.1,
+    "lr_scheduler_type": "cosine",
+    "optim": "adamw_torch_fused",
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.98,
+    "weight_decay": 0.04,
+    "max_grad_norm": 1.0,
+    "bf16": true,
+    "trainable_parameters": "full FP32 with BF16 autocast",
+    "shuffle": true,
+    "seed": 42,
+    "continuation_optimizer": "Both branches reset optimizer and scheduler identically, initialize weights from exact same first-epoch final checkpoint.",
+    "trajectory_policy": "Retain one model trajectory per environment occurrence, including failed/partial outcomes; infrastructure interruption is recovered, not scored as model failure. All final context/summary segments supervised as original training."
+  },
+  "probe": {
+    "model": "sft-epoch1 final checkpoint",
+    "reward": "official raw score; no binarization; mean-center per question over32rollouts, no std normalization",
+    "drop": "All0/all1 and any other constant-score question; no replacement questions",
+    "per_question_gradient": "g_q=-sum_i(score_i-mean_q score)*grad CE_sum(rollout_i)/T_q",
+    "average": "Arithmetic mean over valid question gradients, no norm weighting",
+    "candidate_update": "d_i=-grad CE_sum(first_teacher_rollout_i)/T_i at same checkpoint",
+    "score": "dot(g_avg,d_i), full trainable parameters, no projection or preconditioning",
+    "no_valid_questions": "If all14questions have constant scores, record no usable signal and set guided probabilities uniform; do not invent replacement probes."
+  },
+  "environment_resampling": {
+    "draws": 728,
+    "replacement": true,
+    "probability": "p_i=0.1/N +0.9*softmax(clip((dot_i-mean(dot))/std(dot),-5,5)); temperature1",
+    "zero_variance": "Uniform probability if all candidate dots equal",
+    "audit": [
+      "raw dots",
+      "probabilities",
+      "effective sample size",
+      "draw multiplicities",
+      "unique environments",
+      "tokens per branch"
+    ]
+  },
+  "evaluation": {
+    "tasks": 70,
+    "repeats_per_model": 1,
+    "paired_seeds": true,
+    "subsets": [
+      "all70",
+      "probe14",
+      "heldout56"
+    ],
+    "metrics": [
+      "mean official score",
+      "full-pass rate",
+      "paired difference with task bootstrap CI"
+    ],
+    "note": "Probe subset is feedback-used; heldout56 is primary generalization comparison."
+  },
+  "environment_runtime": {
+    "rl_common_base": true,
+    "semantics": "All728 original Dockerfiles identical; omit COPY seeds during common image build, inject task-specific seeds before agent with byte/mode/root-ownership verification.",
+    "new_native_contexts": 58,
+    "total_unique_contexts": 68,
+    "reused_contexts": 10
+  }
+}

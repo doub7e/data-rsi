@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "teacher-guided",
+  "title": "OTA全70×4 · 重新选环境 · 教师新生成728条",
+  "kind": "evaluation",
+  "status": "planned",
+  "created_at": "2026-11-08T10:39:26.561157+00:00",
+  "tags": [
+    "full70-r4",
+    "missing-as-zero",
+    "Qwen3-8B"
+  ],
+  "parameters": {},
+  "sources": {
+    "status": "runs/teacher-guided/state.json",
+    "results": "runs/teacher-guided/result.json",
+    "progress": "runs/teacher-guided/progress.json",
+    "trajectories": "runs/teacher-guided/jobs",
+    "evaluation_plan": "runs/teacher-guided/evaluation-plan.json",
+    "training_data": "runs/teacher-guided/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "模型和数据版本",
+      "path": "configs/resources.json"
+    }
+  ],
+  "job": {
+    "name": "ota-r4-teacher-guided-1108",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

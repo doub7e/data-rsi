@@ -1,0 +1,68 @@
+{
+  "finished_at": "2026-11-07T21:56:17.703040+00:00",
+  "user_instruction": "按原verifier来",
+  "changed_derived_records": [
+    {
+      "run": "probe",
+      "id": "p0154",
+      "old_score": 0.0,
+      "new_score": null,
+      "original_verifier_reward": null,
+      "raw_result": "runs/probe/jobs/p0154/a7de53df-43da-49ad-9818-1722e92e__uzXgGMc/result.json"
+    },
+    {
+      "run": "probe",
+      "id": "p0160",
+      "old_score": 0.0,
+      "new_score": null,
+      "original_verifier_reward": null,
+      "raw_result": "runs/probe/jobs/p0160/a7de53df-43da-49ad-9818-1722e92e__AhFAHRG/result.json"
+    },
+    {
+      "run": "probe",
+      "id": "p0197",
+      "old_score": 0.0,
+      "new_score": null,
+      "original_verifier_reward": null,
+      "raw_result": "runs/probe/jobs/p0197/be77281a-bd55-4a6e-8481-6dd04f29__93jWRSn/result.json"
+    },
+    {
+      "run": "probe",
+      "id": "p0316",
+      "old_score": 0.0,
+      "new_score": null,
+      "original_verifier_reward": null,
+      "raw_result": "runs/probe/jobs/p0316/e803529c-e3aa-4be9-91bb-46555582__X7VUg94/result.json"
+    },
+    {
+      "run": "eval-uniform",
+      "id": "e0011",
+      "old_score": 0.0,
+      "new_score": null,
+      "original_verifier_reward": null,
+      "raw_result": "runs/eval-uniform/jobs/e0011/3dd9a49b-a9a4-44ac-932f-79899b92__UPyo2Ac/result.json"
+    }
+  ],
+  "original_raw_results_sha256_unchanged": {
+    "runs/probe/jobs/p0154/a7de53df-43da-49ad-9818-1722e92e__uzXgGMc/result.json": "660feadfeb9a3112939a7449f355241baf9cf740499d503fdfc3380aa2725287",
+    "runs/probe/jobs/p0160/a7de53df-43da-49ad-9818-1722e92e__AhFAHRG/result.json": "b20668088f4f18d8db88cdf8e7fb360fe81fd1a666cf2ec5c62bf82be1ca9ef5",
+    "runs/probe/jobs/p0197/be77281a-bd55-4a6e-8481-6dd04f29__93jWRSn/result.json": "36bff26bcca0533d5e0e0dc0cd336b040bce2ea4a29396eb92a02a08068299a9",
+    "runs/probe/jobs/p0316/e803529c-e3aa-4be9-91bb-46555582__X7VUg94/result.json": "1492241c849cd0b1b78a5d42c0d3bd771827e8926a940c0bb77939db01834916",
+    "runs/probe/jobs/p0446/setup-custom-dev-env__dyEytAk/result.json": "0aaa32a802228d79cd460e7e7fb0f2fbaafe9a99a282f5e26ebc28a4cc3b1ece",
+    "runs/eval-uniform/jobs/e0011/3dd9a49b-a9a4-44ac-932f-79899b92__UPyo2Ac/result.json": "cd898e6582b1ba31bad0a32e2dfd2d3220230e322e3d4384950d1c7400cd7863"
+  },
+  "incomplete_probe_questions": [
+    "a7de53df-43da-49ad-9818-1722e92e",
+    "be77281a-bd55-4a6e-8481-6dd04f29",
+    "e803529c-e3aa-4be9-91bb-46555582",
+    "setup-custom-dev-env"
+  ],
+  "metrics": {
+    "removed_imputed_zeros": 5,
+    "probe_raw_rollouts": 448,
+    "probe_unscored": 5,
+    "uniform_unscored": 1,
+    "raw_results_modified": 0
+  },
+  "no_rollout_or_verifier_reexecution": true
+}

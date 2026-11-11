@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "repro-10k-4h200-20261030",
+  "title": "Qwen3-8B · 10K 复现 · 4×H200",
+  "kind": "training",
+  "created_at": "2026-10-30T17:38:25.066158+00:00",
+  "status": "planned",
+  "tags": [
+    "paper-reproduction",
+    "10K",
+    "32K"
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "ota-qwen3-8b-10k-4h200-1030",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "parameters": {
+    "model": "Qwen/Qwen3-8B",
+    "data_rows": 10000,
+    "gpus": 4,
+    "gpu_type": "H200",
+    "epochs": 7,
+    "global_batch_size": 96,
+    "gradient_accumulation": 24,
+    "cutoff_len": 32768,
+    "learning_rate": 4e-05,
+    "weight_decay": 0.04,
+    "max_grad_norm": 1.0,
+    "template": "qwen3_nothink",
+    "disable_shuffling": true
+  },
+  "results": {},
+  "notes": "按 arXiv:2606.24855 Appendix C 的 8B 配方。硬件改为 4×H200，以累积梯度保持全局 batch 96。合并 817 行中的相邻 user 观察消息，保留全部 10,000 行及 assistant 文本；具体格式适配见 preprocessing.json。训练成功后进行核心三项评测并对照 Table 11；评测 backend 与精确版本将单独记录。",
+  "sources": {
+    "metrics": "runs/repro-10k-4h200-20261030/checkpoint/trainer_log.jsonl",
+    "status": "runs/repro-10k-4h200-20261030/state.json",
+    "results": "runs/repro-10k-4h200-20261030/result.json",
+    "training_data": "runs/repro-10k-4h200-20261030/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "训练配置",
+      "path": "configs/reproduction-10k-4h200.yaml"
+    },
+    {
+      "label": "数据适配记录",
+      "path": "runs/repro-10k-4h200-20261030/preprocessing.json"
+    },
+    {
+      "label": "论文对照协议",
+      "path": "runs/repro-10k-4h200-20261030/protocol.json"
+    },
+    {
+      "label": "用户批准的存储清理记录",
+      "path": "runs/repro-10k-4h200-20261030/storage-cleanup-20261109.json"
+    }
+  ]
+}

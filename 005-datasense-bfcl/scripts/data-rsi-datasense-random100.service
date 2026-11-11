@@ -1,0 +1,16 @@
+[Unit]
+Description=DataSense random100 training and BFCL evaluation controller
+After=network-online.target data-rsi-native-auth.service
+Wants=data-rsi-native-auth.service
+
+[Service]
+Type=simple
+WorkingDirectory=/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/005-datasense-bfcl
+Environment=KUBECONFIG=/mnt/cvlab/scratch/cvlab/home/shuli/.codex/secrets/native-runai-kubeconfig.json
+ExecStart=/usr/bin/python3 -u scripts/random100_controller.py
+StandardOutput=append:/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/005-datasense-bfcl/runs/random100-s42-20261102/controller.log
+StandardError=inherit
+UMask=0077
+
+[Install]
+WantedBy=default.target

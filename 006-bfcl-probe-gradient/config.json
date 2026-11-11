@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-11-02T23:09:09.343311+00:00",
+  "deadline_utc": "2026-11-03T07:05:12Z",
+  "probe_seed": 20261103,
+  "candidate_extension_seed": 43,
+  "probe_repeats": 8,
+  "probe_counts": {
+    "base": 16,
+    "miss_func": 8,
+    "miss_param": 8
+  },
+  "train_image": "registry.rcp.epfl.ch/shuli/datasense-train@sha256:bebbd5fe122d1561b036ebdedda96d1eb75de5c285fb3dc8b939049a012d7c91",
+  "eval_image": "registry.rcp.epfl.ch/shuli/datasense-bfcl-eval@sha256:0b09842b34c532d937f7a10f346331806ca58b0914505192fecbc04a49b30416",
+  "probe_job": "pg-probe-1103c",
+  "probe_sampling": {
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": -1
+  },
+  "training_jobs": {
+    "top100": "pg-top-train-1103b",
+    "bottom100": "pg-bottom-train-1103b"
+  }
+}

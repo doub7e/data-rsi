@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "sft-epoch1",
+  "title": "OTA全70×4 · 复用009 · sft-epoch1",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T10:39:26.421585+00:00",
+  "tags": [
+    "full70-r4",
+    "missing-as-zero",
+    "Qwen3-8B"
+  ],
+  "parameters": {
+    "reused_from": "009-ota-environment-resampling/runs/sft-epoch1",
+    "new_execution": false
+  },
+  "sources": {
+    "status": "runs/sft-epoch1/state.json",
+    "results": "runs/sft-epoch1/result.json",
+    "training_data": "runs/sft-epoch1/data/train.jsonl",
+    "metrics": "runs/sft-epoch1/checkpoint/trainer_log.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "模型和数据版本",
+      "path": "configs/resources.json"
+    },
+    {
+      "label": "复用来源与完成证据",
+      "path": "runs/sft-epoch1/reference.json"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "priority": 1,
+  "user_request": "sigmoid(3s), fallback=0,20step,FP32 Richardson; ahead of all other FD experiments",
+  "initialization": "Qwen3-4B Base 1cfa9a7208912126459214e8b04321603b3df60c",
+  "teacher": "RL-Math-Step500 05d82d02780d4a6f8295b2909dbbd89e8a8b5aaa",
+  "fd": {
+    "precision": "fp32",
+    "mode": "richardson",
+    "relative_step": 1e-05,
+    "parameter_center": "master",
+    "probe_precision": "bf16",
+    "cache_invalidation": true
+  },
+  "training": {
+    "steps": 20,
+    "prompts_per_step": 16,
+    "rollouts_per_prompt": 64,
+    "unique_training_prompts": 320,
+    "seed": 27115,
+    "lr": 1e-05,
+    "score_residual_clip": 1,
+    "loss_residual_clip": 1,
+    "sigmoid": "sigmoid(3s)",
+    "sigmoid_shift": 0,
+    "fallback": 0,
+    "geometry": "identity",
+    "max_response_tokens": 16384,
+    "gpus": 8,
+    "node_pool": "h200",
+    "from_base": true,
+    "resume": false
+  },
+  "data": {
+    "original1600_available": false,
+    "user_confirmed_old_volume_unreachable": true,
+    "historical_reuse": "Git a9f8d8b math_teacher_seed27115_n16_0_1024:1024screened,206eligible,n16",
+    "current_reuse": "all complete saved8draw candidates, deterministic seeds retained",
+    "candidate_budget_current": 1408,
+    "rule": "historical206eligible + current1408eligible; deduplicate/exclude exactbenchmark overlaps; seed27115shufflefirst320",
+    "limitations": "new question pool, not original47.27 reproduction; mixed16/8draw estimates with explicit per-question provenance",
+    "training_prompts": 320,
+    "extension": {
+      "at": "2026-11-09T20:45:22.257758+00:00",
+      "previous_unique_eligible": 274,
+      "additional_candidates": 384,
+      "previous_candidate_prefix_unchanged": 1024,
+      "all_previous_screens_reused": true,
+      "thresholds_and_training_settings_unchanged": true
+    }
+  },
+  "evaluation": {
+    "benchmarks": [
+      "AIME24",
+      "AIME25",
+      "HMMT25 Feb",
+      "HMMT25 Nov"
+    ],
+    "questions_per_benchmark": 30,
+    "generations_per_question": 32,
+    "max_tokens": 16384,
+    "models": [
+      "base",
+      "step20"
+    ],
+    "interpretation": "new dataset/runtime; historical47.27 is context, not a matched comparator"
+  },
+  "compute_guard": {
+    "max_active_gpus": 8,
+    "submission_deadline": "2026-11-11T18:38:09.917472+00:00",
+    "no_other_method_before_primary_result": true,
+    "no_automatic_scientific_retries": true
+  },
+  "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+  "prepare_run": "prepare-more",
+  "selection_run": "select320-v2"
+}

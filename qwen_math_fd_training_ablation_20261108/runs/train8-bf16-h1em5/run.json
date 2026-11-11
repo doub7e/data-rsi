@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "train8-bf16-h1em5",
+  "title": "Qwen Math FD · 8×H200 · bf16-h1em5 · 5step编译恢复重跑",
+  "kind": "training",
+  "status": "planned",
+  "created_at": "2026-11-09T00:06:58.951067+00:00",
+  "updated_at": "2026-11-09T00:06:58.951076+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "arm": "bf16-h1em5",
+    "steps": 5,
+    "prompts_per_step": 16,
+    "rollout_n": 64,
+    "gpus": 8,
+    "pool": "h200",
+    "scope": "paired short-run pilot, not historical47.27 reproduction",
+    "probe_precision": "bf16",
+    "clip_residual": 1,
+    "sigmoid": "sigmoid(3s)",
+    "same_frozen_promptstream": true,
+    "torch_compile_disabled": false,
+    "rollout_tensor_parallel_size": 4,
+    "preflight": "4 sequences per GPU,2048 prompt+16384 response,production old_log_prob+entropy before update1",
+    "replaces_run": "train-bf16-h1em5"
+  },
+  "sources": {
+    "status": "runs/train8-bf16-h1em5/state.json",
+    "progress": "runs/train8-bf16-h1em5/progress.json",
+    "results": "runs/train8-bf16-h1em5/result.json",
+    "metrics": "runs/train8-bf16-h1em5/metrics.jsonl",
+    "training_data": "runs/train8-bf16-h1em5/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/train8-bf16-h1em5/result.json"
+    },
+    {
+      "label": "resolved-launch.json",
+      "path": "runs/train8-bf16-h1em5/resolved-launch.json"
+    },
+    {
+      "label": "long-sequence-preflight.json",
+      "path": "runs/train8-bf16-h1em5/long-sequence-preflight.json"
+    },
+    {
+      "label": "startup-failure-cluster.json",
+      "path": "runs/train8-bf16-h1em5/startup-failure-cluster.json"
+    },
+    {
+      "label": "startup-failure-cluster.log",
+      "path": "runs/train8-bf16-h1em5/startup-failure-cluster.log"
+    }
+  ],
+  "tags": [
+    "8h200",
+    "fd-training",
+    "rerun"
+  ],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd8-bf16-1109a",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "planning_revisions": [
+    {
+      "at": "2026-11-09T00:08:52.938788+00:00",
+      "reason": "Before any submission: shell sets TORCH_COMPILE_DISABLE=0; avoid Hydra integer-valued Ray environment entry",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/train8-bf16-h1em5/planning-revisions/2026-11-09T00-08-46.477054+00-00/source"
+    }
+  ]
+}

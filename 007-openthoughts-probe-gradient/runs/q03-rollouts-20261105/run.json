@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "q03-rollouts-20261105",
+  "title": "OTA · Base8B · fix-git · 32rollout",
+  "kind": "evaluation",
+  "status": "planned",
+  "created_at": "2026-11-05T19:48:01.402050+00:00",
+  "tags": [
+    "OpenThoughts-Agent",
+    "base",
+    "Qwen3-8B",
+    "reward-gradient"
+  ],
+  "parameters": {
+    "model": "Qwen/Qwen3-8B",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "rollouts": 32
+  },
+  "sources": {
+    "status": "runs/q03-rollouts-20261105/state.json",
+    "results": "runs/q03-rollouts-20261105/result.json",
+    "progress": "runs/q03-rollouts-20261105/progress.json",
+    "trajectories": "runs/q03-rollouts-20261105/jobs",
+    "evaluation_plan": "runs/q03-rollouts-20261105/evaluation-plan.json",
+    "training_data": "runs/q03-rollouts-20261105/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "冻结协议",
+      "path": "runs/base-probes-20261105/protocol.json"
+    }
+  ],
+  "job": {
+    "name": "ota-probe-q03-rollouts-1105",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

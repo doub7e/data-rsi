@@ -1,0 +1,33 @@
+{
+  "stage": "FP32 Richardson20step · 四项Math n32评测",
+  "source_snapshot": true,
+  "deadline_utc": "2026-11-13T17:58:08.938870+00:00",
+  "commands": [
+    [
+      "{python}",
+      "tools/fd_training_eval.py",
+      "--model",
+      "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/export20/model",
+      "--prepare",
+      "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/prepare-data",
+      "--output",
+      "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/eval20",
+      "--label",
+      "FP32 Richardson20step"
+    ]
+  ],
+  "source_files": [
+    "tools/fd_training_eval.py"
+  ],
+  "required_artifacts": [
+    "result.json",
+    "per-question.json",
+    "sample.json"
+  ],
+  "dependencies": [
+    "runs/export20/result.json",
+    "runs/export20/state.json",
+    "runs/train-b300-fp32-richardson20/result.json",
+    "runs/train-b300-fp32-richardson20/state.json"
+  ]
+}

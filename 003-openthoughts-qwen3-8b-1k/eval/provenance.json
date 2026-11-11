@@ -1,0 +1,21 @@
+{
+  "copied_from_experiment": "002-openthoughts-qwen3-8b",
+  "created_at": "2026-10-31T08:47:58.034802+00:00",
+  "source_file_sha256": {
+    "pipeline.py": "e3cee45b70ab73e7ed9e1fb7cada0a5f704acf0b45c5ddfa419113f7d359ca9e",
+    "daytona_controller.py": "063339e60d29627c0cff49338817823277b3c78d6e7d8f5d8d0f69f0f7e7d7a0",
+    "daytona_worker.py": "b9d8b48b9a9fe304ce3e2babcdfe241f7e702cf997ce77b1fa403b26e62290e9",
+    "daytona_env.py": "ca0045e5775518523638b6e5b28580bd0f0f29cd76b83769e66b475c77ca92c5",
+    "gates.py": "23f087ba3a60fb95a86ef0d8780df4130861d022894dcc7efe805b68844a010f",
+    "serve_checkpoint.sh": "778ea4ff58e7a6aa25048ee3a933945bc8c476d4aa67fbc88440fc0becc2b68e",
+    "run_daytona_worker.sh": "06060c130c6420ed74e05b397fb24c14855b0399f2e25f711d5ad3e98c186c75",
+    "harbor-template.json": "d1f199583044b14064ef16abf76ac848fce234dacf6acd73836eab66fcf5eb86",
+    "serving-image.json": "aea24ffbc7b1f5adaf71e8f51c35242f18bb9cb340a9c1a23ead6a25e3b4871c",
+    "requirements-daytona.txt": "0623f8786baddd1b6d3d45c9176dcb1bc590b32440146e066163de020dcabc3d",
+    "requirements-daytona.lock.txt": "0b3781ab21e0b8142ca11506b44eb98a6c3eedcbf583c96bf33a480dcabde907",
+    "daytona-account-quota.json": "e65d02d05a98f8b3c693818e877a52fbcc717c4fc0c67b86d1117ad374a78e0c"
+  },
+  "read_only_benchmark_source": "../../002-openthoughts-qwen3-8b/eval/benchmarks/raw",
+  "checkpoint": "runs/repro-1k-4gpu-20261031/checkpoint",
+  "model_name": "ota-qwen3-8b-1k"
+}

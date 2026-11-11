@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "prepare-data",
+  "title": "优先FP32-20 · 冻结1024候选，导入历史206合格题及已完成筛选",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-09T18:38:09.917472+00:00",
+  "tags": [
+    "priority1",
+    "FP32",
+    "20step"
+  ],
+  "parameters": {
+    "protocol": "protocol.json",
+    "priority": 1,
+    "gpus": 0,
+    "steps": null,
+    "fd_precision": "fp32",
+    "h_rel": 1e-05,
+    "sigmoid": "sigmoid(3s)",
+    "fallback": 0,
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "data_pool": "new320; original1600 unavailable"
+  },
+  "sources": {
+    "status": "runs/prepare-data/state.json",
+    "progress": "runs/prepare-data/progress.json",
+    "results": "runs/prepare-data/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "完整协议",
+      "path": "protocol.json"
+    },
+    {
+      "label": "result.json",
+      "path": "runs/prepare-data/result.json"
+    },
+    {
+      "label": "candidates.json",
+      "path": "runs/prepare-data/candidates.json"
+    },
+    {
+      "label": "candidates.parquet",
+      "path": "runs/prepare-data/candidates.parquet"
+    },
+    {
+      "label": "known-screen.json",
+      "path": "runs/prepare-data/known-screen.json"
+    },
+    {
+      "label": "historical-screen.json",
+      "path": "runs/prepare-data/historical-screen.json"
+    },
+    {
+      "label": "selection.json",
+      "path": "runs/prepare-data/selection.json"
+    },
+    {
+      "label": "题目记录与原清单缺失的证据",
+      "path": "DATA_PROVENANCE.md"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "opd-p20-data-1109a",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "planning_revisions": [
+    {
+      "at": "2026-11-09T18:50:46.328898+00:00",
+      "reason": "Before first submission: correct generic candidate-builder80prompt metadata to priority320 rule and recompute source fingerprint; historical/current prefix unchanged",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/prepare-data/planning-revisions/2026-11-09T18-50-39.230814+00-00/source"
+    }
+  ]
+}

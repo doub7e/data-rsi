@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "auxiliary-master-merge",
+  "title": "FD可靠性 · 辅助 MOPD step20 · 保留 FP32 master 合并",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T00:24:21.838023+00:00",
+  "updated_at": "2026-11-08T00:24:21.838057+00:00",
+  "parameters": {
+    "source": "auxiliary matched-N8 MOPD step20; NOT best N64 Math",
+    "purpose": "test BF16-grid sensitivity using actual trained FP32 masters",
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+    "gpu_count": 0
+  },
+  "sources": {
+    "status": "runs/auxiliary-master-merge/state.json",
+    "progress": "runs/auxiliary-master-merge/progress.json",
+    "results": "runs/auxiliary-master-merge/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "合并与精度核验",
+      "path": "runs/auxiliary-master-merge/model/metadata.json"
+    },
+    {
+      "label": "模型配置",
+      "path": "runs/auxiliary-master-merge/model/config.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-merge-fp32-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

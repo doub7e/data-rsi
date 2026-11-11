@@ -1,0 +1,8 @@
+{
+  "finished_at": "2026-11-07T22:00:44.454935+00:00",
+  "metrics": {
+    "valid_questions": 2,
+    "excluded_questions": 12,
+    "gradient_workers": 2
+  }
+}

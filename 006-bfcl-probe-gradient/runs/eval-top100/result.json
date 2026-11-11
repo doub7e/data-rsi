@@ -1,0 +1,63 @@
+{
+  "finished_at": "2026-11-03T04:47:26.913489+00:00",
+  "elapsed_seconds": 8755.30685559474,
+  "total_trials": 2400,
+  "accuracy": 0.3645833333333333,
+  "accuracy_std": 0.005051814855409214,
+  "repeat_accuracy": [
+    0.35875,
+    0.3675,
+    0.3675
+  ],
+  "token_usage": {
+    "input_tokens": 208068320,
+    "output_tokens": 19481615
+  },
+  "inference_error_count": 6,
+  "subsets": {
+    "base": {
+      "mean": 0.44166666666666665,
+      "counts": [
+        87,
+        89,
+        89
+      ]
+    },
+    "miss_func": {
+      "mean": 0.375,
+      "counts": [
+        73,
+        74,
+        78
+      ]
+    },
+    "miss_param": {
+      "mean": 0.2833333333333333,
+      "counts": [
+        55,
+        60,
+        55
+      ]
+    },
+    "long_context": {
+      "mean": 0.35833333333333334,
+      "counts": [
+        72,
+        71,
+        72
+      ]
+    }
+  },
+  "reference_note": "Probe-gradient top100; main comparison excludes fixed32 probes. Directory prefix random100-eN is inherited from the shared evaluator, not a sampling label.",
+  "metrics": {
+    "bfcl_accuracy_percent": 36.45833333333333,
+    "bfcl_std_percent": 0.5051814855409213,
+    "evaluated_trials": 2400,
+    "inference_errors": 6,
+    "evaluation_hours": 2.4320296821096496,
+    "base_accuracy_percent": 44.166666666666664,
+    "miss_func_accuracy_percent": 37.5,
+    "miss_param_accuracy_percent": 28.333333333333332,
+    "long_context_accuracy_percent": 35.833333333333336
+  }
+}

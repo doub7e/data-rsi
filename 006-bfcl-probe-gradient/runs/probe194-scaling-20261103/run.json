@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "probe194-scaling-20261103",
+  "title": "Probe194 · 128 fresh rollouts · split-half scaling",
+  "kind": "analysis",
+  "status": "succeeded",
+  "created_at": "2026-11-03T18:05:45.022228+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "pg194-scale-cpu-1103",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "parameters": {
+    "rollouts": 128,
+    "probe": "multi_turn_miss_func_194",
+    "history_protocol": "strict-v2",
+    "total_sample_sizes": [
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "attempts": [
+      "pg194-scale-roll-1103",
+      "pg194-scale-roll-1103b"
+    ],
+    "gradient_gpus": 2,
+    "gradient_cpu": 12,
+    "gradient_memory": "128G",
+    "overlapping_generation_and_gradients": true,
+    "comparison_recovery": "Quota interrupted auxiliary save; analyze existing full gradients with in-memory algebraic recovery"
+  },
+  "sources": {
+    "status": "runs/probe194-scaling-20261103/state.json",
+    "results": "runs/probe194-scaling-20261103/result.json",
+    "trajectories": "runs/probe194-scaling-20261103/jobs",
+    "evaluation_plan": "runs/probe194-scaling-20261103/evaluation-plan.json"
+  },
+  "artifacts": [
+    {
+      "label": "Protocol",
+      "path": "runs/probe194-scaling-20261103/protocol.json"
+    },
+    {
+      "label": "Rollout summary",
+      "path": "runs/probe194-scaling-20261103/rollout-summary.json"
+    },
+    {
+      "label": "Split-half scaling",
+      "path": "runs/probe194-scaling-20261103/scaling.png"
+    },
+    {
+      "label": "Analysis report",
+      "path": "runs/probe194-scaling-20261103/REPORT.md"
+    },
+    {
+      "label": "Three-split results",
+      "path": "runs/probe194-scaling-20261103/result.json"
+    },
+    {
+      "label": "Fresh trace audit",
+      "path": "runs/probe194-scaling-20261103/fresh-trace-audit.json"
+    },
+    {
+      "label": "Harness preflight",
+      "path": "runs/probe194-scaling-20261103/harness-preflight.json"
+    },
+    {
+      "label": "PDF figure",
+      "path": "runs/probe194-scaling-20261103/scaling.pdf"
+    }
+  ],
+  "job_history": [
+    {
+      "provider": "runai",
+      "name": "pg194-scale-roll-1103b",
+      "namespace": "runai-cvlab-shuli",
+      "phase": "rollouts"
+    },
+    {
+      "provider": "runai",
+      "name": "pg194-scale-grad-1103",
+      "namespace": "runai-cvlab-shuli",
+      "phase": "gradient_compute_auxiliary_save_failed"
+    },
+    {
+      "provider": "runai",
+      "name": "pg194-scale-compare-1103",
+      "namespace": "runai-cvlab-shuli",
+      "phase": "gpu_comparison_queue_retained",
+      "stop_reason": "Full analysis completed on CPU; redundant GPU comparison cancelled after matching available points."
+    }
+  ],
+  "completed_at": "2026-11-03T19:08:37.905191+00:00"
+}

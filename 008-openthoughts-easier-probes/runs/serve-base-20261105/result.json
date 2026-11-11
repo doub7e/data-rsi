@@ -1,0 +1,8 @@
+{
+  "finished_at": "2026-11-06T00:37:14.925520+00:00",
+  "model": "ota-easy-qwen3-8b-base",
+  "rollouts_finished": 144,
+  "metrics": {
+    "completed_rollouts": 144
+  }
+}

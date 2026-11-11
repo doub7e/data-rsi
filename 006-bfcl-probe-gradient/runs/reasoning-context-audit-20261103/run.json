@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "reasoning-context-audit-20261103",
+  "title": "Probe inference/gradient context audit",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-03T14:42:14.236389+00:00",
+  "sources": {
+    "status": "runs/reasoning-context-audit-20261103/state.json",
+    "results": "runs/reasoning-context-audit-20261103/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "Context audit",
+      "path": "runs/reasoning-context-audit-20261103/result.json"
+    },
+    {
+      "label": "Reasoning-history diagnosis",
+      "path": "runs/reasoning-context-audit-20261103/REPORT.md"
+    }
+  ],
+  "notes": "Read-only, single-thread record inspection; elapsed5.42s. Cluster submission failed before launch; no model execution locally."
+}

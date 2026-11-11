@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "006-bfcl-probe-gradient",
+  "title": "BFCL · probe-gradient selection pilot",
+  "description": "BFCL Qwen3-4B梯度选样实验。保留原始pilot及其历史解析问题记录；后续使用strict-v2。已完成单题Q1的cosine、dot base训练和random100续训对比，正在进行带预条件的投影归因。各run保留配置、曲线、评测与轨迹。",
+  "created_at": "2026-11-02T23:09:09.343311+00:00",
+  "tags": [
+    "BFCL",
+    "Qwen3-4B",
+    "gradient-selection",
+    "benchmark-feedback"
+  ]
+}

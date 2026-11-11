@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "study",
+  "title": "OTA cap3 · 上限3重采样→续训→70×4评测",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-11T00:25:23.172853+00:00",
+  "tags": [
+    "cap3",
+    "full70-r4",
+    "Qwen3-8B"
+  ],
+  "parameters": {},
+  "sources": {
+    "status": "runs/study/state.json",
+    "results": "runs/study/result.json",
+    "progress": "runs/study/progress.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "原始版本与资源",
+      "path": "configs/resources.json"
+    },
+    {
+      "label": "完整比较报告",
+      "path": "runs/comparison/REPORT.md"
+    },
+    {
+      "label": "四组结果对照",
+      "path": "runs/comparison/comparison.png"
+    },
+    {
+      "label": "概率上限对比",
+      "path": "runs/comparison/sampling.png"
+    },
+    {
+      "label": "逐题四次结果",
+      "path": "runs/comparison/per-task.csv"
+    },
+    {
+      "label": "统计与置信区间",
+      "path": "runs/comparison/result.json"
+    }
+  ]
+}

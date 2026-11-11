@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "select-training-fixed",
+  "title": "FD训练消融 · 三组共用80条prompt（核对筛选契约）",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T11:22:40.804854+00:00",
+  "updated_at": "2026-11-08T11:22:40.804861+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "same_candidate_selection": true,
+    "screening_inputs": [
+      "screen-0-fixed",
+      "screen-1-fixed"
+    ]
+  },
+  "sources": {
+    "status": "runs/select-training-fixed/state.json",
+    "progress": "runs/select-training-fixed/progress.json",
+    "results": "runs/select-training-fixed/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/select-training-fixed/result.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-select-1108b",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "planning_revisions": [
+    {
+      "at": "2026-11-08T12:38:25.288760+00:00",
+      "reason": "Predeclared teacher-yield backfill: first80 eligible ofsame permutation extendedfrom384to640; original384 identities checked; no threshold change",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/select-training-fixed/planning-revisions/2026-11-08T12-38-18.813475+00-00/source"
+    },
+    {
+      "at": "2026-11-08T12:59:15.856514+00:00",
+      "reason": "Exact first80 selection proven from completed prefix; unseen outcomes cannot change it; verify all selected samples onCPU before stopping redundanttail",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/select-training-fixed/planning-revisions/2026-11-08T12-59-10.563121+00-00/source"
+    }
+  ]
+}

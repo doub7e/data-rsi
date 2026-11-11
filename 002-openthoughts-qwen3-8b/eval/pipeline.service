@@ -1,0 +1,14 @@
+[Unit]
+Description=Data RSI post-training evaluation and paper comparison
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/002-openthoughts-qwen3-8b/eval
+ExecStart=/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/002-openthoughts-qwen3-8b/eval/.venv/bin/python -u pipeline.py
+StandardOutput=append:/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/002-openthoughts-qwen3-8b/runs/eval-repro-10k-20261030/controller.log
+StandardError=inherit
+TimeoutStopSec=180
+
+[Install]
+WantedBy=default.target

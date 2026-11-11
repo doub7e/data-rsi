@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "verifier-authority-audit",
+  "title": "OTA重采样 · 按原verifier评分 · 缺失分数与既有统计核查",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-07T21:55:15.176079+00:00",
+  "tags": [
+    "environment-resampling",
+    "Qwen3-8B"
+  ],
+  "parameters": {},
+  "sources": {
+    "status": "runs/verifier-authority-audit/state.json",
+    "results": "runs/verifier-authority-audit/result.json",
+    "progress": "runs/verifier-authority-audit/progress.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    }
+  ],
+  "job": {
+    "name": "ota-rs-verifier-authority-audit-1107",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

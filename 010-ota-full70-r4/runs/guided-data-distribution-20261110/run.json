@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "guided-data-distribution-20261110",
+  "title": "OTA全70×4 · Guided与Uniform训练轨迹分布分析",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-10T18:09:18.318603+00:00",
+  "tags": [
+    "full70-r4",
+    "data-distribution",
+    "guided-vs-uniform"
+  ],
+  "parameters": {
+    "trajectories_each": 728,
+    "scope": "Existing result metadata and recorded token usage only; no new rollout, training or tokenization"
+  },
+  "sources": {
+    "status": "runs/guided-data-distribution-20261110/state.json",
+    "results": "runs/guided-data-distribution-20261110/result.json",
+    "training_data": "runs/teacher-guided/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "分析报告",
+      "path": "runs/guided-data-distribution-20261110/REPORT.md"
+    },
+    {
+      "label": "逐环境采样与结果",
+      "path": "runs/guided-data-distribution-20261110/environments.csv"
+    },
+    {
+      "label": "可复现分析脚本",
+      "path": "scripts/analyze_guided_distribution.py"
+    },
+    {
+      "label": "逐轨迹长度与结果",
+      "path": "runs/guided-data-distribution-20261110/trajectories.csv"
+    }
+  ]
+}

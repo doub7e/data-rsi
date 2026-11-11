@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "pif-failure-top8-20261106",
+  "title": "预条件投影 · Q1/第二题67 · 失败模式与top8训练轨迹",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-06T10:27:08.896942+00:00",
+  "sources": {
+    "status": "runs/pif-failure-top8-20261106/state.json",
+    "progress": "runs/pif-failure-top8-20261106/progress.json",
+    "results": "runs/pif-failure-top8-20261106/result.json"
+  },
+  "parameters": {
+    "scope": "Existing Q1 and question67 random100/F128/K128 rollouts; top8 and selected100 contents; no new training or rollout",
+    "models": 6,
+    "eval_trials": 1536,
+    "top_per_selection": 8
+  },
+  "artifacts": [
+    {
+      "label": "分析报告",
+      "path": "runs/pif-failure-top8-20261106/REPORT.md"
+    },
+    {
+      "label": "训练轨迹全文（隐藏reasoning供阅读）",
+      "path": "runs/pif-failure-top8-20261106/TRAINING_CASES.md"
+    },
+    {
+      "label": "失败及配对样例",
+      "path": "runs/pif-failure-top8-20261106/EVAL_CASES.md"
+    },
+    {
+      "label": "失败位置图",
+      "path": "runs/pif-failure-top8-20261106/failure-turns.png"
+    },
+    {
+      "label": "加油错误恢复统计",
+      "path": "runs/pif-failure-top8-20261106/fuel-recovery.json"
+    },
+    {
+      "label": "Top8逐条人工阅读笔记",
+      "path": "runs/pif-failure-top8-20261106/manual-top8-notes.json"
+    },
+    {
+      "label": "两次分析执行与修复记录",
+      "path": "runs/pif-failure-top8-20261106/recovery.json"
+    },
+    {
+      "label": "后续top/bottom对照：原解释的局限",
+      "path": "runs/pif-top-bottom-content-20261106/REPORT.md"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "pif-failure-final-1106",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

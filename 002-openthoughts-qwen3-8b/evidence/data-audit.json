@@ -1,0 +1,61 @@
+{
+  "dataset": "open-thoughts/OpenThoughts-Agent-SFT-10K",
+  "dataset_revision": "d0f898f7b65290c9312f59089a7e9265fdaed00c",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "rows": 10000,
+  "result_counts": {
+    "None": 6366,
+    "AgentTimeoutError": 3516,
+    "ContextLengthExceededError": 85,
+    "DaytonaError": 18,
+    "DaytonaNotFoundError": 8,
+    "AgentEnvironmentTimeoutError": 1,
+    "CancelledError": 5,
+    "RuntimeError": 1
+  },
+  "role_counts": {
+    "user": 127359,
+    "assistant": 126422
+  },
+  "trace_source_counts": {
+    "main": 8083,
+    "None": 1222,
+    "summarization-1-summary": 323,
+    "summarization-3-answers": 47,
+    "summarization-1-answers": 252,
+    "summarization-5-answers": 11,
+    "summarization-3-summary": 44,
+    "summarization-5-summary": 11,
+    "summarization-11-answers": 1,
+    "summarization-7-summary": 3,
+    "summarization-7-answers": 3
+  },
+  "non_alternating_or_odd_conversations": 817,
+  "message_count_min": 10,
+  "message_count_max": 287,
+  "assistant_messages": 126422,
+  "assistant_with_both_think_tags": 119622,
+  "token_sample": {
+    "n": 128,
+    "seed": 42,
+    "method": "uniform rows, LF-style ChatML wrappers; not full trainer preprocessing",
+    "min": 4020,
+    "median": 16874,
+    "p90": 27661,
+    "max": 39196,
+    "over_32768": 4
+  },
+  "files": [
+    {
+      "path": "data/train-00000-of-00002.parquet",
+      "bytes": 92780326,
+      "sha256": "5c1eecfcf9dd69d49ebcfd803e3e89d163e2714520d1213489e041f799cc0f09"
+    },
+    {
+      "path": "data/train-00001-of-00002.parquet",
+      "bytes": 94879560,
+      "sha256": "e6e72669313049618bfda30400cbe8cedc8936922e7422f28faf93093f3e36bb"
+    }
+  ],
+  "format_note": "817 rows contain non-alternating roles; direct LF ShareGPT conversion skips them. Preprocessing must explicitly normalize adjacent user messages or report exclusions."
+}

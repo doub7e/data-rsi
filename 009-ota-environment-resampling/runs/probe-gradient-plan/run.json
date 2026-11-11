@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "probe-gradient-plan",
+  "title": "OTA重采样 · Checkpoint1 · probe题目与计算分片规划",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-07T01:27:54.471404+00:00",
+  "tags": [
+    "environment-resampling",
+    "Qwen3-8B"
+  ],
+  "parameters": {},
+  "sources": {
+    "status": "runs/probe-gradient-plan/state.json",
+    "results": "runs/probe-gradient-plan/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    }
+  ],
+  "job": {
+    "name": "ota-rs-probe-gradient-plan-1107",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

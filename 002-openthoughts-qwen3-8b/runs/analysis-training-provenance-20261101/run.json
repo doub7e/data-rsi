@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "analysis-training-provenance-20261101",
+  "title": "原文训练数据来源与轨迹导出计数",
+  "kind": "analysis",
+  "created_at": "2026-11-01T16:20:14.024406+00:00",
+  "status": "succeeded",
+  "parameters": {
+    "datasets": [
+      "1K",
+      "10K",
+      "100K"
+    ],
+    "metadata_only": true
+  },
+  "results": {
+    "actual_100k_rows": 94334,
+    "represented_100k_trials": 89056,
+    "retained_rows_per_100k_trial": 1.0592660797700324,
+    "paper_source_tasks_sum": 28642
+  },
+  "notes": "已核对论文图4与3档公开数据的固定revision。100K实际94334行；平均每trial保留1.059行不是原始轨迹分段数。环境总数和平均原始分段数无法从论文及已发布元数据确定。",
+  "artifacts": [
+    {
+      "label": "公开数据计数审计",
+      "path": "runs/analysis-training-provenance-20261101/result.json"
+    },
+    {
+      "label": "改写、GLM rollout、导出与成本核查",
+      "path": "runs/analysis-training-provenance-20261101/generation-details.json"
+    }
+  ]
+}

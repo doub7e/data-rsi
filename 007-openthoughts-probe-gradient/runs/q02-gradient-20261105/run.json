@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "q02-gradient-20261105",
+  "title": "OTA · Base8B · pandas-etl · split-half",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-05T19:48:01.389734+00:00",
+  "tags": [
+    "OpenThoughts-Agent",
+    "base",
+    "Qwen3-8B",
+    "reward-gradient"
+  ],
+  "parameters": {
+    "model": "Qwen/Qwen3-8B",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "rollouts": 32,
+    "analytical_zero": true,
+    "gpus": 0,
+    "reason": "Constantreward: noGPUderivative necessary"
+  },
+  "sources": {
+    "status": "runs/q02-gradient-20261105/state.json",
+    "results": "runs/q02-gradient-20261105/result.json",
+    "progress": "runs/q02-gradient-20261105/progress.json",
+    "training_data": "runs/q02-rollouts-20261105/data/train.jsonl",
+    "trajectories": "runs/q02-rollouts-20261105/jobs"
+  },
+  "artifacts": [
+    {
+      "label": "冻结协议",
+      "path": "runs/base-probes-20261105/protocol.json"
+    },
+    {
+      "label": "原训练loss配置",
+      "path": "configs/training-reference.yaml"
+    },
+    {
+      "label": "分析报告",
+      "path": "runs/q02-gradient-20261105/REPORT.md"
+    },
+    {
+      "label": "Cosine图表",
+      "path": "runs/q02-gradient-20261105/comparison.png"
+    },
+    {
+      "label": "完整统计",
+      "path": "runs/q02-gradient-20261105/result.json"
+    },
+    {
+      "label": "输入与截断审计",
+      "path": "runs/q02-gradient-20261105/encoding-audit.json"
+    },
+    {
+      "label": "逐层结果",
+      "path": "runs/q02-gradient-20261105/layers.csv"
+    }
+  ],
+  "job": {
+    "name": "ota-probe-q02-gradient-1105",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

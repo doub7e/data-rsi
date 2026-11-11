@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-11-08T10:38:24.402698+00:00",
+  "conditions": [
+    {
+      "run": "audit-base-homotopy",
+      "conditions": 20,
+      "succeeded": 20,
+      "homogeneous": 0,
+      "all_original_storage_restored": true,
+      "max_logp_restore_error": 0.0
+    },
+    {
+      "run": "audit-base-zeros",
+      "conditions": 20,
+      "succeeded": 20,
+      "homogeneous": 0,
+      "all_original_storage_restored": true,
+      "max_logp_restore_error": 0.0
+    },
+    {
+      "run": "audit-base-coin",
+      "conditions": 20,
+      "succeeded": 20,
+      "homogeneous": 0,
+      "all_original_storage_restored": true,
+      "max_logp_restore_error": 0.0
+    },
+    {
+      "run": "audit-aux-homotopy",
+      "conditions": 20,
+      "succeeded": 20,
+      "homogeneous": 6,
+      "all_original_storage_restored": true,
+      "max_logp_restore_error": 0.0
+    },
+    {
+      "run": "validation-screened",
+      "conditions": 20,
+      "succeeded": 20,
+      "homogeneous": 14,
+      "all_original_storage_restored": true,
+      "max_logp_restore_error": 0.0
+    }
+  ],
+  "verified": true
+}

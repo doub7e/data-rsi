@@ -1,0 +1,82 @@
+{
+  "status": "succeeded",
+  "checked_at": "2026-10-31T12:51:59.529324+00:00",
+  "native_sandbox": {
+    "node": "gpu202.rcp.epfl.ch",
+    "resources": {
+      "limits": {
+        "cpu": "2",
+        "memory": "8G"
+      },
+      "requests": {
+        "cpu": "1",
+        "memory": "4G"
+      }
+    },
+    "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13236@sha256:f15ffc9dcdf96f627b9208d508ff747b80b6234488b08446232e3d724182f055",
+    "security_context": {
+      "allowPrivilegeEscalation": true,
+      "seccompProfile": {
+        "type": "RuntimeDefault"
+      }
+    },
+    "no_workspace_pvc": true,
+    "command_exec": true,
+    "file_roundtrip": true,
+    "tmux_terminal": true,
+    "nested_containers": false,
+    "harbor_adapter_implemented": false,
+    "parallel_capacity_validated": 1
+  },
+  "inference_gpu_sample": {
+    "0": {
+      "samples": 20,
+      "utilization.gpu [%]": 43.5,
+      "utilization.memory [%]": 14.65,
+      "power.draw [W]": 211.47
+    },
+    "1": {
+      "samples": 20,
+      "utilization.gpu [%]": 45.35,
+      "utilization.memory [%]": 15.1,
+      "power.draw [W]": 207.96
+    },
+    "2": {
+      "samples": 20,
+      "utilization.gpu [%]": 44.05,
+      "utilization.memory [%]": 14.65,
+      "power.draw [W]": 208.73
+    },
+    "3": {
+      "samples": 20,
+      "utilization.gpu [%]": 44.45,
+      "utilization.memory [%]": 14.75,
+      "power.draw [W]": 207.18
+    }
+  },
+  "scaling_scenarios": {
+    "assumed_mean_trial_minutes": 30,
+    "single_repeat_289_trials_at_32_concurrent_hours": 4.515625,
+    "three_repeats_867_trials_at_32_concurrent_hours": 13.546875,
+    "note": "Illustrative only; excludes queueing, image startup and any extra per-trial latency from higher model concurrency. Different benchmarks have different durations."
+  },
+  "production_plan": {
+    "backend": "One ordinary RunAI CPU pod per Harbor trial",
+    "target_concurrency_steps": [
+      16,
+      32
+    ],
+    "swe32_resources": {
+      "cpu": 32,
+      "memory_gib": 128,
+      "scratch_disk_gib": 320
+    },
+    "inference": "Keep existing 4\u00d7H200",
+    "remaining": [
+      "Harbor environment adapter and control-plane authentication without sharing credentials with task pods",
+      "Build or prepare exact task images with required tooling",
+      "Test concurrent scheduling, file lifecycle and verifier equivalence",
+      "Measure actual throughput with representative contexts in an isolated profiling window"
+    ]
+  }
+}

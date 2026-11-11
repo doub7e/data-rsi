@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "study",
+  "title": "OTA全70×4 · 首轮评测→重选环境→续训→4次评测对照",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T10:39:26.413004+00:00",
+  "tags": [
+    "full70-r4",
+    "missing-as-zero",
+    "Qwen3-8B"
+  ],
+  "parameters": {},
+  "sources": {
+    "status": "runs/study/state.json",
+    "results": "runs/study/result.json",
+    "progress": "runs/study/progress.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "模型和数据版本",
+      "path": "configs/resources.json"
+    },
+    {
+      "label": "推理Pod替换恢复记录",
+      "path": "runs/study/server-relocation-recovery.json"
+    },
+    {
+      "label": "已完成结果保留校验",
+      "path": "runs/study/server-relocation-preserved.json"
+    },
+    {
+      "label": "恢复逻辑检查",
+      "path": "runs/study/relocation-recovery-unit-check.json"
+    },
+    {
+      "label": "缺分记零的题目筛选核验",
+      "path": "runs/study/missing-zero-probe-plan-check.json"
+    },
+    {
+      "label": "已完成评测轨迹读取核验",
+      "path": "runs/probe/board-completed-trajectory-check.json"
+    },
+    {
+      "label": "清理前三项：869.73 GiB",
+      "path": "runs/study/storage-cleanup-20261109/result.json"
+    },
+    {
+      "label": "完整报告",
+      "path": "runs/comparison/REPORT.md"
+    },
+    {
+      "label": "模型对照图",
+      "path": "runs/comparison/comparison.png"
+    },
+    {
+      "label": "采样分布",
+      "path": "runs/comparison/sampling.png"
+    },
+    {
+      "label": "训练曲线",
+      "path": "runs/comparison/training-curves.png"
+    },
+    {
+      "label": "逐题四次结果",
+      "path": "runs/comparison/per-task.csv"
+    },
+    {
+      "label": "详细结果与置信区间",
+      "path": "runs/comparison/result.json"
+    }
+  ]
+}

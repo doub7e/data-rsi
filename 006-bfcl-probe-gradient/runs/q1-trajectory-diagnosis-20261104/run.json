@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "q1-trajectory-diagnosis-20261104",
+  "title": "Q1 continuation · failure mechanisms and trajectory audit",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-04T14:44:45.847110+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "q1-trace-audit-1104",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "sources": {
+    "status": "runs/q1-trajectory-diagnosis-20261104/state.json",
+    "results": "runs/q1-trajectory-diagnosis-20261104/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "Trajectory analysis report",
+      "path": "runs/q1-trajectory-diagnosis-20261104/REPORT.md"
+    },
+    {
+      "label": "Matched-seed transition counts",
+      "path": "runs/q1-trajectory-diagnosis-20261104/transitions.json"
+    },
+    {
+      "label": "Selected readable cases",
+      "path": "runs/q1-trajectory-diagnosis-20261104/case-selection.json"
+    }
+  ]
+}

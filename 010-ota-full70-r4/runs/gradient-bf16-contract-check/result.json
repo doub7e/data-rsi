@@ -1,0 +1,16 @@
+{
+  "finished_at": "2026-11-07T01:57:39.946030+00:00",
+  "sample_index": 174,
+  "input_tokens": 7350,
+  "target_tokens": 4923,
+  "adapted_loss": 0.4858688414096832,
+  "direct_bf16_trainer_loss": 0.4858688414096832,
+  "metrics": {
+    "relative_loss_difference": 0.0,
+    "gradient_cosine": 0.9999605979539353,
+    "gradient_relative_l2_difference": 0.008878559348981884,
+    "fp32_weighted_accumulation_verified": 1
+  },
+  "reference": "Direct BF16 model + actualTrainer.compute_loss, autocast disabled, matching DeepSpeed module.bfloat16() forward. New helper uses BF16 model and FP32 accumulation.",
+  "reused_from": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/009-ota-environment-resampling/runs/gradient-bf16-contract-check"
+}

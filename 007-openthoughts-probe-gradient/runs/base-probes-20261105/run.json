@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "base-probes-20261105",
+  "title": "OTA · Base8B · 三题reward gradient与训练loss一致性",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-05T19:48:01.341275+00:00",
+  "tags": [
+    "OpenThoughts-Agent",
+    "base",
+    "Qwen3-8B",
+    "reward-gradient"
+  ],
+  "parameters": {
+    "model": "Qwen/Qwen3-8B",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "rollouts": 32,
+    "questions": 3,
+    "total_rollouts": 96,
+    "rollouts_per_question": 32,
+    "template": "qwen3_nothink",
+    "mask_history": false,
+    "cutoff_len": 32768
+  },
+  "sources": {
+    "status": "runs/base-probes-20261105/state.json",
+    "results": "runs/base-probes-20261105/result.json",
+    "progress": "runs/base-probes-20261105/progress.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结协议",
+      "path": "runs/base-probes-20261105/protocol.json"
+    },
+    {
+      "label": "实验设计与loss一致性说明",
+      "path": "README.md"
+    },
+    {
+      "label": "分析报告",
+      "path": "runs/base-probes-20261105/REPORT.md"
+    },
+    {
+      "label": "Cosine图表",
+      "path": "runs/base-probes-20261105/comparison.png"
+    },
+    {
+      "label": "完整统计",
+      "path": "runs/base-probes-20261105/result.json"
+    },
+    {
+      "label": "最终分析：稀疏奖励与成功/失败贡献",
+      "path": "runs/base-probes-20261105/ANALYSIS.md"
+    },
+    {
+      "label": "梯度贡献分解",
+      "path": "runs/base-probes-20261105/interpretation.json"
+    },
+    {
+      "label": "两条成功轨迹审计",
+      "path": "runs/base-probes-20261105/success-trajectory-audit.json"
+    }
+  ]
+}

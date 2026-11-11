@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "sampling",
+  "title": "OTA cap3 · 原dot概率封顶+硬次数上限3",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-11T00:25:23.193389+00:00",
+  "tags": [
+    "cap3",
+    "full70-r4",
+    "Qwen3-8B"
+  ],
+  "parameters": {},
+  "sources": {
+    "status": "runs/sampling/state.json",
+    "results": "runs/sampling/result.json",
+    "progress": "runs/sampling/progress.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "原始版本与资源",
+      "path": "configs/resources.json"
+    },
+    {
+      "label": "封顶概率与精确采样计划",
+      "path": "runs/sampling/probabilities.json"
+    }
+  ]
+}

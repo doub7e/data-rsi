@@ -1,0 +1,15 @@
+{
+  "allowed": true,
+  "start_after": "training_succeeded",
+  "max_concurrent": 2,
+  "max_new_images": 200,
+  "resources_per_build": {
+    "gpus": 0,
+    "cpus": 2,
+    "memory": "12G"
+  },
+  "registry_repository": "registry.rcp.epfl.ch/shuli/ota-eval",
+  "approved_at_utc": "2026-10-30T22:05:56.264667+00:00",
+  "approval_text": "允许，训练完成后开始（推荐）",
+  "scope": "Reuse 89 public images; construct missing environments only after full training succeeds, then evaluate and compare with the paper."
+}

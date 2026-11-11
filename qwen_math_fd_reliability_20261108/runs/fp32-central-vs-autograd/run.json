@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "fp32-central-vs-autograd",
+  "title": "Qwen Math · FP32两次前向中心差分与Autograd · 复用已保存前向结果",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-09T17:26:07.504304+00:00",
+  "tags": [
+    "diagnostic",
+    "FP32",
+    "central-difference",
+    "posthoc",
+    "no-new-GPU"
+  ],
+  "parameters": {
+    "question": "Can FP32 central-2 retain autograd score/weight accuracy with fewer forwards?",
+    "execution": "CPU arithmetic on saved central_scores and exact references; no new model forwards or generation",
+    "methods": [
+      "FP32 central-2",
+      "FP32 Richardson-4",
+      "FP32 autograd/JVP reference"
+    ],
+    "step_selection": "Report all saved FP32 steps; exploratory, no universal optimum claim",
+    "timing": "No central-2 wall-clock measurement; Richardson/JVP times reused only as context; no divide-by-two measured claim"
+  },
+  "sources": {
+    "status": "runs/fp32-central-vs-autograd/state.json",
+    "progress": "runs/fp32-central-vs-autograd/progress.json",
+    "results": "runs/fp32-central-vs-autograd/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "analysis.py",
+      "path": "runs/fp32-central-vs-autograd/analysis.py"
+    },
+    {
+      "label": "result.json",
+      "path": "runs/fp32-central-vs-autograd/result.json"
+    },
+    {
+      "label": "report.md",
+      "path": "runs/fp32-central-vs-autograd/report.md"
+    }
+  ],
+  "notes": "Registered before CPU analysis. Quality comparison reuses existing exact and four-forward outputs; timing for central-2 remains unmeasured."
+}

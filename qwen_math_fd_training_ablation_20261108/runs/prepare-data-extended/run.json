@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "prepare-data-extended",
+  "title": "FD训练消融 · 预备同序640候选（CPU，仅条件补充用）",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T12:11:06.494592+00:00",
+  "updated_at": "2026-11-08T12:11:06.494604+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "conditional_gpu_execution": false,
+    "rule": "Only ifinitial384teacher-screened pool yields<80eligible; next256samepermutation; retain1..7/8 criterion; no student outcomes used"
+  },
+  "sources": {
+    "status": "runs/prepare-data-extended/state.json",
+    "progress": "runs/prepare-data-extended/progress.json",
+    "results": "runs/prepare-data-extended/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/prepare-data-extended/result.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-extenddata-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

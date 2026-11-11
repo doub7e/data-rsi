@@ -1,0 +1,12 @@
+{
+  "finished_at": "2026-11-07T23:07:01.386490+00:00",
+  "metrics": {
+    "candidate_trajectories": 728,
+    "generated_trajectories_planned": 728,
+    "unique_sampled_environments": 334,
+    "effective_sample_size": 55.44353931478941,
+    "max_probability": 0.08784424272258302,
+    "max_environment_repeats": 70
+  },
+  "probabilities": "runs/attribution/probabilities.json"
+}

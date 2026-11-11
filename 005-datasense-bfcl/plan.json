@@ -1,0 +1,59 @@
+{
+  "upstream_commit": "ca38f2606b3c9c4111d0516381f044797a81436c",
+  "base_model": {
+    "id": "Qwen/Qwen3-4B",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+  },
+  "training_dataset": {
+    "id": "XXHStudyHard/EnvScaler-SFT-Traj-9K",
+    "revision": "0279d9ac792a12bfd28f8659de07948b4698df63"
+  },
+  "bfcl_data_repository": {
+    "id": "RUC-NLPIR/EnvScaler",
+    "revision": "96ae8b02dc0187c911b8e2101e7bb6904271597b"
+  },
+  "planned_training_gpus": 2,
+  "planned_evaluation_gpus": 1,
+  "planned_gpu_type": "H200",
+  "initial_execution_scope": "P1 preparation and P2 calibration, not launched",
+  "training_recipe": "upstream/code/bfcl/selection/recipe/sft.yaml",
+  "evaluation_manifest": "upstream/code/bfcl/post-training/data_manifest.json",
+  "phase_costs": [
+    {
+      "phase": "pilot",
+      "training_runs": 2,
+      "evaluated_models": 3,
+      "case_executions": 7200,
+      "paper_training_b200_hours": 1.16,
+      "paper_evaluation_single_gpu_hours": 9.9,
+      "provisional_h200_gpu_hours": [
+        12,
+        25
+      ]
+    },
+    {
+      "phase": "one_selector_three_runs_with_references",
+      "training_runs": 16,
+      "evaluated_models": 17,
+      "case_executions": 40800,
+      "paper_training_b200_hours": 9.28,
+      "paper_evaluation_single_gpu_hours": 56.1,
+      "provisional_h200_gpu_hours": [
+        70,
+        120
+      ]
+    },
+    {
+      "phase": "all_six_selectors_with_references",
+      "training_runs": 91,
+      "evaluated_models": 92,
+      "case_executions": 220800,
+      "paper_training_b200_hours": 52.78,
+      "paper_evaluation_single_gpu_hours": 303.6,
+      "provisional_h200_gpu_hours": [
+        400,
+        650
+      ]
+    }
+  ]
+}

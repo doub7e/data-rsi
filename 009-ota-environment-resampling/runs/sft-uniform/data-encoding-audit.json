@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-07T02:05:19.552343+00:00",
+  "dataset_sha256": "18302319a659c9daa24c8afe8040bfebc9c8752be9a1ae08d0bb4522b4bd88e5",
+  "sft_rows": 728,
+  "input_tokens": 6503600,
+  "target_tokens": 4837691,
+  "original_target_tokens": 4877741,
+  "retained_target_fraction": 0.9917892319415893,
+  "truncated_rows": 4,
+  "zero_target_rows": 0,
+  "all_source_rows_preserved": true,
+  "encoder": "original SupervisedDatasetProcessor; all assistant reasoning retained"
+}

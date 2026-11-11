@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "teacher-batch1",
+  "title": "OTA重采样 · 每环境一条 · 第一批教师轨迹",
+  "kind": "evaluation",
+  "status": "planned",
+  "created_at": "2026-11-06T23:02:56.094994+00:00",
+  "tags": [
+    "environment-resampling",
+    "Qwen3-8B"
+  ],
+  "parameters": {
+    "teacher": "Qwen/Qwen3.8-27B",
+    "teacher_revision": "8c0b3d30f3ae96f5c7f774de704bf0ada83e422a",
+    "student": "Qwen/Qwen3-8B",
+    "seed": 20261107,
+    "planned_rollouts": 728,
+    "served_model": "ota-resample-teacher"
+  },
+  "sources": {
+    "status": "runs/teacher-batch1/state.json",
+    "results": "runs/teacher-batch1/result.json",
+    "progress": "runs/teacher-batch1/progress.json",
+    "trajectories": "runs/teacher-batch1/jobs",
+    "evaluation_plan": "runs/teacher-batch1/evaluation-plan.json",
+    "training_data": "runs/teacher-batch1/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "固定资源版本",
+      "path": "configs/resources.json"
+    },
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "reasoning字段恢复审计",
+      "path": "runs/teacher-batch1/recovery/reasoning-field-alias/audit.json"
+    },
+    {
+      "label": "异步API字段适配测试",
+      "path": "runs/teacher-batch1/reasoning-adapter-test.json"
+    },
+    {
+      "label": "实际轨迹API核验",
+      "path": "runs/teacher-batch1/board-trajectory-verification.json"
+    },
+    {
+      "label": "基础设施逐任务恢复策略",
+      "path": "runs/teacher-batch1/auth-recovery-policy.json"
+    }
+  ],
+  "job": {
+    "name": "ota-rs-teacher-batch1-1107",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "probe-gradient-plan",
+  "title": "OTA全70×4 · 70题×4 · 有效probe与分片规划",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T10:39:26.578917+00:00",
+  "tags": [
+    "full70-r4",
+    "missing-as-zero",
+    "Qwen3-8B"
+  ],
+  "parameters": {},
+  "sources": {
+    "status": "runs/probe-gradient-plan/state.json",
+    "results": "runs/probe-gradient-plan/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "模型和数据版本",
+      "path": "configs/resources.json"
+    }
+  ],
+  "job": {
+    "name": "ota-r4-probe-gradient-plan-1108",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

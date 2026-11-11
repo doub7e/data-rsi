@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "evaluation-scorer-check",
+  "title": "FD训练消融 · 标准Math评测判题契约核验",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T13:24:36.069417+00:00",
+  "updated_at": "2026-11-08T13:24:36.069428+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "scope": "CPU-only original scoring expression checks; no benchmark outcomes"
+  },
+  "sources": {
+    "status": "runs/evaluation-scorer-check/state.json",
+    "progress": "runs/evaluation-scorer-check/progress.json",
+    "results": "runs/evaluation-scorer-check/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/evaluation-scorer-check/result.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-evalcheck-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

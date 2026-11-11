@@ -1,0 +1,1090 @@
+{
+  "finished_at": "2026-11-05T21:49:44.290043+00:00",
+  "key": "q02",
+  "task": "pandas-etl",
+  "benchmark": "tblite",
+  "model": "Qwen/Qwen3-8B",
+  "successes": 0,
+  "trials": 32,
+  "curve": [
+    {
+      "rollouts": 8,
+      "successes_a": 0,
+      "successes_b": 0,
+      "norm_a": 0.0,
+      "norm_b": 0.0,
+      "dot": 0.0,
+      "cosine": null
+    },
+    {
+      "rollouts": 32,
+      "successes_a": 0,
+      "successes_b": 0,
+      "norm_a": 0.0,
+      "norm_b": 0.0,
+      "dot": 0.0,
+      "cosine": null
+    }
+  ],
+  "partitions": [
+    {
+      "a": [
+        0,
+        1
+      ],
+      "b": [
+        2,
+        3
+      ],
+      "successes_a": 0,
+      "successes_b": 0,
+      "targets_a": 687212,
+      "targets_b": 768791,
+      "statistics": {
+        "all": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "embedding": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "lm_head": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "final_norm_other": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-00": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-01": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-02": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-03": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-04": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-05": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-06": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-07": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-08": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-09": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-10": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-11": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-12": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-13": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-14": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-15": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-16": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-17": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-18": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-19": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-20": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-21": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-22": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-23": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-24": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-25": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-26": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-27": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-28": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-29": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-30": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-31": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-32": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-33": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-34": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-35": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        }
+      }
+    },
+    {
+      "a": [
+        0,
+        2
+      ],
+      "b": [
+        1,
+        3
+      ],
+      "successes_a": 0,
+      "successes_b": 0,
+      "targets_a": 628552,
+      "targets_b": 827451,
+      "statistics": {
+        "all": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "embedding": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "lm_head": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "final_norm_other": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-00": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-01": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-02": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-03": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-04": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-05": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-06": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-07": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-08": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-09": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-10": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-11": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-12": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-13": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-14": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-15": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-16": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-17": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-18": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-19": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-20": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-21": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-22": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-23": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-24": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-25": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-26": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-27": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-28": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-29": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-30": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-31": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-32": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-33": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-34": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-35": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        }
+      }
+    },
+    {
+      "a": [
+        0,
+        3
+      ],
+      "b": [
+        1,
+        2
+      ],
+      "successes_a": 0,
+      "successes_b": 0,
+      "targets_a": 803415,
+      "targets_b": 652588,
+      "statistics": {
+        "all": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "embedding": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "lm_head": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "final_norm_other": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-00": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-01": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-02": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-03": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-04": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-05": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-06": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-07": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-08": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-09": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-10": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-11": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-12": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-13": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-14": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-15": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-16": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-17": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-18": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-19": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-20": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-21": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-22": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-23": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-24": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-25": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-26": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-27": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-28": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-29": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-30": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-31": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-32": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-33": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-34": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        },
+        "layer-35": {
+          "norm_a": 0.0,
+          "norm_b": 0.0,
+          "dot": 0.0,
+          "cosine": null
+        }
+      }
+    }
+  ],
+  "layers": 36,
+  "encoding": [
+    {
+      "repeat": 1,
+      "rows": 1,
+      "target_tokens": 3457,
+      "original_targets": 3457,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 2,
+      "rows": 9,
+      "target_tokens": 132001,
+      "original_targets": 153820,
+      "zero_target_rows": 0,
+      "truncated_rows": 6
+    },
+    {
+      "repeat": 3,
+      "rows": 9,
+      "target_tokens": 200273,
+      "original_targets": 363636,
+      "zero_target_rows": 0,
+      "truncated_rows": 6
+    },
+    {
+      "repeat": 4,
+      "rows": 1,
+      "target_tokens": 3241,
+      "original_targets": 3241,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 5,
+      "rows": 1,
+      "target_tokens": 21434,
+      "original_targets": 21434,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 6,
+      "rows": 1,
+      "target_tokens": 2947,
+      "original_targets": 2947,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 7,
+      "rows": 1,
+      "target_tokens": 27879,
+      "original_targets": 38950,
+      "zero_target_rows": 0,
+      "truncated_rows": 1
+    },
+    {
+      "repeat": 8,
+      "rows": 5,
+      "target_tokens": 115914,
+      "original_targets": 295120,
+      "zero_target_rows": 0,
+      "truncated_rows": 4
+    },
+    {
+      "repeat": 9,
+      "rows": 1,
+      "target_tokens": 8317,
+      "original_targets": 8317,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 10,
+      "rows": 1,
+      "target_tokens": 2328,
+      "original_targets": 2328,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 11,
+      "rows": 1,
+      "target_tokens": 5775,
+      "original_targets": 5775,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 12,
+      "rows": 5,
+      "target_tokens": 120853,
+      "original_targets": 258518,
+      "zero_target_rows": 0,
+      "truncated_rows": 4
+    },
+    {
+      "repeat": 13,
+      "rows": 1,
+      "target_tokens": 6422,
+      "original_targets": 6422,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 14,
+      "rows": 1,
+      "target_tokens": 14363,
+      "original_targets": 14363,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 15,
+      "rows": 1,
+      "target_tokens": 4594,
+      "original_targets": 4594,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 16,
+      "rows": 1,
+      "target_tokens": 3186,
+      "original_targets": 3186,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 17,
+      "rows": 9,
+      "target_tokens": 114598,
+      "original_targets": 244730,
+      "zero_target_rows": 0,
+      "truncated_rows": 3
+    },
+    {
+      "repeat": 18,
+      "rows": 8,
+      "target_tokens": 179165,
+      "original_targets": 357192,
+      "zero_target_rows": 0,
+      "truncated_rows": 6
+    },
+    {
+      "repeat": 19,
+      "rows": 1,
+      "target_tokens": 5665,
+      "original_targets": 5665,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 20,
+      "rows": 1,
+      "target_tokens": 3819,
+      "original_targets": 3819,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 21,
+      "rows": 1,
+      "target_tokens": 6685,
+      "original_targets": 6685,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 22,
+      "rows": 1,
+      "target_tokens": 4111,
+      "original_targets": 4111,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 23,
+      "rows": 1,
+      "target_tokens": 3963,
+      "original_targets": 3963,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 24,
+      "rows": 1,
+      "target_tokens": 2789,
+      "original_targets": 2789,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 25,
+      "rows": 1,
+      "target_tokens": 3908,
+      "original_targets": 3908,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 26,
+      "rows": 1,
+      "target_tokens": 7948,
+      "original_targets": 7948,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 27,
+      "rows": 5,
+      "target_tokens": 118642,
+      "original_targets": 306500,
+      "zero_target_rows": 0,
+      "truncated_rows": 4
+    },
+    {
+      "repeat": 28,
+      "rows": 1,
+      "target_tokens": 7152,
+      "original_targets": 7152,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 29,
+      "rows": 1,
+      "target_tokens": 30330,
+      "original_targets": 43166,
+      "zero_target_rows": 0,
+      "truncated_rows": 1
+    },
+    {
+      "repeat": 30,
+      "rows": 1,
+      "target_tokens": 7062,
+      "original_targets": 7062,
+      "zero_target_rows": 0,
+      "truncated_rows": 0
+    },
+    {
+      "repeat": 31,
+      "rows": 5,
+      "target_tokens": 106869,
+      "original_targets": 248899,
+      "zero_target_rows": 0,
+      "truncated_rows": 3
+    },
+    {
+      "repeat": 32,
+      "rows": 9,
+      "target_tokens": 180313,
+      "original_targets": 342945,
+      "zero_target_rows": 0,
+      "truncated_rows": 6
+    }
+  ],
+  "individual_gradients": [],
+  "all_rewards_constant": true,
+  "analytical_zero": true,
+  "gpu_backprop_performed": false,
+  "metrics": {
+    "success_percent": 0,
+    "rollouts": 32,
+    "sft_rows": 87,
+    "retained_target_fraction": 0.523244815538614,
+    "analytical_zero": 1
+  },
+  "loss_definition": {
+    "template": "qwen3_nothink",
+    "mask_history": false,
+    "train_on_prompt": false,
+    "packing": false,
+    "cutoff_len": 32768,
+    "reasoning": "Retain all assistant text and reconstructedreasoning; plain LFTemplate does not remove<think>content",
+    "export": "One final full conversation per main/continuation/summarization file, using pinned Harbor extraction; never all cumulative prefixes. Skip copied-only files with no new agent generation, record this. Merge adjacent user messages exactly as10K preprocessing.",
+    "copied_context": "Keep copied context required by eachSFT example and reportcopied assistant counts; all-assistant supervision can repeat such context acrossrows. Do not secretlymask it toforceunique-token weighting.",
+    "estimator": "For halfH, g_H = -sum_i(R_i-mean_H R) sum_rowsCE_sum(row_i) / total_H_valid_target_tokens. ActualLF Trainer/Liger CE andencoder; one logical token-weighted batch acrosshalf, physicalmicrobatch1.",
+    "interpretation": "Reward-weighted SFT-loss gradient at base, not an unbiased full-rollout policygradient: SFT encoding contains allhistoricalreasoning and maytruncate at32K whereas originalinference history canomitreasoning/resetat summaries.",
+    "training_reference_config_sha256": "0218e06edaba8353d3035e41277fc8c244bb50098aa498427864c55d24fc3215",
+    "requires_loss_parity": "runs/loss-parity-20261105/complete.json"
+  },
+  "limitations": [
+    "Only3selected tasks; no benchmark-widegeneralization claim.",
+    "HistoricalSFT-modelresults used in taskselection; freshbase outcomes notused toselect/replace tasks.",
+    "Threepartitions sharedata; no independent-replicationCI.",
+    "Allsame reward half yields exactzero andundefinedcosine; no balancing or replacement.",
+    "Nooptimizerupdate; optimizer preconditioning/weightdecay/clipping are outside thisloss-gradient diagnostic."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "qwen_math_fd_reliability_20261108",
+  "title": "Qwen Math · Richardson 与 exact autograd 可靠性 · N16/32/128/1024",
+  "description": "可访问checkpoint诊断完成：主实验80/80条件及独立新题20/20条件（合计20个同质fallback条件），112次完整response重复；FSDP/FA2、H100、BF16 autograd、训练后中心/步长及独立2048-token prefix加权梯度控制完成。使用最优N64 clipped sigmoid(3s)数值配置；最优N64 step20原始权重不可访问，Base与辅助MOPD step20结果分开报告。全部本次集群作业已归档清理。",
+  "tags": [
+    "Qwen3-4B",
+    "Math",
+    "diagnostic",
+    "Richardson",
+    "autograd",
+    "probe-stability"
+  ],
+  "created_at": "2026-11-08T00:08:05.773381+00:00",
+  "updated_at": "2026-11-08T10:38:24.402698+00:00"
+}

@@ -1,0 +1,35 @@
+{
+  "finished_at": "2026-11-05T01:09:44.878780+00:00",
+  "elapsed_seconds": 3709.269579051994,
+  "global_step": 124,
+  "epoch": 2.0,
+  "expanded_rows": 1981,
+  "devices": [
+    {
+      "name": "NVIDIA H200",
+      "bytes": 150109880320
+    },
+    {
+      "name": "NVIDIA H200",
+      "bytes": 150109880320
+    }
+  ],
+  "weight_files": [
+    {
+      "file": "model-00001-of-00004.safetensors",
+      "bytes": 4990095032
+    },
+    {
+      "file": "model-00002-of-00004.safetensors",
+      "bytes": 4944309096
+    },
+    {
+      "file": "model-00003-of-00004.safetensors",
+      "bytes": 4996758848
+    },
+    {
+      "file": "model-00004-of-00004.safetensors",
+      "bytes": 1158754848
+    }
+  ]
+}

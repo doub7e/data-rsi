@@ -1,0 +1,13 @@
+[Unit]
+Description=Native RunAI evaluation 1k with 4 H200
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/004-runai-native-eval
+ExecStart=/usr/bin/python3 -u scripts/native_eval_controller.py production/eval-1k.json
+StandardOutput=append:/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/runs/eval-native-1k-20261031/controller.log
+StandardError=inherit
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "screen-0",
+  "title": "FD训练消融 · 教师8次筛选 · 分片0",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T11:08:42.891342+00:00",
+  "updated_at": "2026-11-08T11:08:42.891352+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "rule": "frozen candidate order,teacher8draws,keep1..7correct;first80;no student-outcome selection"
+  },
+  "sources": {
+    "status": "runs/screen-0/state.json",
+    "progress": "runs/screen-0/progress.json",
+    "results": "runs/screen-0/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/screen-0/result.json"
+    },
+    {
+      "label": "screen-config.json",
+      "path": "runs/screen-0/screen-config.json"
+    },
+    {
+      "label": "sample.json",
+      "path": "runs/screen-0/sample.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-screen0-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

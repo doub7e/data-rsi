@@ -1,0 +1,17 @@
+{
+  "finished_at": "2026-11-11T10:33:29.526728+00:00",
+  "metrics": {
+    "recovered_terminal_records": 1,
+    "preserved_complete_records": 279,
+    "new_rollouts": 0,
+    "merged_records": 280,
+    "recovered_score": 0,
+    "empty_training_exports_added": 1
+  },
+  "resolved_trial": "e0167",
+  "raw_result_unchanged": true,
+  "completed279_unchanged": true,
+  "source_exception": "RuntimeError: sandbox already Succeeded before first command",
+  "policy": "Existing missing-verifier0 rule; raw API response retained but no committed assistant steps, so empty SFT export. No reroll or fabricated conversation.",
+  "unresolved_history_preserved": "runs/eval-guided/unresolved-trials.json"
+}

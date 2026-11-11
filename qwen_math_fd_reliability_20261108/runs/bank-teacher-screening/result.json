@@ -1,0 +1,177 @@
+{
+  "metrics": {
+    "verified_artifacts": 11,
+    "probe_records": 80,
+    "probe_correct": 63,
+    "probe_accuracy_percent": 78.75,
+    "probe_truncations": 1,
+    "probe_mean_tokens": 7889.75,
+    "target_records": 10,
+    "target_correct": 9,
+    "target_accuracy_percent": 90.0,
+    "target_truncations": 0,
+    "target_mean_tokens": 7457.5
+  },
+  "artifacts": [
+    "bank/manifest.json",
+    "bank/row_00020589/complete.json",
+    "bank/row_00039906/complete.json",
+    "bank/row_00046675/complete.json",
+    "bank/row_00031543/complete.json",
+    "bank/row_00002367/complete.json",
+    "bank/row_00016668/complete.json",
+    "bank/row_00010430/complete.json",
+    "bank/row_00046947/complete.json",
+    "bank/row_00026209/complete.json",
+    "bank/row_00040678/complete.json"
+  ],
+  "scope": "teacher screening; bank-format probe records are screen draws, not an outcome-gradient bank",
+  "elapsed_seconds": 2516.821453310986,
+  "bank_recording": {
+    "fingerprints_verified": true,
+    "verified_at": "2026-11-08T03:30:49.765703+00:00",
+    "config_fingerprint": "3f8ea7b5117af682a4970849a5eb31282bdaae2a9786a76a63057cc204762b23",
+    "source_inventory": {
+      "manifest_sha256": "665f17798b85168d6abd73887c9d195a11045fec3fc0ef79bb337bdb850ac0b2",
+      "rows": {
+        "20589": {
+          "prompt.json": "23123efc9d2f9200923b6806aa248b77923a73baab56d43271c864066fb5630c",
+          "complete.json": "de6a1052fe300470db73bbc395b47e941bd9eeaad213f7bf05fa2a2d6eed0a13"
+        },
+        "39906": {
+          "prompt.json": "4c54f27963b6ba3b6e71eae9beb053d1b5b85afa5405eb7b873dd082b3b6f1a5",
+          "complete.json": "0d42c0b43475841b80a885db09d4cb57a4d422ef285424b86360528d34e4a881"
+        },
+        "46675": {
+          "prompt.json": "c46bbd14a7c3974f4270ae026a25e04243a8de3c2a0ce8694620d3c2767b3b99",
+          "complete.json": "0bc01ace1acc2506c940a66b28089a1c7da07e973a9c03749bc7427e9793d970"
+        },
+        "31543": {
+          "prompt.json": "68cf6aba106ba21f9f4b94974c8a7ef4d213b7e165ea27f6aff435d6d5d1bdd7",
+          "complete.json": "4a124cc33d5459be405dc9811279a7a82376c63e4bb97aef43956060bd0eafc8"
+        },
+        "2367": {
+          "prompt.json": "fa04503e667228b60caf419f8eb2e048301d42bbb323cbb80741c474992d42f7",
+          "complete.json": "6fb28c0e60580452f7478f34718f996df48a4360285d9907638d54569f022bd2"
+        },
+        "16668": {
+          "prompt.json": "bbf67079f4360a353ae896ac1775f85cb8cbd8ece1586106bc5d14656d5491ba",
+          "complete.json": "7e2f83731b1e29b9c7acc5e45d7f18eebe1ab404408fc788b1062b3261ffe3a7"
+        },
+        "10430": {
+          "prompt.json": "8c9f5ca6798b845133c898e8aed0a93448a496f88a7a898eeb7022e9b4cd4b2e",
+          "complete.json": "485274468d1b5e91a9cb6878c62805d43514da9e495b90338fcd687c181beb23"
+        },
+        "46947": {
+          "prompt.json": "f618ec798d9fd8619af54f5770f925c2e3962c482313f7d6dbed0063b4ad318e",
+          "complete.json": "ca8c8ec9123aea83c336f8980c2426df4eb0082e78f38fd0a7b66d8941fb995b"
+        },
+        "26209": {
+          "prompt.json": "effb4210c11c27649639b6f0038f1b9d93cc1ab78dc6c634210ef7bebe3746e9",
+          "complete.json": "9f5e4eeffb2a7445f4cbca7147a097af9d6dc8d1d2a68baa733fa3219fbbfc24"
+        },
+        "40678": {
+          "prompt.json": "21040974e5667388f967b13c86145f20816344dcfbdfd7c951f4207b8748823c",
+          "complete.json": "61fc6f8c9dd481d3be085cd23e36a6a8f4ee7c8ba825db00f0669a3abfc4e429"
+        }
+      },
+      "chunks": {
+        "bank/row_00020589/probe/chunk_000000_000008.json": {
+          "size_bytes": 851848,
+          "mtime_ns": 1794106361139707131
+        },
+        "bank/row_00020589/target/chunk_000000_000001.json": {
+          "size_bytes": 185150,
+          "mtime_ns": 1794106512868307665
+        },
+        "bank/row_00039906/probe/chunk_000000_000008.json": {
+          "size_bytes": 291531,
+          "mtime_ns": 1794106550512747186
+        },
+        "bank/row_00039906/target/chunk_000000_000001.json": {
+          "size_bytes": 43652,
+          "mtime_ns": 1794106583465118386
+        },
+        "bank/row_00046675/probe/chunk_000000_000008.json": {
+          "size_bytes": 785246,
+          "mtime_ns": 1794106696922766639
+        },
+        "bank/row_00046675/target/chunk_000000_000001.json": {
+          "size_bytes": 127756,
+          "mtime_ns": 1794106799340394548
+        },
+        "bank/row_00031543/probe/chunk_000000_000008.json": {
+          "size_bytes": 1563353,
+          "mtime_ns": 1794106984680513121
+        },
+        "bank/row_00031543/target/chunk_000000_000001.json": {
+          "size_bytes": 153232,
+          "mtime_ns": 1794107121660577581
+        },
+        "bank/row_00002367/probe/chunk_000000_000008.json": {
+          "size_bytes": 1181160,
+          "mtime_ns": 1794107270961107441
+        },
+        "bank/row_00002367/target/chunk_000000_000001.json": {
+          "size_bytes": 136559,
+          "mtime_ns": 1794107383161809979
+        },
+        "bank/row_00016668/probe/chunk_000000_000008.json": {
+          "size_bytes": 358880,
+          "mtime_ns": 1794107438676986931
+        },
+        "bank/row_00016668/target/chunk_000000_000001.json": {
+          "size_bytes": 30998,
+          "mtime_ns": 1794107466783961770
+        },
+        "bank/row_00010430/probe/chunk_000000_000008.json": {
+          "size_bytes": 991363,
+          "mtime_ns": 1794107623742645250
+        },
+        "bank/row_00010430/target/chunk_000000_000001.json": {
+          "size_bytes": 60755,
+          "mtime_ns": 1794107670181336421
+        },
+        "bank/row_00046947/probe/chunk_000000_000008.json": {
+          "size_bytes": 1688965,
+          "mtime_ns": 1794107893844825053
+        },
+        "bank/row_00046947/target/chunk_000000_000001.json": {
+          "size_bytes": 196763,
+          "mtime_ns": 1794108065735991469
+        },
+        "bank/row_00026209/probe/chunk_000000_000008.json": {
+          "size_bytes": 1380198,
+          "mtime_ns": 1794108240865455891
+        },
+        "bank/row_00026209/target/chunk_000000_000001.json": {
+          "size_bytes": 142606,
+          "mtime_ns": 1794108353175215606
+        },
+        "bank/row_00040678/probe/chunk_000000_000008.json": {
+          "size_bytes": 1112963,
+          "mtime_ns": 1794108514534672309
+        },
+        "bank/row_00040678/target/chunk_000000_000001.json": {
+          "size_bytes": 137521,
+          "mtime_ns": 1794108630935967947
+        }
+      }
+    },
+    "metrics": {
+      "probe_records": 80,
+      "probe_correct": 63,
+      "probe_accuracy_percent": 78.75,
+      "probe_truncations": 1,
+      "probe_mean_tokens": 7889.75,
+      "target_records": 10,
+      "target_correct": 9,
+      "target_accuracy_percent": 90.0,
+      "target_truncations": 0,
+      "target_mean_tokens": 7457.5
+    },
+    "sample_artifact": "runs/bank-teacher-screening/first_probe_sample.json",
+    "sample_sha256": "cf1ee3333576ca0d298f4889f5d402a9b7b3ac8a565e757a82665c2fac80f5f4",
+    "scope": "Existing generated records and unchanged project-verifier outcomes; no new generation or relabeling"
+  }
+}

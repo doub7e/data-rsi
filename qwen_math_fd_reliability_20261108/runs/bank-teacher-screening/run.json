@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "bank-teacher-screening",
+  "title": "FD可靠性 · 最佳配方teacher筛题检查 · 10题×8rollouts",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T02:40:34.347178+00:00",
+  "updated_at": "2026-11-08T02:40:34.347191+00:00",
+  "parameters": {
+    "image": "vllm/vllm-openai@sha256:6ee133356d49ed24cee03dd0cda3d3980279a11c107ce3e752c89e76540f41c9",
+    "model_role": "fixed Math RL teacher",
+    "rows": [
+      20589,
+      39906,
+      46675,
+      31543,
+      2367,
+      16668,
+      10430,
+      46947,
+      26209,
+      40678
+    ],
+    "screening_samples_per_prompt": 8,
+    "unused_independent_extra_response_per_prompt": 1,
+    "eligibility": "1<=correct_count<=7 of first8; unchanged verifier; no length/truncation filtering",
+    "selection_rule": "Check existingdiagnosticprompts; for new validation choose first eligible previouslyunused row in frozen order, never by FD/utility effect",
+    "seed_start": 681190000,
+    "max_tokens": 16384,
+    "purpose": "check teacher-screen condition of best configuration; doesnot recover original frozen1600pool"
+  },
+  "sources": {
+    "status": "runs/bank-teacher-screening/state.json",
+    "progress": "runs/bank-teacher-screening/progress.json",
+    "results": "runs/bank-teacher-screening/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "筛题冻结协议",
+      "path": "runs/bank-teacher-screening/bank/manifest.json"
+    },
+    {
+      "label": "来源配置",
+      "path": "runs/bank-teacher-screening/spec.json"
+    },
+    {
+      "label": "首个 seed 的真实 probe 样本（原始评分）",
+      "path": "runs/bank-teacher-screening/first_probe_sample.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-teacherscreen-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

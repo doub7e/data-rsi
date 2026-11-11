@@ -1,0 +1,31 @@
+{
+  "collector_returned_after_all200_candidates": true,
+  "probe_snapshots": 6,
+  "projection_seeds": 2,
+  "tiny_parameter_count": 3120,
+  "repeat_path_checked": {
+    "meta_index": 27,
+    "first_norm": 3.08538053274454,
+    "archived_norm": 3.086306146904363,
+    "first_relative_norm_difference": 0.000299910026991812,
+    "repeated": true,
+    "repeated_norm": 3.08538053274454,
+    "repeated_relative_norm_difference": 0.000299910026991812,
+    "repeat_cosine": 1.0,
+    "repeat_relative_vector_error": 0.0
+  },
+  "candidate_norm_shape": [
+    200,
+    13
+  ],
+  "feature_shapes": [
+    [
+      206,
+      576
+    ],
+    [
+      206,
+      576
+    ]
+  ]
+}

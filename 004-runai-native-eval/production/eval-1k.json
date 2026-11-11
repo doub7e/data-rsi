@@ -1,0 +1,9 @@
+{
+  "experiment": "003-openthoughts-qwen3-8b-1k",
+  "run_id": "eval-native-1k-20261031",
+  "training_run": "repro-1k-4gpu-20261031",
+  "training_rows": 1000,
+  "model_name": "ota-qwen3-8b-1k",
+  "serve_job": "ota-qwen3-8b-1k-eval-1031",
+  "worker_job": "ota-native-eval-1k-1031"
+}

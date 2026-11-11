@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "status": "available_checkpoint_diagnostics_complete_best_checkpoint_unverified",
+  "created_at": "2026-11-08T00:08:05.773381+00:00",
+  "question": "数值精度误差与 probe 采样不稳定分别如何影响 outcome token scores?",
+  "parameters": {
+    "repository": "/mnt/cvlab/scratch/cvlab/home/shuli/OPD-experiments-inf-token-reweight",
+    "branch": "inf-token-reweight",
+    "source_revision": "8634274d5ecf076d96bb976eee1239232263b33c",
+    "target_checkpoint": null,
+    "target_checkpoint_status": "best_N64_step20_unavailable_locally; optional path requested asynchronously; no waiting",
+    "target_checkpoint_step": 20,
+    "selected_training_config": {
+      "rollout_n": 64,
+      "residual_clipping": "score_and_loss_clipped",
+      "weight_formula": "sigmoid(3*s)",
+      "geometry": "identity",
+      "finite_difference": "balanced Richardson",
+      "h": 1e-05,
+      "homogeneous_probe_weight": 0
+    },
+    "historical_selected_config_score": {
+      "value": 47.27,
+      "unit": "percent",
+      "source": "provenance/EXPERIMENT_HANDOFF.md:132; revision8634274d5ecf076d96bb976eee1239232263b33c",
+      "recomputed_in_this_experiment": false,
+      "source_sha256": "5337896c86540b5fb806c5f49e5b2e7e6ba3a0e61fb2b4a7dfcabd856aca5701"
+    },
+    "methods": [
+      "bf16_richardson",
+      "fp32_richardson",
+      "exact_autograd"
+    ],
+    "probe_sample_counts": [
+      16,
+      32,
+      128,
+      1024
+    ],
+    "probe_count_semantics": "actual responses entering one probe gradient; N64 training uses32 per fold",
+    "prompt_selection": "First Base primary case physical combined-parquet row20589 (historical homotopy intervention); next cases chosen before their outcomes",
+    "seeds": {
+      "sampling_base_homotopy": 681150000,
+      "positions_and_repetitions": 27115
+    },
+    "repetitions": "three disjoint128-response B blocks for N16/32/128; one independent1024 B case; independent1024 A reference",
+    "dataset_revision": "c9bc6783733858dd4892f26f95e4aea0942e91f1",
+    "teacher_revision": "05d82d02780d4a6f8295b2909dbbd89e8a8b5aaa",
+    "image_digest": {
+      "numerics": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+      "generation": "vllm/vllm-openai@sha256:6ee133356d49ed24cee03dd0cda3d3980279a11c107ce3e752c89e76540f41c9"
+    },
+    "h_relative_grid": [
+      0.001,
+      0.0001,
+      3e-05,
+      1e-05,
+      3e-06,
+      1e-06,
+      1e-07
+    ],
+    "token_selection": "16 uniform positions plus8 largest absolute rawBF16 residual; overlap recorded; first2048 tokens of first complete independent target >=32tokens; no correctness filtering",
+    "probe_policy": "Never truncate/drop/relabel probe responses; retain homogeneous and generation truncations",
+    "primary_comparison": "same fixed direction/residual/master: FP32 exact vsFP32 Richardson vsBF16 Richardson; secondary compare BF16 vsFP32 probe computation and independentA/B sampling noise"
+  },
+  "scope": "约 12 小时用户授权诊断任务；本登记不扩大算力授权。详细预算和停止条件由控制脚本冻结。",
+  "pending_decisions": [
+    "Exact bestN64step20 checkpoint not found in inspected local roots; old /volume/pt-dev/users/qshan mount absent; no direct test of these weights."
+  ],
+  "constraints": [
+    "不将 Base 代替缺失 trained checkpoint",
+    "不将历史 47.27 当成本次测量",
+    "不将 N1024 当作无噪声真值",
+    "所有运行、失败和适用产物留在本目录"
+  ],
+  "asset_status": {
+    "best_step20_checkpoint": "not found in local inspected roots; old /volume not mounted",
+    "available_initialization": "Qwen3-4B Base 1cfa9a7208912126459214e8b04321603b3df60c",
+    "scope": "Initial diagnostics at Base initialization of best N64 clipped sigmoid(3s) configuration; cannot claim audit of unavailable trained checkpoint"
+  },
+  "probe_count_semantics": "Number of responses entering one outcome probe gradient, not total two-fold training rollout count. Best training N64 corresponds to32 probe responses per fold.",
+  "budget": {
+    "start_utc": "2026-11-07T23:59:52Z",
+    "deadline_utc": "2026-11-08T11:59:52Z",
+    "initial_target_gpu_hours": 24,
+    "adaptation": "Expand only after measured pilot cost; avoid idle GPU allocations."
+  },
+  "auxiliary_checkpoint": {
+    "path": "runs/auxiliary-master-merge/model",
+    "identity": "MOPD matchedN8step20, explicitly notbestN64",
+    "roundtrip_exact": true,
+    "purpose": "actualtrainedoff-grid FP32master sensitivitycontrol; same tied parameterization"
+  },
+  "updated_at": "2026-11-08T10:38:24.402698+00:00"
+}

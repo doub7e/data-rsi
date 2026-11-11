@@ -1,0 +1,12 @@
+{
+  "claim_test": {
+    "contenders": 16,
+    "winners": 1,
+    "filesystem": "shared experiment PVC"
+  },
+  "routing_test": {
+    "dependent_jobs": 4,
+    "export_points_to_b300_checkpoint": true
+  },
+  "gpu_used": false
+}

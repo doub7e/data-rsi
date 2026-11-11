@@ -1,0 +1,22 @@
+{
+  "metrics": {
+    "completion_tokens": 54
+  },
+  "versions": {
+    "vllm": "0.32.0",
+    "torch": "2.13.0+cu130",
+    "transformers": "5.19.0"
+  },
+  "message_fields": [
+    "role",
+    "content",
+    "refusal",
+    "annotations",
+    "audio",
+    "function_call",
+    "reasoning"
+  ],
+  "reasoning_chars": 151,
+  "content": "\n\n{\n  \"answer\": 42\n}",
+  "reused_from": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/009-ota-environment-resampling/runs/teacher-smoke"
+}

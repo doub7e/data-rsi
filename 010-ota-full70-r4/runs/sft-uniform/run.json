@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "sft-uniform",
+  "title": "OTA全70×4 · 复用009 · sft-uniform",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T10:39:26.430714+00:00",
+  "tags": [
+    "full70-r4",
+    "missing-as-zero",
+    "Qwen3-8B"
+  ],
+  "parameters": {
+    "reused_from": "009-ota-environment-resampling/runs/sft-uniform",
+    "new_execution": false
+  },
+  "sources": {
+    "status": "runs/sft-uniform/state.json",
+    "results": "runs/sft-uniform/result.json",
+    "training_data": "runs/sft-uniform/data/train.jsonl",
+    "metrics": "runs/sft-uniform/checkpoint/trainer_log.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "模型和数据版本",
+      "path": "configs/resources.json"
+    },
+    {
+      "label": "复用来源与完成证据",
+      "path": "runs/sft-uniform/reference.json"
+    }
+  ]
+}

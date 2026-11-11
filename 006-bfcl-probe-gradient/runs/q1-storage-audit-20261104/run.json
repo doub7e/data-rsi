@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "q1-storage-audit-20261104",
+  "title": "Q1 study · completed checkpoint storage audit",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-04T02:20:32.343927+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "q1-storage-audit-1104",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "sources": {
+    "status": "runs/q1-storage-audit-20261104/state.json",
+    "results": "runs/q1-storage-audit-20261104/result.json"
+  }
+}

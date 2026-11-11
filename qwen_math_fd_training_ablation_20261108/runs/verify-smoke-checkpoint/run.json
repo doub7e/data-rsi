@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "verify-smoke-checkpoint",
+  "title": "FD训练消融 · 已完成smoke更新的CPU核验与日志器测试",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T12:00:51.517428+00:00",
+  "updated_at": "2026-11-08T12:00:51.517439+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "source_training_run": "smoke-training-h200",
+    "new_gpu_training": false,
+    "scope": "verify actual savedstep1 after post-save logger failure; no replay; originalfailure preserved"
+  },
+  "sources": {
+    "status": "runs/verify-smoke-checkpoint/state.json",
+    "progress": "runs/verify-smoke-checkpoint/progress.json",
+    "results": "runs/verify-smoke-checkpoint/result.json",
+    "metrics": "runs/verify-smoke-checkpoint/metrics.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/verify-smoke-checkpoint/result.json"
+    },
+    {
+      "label": "console-metrics.json",
+      "path": "runs/verify-smoke-checkpoint/console-metrics.json"
+    },
+    {
+      "label": "sample.json",
+      "path": "runs/verify-smoke-checkpoint/sample.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-smokeverify-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

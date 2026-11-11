@@ -1,0 +1,29 @@
+{
+  "stage": "20step\u8bad\u7ec3\u5b8c\u6210\u9a8c\u6536\u53ca\u56db\u9879\u8bc4\u6d4b\u62a5\u544a",
+  "source_snapshot": true,
+  "deadline_utc": "2026-11-13T17:58:08.938870+00:00",
+  "commands": [
+    [
+      "{python}",
+      "tools/fd_priority20.py",
+      "report",
+      "--output",
+      "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/summary"
+    ]
+  ],
+  "source_files": [
+    "tools/fd_priority20.py"
+  ],
+  "required_artifacts": [
+    "result.json",
+    "report.md"
+  ],
+  "dependencies": [
+    "runs/eval20/result.json",
+    "runs/eval20/state.json",
+    "runs/eval-base/result.json",
+    "runs/eval-base/state.json",
+    "runs/train-fp32-richardson20/result.json",
+    "runs/train-fp32-richardson20/state.json"
+  ]
+}

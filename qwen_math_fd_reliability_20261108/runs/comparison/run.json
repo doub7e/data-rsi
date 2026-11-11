@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "id": "comparison",
+  "title": "Qwen Math · FD可靠性总报告 · 主80条件+独立20条件及完整prefix控制",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T00:08:05.773381+00:00",
+  "tags": [
+    "diagnostic",
+    "planned",
+    "Math",
+    "step20"
+  ],
+  "parameters": {
+    "scope": "four primary audits; 80 direction conditions; independent validation reported separately",
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+    "protocol": "protocol.json",
+    "target_checkpoint_status": "best N64 step20 checkpoint unavailable; Base and explicitly auxiliary MOPD step20 separated"
+  },
+  "sources": {
+    "status": "runs/comparison/state.json",
+    "progress": "runs/comparison/progress.json",
+    "results": "synthesis-evidence.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/comparison/result.json"
+    },
+    {
+      "label": "report.md",
+      "path": "runs/comparison/report.md"
+    },
+    {
+      "label": "comparisons.csv",
+      "path": "runs/comparison/comparisons.csv"
+    },
+    {
+      "label": "paired_calibration.csv",
+      "path": "runs/comparison/paired_calibration.csv"
+    },
+    {
+      "label": "paired_primary.csv",
+      "path": "runs/comparison/paired_primary.csv"
+    },
+    {
+      "label": "practical_weights.csv",
+      "path": "runs/comparison/practical_weights.csv"
+    },
+    {
+      "label": "comparisons.json",
+      "path": "runs/comparison/comparisons.json"
+    },
+    {
+      "label": "source-manifest.json",
+      "path": "runs/comparison/source-manifest.json"
+    },
+    {
+      "label": "error_vs_h.png",
+      "path": "runs/comparison/figures/error_vs_h.png"
+    },
+    {
+      "label": "error_vs_h.pdf",
+      "path": "runs/comparison/figures/error_vs_h.pdf"
+    },
+    {
+      "label": "weight_mae_vs_n.png",
+      "path": "runs/comparison/figures/weight_mae_vs_n.png"
+    },
+    {
+      "label": "weight_mae_vs_n.pdf",
+      "path": "runs/comparison/figures/weight_mae_vs_n.pdf"
+    },
+    {
+      "label": "gradient_cosine_vs_n.png",
+      "path": "runs/comparison/figures/gradient_cosine_vs_n.png"
+    },
+    {
+      "label": "gradient_cosine_vs_n.pdf",
+      "path": "runs/comparison/figures/gradient_cosine_vs_n.pdf"
+    },
+    {
+      "label": "practical_weight_stability_vs_n.png",
+      "path": "runs/comparison/figures/practical_weight_stability_vs_n.png"
+    },
+    {
+      "label": "practical_weight_stability_vs_n.pdf",
+      "path": "runs/comparison/figures/practical_weight_stability_vs_n.pdf"
+    },
+    {
+      "label": "selected_scatter_panels.png",
+      "path": "runs/comparison/figures/selected_scatter_panels.png"
+    },
+    {
+      "label": "selected_scatter_panels.pdf",
+      "path": "runs/comparison/figures/selected_scatter_panels.pdf"
+    },
+    {
+      "label": "REPORT.md",
+      "path": "REPORT.md"
+    },
+    {
+      "label": "synthesis-evidence.json",
+      "path": "synthesis-evidence.json"
+    },
+    {
+      "label": "compute-accounting.json",
+      "path": "compute-accounting.json"
+    },
+    {
+      "label": "artifact-api-verification.json",
+      "path": "artifact-api-verification.json"
+    },
+    {
+      "label": "software-tests-final.log",
+      "path": "software-tests-final.log"
+    },
+    {
+      "label": "EXPERIMENT_HANDOFF.md",
+      "path": "provenance/EXPERIMENT_HANDOFF.md"
+    },
+    {
+      "label": "INTERVENTION_HANDOFF.md",
+      "path": "provenance/INTERVENTION_HANDOFF.md"
+    },
+    {
+      "label": "run_clipped_sigmoid3s_screened_random20.py",
+      "path": "provenance/run_clipped_sigmoid3s_screened_random20.py"
+    },
+    {
+      "label": "board-final-verification.json",
+      "path": "board-final-verification.json"
+    },
+    {
+      "label": "completion-audit.json",
+      "path": "completion-audit.json"
+    },
+    {
+      "label": "supervisor-stopped.json",
+      "path": "supervisor-stopped.json"
+    },
+    {
+      "label": "synthesis-source.json",
+      "path": "synthesis-source.json"
+    },
+    {
+      "label": "fd_reliability_synthesis.py",
+      "path": "provenance/fd_reliability_synthesis.py"
+    },
+    {
+      "label": "fd_reliability_accounting.py",
+      "path": "provenance/fd_reliability_accounting.py"
+    },
+    {
+      "label": "fd_reliability_verify_recording.py",
+      "path": "provenance/fd_reliability_verify_recording.py"
+    },
+    {
+      "label": "cleanup-verification.json",
+      "path": "cleanup-verification.json"
+    },
+    {
+      "label": "final-condition-audit.json",
+      "path": "final-condition-audit.json"
+    },
+    {
+      "label": "COMPLETE_RECORD_20261108.md",
+      "path": "COMPLETE_RECORD_20261108.md"
+    },
+    {
+      "label": "complete-record-snapshot.json",
+      "path": "complete-record-snapshot.json"
+    }
+  ],
+  "notes": "可访问checkpoint上的全部计算完成；原主图仅包含80条件，新题20条件单列。最优N64step20权重未直接验证。",
+  "updated_at": "2026-11-08T16:15:30.105072+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-report-final-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

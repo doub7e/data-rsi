@@ -1,0 +1,34 @@
+{
+  "status": "blocked",
+  "tested_at": "2026-10-30T23:19:56.868899+00:00",
+  "node": "gpu231.rcp.epfl.ch",
+  "gpu_count": 0,
+  "image": "docker.io/library/docker@sha256:849c204079272f607d13c42c5f5cd8b3e9c03a20d094806154da19827986ad9e",
+  "security_context": {
+    "allowPrivilegeEscalation": true,
+    "seccompProfile": {
+      "type": "RuntimeDefault"
+    }
+  },
+  "modes": [
+    {
+      "mode": "default",
+      "daemon_ready": false,
+      "daemon_exit": 1,
+      "local_import_exit": null,
+      "local_run_exit": null,
+      "pull_exit": null,
+      "run_exit": null
+    },
+    {
+      "mode": "vfs-no-bridge",
+      "daemon_ready": true,
+      "daemon_exit": 0,
+      "local_import_exit": 1,
+      "local_run_exit": null,
+      "pull_exit": 1,
+      "run_exit": null
+    }
+  ],
+  "conclusion": "Docker daemon can start using vfs without bridge/iptables, but local image import and hello-world pull fail with unshare: operation not permitted. Default RunAI pod security does not support this DinD setup. Privileged mode was not tested."
+}

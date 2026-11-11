@@ -1,0 +1,33 @@
+{
+  "finished_at": "2026-11-06T23:33:53.631123+00:00",
+  "checks": [
+    {
+      "task": "task_1008",
+      "score": 1.0,
+      "check": "reference_solution_with_output_directory_preamble",
+      "result_path": "runs/harness-smoke/jobs/oracle-1-v2/task_1008__2RWy6TB/result.json",
+      "result_sha256": "61c7217184e64101c04931f6f0446839fffe10e22727d62a9f7f6a881a5834be"
+    },
+    {
+      "task": "task_101",
+      "score": 1.0,
+      "check": "reference_solution_with_output_directory_preamble",
+      "result_path": "runs/harness-smoke/jobs/oracle-2-v2/task_101__aiEt37e/result.json",
+      "result_sha256": "8420e67a27a700a97afc09c184af7b3610a383eedad0dce65d428a675002c580"
+    },
+    {
+      "task": "0895cf7d-e27e-4ff7-a984-265d79de",
+      "score": 0.0,
+      "check": "placeholder_reference_negative_control",
+      "result_path": "runs/harness-smoke/jobs/oracle-3-v2/0895cf7d-e27e-4ff7-a984-265d79de__UwS6z7k/result.json",
+      "result_sha256": "44372bbb4c242461030a4edc0b9b4f6fa65efb42bc271460d78dc0af353e7b9d"
+    }
+  ],
+  "metrics": {
+    "reference_tasks_passed": 2,
+    "verifier_negative_controls_passed": 1,
+    "seed_copy_checks_passed": 2
+  },
+  "note": "Dev reference is a no-op placeholder, so its expected score0 is a verifier-negative-control, not a failed model evaluation.",
+  "reused_from": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/009-ota-environment-resampling/runs/harness-smoke"
+}

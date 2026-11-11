@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "runtime-preflight",
+  "title": "FD训练消融 · 生产verl导入与Qwen3 rollout/sleep验证",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T10:52:47.614696+00:00",
+  "updated_at": "2026-11-08T10:52:47.614701+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "scope": "production imports and16token runtime smoke; no training outcome claim"
+  },
+  "sources": {
+    "status": "runs/runtime-preflight/state.json",
+    "progress": "runs/runtime-preflight/progress.json",
+    "results": "runs/runtime-preflight/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "inventory.json",
+      "path": "runs/runtime-preflight/inventory.json"
+    },
+    {
+      "label": "result.json",
+      "path": "runs/runtime-preflight/result.json"
+    },
+    {
+      "label": "sample.json",
+      "path": "runs/runtime-preflight/sample.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-runtime-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

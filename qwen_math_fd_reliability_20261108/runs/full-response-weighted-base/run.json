@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "full-response-weighted-base",
+  "title": "FD可靠性 · Base全515-token回答 · 五种权重的完整响应梯度",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T01:56:10.277508+00:00",
+  "updated_at": "2026-11-08T01:56:10.277515+00:00",
+  "parameters": {
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+    "reference_probe_n": 1024,
+    "new_probe_responses": 0,
+    "scope": "one full response, FP32 eager gradient sum; not fullbatch/Adam/accuracy",
+    "recipes": [
+      "exactJVP",
+      "FP32FDh1e-5",
+      "FP32FDh1e-6",
+      "BF16FDh1e-5",
+      "unweighted"
+    ]
+  },
+  "sources": {
+    "status": "runs/full-response-weighted-base/state.json",
+    "progress": "runs/full-response-weighted-base/progress.json",
+    "results": "runs/full-response-weighted-base/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "完整响应梯度结果",
+      "path": "runs/full-response-weighted-base/result.json"
+    },
+    {
+      "label": "报告",
+      "path": "runs/full-response-weighted-base/report.md"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-fullweight-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

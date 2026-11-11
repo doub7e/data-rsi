@@ -1,0 +1,15 @@
+[Unit]
+Description=Cut over all evaluations to native RunAI
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/004-runai-native-eval
+ExecStart=/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/002-openthoughts-qwen3-8b/eval/.venv/bin/python -u scripts/native_cutover.py
+StandardOutput=append:/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/004-runai-native-eval/runs/environments-all-20261031/cutover.log
+StandardError=inherit
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=default.target

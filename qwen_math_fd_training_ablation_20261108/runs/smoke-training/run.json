@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "smoke-training",
+  "title": "FD训练消融 · smoke-training",
+  "kind": "training",
+  "status": "planned",
+  "created_at": "2026-11-08T11:18:37.979950+00:00",
+  "updated_at": "2026-11-08T11:18:37.979961+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "arm": "fp32-h1em6",
+    "steps": 1,
+    "prompts_per_step": 2,
+    "rollout_n": 64,
+    "gpus": 2,
+    "pool": "b300",
+    "scope": "production smoke, not efficacy trial",
+    "probe_precision": "bf16",
+    "clip_residual": 1,
+    "sigmoid": "sigmoid(3s)",
+    "same_frozen_promptstream": false
+  },
+  "sources": {
+    "status": "runs/smoke-training/state.json",
+    "progress": "runs/smoke-training/progress.json",
+    "results": "runs/smoke-training/result.json",
+    "metrics": "runs/smoke-training/metrics.jsonl",
+    "training_data": "runs/smoke-training/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/smoke-training/result.json"
+    },
+    {
+      "label": "resolved-launch.json",
+      "path": "runs/smoke-training/resolved-launch.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-smoke-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "source-inventory",
+  "title": "FD可靠性 · 原始 Math 题目与历史干预行号核验",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T00:16:34.232030+00:00",
+  "updated_at": "2026-11-08T00:16:34.232057+00:00",
+  "parameters": {
+    "pool": "cpu",
+    "gpu_count": 0,
+    "initialization": "none",
+    "image": "registry.rcp.epfl.ch/shuli/archer@sha256:45d99bbfabbdee16d12ee3d0391f9377e4c82acf23e17a10494712db5f3d5940"
+  },
+  "sources": {
+    "status": "runs/source-inventory/state.json",
+    "progress": "runs/source-inventory/progress.json",
+    "results": "runs/source-inventory/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "执行配置",
+      "path": "runs/source-inventory/spec.json"
+    },
+    {
+      "label": "运行环境",
+      "path": "runs/source-inventory/runtime.json"
+    },
+    {
+      "label": "结果",
+      "path": "runs/source-inventory/inventory/inventory.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-inventory-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

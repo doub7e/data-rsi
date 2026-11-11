@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "serve-base-20261105",
+  "title": "OTA · 原始Qwen3-8B · 4H200推理",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-05T19:48:01.349314+00:00",
+  "tags": [
+    "OpenThoughts-Agent",
+    "base",
+    "Qwen3-8B",
+    "reward-gradient"
+  ],
+  "parameters": {
+    "model": "Qwen/Qwen3-8B",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "gpus": 4,
+    "gpu_type": "H200",
+    "tensor_parallel_size": 4,
+    "context": 32768,
+    "total_planned_rollouts": 96
+  },
+  "sources": {
+    "status": "runs/serve-base-20261105/state.json",
+    "results": "runs/serve-base-20261105/result.json",
+    "progress": "runs/serve-base-20261105/progress.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结协议",
+      "path": "runs/base-probes-20261105/protocol.json"
+    },
+    {
+      "label": "原始模型与生成配置",
+      "path": "runs/serve-base-20261105/model-provenance.json"
+    }
+  ],
+  "job": {
+    "name": "ota-probe-base-serve-1105",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

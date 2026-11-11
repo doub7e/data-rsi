@@ -1,0 +1,3 @@
+test_fd_priority20.py:3passed
+test_fd_training_launch.py:2passed
+py_compile priority helpers andscreen:passed

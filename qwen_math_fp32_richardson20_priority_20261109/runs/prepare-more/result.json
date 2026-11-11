@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "candidate_prompts": 1408,
+    "reused_current_candidates": 1024,
+    "new_candidate_prompts": 384,
+    "reused_historical_eligible": 206,
+    "benchmark_questions": 120
+  },
+  "source_fingerprint": "8a0edab473160d67a25608a38f295dc5c1089d5626861870a1ffdcdc7ed22feb",
+  "rule": "prior1024 pool produced only274distincteligible due162overlappinghistorical/currentrecords; append384 source-onlycandidates, reuse all earlier draws"
+}

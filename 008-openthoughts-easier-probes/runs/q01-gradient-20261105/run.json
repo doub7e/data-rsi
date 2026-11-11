@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "q01-gradient-20261105",
+  "title": "OTA · 简单题 · log-summary · 训练loss split-half",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-06T00:20:15.831792+00:00",
+  "tags": [
+    "OpenThoughts-Agent",
+    "base",
+    "Qwen3-8B",
+    "easy-tasks",
+    "reward-gradient"
+  ],
+  "parameters": {
+    "model": "Qwen/Qwen3-8B",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "rollouts": 32,
+    "phase": "formal"
+  },
+  "sources": {
+    "status": "runs/q01-gradient-20261105/state.json",
+    "results": "runs/q01-gradient-20261105/result.json",
+    "progress": "runs/q01-gradient-20261105/progress.json",
+    "training_data": "runs/q01-rollouts-20261105/data/train.jsonl",
+    "trajectories": "runs/q01-rollouts-20261105/jobs"
+  },
+  "artifacts": [
+    {
+      "label": "协议与筛选规则",
+      "path": "runs/easy-probes-20261105/protocol.json"
+    },
+    {
+      "label": "分析报告",
+      "path": "runs/q01-gradient-20261105/REPORT.md"
+    },
+    {
+      "label": "Cosine图表",
+      "path": "runs/q01-gradient-20261105/comparison.png"
+    },
+    {
+      "label": "完整统计",
+      "path": "runs/q01-gradient-20261105/result.json"
+    },
+    {
+      "label": "输入与截断审计",
+      "path": "runs/q01-gradient-20261105/encoding-audit.json"
+    },
+    {
+      "label": "逐层结果",
+      "path": "runs/q01-gradient-20261105/layers.csv"
+    }
+  ],
+  "job": {
+    "name": "ota-easy-q01-gradient-1105",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

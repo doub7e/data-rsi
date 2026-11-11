@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "eval-random100-s42-20261102",
+  "title": "Qwen3-4B · random100 · BFCL V3 ×3",
+  "kind": "evaluation",
+  "status": "planned",
+  "created_at": "2026-11-02T22:29:30.774336+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "ds-r100-eval-1102",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "parameters": {
+    "model": "Qwen3-4B random100 SFT",
+    "benchmark": "BFCL V3 multi-turn",
+    "tasks": 800,
+    "repetitions": 3,
+    "total_trials": 2400,
+    "temperature": 0.7,
+    "context_length": 65536,
+    "drop_history_think": true,
+    "gpus": 1,
+    "gpu_type": "H200"
+  },
+  "sources": {
+    "status": "runs/eval-random100-s42-20261102/state.json",
+    "results": "runs/eval-random100-s42-20261102/result.json",
+    "metrics": "runs/eval-random100-s42-20261102/metrics.jsonl",
+    "trajectories": "runs/eval-random100-s42-20261102/jobs",
+    "evaluation_plan": "runs/eval-random100-s42-20261102/evaluation-plan.json"
+  },
+  "artifacts": [
+    {
+      "label": "Evaluation results",
+      "path": "runs/eval-random100-s42-20261102/result.json"
+    },
+    {
+      "label": "Upstream evaluation launcher",
+      "path": "upstream/code/bfcl/post-training/eval.py"
+    }
+  ],
+  "notes": "BFCL V3 pinned data and official DataSense patches. All raw generation and scoring artifacts retained under bfcl/. Follows random100 training automatically. Board progress counts emitted generation results; pass/fail only appears after official scoring verification. Running-task counts are unavailable."
+}

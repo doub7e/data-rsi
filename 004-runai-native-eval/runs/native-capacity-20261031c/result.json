@@ -1,0 +1,573 @@
+{
+  "status": "succeeded",
+  "completed_at": "2026-10-31T13:38:17.922627+00:00",
+  "levels": [
+    {
+      "concurrency_requested": 4,
+      "wall_sec": 173.6994701679796,
+      "trials": 4,
+      "completed": 4,
+      "errors": 0,
+      "passed": 4,
+      "max_simultaneously_ready": 4,
+      "nodes": [
+        "gpu203.rcp.epfl.ch",
+        "gpu216.rcp.epfl.ch"
+      ],
+      "startup_seconds": {
+        "n": 4,
+        "mean": 20.025312423706055,
+        "median": 20.0248703956604,
+        "min": 12.666627645492554,
+        "max": 27.384881258010864
+      },
+      "verifier_seconds": {
+        "n": 4,
+        "mean": 131.72333774999998,
+        "median": 131.721965,
+        "min": 131.681137,
+        "max": 131.768284
+      },
+      "trial_seconds": {
+        "n": 4,
+        "mean": 157.18242325,
+        "median": 157.176989,
+        "min": 149.801471,
+        "max": 164.574244
+      },
+      "control_call_seconds": {
+        "n": 126,
+        "mean": 4.379769745475007,
+        "median": 0.16662718448787928,
+        "min": 0.07835454121232033,
+        "max": 130.75267439708114
+      },
+      "validated_trials_per_hour": 82.9018072770987,
+      "trial_details": [
+        {
+          "trial": "astropy13236__XrjDVKS",
+          "wall_sec": 164.574244,
+          "setup_sec": 27.387934,
+          "oracle_sec": 1.330393,
+          "verifier_sec": 131.689493,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__wnzWMFK",
+          "wall_sec": 149.903982,
+          "setup_sec": 12.672943,
+          "oracle_sec": 1.356471,
+          "verifier_sec": 131.768284,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__Uc7i4LS",
+          "wall_sec": 164.449996,
+          "setup_sec": 27.382484,
+          "oracle_sec": 1.329646,
+          "verifier_sec": 131.681137,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__b3N68GE",
+          "wall_sec": 149.801471,
+          "setup_sec": 12.669413,
+          "oracle_sec": 1.355063,
+          "verifier_sec": 131.754437,
+          "exception": null
+        }
+      ]
+    },
+    {
+      "concurrency_requested": 16,
+      "wall_sec": 152.2508868612349,
+      "trials": 16,
+      "completed": 16,
+      "errors": 0,
+      "passed": 16,
+      "max_simultaneously_ready": 16,
+      "nodes": [
+        "gpu203.rcp.epfl.ch",
+        "gpu207.rcp.epfl.ch",
+        "gpu210.rcp.epfl.ch",
+        "gpu216.rcp.epfl.ch",
+        "gpu231.rcp.epfl.ch",
+        "gpu233.rcp.epfl.ch",
+        "gpu243.rcp.epfl.ch",
+        "gpu252.rcp.epfl.ch"
+      ],
+      "startup_seconds": {
+        "n": 16,
+        "mean": 10.235971882939339,
+        "median": 8.41628122329712,
+        "min": 6.1646058559417725,
+        "max": 23.151184558868408
+      },
+      "verifier_seconds": {
+        "n": 16,
+        "mean": 116.51022400000001,
+        "median": 128.80082900000002,
+        "min": 74.163263,
+        "max": 130.122464
+      },
+      "trial_seconds": {
+        "n": 16,
+        "mean": 131.439369625,
+        "median": 140.9554925,
+        "min": 88.32677,
+        "max": 147.756029
+      },
+      "control_call_seconds": {
+        "n": 428,
+        "mean": 4.510054736298065,
+        "median": 0.15205902513116598,
+        "min": 0.06431879289448261,
+        "max": 129.20722827874124
+      },
+      "validated_trials_per_hour": 378.3229194093169,
+      "trial_details": [
+        {
+          "trial": "astropy13236__c3hBmcW",
+          "wall_sec": 142.163884,
+          "setup_sec": 7.18585,
+          "oracle_sec": 1.060479,
+          "verifier_sec": 130.122464,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__Wv8q9BB",
+          "wall_sec": 142.046721,
+          "setup_sec": 6.990173,
+          "oracle_sec": 1.153665,
+          "verifier_sec": 129.948039,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__e7n4Wk3",
+          "wall_sec": 140.554791,
+          "setup_sec": 7.207392,
+          "oracle_sec": 1.109921,
+          "verifier_sec": 129.292515,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__g86Jt4k",
+          "wall_sec": 141.272468,
+          "setup_sec": 9.223256,
+          "oracle_sec": 1.026811,
+          "verifier_sec": 127.50805,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__bxWF5yA",
+          "wall_sec": 96.831194,
+          "setup_sec": 11.726985,
+          "oracle_sec": 1.096215,
+          "verifier_sec": 80.22981,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__hYwesRd",
+          "wall_sec": 142.611644,
+          "setup_sec": 8.012292,
+          "oracle_sec": 1.270262,
+          "verifier_sec": 129.549348,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__PyYxydz",
+          "wall_sec": 141.285111,
+          "setup_sec": 7.657407,
+          "oracle_sec": 1.175956,
+          "verifier_sec": 129.685302,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__WBcjqrN",
+          "wall_sec": 140.638517,
+          "setup_sec": 7.886995,
+          "oracle_sec": 1.379905,
+          "verifier_sec": 128.658679,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__wRBTUCd",
+          "wall_sec": 139.534711,
+          "setup_sec": 6.167145,
+          "oracle_sec": 1.09161,
+          "verifier_sec": 128.487805,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__pcLYxZd",
+          "wall_sec": 140.141696,
+          "setup_sec": 6.322682,
+          "oracle_sec": 1.034606,
+          "verifier_sec": 128.942979,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__2FtkWSH",
+          "wall_sec": 110.105054,
+          "setup_sec": 23.153852,
+          "oracle_sec": 1.065406,
+          "verifier_sec": 82.092096,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__ke9HrZU",
+          "wall_sec": 88.32677,
+          "setup_sec": 8.825214,
+          "oracle_sec": 1.261855,
+          "verifier_sec": 74.163263,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__nonuSE6",
+          "wall_sec": 147.075241,
+          "setup_sec": 13.087877,
+          "oracle_sec": 1.183117,
+          "verifier_sec": 129.270032,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__evfGtBp",
+          "wall_sec": 147.756029,
+          "setup_sec": 13.385926,
+          "oracle_sec": 1.162685,
+          "verifier_sec": 129.228265,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__Cpi9rX6",
+          "wall_sec": 98.537591,
+          "setup_sec": 13.331168,
+          "oracle_sec": 1.048947,
+          "verifier_sec": 80.423083,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__po3zTTA",
+          "wall_sec": 144.148492,
+          "setup_sec": 13.654908,
+          "oracle_sec": 1.23139,
+          "verifier_sec": 126.561854,
+          "exception": null
+        }
+      ]
+    },
+    {
+      "concurrency_requested": 32,
+      "wall_sec": 161.964305954054,
+      "trials": 32,
+      "completed": 32,
+      "errors": 0,
+      "passed": 32,
+      "max_simultaneously_ready": 32,
+      "nodes": [
+        "gpu202.rcp.epfl.ch",
+        "gpu203.rcp.epfl.ch",
+        "gpu207.rcp.epfl.ch",
+        "gpu210.rcp.epfl.ch",
+        "gpu216.rcp.epfl.ch",
+        "gpu231.rcp.epfl.ch",
+        "gpu233.rcp.epfl.ch",
+        "gpu251.rcp.epfl.ch",
+        "gpu252.rcp.epfl.ch"
+      ],
+      "startup_seconds": {
+        "n": 32,
+        "mean": 13.828650623559952,
+        "median": 14.128649115562439,
+        "min": 10.81697392463684,
+        "max": 19.883060455322266
+      },
+      "verifier_seconds": {
+        "n": 32,
+        "mean": 124.7087174375,
+        "median": 130.319146,
+        "min": 74.520996,
+        "max": 132.63261
+      },
+      "trial_seconds": {
+        "n": 32,
+        "mean": 147.65585446875,
+        "median": 153.34941800000001,
+        "min": 100.430542,
+        "max": 157.09886
+      },
+      "control_call_seconds": {
+        "n": 884,
+        "mean": 4.8337578259796175,
+        "median": 0.41056756023317575,
+        "min": 0.06643246859312057,
+        "max": 130.81838565319777
+      },
+      "validated_trials_per_hour": 711.2678273241261,
+      "trial_details": [
+        {
+          "trial": "astropy13236__hSgQmx5",
+          "wall_sec": 156.677265,
+          "setup_sec": 14.592183,
+          "oracle_sec": 3.662089,
+          "verifier_sec": 132.198375,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__jtK69MA",
+          "wall_sec": 149.051743,
+          "setup_sec": 11.499312,
+          "oracle_sec": 1.293653,
+          "verifier_sec": 130.141417,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__67Zra9b",
+          "wall_sec": 155.710894,
+          "setup_sec": 14.352997,
+          "oracle_sec": 3.612269,
+          "verifier_sec": 131.385241,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__hE8ELzq",
+          "wall_sec": 157.09886,
+          "setup_sec": 14.574612,
+          "oracle_sec": 3.360058,
+          "verifier_sec": 132.63261,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__sDmMxPV",
+          "wall_sec": 150.765215,
+          "setup_sec": 11.925662,
+          "oracle_sec": 1.956524,
+          "verifier_sec": 130.687437,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__KF92Lhb",
+          "wall_sec": 151.517743,
+          "setup_sec": 11.950067,
+          "oracle_sec": 1.928334,
+          "verifier_sec": 130.334554,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__DgrLCv7",
+          "wall_sec": 149.943729,
+          "setup_sec": 11.889667,
+          "oracle_sec": 1.677005,
+          "verifier_sec": 129.815229,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__qVWziQv",
+          "wall_sec": 150.39558,
+          "setup_sec": 11.775423,
+          "oracle_sec": 1.591903,
+          "verifier_sec": 130.303738,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__yQmQkBj",
+          "wall_sec": 140.476923,
+          "setup_sec": 12.093693,
+          "oracle_sec": 2.483449,
+          "verifier_sec": 119.053964,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__4TYbW8e",
+          "wall_sec": 146.963954,
+          "setup_sec": 10.819809,
+          "oracle_sec": 1.397535,
+          "verifier_sec": 129.504584,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__ECXNRsF",
+          "wall_sec": 151.583063,
+          "setup_sec": 12.964133,
+          "oracle_sec": 3.368078,
+          "verifier_sec": 130.061006,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__xsjM9dH",
+          "wall_sec": 152.442547,
+          "setup_sec": 13.256059,
+          "oracle_sec": 3.790791,
+          "verifier_sec": 130.3754,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__Ba7YJiS",
+          "wall_sec": 141.694855,
+          "setup_sec": 13.4173,
+          "oracle_sec": 3.597406,
+          "verifier_sec": 119.081139,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__kPZ8JTR",
+          "wall_sec": 153.801446,
+          "setup_sec": 14.160176,
+          "oracle_sec": 3.254307,
+          "verifier_sec": 130.240565,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__eZcBUHr",
+          "wall_sec": 156.368246,
+          "setup_sec": 14.558962,
+          "oracle_sec": 3.58282,
+          "verifier_sec": 132.032821,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__B2aHZ5K",
+          "wall_sec": 153.588485,
+          "setup_sec": 14.555103,
+          "oracle_sec": 3.584986,
+          "verifier_sec": 129.413037,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__uAKVyuu",
+          "wall_sec": 151.085266,
+          "setup_sec": 12.053823,
+          "oracle_sec": 2.098129,
+          "verifier_sec": 130.877877,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__XuTVByK",
+          "wall_sec": 156.581792,
+          "setup_sec": 14.93746,
+          "oracle_sec": 3.766893,
+          "verifier_sec": 132.018761,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__vH7h6Mv",
+          "wall_sec": 105.962698,
+          "setup_sec": 15.227567,
+          "oracle_sec": 3.487773,
+          "verifier_sec": 81.232614,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__423PMHB",
+          "wall_sec": 155.479643,
+          "setup_sec": 15.224678,
+          "oracle_sec": 3.469662,
+          "verifier_sec": 130.495965,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__7gUE4dF",
+          "wall_sec": 100.430542,
+          "setup_sec": 16.130243,
+          "oracle_sec": 3.630412,
+          "verifier_sec": 74.520996,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__TTEBXUF",
+          "wall_sec": 153.363906,
+          "setup_sec": 13.196439,
+          "oracle_sec": 3.407898,
+          "verifier_sec": 130.529457,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__ChKfBek",
+          "wall_sec": 155.249414,
+          "setup_sec": 12.928945,
+          "oracle_sec": 3.369007,
+          "verifier_sec": 132.26098,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__NeKNRLh",
+          "wall_sec": 154.058209,
+          "setup_sec": 13.517874,
+          "oracle_sec": 3.671399,
+          "verifier_sec": 130.786631,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__ZjLJK7z",
+          "wall_sec": 106.459471,
+          "setup_sec": 14.127215,
+          "oracle_sec": 3.464136,
+          "verifier_sec": 82.699166,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__qu9AjSc",
+          "wall_sec": 141.41202,
+          "setup_sec": 19.89084,
+          "oracle_sec": 2.79994,
+          "verifier_sec": 114.572479,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__keoc2Th",
+          "wall_sec": 154.533222,
+          "setup_sec": 14.276304,
+          "oracle_sec": 3.313486,
+          "verifier_sec": 131.547278,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__dQTnLen",
+          "wall_sec": 153.33493,
+          "setup_sec": 14.727424,
+          "oracle_sec": 3.700909,
+          "verifier_sec": 130.265471,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__sNxRSxr",
+          "wall_sec": 156.112755,
+          "setup_sec": 14.666907,
+          "oracle_sec": 3.508908,
+          "verifier_sec": 132.113029,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__AUt4NM6",
+          "wall_sec": 153.835324,
+          "setup_sec": 14.901294,
+          "oracle_sec": 3.764405,
+          "verifier_sec": 129.265214,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__9FSbvr8",
+          "wall_sec": 154.91547,
+          "setup_sec": 14.662384,
+          "oracle_sec": 3.79658,
+          "verifier_sec": 130.354297,
+          "exception": null
+        },
+        {
+          "trial": "astropy13236__zTfL93P",
+          "wall_sec": 154.092133,
+          "setup_sec": 14.801439,
+          "oracle_sec": 3.803722,
+          "verifier_sec": 129.877626,
+          "exception": null
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "max_validated_concurrency": 32,
+    "peak_observed_ready_sandboxes": 32,
+    "oracle_rewards_passed": 52
+  },
+  "scope": "One real SWE task repeated with gold patch. CPU sandbox capacity/overhead only; does not measure model throughput or heterogeneous image cold-starts."
+}

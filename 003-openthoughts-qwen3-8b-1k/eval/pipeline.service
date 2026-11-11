@@ -1,0 +1,14 @@
+[Unit]
+Description=Data RSI 1K evaluation with Daytona and 4 H200
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/eval
+ExecStart=/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/002-openthoughts-qwen3-8b/eval/.venv/bin/python -u pipeline.py
+StandardOutput=append:/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/runs/eval-repro-1k-json-20261031/controller.log
+StandardError=inherit
+TimeoutStopSec=180
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "environments-all-20261031",
+  "title": "完整评测环境 · RunAI迁移",
+  "kind": "environment-preparation",
+  "created_at": "2026-10-31T15:29:35.837136+00:00",
+  "status": "planned",
+  "parameters": {
+    "tasks": 289,
+    "build_concurrency": 2,
+    "gpu": 0,
+    "target_backend": "runai-native"
+  },
+  "results": {},
+  "notes": "用户已明确授权立即构建288个剩余镜像，不再等待10K训练结束；最多2并发，各2 CPU/12G硬限制，不占GPU。构建及自动切换服务已启用。",
+  "sources": {
+    "status": "runs/environments-all-20261031/state.json",
+    "metrics": "runs/environments-all-20261031/metrics.jsonl",
+    "results": "runs/environments-all-20261031/summary.json"
+  },
+  "artifacts": [
+    {
+      "label": "迁移计划",
+      "path": "production/migration-plan.json"
+    },
+    {
+      "label": "构建授权",
+      "path": "production/build-authorization.json"
+    },
+    {
+      "label": "准备日志",
+      "path": "runs/environments-all-20261031/controller.log"
+    }
+  ]
+}

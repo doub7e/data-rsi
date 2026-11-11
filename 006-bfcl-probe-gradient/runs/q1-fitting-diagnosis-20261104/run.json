@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "q1-fitting-diagnosis-20261104",
+  "title": "Q1 continuation · seen / unselected / heldout loss diagnostic",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-04T15:16:42.603223+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "q1-fit-audit-1104",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "sources": {
+    "status": "runs/q1-fitting-diagnosis-20261104/state.json",
+    "results": "runs/q1-fitting-diagnosis-20261104/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "Frozen loss diagnostic protocol",
+      "path": "runs/q1-fitting-diagnosis-20261104/protocol.json"
+    },
+    {
+      "label": "Fit / generalization report",
+      "path": "runs/q1-fitting-diagnosis-20261104/REPORT.md"
+    }
+  ]
+}

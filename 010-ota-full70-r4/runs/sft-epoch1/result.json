@@ -1,0 +1,21 @@
+{
+  "finished_at": "2026-11-07T01:42:01.572227+00:00",
+  "checkpoint": "/scratch/cvlab/home/shuli/data-rsi/009-ota-environment-resampling/runs/sft-epoch1/checkpoint",
+  "epoch": 1.0,
+  "global_step": 23,
+  "source_trajectories": 728,
+  "sft_rows": 728,
+  "metrics": {
+    "epoch": 1.0,
+    "loss_nan_ranks": 0,
+    "loss_rank_avg": 0.16017864644527435,
+    "total_flos": 2.131704052239565e+16,
+    "train_loss": 0.954004951145338,
+    "train_runtime": 841.6602,
+    "train_samples_per_second": 0.865,
+    "train_steps_per_second": 0.027,
+    "valid_targets_mean": 7364.0,
+    "valid_targets_min": 2426
+  },
+  "reused_from": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/009-ota-environment-resampling/runs/sft-epoch1"
+}

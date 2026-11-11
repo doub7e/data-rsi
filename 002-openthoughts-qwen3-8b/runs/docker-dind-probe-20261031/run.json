@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "docker-dind-probe-20261031",
+  "title": "RunAI CPU worker · Docker-in-Docker 验证",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-10-30T23:19:19.288765+00:00",
+  "parameters": {
+    "gpus": 0,
+    "cpus": 1,
+    "cpu_limit": 2,
+    "memory": "2G",
+    "memory_limit": "4G",
+    "image": "docker.io/library/docker@sha256:849c204079272f607d13c42c5f5cd8b3e9c03a20d094806154da19827986ad9e",
+    "privileged": false,
+    "modes": [
+      "default",
+      "vfs-no-bridge"
+    ]
+  },
+  "results": {
+    "default_daemon_ready": false,
+    "vfs_daemon_ready": true,
+    "vfs_image_import_exit": 1,
+    "vfs_image_pull_exit": 1
+  },
+  "notes": "默认配置无法启动；vfs + 禁用 bridge/iptables 可启动 daemon，但镜像导入及拉取均报 unshare: operation not permitted。未运行任何 benchmark；未测试 privileged 模式。",
+  "job": {
+    "name": "ota-dind-probe-1031",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  },
+  "sources": {
+    "status": "runs/docker-dind-probe-20261031/state.json"
+  },
+  "artifacts": [
+    {
+      "label": "DinD 验证日志",
+      "path": "runs/docker-dind-probe-20261031/probe.log"
+    },
+    {
+      "label": "结构化结果",
+      "path": "runs/docker-dind-probe-20261031/result.json"
+    }
+  ]
+}

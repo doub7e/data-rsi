@@ -1,0 +1,31 @@
+{
+  "stage": "Qwen3-4B Base · 四项Math n32评测",
+  "source_snapshot": true,
+  "deadline_utc": "2026-11-11T18:38:09.917472+00:00",
+  "commands": [
+    [
+      "{python}",
+      "tools/fd_training_eval.py",
+      "--model",
+      "/scratch/cvlab/home/shuli/.cache/huggingface/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
+      "--prepare",
+      "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/prepare-data",
+      "--output",
+      "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/runs/eval-base",
+      "--label",
+      "Qwen3-4B Base"
+    ]
+  ],
+  "source_files": [
+    "tools/fd_training_eval.py"
+  ],
+  "required_artifacts": [
+    "result.json",
+    "per-question.json",
+    "sample.json"
+  ],
+  "dependencies": [
+    "runs/train-fp32-richardson20/result.json",
+    "runs/train-fp32-richardson20/state.json"
+  ]
+}

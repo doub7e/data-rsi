@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "011-ota-cap3-resampling",
+  "title": "OTA · Guided环境重采样上限3 · Qwen3-8B · 70×4评测",
+  "description": "固定原probe/dot，限制每个环境最多3条，重新生成728条教师轨迹并从相同首轮模型续训1epoch；比较Uniform与无上限Guided。",
+  "created_at": "2026-11-11T00:24:41.773601+00:00",
+  "tags": [
+    "openthoughts-agent",
+    "cap3",
+    "resampling",
+    "Qwen3-8B"
+  ]
+}

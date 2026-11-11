@@ -1,0 +1,31 @@
+{
+  "at": "2026-11-05T20:02:55.298297+00:00",
+  "validated_tasks": [
+    "sympy__sympy-13480",
+    "pandas-etl",
+    "fix-git"
+  ],
+  "distinct_call_seed_check": true,
+  "positional_and_keyword_call_compatibility": true,
+  "real_trajectory_exports": [
+    {
+      "task": "sympy__sympy-13480",
+      "rows": 1,
+      "assistant_messages": 16
+    },
+    {
+      "task": "pandas-etl",
+      "rows": 1,
+      "assistant_messages": 8
+    },
+    {
+      "task": "fix-git",
+      "rows": 1,
+      "assistant_messages": 12
+    }
+  ],
+  "metrics": {
+    "validated_tasks": 3,
+    "converted_cases": 3
+  }
+}

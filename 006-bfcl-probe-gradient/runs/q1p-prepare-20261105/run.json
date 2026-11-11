@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "q1p-prepare-20261105",
+  "title": "Q1 · Base · 投影归因与质量检查",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-04T23:54:40.769654+00:00",
+  "sources": {
+    "status": "runs/q1p-prepare-20261105/state.json",
+    "results": "runs/q1p-prepare-20261105/result.json",
+    "progress": "runs/q1p-prepare-20261105/progress.json"
+  },
+  "parameters": {},
+  "artifacts": [
+    {
+      "label": "Frozen study protocol",
+      "path": "runs/q1-pif-20261105/protocol.json"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "q1p-cached-1105",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "notes": "登录已恢复，旧的重复梯度计算作业已停止。复用已完成的主seed预条件归因分数，只检查有限值、数据对应与求解正常；维度/种子稳定性记录不阻断训练。",
+  "tags": [
+    "Q1",
+    "base",
+    "pif",
+    "attribution"
+  ]
+}

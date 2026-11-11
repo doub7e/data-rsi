@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "iris-binary-20261106",
+  "title": "OTA · Iris · Base8B · binary vs score · 相同32轨迹",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-06T10:12:52.919685+00:00",
+  "tags": [
+    "OpenThoughts-Agent",
+    "base",
+    "binary-vs-score",
+    "paired-control"
+  ],
+  "parameters": {
+    "model": "Qwen/Qwen3-8B",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "rollouts_reused": 32,
+    "new_rollouts": 0,
+    "probe_reward": "full_pass_binary_v1",
+    "binary_rule": "score == 1",
+    "loss_and_partitions": "Identical to q03-gradient-20261105"
+  },
+  "sources": {
+    "status": "runs/iris-binary-20261106/state.json",
+    "progress": "runs/iris-binary-20261106/progress.json",
+    "results": "runs/iris-binary-20261106/result.json",
+    "training_data": "runs/q03-rollouts-20261105/data/train.jsonl",
+    "trajectories": "runs/q03-rollouts-20261105/jobs"
+  },
+  "job": {
+    "name": "ota-easy-iris-binary-1106",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  },
+  "artifacts": [
+    {
+      "label": "配对比较协议",
+      "path": "runs/iris-binary-20261106/protocol.json"
+    },
+    {
+      "label": "原score-based结果",
+      "path": "runs/q03-gradient-20261105/result.json"
+    },
+    {
+      "label": "分析报告",
+      "path": "runs/iris-binary-20261106/REPORT.md"
+    },
+    {
+      "label": "Cosine图表",
+      "path": "runs/iris-binary-20261106/comparison.png"
+    },
+    {
+      "label": "完整统计",
+      "path": "runs/iris-binary-20261106/result.json"
+    },
+    {
+      "label": "输入与截断审计",
+      "path": "runs/iris-binary-20261106/encoding-audit.json"
+    },
+    {
+      "label": "逐层结果",
+      "path": "runs/iris-binary-20261106/layers.csv"
+    },
+    {
+      "label": "Binary与score配对比较",
+      "path": "runs/iris-binary-20261106/COMPARISON.md"
+    },
+    {
+      "label": "配对比较图",
+      "path": "runs/iris-binary-20261106/paired-comparison.png"
+    },
+    {
+      "label": "结构化比较",
+      "path": "runs/iris-binary-20261106/paired-comparison.json"
+    }
+  ]
+}

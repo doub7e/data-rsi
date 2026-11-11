@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "native-capacity-20261031c",
+  "title": "SWE Oracle · 4/16/32并发效率",
+  "kind": "validation",
+  "created_at": "2026-10-31T13:29:57.356847+00:00",
+  "status": "planned",
+  "parameters": {
+    "gpu": 0,
+    "levels": [
+      4,
+      16,
+      32
+    ],
+    "task": "astropy__astropy-13236",
+    "agent": "oracle",
+    "cpu_per_sandbox": 1,
+    "memory_mb_per_sandbox": 4096,
+    "existing_eval_untouched": true,
+    "baseline_run": "native-capacity-20261031b"
+  },
+  "results": {},
+  "notes": "1/4/16/32档真实SWE Oracle最终验证通过。32个同时运行，整批162秒，32/32 reward1、0错误；任务Pod全部清理。原评测保持运行，未调用生产模型服务。",
+  "sources": {
+    "status": "runs/native-capacity-20261031c/state.json",
+    "results": "runs/native-capacity-20261031c/result.json",
+    "metrics": "runs/native-capacity-20261031c/metrics.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "效率报告",
+      "path": "runs/native-capacity-20261031c/efficiency-report.md"
+    },
+    {
+      "label": "完整测量",
+      "path": "runs/native-capacity-20261031c/efficiency-report.json"
+    },
+    {
+      "label": "Worker日志",
+      "path": "runs/native-capacity-20261031c/worker.log"
+    }
+  ],
+  "job": {
+    "name": "ota-native-capacity-1031c",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

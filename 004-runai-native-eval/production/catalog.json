@@ -1,0 +1,2901 @@
+{
+  "tasks": [
+    {
+      "benchmark": "swebench100",
+      "task": "astropy__astropy-13236",
+      "key": "a9ed2e37decc032c",
+      "started_at": "2026-10-31T16:17:32.020546+00:00",
+      "source": "validated native Oracle image",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native@sha256:f48b9aacafcbeb41971b9e5fd43eadcb7d05ae419bae4d7071be2e790e4d7d61",
+      "finished_at": "2026-10-31T16:17:32.127537+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "astropy__astropy-14508",
+      "key": "4fa0245759f84b5c",
+      "started_at": "2026-10-31T16:17:32.136796+00:00",
+      "dockerfile_sha256": "3c117b04d33a659d6c6465fbe34efcc371c79b2baaa945c415f62fa1cb863429",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:b0eb5918bc28b18ce1c1342f09934141d85b6e2dca39a7e2a83dc4bd95dfe461",
+      "finished_at": "2026-10-31T16:20:33.700363+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "astropy__astropy-14598",
+      "key": "208b2f0804356150",
+      "started_at": "2026-10-31T16:21:45.851479+00:00",
+      "dockerfile_sha256": "0dac0096a2514838558fcde4cb767fbf7764980f5fc9464729df1d7a73495722",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:f95fcd0a45a1266a2a45a24a7f8a6a78552d19573fbb1bad8fdb64f92e603d23",
+      "finished_at": "2026-10-31T16:22:53.064191+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "astropy__astropy-14995",
+      "key": "fa34852e09f37798",
+      "started_at": "2026-10-31T16:22:53.070163+00:00",
+      "dockerfile_sha256": "064161bc1b3071af4fad2748a70877febe41602dab082aa7122bd0fe3204f06e",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:99c3a106c3b115d67f31edce9f23d8e379292f2998b3af28fd89701f4b93d2d5",
+      "finished_at": "2026-10-31T16:24:10.997528+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "astropy__astropy-8872",
+      "key": "d5a6d0fef3581ea3",
+      "started_at": "2026-10-31T16:24:11.007615+00:00",
+      "dockerfile_sha256": "560c789e6c3fae9657a7aa8f823b041803f63c5c3945f99698a7973a77424e81",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:5f91cbd8dedaf7d537e84808c9498ebcbb374590fce92f9c3ded3bc3deff674e",
+      "finished_at": "2026-10-31T16:26:09.806424+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-10097",
+      "key": "5003914fa39ac283",
+      "started_at": "2026-10-31T16:26:09.811811+00:00",
+      "dockerfile_sha256": "750ada1a6ef3e25013b86f5436122633cc90e8049ab81e036c5e7c3830b96757",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c4204b877a3a47c76e4d4b1fb0af4ebad707a8326917f3b45a346ef345bba3e3",
+      "finished_at": "2026-10-31T16:27:38.172606+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-11138",
+      "key": "da0eac5774a508bb",
+      "started_at": "2026-10-31T16:27:38.178584+00:00",
+      "dockerfile_sha256": "4a76da8e8b094b05960c23c4951d9228c744712f9a8138586615dbb7d67bddee",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c6e0e6a5ef0c73aa04ccd1589e77b5742aefa44c3d6070267fc12a9692c42eb4",
+      "finished_at": "2026-10-31T16:29:32.388140+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-11141",
+      "key": "35d485ee808ad2f4",
+      "started_at": "2026-10-31T16:29:32.393438+00:00",
+      "dockerfile_sha256": "c54b128e185e8ac8fd0375153a42f6f22c86ca42b58e75e0eea2fd33604cc686",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:825d5665fb4408ad2f1f37827416af4c2639dfdaa90ce77bc8346e74a55876e2",
+      "finished_at": "2026-10-31T16:31:46.838649+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-11206",
+      "key": "c478b452cf75d264",
+      "started_at": "2026-10-31T16:31:46.844114+00:00",
+      "dockerfile_sha256": "0481cf8e3661a567c83da4364b4843c51806248e17dea9039d4e584f64694f86",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:319767247e6928e4c6f86ff2949f4a338d2b0e3a3c778a9ae9fedd39bae15f1b",
+      "finished_at": "2026-10-31T16:33:40.299688+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-11276",
+      "key": "e8efa2f360f37bcf",
+      "started_at": "2026-10-31T16:33:40.304318+00:00",
+      "dockerfile_sha256": "cc2f4b675c4b12cd816153d974455be6f9a8cf5e3766f8d38c64f02baf526c5c",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:e16b0b42a9fc6c224dfb3c5740d09060701dbfa2ed766f3b341c41d74127595b",
+      "finished_at": "2026-10-31T16:35:28.739951+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-11333",
+      "key": "3ef70ff2991dae0b",
+      "started_at": "2026-10-31T16:35:28.744704+00:00",
+      "dockerfile_sha256": "9997451978950f90ba97909e4ddbb8201a2248bf4fec7a883e833addaf719a71",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:d0db0f690ee3871f08fb196fe7ab0714fe5be7c6cbee1c47c0b56ac3a7c68601",
+      "finished_at": "2026-10-31T16:37:17.492224+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-11433",
+      "key": "bdc63f7133718d7a",
+      "started_at": "2026-10-31T16:37:17.497059+00:00",
+      "dockerfile_sha256": "3c8138d98b77148357a6418470f2daf2303f8ce7185744203ddc5596adbda5b6",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:518ee4d278abddbf3daa6dbfb47fcf763b6d7fc63258793c15af2416115b74b0",
+      "finished_at": "2026-10-31T16:38:35.302264+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-11477",
+      "key": "0eca15c99c32360e",
+      "started_at": "2026-10-31T16:38:35.306847+00:00",
+      "dockerfile_sha256": "608ddcb3e4dc3b69b08d7c61dc1332974a029ec9d0197de853b875d9fdc78c19",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:bde0121a911bbe3dc35d4890c3e480a0a0f5a24b9ceededce31b0b8a038d7a66",
+      "finished_at": "2026-10-31T16:41:25.537482+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-11490",
+      "key": "eaa1f555c6fa7296",
+      "started_at": "2026-10-31T16:41:25.543512+00:00",
+      "dockerfile_sha256": "cc2ba5a07db62eb196ea9b510a4bfd7d417235de33e7496d0965463ec19539cb",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:1de8d1b447ed0748cbf8c1fcaca0c1c5abb9227c052820773d3d9c3e1ba2b439",
+      "finished_at": "2026-10-31T16:42:43.720558+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-11728",
+      "key": "9b3f7ca3090b4613",
+      "started_at": "2026-10-31T16:42:43.726147+00:00",
+      "dockerfile_sha256": "c44f1181ca444f18f89c46cbac40b337ca3077eb64b013da8ffbdebcedeefe79",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:3f5c578df935c28a06310897436bc7f9ce7f402cdd3485e56f80a449dcde753f",
+      "finished_at": "2026-10-31T16:45:03.368316+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-11820",
+      "key": "9defd540f3fcbcec",
+      "started_at": "2026-10-31T16:45:03.373254+00:00",
+      "dockerfile_sha256": "c33ae46178089400bde6786106f4aae14dba83a31366df6fc0ed9af55d6c47c7",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:00780719b54a2457f048b03f361b39a39f91386ce6d61ddf15a6aea7fe8f0f5a",
+      "finished_at": "2026-10-31T16:46:16.320685+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-12050",
+      "key": "c7bc5ab5c3207bb6",
+      "started_at": "2026-10-31T16:46:16.325470+00:00",
+      "dockerfile_sha256": "3f9fbb61344e403947819a8c67834dcc98e95d73a512a6d2f70135e186a2572d",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:d92d841f57a2446e7805bfc148041cff0610010a916c1a7555750126b65f1b27",
+      "finished_at": "2026-10-31T16:48:04.666613+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-12276",
+      "key": "ec6f8561b9b82810",
+      "started_at": "2026-10-31T16:48:04.671397+00:00",
+      "dockerfile_sha256": "57454bd2bf1da0e1b332d8d347738a028e56eb134518e936f4f82718ccf9bfef",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:3f455c04df509705342d189f5e0286542d751888b39f19493af4f274b508ff8c",
+      "finished_at": "2026-10-31T16:49:53.289861+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-12308",
+      "key": "cdb872a1304202a7",
+      "started_at": "2026-10-31T16:49:53.296951+00:00",
+      "dockerfile_sha256": "2124fee0af72f5af435c9bccada1b956aa9d23d428ad0cbcf765a0d67f7755cd",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c0f856f6dee139b75c3696ff146d022b6bb9d2966e7622e391774bbf6885331c",
+      "finished_at": "2026-10-31T16:51:42.006632+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-12406",
+      "key": "cc095c722deff474",
+      "started_at": "2026-10-31T16:51:42.011729+00:00",
+      "dockerfile_sha256": "611569f1391c537e4714c53d2cb9be25ac4f5807ac5cb04b61a75151459dd8ca",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:0b9587593df026eaf0fb91be8e1da89823e50f23856ca968be60869bdce65aae",
+      "finished_at": "2026-10-31T16:53:25.091238+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-13109",
+      "key": "3f17988c60e95f3c",
+      "started_at": "2026-10-31T16:53:25.096420+00:00",
+      "dockerfile_sha256": "704dae6ff18b6d941c585b70e6728ac4863fa25387922314822a4f49b038f679",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:077524b4aa22a8ffdb5ad538e4b3a0cc4b6f6a3d7152e0d580c932982a49d072",
+      "finished_at": "2026-10-31T16:55:23.608402+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-13128",
+      "key": "5f624561310f58ef",
+      "started_at": "2026-10-31T16:55:23.615244+00:00",
+      "dockerfile_sha256": "9e3ef883ed1862161e78e1c6c109b7bbdc9c4bf52e941f9b1df6056d0cdde360",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:785a45c4d5d118e4c7a00b8d9a7f1db3786deebd0d85f90597717174c45fdc4e",
+      "finished_at": "2026-10-31T16:57:47.672456+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-13315",
+      "key": "374e4a4d2ed6aad1",
+      "started_at": "2026-10-31T16:57:47.677133+00:00",
+      "dockerfile_sha256": "ac62d82bab2f52e40602c5d302a307c71e5d69285338e41621cac81c6afefb9f",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c02be6c0390dd56e2fe334e087106ee23f57ba79194e4a8e4c797d8518d2e1ee",
+      "finished_at": "2026-10-31T16:59:41.098699+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "astropy__astropy-14369",
+      "key": "6b8f43a71a84eb6b",
+      "started_at": "2026-10-31T17:03:22.998960+00:00",
+      "dockerfile_sha256": "fb1b38642676eccc25ef323a9e6eb7f16b5b53a2a60019821698ac37266653b2",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:110c08d4a2209a276f9ddf72f55b0432c52f5e900a69878f2de693f08ed1d4f4",
+      "finished_at": "2026-10-31T17:04:46.359392+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-13363",
+      "key": "198cd39621ba6897",
+      "started_at": "2026-10-31T17:04:46.365082+00:00",
+      "dockerfile_sha256": "d48b9baf83c02252024dd6cd60bb4c30c67893b3f73353ace4eea11036955c95",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:93b669a19803f4856f4906979f75ec3bafc6b409ccb7cfdb7f4019127c959d12",
+      "finished_at": "2026-10-31T17:06:34.952591+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-13449",
+      "key": "d0f73acb3d95faf1",
+      "started_at": "2026-10-31T17:28:39.972449+00:00",
+      "dockerfile_sha256": "bae43cb447d6c3c10b0d1478953d936ea2bd2ab2d892393a2772f5ed2177b82c",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:cc8a6c6fe11ac3579eb9def0f356e862ba01d328989d04fbda00dd708d8c1d59",
+      "finished_at": "2026-10-31T17:31:30.147834+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-13516",
+      "key": "9de436029a9772b9",
+      "started_at": "2026-10-31T17:31:30.153124+00:00",
+      "dockerfile_sha256": "a9a545862648dcf9a06f99b0696e25d34e83fc15178002ec6509a9ea363490c6",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:33bc2bbcabddf8654f805def2d474c34e4797bae48a695220768c9010f611a8d",
+      "finished_at": "2026-10-31T17:32:48.000341+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-13925",
+      "key": "8924d563f10e0707",
+      "started_at": "2026-10-31T17:43:48.120781+00:00",
+      "dockerfile_sha256": "81fd5306cedbb63da45e159f3226f485971d285ce58ecd6fc4d920c596043aee",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:ee6c8f125005067de21fa0bd86548c53f0145f583a618723a27b248ea039ab9b",
+      "finished_at": "2026-10-31T17:47:23.852297+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-13933",
+      "key": "f964887a5b3da1bb",
+      "started_at": "2026-10-31T17:47:23.858040+00:00",
+      "dockerfile_sha256": "5b29ea7d9edff011091fc4101f9e661f92daca0649494bc15c9a5df687083891",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:dc3a911bc2d508eda941ca9aa693df4a347265d7fc5a458e90b2caa6318fbf45",
+      "finished_at": "2026-10-31T17:50:14.187968+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-14017",
+      "key": "f5a5cd954ffe5ffe",
+      "started_at": "2026-10-31T17:50:14.193305+00:00",
+      "dockerfile_sha256": "add8cb71e663f80102e3a518eead75c172702ef65896787c7ea123c25409e9e8",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:4cf84bbe4d1ddd3675e83664baf9e76051553ff1014f1097b3818dd70b728472",
+      "finished_at": "2026-10-31T17:52:33.219554+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-14053",
+      "key": "7de7c7faf4f1b878",
+      "started_at": "2026-10-31T17:52:33.224351+00:00",
+      "dockerfile_sha256": "477575fb7245363afe180a3be2052e3e207c18e5bdac0eb5aa9429e9c7c287b3",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:2cb20b6f7138e77b6c7e92514a32977c3f52388b129c56bd6c9360cd9b17a3bf",
+      "finished_at": "2026-10-31T17:54:06.723328+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-14238",
+      "key": "3ddaf4f4328ecfb8",
+      "started_at": "2026-10-31T17:54:06.728982+00:00",
+      "dockerfile_sha256": "b591355413c59e939719de88fb6bb6bac7cf33949dea16884e60d44a28a0f8ca",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:829634b4af0905cbbe7e89754e7ff82807b247593a5c8d9b9499259f87ac960e",
+      "finished_at": "2026-10-31T17:56:57.307619+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-14315",
+      "key": "886e770bb63e865d",
+      "started_at": "2026-10-31T17:56:57.313973+00:00",
+      "dockerfile_sha256": "f891e3777ecef1f1146c2a68712959307e36658aedc154425ffa616b2ac01635",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:daf6b8d146a70843dc37e6fb20c09554f41f176a083f3b9a55157bd43421f611",
+      "finished_at": "2026-10-31T17:58:19.963575+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-14855",
+      "key": "140cf12bbbd8bea4",
+      "started_at": "2026-10-31T17:58:19.968677+00:00",
+      "dockerfile_sha256": "ebda65e3a050e3afa52100a7503b564af40f6b1190d9e6bf926dc37619051bfd",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:227df55b2e5fbdf509a00c07e54dce10b2e529eeac123c974151938266cda2c0",
+      "finished_at": "2026-10-31T18:00:44.685547+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-15037",
+      "key": "8aa22c17750ce025",
+      "started_at": "2026-10-31T18:00:44.691688+00:00",
+      "dockerfile_sha256": "c1186cff1beaf7f1b40473c6017bc183e4536d52ce0ca8231818f16f2a8e9c53",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:6391ba8dd9389ea54f45fc2039d5c279c0a1ecd9a3b92943da5e8fee2926e04e",
+      "finished_at": "2026-10-31T18:10:54.345093+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-14999",
+      "key": "054fcdcf5edc4c0b",
+      "started_at": "2026-10-31T17:59:54.516191+00:00",
+      "dockerfile_sha256": "2c62dad0fd62f7ce4a970f330390cf630450ac463fa3fcd0459a05a8024a549a",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:68dafe9ea98f231f7fedb174b49634eda46819b75175d83d8d25d0953401477a",
+      "finished_at": "2026-10-31T18:11:51.151183+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-15128",
+      "key": "55fb469b05ac56ac",
+      "started_at": "2026-10-31T18:10:54.352725+00:00",
+      "dockerfile_sha256": "677013bf9ef72d5f1d27ec40d3a3836f216813e0685f0f3fbc39cf2d3f5d3274",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:4a5ef260d993dc308ceaa4957592bd5d93e0b2b7755a715f9ceeff3b220d23e7",
+      "finished_at": "2026-10-31T18:13:18.529620+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-15252",
+      "key": "21908f1e85180d75",
+      "started_at": "2026-10-31T18:11:51.155902+00:00",
+      "dockerfile_sha256": "7c952542ecc313bf234f1d20ba3583bf5cdbdbef07ef1afbec50e74f7456a4ae",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:3b09b60b103fbaa9eb2b3b691f34a545904980a6755706aa9d7b486a85e5d8bf",
+      "finished_at": "2026-10-31T18:13:44.649618+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-15277",
+      "key": "218e76f3bb472c19",
+      "started_at": "2026-10-31T18:13:18.535268+00:00",
+      "dockerfile_sha256": "cfe07ca4785c0027892ed5b6dae515dc4429301c9927971b4471a52c8efde554",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:eb3f28b9d8d96b02a22af0390bea3a23448b56132dad1ea73a6671085a9a9214",
+      "finished_at": "2026-10-31T18:14:56.619280+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-15278",
+      "key": "7770f380fd81f063",
+      "started_at": "2026-10-31T18:13:44.686041+00:00",
+      "dockerfile_sha256": "ddf042c83bc81c2100e406007cbacb5b7c4055d4e0930add476891a6d078f7f3",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:ed57b0fadca78c3a3646ae67b0b531ba26e435ea6484934bd5ae7f8b320ce21d",
+      "finished_at": "2026-10-31T18:16:10.023400+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-15368",
+      "key": "ef62b5946ab98777",
+      "started_at": "2026-10-31T18:14:56.624515+00:00",
+      "dockerfile_sha256": "3d7f915709a8334fa237f58918a3df07491d3a44168f6ebee0e7f1f95de916f9",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:12e80078af4cf78d757e871cb22f9cc63b978730416bd96bdac8b06ee1b66981",
+      "finished_at": "2026-10-31T18:17:26.485623+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-15467",
+      "key": "8e4f0eb1f7aa512c",
+      "started_at": "2026-10-31T18:16:10.029695+00:00",
+      "dockerfile_sha256": "886002dd407a9857c2fef3700ef0939c07a3aeb32e15c54edbdc7e3fd9aa183f",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:cbb17e8721d990a0818d417e729a1cc6768080cebd4b9372555062fe457228ff",
+      "finished_at": "2026-10-31T18:17:58.950586+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-13346",
+      "key": "22ed4c37e1582006",
+      "started_at": "2026-10-31T18:18:42.014362+00:00",
+      "dockerfile_sha256": "9c1ee751c4e4e2e204618b62e3c6d81c1586eb8f61465014ffcca6e539cad3aa",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:6d83890fb2e57bfa08658ca2de5495e021821ef44a5516a885bffd346ac4045f",
+      "finished_at": "2026-10-31T18:20:30.644595+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-13401",
+      "key": "43c05fed70ad5054",
+      "started_at": "2026-10-31T18:18:42.024673+00:00",
+      "dockerfile_sha256": "1faa04d45c82b523eda98bb559963890aef8239fe1d56abbcedb9088b4e3f3d7",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:0e887c545c5d715511c3b38bd6f2ec73547fdaeaed083a48e6974f66b6a6eb88",
+      "finished_at": "2026-10-31T18:21:01.534182+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-13410",
+      "key": "7459a1cd5e699c1c",
+      "started_at": "2026-10-31T18:20:30.658843+00:00",
+      "dockerfile_sha256": "c2621685b72be210a71b41e117b8fd2433f3b707e0ad5509ec81b3ce3ee58d11",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:366c7e9c5ebed09041db28e818a49edf5cf182387a3454a42c2dcca86d1dff63",
+      "finished_at": "2026-10-31T18:22:14.118531+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-15499",
+      "key": "d94ef772b443060a",
+      "started_at": "2026-10-31T18:22:14.159429+00:00",
+      "dockerfile_sha256": "54991fd3ba5b0b076499e3da171a2953a491346e1df9872d2ab7e13b9e7dd587",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:1b449bd404fe7b83ea326e72b0001d22eaa545d00aef40575723cc53a7c245e6",
+      "finished_at": "2026-10-31T18:22:15.048846+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-15987",
+      "key": "be5bc3fc4c49a95c",
+      "started_at": "2026-10-31T18:22:15.055048+00:00",
+      "dockerfile_sha256": "06f43b3d235f614c851795a1d5a26b72f4c3105569e5bbf16fb17a46e9318d01",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:a5c5740d70305153a9d57923fddd9cfe6fc46480f8044399db29f8c6d40f11c0",
+      "finished_at": "2026-10-31T18:22:15.849001+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-13670",
+      "key": "5ab119121c2ae40b",
+      "started_at": "2026-10-31T18:21:01.552008+00:00",
+      "dockerfile_sha256": "c84d0f9c74cee61e7c9fc50f9bf20466166679d550d481b2c94ff697e38e5096",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c64ff5ca7c7b5f1e55359c8950f4de6b28d0db7722db7f59ea523b6b6700b4b5",
+      "finished_at": "2026-10-31T18:24:01.658909+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-16082",
+      "key": "652c8b3fa5c05557",
+      "started_at": "2026-10-31T18:22:15.854649+00:00",
+      "dockerfile_sha256": "d21b915bff69b51cc1363608b57110365b25f8e8f9b6d632483cc6e42d331850",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:10346c142808b6e78e07be6a89ab27e6da84624551b32dc9a9b517e0b2c80e8b",
+      "finished_at": "2026-10-31T18:24:39.879272+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-16485",
+      "key": "af5592afd4ed37af",
+      "started_at": "2026-10-31T18:24:01.664939+00:00",
+      "dockerfile_sha256": "35d84f1122e1f552074a03bd0e5df70ac6f87822ca6ba9a4044d7acdb3ca5b40",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:18592b22089ae0eaa6a03f0ba3d7244aec4a82312af93f16715d2dd6575faa86",
+      "finished_at": "2026-10-31T18:26:52.255129+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-16527",
+      "key": "b423a9138b8aa224",
+      "started_at": "2026-10-31T18:24:39.884878+00:00",
+      "dockerfile_sha256": "93ba0a7d04b7c8796bedd2f1b0f9bf622ac9cbdf26a9a9cbffa299bb14004869",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:32488cecf4734742c0024114a30803ed9ab3e78063432e18b24e2c4b2e0cd058",
+      "finished_at": "2026-10-31T18:27:14.918443+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "matplotlib__matplotlib-20826",
+      "key": "4fe056b6c181d0c4",
+      "started_at": "2026-10-31T18:27:14.923605+00:00",
+      "dockerfile_sha256": "155046d698dbdc2e33cc2d0bb041ed5a0a0d035c283712c0108c9a86ea75b30f",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:e7602bfccc20c02a3a5c53e79497f1d0632cbda1a08bdb5df7f8c8d63472e7d2",
+      "finished_at": "2026-10-31T18:29:59.966951+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "django__django-16595",
+      "key": "d3adc68e4ae30824",
+      "started_at": "2026-10-31T18:26:52.261700+00:00",
+      "dockerfile_sha256": "881276f7bff05d9266cde8df0b0de055db0b226a7d38372a8e33f2cc33ee7842",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:d2470c1cce6491e0c40e0b79f5314d22019e0c9125c892e89ec2c314676c12d6",
+      "finished_at": "2026-10-31T18:30:03.074320+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "matplotlib__matplotlib-25332",
+      "key": "779bd5cf63830d9a",
+      "started_at": "2026-10-31T18:30:03.079400+00:00",
+      "dockerfile_sha256": "e48718c7b15e7d60fe73a3ed770b7b780c44fbaa65bbd77a716c2d7a7dac1b9f",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:1b404156517d25944739ab711a2e6057bb7b9079e82e0659635c4830677d65a0",
+      "finished_at": "2026-10-31T18:33:59.683801+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "matplotlib__matplotlib-24870",
+      "key": "66bf3f4b538a6b1b",
+      "started_at": "2026-10-31T18:29:59.980817+00:00",
+      "dockerfile_sha256": "163d2b238bb8cffa64bafd65da8e02858df65cd9e54a607967d972d12276b7e7",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:cccf90786fc681643ebccf9ffff8b2572cbf93dfffdf286e51fc1a4591e87897",
+      "finished_at": "2026-10-31T18:34:22.533894+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "matplotlib__matplotlib-25960",
+      "key": "37994fd7e9809296",
+      "started_at": "2026-10-31T18:33:59.688735+00:00",
+      "dockerfile_sha256": "635f2fe8f1739fc2c875348c955e3b31397a0ce6ed0633ced3053fa5755a06eb",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:1221fcd23de9f88b3b5a5cf6d2023f59c72309cdf0e4c1a0bbefcaf6c008011b",
+      "finished_at": "2026-10-31T18:37:40.452468+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "matplotlib__matplotlib-26466",
+      "key": "54a0f07663b5200f",
+      "started_at": "2026-10-31T18:34:22.539436+00:00",
+      "dockerfile_sha256": "36e41a47005f1f3722ba7aa9f864508325d53ba39bae7c2f5153897974a0b4e8",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:58eece1777fbb4c6a6b2486cb6409fda4e8e79e252fd5b7ea27e5568cd41370e",
+      "finished_at": "2026-10-31T18:38:38.982861+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "psf__requests-2317",
+      "key": "a633efdbdf31ea5e",
+      "started_at": "2026-10-31T18:37:40.457345+00:00",
+      "dockerfile_sha256": "4dd548a3f2e8564e24090bc1cdcb589dbc86592eb236cf6d06988325163f6116",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:296d2b9a78898068617722205890836d0e688e85896d7f0b5072742322222117",
+      "finished_at": "2026-10-31T18:40:04.553655+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "pydata__xarray-3151",
+      "key": "32d584e1ba87dc70",
+      "started_at": "2026-10-31T18:38:38.989158+00:00",
+      "dockerfile_sha256": "d3ce919b8db72ac91fe8c3398dbba0aa52764322097b6178c120797f4795a9e6",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:ac940fd97bbebc91fd404732f4a2d9a5928566a9da3d5c807c310c915a194c24",
+      "finished_at": "2026-10-31T18:41:38.657725+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "pydata__xarray-3305",
+      "key": "c76f85b7cf6b8156",
+      "started_at": "2026-10-31T18:40:04.558608+00:00",
+      "dockerfile_sha256": "536b6ea78f3d9c72d86509bc7a460b2c52f3a04afa6a7d4d6123fc794d0c0a15",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:1319cfceb692aa75546fc6a62134c434342d9827e16afb9ea86f981bf4d8bd5a",
+      "finished_at": "2026-10-31T18:42:54.709732+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "pydata__xarray-4687",
+      "key": "a97274e1f33215f2",
+      "started_at": "2026-10-31T18:42:54.714786+00:00",
+      "dockerfile_sha256": "e6bcaed3b1ef384c9e694e1c41c08e68b1121f4d25f0a9b66b7920b41712f1c9",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:bdde70810c282f9729f49aece76e6c23b13c7a3247714f8cb9bea2421f26150c",
+      "finished_at": "2026-10-31T18:45:54.597922+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "pydata__xarray-4629",
+      "key": "02dc93438479b73e",
+      "started_at": "2026-10-31T18:41:38.663923+00:00",
+      "dockerfile_sha256": "575c70f42d15b5040e7033255ce1818ce57a4961f9bae68947110482485e505b",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:4a1072350c9ba4a4a0ec4c21a79b4f8e65d9f8223d2eb1ef4630f9876333c3da",
+      "finished_at": "2026-10-31T18:45:55.249555+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "pydata__xarray-6938",
+      "key": "a3b95b5dac393326",
+      "started_at": "2026-10-31T18:45:54.604636+00:00",
+      "dockerfile_sha256": "8162b2543c426b8e6f52a618ba25b7eadaa511f32f7f1ad2868aa8e5405cd3b5",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:75614d3dd4ddfcb1b976e59fbf66d869cfb338c748e48162d493bce80a1313cd",
+      "finished_at": "2026-10-31T18:49:30.776247+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "pylint-dev__pylint-6386",
+      "key": "66b43589501ccb52",
+      "started_at": "2026-10-31T18:49:30.782216+00:00",
+      "dockerfile_sha256": "4ca2b8dfa903ea201e97c851645a4ba86215cb516d3ea1e19b07cc0e3e39cef0",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:eef5c98db01884b9563742ed75714d2e1748513837289f26f3b4256bc8b78747",
+      "finished_at": "2026-10-31T18:51:29.366266+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "pylint-dev__pylint-6903",
+      "key": "36669e1a18867ffe",
+      "started_at": "2026-10-31T18:51:29.372015+00:00",
+      "dockerfile_sha256": "6cbd4c503acb3460a6df463c736af20b418a2231fc1a54324722f8ce7d51097e",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:27bfa5d4d1a642bc5b935db9d8fb491a01fb477b6f382406ef64b5e84bd69d0d",
+      "finished_at": "2026-10-31T18:52:52.060432+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "pytest-dev__pytest-10051",
+      "key": "3657054de9a33d35",
+      "started_at": "2026-10-31T18:52:52.065707+00:00",
+      "dockerfile_sha256": "5cd710b7b02a7ef9ebd5529c4f581220d62fdd4a7b7504dd6954b32a8fb697e8",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:829bb51c410a7ef8087b3b33063a3780681d294cb205ac11a97cb1f1874dc4d8",
+      "finished_at": "2026-10-31T18:55:16.354683+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "pytest-dev__pytest-10081",
+      "key": "9800a5e060867b4a",
+      "started_at": "2026-10-31T18:55:16.360325+00:00",
+      "dockerfile_sha256": "35d8791bcf21ee121fb206a19d898788e2714417d0177f2b7e9b5cca2a688eb0",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:fcd6dcd653211ae3f442e4dc42fc6dd07f7d5fb70743c3ff520d3b356392625a",
+      "finished_at": "2026-10-31T18:57:05.533706+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "pylint-dev__pylint-4551",
+      "key": "ae5734ad566554f1",
+      "started_at": "2026-10-31T18:57:05.777499+00:00",
+      "dockerfile_sha256": "c9d12d3223efd41efcad83356877118fdcd606dead7d49cde1d147e23e7e320b",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:9a364a7af500c6ce5f7cb401321d3ea29e46fb1a60b1fefc513771751f9c1f46",
+      "finished_at": "2026-10-31T18:58:59.715181+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "pytest-dev__pytest-5840",
+      "key": "e2ffb08a8fb9f9c4",
+      "started_at": "2026-10-31T18:57:05.540318+00:00",
+      "dockerfile_sha256": "e97cee7c8ef837035353fcdb5ee1c5360cfe97ad8065d290b27c292010830832",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:1c13a2b26875eafee2a62dcbf4e5cf20df8e86c718c3b98e42f6ab0d93350d30",
+      "finished_at": "2026-10-31T18:59:24.852964+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "pytest-dev__pytest-7324",
+      "key": "7f48a49a94456494",
+      "started_at": "2026-10-31T18:58:59.728061+00:00",
+      "dockerfile_sha256": "a505a8a3fcc8a9bac3d36ebf755510bfc28ec17479c75bff74b2e4b436901216",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:a5dc1c0202f523bac9c7c61eef3d361a34540d9f46e6663f39ffe79a81070ac8",
+      "finished_at": "2026-10-31T19:00:54.082323+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "pytest-dev__pytest-7521",
+      "key": "61687d342d589ae0",
+      "started_at": "2026-10-31T18:59:24.858408+00:00",
+      "dockerfile_sha256": "be4a42523ae800baf266941f3f4de7d7a2f40da4d5ace69f2122949dce9483a5",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:df3926d005c6bf927f0be102cf39bbe0cbdd2d37a3540da44dd452f7d2c6d996",
+      "finished_at": "2026-10-31T19:01:16.258123+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "pytest-dev__pytest-8399",
+      "key": "6cbd71cf282a92c8",
+      "started_at": "2026-10-31T19:00:54.088376+00:00",
+      "dockerfile_sha256": "4c91354ecc8da6f515377dacc3c5ae1694c11db58762392aa2408fc87eeca219",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c1c2754e8594be688e69cf84c47880161119e3c653d1d844ec0014f0c09e95d4",
+      "finished_at": "2026-10-31T19:02:12.752145+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "scikit-learn__scikit-learn-12973",
+      "key": "bdad82cff067c5c3",
+      "started_at": "2026-10-31T19:01:16.264056+00:00",
+      "dockerfile_sha256": "540fe1db1253a98ee34b9f096fd246f36dc3c93deee61f85dd0dcca26919b828",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:0b30bc0a200d341eb557682e7b6b4d8ab7f65b687317649b4edbf0d9ed37b94b",
+      "finished_at": "2026-10-31T19:03:10.687179+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "scikit-learn__scikit-learn-13135",
+      "key": "c9b9f5c504bbe993",
+      "started_at": "2026-10-31T19:02:12.757316+00:00",
+      "dockerfile_sha256": "9198e22458eb86069008ff58ff0b34b4da740c5b6de3da928a912b577392f34d",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:0626b22c77ff3e383774e7ac3289e7340147598dd9ea5738d48729ac231d37db",
+      "finished_at": "2026-10-31T19:03:52.072497+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "scikit-learn__scikit-learn-13142",
+      "key": "e3a7dcf967dcbc2e",
+      "started_at": "2026-10-31T19:03:10.692857+00:00",
+      "dockerfile_sha256": "ba600827dc6a6e0d2a2a49e9398e455b344995b8217580668dddc7e8d91d427a",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:3a6bffe44c6c33ad184ad8f90b50f507d9abc7becb68d2243b94ed66922a11bc",
+      "finished_at": "2026-10-31T19:05:30.499145+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "scikit-learn__scikit-learn-14087",
+      "key": "cc7a328278d77ae2",
+      "started_at": "2026-10-31T19:03:52.081085+00:00",
+      "dockerfile_sha256": "2778374bcfe89b2c7bfb40f65050bb916e2eee46c6b03bcb71d5c71796912acc",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:9091a0f954e8dcee7622d9c142f7b60847350c9107eba864cb9f96b921974ff9",
+      "finished_at": "2026-10-31T19:06:12.072026+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "scikit-learn__scikit-learn-15100",
+      "key": "131416d5b088b67a",
+      "started_at": "2026-10-31T19:05:30.505353+00:00",
+      "dockerfile_sha256": "83372fe870ecbad688af7464f29040aa0bcf973277e7c6c9748b889055decd85",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:63556b22a911fefc002802ed4f4a428532f4f7031ea6e24aa630aa6ec8812c31",
+      "finished_at": "2026-10-31T19:07:50.606822+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "scikit-learn__scikit-learn-25931",
+      "key": "46131c978402c015",
+      "started_at": "2026-10-31T19:06:12.078706+00:00",
+      "dockerfile_sha256": "26eb9ca05e068bd49ac97c5a4484acd7a0f7fa94a650785bfee36d280f67393a",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:3171e1ef131de43b8cc428391f83275f84b1e27b1399a7aa8380dde7fda4809e",
+      "finished_at": "2026-10-31T19:08:31.481775+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "scikit-learn__scikit-learn-26194",
+      "key": "ad885dce35a069eb",
+      "started_at": "2026-10-31T19:07:50.612103+00:00",
+      "dockerfile_sha256": "f312410a58d10f5f08f5f44386cdac52e61f626cc4c306698e8f92433f1bf042",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:62a9471b9e47fed66fe857c3c34f6480a7a5e7e842a7246d5ce24f63df9ec4c7",
+      "finished_at": "2026-10-31T19:10:45.614717+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sphinx-doc__sphinx-11445",
+      "key": "b8b2ec4d623fb6db",
+      "started_at": "2026-10-31T19:08:31.487577+00:00",
+      "dockerfile_sha256": "1bb4c661855162866cde3912b08fbdccb2f8386ee3e3bccfaf14677fb974cd4c",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:69b965fa2f5d633ee686f5af4f194c422dc507ae81432a767e8a0a6b65c7a376",
+      "finished_at": "2026-10-31T19:10:55.719424+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sphinx-doc__sphinx-7757",
+      "key": "28d72607e05e22d7",
+      "started_at": "2026-10-31T19:10:55.724998+00:00",
+      "dockerfile_sha256": "7d611411580ed7b58bb3884ef0e4b09ec7b546d5621fe85ebfee5da236f8434f",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:f7e98afa5165a347bc7c953758b1582a27e791611cfa40ff1dff1220700f4358",
+      "finished_at": "2026-10-31T19:12:44.858341+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sphinx-doc__sphinx-7440",
+      "key": "1187e83ee487acb1",
+      "started_at": "2026-10-31T19:10:45.619769+00:00",
+      "dockerfile_sha256": "edb773d6e657c9da99b5a08d0034f8ad0d257c225895c30250c62eef81fa7517",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:f84fa7914540364f1f6ba10cafbc0034436fc336001fe9997de32c9f54497a54",
+      "finished_at": "2026-10-31T19:14:32.254718+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sphinx-doc__sphinx-8721",
+      "key": "1bb0714a9165652b",
+      "started_at": "2026-10-31T19:12:44.863513+00:00",
+      "dockerfile_sha256": "f7f8ebdbb935dd25d36cb33e253065ccdc01dc7fff59e3e38d25fd5d31aea028",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:fd123ebb2dc252cf976c88c20d382d1cf2424d0ef469b3ecd5bafd4131461ef1",
+      "finished_at": "2026-10-31T19:15:09.375154+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sphinx-doc__sphinx-9229",
+      "key": "cd19d7ac8c4f34f5",
+      "started_at": "2026-10-31T19:14:32.260799+00:00",
+      "dockerfile_sha256": "2de2f8e822ec7ba47df37e2a3caa026e76d78ed88cd360cbded6ca9c1b14f6f1",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:ab81e843d3b6c111b7a1188e80c548f646b54968a382e05dc38b1d40ff1d9318",
+      "finished_at": "2026-10-31T19:16:30.966641+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sphinx-doc__sphinx-9230",
+      "key": "ef2a442f7640a4de",
+      "started_at": "2026-10-31T19:15:09.381023+00:00",
+      "dockerfile_sha256": "0f1dffc8301dcdd104fcdbf48cf98568c550b7313679dac4c1d823a956e36815",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:712ef829a0163157ad6adacafe412bee822f7465ad76db684cbb32edf2668291",
+      "finished_at": "2026-10-31T19:17:59.857100+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sphinx-doc__sphinx-9698",
+      "key": "9aa4cb1370540983",
+      "started_at": "2026-10-31T19:16:30.972533+00:00",
+      "dockerfile_sha256": "9c5c3ef8eeb60034faa0d5d8c13fe423d4d36d8bcd83c2018ad57f458503c1a2",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:42926a30b7c70c39367d30b6c15b660c8c3ef3f04f877f8c8f4eb6e6de003d7c",
+      "finished_at": "2026-10-31T19:18:44.872977+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sympy__sympy-13372",
+      "key": "43465cc2cba53dde",
+      "started_at": "2026-10-31T19:17:59.863289+00:00",
+      "dockerfile_sha256": "c2324310c63424558874ec9d719fee6e084ba143b8bb963be6e25373fbb174b8",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:fd5aaded8393561a7e40c4d6c74eab140362fb8209da0c29f4d1a52fd9bcbc36",
+      "finished_at": "2026-10-31T19:19:48.732112+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sympy__sympy-13480",
+      "key": "ee2b9c191aa0f6c3",
+      "started_at": "2026-10-31T19:18:44.880743+00:00",
+      "dockerfile_sha256": "a89f8cee15564f81f3dd369966c3b79e8a9663ec26b267fc90a0e9ee03644b42",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:752b1508f1f062257a143ad4b97276fb47cf226a90be99d82b2b3fe45ce87e62",
+      "finished_at": "2026-10-31T19:20:38.866750+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sympy__sympy-14531",
+      "key": "32236ff4212b9364",
+      "started_at": "2026-10-31T19:19:48.739110+00:00",
+      "dockerfile_sha256": "3b51331058a2199c61ee79190ae32b3c29d9f78a92b3276dca0de411e6b8cb7c",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:9bfa2805f87991fdb83c6b8bda2a46727b2913cbcc0b63c862182e996a112806",
+      "finished_at": "2026-10-31T19:21:12.041611+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sympy__sympy-15017",
+      "key": "2e25b07bed5e2cfe",
+      "started_at": "2026-10-31T19:20:38.873409+00:00",
+      "dockerfile_sha256": "d009fcba79fb0b20533bc6875c16cc048400dba197dedfce9999432a10867925",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:235806b231a8bdbd16f65ec06b6628e09ce427a809bc356d5d4111351ec863c6",
+      "finished_at": "2026-10-31T19:21:56.978427+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sympy__sympy-16450",
+      "key": "4c33310d0e280116",
+      "started_at": "2026-10-31T19:21:12.048420+00:00",
+      "dockerfile_sha256": "a0c3e149876c7c372ff690b0c4da1bfd25ad12023c13f2d1b41d07bb1d644dd0",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:2c467475032086e8fc33f3e65cd4e6c6c7e57d85a5e5c9ec5ade27547aea7150",
+      "finished_at": "2026-10-31T19:22:30.422139+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sympy__sympy-18199",
+      "key": "c3f59fcd066e7110",
+      "started_at": "2026-10-31T19:22:30.428743+00:00",
+      "dockerfile_sha256": "7f2978c4ea7ff61d4c7c2221c387fe813c0e095aeec5e2ffc4b54a322d3a4a62",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c77469b7df1b33267a7e28d5bf907432908e51ca1489db3de95595922e77d0a9",
+      "finished_at": "2026-10-31T19:24:45.047181+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sympy__sympy-16597",
+      "key": "6aff864240f46bf7",
+      "started_at": "2026-10-31T19:21:56.985942+00:00",
+      "dockerfile_sha256": "116ea98782b84bd69d37231683a022c55dfad4ca445bd372c2cd8d1f82dd404a",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:4caea93bc738f6fb44af0506dadbad84c15b995cc3d063391b981999fd2add60",
+      "finished_at": "2026-10-31T19:25:14.333544+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sympy__sympy-19495",
+      "key": "b52adfe4e4e7a1ad",
+      "started_at": "2026-10-31T19:24:45.066533+00:00",
+      "dockerfile_sha256": "6c2d0fee517cac047ddbea9066aa93780c7f9db31c992632948b45a69a968c6a",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:0323c4826b562d46bacea079fa9a1052b2d1c79944007c184eb5fb58cf40315d",
+      "finished_at": "2026-10-31T19:26:29.816356+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sympy__sympy-20801",
+      "key": "b5eee8a679bb3e2c",
+      "started_at": "2026-10-31T19:25:14.341137+00:00",
+      "dockerfile_sha256": "8ebac8e0d1d8bf48bceccc5270c2a5609de00d771fc44b68a75444fae062e89a",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:31c142735aa9c89ccbf20ef4f24cc870a42c5b928fa13864e33f2c2c27eae226",
+      "finished_at": "2026-10-31T19:27:04.738890+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sympy__sympy-21379",
+      "key": "c12d6214444ef5b2",
+      "started_at": "2026-10-31T19:26:29.822128+00:00",
+      "dockerfile_sha256": "05f56f65695d97cf0028fd10ce0d401b6af8d019e839cb7e4a17c543a29a9b79",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:08ab1389d4e4c2537f389832b7a6c503810ef5a744d1f561c40f37df81b47e47",
+      "finished_at": "2026-10-31T19:28:14.642280+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sympy__sympy-21847",
+      "key": "3a8036b80b6394e9",
+      "started_at": "2026-10-31T19:27:04.749311+00:00",
+      "dockerfile_sha256": "d34709a2920e9b2388f48ba2ec93d3c06443e076c435b93b22a6532e3603be00",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:d49281f0d3cf6bec8cbda7e1bb28f63cbac4507eb0510ab1d2ae8241ed9d1d6c",
+      "finished_at": "2026-10-31T19:28:24.606252+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sympy__sympy-22456",
+      "key": "f4c00cb93be054b8",
+      "started_at": "2026-10-31T19:28:14.648841+00:00",
+      "dockerfile_sha256": "b8b6db61ae12c84e89bd8cba3a6387aab1cb5896bc37320bd7d24f40af2db3a5",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:03be897ca6a5308fdd8c98271a2fca2a39401d99b477539f69555b7477c0a8ea",
+      "finished_at": "2026-10-31T19:29:34.005896+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sympy__sympy-23413",
+      "key": "110f9dfc8b40bbc6",
+      "started_at": "2026-10-31T19:28:24.612785+00:00",
+      "dockerfile_sha256": "10b35d56ea4d0798ce9ec23e24b25b0531f3955c3fcf04004a7510ae0a28f59e",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:62e2c9c1f6b85758318aacd0c36ca316f2491e6837073eb5a16eef1afbaaca87",
+      "finished_at": "2026-10-31T19:30:15.301632+00:00"
+    },
+    {
+      "benchmark": "swebench100",
+      "task": "sympy__sympy-24443",
+      "key": "4af4e4e9a650fc81",
+      "started_at": "2026-10-31T19:29:34.012290+00:00",
+      "dockerfile_sha256": "281346119e9552ff7300d3ef76245c681ab069104a2c8748cffa1d5e082aa270",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:aec685bc3405c9de0fadfd8055e3b543e064771d4710af6f7d7ee95aeb3e2be5",
+      "finished_at": "2026-10-31T19:30:53.490236+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "amuse-install",
+      "key": "c63334053907de1e",
+      "started_at": "2026-10-31T19:30:53.510371+00:00",
+      "dockerfile_sha256": "f719b387def3e378d609c13ce8f9310dc98f4917026959ea6fa9539c4cb6944f",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:48a593910648af5df400a12afb99f1f40af38675d7941258fc8173cf4658b575",
+      "finished_at": "2026-10-31T19:32:17.827911+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "acl-permissions-inheritance",
+      "key": "690e895e2a2bbe4e",
+      "started_at": "2026-10-31T19:30:53.510944+00:00",
+      "dockerfile_sha256": "2504f8880ddf4fba894388c6d2dce71580be0487fdc114ab3296c723a411a3b6",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:a6520af1fe43df9a70111ba43e751156c429d924de112db29dfc06c8634ebee4",
+      "finished_at": "2026-10-31T19:32:58.802279+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "api-endpoint-permission-canonicalizer",
+      "key": "ff502288337008b0",
+      "started_at": "2026-10-31T19:32:58.810255+00:00",
+      "dockerfile_sha256": "269022a413d93027a3be84f33e40354d49e0e3da4f68c0cee1171df5d098e0e7",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:e1ddd0a2f7ae1f9e99d2157964a8ad367a65cff4c19fad984bd9292f449ab2c6",
+      "finished_at": "2026-10-31T19:33:25.639002+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "application-debug",
+      "key": "6f3a509643921fe8",
+      "started_at": "2026-10-31T19:33:25.645518+00:00",
+      "dockerfile_sha256": "c26ffd1585515a33fb9b36459a1c4152b70c2ba3b5e5cd180f90ef66287f9221",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:0ff56014288f9702fe2396b4202172798227a19c4aa35d680bb6b7a359c717cd",
+      "finished_at": "2026-10-31T19:33:57.416105+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "anomaly-detection-ranking",
+      "key": "5774d382ac228de7",
+      "started_at": "2026-10-31T19:32:17.837434+00:00",
+      "dockerfile_sha256": "80f82a01c5725f7e6ab2d19a7c6cd14b01532cf3482f3fc09bc32e5cda5374aa",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:18def606128ed1eda394b9cf17fdb737126744d637b459be1e384c8883bff701",
+      "finished_at": "2026-10-31T19:34:22.725093+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "auth_token_race_condition",
+      "key": "f81ee27403aebc07",
+      "started_at": "2026-10-31T19:33:57.422321+00:00",
+      "dockerfile_sha256": "fa84f6f5d5a1d6e0b31b39660cab7c7655ea9f91ff00ab2e6d5b3da2361bd312",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:eccc9ea51699d3e3ffa609f7d69bf941f5cbb0e323af436f773457746128b001",
+      "finished_at": "2026-10-31T19:34:50.105274+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "bandit-delayed-feedback",
+      "key": "86265ce505c53b72",
+      "started_at": "2026-10-31T19:34:22.731303+00:00",
+      "dockerfile_sha256": "a6e46542a8b212ee7bcaa7ad1dd5b727e770bd3bb606c14ba4abfc1b4e57005a",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:03c9bd257cc7be8ace4ddbdcca67fd72d4e41656e537bd931b952b30905d4c1f",
+      "finished_at": "2026-10-31T19:35:25.447609+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "bash-log-processor-fix",
+      "key": "1bafc80057203f89",
+      "started_at": "2026-10-31T19:34:50.111632+00:00",
+      "dockerfile_sha256": "47a9fd67df275397d4b41bbe67b70716830d44c704247722850af13754b65162",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:9439dbea910a3f137217262a0eb1d6994dff3154eac59be55a87cdae8d2dd690",
+      "finished_at": "2026-10-31T19:36:03.323192+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "basic-message-queue",
+      "key": "228c53e1c3331103",
+      "started_at": "2026-10-31T19:35:25.453545+00:00",
+      "dockerfile_sha256": "50f5600bd18cae0e4f9dbf9295abb11f435fe10bffa666a72229c9667fdcbadb",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:ec0c9951d3df3ec2c3d24cf4d81cf5cf59c8e01573e66706fe7c2fb18464b4aa",
+      "finished_at": "2026-10-31T19:36:33.669509+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "battery-charging-optimization",
+      "key": "176d07df9ce1871c",
+      "started_at": "2026-10-31T19:36:03.331530+00:00",
+      "dockerfile_sha256": "b682472b1c168ad39dedd2474796aa97fac2c26061dac1a04ceecca8bd50ccfb",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:459f92adbb08f60dc056a2243db9364d6c733ff86d5a30562f6342bab365c85c",
+      "finished_at": "2026-10-31T19:37:11.279670+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "bloom-filter-cache-penetration-prevention",
+      "key": "61596fa68a2c0356",
+      "started_at": "2026-10-31T19:36:33.676287+00:00",
+      "dockerfile_sha256": "d9a6e8f100bb7831d72efef0609fe918d3da57eb87901c57e36b001cdbbf4ad8",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c4734c14f3b1fe20163fd440b85f20392ef1942eb58b03e902cd20048b8d3ce4",
+      "finished_at": "2026-10-31T19:37:46.942534+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "book-portfolio-analysis",
+      "key": "cae20b17667f1c17",
+      "started_at": "2026-10-31T19:37:11.286213+00:00",
+      "dockerfile_sha256": "10f73c48e37bbc2bec3d83e9db11736afe184cc63fb6c420d9dc8d3dcdf40b6d",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:f5d4d7875301df60213f1b47059fc7a1205f0727cc972a146b4d46c2934df8a2",
+      "finished_at": "2026-10-31T19:38:24.795520+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "bracket-sequence-restoration",
+      "key": "a597d95ae3c52022",
+      "started_at": "2026-10-31T19:37:46.950254+00:00",
+      "dockerfile_sha256": "6a2bdb83963d26f04b8d2e7a7153948890fc5a1e633043d7dd764d60f87bf6ca",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:fae5cd4ef30a5208bf397d63abf8d2f631ad84c23b312f67fda81a0e08ea1d5e",
+      "finished_at": "2026-10-31T19:38:50.872482+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "broken-python",
+      "key": "eab7b165b563b3b0",
+      "started_at": "2026-10-31T19:38:50.884344+00:00",
+      "dockerfile_sha256": "50645e2936b5a0c7f968becac4c5f6912cd74859791e683da94370003c74ea1d",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:dd1a45405937f3e4fd30a2d26f9078aaa3704343a34801aaa684922e8df4137a",
+      "finished_at": "2026-10-31T19:39:18.029748+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "build-merkle-tree-cli-sha512",
+      "key": "d53b4792c9578834",
+      "started_at": "2026-10-31T19:39:18.037389+00:00",
+      "dockerfile_sha256": "a320c29e9714b8974b04563bafedbecd0a60901b12e0c6fca727a3a78d850ae4",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:1748977b6ec2abe2231f2d0d911a7e6fc333aa4f04f16b15239c444ca5ac20af",
+      "finished_at": "2026-10-31T19:39:55.781400+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "breast-cancer-mlflow",
+      "key": "7ece774829a29342",
+      "started_at": "2026-10-31T19:38:24.806070+00:00",
+      "dockerfile_sha256": "02440e1860d35ae8a9837d807b5f916720998f6ef1e01133e191f04e9b20caae",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:2f40bf17ca27aa6a2f78aff3262ae34ecfcea961353eecc611a8e122338537c7",
+      "finished_at": "2026-10-31T19:40:09.318152+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "build-system-task-ordering",
+      "key": "f20a51e870d10969",
+      "started_at": "2026-10-31T19:39:55.790715+00:00",
+      "dockerfile_sha256": "0b97664cc33da7667c1efd692496a512db6d24a907154a84b75ca7eb13b45394",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:fb715f7a09c51a6f7366ca5581dee19a3aa23e18f9b0ae3a62793db649103781",
+      "finished_at": "2026-10-31T19:40:18.055878+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "chained-forensic-extraction_20260101_011957",
+      "key": "bb7b4bc9617e5ded",
+      "started_at": "2026-10-31T19:40:18.067331+00:00",
+      "dockerfile_sha256": "3400dfbc10c8f9d8ca17fd25c409aa8922df1b2dadea1e0cc60f4b9dc397ddec",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:bd9b71354782e58ba8bf79f863d48ff6adfaadf7e36e3602b9d53969edc94c72",
+      "finished_at": "2026-10-31T19:40:50.307697+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "california-housing-api",
+      "key": "4a9f1c5cbc22ef49",
+      "started_at": "2026-10-31T19:40:09.325164+00:00",
+      "dockerfile_sha256": "3748168510f08fa1ba9774e61d4eabeffc3bc0d1c1a666a9964c5b6c1b174919",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:77c25eed6e75ff62a00e870dd54d27c1a3f3d2b5d4d6d648017ca2a3b52cf0ea",
+      "finished_at": "2026-10-31T19:41:17.751933+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "container-registry-optimization",
+      "key": "c071f6d7b4b75f6f",
+      "started_at": "2026-10-31T19:41:17.760909+00:00",
+      "dockerfile_sha256": "6fe745d0f93312f718865966847929ea22a8b66e6b30761899104ca208bb1499",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:05c65d98c5add9d100cffe7c5fd11334d500f08489ab160b7dca9cfca88daf27",
+      "finished_at": "2026-10-31T19:41:35.119389+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "competitive-programming-solver",
+      "key": "22bc4eef8224f617",
+      "started_at": "2026-10-31T19:40:50.316353+00:00",
+      "dockerfile_sha256": "a4a6ecd93cff3f96e90edda7091d29ea53feae20e61ab63c71e05c17b3c40d35",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:738aba6f7a313bce788f9ebf8f3b512bfd2075e08917b26f31bd9afd8f8abde2",
+      "finished_at": "2026-10-31T19:42:04.839830+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "convolutional-layers",
+      "key": "cda25fe9f3f1a7c5",
+      "started_at": "2026-10-31T19:41:35.128360+00:00",
+      "dockerfile_sha256": "3166c07afa98b25f8b084cb335836c7b9febd0467bbb59303457fe5c4465fc60",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c8d5e4323914b754299379e831b2070c9a0dc83784183e473722dfc126f5899f",
+      "finished_at": "2026-10-31T19:42:08.594025+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "cosign-keyless-signing",
+      "key": "23d9dfbc0e419f55",
+      "started_at": "2026-10-31T19:42:08.602151+00:00",
+      "dockerfile_sha256": "6016cf8463e6ef89aa8c82d84b05c7dbb3f63148979756058be1b32374c4eb6d",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:573426b06935854911ed78198c5a4634179806b254cf0433119ab298fab48908",
+      "finished_at": "2026-10-31T19:42:41.402627+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "corrupted-filesystem-recovery",
+      "key": "fb312e6422d486ae",
+      "started_at": "2026-10-31T19:42:04.848786+00:00",
+      "dockerfile_sha256": "ba9576e926ac29b251e00ce3b0dbc5ee42af074f3cacf71ed80075980eb1b34c",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:ae3ea50ec250e47539409a27108e56a0a105c393fd458c5ff76016a1f9887d08",
+      "finished_at": "2026-10-31T19:43:24.667507+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "cryptographic-protocol-verifier",
+      "key": "b31044081e3a7334",
+      "started_at": "2026-10-31T19:43:24.675384+00:00",
+      "dockerfile_sha256": "6ae2e32663dfbd6c6f6dc4a6c6b60337ae85e8eb189c4115445a7266062b469e",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:0cf20e536b080729711372f8229e718733a2fe591535a5405850f2ea67fc7886",
+      "finished_at": "2026-10-31T19:43:57.534451+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "cpp-daemon-sighup-segfault",
+      "key": "7383f028ed28c814",
+      "started_at": "2026-10-31T19:42:41.411993+00:00",
+      "dockerfile_sha256": "467c6c4b841977869a51e01512759607f62646278b257c6c411cddf329553f10",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:73ac5236492b537142fed857704735e049edfc2b846c10ace4b43b41696fb1ae",
+      "finished_at": "2026-10-31T19:44:27.274292+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "csv-json-jsonl-merger",
+      "key": "9a163e6555a86f62",
+      "started_at": "2026-10-31T19:43:57.545747+00:00",
+      "dockerfile_sha256": "564c49268cd36330d5ec2d6d81211f3e308d13b79d46af195f6779a5e357bb90",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:ea911ccd050b5a8d5b93a9a8088f64929d3f96d404b457e70e4afee48f3cbb89",
+      "finished_at": "2026-10-31T19:44:45.794337+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "db-migration-local-storage",
+      "key": "d0eb5d34f26e6525",
+      "started_at": "2026-10-31T19:44:27.280524+00:00",
+      "dockerfile_sha256": "bebc2a2889bded5b7ef0e3bda5867dd60b8128843e2e865a7d96efeef4a3347e",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:f919cf884ec533558c236062082fda76d83e05aa21f17507341822550b169efd",
+      "finished_at": "2026-10-31T19:45:04.699233+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "distributed-test-execution-scheduler",
+      "key": "335d3f5d1d25c5be",
+      "started_at": "2026-10-31T19:44:45.800633+00:00",
+      "dockerfile_sha256": "ec77e4c7c5a461a426d4c01d22aa95d09819c3a60eadd2df2df36b82167df43f",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c822ba8540828bd1562d1e3c26c97bff3a2a5b98fe8edd5d08b657db67f291b9",
+      "finished_at": "2026-10-31T19:45:12.850873+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "ekf-localization",
+      "key": "bcb9850f6d560176",
+      "started_at": "2026-10-31T19:45:04.710068+00:00",
+      "dockerfile_sha256": "57558f5d4b73b33bcd67cc2614a7d0cb36d9697a1db450cc53bcf13c6b309b57",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:127c8d039e93a58b57a72e8c64af5367954bc955f7c7993766927bbe31afa1d3",
+      "finished_at": "2026-10-31T19:45:47.699156+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "etl_checkpoint_resume_bug",
+      "key": "493e28c4c3f29108",
+      "started_at": "2026-10-31T19:45:12.858277+00:00",
+      "dockerfile_sha256": "a7dc5f788cbf5ef29060e628482fd0bbad1de484d08cf15d09f7d3c8838d6b90",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:57056413938e52b0c0d28b36d846943210e3406932ac06a8bb2d122cfc5ee709",
+      "finished_at": "2026-10-31T19:46:47.175286+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "fix_async_worker_queue",
+      "key": "18e65ca71760626a",
+      "started_at": "2026-10-31T19:46:47.182613+00:00",
+      "dockerfile_sha256": "276cdc82f8f71266d2b05f8db6204d316bd702e73b646b86b948e3593d91de42",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:279a115bf8fd2e44c960e57be7fb1ffdce01b2f9d852830980e39ef8de297e7f",
+      "finished_at": "2026-10-31T19:47:19.606115+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "fix-js-network-controller",
+      "key": "2c3b6531a623dbe0",
+      "started_at": "2026-10-31T19:45:47.709537+00:00",
+      "dockerfile_sha256": "ddc3ca7df01a9c6e4737669c9bad745975c5dbc04a13b8bd83e40eacbf05d143",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:87b7ed93b89064291d21796bf5802b38c4a83cd62a03df0833c618e58e59acd7",
+      "finished_at": "2026-10-31T19:47:53.001057+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "floor-plan-geometry",
+      "key": "9ac84003a29a51b6",
+      "started_at": "2026-10-31T19:47:19.614133+00:00",
+      "dockerfile_sha256": "9c8e5b0f0fcb3bc6824e393f01b86a1774dc89029940715c881a2907699abc4a",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:31de40804d87527e7e9259a405e33126fe985067b79faec56f9d1ebb7a483f09",
+      "finished_at": "2026-10-31T19:48:28.245292+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "game-of-stones",
+      "key": "c36768cbe3820e3e",
+      "started_at": "2026-10-31T19:47:53.008966+00:00",
+      "dockerfile_sha256": "7f48b688fb23b2ee1c3ab8169e09a721015e68a2283a0b1b9de5e22cc83b16c5",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:23bd2eb0a6d967a7d667fac371eb117f53614e82cbeeaec93bc9f2ec29ec3273",
+      "finished_at": "2026-10-31T19:49:01.996225+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "git-repo-forensics",
+      "key": "baf275c5d932f92b",
+      "started_at": "2026-10-31T19:48:28.255933+00:00",
+      "dockerfile_sha256": "7bba0e079170d1a9a4f830384f78adb15329f9217ee1f6a13cc25171882825a7",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:bfed2ddd057b9118d0bb2b333a7df9efe46d972eaee0ebcc8602d2df1f0d5a95",
+      "finished_at": "2026-10-31T19:49:52.539483+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "grid-pathfinding",
+      "key": "357deb72c9b6c15c",
+      "started_at": "2026-10-31T19:49:02.004627+00:00",
+      "dockerfile_sha256": "7160ebb400213b22a04fdb5e70ce346e0172a99591c89c8a1cff523e8e4c3680",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:00718bbf744ba2e4d04ae8f7cbeab26896826a8bcf78a3219a4588155418d49a",
+      "finished_at": "2026-10-31T19:50:10.799196+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "grpc-plant-position-server",
+      "key": "5cc571138d27eaa4",
+      "started_at": "2026-10-31T19:49:52.546072+00:00",
+      "dockerfile_sha256": "f0d7fb8f86f606a3ae4490528deabe96fd6db71ab0699aea993be064d279f719",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:a32db31ac8e3768255cac4eb9689339d4ce6412b157c83743e03cb5d4b5a2bf3",
+      "finished_at": "2026-10-31T19:51:05.727699+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "html-index-analysis",
+      "key": "9b56b0394dc84c68",
+      "started_at": "2026-10-31T19:50:10.806825+00:00",
+      "dockerfile_sha256": "e618410c0fc0131ba0d6b45ac3571e77989bb3304e4a75946db0d1df125623bc",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:a1417ef5e2f7f11fe4e23c49eb1763c1c223ead7949740492a382c63887dd0e3",
+      "finished_at": "2026-10-31T19:51:23.862256+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "hydra-debug-slurm-mode",
+      "key": "d7a0e00377b75e10",
+      "started_at": "2026-10-31T19:51:05.737881+00:00",
+      "dockerfile_sha256": "6c1ac27e794eb88243be10d94da7a6ab187ada46f1fbd20cb04017df524b0b64",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:6e9d4794ebca3f6d65bc9bad84ec60e5a255ac2df7cbc56c986a88b88bacdf0d",
+      "finished_at": "2026-10-31T19:51:48.257784+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "image-tile-identification",
+      "key": "f0aa09ffeac3bbc5",
+      "started_at": "2026-10-31T19:51:23.869240+00:00",
+      "dockerfile_sha256": "c7abc49c3c201a9bc80c835c1e6d4e9b10437927c805dd65fee29622fbb85b0f",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:2015450fd9c09233f1eaf92651e9f301a33b190d6a31d4085b98ec37dc3c5fdc",
+      "finished_at": "2026-10-31T19:52:26.950375+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "iot-device-registration-server",
+      "key": "4aedf263ea041f0c",
+      "started_at": "2026-10-31T19:52:26.956579+00:00",
+      "dockerfile_sha256": "7726e334f3d6ea7ae5d90d6c918f02af7e25d666b555e6bb4392185bc0e847fb",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:e30eb28004053f16e9865a7ed942285e80b0393795e675817fa4245595b41c38",
+      "finished_at": "2026-10-31T19:53:29.587248+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "industrial-kiln-controller",
+      "key": "3839d4e6dc2c3141",
+      "started_at": "2026-10-31T19:51:48.265365+00:00",
+      "dockerfile_sha256": "e96cc9bf7d940b2c0f35e7c34e07f4d26f37dc1a72a3a1082467110da7991ac4",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:3d2797cffcccac57104be3f5045f97b2d8912f7d434e516258f634986b2cc9cf",
+      "finished_at": "2026-10-31T19:53:47.322487+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "jq-data-processing",
+      "key": "30f3f824c987de6c",
+      "started_at": "2026-10-31T19:53:47.328360+00:00",
+      "dockerfile_sha256": "5c69babad419a2a676045374c8ea2fd9479cd338182028f4caa588bb0b61b2e6",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:4bc8e21ff840d61d3efa01e751a8f0b355bea773ec047412e95d4e41c5dde58b",
+      "finished_at": "2026-10-31T19:54:24.584603+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "jsonl-aggregator",
+      "key": "96539885978e46b6",
+      "started_at": "2026-10-31T19:54:24.591721+00:00",
+      "dockerfile_sha256": "7189002ccebf0f461aafac1dc951e808ff59e41f234fd1f6a46b4c1b970a2342",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:4a977da498c232c1d228836bf958afbfa7e82104ab4486de4217d6cc49907240",
+      "finished_at": "2026-10-31T19:55:01.634202+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "iris-dataset-classification",
+      "key": "367f178c47216f43",
+      "started_at": "2026-10-31T19:53:29.598286+00:00",
+      "dockerfile_sha256": "65ffc1a23f10f8a88760c9c340b95a7a2bc7aea75f20a4a38539cf089cb7445d",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:8fcaec7448f303e539730e7d3be9526042e13a7f74f42d69045f756cdb5c7818",
+      "finished_at": "2026-10-31T19:55:08.453653+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "legal-summary-extraction",
+      "key": "8a131157ab5974e8",
+      "started_at": "2026-10-31T19:55:01.641229+00:00",
+      "dockerfile_sha256": "cec48bc97ac3a0c5495c31be2e94f7cf855c2262b01fd8dbd52aceb6dc71a6d8",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:fabbc0ec432d91b1146dcffe60d35561234c05863b7701a0c469fed14d29da0d",
+      "finished_at": "2026-10-31T19:56:15.714107+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "log-summary",
+      "key": "b4599e4d858ffb50",
+      "started_at": "2026-10-31T19:55:08.461216+00:00",
+      "dockerfile_sha256": "69bfeb85cfdc972cec8a3783db8d5cedab05b9ad8396aa8ddae13a8d4fb67e96",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:061b361f659db3055be4943f8a1b3b49391f8d81eeabd91aa4a43c5ce0e73376",
+      "finished_at": "2026-10-31T19:57:49.752780+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "malicious-package-forensics",
+      "key": "e7c1fb440f6c7fbc",
+      "started_at": "2026-10-31T19:56:15.721839+00:00",
+      "dockerfile_sha256": "2032b7903884b9e872df5c0cbf4201191f48c008b7d6ee96dcd62919a8d77ad5",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:cd17791c2471ea09316cf1adb2796b383a1eeb49a32aac1daa70eb802f220a6a",
+      "finished_at": "2026-10-31T19:58:06.266140+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "mech-system",
+      "key": "c58353293d590aaa",
+      "started_at": "2026-10-31T19:58:06.273490+00:00",
+      "dockerfile_sha256": "2cebc926b28d9bbb1e46a28d9e33ec93f0ba5f200a7e37b04ab2806fe86769bf",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:95f17725473f6eeb630aea32763b72a61596212b8bbaf61736aee3f5e875b100",
+      "finished_at": "2026-10-31T19:58:38.678096+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "maven-slf4j-conflict",
+      "key": "9d74fdda620b117d",
+      "started_at": "2026-10-31T19:57:49.760868+00:00",
+      "dockerfile_sha256": "94e9f410399ab14b1504f9f4059445b15890f627fbb1d74f3be05db4e12209f2",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:f4ef8e0ab46886762ca6705540945dc3a829298444dbb11d4433b074d64aa13d",
+      "finished_at": "2026-10-31T19:59:14.361250+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "monorepo-changelog-cli",
+      "key": "4cf13a68fa346e48",
+      "started_at": "2026-10-31T19:59:14.370832+00:00",
+      "dockerfile_sha256": "d6e512f9e635fa05d549add5e50bc92f5db824fc70c3cb202117fcacf964a4c5",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:f2f6f8393d8729d1e8aac7e0ff75cb3fc860bece9c531b340c60bde3aaddbaf8",
+      "finished_at": "2026-10-31T19:59:57.281414+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "mtls-cert-rotation",
+      "key": "a665d2db08a5aa74",
+      "started_at": "2026-10-31T19:59:57.289565+00:00",
+      "dockerfile_sha256": "f7e18af880674db0273345d84d33f36b815fa1404e33a68841ea22d81d4209a8",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:fd4a7bfde8131d558005fb2aa666341b36fc55a80b10fcef4116c9bdd986c11a",
+      "finished_at": "2026-10-31T20:00:31.747235+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "mlflow-register",
+      "key": "6e4898bb72dbab06",
+      "started_at": "2026-10-31T19:58:38.685927+00:00",
+      "dockerfile_sha256": "d434861c688433314f1a30ec1a2772ea5c11ab0bd44e3451e16e3a8add835468",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:5877466bc53f939aa875c290bbb2cda257dcfe920e9e6afac0be9b5eceefcad3",
+      "finished_at": "2026-10-31T20:00:45.733045+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "multi-labeller",
+      "key": "eef721d4f6ea755e",
+      "started_at": "2026-10-31T20:00:31.755375+00:00",
+      "dockerfile_sha256": "b929a2893e0a51b11193c345f0cde391b8656ec595847ac1345a429e5a4ed1af",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:99e3b508308fc371a7edd4de2e16cbb42aeefd24bd950c1641cbd7d5b1e3f0bb",
+      "finished_at": "2026-10-31T20:01:09.866007+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "network-log-normalization",
+      "key": "5eced80848e5562a",
+      "started_at": "2026-10-31T20:01:09.872319+00:00",
+      "dockerfile_sha256": "1da3d9dc35a0e875c95ec634a74339bdc9f8f1e41c44dd17bd766b34659088dd",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:918edb78aa92689d50cc0620bb8a74039805ab6435dcb251d6871ddaf0501e15",
+      "finished_at": "2026-10-31T20:02:13.475557+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "neural-architecture-search-final",
+      "key": "24f35f7f3773e86f",
+      "started_at": "2026-10-31T20:02:13.481904+00:00",
+      "dockerfile_sha256": "553ac90f39c8a29149da84622865731ad08f895c8b24fbcb3d8195ab4fc40318",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:ae59ac0604c948cbb4c559da49afbbe3b88ffdcb8e174acd417550a12c74eb9c",
+      "finished_at": "2026-10-31T20:02:35.679215+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "neutron-submission",
+      "key": "05b68dc9557be773",
+      "started_at": "2026-10-31T20:02:35.686025+00:00",
+      "dockerfile_sha256": "e32348b2586655571f8a92af9c97acee4497fc0e2ae763e0880c256fe14fae5f",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:d7327a5138f7dc8dd2ffab2703e2d4e9b17145be732a8e51577d7287719b1c4f",
+      "finished_at": "2026-10-31T20:03:18.628235+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "multi-server-configuration",
+      "key": "6937aa726980dcba",
+      "started_at": "2026-10-31T20:00:45.740387+00:00",
+      "dockerfile_sha256": "4475c054899dd016d8677edd308faa0b3713fc33cd7ebc6ca216a0030b4c65be",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:25105af2dbdf668d0feebfe83c9a800bc4f0e188e1dc473237bf33b3adc396f7",
+      "finished_at": "2026-10-31T20:06:08.024116+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "pandas-etl",
+      "key": "049ceb1eb804efa8",
+      "started_at": "2026-10-31T20:06:08.041048+00:00",
+      "dockerfile_sha256": "a0863e2d48ada5578bc62e3f7330f16dbaee4b605af809256f56f1ea4b0b77d9",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:86e0d00d0c585df3e4666bc523a92af0349860a278ab30ce7911438b24f6f055",
+      "finished_at": "2026-10-31T20:07:05.901304+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "pandas-numpy-data-analysis",
+      "key": "37740be5413381c0",
+      "started_at": "2026-10-31T20:07:05.910217+00:00",
+      "dockerfile_sha256": "49c51358d5bd34cfe46df8f5d116de9a249800957b4af223802e1d6f53c95841",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:bfc70224e7e478b4c529c679ca231808e720b24bcc554131059073280244d49b",
+      "finished_at": "2026-10-31T20:08:25.232026+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "parking-lot-pathfinding",
+      "key": "ddd828abe24b628f",
+      "started_at": "2026-10-31T20:08:25.247666+00:00",
+      "dockerfile_sha256": "b682472b1c168ad39dedd2474796aa97fac2c26061dac1a04ceecca8bd50ccfb",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:5d433a6888a9322d2ae4a523a3ccc65759b9b55a2c88ed0ad6d325ce1cc6c11d",
+      "finished_at": "2026-10-31T20:09:33.493048+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "pdf-table-parsing",
+      "key": "093812c32c77acd9",
+      "started_at": "2026-10-31T20:09:33.501294+00:00",
+      "dockerfile_sha256": "e618410c0fc0131ba0d6b45ac3571e77989bb3304e4a75946db0d1df125623bc",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:40781f0e453ad94b909c994f87c1bb2e734afb5a2bd03e33f63fcb9ac39d6c58",
+      "finished_at": "2026-10-31T20:10:47.028911+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "okhttp-trailers-crash",
+      "key": "779c5f65a86da40e",
+      "started_at": "2026-10-31T20:03:18.635556+00:00",
+      "dockerfile_sha256": "9cafa113995ab9d72112a95a5eaaed65620440036fd904c1058c86f7cbfed792",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:11d541f3be876eb444a02f90205dc1de07cf02aeea99e5989a63c1cfc722d432",
+      "finished_at": "2026-10-31T20:11:33.347608+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "permutation-construction-100k",
+      "key": "e5201efd2f8ce7e9",
+      "started_at": "2026-10-31T20:10:47.036857+00:00",
+      "dockerfile_sha256": "b682472b1c168ad39dedd2474796aa97fac2c26061dac1a04ceecca8bd50ccfb",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:9ee12503474d8f59b22aa286e95915c3efe9e178d56ca378b25b18d090a8b2cf",
+      "finished_at": "2026-10-31T20:11:50.641670+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "pgn-chess-repair-puzzles",
+      "key": "417e6001b39fbfee",
+      "started_at": "2026-10-31T20:11:33.358379+00:00",
+      "dockerfile_sha256": "a308d3326ebbb707229f9741d8a17bd3fc3ac3205f28bff92d1f62dd126bd935",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:efa0281dfed05d39f4feff30f8849d32c5328f51c43659a3946776b5fa623a3f",
+      "finished_at": "2026-10-31T20:12:46.823929+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "playing-card-recognition",
+      "key": "6567be53f4de9b95",
+      "started_at": "2026-10-31T20:11:50.657182+00:00",
+      "dockerfile_sha256": "8e693e08b87e90bbcec8955093d38f5fe9fc42ce04401bbe3fae9b1ce718ffd7",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:cf8db9d7b4de820eecef0ba9b73d9cf73e4ac80a1edf5f28680d10feed9e4056",
+      "finished_at": "2026-10-31T20:13:20.093558+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "prediction-model-evaluation",
+      "key": "b8cc898a8feb246c",
+      "started_at": "2026-10-31T20:12:46.831346+00:00",
+      "dockerfile_sha256": "9c8e5b0f0fcb3bc6824e393f01b86a1774dc89029940715c881a2907699abc4a",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:ff541ded1b9aca7ef65734b9d88fd31c1c2e2bf4681297d652b54420dba80f7e",
+      "finished_at": "2026-10-31T20:14:06.391145+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "publisher-market-analysis",
+      "key": "a4cfff2070b42f2e",
+      "started_at": "2026-10-31T20:14:06.404231+00:00",
+      "dockerfile_sha256": "10e55b681c78bdfba1b39e5c2531cd088d803c966e78d9ad99dd59a947db4bc4",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:6964839ae0210bd05c31442beba201687dd020568f0372bf3e21a401aff0a153",
+      "finished_at": "2026-10-31T20:15:15.583213+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "protein-sequence",
+      "key": "c8a02ff9a8309b45",
+      "started_at": "2026-10-31T20:13:20.112918+00:00",
+      "dockerfile_sha256": "a0d1abfee1f49f9e50a4c6fd861990fcd0b7436d5aead8696aa0a58edfc31981",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:1a25cfae75484a33a8df8c2972f8c54fa639f0e939507997a950980976efc728",
+      "finished_at": "2026-10-31T20:15:25.392776+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "python-api-rate-limit",
+      "key": "a7e2c8117876f0ce",
+      "started_at": "2026-10-31T20:15:25.412116+00:00",
+      "dockerfile_sha256": "0d8c1d60df814acbc6a30568c6eff232599aa3e120312b13174f6326ed7f94f7",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:44bbaf08fec7872b0d66f07d381f7d242db1e5af85c9d3cc68f65feac2b59872",
+      "finished_at": "2026-10-31T20:15:52.969991+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "raft-log-repair-concurrent-access",
+      "key": "f88ff914f886ac69",
+      "started_at": "2026-10-31T20:15:52.977268+00:00",
+      "dockerfile_sha256": "269022a413d93027a3be84f33e40354d49e0e3da4f68c0cee1171df5d098e0e7",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:1e8a58dab2733cce0b2c5f5b8f6a9dcf067db5f4c4ba76943f1aebf4c9632dcb",
+      "finished_at": "2026-10-31T20:16:15.361620+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "publisher-market-analysis-v2",
+      "key": "25bb924775a1199f",
+      "started_at": "2026-10-31T20:15:15.592189+00:00",
+      "dockerfile_sha256": "9c8e5b0f0fcb3bc6824e393f01b86a1774dc89029940715c881a2907699abc4a",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:a6f8a790771c4d111d16bbf836ee5b03988a95265533962535b4fcff80439fed",
+      "finished_at": "2026-10-31T20:16:29.832927+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "reproducibility-and-envsetup",
+      "key": "057ac5e5e1fdad53",
+      "started_at": "2026-10-31T20:16:29.841283+00:00",
+      "dockerfile_sha256": "f6da4031e592b8a05deda2c08c0631d0861c9f6cbb2d53e843b2626838ef9067",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:5bb0225d99b6be0f0f6679b39e67f7cd4a4c0966274ea98f98196cf2c561cee3",
+      "finished_at": "2026-10-31T20:17:12.742619+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "reverse-engineer-stack-vm",
+      "key": "4676971659ecc919",
+      "started_at": "2026-10-31T20:17:12.751650+00:00",
+      "dockerfile_sha256": "101aacc3b2d432881e0391e49b660341659aa733891810ee8f6730af087dc0e1",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:fed13f538185c0ca6763c156c48ca141de44ad954d90cfaac50b2bcdb9904160",
+      "finished_at": "2026-10-31T20:18:10.557799+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "rsa-jwt-token-api-redis-blacklist",
+      "key": "0b68486d3ffcea29",
+      "started_at": "2026-10-31T20:18:10.565674+00:00",
+      "dockerfile_sha256": "07649b11ca8f3359d95842abb56183fecb6e9aedede5548faab172bbc416aa96",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:21d49a7daf8c82bc7ba6b11d46dd87d4db18a3472836b61b048dbe06d8ab585b",
+      "finished_at": "2026-10-31T20:18:53.068299+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "react-typescript-debugg",
+      "key": "56427dcd635a49ac",
+      "started_at": "2026-10-31T20:16:15.368564+00:00",
+      "dockerfile_sha256": "ce0ca374fc86841e8f6a9284bf390d9d1474ac27411d232c24e97eada20f3ecb",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:3b9bae1a9622e5d3ef5fbcc755350d6e99e98fda8d0676a982effb9e98de8fe6",
+      "finished_at": "2026-10-31T20:19:43.037959+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "sakila-sqlite-queries",
+      "key": "5af05a9818b0d274",
+      "started_at": "2026-10-31T20:18:53.075472+00:00",
+      "dockerfile_sha256": "10f73c48e37bbc2bec3d83e9db11736afe184cc63fb6c420d9dc8d3dcdf40b6d",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:502c545820a929be607a279e36499a087cf4340c1794daab65d2d5f80359dd78",
+      "finished_at": "2026-10-31T20:20:06.321410+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "sales-data-csv-analysis",
+      "key": "e8c49896447a5f6e",
+      "started_at": "2026-10-31T20:19:43.090797+00:00",
+      "dockerfile_sha256": "b88eddce3b29c8cc3738a62052aaa53a2fbb01da9caa770d01259925bf5fa630",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:dd011653cfbfc9fa4ad01c811f6de41a5454a1bbcfa9756d64c65fcae059f55f",
+      "finished_at": "2026-10-31T20:21:11.582107+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "schedule-vacation",
+      "key": "5df60192549af4ca",
+      "started_at": "2026-10-31T20:21:11.588969+00:00",
+      "dockerfile_sha256": "0fe8ea6f783006169c07f023b6d08d8bf7b6b69fb4e97abd8320925d0bbcdf8b",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:9c7fb61e85d5d9f88f7e26672b041b1b11a821fad3ca223b222f9f5b5d68d0ae",
+      "finished_at": "2026-10-31T20:21:38.763506+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "security-breach-incident-response",
+      "key": "f4d17123a3fa8be1",
+      "started_at": "2026-10-31T20:21:38.770537+00:00",
+      "dockerfile_sha256": "9fb3223e06da2be47248d805eab940fdcb56f4dcb1221d125338ca4343cd8606",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:ccd7d170886936ae39796862792512f3691255da1d42acbf88736f75dd4fdc3b",
+      "finished_at": "2026-10-31T20:23:12.718817+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "security-incident-log-analysis",
+      "key": "7043b52f460ff576",
+      "started_at": "2026-10-31T20:23:12.725814+00:00",
+      "dockerfile_sha256": "7bba0e079170d1a9a4f830384f78adb15329f9217ee1f6a13cc25171882825a7",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:6a83ab78f89682038bfd8547a3eccb51ebf9feb9c3139acfbabe538db59e5701",
+      "finished_at": "2026-10-31T20:24:25.838115+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "server-log-analysis",
+      "key": "a7ff55c5e9cccdbf",
+      "started_at": "2026-10-31T20:24:25.844884+00:00",
+      "dockerfile_sha256": "7160ebb400213b22a04fdb5e70ce346e0172a99591c89c8a1cff523e8e4c3680",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:7457720d521db6813db5832e8f678324bcd0602eb468d228bf9ab4963c844b68",
+      "finished_at": "2026-10-31T20:25:34.220590+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "service-deployment-wave-planner",
+      "key": "e5b317fb69324226",
+      "started_at": "2026-10-31T20:25:34.228688+00:00",
+      "dockerfile_sha256": "75d2a14b0a22dda62bd7e5e82a7e2d7e85402d1c1d18b49e95454daeb8f4092b",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:337d952487f663e1a7ea465bb53b7994443958ea2ea1070c8ae8c54161d3e72b",
+      "finished_at": "2026-10-31T20:26:01.058244+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "sign-vector-game",
+      "key": "5ec5ab2a82db3940",
+      "started_at": "2026-10-31T20:26:01.066071+00:00",
+      "dockerfile_sha256": "c45c12dcafb78a1932fbc7a16b19553e72a70e75fb7863f4e8bab824f897f26b",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:253358dd83e424f4b5c54374f8072efed5228fa65e6ebb83e5d2fe58d53b3533",
+      "finished_at": "2026-10-31T20:28:00.193366+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "simple-database-query-tool",
+      "key": "7fa6127d51e9f70a",
+      "started_at": "2026-10-31T20:28:00.199909+00:00",
+      "dockerfile_sha256": "008114c6203a59468becdfd84ebbf1eebad6786c0f2ec52d6fe737c656583878",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:3a6180ddb6248395e7ab804d83bd61bf8ebf4da45e95fbfc42f0be0f4da6d1e0",
+      "finished_at": "2026-10-31T20:29:03.313244+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "smiles-data-lab",
+      "key": "4968308ea2ca97ed",
+      "started_at": "2026-10-31T20:29:03.320844+00:00",
+      "dockerfile_sha256": "99db49407372ee3d00299b08efb24f68395e648e049ecbe59339eb976c1c1b33",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:8bb8428e31f7894085f7cf17c504a683fb590f366fa3282883b212a73c28fabc",
+      "finished_at": "2026-10-31T20:30:42.342131+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "sql-injection-forensics",
+      "key": "a73038ca7febc20c",
+      "started_at": "2026-10-31T20:30:42.349155+00:00",
+      "dockerfile_sha256": "91633b15f46c32853429a5f277e4223351df3cebea080aa520a367ec841ee82e",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:e725b887a89e655a3cfd4994f12b73140fbf15600c05e95b3c7e215ce7802c2b",
+      "finished_at": "2026-10-31T20:32:17.796327+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "submission_a63937a5_20251224_152124",
+      "key": "6f27af68320b76c3",
+      "started_at": "2026-10-31T20:32:17.803923+00:00",
+      "dockerfile_sha256": "22c7c3a245348750642cfad35ced7790d63a8564b8ba50459a1bbcb6eee12f90",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:53922308a75add68dd1a05fd981cbcc98d26d33d68cf42e07610689323dca789",
+      "finished_at": "2026-10-31T20:33:10.157729+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "supply-chain-fulfillment",
+      "key": "d8c714abbbc9085b",
+      "started_at": "2026-10-31T20:33:10.164966+00:00",
+      "dockerfile_sha256": "4ef6a82164b8b563b1bcabf7d14cb6136de3ac7d8f5e381362e2c76ef95d1295",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:06c7bde32939fefb2e8fd4a90a58da576ad3bcddadbf79d0ad1fd4ad127f0ba5",
+      "finished_at": "2026-10-31T20:34:07.838513+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "symlink-chain-traversal",
+      "key": "0c7bedf6af820f4e",
+      "started_at": "2026-10-31T20:34:07.845522+00:00",
+      "dockerfile_sha256": "4bb626a0658bcb7626c89a52b5b2671f3f5bf0a511b56693da3f44ec4f19d7ea",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:ff7c6b812ed23bfc1acdf2217e7033558e0e3163009a99553f6217caaf1bc4c8",
+      "finished_at": "2026-10-31T20:35:46.421059+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "sympy-bug-fix",
+      "key": "f4217b4f6d1d072e",
+      "started_at": "2026-10-31T20:35:46.428368+00:00",
+      "dockerfile_sha256": "a1457dab9746c3c525442347b3bd3bbee86a49078feb3749c6e91318c61f8d8b",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:70ee58b872b1d28440b7cf61056662afdbb392d0fce7ff11d4ab298c76c7f986",
+      "finished_at": "2026-10-31T20:39:42.989911+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "systemd-log-monitoring",
+      "key": "ec891258c4a789f9",
+      "started_at": "2026-10-31T20:39:43.000106+00:00",
+      "dockerfile_sha256": "dc79671ed4a17caf7ad1e99f5b2789d25f3db97e0faea77d9f6ce567944043ad",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:b347c88fc4863fb4e883a987b8840697c964fb1822a69a7ef8fbc91d9c604b02",
+      "finished_at": "2026-10-31T20:40:46.382143+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "task-xxe-exploit",
+      "key": "b2b286ce2b2ed430",
+      "started_at": "2026-10-31T20:40:46.389658+00:00",
+      "dockerfile_sha256": "1a1098d2d7f55aa723a7cf33e318819f713975e8c9cada68a9bad44577ec3846",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:5ad2df6f82bad95cd493c0fed767653f74f838bb0d61e426bd83dfc840fbcfcf",
+      "finished_at": "2026-10-31T20:41:33.676441+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "todos-api",
+      "key": "3475f668745644f5",
+      "started_at": "2026-10-31T20:41:33.687834+00:00",
+      "dockerfile_sha256": "2600a251cb43a870e0a85603c18bdeb049bc973aade2822d456fe3f9a612043b",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:ad8d9c2440a1d323d55a194dc7aa8ec1fdd7fd14d2a228f67eba6bffdb87b267",
+      "finished_at": "2026-10-31T20:42:05.686214+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "tsl-test-case-generation",
+      "key": "1c8106637058609c",
+      "started_at": "2026-10-31T20:42:05.702556+00:00",
+      "dockerfile_sha256": "7160ebb400213b22a04fdb5e70ce346e0172a99591c89c8a1cff523e8e4c3680",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:6efa57e4cdc424848bd2c76a11196f4832e6331fca12d4f3f6a4cc05e639d8cb",
+      "finished_at": "2026-10-31T20:43:13.827948+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "token-auth-websocket",
+      "key": "cf7905a971affe30",
+      "started_at": "2026-10-31T20:41:59.275751+00:00",
+      "dockerfile_sha256": "27b1ea1b4988e74f79de78b015945008d1f342856a7452b2e3bba9d32c69cc90",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:e45962e219769266ee371bf38321555358f38ca15d677b738d7b64bbbf2ac9e0",
+      "finished_at": "2026-10-31T20:43:17.625629+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "vimscript-vim-quine",
+      "key": "7154be3a97a9ab16",
+      "started_at": "2026-10-31T20:43:13.835061+00:00",
+      "dockerfile_sha256": "605e807a79160d6f0ee1af45efe3f657c9221aaeaa422780008e031381da96bd",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:32b571580ca15b1d1fdc91b8a7743dd38b69c408f5213fad7078e6099e7a8456",
+      "finished_at": "2026-10-31T20:43:45.562466+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "word-derangement-mapping",
+      "key": "256b37e633644fa6",
+      "started_at": "2026-10-31T20:43:17.643604+00:00",
+      "dockerfile_sha256": "49c51358d5bd34cfe46df8f5d116de9a249800957b4af223802e1d6f53c95841",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:4e1c3e07df15570fb79d3e160553756c19821c5938036a6123df3c009c1fbb47",
+      "finished_at": "2026-10-31T20:44:30.551584+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "bn-fit-modify",
+      "key": "36bc166d97ce4606",
+      "started_at": "2026-10-31T20:44:30.571919+00:00",
+      "dockerfile_sha256": "b85d29d2fdb23190bced68ad211e0c5a7ab460c957377154bf791112d5ab0c0a",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c1f4cc674f8f1f79980a52fa2d8dc0553e0059895dae856cf81032a41a487910",
+      "finished_at": "2026-10-31T20:45:38.957141+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "adaptive-rejection-sampler",
+      "key": "cc994abd9c2b83b5",
+      "started_at": "2026-10-31T20:44:30.571301+00:00",
+      "dockerfile_sha256": "d94102f6eca07590723af2289fc065a6a9b20d0f5c2a6a4afbefff0e92651005",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:d466e226f052fcb3f066bc5cd470ea5bd9f6c075b774ab57e0c9f8ef7c057a43",
+      "finished_at": "2026-10-31T20:46:09.232446+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "break-filter-js-from-html",
+      "key": "5437e0eac2aa248b",
+      "started_at": "2026-10-31T20:45:38.962741+00:00",
+      "dockerfile_sha256": "992e9cc6521f6257ef4cbfc564373356048b017229fb181ca166167955f5c5a1",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:35a899426b6f6c378d1a4860e662d68f4e8f0a11cb40017bb970d485052af7de",
+      "finished_at": "2026-10-31T20:46:25.968652+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "build-pmars",
+      "key": "648832df1299f771",
+      "started_at": "2026-10-31T20:46:25.974489+00:00",
+      "dockerfile_sha256": "fb642cfdc461939a4059815cc2738f85ff54d1b71fcc51786404800d8eeb9c32",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:fce8d8b575eaf87733c5814e86780928b187ad0b5b706cf48205f053ab1aedf2",
+      "finished_at": "2026-10-31T20:46:47.697144+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "build-cython-ext",
+      "key": "52e4a2b8b9572c9b",
+      "started_at": "2026-10-31T20:46:09.238421+00:00",
+      "dockerfile_sha256": "bf6eead61f826722085f2275f5e1d7bcf6eb6ea6a0954e63e7551e04d6ff1df8",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:77238c26d0e4dcca4a3b6f07087b3730db12fea3c990c6318cb9f68a8ad97270",
+      "finished_at": "2026-10-31T20:46:51.178933+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "caffe-cifar-10",
+      "key": "cacff1ae29cd5b91",
+      "started_at": "2026-10-31T20:46:51.184478+00:00",
+      "dockerfile_sha256": "b1a989688960002e9e959278f6d58cae04e5015e07c7dcecbbe0f5fbe8cf4980",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:b106d22e729cf97a29710f773beaa9c035be45dc39485dd9fbe758a6037b68fe",
+      "finished_at": "2026-10-31T20:47:28.079849+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "cancel-async-tasks",
+      "key": "c944a4228cc61aa1",
+      "started_at": "2026-10-31T20:47:28.086459+00:00",
+      "dockerfile_sha256": "6d343483cb016aba0d4df40c4f6beb78a2d9a7329f42693ee3bf6ef22217de60",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:ed738a5c47233c5b8a9d4d50a7761da3d63cd1542251894ca107af8e2f54c4bd",
+      "finished_at": "2026-10-31T20:47:54.715350+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "build-pov-ray",
+      "key": "da37aafa139debbd",
+      "started_at": "2026-10-31T20:46:47.703492+00:00",
+      "dockerfile_sha256": "c552c4b2934a12e34aae0bf0588a7c4e7adcd4e40f75364ce05812da38d94d61",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:2806ad4c9bdaac2c3e161ae4e1110f238f64daa97608a7df944c60a8e000c20f",
+      "finished_at": "2026-10-31T20:47:55.236800+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "circuit-fibsqrt",
+      "key": "56caa83ca48adf1b",
+      "started_at": "2026-10-31T20:47:55.243298+00:00",
+      "dockerfile_sha256": "2754444bc4e63d6c60f5ce67ce75e64e5cba45df71cfebe1ac9cd9e80c0bcb1a",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:fda98a7cd6f9005c10ac19f0ba6c983dac7adbb8967e992057954c947bb0676b",
+      "finished_at": "2026-10-31T20:48:27.520129+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "cobol-modernization",
+      "key": "3e8f4580cc56e55e",
+      "started_at": "2026-10-31T20:48:27.526952+00:00",
+      "dockerfile_sha256": "27ce8ba977d0fc5805672a473f064b43bc47d21ab09ddaca3043bec91f4dc965",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:2ea1e69468985e196fade18c6a5fb0ddbd1f07604e4c444271ad14644d2525d6",
+      "finished_at": "2026-10-31T20:48:59.476427+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "code-from-image",
+      "key": "96c2f0c6dddf1ad0",
+      "started_at": "2026-10-31T20:48:59.482272+00:00",
+      "dockerfile_sha256": "c5ddc769a0d717f52f3a6ef80c29fb5cfbc50766a012e1fb46f0c6424fea53ff",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:fea2cf3a3dd74f3e68b284a40e538a3f77300f4351e3068b5624c807f2a6fb77",
+      "finished_at": "2026-10-31T20:49:26.505145+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "chess-best-move",
+      "key": "e13ccbe18f1b2524",
+      "started_at": "2026-10-31T20:47:54.726262+00:00",
+      "dockerfile_sha256": "5b54ef7b4dbee546947b8fddf2291567f5dcb61271be115313d2b37fe86fba21",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:f3aedfa910f9843e1cb57b55532b06900f007cd726c8fbfa6bb7e5969b88a387",
+      "finished_at": "2026-10-31T20:49:33.331053+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "compile-compcert",
+      "key": "5e2e580cc8ed04a3",
+      "started_at": "2026-10-31T20:49:26.510690+00:00",
+      "dockerfile_sha256": "41110503bc5b9ccda2ed9170dc64327baf2aa748bf47da299534779867d31062",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:953d1be19bda30a877532b25b8fc8e36fbebf929cd048349baca7053e1d7d925",
+      "finished_at": "2026-10-31T20:51:04.889989+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "constraints-scheduling",
+      "key": "311fe4c3ce77be6c",
+      "started_at": "2026-10-31T20:51:04.895601+00:00",
+      "dockerfile_sha256": "027ce22a91b8ccc91eec273e1e3aa76f1274b931531dae57fd528041c5dfc7d6",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:34b81a3c1b1d6e2bb51e6c0d997f39f5bcbbb46e854e6d57b3c226854d7788de",
+      "finished_at": "2026-10-31T20:51:31.755154+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "count-dataset-tokens",
+      "key": "7acce2334dc82ebe",
+      "started_at": "2026-10-31T20:51:31.761595+00:00",
+      "dockerfile_sha256": "32e877399bbd7add2d3aa5261cfd7b1bc57a46b8e91b938e5d44915ac0e021e2",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:e5180807bdde96b77e6fd556d79512a1593818b681d5dbc7d8525d350617c736",
+      "finished_at": "2026-10-31T20:51:59.069394+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "configure-git-webserver",
+      "key": "038012ecbd95690c",
+      "started_at": "2026-10-31T20:49:33.337699+00:00",
+      "dockerfile_sha256": "675d9f2b4311438458f2f4d59416b646bf48b75fc376e7232d96ce03eac4ae22",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:58e911b58ef2a5f1eadc22b2bb891edf2305ac6cfae2aa3391d71f48d2e2ab0b",
+      "finished_at": "2026-10-31T20:52:38.790103+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "crack-7z-hash",
+      "key": "785ba42b485ed152",
+      "started_at": "2026-10-31T20:51:59.075904+00:00",
+      "dockerfile_sha256": "c992df75e597f29ec222b1280dc65f2df92df61c69ac48d1a78a14882b6e508e",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:2fd61783204c7b4743197de5d8d4ca76d2b6eafc2387f917a84deebf8346cdd6",
+      "finished_at": "2026-10-31T20:53:12.556109+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "custom-memory-heap-crash",
+      "key": "6f5888aaec71aecc",
+      "started_at": "2026-10-31T20:52:38.795857+00:00",
+      "dockerfile_sha256": "061b6cbfd2f62155c8114f4ceac1581375b5c6f952357a142b79357c1671af8b",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:428b6265f2f72c3328561213109ccfa40e11707acc5fc8beec3c79bc61244e7d",
+      "finished_at": "2026-10-31T20:54:28.729585+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "distribution-search",
+      "key": "1559095aeb7bbeb0",
+      "started_at": "2026-10-31T20:54:28.738989+00:00",
+      "dockerfile_sha256": "050beff156a4d8af4bac86591d0d5967adb8a645e941dda42e3dceea9551825b",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:93464f24ab29ce7fdde79999eb4446053a8363ebe3f68b8bb59be4494c685b2c",
+      "finished_at": "2026-10-31T20:55:06.461723+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "db-wal-recovery",
+      "key": "b51583c5c1f45316",
+      "started_at": "2026-10-31T20:53:12.562579+00:00",
+      "dockerfile_sha256": "0a008e0f7f4f1dc1c7de22d1e7a59eb465cb70ece7426ce95b7a1e87f2d520a3",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:5e0f4ade5eec6c82056d71d1a1407c3a561a4dc2560a1b1026e2e4d1817a73d3",
+      "finished_at": "2026-10-31T20:55:54.045914+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "dna-assembly",
+      "key": "a4664cf8acc8161b",
+      "started_at": "2026-10-31T20:55:06.468186+00:00",
+      "dockerfile_sha256": "648858d5d1879fa41e1d6768d35164ad07c7541711cbc0aecceea0519acfb5a9",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:7c876a481307a78e9812966d2aced024545342cbad4bd947e1d7774786faca8b",
+      "finished_at": "2026-10-31T20:56:35.690305+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "dna-insert",
+      "key": "565eba85766ec5cb",
+      "started_at": "2026-10-31T20:55:54.052094+00:00",
+      "dockerfile_sha256": "ff835d0427cd007af29725049b2d8c381e242f89169b4d07f2eff54dabc8c674",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:7bb1b5d62714b0862108830287b15718958839e03447baa8576e2c39057584e3",
+      "finished_at": "2026-10-31T20:57:28.942610+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "extract-moves-from-video",
+      "key": "b1de763ebd9f548b",
+      "started_at": "2026-10-31T20:57:28.948629+00:00",
+      "dockerfile_sha256": "0a265ee5f8a9fe8160da11d40dd10aee8bf36e7ff553c4089726f2e4cd042a78",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:7f853c4f5cedb3ed689a4bc188d6672bd8fac4590d4790b0fb3f1df42ecd20dd",
+      "finished_at": "2026-10-31T20:58:01.197212+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "feal-differential-cryptanalysis",
+      "key": "3fb00db969ab636a",
+      "started_at": "2026-10-31T20:58:01.203847+00:00",
+      "dockerfile_sha256": "ea4663f21de7a55d3645e83d1fae95fc71740aac47baf977aca52adca6d25892",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:dad42baef53965e95b8663270243e6e381b18c4c89ea74f5966890953eda6ea0",
+      "finished_at": "2026-10-31T20:58:28.797154+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "feal-linear-cryptanalysis",
+      "key": "17ee90f03fa55c99",
+      "started_at": "2026-10-31T20:58:28.803346+00:00",
+      "dockerfile_sha256": "2d1edc2a2e4a67d3d14c62f332b6b4e170414e4f20018b36f8e9a61f481bfcbd",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c7547cf0795e800c0d083ee278cd3db93708519604f856477e91c2cfcbcbd0e9",
+      "finished_at": "2026-10-31T20:59:11.264097+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "extract-elf",
+      "key": "e5b2bc181c36d31b",
+      "started_at": "2026-10-31T20:56:35.696376+00:00",
+      "dockerfile_sha256": "4a372e43d2609b24849439b9992600ee1a9da237ac0a747f899c9ab28deaf9e9",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:1929e5f3253387525171e22172d1f755a990b2e0bf885e3c9822d2219389c349",
+      "finished_at": "2026-10-31T20:59:28.122408+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "filter-js-from-html",
+      "key": "3300640fe322a7f4",
+      "started_at": "2026-10-31T20:59:11.270046+00:00",
+      "dockerfile_sha256": "a55294aaf298ef7e2b14af014d14ad93a963d5800147bbd5310115411d70a3c6",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:b34018fef6731497d148eb2551663f8dbac900db631e1543a10b540bfda74777",
+      "finished_at": "2026-10-31T20:59:59.138775+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "financial-document-processor",
+      "key": "e1b471083a15bd92",
+      "started_at": "2026-10-31T20:59:28.128436+00:00",
+      "dockerfile_sha256": "e0da33515d438088c39a6db5b5625e8a33931a1d7b5f562134d8454449678924",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:291e84df99529d7b9bde92e04f33314c8617a0f96851ad522f7e356510d72e04",
+      "finished_at": "2026-10-31T21:00:29.212822+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "fix-code-vulnerability",
+      "key": "7a05438519ef446b",
+      "started_at": "2026-10-31T20:59:59.145072+00:00",
+      "dockerfile_sha256": "70a4bd27b49f5a7deb9a30275ddfbad5caadd51642d14a0ee82001a65469b6f8",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:470b5e756738b3e471d4183849af2fcaaf0411c0d730b4aebaee52fd1698b146",
+      "finished_at": "2026-10-31T21:00:33.251625+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "fix-git",
+      "key": "df43abb80797e67b",
+      "started_at": "2026-10-31T21:00:29.220112+00:00",
+      "dockerfile_sha256": "4c1123c29189a0fc1d3dd92f29f5e14e9bcd46fe3488fa7faa6a57d4f5c39565",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:3fefb83a932a56752b3edc8596c8c286158544d5f8e2c6182c43d85a669f56ec",
+      "finished_at": "2026-10-31T21:01:13.474452+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "gcode-to-text",
+      "key": "57a56beb0c679162",
+      "started_at": "2026-10-31T21:01:13.481073+00:00",
+      "dockerfile_sha256": "8a5e521c4c1ae7ce7c8dce8f7bc9b0e6d1265208174896fdf9c71f9622c6a79b",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:5f9e8960a23f4b2f0857b6992c481a14b11d1e28779ebdd358cc5ac0379e7b5b",
+      "finished_at": "2026-10-31T21:01:45.739570+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "fix-ocaml-gc",
+      "key": "0b43813a6b0a8246",
+      "started_at": "2026-10-31T21:00:33.258994+00:00",
+      "dockerfile_sha256": "f7d50ee9f16388c917dcb2f4e9c353e71c3a29dcfcaefc48e9c88b637245a1b1",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:a5f585856a20d5e10b7f264e8b7d92b0d3f059b250bc5c0e10a81e3e7ce8d769",
+      "finished_at": "2026-10-31T21:02:19.990200+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "git-leak-recovery",
+      "key": "9281b46df0f705bf",
+      "started_at": "2026-10-31T21:01:45.746399+00:00",
+      "dockerfile_sha256": "92298bbfcc536d1ee819394975489d4cc509698e515f0e785132f39e63c0d056",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:f93ce161de0b884fab9aa95f96fb6b27f14581d11900a6b81256ed535d2c1289",
+      "finished_at": "2026-10-31T21:02:51.078817+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "git-multibranch",
+      "key": "1640ac04d19a2e89",
+      "started_at": "2026-10-31T21:02:19.997135+00:00",
+      "dockerfile_sha256": "996fbe924ac40721870a5ae660de320a71e3681fdb55e669679a799647ba1077",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:0bf0632a5bb9d130d48dcc421f36619fd694615f8f58a4057b532d8467c53fdf",
+      "finished_at": "2026-10-31T21:03:12.567128+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "headless-terminal",
+      "key": "f11e42982e34710f",
+      "started_at": "2026-10-31T21:03:12.573332+00:00",
+      "dockerfile_sha256": "c41b1308f833c2505bfb22c61357000aa839a08972589dc18f3444559611f614",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:88f35bcb0a88405379e7e797844e8593629f1e108f72b4e538458487fc23edbd",
+      "finished_at": "2026-10-31T21:03:47.324905+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "gpt2-codegolf",
+      "key": "4ba8c6c843f9cfe9",
+      "started_at": "2026-10-31T21:02:51.085912+00:00",
+      "dockerfile_sha256": "70a529cf9315da53bd88cdaba8cfa0b39185ac2491734fe568492134680b765e",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:3142a497a246b8309fc606fdfc17244f3f54e79e73d6d5e689831491361f2f1b",
+      "finished_at": "2026-10-31T21:04:14.337636+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "install-windows-3.11",
+      "key": "8a0d19e74b4c8d58",
+      "started_at": "2026-10-31T21:04:14.345524+00:00",
+      "dockerfile_sha256": "6d36f3de00ce5290f197280c91dbd7f7ac1717c6b0c48d9559498c280bddc2ee",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:905f47ec04eb3dc7ce71e636a6416f09ba0f93a91bb67fc7449891c4987e8f3f",
+      "finished_at": "2026-10-31T21:05:17.802514+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "kv-store-grpc",
+      "key": "10bebfd1317d43a8",
+      "started_at": "2026-10-31T21:05:17.810446+00:00",
+      "dockerfile_sha256": "ca51fa585ce874df4e36061a4d6ea465480796c4c9ec23b258700de286abc4f4",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:544586d77465b1428e808ea6a2a4bc1b5096ad80c4baf8968b25d7dd92054da0",
+      "finished_at": "2026-10-31T21:05:44.930192+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "large-scale-text-editing",
+      "key": "6cf32d472fb132b6",
+      "started_at": "2026-10-31T21:05:44.937601+00:00",
+      "dockerfile_sha256": "ec7589a975626e683b30eb196c8848de4aea3fb0b1c8fc446e155d364641e673",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:2863688873db2de723dd984181f901f4c3cba4ea7f881f813e1450fb1265f622",
+      "finished_at": "2026-10-31T21:06:17.030079+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "largest-eigenval",
+      "key": "9fd872ec457dfd75",
+      "started_at": "2026-10-31T21:06:17.036888+00:00",
+      "dockerfile_sha256": "a0fbf38671ae9afdf719ed8607030853959460232aeb3f04259c43b5898c35b4",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:9069167964a15d618796a25a46d3237b408d9c8266d86c384a63ecbb965e916c",
+      "finished_at": "2026-10-31T21:06:49.483839+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "llm-inference-batching-scheduler",
+      "key": "c6ee874ad937f3b8",
+      "started_at": "2026-10-31T21:06:49.498868+00:00",
+      "dockerfile_sha256": "aa18fb1e2f7a5eb783f04e071c0a3d15b52671126609e3ea735a407fe61c4bb1",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:bea5d1b2cc63aae253253e91b68486dec99b964534d9266e8ed5491a943ff3de",
+      "finished_at": "2026-10-31T21:07:17.009802+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "log-summary-date-ranges",
+      "key": "e8ae53d22c3eb20d",
+      "started_at": "2026-10-31T21:07:17.017140+00:00",
+      "dockerfile_sha256": "1ca65614e28a4b279f2de97ba692f90b0ff1e3b09dad8a48c1898bfba4137d5d",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:511c22e56d4b560824cd7273e849571f9914fed214c288c9292d43d06c76cb8a",
+      "finished_at": "2026-10-31T21:07:49.877437+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "hf-model-inference",
+      "key": "1d432f97889ac966",
+      "started_at": "2026-10-31T21:03:47.330780+00:00",
+      "dockerfile_sha256": "e91f146ae8136f6f82b271fedd1961cac0d0babb0adb9de9ebce730301d73084",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:51df4b9917fdd5dfcb0b6eeeb8fc81aebd63e87e10047b194a9a010d93086d26",
+      "finished_at": "2026-10-31T21:08:07.448922+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "make-doom-for-mips",
+      "key": "a484780337cdaf61",
+      "started_at": "2026-10-31T21:08:07.455958+00:00",
+      "dockerfile_sha256": "248b05d2b53dfa41419cd6832a18e5ef031fb43af5b689c5b6ef4d7943cc44b9",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:1fadd937590e3d6a8aaf8f8b8b5a1994d295b5381e4b12f0307b6725bfe3ce8c",
+      "finished_at": "2026-10-31T21:08:49.948592+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "mailman",
+      "key": "f7b4141b59ef0a02",
+      "started_at": "2026-10-31T21:07:49.885165+00:00",
+      "dockerfile_sha256": "92e7c451e1cd5f0aaabb3bc64f200ce2a644822a3ba02bb9558fa7892c0675c0",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:940dba61dfce290b0d8f2b7e6e46419a1e9a2d46b435eeb0293144679878e24a",
+      "finished_at": "2026-10-31T21:09:29.227641+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "make-mips-interpreter",
+      "key": "7b23fd45f5c69354",
+      "started_at": "2026-10-31T21:08:49.955639+00:00",
+      "dockerfile_sha256": "4fb5e727ffa3fba0ff4020164b5ef761e8a97a484b3842e9d4c1486d55d84477",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:b824193e7b2c7cb40e3eee37404fed6c49af05dc91e9f23818bc75c534e5f0da",
+      "finished_at": "2026-10-31T21:09:37.477755+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "mcmc-sampling-stan",
+      "key": "31adf949d360583f",
+      "started_at": "2026-10-31T21:09:29.233485+00:00",
+      "dockerfile_sha256": "691237c87ff3ce596790ad4524631ecedff4b35d036367b10fc9940ec4f86557",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:573039d075297f4924642dba81c0c1bea0a6b9e2cdc0afb7a93dbe2196ae5147",
+      "finished_at": "2026-10-31T21:10:37.402129+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "model-extraction-relu-logits",
+      "key": "859c3fed2d4c09dd",
+      "started_at": "2026-10-31T21:10:37.408454+00:00",
+      "dockerfile_sha256": "9f0e0dd7e0358021f8350ce65da946d4187b80362ab368ac5101d322238ef88a",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:b79e4ce01d8b80093e4e44356cadeb70476d7d8681dc4640f0ea9a8de86852d6",
+      "finished_at": "2026-10-31T21:11:09.957983+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "merge-diff-arc-agi-task",
+      "key": "2860eb451a84e072",
+      "started_at": "2026-10-31T21:09:37.484144+00:00",
+      "dockerfile_sha256": "e422881fc92f0f8ae08c13ea3a3fdcc3e50eee66d8e598973fe6154c58be0c28",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:0b9568c8d1e6fa08d92f6ecc95f6639d55597ec5c4f728f0cdfcee3025ac247f",
+      "finished_at": "2026-10-31T21:11:42.990783+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "modernize-scientific-stack",
+      "key": "43b0a7c35c6aff42",
+      "started_at": "2026-10-31T21:11:09.964673+00:00",
+      "dockerfile_sha256": "357c49cc368d5830211ca19de99dcd3a94fe543ac14444568c35aa30c709af79",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:8ab558fef2af9c94a9adea7e624bf4ee48d7ccc0f604e81213cea78ba33bc277",
+      "finished_at": "2026-10-31T21:11:57.469929+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "mteb-leaderboard",
+      "key": "8e54fcfdedfdc57b",
+      "started_at": "2026-10-31T21:11:42.997695+00:00",
+      "dockerfile_sha256": "c2ceaa7ed063fe0c4489de9eb56117eb39891249ea1974aa82296bfaf8b78a46",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:599a261b382b10485c027c36420d0b2047d8aa49e10a80e2b5cc8ee1bc0a403d",
+      "finished_at": "2026-10-31T21:17:14.442151+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "mteb-retrieve",
+      "key": "67e1ed00e861df53",
+      "started_at": "2026-10-31T21:11:57.475970+00:00",
+      "dockerfile_sha256": "d40d7d0d6aba89f0801fa3226fbe34ca8f902f6ffcf335f01b64cd2e72183ded",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:df3531d1c4690747317d45844883bf204b155214d915b48108678c122bacd579",
+      "finished_at": "2026-10-31T21:17:43.994848+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "multi-source-data-merger",
+      "key": "45a583272c4d17b7",
+      "started_at": "2026-10-31T21:17:14.455944+00:00",
+      "dockerfile_sha256": "32798eaa5c138f7155fd2870b3bddb82f05956dc38babd37da914b19de1d67b6",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:a3a8872ffffea864082e0537079c1abd9245fbdb7dca7c6695cef9acf014e2c9",
+      "finished_at": "2026-10-31T21:17:52.068760+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "nginx-request-logging",
+      "key": "f7111ae052fcf175",
+      "started_at": "2026-10-31T21:17:44.007837+00:00",
+      "dockerfile_sha256": "fa88986e078612e769081421073554b3915c6dc8c354d25301cdbe4711408732",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:7513a419f46c1144a3e329cef30437b7452564389b078472c3a4c524c61a9312",
+      "finished_at": "2026-10-31T21:18:11.506150+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "openssl-selfsigned-cert",
+      "key": "9e9c887c1074bf08",
+      "started_at": "2026-10-31T21:17:52.076814+00:00",
+      "dockerfile_sha256": "c03f882ab973b250e1f8c4159713153af2a85519a48b5123a2de850da77cbe10",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:d5c6aa808cb51c6d357f3f647e813a879715bf7440701afe6f48bae0b0fa47e9",
+      "finished_at": "2026-10-31T21:18:24.993845+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "password-recovery",
+      "key": "98b4029b527e12c9",
+      "started_at": "2026-10-31T21:18:25.017138+00:00",
+      "dockerfile_sha256": "8c6121f402d59dcfc570475564041548928f7457e896dd50c163191146054817",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:8c41b19634d29a1e552cb9a89b40e6135493d9b9db0b49b8e7683d0b8bb02411",
+      "finished_at": "2026-10-31T21:19:07.946776+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "overfull-hbox",
+      "key": "5537cdf3436b783b",
+      "started_at": "2026-10-31T21:18:11.522462+00:00",
+      "dockerfile_sha256": "e773aedfb56a3d64fe15ad9b3912a2d6e0cb1c9a6c19e762bbc002a85ee81401",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:77f2dec6fef06a13ec3674727d5e8a64026434aea1e3d4f4eef40f35cffd6d83",
+      "finished_at": "2026-10-31T21:19:56.582111+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "path-tracing-reverse",
+      "key": "e45f9ccacf658170",
+      "started_at": "2026-10-31T21:19:56.589354+00:00",
+      "dockerfile_sha256": "bbe3145227d725c8187963a7f7830d51b5f9d1703f111832951308a90b2d4254",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:0bdbe051570c191b4a0c30721bfe316fe384f562c453697593e48f03cb89b0c2",
+      "finished_at": "2026-10-31T21:21:30.924618+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "polyglot-c-py",
+      "key": "84d563964bfe6524",
+      "started_at": "2026-10-31T21:21:30.932222+00:00",
+      "dockerfile_sha256": "b9a94ff124937d7add4113ebd89daea641baa5764996005e7a46af742c208330",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:1bb2abdf093d875a40a743252454e71e3776f24a30ca95461175500d110e9991",
+      "finished_at": "2026-10-31T21:22:44.352330+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "polyglot-rust-c",
+      "key": "8d4663010c777744",
+      "started_at": "2026-10-31T21:22:44.359243+00:00",
+      "dockerfile_sha256": "abba09579fbf9b20dd4c5f31ee30a5968c978699ceeca157607733946df20a93",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:dbc88dcbf844597c345e8bef1752126cc88168e1e64a99b0bbce27ce238e69ba",
+      "finished_at": "2026-10-31T21:24:28.063088+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "portfolio-optimization",
+      "key": "eedce41adeca7a71",
+      "started_at": "2026-10-31T21:24:28.069632+00:00",
+      "dockerfile_sha256": "944dc9cae201637a343f892af727c4655fd58d5df82fea86ad8da9f89f46892a",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:ac684032a51c0699268eabbc17c06a211ef2edd8d5b0d20e8a4869d1d2c7090e",
+      "finished_at": "2026-10-31T21:25:06.043997+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "protein-assembly",
+      "key": "75e2439ffa91db11",
+      "started_at": "2026-10-31T21:25:06.050104+00:00",
+      "dockerfile_sha256": "c9bb9c06abf0c50939bc6330ce6766c798b89e0fbbf19d0202bd6bc1b96aee09",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:bc978fce2ac0d75f969fb21b2b044364fe2eb89e52bd525d59e1005dda158700",
+      "finished_at": "2026-10-31T21:25:33.321135+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "prove-plus-comm",
+      "key": "f9a93e6e8023d4df",
+      "started_at": "2026-10-31T21:25:33.326736+00:00",
+      "dockerfile_sha256": "9c809385a084b0a652710278ff6cf9be95779da40e25f7e2f9bc83a56772d234",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:5cbc9623f7ef5085867fd93f55aeb4ce6e94eb7be70b749bebd75422b9401903",
+      "finished_at": "2026-10-31T21:27:57.430026+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "pypi-server",
+      "key": "d8bf5b3a8e831a67",
+      "started_at": "2026-10-31T21:27:57.436254+00:00",
+      "dockerfile_sha256": "90b2650e5e89dd796c75ad0c6b73903dcab7c950cc113015487a6c7726b8ff02",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:be81351dfdd9c91853dd2537ded44da5d1fe94a952cde005a5f73ea331b6d4cb",
+      "finished_at": "2026-10-31T21:28:29.339768+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "pytorch-model-cli",
+      "key": "e8fc84605c0fa839",
+      "started_at": "2026-10-31T21:28:29.346340+00:00",
+      "dockerfile_sha256": "7627eed35f01f493a843106f41224a2d4c0ab6a62d22b1e11cb3a9ec7bc61e6f",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:d5c4117e2e83699f171f2939a15209e8d9ff953224223ecc0d5a7e128d912524",
+      "finished_at": "2026-10-31T21:28:56.453401+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "path-tracing",
+      "key": "d701b06b974ab491",
+      "started_at": "2026-10-31T21:29:51.113221+00:00",
+      "dockerfile_sha256": "44be30b42901d01ce2e82e84c31d1c502d7083bb806e30065f50e9fa87e6c594",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:d67828b37b875f9370fe49e4dee6fab339a382b5f2d7eb1176966795be4ebe26",
+      "finished_at": "2026-10-31T21:31:04.225951+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "qemu-alpine-ssh",
+      "key": "f4744c95d150912d",
+      "started_at": "2026-10-31T21:31:04.233531+00:00",
+      "dockerfile_sha256": "1dc7cbf3abf400c1c2e5c6786a13f398f60fb3f03bc29c18ae6dfc53ec8a0476",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:92e3044b05e95e62e69f1829bf279a595bdbe3009d34b1f613bbcd802c5258b5",
+      "finished_at": "2026-10-31T21:32:02.122520+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "qemu-startup",
+      "key": "44bfe6dda23b4800",
+      "started_at": "2026-10-31T21:32:02.135470+00:00",
+      "dockerfile_sha256": "6feb293f945b02c51e25dfac2a337c16fcfe7a0f2efb9efed8b093e33c5ab755",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:a31ee4c6fe2d6325001538fbd18fed869bfb87064238a152eca06aea37a7fc3a",
+      "finished_at": "2026-10-31T21:32:39.642165+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "pytorch-model-recovery",
+      "key": "261f697471a1cc56",
+      "started_at": "2026-10-31T21:28:56.461708+00:00",
+      "dockerfile_sha256": "4acb392c72eccca5f82d118d8de17d63e731568d468d069cc29ac25c666762f0",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:14788925a26c40d19238d7a609952ce6a34558aa5663f96dd4770c83625601f4",
+      "finished_at": "2026-10-31T21:33:14.425985+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "raman-fitting",
+      "key": "491d05e36cd6e1a9",
+      "started_at": "2026-10-31T21:33:14.432167+00:00",
+      "dockerfile_sha256": "2931068260bb82a6157d97f5f9ab30587a14c7a3acbf0b3302ddf3abca113171",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:91823e86397502e2360312f55cd04364778cb0ec0faa2b9035ef4d6b73b7eee3",
+      "finished_at": "2026-10-31T21:33:46.331205+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "query-optimize",
+      "key": "644a924f10363da7",
+      "started_at": "2026-10-31T21:32:39.647948+00:00",
+      "dockerfile_sha256": "28172d464991bd2005a542351a46ed33196e0d185fd95a72617b6149bcd4191c",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:86b4875817a2197667945111bef954a08f1e7792fbdb867ee4573b232b5cb1ea",
+      "finished_at": "2026-10-31T21:33:47.931299+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "regex-chess",
+      "key": "39a272cf946fd46c",
+      "started_at": "2026-10-31T21:33:46.338196+00:00",
+      "dockerfile_sha256": "f5bcbb2566ee04f2e3345a0431ce85823076d060c00e03f9dda439cc121b32d4",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:7d0b32787dd14c63a51f77e486bdf76430030c0c4e41389d235cbe005c0be709",
+      "finished_at": "2026-10-31T21:34:19.390228+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "regex-log",
+      "key": "ba738d6461e4403a",
+      "started_at": "2026-10-31T21:33:47.940999+00:00",
+      "dockerfile_sha256": "92e6fc4fedc85e6da92b65957fc4a6894521048305bdc878a1b9fe5f383fc11c",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:6bd1f15bf892812e45a580a16d4b7d5ad4fd09f414cbc61a7220f840180704ae",
+      "finished_at": "2026-10-31T21:35:51.944090+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "reshard-c4-data",
+      "key": "4715546eb95f48a3",
+      "started_at": "2026-10-31T21:34:19.396074+00:00",
+      "dockerfile_sha256": "f70c6e9978e79d0332b7592cd0cfd2fb056035d377d53bb97a577c79d86d71b5",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:5f6d6e4e043f5b0ed8b4a62370321bffee32bfbab37763b1990a9f9f1a20146f",
+      "finished_at": "2026-10-31T21:36:03.089029+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "sam-cell-seg",
+      "key": "7521dca2006a31b9",
+      "started_at": "2026-10-31T21:36:03.095426+00:00",
+      "dockerfile_sha256": "0b72fce3396a077dc5ba688124dbf00112a050075af7b4ca286ed7a7f97d2a28",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c92636ec814916f27f743ac37f2d1b56292188b8618f73a7868ab4fb635708bd",
+      "finished_at": "2026-10-31T21:36:50.602460+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "rstan-to-pystan",
+      "key": "7f47cd7c577bdb34",
+      "started_at": "2026-10-31T21:35:51.950400+00:00",
+      "dockerfile_sha256": "e584049adca541e6f4bfb27b4ec33765dd09120e2f7c667bb7839fa4e8c0572d",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:d6b69472a385ab8528cde50e996b857161f389d4a200ce5d13ecc7ec9aab948a",
+      "finished_at": "2026-10-31T21:37:25.391240+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "sanitize-git-repo",
+      "key": "3794f86f403b0297",
+      "started_at": "2026-10-31T21:36:50.608976+00:00",
+      "dockerfile_sha256": "e4efb6c7079979a7b8e1acf6b35527c944a07f03c6b74144aaf4e5675015f3c5",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:56c0550fa73cedf3e63352284bf661598588f89b8b3ddd11338031e6392926a2",
+      "finished_at": "2026-10-31T21:37:27.988901+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "schemelike-metacircular-eval",
+      "key": "2e3dbe4503e8504d",
+      "started_at": "2026-10-31T21:37:25.396922+00:00",
+      "dockerfile_sha256": "396f252fa91555d40c93b9d7de77916ff132bd3d37799390baabec6b66eb4e6b",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:64e98ef92205fbc2880f158ef02893e2ccf82dbff3ad7ed6332648eb437164be",
+      "finished_at": "2026-10-31T21:37:57.928349+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "sqlite-db-truncate",
+      "key": "65c003c97451d630",
+      "started_at": "2026-10-31T21:37:57.934525+00:00",
+      "dockerfile_sha256": "28443354b426003e470df775f5e9afa63707d3b61fe6b7c862705fdc25915281",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:82f15c065a9833298d994b22c2275faab5771b136d021a2519501b471e3b4a4c",
+      "finished_at": "2026-10-31T21:38:29.888327+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "sparql-university",
+      "key": "a51a8fb2ee28069e",
+      "started_at": "2026-10-31T21:37:27.996261+00:00",
+      "dockerfile_sha256": "5ce48e859b1d9013e61d59304fa4cf3334156a72eaf37931ed45b90e4c122276",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:efc109b9f7dbe46ccc82676814a15c889b7e9d749b09b64a960e0595797c8c79",
+      "finished_at": "2026-10-31T21:39:36.703111+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "sqlite-with-gcov",
+      "key": "3d481c081027b13c",
+      "started_at": "2026-10-31T21:38:29.894289+00:00",
+      "dockerfile_sha256": "f3cf627a4fd0c7b902d68b280b063f01074ccd581d92e07dfe73f7fa5c6de663",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c16101704af1ec3b989b7b7c0dea240c01c33982b0902e9e18299c0d7bf07be1",
+      "finished_at": "2026-10-31T21:39:37.983308+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "torch-tensor-parallelism",
+      "key": "a42f471d5e72c82e",
+      "started_at": "2026-10-31T21:39:37.990365+00:00",
+      "dockerfile_sha256": "db7d13da196d8eee0647ba2afc7b61c2ba9f3a92ac81597e3a636578916d9cf8",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:dad3e520f514a52d76ec55b012e877bab9757f7a32f8a8cd87898d94c33eb6c2",
+      "finished_at": "2026-10-31T21:40:46.218151+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "train-fasttext",
+      "key": "be95eff94156bb73",
+      "started_at": "2026-10-31T21:40:46.224765+00:00",
+      "dockerfile_sha256": "21862c1de1ba809fc8c6766a5bdb0445bc3279bc721a3dffe44e0755bf62fdbf",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:b0a8b08ec501e72d6343db7e9825a6a05261342f413852f6eaf78e9efb8ad0cb",
+      "finished_at": "2026-10-31T21:41:38.873844+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "tune-mjcf",
+      "key": "a86f3060219b4bf0",
+      "started_at": "2026-10-31T21:41:38.880603+00:00",
+      "dockerfile_sha256": "f0b47536f2e56fdf0775c5954d8141b619dc4c8c4f332c91d3862fdf475cb2c5",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:d98fceed473de09de37fa34efc0cd60d57e2ade1f6572cb256fc3f45c70c7ad2",
+      "finished_at": "2026-10-31T21:42:10.733694+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "video-processing",
+      "key": "41629484b37de1aa",
+      "started_at": "2026-10-31T21:42:10.740118+00:00",
+      "dockerfile_sha256": "e6e2b1d336783604f515410192708a6d2c1df8966fa1d03e7d702d4c0bbe26df",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:80188295b93abfed8ab2b16044538b51e55ff525e53b5b6fc709b426a252ddc7",
+      "finished_at": "2026-10-31T21:42:58.259949+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "vulnerable-secret",
+      "key": "298b5f7a4633748d",
+      "started_at": "2026-10-31T21:42:58.266068+00:00",
+      "dockerfile_sha256": "43f55cbb87b9fd90ae9c8d95c8ad15d1a4b03fba36f5f5ffff06483bb0439d32",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:9fc97ddda069c45ffe532a0ca1c787293268fa55b770dfa613a7054827c1d88b",
+      "finished_at": "2026-10-31T21:43:35.586763+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "winning-avg-corewars",
+      "key": "93a9f557ed572b6d",
+      "started_at": "2026-10-31T21:43:35.607884+00:00",
+      "dockerfile_sha256": "c393271b40ed4df68849ed6d2d2f412a93a25e4f15e9ecffcda42eb1f65e0990",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:c91147d82a2baec8f23d6468ca9df4f27ffaea8a047ce781adff1c28491bc816",
+      "finished_at": "2026-10-31T21:44:17.632554+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "write-compressor",
+      "key": "99f49de831294b7d",
+      "started_at": "2026-10-31T21:44:17.639043+00:00",
+      "dockerfile_sha256": "96d72fed4c44d25bbad059c995edbcfefe17babf62e4fd319f38237561a7faea",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:fd00ccef7c43b3495caf8bb98ce847db7f1700a7f496bc3a72b0037172498b3c",
+      "finished_at": "2026-10-31T21:45:35.301180+00:00"
+    },
+    {
+      "benchmark": "tblite",
+      "task": "scan-linux-persistence-artifacts",
+      "key": "204fc01fdd0158d2",
+      "started_at": "2026-10-31T21:47:32.282444+00:00",
+      "dockerfile_sha256": "1e774c4608397a22fbe0e61a1b7dc708b16f5c47cc3ecab6449f693c98d49200",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:4b973f8b09d6328ea30cbd5a1b71dc413f7e3729ddc8801a03e93313db35d336",
+      "finished_at": "2026-10-31T21:50:17.314601+00:00"
+    },
+    {
+      "benchmark": "tb2",
+      "task": "torch-pipeline-parallelism",
+      "key": "f480ff7be61749cb",
+      "started_at": "2026-10-31T21:50:28.046956+00:00",
+      "dockerfile_sha256": "71040111573220ccd725fc267fcf30e7b255d1f7bdec4af65f60bdba806efdf7",
+      "status": "succeeded",
+      "image": "registry.rcp.epfl.ch/shuli/ota-eval-native-all@sha256:19766d7f2af2e9f51797983e142753c7dd868f0de5a24ac672e15129ccd94f0a",
+      "finished_at": "2026-10-31T21:52:32.123764+00:00"
+    }
+  ],
+  "counts": {
+    "swebench100": 100,
+    "tblite": 100,
+    "tb2": 89
+  },
+  "failures": [],
+  "updated_at": "2026-10-31T21:52:32.131884+00:00"
+}

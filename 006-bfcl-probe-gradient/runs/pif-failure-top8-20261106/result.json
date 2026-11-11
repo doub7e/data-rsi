@@ -1,0 +1,1991 @@
+{
+  "finished_at": "2026-11-06T10:42:22.703533+00:00",
+  "models": {
+    "q67_random": {
+      "successes": 144,
+      "n": 256,
+      "first_failure_turns": {
+        "3": 93,
+        "1": 19
+      },
+      "error_types": {
+        "multi_turn:instance_state_mismatch": 92,
+        "multi_turn:execution_response_mismatch": 4,
+        "multi_turn:empty_turn_model_response": 16
+      },
+      "flags": {
+        "restore_no_estimate": 18,
+        "feasibility_no_call": 13,
+        "feasibility_no_tool": 10,
+        "fuel_no_call": 12,
+        "fuel_no_tool": 10,
+        "fuel_39_5_attempt": 148,
+        "fuel_status_lookup": 156,
+        "engine_no_call": 1,
+        "feasibility_missing_efficiency_keywords": 33,
+        "fuel_no_call_asks_level_keywords": 8
+      },
+      "mean_output_tokens": 8617.53515625,
+      "median_output_tokens": 8573.5,
+      "max_output_tokens": 13177,
+      "mean_model_calls": 16.2109375,
+      "length_capped_trajectories": 1,
+      "length_capped_calls": 1,
+      "max_context": 10799,
+      "turns": [
+        {
+          "turn": 0,
+          "no_tool": 256,
+          "trajectory_function_counts": {},
+          "mean_model_calls": 1,
+          "mean_output_tokens": 402.73828125
+        },
+        {
+          "turn": 1,
+          "no_tool": 15,
+          "trajectory_function_counts": {
+            "estimate_distance": 238,
+            "get_zipcode_based_on_city": 241
+          },
+          "mean_model_calls": 3.80859375,
+          "mean_output_tokens": 1505.7578125
+        },
+        {
+          "turn": 2,
+          "no_tool": 10,
+          "trajectory_function_counts": {
+            "displayCarStatus": 7,
+            "estimate_distance": 7,
+            "estimate_drive_feasibility_by_mileage": 243,
+            "gallon_to_liter": 3,
+            "get_zipcode_based_on_city": 8
+          },
+          "mean_model_calls": 2.078125,
+          "mean_output_tokens": 1931.46484375
+        },
+        {
+          "turn": 3,
+          "no_tool": 10,
+          "trajectory_function_counts": {
+            "displayCarStatus": 156,
+            "estimate_distance": 2,
+            "estimate_drive_feasibility_by_mileage": 1,
+            "fillFuelTank": 244,
+            "get_zipcode_based_on_city": 3,
+            "lockDoors": 2,
+            "pressBrakePedal": 2,
+            "startEngine": 2
+          },
+          "mean_model_calls": 2.984375,
+          "mean_output_tokens": 2685.33203125
+        },
+        {
+          "turn": 4,
+          "no_tool": 1,
+          "trajectory_function_counts": {
+            "fillFuelTank": 3,
+            "lockDoors": 251,
+            "pressBrakePedal": 250,
+            "startEngine": 255
+          },
+          "mean_model_calls": 6.33984375,
+          "mean_output_tokens": 2092.2421875
+        }
+      ],
+      "state_mismatch_fields": {
+        "fuelLevel": 92,
+        "engine_state": 1,
+        "remainingUnlockedDoors": 1,
+        "doorStatus": 1,
+        "brakePedalStatus": 1
+      },
+      "fuel_amount_attempts": {
+        "39.5": 148,
+        "50.0": 129,
+        "50": 48,
+        "40.5": 1,
+        "49.9": 2,
+        "0.0": 1,
+        "22.0": 1
+      },
+      "fuel_amount_trajectory_counts": {
+        "0": 1,
+        "10.5": 0,
+        "39.5": 148,
+        "50": 177
+      },
+      "fuel_wrong_final_state_values": {
+        "10.5": 91,
+        "32.5": 1
+      }
+    },
+    "q67_f": {
+      "successes": 131,
+      "n": 256,
+      "first_failure_turns": {
+        "2": 3,
+        "3": 100,
+        "1": 22
+      },
+      "error_types": {
+        "multi_turn:empty_turn_model_response": 20,
+        "multi_turn:instance_state_mismatch": 98,
+        "multi_turn:execution_response_mismatch": 7
+      },
+      "flags": {
+        "restore_no_estimate": 18,
+        "feasibility_no_call": 12,
+        "feasibility_no_tool": 10,
+        "fuel_no_call": 7,
+        "fuel_no_tool": 6,
+        "fuel_39_5_attempt": 144,
+        "fuel_status_lookup": 141,
+        "engine_no_call": 0,
+        "feasibility_missing_efficiency_keywords": 52,
+        "fuel_no_call_asks_level_keywords": 4
+      },
+      "mean_output_tokens": 8807.26171875,
+      "median_output_tokens": 8702.0,
+      "max_output_tokens": 15727,
+      "mean_model_calls": 16.4296875,
+      "length_capped_trajectories": 1,
+      "length_capped_calls": 1,
+      "max_context": 10907,
+      "turns": [
+        {
+          "turn": 0,
+          "no_tool": 256,
+          "trajectory_function_counts": {},
+          "mean_model_calls": 1,
+          "mean_output_tokens": 400.76171875
+        },
+        {
+          "turn": 1,
+          "no_tool": 16,
+          "trajectory_function_counts": {
+            "estimate_distance": 238,
+            "get_zipcode_based_on_city": 240
+          },
+          "mean_model_calls": 3.79296875,
+          "mean_output_tokens": 1512.375
+        },
+        {
+          "turn": 2,
+          "no_tool": 10,
+          "trajectory_function_counts": {
+            "displayCarStatus": 19,
+            "estimate_distance": 13,
+            "estimate_drive_feasibility_by_mileage": 244,
+            "fillFuelTank": 1,
+            "gallon_to_liter": 5,
+            "get_zipcode_based_on_city": 14
+          },
+          "mean_model_calls": 2.2109375,
+          "mean_output_tokens": 2208.890625
+        },
+        {
+          "turn": 3,
+          "no_tool": 6,
+          "trajectory_function_counts": {
+            "displayCarStatus": 141,
+            "estimate_distance": 1,
+            "fillFuelTank": 249,
+            "get_current_speed": 1,
+            "get_zipcode_based_on_city": 1
+          },
+          "mean_model_calls": 2.88671875,
+          "mean_output_tokens": 2560.37109375
+        },
+        {
+          "turn": 4,
+          "no_tool": 0,
+          "trajectory_function_counts": {
+            "fillFuelTank": 1,
+            "lockDoors": 256,
+            "pressBrakePedal": 255,
+            "startEngine": 256
+          },
+          "mean_model_calls": 6.5390625,
+          "mean_output_tokens": 2124.86328125
+        }
+      ],
+      "state_mismatch_fields": {
+        "fuelLevel": 98
+      },
+      "fuel_amount_attempts": {
+        "39.5": 145,
+        "50.0": 153,
+        "50": 34,
+        "49.5": 2,
+        "49.0": 1,
+        "10.5": 1,
+        "24.5": 1
+      },
+      "fuel_amount_trajectory_counts": {
+        "0": 0,
+        "10.5": 1,
+        "39.5": 144,
+        "50": 187
+      },
+      "fuel_wrong_final_state_values": {
+        "10.5": 96,
+        "21.0": 1,
+        "35.0": 1
+      }
+    },
+    "q67_k": {
+      "successes": 168,
+      "n": 256,
+      "first_failure_turns": {
+        "3": 75,
+        "4": 2,
+        "2": 4,
+        "1": 7
+      },
+      "error_types": {
+        "multi_turn:instance_state_mismatch": 77,
+        "multi_turn:empty_turn_model_response": 7,
+        "multi_turn:execution_response_mismatch": 4
+      },
+      "flags": {
+        "restore_no_estimate": 5,
+        "feasibility_no_call": 7,
+        "feasibility_no_tool": 4,
+        "fuel_no_call": 1,
+        "fuel_no_tool": 1,
+        "fuel_39_5_attempt": 182,
+        "fuel_status_lookup": 179,
+        "engine_no_call": 2,
+        "feasibility_missing_efficiency_keywords": 49,
+        "fuel_no_call_asks_level_keywords": 1
+      },
+      "mean_output_tokens": 8622.35546875,
+      "median_output_tokens": 8437.0,
+      "max_output_tokens": 13182,
+      "mean_model_calls": 16.65234375,
+      "length_capped_trajectories": 1,
+      "length_capped_calls": 1,
+      "max_context": 10964,
+      "turns": [
+        {
+          "turn": 0,
+          "no_tool": 256,
+          "trajectory_function_counts": {},
+          "mean_model_calls": 1,
+          "mean_output_tokens": 411.49609375
+        },
+        {
+          "turn": 1,
+          "no_tool": 5,
+          "trajectory_function_counts": {
+            "estimate_distance": 251,
+            "get_zipcode_based_on_city": 250
+          },
+          "mean_model_calls": 3.9296875,
+          "mean_output_tokens": 1559.39453125
+        },
+        {
+          "turn": 2,
+          "no_tool": 4,
+          "trajectory_function_counts": {
+            "displayCarStatus": 17,
+            "estimate_distance": 6,
+            "estimate_drive_feasibility_by_mileage": 249,
+            "estimate_drive_feasibility_by_milege": 1,
+            "get_zipcode_based_on_city": 5,
+            "lockDoors": 1,
+            "pressBrakePedal": 1,
+            "startEngine": 1
+          },
+          "mean_model_calls": 2.125,
+          "mean_output_tokens": 1959.32421875
+        },
+        {
+          "turn": 3,
+          "no_tool": 1,
+          "trajectory_function_counts": {
+            "displayCarStatus": 179,
+            "estimate_drive_feasibility_by_mileage": 3,
+            "fillFuelTank": 255,
+            "lockDoors": 3,
+            "pressBrakePedal": 3,
+            "startEngine": 3
+          },
+          "mean_model_calls": 3.23828125,
+          "mean_output_tokens": 2668.50390625
+        },
+        {
+          "turn": 4,
+          "no_tool": 2,
+          "trajectory_function_counts": {
+            "lockDoors": 250,
+            "pressBrakePedal": 250,
+            "startEngine": 254
+          },
+          "mean_model_calls": 6.359375,
+          "mean_output_tokens": 2023.63671875
+        }
+      ],
+      "state_mismatch_fields": {
+        "fuelLevel": 72,
+        "engine_state": 5,
+        "remainingUnlockedDoors": 5,
+        "doorStatus": 5,
+        "brakePedalStatus": 5
+      },
+      "fuel_amount_attempts": {
+        "39.5": 182,
+        "50": 62,
+        "50.0": 119,
+        "49.0": 4,
+        "0": 1,
+        "2.0": 1,
+        "37.5": 1,
+        "49.9": 1,
+        "11.5": 1,
+        "20.0": 1
+      },
+      "fuel_amount_trajectory_counts": {
+        "0": 1,
+        "10.5": 0,
+        "39.5": 182,
+        "50": 180
+      },
+      "fuel_wrong_final_state_values": {
+        "10.5": 70,
+        "22.0": 1,
+        "30.5": 1
+      }
+    },
+    "q1_random": {
+      "successes": 132,
+      "n": 256,
+      "first_failure_turns": {
+        "5": 111,
+        "0": 13
+      },
+      "error_types": {
+        "multi_turn:empty_turn_model_response": 111,
+        "multi_turn:execution_response_mismatch": 13
+      },
+      "flags": {
+        "support_no_call": 117
+      },
+      "mean_output_tokens": 8610.94140625,
+      "median_output_tokens": 8473.5,
+      "max_output_tokens": 13111,
+      "mean_model_calls": 13.74609375,
+      "length_capped_trajectories": 0,
+      "length_capped_calls": 0,
+      "max_context": 8807,
+      "turns": [
+        {
+          "turn": 0,
+          "no_tool": 0,
+          "trajectory_function_counts": {
+            "get_all_airports": 1,
+            "get_flight_cost": 256,
+            "list_all_airports": 256
+          },
+          "mean_model_calls": 3.0390625,
+          "mean_output_tokens": 2340.51171875
+        },
+        {
+          "turn": 1,
+          "no_tool": 0,
+          "trajectory_function_counts": {
+            "book_flight": 256,
+            "get_credit_card_balance": 1,
+            "get_flight_cost": 1,
+            "retrieve_invoice": 3
+          },
+          "mean_model_calls": 2.01953125,
+          "mean_output_tokens": 1121.078125
+        },
+        {
+          "turn": 2,
+          "no_tool": 0,
+          "trajectory_function_counts": {
+            "purchase_insurance": 256
+          },
+          "mean_model_calls": 2,
+          "mean_output_tokens": 961.49609375
+        },
+        {
+          "turn": 3,
+          "no_tool": 0,
+          "trajectory_function_counts": {
+            "retrieve_invoice": 256
+          },
+          "mean_model_calls": 2.0078125,
+          "mean_output_tokens": 1482.64453125
+        },
+        {
+          "turn": 4,
+          "no_tool": 256,
+          "trajectory_function_counts": {},
+          "mean_model_calls": 1,
+          "mean_output_tokens": 443.3515625
+        },
+        {
+          "turn": 5,
+          "no_tool": 117,
+          "trajectory_function_counts": {
+            "contact_customer_support": 139
+          },
+          "mean_model_calls": 1.54296875,
+          "mean_output_tokens": 873.66796875
+        },
+        {
+          "turn": 6,
+          "no_tool": 0,
+          "trajectory_function_counts": {
+            "cancel_booking": 256,
+            "contact_customer_support": 2,
+            "get_credit_card_balance": 34
+          },
+          "mean_model_calls": 2.13671875,
+          "mean_output_tokens": 1388.19140625
+        }
+      ],
+      "state_mismatch_fields": {}
+    },
+    "q1_f": {
+      "successes": 155,
+      "n": 256,
+      "first_failure_turns": {
+        "5": 93,
+        "3": 3,
+        "0": 3,
+        "6": 1,
+        "2": 1
+      },
+      "error_types": {
+        "multi_turn:empty_turn_model_response": 98,
+        "multi_turn:execution_response_mismatch": 3
+      },
+      "flags": {
+        "support_no_call": 94
+      },
+      "mean_output_tokens": 8573.375,
+      "median_output_tokens": 8470.0,
+      "max_output_tokens": 13356,
+      "mean_model_calls": 13.77734375,
+      "length_capped_trajectories": 1,
+      "length_capped_calls": 1,
+      "max_context": 8283,
+      "turns": [
+        {
+          "turn": 0,
+          "no_tool": 0,
+          "trajectory_function_counts": {
+            "get_all_airports": 1,
+            "get_flight_cost": 256,
+            "list_all_airports": 256,
+            "travel_get_login_status": 1
+          },
+          "mean_model_calls": 3.046875,
+          "mean_output_tokens": 2331.4375
+        },
+        {
+          "turn": 1,
+          "no_tool": 0,
+          "trajectory_function_counts": {
+            "book_flight": 256,
+            "get_credit_card_balance": 1,
+            "retrieve_invoice": 1
+          },
+          "mean_model_calls": 2.0078125,
+          "mean_output_tokens": 1076.515625
+        },
+        {
+          "turn": 2,
+          "no_tool": 0,
+          "trajectory_function_counts": {
+            "purchase_insurance": 256
+          },
+          "mean_model_calls": 1.99609375,
+          "mean_output_tokens": 995.2578125
+        },
+        {
+          "turn": 3,
+          "no_tool": 0,
+          "trajectory_function_counts": {
+            "retrieve_invoice": 256
+          },
+          "mean_model_calls": 2,
+          "mean_output_tokens": 1457.21875
+        },
+        {
+          "turn": 4,
+          "no_tool": 256,
+          "trajectory_function_counts": {},
+          "mean_model_calls": 1,
+          "mean_output_tokens": 471.96484375
+        },
+        {
+          "turn": 5,
+          "no_tool": 94,
+          "trajectory_function_counts": {
+            "contact_customer_support": 162
+          },
+          "mean_model_calls": 1.625,
+          "mean_output_tokens": 967.66015625
+        },
+        {
+          "turn": 6,
+          "no_tool": 0,
+          "trajectory_function_counts": {
+            "cancel_booking": 256,
+            "contact_customer_support": 1,
+            "get_credit_card_balance": 32
+          },
+          "mean_model_calls": 2.1015625,
+          "mean_output_tokens": 1273.3203125
+        }
+      ],
+      "state_mismatch_fields": {}
+    },
+    "q1_k": {
+      "successes": 127,
+      "n": 256,
+      "first_failure_turns": {
+        "5": 117,
+        "0": 9,
+        "6": 2,
+        "1": 1
+      },
+      "error_types": {
+        "multi_turn:empty_turn_model_response": 124,
+        "multi_turn:execution_response_mismatch": 5
+      },
+      "flags": {
+        "support_no_call": 121
+      },
+      "mean_output_tokens": 9005.15625,
+      "median_output_tokens": 8781.0,
+      "max_output_tokens": 21059,
+      "mean_model_calls": 13.7890625,
+      "length_capped_trajectories": 3,
+      "length_capped_calls": 3,
+      "max_context": 9082,
+      "turns": [
+        {
+          "turn": 0,
+          "no_tool": 4,
+          "trajectory_function_counts": {
+            "get_flight_cost": 252,
+            "list_all_airports": 252
+          },
+          "mean_model_calls": 2.9921875,
+          "mean_output_tokens": 2400.9140625
+        },
+        {
+          "turn": 1,
+          "no_tool": 2,
+          "trajectory_function_counts": {
+            "book_flight": 254,
+            "get_all_credit_cards": 1,
+            "get_flight_cost": 4,
+            "list_all_airports": 4,
+            "retrieve_invoice": 3
+          },
+          "mean_model_calls": 2.0546875,
+          "mean_output_tokens": 1159.16796875
+        },
+        {
+          "turn": 2,
+          "no_tool": 2,
+          "trajectory_function_counts": {
+            "purchase_insurance": 254
+          },
+          "mean_model_calls": 1.9921875,
+          "mean_output_tokens": 1054.99609375
+        },
+        {
+          "turn": 3,
+          "no_tool": 3,
+          "trajectory_function_counts": {
+            "retrieve_invoice": 253
+          },
+          "mean_model_calls": 2.0078125,
+          "mean_output_tokens": 1511
+        },
+        {
+          "turn": 4,
+          "no_tool": 256,
+          "trajectory_function_counts": {},
+          "mean_model_calls": 1,
+          "mean_output_tokens": 495.72265625
+        },
+        {
+          "turn": 5,
+          "no_tool": 121,
+          "trajectory_function_counts": {
+            "book_flight": 1,
+            "contact_customer_support": 135,
+            "get_flight_cost": 1,
+            "purchase_insurance": 1,
+            "retrieve_invoice": 1
+          },
+          "mean_model_calls": 1.54296875,
+          "mean_output_tokens": 903.45703125
+        },
+        {
+          "turn": 6,
+          "no_tool": 1,
+          "trajectory_function_counts": {
+            "cancel_booking": 255,
+            "contact_customer_support": 1,
+            "get_credit_card_balance": 54
+          },
+          "mean_model_calls": 2.19921875,
+          "mean_output_tokens": 1479.8984375
+        }
+      ],
+      "state_mismatch_fields": {}
+    }
+  },
+  "transitions": {
+    "q67_f": {
+      "gained": 59,
+      "lost": 72,
+      "gains_baseline_failure_turns": {
+        "3": 50,
+        "1": 9
+      },
+      "losses_selected_failure_turns": {
+        "2": 2,
+        "3": 57,
+        "1": 13
+      }
+    },
+    "q67_k": {
+      "gained": 75,
+      "lost": 51,
+      "gains_baseline_failure_turns": {
+        "3": 60,
+        "1": 15
+      },
+      "losses_selected_failure_turns": {
+        "3": 44,
+        "4": 1,
+        "2": 3,
+        "1": 3
+      }
+    },
+    "q1_f": {
+      "gained": 73,
+      "lost": 50,
+      "gains_baseline_failure_turns": {
+        "5": 63,
+        "0": 10
+      },
+      "losses_selected_failure_turns": {
+        "5": 46,
+        "3": 2,
+        "2": 1,
+        "0": 1
+      }
+    },
+    "q1_k": {
+      "gained": 61,
+      "lost": 66,
+      "gains_baseline_failure_turns": {
+        "5": 55,
+        "0": 6
+      },
+      "losses_selected_failure_turns": {
+        "5": 63,
+        "6": 2,
+        "1": 1
+      }
+    }
+  },
+  "selection": {
+    "q67_f": {
+      "top8": [
+        {
+          "rank": 1,
+          "meta_index": 6099,
+          "influence": 768.4161687972953,
+          "env_id": "env_50_sft",
+          "traj_type": "non_conversation",
+          "user_turns": 1,
+          "first_user": "1. Register a new location with ID LOC006 at latitude 12.6000, longitude 41.6600, habitat type \"savanna\", and region name \"Horn of Africa\".  \n2. Add a new species with ID SP006: common name \"Lion\", scientific name \"Panthera leo\", conservation status \"Vulnerable\".  \n3. Record a new observation (ID OBSV006) of the African Elephant (species SP001) at the newly created location LOC006, observed by Amara Diallo (observer OBSR05) on 2024‑03‑03 12:00 UTC (timestamp 1709500800). Ensure no duplicate exists within a one‑minute window.  \n4. Record another new observation (ID OBSV007) of the Lion (species SP006) at the same location LOC006, observed by James Whitaker (observer OBSR02) on 2024‑03‑03 12:05 UTC (timestamp 1709501100), also checking for duplicates.  \n5. Update the existing observation OBSV004 so that it now records an African Elephant (species SP001) at location LOC006, observed by Amara Diallo (observer OBSR05) with a corrected timestamp of 2024‑03‑04 08:30 UTC (timestamp 1709538600).  \n6. Delete the observation OBSV002 because it was entered in error.  \n7. After completing all modifications, list all observations for the African Elephant (species SP001) to confirm that the new and updated records appear correctly.",
+          "user_requests": [
+            "1. Register a new location with ID LOC006 at latitude 12.6000, longitude 41.6600, habitat type \"savanna\", and region name \"Horn of Africa\".  \n2. Add a new species with ID SP006: common name \"Lion\", scientific name \"Panthera leo\", conservation status \"Vulnerable\".  \n3. Record a new observation (ID OBSV006) of the African Elephant (species SP001) at the newly created location LOC006, observed by Amara Diallo (observer OBSR05) on 2024‑03‑03 12:00 UTC (timestamp 1709500800). Ensure no duplicate exists within a one‑minute window.  \n4. Record another new observation (ID OBSV007) of the Lion (species SP006) at the same location LOC006, observed by James Whitaker (observer OBSR02) on 2024‑03‑03 12:05 UTC (timestamp 1709501100), also checking for duplicates.  \n5. Update the existing observation OBSV004 so that it now records an African Elephant (species SP001) at location LOC006, observed by Amara Diallo (observer OBSR05) with a corrected timestamp of 2024‑03‑04 08:30 UTC (timestamp 1709538600).  \n6. Delete the observation OBSV002 because it was entered in error.  \n7. After completing all modifications, list all observations for the African Elephant (species SP001) to confirm that the new and updated records appear correctly."
+          ],
+          "tool_call_names": {
+            "add_location": 1,
+            "add_species": 1,
+            "check_for_duplicate_observation": 2,
+            "add_observation": 2,
+            "update_observation": 1,
+            "remove_observation": 1,
+            "list_observations_by_species": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"add_location\", \"arguments\": {\"location_id\": \"LOC006\", \"latitude\": 12.6, \"longitude\": 41.66, \"habitat_type\": \"savanna\", \"region_name\": \"Horn of Africa\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"add_species\", \"arguments\": {\"species_id\": \"SP006\", \"common_name\": \"Lion\", \"scientific_name\": \"Panthera leo\", \"conservation_status\": \"Vulnerable\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"list_observations_by_species\", \"arguments\": {\"species_id\": \"SP001\"}}\n</tool_call>",
+            "Task Completed"
+          ],
+          "archived_raw_gradient_norm": 21.543579780197142
+        },
+        {
+          "rank": 2,
+          "meta_index": 685,
+          "influence": 560.3646286655273,
+          "env_id": "env_22_sft",
+          "traj_type": "conversation",
+          "user_turns": 8,
+          "first_user": "Hi, could you check whether the market is currently open right now?",
+          "user_requests": [
+            "Hi, could you check whether the market is currently open right now?",
+            "Thanks for confirming. Can you verify if USR001 has an active real-time data subscription?",
+            "Great, thanks for confirming. Can you check if the ticker MSFT exists and is currently active in the system?",
+            "Could you please retrieve the current bid price for AAPL and the current ask price for MSFT?",
+            "Please sell 20 shares of AAPL at the bid price you retrieved. Be sure to record the trade and update AAPL’s current_price to that bid price.",
+            "Using the proceeds from selling AAPL, could you calculate the maximum whole number of MSFT shares that can be purchased at the ask price you provided, then buy that amount of MSFT shares, record the trade, and update MSFT’s current_price to the ask price?",
+            "Please update USR001’s portfolio: decrease the AAPL holding by the 20 shares sold, and add the 9 newly purchased MSFT shares at their purchase price.",
+            "Could you refresh the primary market data feed’s last_updated timestamp to reflect the recent activity?"
+          ],
+          "tool_call_names": {
+            "get_market_status": 1,
+            "check_data_access_permission": 1,
+            "is_valid_ticker": 1,
+            "get_bid_ask_spread": 2,
+            "get_user_portfolio": 2,
+            "update_stock_price": 2,
+            "execute_trade": 2,
+            "get_latest_market_feed": 1,
+            "update_market_feed_status": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"get_market_status\", \"arguments\": {}}\n</tool_call>",
+            "The market is currently open. You can proceed with trading or checking real-time stock prices. Would you like to perform any specific action related to the market or a particular stock?",
+            "<tool_call>\n{\"name\": \"update_market_feed_status\", \"arguments\": {\"feed_id\": \"feed_NASDAQ\", \"status\": \"active\", \"last_updated\": 1763935856.751432}}\n</tool_call>",
+            "The primary market data feed **'feed_NASDAQ'** has been successfully updated with the latest timestamp **1763935856.751432**, reflecting the recent AAPL sale and MSFT purchase activity. The feed status remains **active**. Let me know if you'd like to verify the feed details or proceed with further actions!"
+          ],
+          "archived_raw_gradient_norm": 30.044010185955997
+        },
+        {
+          "rank": 3,
+          "meta_index": 7568,
+          "influence": 547.6488434558336,
+          "env_id": "env_97_sft",
+          "traj_type": "non_conversation",
+          "user_turns": 1,
+          "first_user": "Alice Chen (customer CUST001) wishes to extend her current reservation at the Grand Plaza Hotel in New York by three days, moving the check‑out from 2025‑04‑10 to 2025‑04‑13. First, determine whether her existing room (Deluxe King, RM001) is free for the extended period; if it is not, locate an alternative room in the same hotel that can accommodate the entire stay, preferring the Suite (RM003) if available. Adjust the reservation accordingly—either by updating the dates of RSV001 or by cancelling it and creating a new reservation for the alternative room—ensuring no double‑booking occurs.  \n\nAfter securing Alice’s extended stay, the hotel decides to increase its inventory by adding one new Standard Twin room to the Grand Plaza Hotel. Create this new room with a unique room_id, set its price 10 % higher than the current Standard Twin room (RM002), and record it in the system. Finally, confirm that the new room’s pricing reflects the increase. The overall objective is to successfully modify Alice’s reservation and expand the hotel’s room inventory with the correctly priced new room.",
+          "user_requests": [
+            "Alice Chen (customer CUST001) wishes to extend her current reservation at the Grand Plaza Hotel in New York by three days, moving the check‑out from 2025‑04‑10 to 2025‑04‑13. First, determine whether her existing room (Deluxe King, RM001) is free for the extended period; if it is not, locate an alternative room in the same hotel that can accommodate the entire stay, preferring the Suite (RM003) if available. Adjust the reservation accordingly—either by updating the dates of RSV001 or by cancelling it and creating a new reservation for the alternative room—ensuring no double‑booking occurs.  \n\nAfter securing Alice’s extended stay, the hotel decides to increase its inventory by adding one new Standard Twin room to the Grand Plaza Hotel. Create this new room with a unique room_id, set its price 10 % higher than the current Standard Twin room (RM002), and record it in the system. Finally, confirm that the new room’s pricing reflects the increase. The overall objective is to successfully modify Alice’s reservation and expand the hotel’s room inventory with the correctly priced new room."
+          ],
+          "tool_call_names": {
+            "get_reservation_by_id": 1,
+            "check_room_availability": 2,
+            "cancel_reservation": 1,
+            "create_reservation": 6,
+            "get_room_details": 2,
+            "add_room": 5
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"get_reservation_by_id\", \"arguments\": {\"reservation_id\": \"RSV001\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"check_room_availability\", \"arguments\": {\"room_id\": \"RM001\", \"check_in_date\": \"2025-04-05\", \"check_out_date\": \"2025-04-13\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"get_room_details\", \"arguments\": {\"room_id\": \"RM000\"}}\n</tool_call>",
+            "Task Completed"
+          ],
+          "archived_raw_gradient_norm": 26.24612874296844
+        },
+        {
+          "rank": 4,
+          "meta_index": 8235,
+          "influence": 486.0721239536743,
+          "env_id": "env_118_sft",
+          "traj_type": "non_conversation",
+          "user_turns": 1,
+          "first_user": "1. Enable the German locale `de-DE` so that it becomes available for standard queries.  \n2. After enabling it, approve the existing German translation for the key `welcome.message`, ensuring its `translated_value` is non‑empty.  \n3. Add a new translation key `terms.of.service` with the default English value “Terms of Service” and a brief description.  \n4. Introduce a new Italian locale `it-IT` with language `it`, region `IT`, and set its `is_enabled` flag to true.  \n5. For the newly created key `terms.of.service`, add pending translations for the locales `en-US`, `fr-FR`, `es-ES`, and `it-IT`, providing appropriate placeholder text for each language.  \n6. Approve the French translation (`fr-FR`) of `terms.of.service` after confirming it exists and contains a non‑empty value.  \n7. Change the workflow status of the Spanish translation (`es-ES`) for the existing key `welcome.message` from “pending” to “reviewed”.  \n8. Delete the Chinese translation (`zh-CN`) for the key `date.format` from the system.  \n\nEach sub‑task must be accomplished using the provided query and state‑change operations, respecting all environment constraints.",
+          "user_requests": [
+            "1. Enable the German locale `de-DE` so that it becomes available for standard queries.  \n2. After enabling it, approve the existing German translation for the key `welcome.message`, ensuring its `translated_value` is non‑empty.  \n3. Add a new translation key `terms.of.service` with the default English value “Terms of Service” and a brief description.  \n4. Introduce a new Italian locale `it-IT` with language `it`, region `IT`, and set its `is_enabled` flag to true.  \n5. For the newly created key `terms.of.service`, add pending translations for the locales `en-US`, `fr-FR`, `es-ES`, and `it-IT`, providing appropriate placeholder text for each language.  \n6. Approve the French translation (`fr-FR`) of `terms.of.service` after confirming it exists and contains a non‑empty value.  \n7. Change the workflow status of the Spanish translation (`es-ES`) for the existing key `welcome.message` from “pending” to “reviewed”.  \n8. Delete the Chinese translation (`zh-CN`) for the key `date.format` from the system.  \n\nEach sub‑task must be accomplished using the provided query and state‑change operations, respecting all environment constraints."
+          ],
+          "tool_call_names": {
+            "enable_locale": 2,
+            "get_translation_by_key_and_locale": 1,
+            "approve_translation": 2,
+            "add_translation_key": 1,
+            "upsert_locale": 1,
+            "add_translation": 4,
+            "update_translation_status": 1,
+            "delete_translation": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"enable_locale\", \"arguments\": \"{\\\"locale_id\\\": \\\"de-DE\\\"}\"}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"get_translation_by_key_and_locale\", \"arguments\": \"{\\\"key_name\\\": \\\"welcome.message\\\", \\\"locale_id\\\": \\\"de-DE\\\"}\"}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"add_translation\", \"arguments\": \"{\\\"key_name\\\": \\\"terms.of.service\\\", \\\"locale_id\\\": \\\"it-IT\\\", \\\"translated_value\\\": \\\"Termini di Servizio\\\", \\\"status\\\": \\\"pending\\\"}\"}\n</tool_call>",
+            "Task Completed"
+          ],
+          "archived_raw_gradient_norm": 22.784824451511284
+        },
+        {
+          "rank": 5,
+          "meta_index": 4398,
+          "influence": 447.07693156752737,
+          "env_id": "env_1_sft",
+          "traj_type": "non_conversation",
+          "user_turns": 1,
+          "first_user": "1. **Clean up high‑priority tasks in Project PROJ1:**  \n   - Identify all tasks linked to project PROJ1 that have priority “high” and are not in the “completed” status.  \n   - For each identified task:  \n     - If its current status is “in progress”, mark it as completed.  \n     - If its current status is “pending”, change its status to “in progress”.\n\n2. **Unblock and reassign TASK4:**  \n   - Retrieve TASK4, verify it is currently “blocked”.  \n   - Change its status to “in progress”.  \n   - Reassign the task from its current user (USR2) to USR1.\n\n3. **Create and schedule a security audit task for Project PROJ2:**  \n   - Create a new task with a unique ID (e.g., TASK7) titled “Conduct security audit”, priority “high”, and no initial due date.  \n   - Set the due date of this new task to the Unix timestamp 1689000000 (approximately one month from now).  \n   - Assign the task to user USR3.  \n   - Add the newly created task to project PROJ2’s task list.\n\n4. **Set due dates for pending tasks assigned to USR5:**  \n   - List all tasks assigned to user USR5 that are currently in the “pending” status.  \n   - For each such task, update its due date to the Unix timestamp 1688006400.\n\n5. **Report incomplete tasks:**  \n   - After performing all the above modifications, retrieve a list of all tasks across the entire system that are not in the “completed” status, grouped by their associated projects.",
+          "user_requests": [
+            "1. **Clean up high‑priority tasks in Project PROJ1:**  \n   - Identify all tasks linked to project PROJ1 that have priority “high” and are not in the “completed” status.  \n   - For each identified task:  \n     - If its current status is “in progress”, mark it as completed.  \n     - If its current status is “pending”, change its status to “in progress”.\n\n2. **Unblock and reassign TASK4:**  \n   - Retrieve TASK4, verify it is currently “blocked”.  \n   - Change its status to “in progress”.  \n   - Reassign the task from its current user (USR2) to USR1.\n\n3. **Create and schedule a security audit task for Project PROJ2:**  \n   - Create a new task with a unique ID (e.g., TASK7) titled “Conduct security audit”, priority “high”, and no initial due date.  \n   - Set the due date of this new task to the Unix timestamp 1689000000 (approximately one month from now).  \n   - Assign the task to user USR3.  \n   - Add the newly created task to project PROJ2’s task list.\n\n4. **Set due dates for pending tasks assigned to USR5:**  \n   - List all tasks assigned to user USR5 that are currently in the “pending” status.  \n   - For each such task, update its due date to the Unix timestamp 1688006400.\n\n5. **Report incomplete tasks:**  \n   - After performing all the above modifications, retrieve a list of all tasks across the entire system that are not in the “completed” status, grouped by their associated projects."
+          ],
+          "tool_call_names": {
+            "list_tasks_in_project": 1,
+            "complete_task": 1,
+            "get_task_status": 1,
+            "update_task_status": 1,
+            "assign_task_to_user": 1,
+            "create_task": 1,
+            "update_task_due_date": 2,
+            "add_task_to_project": 1,
+            "list_tasks_by_user": 1,
+            "get_incomplete_tasks": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"list_tasks_in_project\", \"arguments\": {\"project_id\": \"PROJ1\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"complete_task\", \"arguments\": {\"task_id\": \"TASK2\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"get_incomplete_tasks\", \"arguments\": {}}\n</tool_call>",
+            "Task Completed"
+          ],
+          "archived_raw_gradient_norm": 32.45223467078943
+        },
+        {
+          "rank": 6,
+          "meta_index": 2069,
+          "influence": 438.47214293812954,
+          "env_id": "env_64_sft",
+          "traj_type": "conversation",
+          "user_turns": 7,
+          "first_user": "Hi! I need to do some user account maintenance. Could you help me find all users who have the \"moderator\" role but have never logged in? I want to lock their accounts for security purposes.",
+          "user_requests": [
+            "Hi! I need to do some user account maintenance. Could you help me find all users who have the \"moderator\" role but have never logged in? I want to lock their accounts for security purposes.",
+            "Yes, there's more to do. I also need to clean up old inactive accounts. Can you find any users whose account_status is \"inactive\" and who were created more than 180 days ago? I want to permanently remove those accounts from the system.",
+            "Great! I also need to add a new user to the system. Could you create a user with username \"frankl\", full name \"Frank Liu\", email \"frank.liu@newexample.org\", and phone \"+1-555-106-0106\"? Set their role as \"user\" and account_status as \"active\".",
+            "Yes, I need to add another user. Could you create a user with username \"ginas\", full name \"Gina Sanchez\", email \"gina.sanchez@newexample.org\", and phone \"+1-555-107-0107\"? Set their role as \"user\" and account_status as \"active\".",
+            "Yes, one more user to add. Could you create a user with username \"henryk\", full name \"Henry Kim\", email \"henry.kim@newexample.org\", and phone \"+1-555-108-0108\"? Set their role as \"user\" and account_status as \"active\".",
+            "Yes, there's another task. I need to update email addresses for existing users. Can you find all users whose email addresses end with \"@example.com\" and update their domain to \"@newexample.org\" while keeping the local part of the address the same?",
+            "Perfect! One last thing - could you update the last_login timestamp for user \"alicec\" to the current time? I need to record that she just logged in."
+          ],
+          "tool_call_names": {
+            "search_users_by_role": 1,
+            "update_user_account_status": 1,
+            "list_all_users": 2,
+            "delete_user": 1,
+            "check_user_exists": 3,
+            "create_user": 3,
+            "get_user_by_username": 1,
+            "update_user_info": 1,
+            "record_user_login": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"search_users_by_role\", \"arguments\": {\"role\": \"moderator\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"update_user_account_status\", \"arguments\": {\"username\": \"davidx\", \"new_status\": \"locked\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"record_user_login\", \"arguments\": {\"username\": \"alicec\", \"timestamp\": \"2024-06-18T15:30:00Z\"}}\n</tool_call>",
+            "The last login timestamp for user \"alicec\" has been successfully updated to **2024-06-18T15:30:00Z**. This reflects her recent login activity.\n\nIs there anything else you'd like to do with user account maintenance?"
+          ],
+          "archived_raw_gradient_norm": 33.823919168965176
+        },
+        {
+          "rank": 7,
+          "meta_index": 6752,
+          "influence": 435.6501846518102,
+          "env_id": "env_71_sft",
+          "traj_type": "non_conversation",
+          "user_turns": 1,
+          "first_user": "Update the fuel price data for region REG_A so that every current price record for each location in that region is based on a data source with reliability ≥ 0.90. For each low‑reliability current price, either replace it with a new record that copies the most recent reliable price for the same location and fuel type, or, if no such reliable price exists, create a new record using the regional average price for that fuel type (computed from reliable sources) and assign the source “Government Statistics”. After adding all necessary records, invalidate any price records dated in the future, refresh the current‑price status across the system, and finally compute and report the updated average current price for each fuel type in REG_A.",
+          "user_requests": [
+            "Update the fuel price data for region REG_A so that every current price record for each location in that region is based on a data source with reliability ≥ 0.90. For each low‑reliability current price, either replace it with a new record that copies the most recent reliable price for the same location and fuel type, or, if no such reliable price exists, create a new record using the regional average price for that fuel type (computed from reliable sources) and assign the source “Government Statistics”. After adding all necessary records, invalidate any price records dated in the future, refresh the current‑price status across the system, and finally compute and report the updated average current price for each fuel type in REG_A."
+          ],
+          "tool_call_names": {
+            "get_current_prices_by_region": 1,
+            "get_source_reliability_score": 3,
+            "get_regional_average_price": 6,
+            "add_price_record": 5,
+            "get_data_sources": 1,
+            "invalidate_future_price_records": 1,
+            "refresh_current_prices": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"get_current_prices_by_region\", \"arguments\": {\"region_id\": \"REG_A\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"get_source_reliability_score\", \"arguments\": {\"source_id\": \"crowd_app\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"get_regional_average_price\", \"arguments\": {\"region_id\": \"REG_A\", \"fuel_type_id\": \"premium_gasoline\"}}\n</tool_call>",
+            "Task Completed"
+          ],
+          "archived_raw_gradient_norm": 29.40743855333775
+        },
+        {
+          "rank": 8,
+          "meta_index": 918,
+          "influence": 401.4427554595117,
+          "env_id": "env_28_sft",
+          "traj_type": "conversation",
+          "user_turns": 10,
+          "first_user": "Hi! I’d like to register a new participant in the system. Can you help me get started with that?",
+          "user_requests": [
+            "Hi! I’d like to register a new participant in the system. Can you help me get started with that?",
+            "Sure! The participant’s name is Maya Patel, she was born on 1990-04-22, and she’s female.",
+            "Her contact info is maya.patel@email.com and +1‑555‑777‑9999. Her medical record ID is MED9026.",
+            "I don’t have a Participant ID assigned. Does your system generate one automatically, or can you provide a suggested format for creating one?",
+            "Let’s use Participant ID: P-902026 for Maya Patel.",
+            "Yes, I’d like to enroll Maya Patel in the study titled “Genetic Markers Associated with Early-Onset Diabetes.” Can you help with the enrollment process?",
+            "I’d like to withdraw Maya from the study, citing an adverse event as the reason. Can you update her enrollment status accordingly?",
+            "Please reactivate Maya Patel’s enrollment in the study now.",
+            "She’s finished all her scheduled visits. Could you update her enrollment status to completed, please?",
+            "Could you extend the end date for “Genetic Markers Associated with Early-Onset Diabetes” to 2027-05-05?"
+          ],
+          "tool_call_names": {
+            "register_new_participant": 1,
+            "list_all_studies": 1,
+            "enroll_participant": 1,
+            "withdraw_participant": 1,
+            "reactivate_enrollment": 1,
+            "update_enrollment_status": 1,
+            "update_study_dates": 1
+          },
+          "visible_assistant_samples": [
+            "To register a new participant, I'll need the following details:\n- Participant ID (unique identifier)\n- Full name\n- Date of birth (in YYYY-MM-DD format)\n- Gender\n- Contact information (phone/email)\n- Medical record ID\n\nPlease provide all these details so I can complete the registration.",
+            "To complete the participant registration, I'll need the following additional details:\n- **Participant ID** (e.g., \"P-123456\")\n- **Contact information** (e.g., email or phone number)\n- **Medical record ID** (e.g., hospital-assigned identifier)\n\nCould you please provide these three missing fields?",
+            "<tool_call>\n{\"name\": \"update_study_dates\", \"arguments\": {\"study_id\": \"STUDY004\", \"start_date\": \"2023-11-05\", \"end_date\": \"2027-05-05\"}}\n</tool_call>",
+            "The study **\"Genetic Markers Associated with Early-Onset Diabetes\" (ID: STUDY004)** has been successfully updated:  \n- **New End Date**: 2027-05-05  \n- **Start Date**: 2023-11-05 (unchanged)  \n\nThis extension ensures the study timeline aligns with the updated protocol. Would you like to:  \n1. Verify the study's current status,  \n2. Check participant enrollment details, or  \n3. Proceed with another modification?  \n\nLet me know how I can assist further! 😊"
+          ],
+          "archived_raw_gradient_norm": 35.710639722454566
+        }
+      ],
+      "selected100_types": {
+        "non_conversation": 45,
+        "conversation": 55
+      },
+      "selected100_environments": 74,
+      "positive_scores": 104,
+      "score_norm_spearman": -0.025646141153528843
+    },
+    "q67_k": {
+      "top8": [
+        {
+          "rank": 1,
+          "meta_index": 1449,
+          "influence": 261.71016097745417,
+          "env_id": "env_45_sft",
+          "traj_type": "conversation",
+          "user_turns": 12,
+          "first_user": "Hi! I’d like to add a new test case with the ID TC006, titled “User Profile Update.” Can you help me get started with that?",
+          "user_requests": [
+            "Hi! I’d like to add a new test case with the ID TC006, titled “User Profile Update.” Can you help me get started with that?",
+            "Sure! Here’s more info to help you move forward:  \n- Description: Validate that a user can successfully update their profile information through the UI.  \n- Author: Liam Patel  \n- Tags: [\"profile\", \"ui\", \"regression\"]  \n\nLet me know if you need the next details.",
+            "Absolutely! Here are the next details:  \n- Precondition: User must be logged in with valid credentials.  \n- Steps:  \n  1. Navigate to the Profile page.  \n  2. Click on \"Edit Profile.\"  \n  3. Update the desired profile fields (e.g., name, email).  \n  4. Click \"Save Changes.\"  \n  5. Confirm the changes on the Profile page.  \n\nLet me know when you need the expected result and timestamps.",
+            "For the expected result:  \n“The updated profile information is saved and immediately displayed correctly on the Profile page. No error messages appear.”  \n\nFeel free to use the current system timestamp for both the Created At and Updated At fields.",
+            "Let’s add TC006 to the Regression Suite (TS002) next, please.",
+            "I’d like to run a test execution for TC006 now. Can you help me create a new execution record?",
+            "Sure! Here are the execution details:  \n- Execution ID: TE009  \n- Execution Status: Pass  \n- Executor: Liam Patel  \n- Environment: staging  \n- Actual Result: The user updated their profile information (name and email); changes were immediately reflected on the Profile page.  \n- Comments: Profile update worked smoothly; no errors encountered. UI refreshed instantly.",
+            "Actually, after further regression testing, a bug was discovered. Could you please update execution TE009 for TC006 and set the status to Fail? I’ll need to adjust the actual result and add a comment about the issue as well.",
+            "Here’s the update for TE009:  \n- Actual Result: After submitting the updated profile, an error message appeared: \"Failed to save changes. Please try again.\" The new profile details were not saved.  \n- Comments: Regression bug found—profile updates are not being saved. Needs investigation by development team.",
+            "I’d like to export the complete data for TC006, including all its execution history, in JSON format please.",
+            "Could you create a new test suite for me? It should have the ID TS004, be named “Feature Tests,” and the owner needs to be Liam Patel. I’ll also provide the suite’s description.",
+            "Here’s the info you need:  \n- Suite Description: Test suite covering critical feature tests related to user-facing functionality.  \n- Test Case IDs to include: [\"TC006\"]  \n\nOnce it’s created, I’ll want TC006 removed from the Regression Suite (TS002) and added only to TS004."
+          ],
+          "tool_call_names": {
+            "create_test_case": 1,
+            "add_test_case_to_suite": 1,
+            "create_test_execution": 1,
+            "update_test_execution": 1,
+            "export_test_case_json": 1,
+            "create_test_suite": 1,
+            "remove_test_case_from_suite": 1
+          },
+          "visible_assistant_samples": [
+            "To create a new test case with ID `TC006` titled \"User Profile Update,\" I'll need the following additional details to complete the required fields:\n\n- **Description**: Brief explanation of the test case purpose\n- **Author**: Name/ID of the person creating the test\n- **Tags**: List of relevant tags (e.g., [\"user_management\", \"smoke_test\"])\n- **Precondition**: Required setup steps before execution\n- **Steps**: Step-by-step test procedure\n- **Expected Result**: What should happen if the test passes\n\nPlease provide these missing details so I can proceed with creating the test case.",
+            "I've gathered the required details for the test case creation. To complete the setup, I'll need the following additional fields:\n\n1. **Precondition**: Any prerequisite steps needed before running this test (e.g., \"User must be logged in with valid credentials\")\n2. **Steps**: Detailed step-by-step instructions for executing the test (e.g., \"1. Navigate to Profile Settings 2. Edit email field...\")\n3. **Expected Result**: What should happen if the test passes (e.g., \"Profile updates successfully with new email displayed\")\n4. **Created At** & **Updated At**: Timestamps in ISO format (e.g., \"2023-10-05T14:48:00Z\") - These can be the current timestamp if you're unsure\n\nPlease provide these final details so I can create the test case with ID TC006.",
+            "<tool_call>\n{\"name\": \"remove_test_case_from_suite\", \"arguments\": {\"suite_id\": \"TS002\", \"test_id\": \"TC006\"}}\n</tool_call>",
+            "The test suite **TS004** (\"Feature Tests\") has been successfully created with **TC006** included. Additionally, **TC006** has been removed from the Regression Suite (TS002), so it now appears **only in TS004**.\n\n✅ **Verification**  \n- **New Suite**: TS004 (\"Feature Tests\")  \n- **Current Test Cases**: `[\"TC006\"]`  \n- **Old Suite (TS002)**: TC006 **no longer listed**  \n- **Owner**: Liam Patel  \n\nWould you like to:  \n1. **View the full details of TS004**?  \n2. **Add another test case** to the Feature Tests suite?  \n3. **Export the suite metadata**?  \n\nLet me know! 😊"
+          ],
+          "archived_raw_gradient_norm": 31.213703617505228
+        },
+        {
+          "rank": 2,
+          "meta_index": 4577,
+          "influence": 248.55822078269594,
+          "env_id": "env_6_sft",
+          "traj_type": "non_conversation",
+          "user_turns": 1,
+          "first_user": "A renter (user ID **REN002**) wants to book a 7‑day stay in Seattle from **2025‑04‑01** to **2025‑04‑07**.  \n\n1. Identify all properties located in Seattle.  \n2. From those, select the ones whose listings are currently active.  \n3. Determine which of the remaining properties satisfies the minimum lease duration requirement for a 7‑day stay.  \n4. Verify whether any of the qualifying properties is fully available for the entire date range; if none are, choose a property that meets the lease requirement but has missing availability days.  \n5. If the chosen property’s listing is inactive, activate the listing.  \n6. Update the property’s availability calendar to set any unavailable days within the requested range to available.  \n7. Calculate the total rental cost for the 7‑day period, preferring the monthly rate when appropriate.  \n8. Submit a new rental inquiry for the renter **REN002** on the selected property with the specified dates.  \n9. Immediately confirm the inquiry, causing the system to mark the booked dates as unavailable.  \n\nComplete all steps, ensuring the environment’s state reflects the activated listing, updated calendar, and the newly created and confirmed inquiry.",
+          "user_requests": [
+            "A renter (user ID **REN002**) wants to book a 7‑day stay in Seattle from **2025‑04‑01** to **2025‑04‑07**.  \n\n1. Identify all properties located in Seattle.  \n2. From those, select the ones whose listings are currently active.  \n3. Determine which of the remaining properties satisfies the minimum lease duration requirement for a 7‑day stay.  \n4. Verify whether any of the qualifying properties is fully available for the entire date range; if none are, choose a property that meets the lease requirement but has missing availability days.  \n5. If the chosen property’s listing is inactive, activate the listing.  \n6. Update the property’s availability calendar to set any unavailable days within the requested range to available.  \n7. Calculate the total rental cost for the 7‑day period, preferring the monthly rate when appropriate.  \n8. Submit a new rental inquiry for the renter **REN002** on the selected property with the specified dates.  \n9. Immediately confirm the inquiry, causing the system to mark the booked dates as unavailable.  \n\nComplete all steps, ensuring the environment’s state reflects the activated listing, updated calendar, and the newly created and confirmed inquiry."
+          ],
+          "tool_call_names": {
+            "search_properties_by_city": 1,
+            "get_property_details": 2,
+            "get_listing_status": 1,
+            "filter_active_listings": 1,
+            "update_listing_status": 1,
+            "check_property_availability": 1,
+            "update_availability_calendar": 1,
+            "calculate_total_rent": 2,
+            "submit_rental_inquiry": 6,
+            "confirm_inquiry": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"search_properties_by_city\", \"arguments\": {\"city\": \"Seattle\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"get_property_details\", \"arguments\": {\"property_id\": \"PROP002\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"confirm_inquiry\", \"arguments\": {\"inquiry_id\": \"REN002_INQ001\"}}\n</tool_call>",
+            "Task Completed"
+          ],
+          "archived_raw_gradient_norm": 24.234199076601026
+        },
+        {
+          "rank": 3,
+          "meta_index": 41,
+          "influence": 247.13366258185826,
+          "env_id": "env_1_sft",
+          "traj_type": "conversation",
+          "user_turns": 14,
+          "first_user": "Hi! I have a few ongoing tasks that need attention. First off, I’d like to focus on Ben Tanaka (U002). Could you help me identify his current tasks that haven’t been completed and have either a high or critical priority?",
+          "user_requests": [
+            "Hi! I have a few ongoing tasks that need attention. First off, I’d like to focus on Ben Tanaka (U002). Could you help me identify his current tasks that haven’t been completed and have either a high or critical priority?",
+            "Let’s start with TASK002, since it’s already in progress. Can you check if it’s ready to be marked as completed? If it is, please go ahead and update its status to completed.",
+            "Yes, let’s work on TASK004 next. Could you please update its status from “blocked” to “in progress”?",
+            "Great, thanks. Next, I’d like to reassign TASK004 to user U003, Clara Dupont. Could you make that update?",
+            "Yes, please raise the priority of TASK004 to high.",
+            "Could you please remove TASK004 from project PROJ002?",
+            "Yes, please add TASK004 to project PROJ003.",
+            "I need to add a new task: TASK006. The description should be “Prepare release notes for version 2.0”. Can you set that up?",
+            "Yes, please assign TASK006 to user U004, David O’Connell.",
+            "Could you please add TASK006 to project PROJ003?",
+            "Yes, let’s set the due date for TASK006 to the first day of the next month. Could you also provide the Unix timestamp for that date?",
+            "Could you please retrieve the list of tasks currently associated with project PROJ001?",
+            "Could you tell me what the end date is for project PROJ001? I’d like to compare it to the due dates of its tasks.",
+            "Let’s update TASK002’s due date to match PROJ001’s end date: February 1, 2023 (`1675123200`)."
+          ],
+          "tool_call_names": {
+            "list_tasks_by_user": 1,
+            "get_task_status": 1,
+            "complete_task": 1,
+            "update_task_status": 1,
+            "assign_task_to_user": 2,
+            "update_task_priority": 1,
+            "remove_task_from_project": 1,
+            "add_task_to_project": 2,
+            "create_task": 1,
+            "update_task_due_date": 2,
+            "list_tasks_in_project": 1,
+            "get_project_by_id": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"list_tasks_by_user\", \"arguments\": {\"user_id\": \"U002\"}}\n</tool_call>",
+            "Here are Ben Tanaka's (U002) current tasks that haven't been completed and have high/critical priority:\n\n1. **TASK002**  \n   *Description*: Implement API endpoint for user registration  \n   *Status*: In Progress  \n   *Priority*: High  \n\n2. **TASK004**  \n   *Description*: Fix critical bug in order processing  \n   *Status*: Blocked  \n   *Priority*: Critical  \n\nBoth tasks are active (not completed) and meet the priority criteria. Would you like to take any action on these tasks (e.g., update status, assign to someone, or add due dates)?",
+            "<tool_call>\n{\"name\": \"update_task_due_date\", \"arguments\": {\"task_id\": \"TASK002\", \"due_date\": 1675123200}}\n</tool_call>",
+            "Task **TASK002** (\"Implement API endpoint for user registration\") now has its **due date updated to February 1, 2023** (Unix timestamp: `1675123200`), aligning with **PROJ001's end date**.  \n\nThis ensures the task’s timeline matches the project’s completion date. The task remains:  \n- **Status**: Completed  \n- **Assigned to**: U002  \n- **Priority**: High  \n\nWould you like to verify this change or proceed with another adjustment?"
+          ],
+          "archived_raw_gradient_norm": 35.52823630259161
+        },
+        {
+          "rank": 4,
+          "meta_index": 8235,
+          "influence": 234.85868639822002,
+          "env_id": "env_118_sft",
+          "traj_type": "non_conversation",
+          "user_turns": 1,
+          "first_user": "1. Enable the German locale `de-DE` so that it becomes available for standard queries.  \n2. After enabling it, approve the existing German translation for the key `welcome.message`, ensuring its `translated_value` is non‑empty.  \n3. Add a new translation key `terms.of.service` with the default English value “Terms of Service” and a brief description.  \n4. Introduce a new Italian locale `it-IT` with language `it`, region `IT`, and set its `is_enabled` flag to true.  \n5. For the newly created key `terms.of.service`, add pending translations for the locales `en-US`, `fr-FR`, `es-ES`, and `it-IT`, providing appropriate placeholder text for each language.  \n6. Approve the French translation (`fr-FR`) of `terms.of.service` after confirming it exists and contains a non‑empty value.  \n7. Change the workflow status of the Spanish translation (`es-ES`) for the existing key `welcome.message` from “pending” to “reviewed”.  \n8. Delete the Chinese translation (`zh-CN`) for the key `date.format` from the system.  \n\nEach sub‑task must be accomplished using the provided query and state‑change operations, respecting all environment constraints.",
+          "user_requests": [
+            "1. Enable the German locale `de-DE` so that it becomes available for standard queries.  \n2. After enabling it, approve the existing German translation for the key `welcome.message`, ensuring its `translated_value` is non‑empty.  \n3. Add a new translation key `terms.of.service` with the default English value “Terms of Service” and a brief description.  \n4. Introduce a new Italian locale `it-IT` with language `it`, region `IT`, and set its `is_enabled` flag to true.  \n5. For the newly created key `terms.of.service`, add pending translations for the locales `en-US`, `fr-FR`, `es-ES`, and `it-IT`, providing appropriate placeholder text for each language.  \n6. Approve the French translation (`fr-FR`) of `terms.of.service` after confirming it exists and contains a non‑empty value.  \n7. Change the workflow status of the Spanish translation (`es-ES`) for the existing key `welcome.message` from “pending” to “reviewed”.  \n8. Delete the Chinese translation (`zh-CN`) for the key `date.format` from the system.  \n\nEach sub‑task must be accomplished using the provided query and state‑change operations, respecting all environment constraints."
+          ],
+          "tool_call_names": {
+            "enable_locale": 2,
+            "get_translation_by_key_and_locale": 1,
+            "approve_translation": 2,
+            "add_translation_key": 1,
+            "upsert_locale": 1,
+            "add_translation": 4,
+            "update_translation_status": 1,
+            "delete_translation": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"enable_locale\", \"arguments\": \"{\\\"locale_id\\\": \\\"de-DE\\\"}\"}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"get_translation_by_key_and_locale\", \"arguments\": \"{\\\"key_name\\\": \\\"welcome.message\\\", \\\"locale_id\\\": \\\"de-DE\\\"}\"}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"add_translation\", \"arguments\": \"{\\\"key_name\\\": \\\"terms.of.service\\\", \\\"locale_id\\\": \\\"it-IT\\\", \\\"translated_value\\\": \\\"Termini di Servizio\\\", \\\"status\\\": \\\"pending\\\"}\"}\n</tool_call>",
+            "Task Completed"
+          ],
+          "archived_raw_gradient_norm": 22.784824451511284
+        },
+        {
+          "rank": 5,
+          "meta_index": 2782,
+          "influence": 230.86154184074948,
+          "env_id": "env_91_sft",
+          "traj_type": "conversation",
+          "user_turns": 6,
+          "first_user": "Hey! To get started, could you pause the scheduler for me? Let me know once that's done.",
+          "user_requests": [
+            "Hey! To get started, could you pause the scheduler for me? Let me know once that's done.",
+            "Great, thanks. Could you look through the list of tasks and focus on those that are currently marked as inactive? For now, I'm interested in the ones that don't have any execution history.",
+            "Thanks for checking! Now, could you pull up the information for all tasks that are either active or pending? Let me know their latest execution record and upcoming scheduled run times.",
+            "Thanks for grabbing those details. For the tasks you listed that are either active or pending and where the most recent execution failed, if their next scheduled run is coming up within 24 hours from now, could you go ahead and delete those tasks from the system?",
+            "That makes sense. Can you check among all remaining tasks and let me know if any have a most recent execution marked as succeeded? If you find any, please clear out their entire execution history.",
+            "Perfect, thanks for confirming! Now, could you resume the scheduler so everything returns to normal operation?"
+          ],
+          "tool_call_names": {
+            "pause_scheduler": 1,
+            "list_tasks_by_status": 3,
+            "get_execution_record": 2,
+            "delete_task": 1,
+            "list_all_tasks": 1,
+            "resume_scheduler": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"pause_scheduler\", \"arguments\": {}}\n</tool_call>",
+            "The scheduler has been successfully paused. No new tasks will be executed while the scheduler remains in the \"paused\" state.\n\nIs there anything else you'd like to do at this time?",
+            "<tool_call>\n{\"name\": \"resume_scheduler\", \"arguments\": {}}\n</tool_call>",
+            "The scheduler has been successfully resumed and is now operating normally. All scheduled tasks will proceed according to their defined schedules.\n\nIs there anything else you'd like to do at this time?"
+          ],
+          "archived_raw_gradient_norm": 31.07410175545584
+        },
+        {
+          "rank": 6,
+          "meta_index": 957,
+          "influence": 228.95008879039628,
+          "env_id": "env_30_sft",
+          "traj_type": "conversation",
+          "user_turns": 7,
+          "first_user": "Hi! Could you please show me all the products currently assigned to the “Summer Sale” collection?",
+          "user_requests": [
+            "Hi! Could you please show me all the products currently assigned to the “Summer Sale” collection?",
+            "Great, thanks. Could you remove both “AlphaPhone X” and “Eta Headphones” from the “Summer Sale” collection, please?",
+            "Perfect. For both of those products (“AlphaPhone X” and “Eta Headphones”), can you apply a 20 % discount to their prices and update the product records?",
+            "Thanks for updating the prices! Next, please add both “AlphaPhone X” and “Eta Headphones” to the “Clearance” collection all at once.",
+            "Awesome! Could you create a new sub-category called “Premium Smartphones” under the existing “Smartphones” category?",
+            "Great! Now, could you please move the “AlphaPhone X” product into the newly created “Premium Smartphones” sub-category, and also increase its price by 10 %?",
+            "Thanks! Lastly, could you confirm the current `product_count` for both the “Summer Sale” and “Clearance” collections to make sure they’re accurate after these changes?"
+          ],
+          "tool_call_names": {
+            "get_products_by_collection": 1,
+            "remove_product_from_collection": 2,
+            "update_product_price": 3,
+            "bulk_add_products_to_collection": 1,
+            "create_subcategory": 1,
+            "update_product_category": 1,
+            "get_collection_by_name": 2
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"get_products_by_collection\", \"arguments\": {\"collection_name\": \"Summer Sale\"}}\n</tool_call>",
+            "Here are the products currently assigned to the **\"Summer Sale\"** collection:\n\n- **AlphaPhone X**  \n  Price: $799.99  \n  Category: Smartphones  \n\n- **Eta Headphones**  \n  Price: $199.95  \n  Category: Electronics  \n\nLet me know if you'd like to perform additional actions (e.g., update prices, move products between collections, or check other collections)! 😊",
+            "<tool_call>\n{\"name\": \"get_collection_by_name\", \"arguments\": {\"collection_name\": \"Clearance\"}}\n</tool_call>",
+            "The current `product_count` for both collections has been confirmed:\n\n- **\"Summer Sale\"**  \n  ✅ **0 products** (All items removed earlier, as expected).  \n\n- **\"Clearance\"**  \n  ✅ **3 products** (Includes \"AlphaPhone X\" and \"Eta Headphones\" plus one additional item from prior inventory).  \n\nAll counts align with the recent updates. Let me know if you'd like to verify specific products in the \"Clearance\" collection or proceed with further actions! 😊"
+          ],
+          "archived_raw_gradient_norm": 40.212479795818425
+        },
+        {
+          "rank": 7,
+          "meta_index": 4036,
+          "influence": 223.01050711573106,
+          "env_id": "env_130_sft",
+          "traj_type": "conversation",
+          "user_turns": 7,
+          "first_user": "Hey! Could you check that advertiser **ADV1 (Luna Media)** is active and that campaigns **CAMP1 (Spring Sale 2024)** and **CAMP2 (Winter Clearance)** are both correctly linked to it?",
+          "user_requests": [
+            "Hey! Could you check that advertiser **ADV1 (Luna Media)** is active and that campaigns **CAMP1 (Spring Sale 2024)** and **CAMP2 (Winter Clearance)** are both correctly linked to it?",
+            "Perfect. Now, please move **$2,000** from **CAMP2**’s budget over to **CAMP1**, making sure **CAMP2** still ends up with a non-negative budget.",
+            "Thanks! Before we flip **CAMP2** from paused to active, can you confirm its start and end dates are still valid, and then switch its status to active?",
+            "Got it—let’s leave CAMP2 as-is for now. Please go ahead and approve the pending ad **AD003** under **CAMP2**, then set its status to active so it can start serving.",
+            "Perfect. Now, inside **CAMP1**, please create a new ad with:  \n- headline: “Exclusive Spring Collection – Shop Now”  \n- image_url: “https://example.com/spring-collection.jpg”  \n- landing_page: “https://example.com/spring-collection”  \n\nOnce it’s created, submit it for approval and, after approval, set its status to active.",
+            "Great! Please update **CAMP1**’s targeting rules to append **“MX”** to the existing country list, leaving all other targeting criteria exactly as they are.",
+            "Last step—please simulate a performance update for both **CAMP1** and **CAMP2**: add **10,000 impressions**, **800 clicks**, and **120 conversions** to each campaign, and be sure the spend metric shows the corresponding extra budget utilization."
+          ],
+          "tool_call_names": {
+            "get_advertiser_by_id": 1,
+            "get_campaign_by_id": 2,
+            "update_campaign_budget": 2,
+            "approve_ad_creative": 2,
+            "update_campaign_status": 1,
+            "create_ad": 4,
+            "update_targeting_rules": 1,
+            "simulate_performance_update": 2
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"get_advertiser_by_id\", \"arguments\": {\"advertiser_id\": \"ADV1\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"get_campaign_by_id\", \"arguments\": {\"campaign_id\": \"CAMP1\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"simulate_performance_update\", \"arguments\": {\"ad_id\": \"AD003\", \"impressions\": 10000, \"clicks\": 800, \"conversions\": 120}}\n</tool_call>",
+            "The performance updates have been successfully applied to both campaigns:  \n\n**CAMP1 (Spring Sale 2024)**  \n- **Ad**: AD007  \n- **Performance**: 10,000 impressions, 800 clicks, 120 conversions  \n- *Spend metric updated accordingly (based on simulated metrics)*  \n\n**CAMP2 (Winter Clearance)**  \n- **Ad**: AD003  \n- **Performance**: 10,000 impressions, 800 clicks, 120 conversions  \n- *Spend metric updated accordingly (based on simulated metrics)*  \n\nBoth campaigns now reflect the new performance data. Let me know if you’d like to verify the updated metrics via `get_campaign_performance`! 😊"
+          ],
+          "archived_raw_gradient_norm": 35.77027597402256
+        },
+        {
+          "rank": 8,
+          "meta_index": 2069,
+          "influence": 201.2948128429761,
+          "env_id": "env_64_sft",
+          "traj_type": "conversation",
+          "user_turns": 7,
+          "first_user": "Hi! I need to do some user account maintenance. Could you help me find all users who have the \"moderator\" role but have never logged in? I want to lock their accounts for security purposes.",
+          "user_requests": [
+            "Hi! I need to do some user account maintenance. Could you help me find all users who have the \"moderator\" role but have never logged in? I want to lock their accounts for security purposes.",
+            "Yes, there's more to do. I also need to clean up old inactive accounts. Can you find any users whose account_status is \"inactive\" and who were created more than 180 days ago? I want to permanently remove those accounts from the system.",
+            "Great! I also need to add a new user to the system. Could you create a user with username \"frankl\", full name \"Frank Liu\", email \"frank.liu@newexample.org\", and phone \"+1-555-106-0106\"? Set their role as \"user\" and account_status as \"active\".",
+            "Yes, I need to add another user. Could you create a user with username \"ginas\", full name \"Gina Sanchez\", email \"gina.sanchez@newexample.org\", and phone \"+1-555-107-0107\"? Set their role as \"user\" and account_status as \"active\".",
+            "Yes, one more user to add. Could you create a user with username \"henryk\", full name \"Henry Kim\", email \"henry.kim@newexample.org\", and phone \"+1-555-108-0108\"? Set their role as \"user\" and account_status as \"active\".",
+            "Yes, there's another task. I need to update email addresses for existing users. Can you find all users whose email addresses end with \"@example.com\" and update their domain to \"@newexample.org\" while keeping the local part of the address the same?",
+            "Perfect! One last thing - could you update the last_login timestamp for user \"alicec\" to the current time? I need to record that she just logged in."
+          ],
+          "tool_call_names": {
+            "search_users_by_role": 1,
+            "update_user_account_status": 1,
+            "list_all_users": 2,
+            "delete_user": 1,
+            "check_user_exists": 3,
+            "create_user": 3,
+            "get_user_by_username": 1,
+            "update_user_info": 1,
+            "record_user_login": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"search_users_by_role\", \"arguments\": {\"role\": \"moderator\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"update_user_account_status\", \"arguments\": {\"username\": \"davidx\", \"new_status\": \"locked\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"record_user_login\", \"arguments\": {\"username\": \"alicec\", \"timestamp\": \"2024-06-18T15:30:00Z\"}}\n</tool_call>",
+            "The last login timestamp for user \"alicec\" has been successfully updated to **2024-06-18T15:30:00Z**. This reflects her recent login activity.\n\nIs there anything else you'd like to do with user account maintenance?"
+          ],
+          "archived_raw_gradient_norm": 33.823919168965176
+        }
+      ],
+      "selected100_types": {
+        "non_conversation": 50,
+        "conversation": 50
+      },
+      "selected100_environments": 68,
+      "positive_scores": 99,
+      "score_norm_spearman": 0.05103427585689643
+    },
+    "q1_f": {
+      "top8": [
+        {
+          "rank": 1,
+          "meta_index": 3548,
+          "influence": 1052.3855511462893,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_115_sft",
+          "traj_type": "conversation",
+          "user_turns": 12,
+          "first_user": "Hi! First, I’d like to make sure that Elena Rodriguez (ID PH001) had active coverage on the service date for claim CLM005. Can you confirm that for me?",
+          "user_requests": [
+            "Hi! First, I’d like to make sure that Elena Rodriguez (ID PH001) had active coverage on the service date for claim CLM005. Can you confirm that for me?",
+            "Thanks for checking the coverage status. Before moving ahead, could you confirm that claim CLM005 is currently marked as “denied”?",
+            "Before we file an appeal, can you check if there’s already an active appeal (with a status other than “approved” or “rejected”) for claim CLM005?",
+            "Yes, please go ahead and file a new appeal for claim CLM005. Let me know once it’s submitted.",
+            "Great, thanks for submitting the appeal. Can you please record a transaction that indicates the submission of this new appeal for claim CLM005?",
+            "Thanks for logging the transaction. Next, please update the status of the new appeal to “under review” for claim CLM005.",
+            "Can you please log a transaction that specifically captures the status change of the appeal to “under review” for claim CLM005?",
+            "Thanks for confirming the transaction log. Now, please approve the appeal for claim CLM005.",
+            "Please log a transaction documenting the appeal approval for claim CLM005, including the appropriate response date. Let me know when that’s done.",
+            "Thank you for logging the appeal approval. Next, please change the status of claim CLM005 to “approved” in the system.",
+            "Can you please confirm that the transaction history includes an entry reflecting the claim status update to “approved” for CLM005?",
+            "Please retrieve and display the complete transaction history for claim CLM005. I’d like to verify that it includes entries for the appeal submission, status changes, approval, and the claim re‑approval."
+          ],
+          "tool_call_names": {
+            "get_claim_by_id": 1,
+            "verify_eligibility_for_coverage": 1,
+            "check_claim_status": 1,
+            "check_existing_active_appeal": 1,
+            "submit_appeal": 1,
+            "log_claim_transaction": 2,
+            "update_appeal_status": 1,
+            "approve_appeal": 1,
+            "update_claim_status": 1,
+            "get_transaction_history_for_claim": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"get_claim_by_id\", \"arguments\": {\"claim_id\": \"CLM005\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"verify_eligibility_for_coverage\", \"arguments\": {\"claim_id\": \"CLM005\"}}\n</tool_call>",
+            "The transaction history for claim CLM005 **does include** an entry reflecting the status update to **\"approved\"**. Specifically, the following transaction confirms this change:\n\n- **Transaction ID**: `txn_CLM005_2025-11-25T03:56:10.753838`  \n- **Type**: `adjustment`  \n- **Timestamp**: `2025-11-25T03:56:10.753838`  \n- **Processed By**: `system`  \n\nThis entry was automatically logged when the claim status was updated to \"approved\" via the `update_claim_status` operation. The system confirms the status change was recorded as required.\n\nAll steps for this claim’s appeal process are now fully documented and complete. Is there anything else you’d like to verify or action?",
+            "Here is the complete transaction history for claim **CLM005**, formatted for clarity. All requested entries (appeal submission, status changes, approval, and claim re-approval) are included:\n\n---\n\n### **Transaction History for Claim CLM005**\n| Transaction ID                              | Type                                  | Timestamp                           | Processed By |\n|---------------------------------------------|---------------------------------------|-------------------------------------|--------------|\n| `txn_13`                                    | submission                            | 2024-01-12T08:00:00Z                | system       |\n| `txn_14`                                    | adjustment                            | 2024-01-14T16:00:00Z                | agent_brown  |\n| `txn_15`                                    | appeal submission                     | 2024-01-15T09:00:00Z                | agent_brown  |\n| `txn_16`                                    | appeal_rejected                       | 2024-01-20T11:00:00Z                | supervisor_lee |\n| `txn_20`                                    | appeal submission                     | 2024-05-15T14:30:00Z                | system       |\n| `TXN_APPEAL_CLM005_20240515`                | submission                            | 2024-05-15T14:30:00Z                | system       |\n| `txn_22`                                    | appeal status change to 'under review' | 2025-11-24T19:54:58.040684          | system       |\n| `txn_appeal_APPEAL_CLM005_20240515_approve`  | appeal approved                       | 2025-11-25T03:55:25.077331          | system       |\n| `txn_claim_CLM005_reeval`                    | re-evaluation initiated due to appeal approval | 2025-11-25T03:55:25.077331 | system       |\n| `TXN_APPROVAL_CLM005_20240515`              | adjustment                            | 2024-05-15T15:00:00Z                | system       |\n| `txn_CLM005_2025-11-25T03:56:10.753838`     | adjustment                            | 2025-11-25T03:56:10.753838          | system       |\n\n---\n\n### **Key Verification**\n- ✅ **Appeal Submission**:  \n  - `txn_20` (May 15, 2024, 14:30) and `TXN_APPEAL_CLM005_20240515` (same timestamp).\n- ✅ **Status Change to \"Under Review\"**:  \n  - `txn_22` (Nov 24, 2025, 19:54).\n- ✅ **Appeal Approval**:  \n  - `txn_appeal_APPEAL_CLM005_20240515_approve` (Nov 25, 2025, 03:55).\n- ✅ **Claim Re-approval (Status Update)**:  \n  - `txn_CLM005_2025-11-25T03:56:10.753838` (Nov 25, 2025, 03:56).\n\nAll required entries are fully documented in the transaction history. The claim status has been updated to **\"approved\"** as confirmed by the final adjustment entry. \n\nLet me know if you'd like to proceed with next steps or need further verification!"
+          ],
+          "archived_raw_gradient_norm": 33.581521198259324
+        },
+        {
+          "rank": 2,
+          "meta_index": 4341,
+          "influence": 661.2929342316276,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_139_sft",
+          "traj_type": "conversation",
+          "user_turns": 8,
+          "first_user": "Hey! Could you please check if the ticker symbol “GLOBEQ2” is already in use on the NYSE market?",
+          "user_requests": [
+            "Hey! Could you please check if the ticker symbol “GLOBEQ2” is already in use on the NYSE market?",
+            "Perfect, thanks! Next, could you update the symbol of the mutual fund currently listed as “GLOBEQ” to “GLOBEQ2”, making sure the new symbol remains unique at the market level?",
+            "Great, thanks! Could you please register a new rating agency with agency_id “AG004”, name “Future Credit Ratings”, and reputation score 8.3?",
+            "Perfect! Could you add a credit risk rating for mutual fund “GLOBEQ2” using agency AG004? The rating should be “A+”, dated “2023-12-01”, and of type “credit”. Please also confirm that 2023-12-01 is a valid trading day before inserting the record.",
+            "Could you please fetch the current NAV of “GLOBEQ2”, raise it by 5 %, and then update the fund’s NAV to that new amount? Make sure the resulting NAV is non-negative before committing the change.",
+            "Could you please confirm that 2023-12-02 and 2023-12-03 are valid trading days, and then add daily performance history entries for “GLOBEQ2” on each of those dates? Please include realistic values for close_price, daily_return, ytd_return, three_year_return, and five_year_return.",
+            "I need to keep the original calendar dates “2023-12-02” and “2023-12-03”. Could you map each to the next valid trading day (so 2023-12-02 → 2023-12-04 and 2023-12-03 → 2023-12-05) and then insert the daily performance history for “GLOBEQ2” on those two valid trading days? Please still use realistic close_price, daily_return, ytd_return, three_year_return, and five_year_return values.",
+            "Could you please deactivate the security “GOVT10Y” (security_id BND001) to mark its maturity? Make sure the operation preserves all existing performance history for the bond."
+          ],
+          "tool_call_names": {
+            "get_security_by_symbol": 2,
+            "update_security_symbol": 1,
+            "register_rating_agency": 1,
+            "is_valid_trading_day": 5,
+            "add_risk_rating": 1,
+            "get_net_asset_value": 1,
+            "update_net_asset_value": 1,
+            "add_performance_history_entry": 2,
+            "deactivate_security": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"get_security_by_symbol\", \"arguments\": {\"symbol\": \"GLOBEQ2\", \"market\": \"NYSE\"}}\n</tool_call>",
+            "The ticker symbol \"GLOBEQ2\" is **not currently in use** on the NYSE market. No security with this symbol was found in the database for the NYSE market. This symbol appears to be available for registration if you'd like to proceed with adding a new security. Would you like to register a new mutual fund or security with this symbol?",
+            "<tool_call>\n{\"name\": \"deactivate_security\", \"arguments\": {\"security_id\": \"BND001\"}}\n</tool_call>",
+            "The security **\"GOVT10Y\"** (security ID: **BND001**) has been successfully marked as **inactive** to reflect its maturity. All historical performance data, risk ratings, and other records remain fully preserved in the system.  \n\nThis operation does not affect any existing data—only the security's status is updated to indicate it is no longer active. Would you like to verify the deactivation status or perform any additional actions?"
+          ],
+          "archived_raw_gradient_norm": 35.36747733339569
+        },
+        {
+          "rank": 3,
+          "meta_index": 8576,
+          "influence": 595.8230718778346,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_127_sft",
+          "traj_type": "non_conversation",
+          "user_turns": 1,
+          "first_user": "1. Identify all active subscribers who belong to the “premium” group.  \n2. Retrieve every inbound message whose resolution status is “unresolved”.  \n3. For each unresolved inbound message, mark it as read and then update its resolution status to “resolved”.  \n4. After all unresolved messages are resolved, send a non‑critical promotional broadcast (content can be any appropriate promotional text) to the active “premium” subscribers identified in step 1.  \n5. Change the subscription status of subscriber **+15550101003** from “pending” to “active”.  \n6. Add a new subscriber with phone number **+15550101007**, subscription status “active”, current timestamp as the subscription date, and groups “alerts” and “premium”.  \n7. Create a new message template named “promo_2024” with content “Exclusive 2024 promotion: Get 20% off your next purchase. Use code PROMO2024 at checkout.”  \n8. Schedule a new message queue named “queue_promo_2024_new” to send the newly created promotion to all subscribers in the “premium” group at “2024-01-10T09:00:00Z”.  \n9. Cancel the existing pending alert queue identified by queue ID “queue_alert_v2” before it is dispatched.",
+          "user_requests": [
+            "1. Identify all active subscribers who belong to the “premium” group.  \n2. Retrieve every inbound message whose resolution status is “unresolved”.  \n3. For each unresolved inbound message, mark it as read and then update its resolution status to “resolved”.  \n4. After all unresolved messages are resolved, send a non‑critical promotional broadcast (content can be any appropriate promotional text) to the active “premium” subscribers identified in step 1.  \n5. Change the subscription status of subscriber **+15550101003** from “pending” to “active”.  \n6. Add a new subscriber with phone number **+15550101007**, subscription status “active”, current timestamp as the subscription date, and groups “alerts” and “premium”.  \n7. Create a new message template named “promo_2024” with content “Exclusive 2024 promotion: Get 20% off your next purchase. Use code PROMO2024 at checkout.”  \n8. Schedule a new message queue named “queue_promo_2024_new” to send the newly created promotion to all subscribers in the “premium” group at “2024-01-10T09:00:00Z”.  \n9. Cancel the existing pending alert queue identified by queue ID “queue_alert_v2” before it is dispatched."
+          ],
+          "tool_call_names": {
+            "get_unresolved_inbound_messages": 1,
+            "get_active_subscribers_by_group": 1,
+            "mark_inbound_message_as_read": 2,
+            "update_inbound_message_resolution_status": 2,
+            "send_broadcast_message": 1,
+            "update_subscription_status": 1,
+            "add_subscriber": 1,
+            "create_message_template": 1,
+            "enqueue_message_batch": 1,
+            "cancel_scheduled_message_queue": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"get_unresolved_inbound_messages\", \"arguments\": {}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"get_active_subscribers_by_group\", \"arguments\": {\"group_name\": \"premium\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"cancel_scheduled_message_queue\", \"arguments\": {\"queue_id\": \"queue_alert_v2\"}}\n</tool_call>",
+            "Task Completed"
+          ],
+          "archived_raw_gradient_norm": 33.545468571779104
+        },
+        {
+          "rank": 4,
+          "meta_index": 8710,
+          "influence": 595.5669290114612,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_131_sft",
+          "traj_type": "non_conversation",
+          "user_turns": 1,
+          "first_user": "1. Change employee **E003**’s employment status from *on_leave* to **active**.  \n2. For every employee in department **D001** (Engineering) whose current job title is **Software Engineer** and whose employment status is **active**, increase their salary by **20 %**. If the computed salary exceeds the maximum salary defined for the *Software Engineer* position, set the salary to that maximum instead.  \n3. Identify any of those Software Engineers whose **new salary is at least 110 % of the minimum salary for the *Senior Software Engineer* position**. For each such employee:  \n   - Update their job title to **Senior Software Engineer**.  \n   - Ensure their salary is within the *Senior Software Engineer* salary range (minimum 100 000, maximum 150 000); if it falls below the minimum, raise it to the minimum, and if it exceeds the maximum, lower it to the maximum.  \n   - Set their `manager_id` to the manager of the Engineering department (employee **E001**).  \n4. Generate a list of all employees currently assigned to department **D001**, showing for each: `employee_id`, full name, current `job_title`, and current `salary`.  \n5. Perform a final validation across **all employees** in the system: for any employee whose salary does not lie within the salary range of their current job title, adjust the salary to the nearest bound of that range (i.e., set to the minimum if below, or to the maximum if above).  \n\nAll steps must respect the system’s constraints and use the provided operation interfaces.",
+          "user_requests": [
+            "1. Change employee **E003**’s employment status from *on_leave* to **active**.  \n2. For every employee in department **D001** (Engineering) whose current job title is **Software Engineer** and whose employment status is **active**, increase their salary by **20 %**. If the computed salary exceeds the maximum salary defined for the *Software Engineer* position, set the salary to that maximum instead.  \n3. Identify any of those Software Engineers whose **new salary is at least 110 % of the minimum salary for the *Senior Software Engineer* position**. For each such employee:  \n   - Update their job title to **Senior Software Engineer**.  \n   - Ensure their salary is within the *Senior Software Engineer* salary range (minimum 100 000, maximum 150 000); if it falls below the minimum, raise it to the minimum, and if it exceeds the maximum, lower it to the maximum.  \n   - Set their `manager_id` to the manager of the Engineering department (employee **E001**).  \n4. Generate a list of all employees currently assigned to department **D001**, showing for each: `employee_id`, full name, current `job_title`, and current `salary`.  \n5. Perform a final validation across **all employees** in the system: for any employee whose salary does not lie within the salary range of their current job title, adjust the salary to the nearest bound of that range (i.e., set to the minimum if below, or to the maximum if above).  \n\nAll steps must respect the system’s constraints and use the provided operation interfaces."
+          ],
+          "tool_call_names": {
+            "update_employment_status": 1,
+            "list_employees_by_department": 2,
+            "get_job_position_by_title": 2,
+            "update_employee_salary": 3,
+            "update_employee_job_title": 1,
+            "update_employee_info": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"update_employment_status\", \"arguments\": \"{\\\"employee_id\\\": \\\"E003\\\", \\\"new_status\\\": \\\"active\\\"}\"}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"list_employees_by_department\", \"arguments\": \"{\\\"department_id\\\": \\\"D001\\\"}\"}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"update_employee_info\", \"arguments\": \"{\\\"employee_id\\\": \\\"E002\\\", \\\"updates\\\": {\\\"manager_id\\\": \\\"E001\\\"}}\"}\n</tool_call>",
+            "Task Completed"
+          ],
+          "archived_raw_gradient_norm": 15.734170371968538
+        },
+        {
+          "rank": 5,
+          "meta_index": 2561,
+          "influence": 485.23268680317926,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_82_sft",
+          "traj_type": "conversation",
+          "user_turns": 9,
+          "first_user": "Hey! To get started, can you pull up all predictions made by model‑001 from January 14 2023 through January 16 2023, inclusive?",
+          "user_requests": [
+            "Hey! To get started, can you pull up all predictions made by model‑001 from January 14 2023 through January 16 2023, inclusive?",
+            "Let’s look into the ground-truth entries for pred-001 and pred-002. Can you show whether their ground-truth records exist and if their verification_status is set to `verified`?",
+            "Please update pred-002’s ground-truth verification_status to `verified`. Once that’s done, let me know!",
+            "Let’s move ahead and recompute the accuracy metric for model‑001 covering January 14–16, 2023. Please make sure the result is stored as a new PerformanceMetric record.",
+            "Let’s change gears now—could you pull up all predictions made by model‑002 between January 22 2023 and January 24 2023, inclusive?",
+            "Can you show me the ground-truth records for pred-005 and pred-006, including whether each exists and their current verification_status?",
+            "Please update the verification_status for pred-005’s ground-truth entry to `verified`. Let me know once that change has been made!",
+            "Before computing new performance metrics, could you also remove prediction `pred-005` from the system’s invalid_predictions list? Once that’s done, we’ll proceed with the metric calculation for model‑002.",
+            "Great—once the new accuracy metric for model‑002 covering January 22–24, 2023 is computed and stored, could you confirm that updated PerformanceMetric records now exist for both model‑001 and model‑002 reflecting the latest, fully‑verified ground-truth data?"
+          ],
+          "tool_call_names": {
+            "get_predictions_by_model_and_date": 2,
+            "get_ground_truth_by_prediction_id": 4,
+            "update_ground_truth_verification_status": 2,
+            "compute_performance_metrics": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"get_predictions_by_model_and_date\", \"arguments\": {\"model_id\": \"model-001\", \"start_time\": 1673683200, \"end_time\": 1673942400}}\n</tool_call>",
+            "Here are the predictions made by model‑001 from January 14–16, 2023 (inclusive):\n\n| Prediction ID | Timestamp (UTC)       | Input Features      | Predicted Value | Confidence |\n|---------------|-----------------------|---------------------|-----------------|------------|\n| pred-001      | 2023-01-15 00:00:00   | feature1: 0.57, feature2: A | spam           | 0.92       |\n| pred-002      | 2023-01-16 00:00:00   | feature1: 0.33, feature2: B | ham            | 0.85       |\n\nNote:  \n- Both predictions fall within your requested date range (January 14–16, 2023).  \n- The timestamps correspond to UTC midnight on those dates.  \n\nWould you like to check ground truth coverage for these predictions, compute performance metrics, or proceed with another action?",
+            "The system does **not have a function to remove predictions from the `invalid_predictions` list**. The only related tool (`mark_prediction_as_invalid`) is for *adding* predictions to the invalid list (and it's idempotent for already-invalid entries).  \n\nHowever, since `pred-005` has now been updated to `verified` ground truth, it **is no longer excluded from performance metrics** by the system. The `invalid_predictions` list is only used for manually marked invalid predictions, and since we never marked `pred-005` as invalid (only updated its ground truth), it was never in the list.  \n\n✅ **Proceeding to compute performance metrics for model‑002 (Jan 22–24, 2023) with both predictions now valid.**  \n\n<function-call>\n{\"name\": \"compute_performance_metrics\", \"arguments\": {\"model_id\": \"model-002\", \"metric_type\": \"mae\", \"start_time\": 1674460800, \"end_time\": 1674720000}}\n</function-call>",
+            "✅ **Confirmed**:  \n- **Model‑001** (Jan 14–16, 2023): Accuracy metric stored successfully (50.0% accuracy, 1/2 correct predictions).  \n- **Model‑002** (Jan 22–24, 2023): MAE metric stored successfully (MAE = 2.0, calculated from predictions: 37 → 40, 42 → 42).  \n\n**Verification status for both models**:  \n- All predictions in the respective time ranges now have **verified ground truths** (no rejections or pending entries).  \n- Metrics were computed using **fully verified data** as required.  \n\nBoth models now reflect the latest, complete performance records in the system. Would you like to:  \n1. View the detailed metric values?  \n2. Check coverage for another time range?  \n3. Perform another analysis?"
+          ],
+          "archived_raw_gradient_norm": 25.66431128869178
+        },
+        {
+          "rank": 6,
+          "meta_index": 1787,
+          "influence": 443.6910257183706,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_56_sft",
+          "traj_type": "conversation",
+          "user_turns": 15,
+          "first_user": "Hey! I need to reach out directly to Evelyn Stone from Acme Corp. Can you help me set up a channel or conversation just with her?",
+          "user_requests": [
+            "Hey! I need to reach out directly to Evelyn Stone from Acme Corp. Can you help me set up a channel or conversation just with her?",
+            "Sure, my username is alicec.",
+            "Thanks! Next, I’d like to organize a meeting involving Evelyn. Could you help me set up a calendar event for it? I want it to be titled “Acme Strategy Session.”",
+            "Let’s have it next Thursday from 10:00 to 11:00 UTC.",
+            "Sure, the date will be 2024-06-13.",
+            "Yes, please invite Bob Martinez and Carol Wu along with me. Their usernames are bobmartinez and carolwu.",
+            "Please use bobmartinez for Bob and carolwu for Carol—as listed.",
+            "I’m sure their usernames are bobmartinez and carolwu. Please use those. Let me know if there’s a system issue we need to address.",
+            "I only have bobmartinez and carolwu for their usernames. If you can’t add them as participants with those, please proceed with just me (alicec) for now. We can update the event later if needed.",
+            "Let’s go with this Zoom link: https://zoom.us/j/12345",
+            "Yes, I’d like to send a message to Evelyn in our direct channel to let her know about the session. Can you include a reference or link to the event in that message?",
+            "Perfect. I’d also like to post an announcement in the general channel to let the team know about the upcoming client call, and please embed the event link there too. Can you help with that?",
+            "Great, thanks! Could you please send Bob a direct message reminder about the session, including a reference to the event and the Zoom link?",
+            "Please try \"bobmartinez\"—that’s the only username I have for Bob. If it’s not found, let me know what options there are for getting the reminder to him.",
+            "Let’s leave it for now—I’ll check directly with Bob about his username. Thanks for all your help!"
+          ],
+          "tool_call_names": {
+            "get_external_contact_by_name": 1,
+            "get_user_by_username": 3,
+            "create_direct_channel_with_external_contact": 1,
+            "create_calendar_event": 1,
+            "find_active_channel_with_contact": 1,
+            "list_user_direct_channels": 1,
+            "send_direct_message": 1,
+            "send_message_to_channel": 2,
+            "list_user_teams": 1,
+            "list_team_channels": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"get_external_contact_by_name\", \"arguments\": {\"query\": \"Evelyn Stone\"}}\n</tool_call>",
+            "To set up a direct channel with Evelyn Stone (contact ID: EC001), I'll need your **user ID** to proceed. Could you please share your user ID or username so I can create the channel?",
+            "The username \"bobmartinez\" could not be found in the system. To send Bob a reminder, here are your options:\n\n1. **Double-check Bob’s username**:  \n   - Confirm if it’s spelled exactly as `bobmartinez` (e.g., no extra characters like `bob.martinez` or `b_martinez`).\n   - Ask Bob directly for his **exact username** (you can see it in his profile under \"User Details\").\n\n2. **Alternative approach**:  \n   If you’re unable to confirm the username, I can:\n   - Send a **public announcement** in the `#general` channel (visible to all team members) to remind Bob and the team about the session.\n   - Add Bob to the **calendar event participants** once his username is confirmed (we’ll need his correct username to do this).\n\nWould you like me to post a public reminder in `#general` instead? 😊",
+            "You're very welcome! All requested actions are complete:  \n✅ Direct channel with Evelyn Stone set up  \n✅ Calendar event \"Acme Strategy Session\" scheduled (June 13, 10:00–11:00 UTC)  \n✅ Message sent to Evelyn with Zoom link  \n✅ Announcement posted in #general channel  \n\nI’ll hold off on the Bob reminder until you confirm his username—I’ll be here whenever you’re ready to proceed! 😊 Have a great day!"
+          ],
+          "archived_raw_gradient_norm": 28.684566565070647
+        },
+        {
+          "rank": 7,
+          "meta_index": 2298,
+          "influence": 395.0138786036452,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_73_sft",
+          "traj_type": "conversation",
+          "user_turns": 8,
+          "first_user": "Hey! Could you check what’s going on with table T005 for me? I know order O003 was served there—can you pull up its details and tell me the current status of that table?",
+          "user_requests": [
+            "Hey! Could you check what’s going on with table T005 for me? I know order O003 was served there—can you pull up its details and tell me the current status of that table?",
+            "Before we mark it paid, can you see if promotion P003 is valid for order O003?",
+            "Perfect, let’s apply the $5.50 Happy Hour Snack discount to order O003, then mark it paid and release table T005 so it’s free again.",
+            "All right, if the promotion window has closed, let’s just mark order O003 as paid and release table T005 so it’s free.",
+            "Great. A new four-top just walked in and wants to sit at T005. They’d like Spicy Ramen, Edamame, and Green Tea. Can you find the menu-item IDs for those three and make sure each is available and has enough inventory (Green Tea should be unlimited)?",
+            "Before we lock it in, can you see if promotion P003 (“Happy Hour Snack”) is valid for this new order O004?",
+            "All right, since the promotion window is closed, let’s confirm order O004 to lock it in and update the inventory.",
+            "Perfect—let’s mark order O004 as paid and release table T005 so it’s free again."
+          ],
+          "tool_call_names": {
+            "check_table_status": 1,
+            "get_order_by_id": 1,
+            "get_promotion_by_id": 2,
+            "apply_promotion_to_order": 1,
+            "mark_order_as_paid": 2,
+            "get_menu_for_restaurant": 1,
+            "validate_order_items": 1,
+            "create_new_order": 1,
+            "confirm_order": 1,
+            "update_order_status": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"check_table_status\", \"arguments\": {\"table_id\": \"T005\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"get_order_by_id\", \"arguments\": {\"order_id\": \"O003\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"mark_order_as_paid\", \"arguments\": {\"order_id\": \"O004\"}}\n</tool_call>",
+            "Order O004 has been successfully **marked as paid**, and table T005 is now **free** (status updated to \"free\" with no active order).  \n\nThe kitchen has completed preparation for your order, and the table is ready for new guests. Let me know if you'd like to process another order or need further assistance! 😊"
+          ],
+          "archived_raw_gradient_norm": 33.91110966159431
+        },
+        {
+          "rank": 8,
+          "meta_index": 1176,
+          "influence": 380.5674452768615,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_36_sft",
+          "traj_type": "conversation",
+          "user_turns": 10,
+          "first_user": "Hi! I’d like to look into Alice Thompson’s scheduled reminders—specifically for her Lisinopril medication. Can we check what time that reminder is currently set for?",
+          "user_requests": [
+            "Hi! I’d like to look into Alice Thompson’s scheduled reminders—specifically for her Lisinopril medication. Can we check what time that reminder is currently set for?",
+            "Sure, her user ID is user1. Let me know what you find for Lisinopril’s scheduled reminder.",
+            "Thanks! I do want to adjust that scheduled time for Lisinopril—can we reschedule it to a new epoch time that won’t clash with any of Alice’s other reminders? Let me know what times are available.",
+            "Let’s go with 1717003600 for the new Lisinopril reminder time. Please update the scheduled_time to that and let me know when it’s done.",
+            "Thanks, that’s perfect. Next, I’d like to dismiss James Chen’s upcoming Metformin reminder. Can you change its status to “dismissed” and make sure an entry is added to the AdherenceLog? Let me know once it’s done.",
+            "Sure, James Chen’s user ID is user2. The Metformin reminder you’re looking for is rem2. Please update its status to “dismissed” and add the necessary info to the AdherenceLog.",
+            "Let’s use 1717003600 as the timestamp for the dismissal. Please go ahead and process the changes for rem2 and log the event.",
+            "Great, thanks for confirming. I’d like to add a new medication to Alice Thompson’s list:  \n- Medication name: Amlodipine  \n- Dosage: 5 mg  \n- Instructions: Take once daily with water  \n- Status: active  \nLet me know when that’s set up.",
+            "Perfect! Now, please set up a new scheduled reminder for Amlodipine (med6) for Alice Thompson. Use a future epoch time that isn’t already used by any of her other scheduled reminders. When that’s done, let me know the reminder details.",
+            "Thanks! Could you now retrieve the adherence log entries for both James Chen’s dismissed Metformin reminder (rem2) and Alice Thompson’s newly scheduled Amlodipine reminder (rem10)? I’d like to confirm their events are properly recorded."
+          ],
+          "tool_call_names": {
+            "get_medication_by_name": 1,
+            "find_pending_reminders_for_medication": 1,
+            "list_scheduled_reminders": 2,
+            "update_reminder_time": 1,
+            "dismiss_reminder": 1,
+            "add_medication": 4,
+            "list_all_medications": 1,
+            "create_reminder": 6,
+            "get_adherence_log_for_reminder": 2
+          },
+          "visible_assistant_samples": [
+            "To check Alice Thompson's scheduled reminders for Lisinopril, I'll need her user ID to look up her specific reminders. The system requires a user ID to retrieve user-associated data, as we don't have a function to search users by name.\n\nCould you please provide Alice Thompson's user ID? This will allow me to check her medication reminders accurately.",
+            "<tool_call>\n{\"name\": \"get_medication_by_name\", \"arguments\": {\"name\": \"Lisinopril\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"get_adherence_log_for_reminder\", \"arguments\": {\"reminder_id\": \"rem10\"}}\n</tool_call>",
+            "James Chen's Metformin reminder (rem2) has a confirmed adherence log entry for **dismissal** at timestamp `1717003600` (June 1, 2024, 1:00 PM UTC).  \n\nAlice Thompson's Amlodipine reminder (rem10) currently has **no adherence log entries** (as expected), since it is still in \"scheduled\" status and no action (dismissal/completion/missed) has been taken yet.  \n\nBoth logs are properly recorded per the system's behavior. Let me know if you'd like to trigger an event for rem10 (e.g., dismiss or complete) to generate an adherence log! 😊"
+          ],
+          "archived_raw_gradient_norm": 32.160829630606656
+        }
+      ],
+      "selected100_types": {
+        "non_conversation": 45,
+        "conversation": 55
+      },
+      "selected100_environments": 74,
+      "positive_scores": 98,
+      "score_norm_spearman": -0.06427960699017476
+    },
+    "q1_k": {
+      "top8": [
+        {
+          "rank": 1,
+          "meta_index": 4582,
+          "influence": 240.5077531696577,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_6_sft",
+          "traj_type": "non_conversation",
+          "user_turns": 1,
+          "first_user": "1. The landlord of property **P100** (Seattle apartment) must update the availability calendar so that every day from **2025‑05‑15** through **2025‑06‑13** (a 30‑day period) is marked as available.  \n\n2. After the calendar is updated, the renter **U600** wants to rent **P100** for the full 30‑day period starting **2025‑05‑15**. Verify that the stay meets the property’s minimum lease duration, calculate the total rent using the monthly price (prefer the monthly rate when the stay is 30 days or longer), and then submit a new rental inquiry for this date range.  \n\n3. The landlord of property **P104** decides to take the house offline for renovations. Deactivate its listing (**L204**) and increase the property’s monthly price by **$200**.  \n\n4. Cancel the pending inquiry **I302** (which requests **P102** from **2025‑04‑10** to **2025‑04‑15**) and restore those dates in **P102**’s availability calendar to `true`.  \n\n5. Finally, the landlord confirms the newly created inquiry for **P100**, changing its status to “confirmed” and marking the dates **2025‑05‑15** through **2025‑06‑13** as unavailable in the calendar.",
+          "user_requests": [
+            "1. The landlord of property **P100** (Seattle apartment) must update the availability calendar so that every day from **2025‑05‑15** through **2025‑06‑13** (a 30‑day period) is marked as available.  \n\n2. After the calendar is updated, the renter **U600** wants to rent **P100** for the full 30‑day period starting **2025‑05‑15**. Verify that the stay meets the property’s minimum lease duration, calculate the total rent using the monthly price (prefer the monthly rate when the stay is 30 days or longer), and then submit a new rental inquiry for this date range.  \n\n3. The landlord of property **P104** decides to take the house offline for renovations. Deactivate its listing (**L204**) and increase the property’s monthly price by **$200**.  \n\n4. Cancel the pending inquiry **I302** (which requests **P102** from **2025‑04‑10** to **2025‑04‑15**) and restore those dates in **P102**’s availability calendar to `true`.  \n\n5. Finally, the landlord confirms the newly created inquiry for **P100**, changing its status to “confirmed” and marking the dates **2025‑05‑15** through **2025‑06‑13** as unavailable in the calendar."
+          ],
+          "tool_call_names": {
+            "update_availability_calendar": 2,
+            "validate_stay_duration": 2,
+            "get_min_lease_duration": 1,
+            "calculate_total_rent": 1,
+            "submit_rental_inquiry": 1,
+            "update_listing_status": 1,
+            "update_property_pricing": 1,
+            "cancel_inquiry": 1,
+            "confirm_inquiry": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"update_availability_calendar\", \"arguments\": {\"property_id\": \"P100\", \"availability_updates\": [{\"date\": \"2025-05-15\", \"is_available\": true}, {\"date\": \"2025-05-16\", \"is_available\": true}, {\"date\": \"2025-05-17\", \"is_available\": true}, {\"date\": \"2025-05-18\", \"is_available\": true}, {\"date\": \"2025-05-19\", \"is_available\": true}, {\"date\": \"2025-05-20\", \"is_available\": true}, {\"date\": \"2025-05-21\", \"is_available\": true}, {\"date\": \"2025-05-22\", \"is_available\": true}, {\"date\": \"2025-05-23\", \"is_available\": true}, {\"date\": \"2025-05-24\", \"is_available\": true}, {\"date\": \"2025-05-25\", \"is_available\": true}, {\"date\": \"2025-05-26\", \"is_available\": true}, {\"date\": \"2025-05-27\", \"is_available\": true}, {\"date\": \"2025-05-28\", \"is_available\": true}, {\"date\": \"2025-05-29\", \"is_available\": true}, {\"date\": \"2025-05-30\", \"is_available\": true}, {\"date\": \"2025-05-31\", \"is_available\": true}, {\"date\": \"2025-06-01\", \"is_available\": true}, {\"date\": \"2025-06-02\", \"is_available\": true}, {\"date\": \"2025-06-03\", \"is_available\": true}, {\"date\": \"2025-06-04\", \"is_available\": true}, {\"date\": \"2025-06-05\", \"is_available\": true}, {\"date\": \"2025-06-06\", \"is_available\": true}, {\"date\": \"2025-06-07\", \"is_available\": true}, {\"date\": \"2025-06-08\", \"is_available\": true}, {\"date\": \"2025-06-09\", \"is_available\": true}, {\"date\": \"2025-06-10\", \"is_available\": true}, {\"date\": \"2025-06-11\", \"is_available\": true}, {\"date\": \"2025-06-12\", \"is_available\": true}, {\"date\": \"2025-06-13\", \"is_available\": true}]}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"validate_stay_duration\", \"arguments\": {\"property_id\": \"P100\", \"start_date\": \"2025-05-15\", \"end_date\": \"2025-06-13\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"confirm_inquiry\", \"arguments\": {\"inquiry_id\": \"I303\"}}\n</tool_call>",
+            "Task Completed"
+          ],
+          "archived_raw_gradient_norm": 15.280194367838138
+        },
+        {
+          "rank": 2,
+          "meta_index": 1831,
+          "influence": 240.22966391147955,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_57_sft",
+          "traj_type": "conversation",
+          "user_turns": 10,
+          "first_user": "Hey there! Can you help me check the current status of the **METARhub** data feed in our system? Let me know if it's running or not.",
+          "user_requests": [
+            "Hey there! Can you help me check the current status of the **METARhub** data feed in our system? Let me know if it's running or not.",
+            "Let's go ahead and reactivate the **METARhub** data feed, please. Once that's done, let me know.",
+            "Great, thanks for confirming! Could you tell me the timestamp of the most recent METAR report for **KSFO** currently in the system? I need that info for the next step.",
+            "Perfect! Please ingest a new METAR report for **KSFO** with a timestamp of **1717014000.0** (which is later than the latest entry). Here’s the full report with all required fields:\n\n- Wind: `28010KT`\n- Visibility: `7SM`\n- Cloud: `SCT018 BKN025`\n- Temperature: `16`\n- Dew point: `12`\n- Altimeter: `A3008`\n- Raw text: `KSFO 301540Z 28010KT 7SM SCT018 BKN025 16/12 A3008`\n\nLet me know once that’s been ingested!",
+            "Thanks for ingesting that update. Can you please force‑refresh the current METAR for **KSFO** in the system, so it treats this newly added observation as the latest report?",
+            "That’s perfect, thanks! Now, could you tell me what the latest TAF forecast is for **KLAX** in the system right now, including its issue timestamp and validity period?",
+            "Thanks for that info! Please ingest an updated TAF report for **KLAX** with these changes:  \n- Issue timestamp: **1717015200.0** (June 30, 2024, 15:40 UTC)\n- Validity period: **June 30, 2024, 16:00 UTC to July 1, 2024, 18:00 UTC** (1717016400.0 – 1717111200.0)\n\nKeep the forecast logical and consistent; you can use similar details to the last TAF, but with the new times above. Let me know once the new TAF is successfully added!",
+            "Thanks, that looks great! Could you tell me the most recent overall data update timestamp in the system right now? I’ll need that for the next action.",
+            "Perfect, thanks! Please remove all METAR reports for **EGLL** that are older than two hours compared to that timestamp (`1717015200.0`). Let me know once this cleanup is done.",
+            "Thanks for clearing out those old reports! For the last step, could you generate a list of all registered airports where the **current METAR visibility** is less than **8 statute miles**? Please include each airport’s identifier and the corresponding visibility value."
+          ],
+          "tool_call_names": {
+            "check_weather_data_feed_status": 1,
+            "activate_weather_data_feed": 1,
+            "get_current_metar": 6,
+            "ingest_metar_report": 1,
+            "refresh_current_metar": 1,
+            "get_taf_forecast": 1,
+            "ingest_taf_report": 1,
+            "get_latest_data_update_time": 1,
+            "clear_stale_reports": 1,
+            "list_airports": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"check_weather_data_feed_status\", \"arguments\": {\"source\": \"METARhub\"}}\n</tool_call>",
+            "The METARhub data feed is currently **inactive**. The last update occurred at timestamp 1717013800.0 (UTC), with an update frequency of 60 seconds. Would you like to activate this feed or check any other details?",
+            "<tool_call>\n{\"name\": \"get_current_metar\", \"arguments\": {\"airport_id\": \"RJTT\"}}\n</tool_call>",
+            "The airports with current METAR visibility **less than 8 statute miles** are:\n\n1. **KSFO** (San Francisco International Airport)  \n   - Visibility: **7.0 SM**  \n   - METAR: `KSFO 301540Z 28010KT 7SM SCT018 BKN025 16/12 A3008`\n\n2. **EGLL** (London Heathrow Airport)  \n   - Visibility: **7.0 SM**  \n   - METAR: `EGLL 301525Z 28018KT 7SM OVC015 11/09 Q2992`\n\nAll other airports in the system (KLAX, YUL, RJTT) have visibility ≥10.0 SM. Let me know if you need further analysis! ✈️"
+          ],
+          "archived_raw_gradient_norm": 24.10943643146118
+        },
+        {
+          "rank": 3,
+          "meta_index": 752,
+          "influence": 228.29305945599876,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_23_sft",
+          "traj_type": "conversation",
+          "user_turns": 8,
+          "first_user": "Hey! Before we move forward, could you check if the city “Oslo” is already registered in your repository?",
+          "user_requests": [
+            "Hey! Before we move forward, could you check if the city “Oslo” is already registered in your repository?",
+            "Yes, please register a new location with these details:  \n- ID: LOC006  \n- City name: Oslo  \n- Country: Norway  \n- Latitude: 59.9139  \n- Longitude: 10.7522  \n- Elevation: 23 m",
+            "Let’s go ahead and add a new data source for this location. Please register a weather station with ID SRC006 and set its operational date to 2023‑09‑15.",
+            "Let’s add weather observations for Oslo (LOC006) at these timestamps:  \n- 2023‑10‑01 08:00:00  \n- 2023‑10‑02 08:00:00  \n- 2023‑10‑03 08:00:00  \n\nFor each, please include values for temperature, precipitation, humidity, atmospheric pressure, and wind_speed. For the observation at 2023‑10‑02 08:00:00, leave wind_speed as null. Please use realistic measurements for all other values.",
+            "Please retrieve all observations for LOC006 between 2023‑10‑01 and 2023‑10‑03 and compute the average temperature for this period.",
+            "Could you produce a report for these three timestamps that lists, for each observation, which variables are null? I’d like to check for missing data flags.",
+            "Yes, please log a data‑correction entry for the observation on 2023‑10‑02 08:00:00, supplying a wind_speed value of 4.5 m/s. Please make sure the original observation is preserved.",
+            "Please deprecate the data source SRC006, marking it as inactive but make sure all its historical observations remain in the system."
+          ],
+          "tool_call_names": {
+            "get_location_by_city_name": 1,
+            "register_location": 1,
+            "register_data_source": 1,
+            "add_new_observation": 3,
+            "get_observations_by_location_and_date_range": 1,
+            "aggregate_temperature_average": 1,
+            "log_data_correction": 1,
+            "deprecate_data_source": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"get_location_by_city_name\", \"arguments\": {\"city_name\": \"Oslo\"}}\n</tool_call>",
+            "The city \"Oslo\" is not currently registered in the weather data repository (no matching locations found). \n\nWould you like to register Oslo as a new location? If so, please provide the following details:\n- Country (e.g., \"Norway\")\n- Latitude (decimal degrees, e.g., 59.91)\n- Longitude (decimal degrees, e.g., 10.75)\n- Elevation (in meters, e.g., 25)\n\nLet me know how you'd like to proceed!",
+            "<tool_call>\n{\"name\": \"deprecate_data_source\", \"arguments\": {\"source_id\": \"SRC006\"}}\n</tool_call>",
+            "The data source **SRC006** has been successfully deprecated as requested! 🚫  \n\n**Key Details:**  \n- ✅ **Status:** Marked as inactive (deprecated) in the registry.  \n- ✅ **Historical Data:** All observations (including the corrected wind speed entry for 2023-10-02) remain fully intact and accessible.  \n- ⚠️ **No Data Loss:** The deprecation process strictly preserves historical weather records per system rules.  \n\nWould you like to:  \n1. **Verify the deprecation status** (e.g., list active data sources),  \n2. **Proceed with another task** (e.g., add new observations), or  \n3. **Review the full observation history** for LOC006?  \n\nLet me know! 😊"
+          ],
+          "archived_raw_gradient_norm": 27.627610086685568
+        },
+        {
+          "rank": 4,
+          "meta_index": 7216,
+          "influence": 177.9617477258102,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_85_sft",
+          "traj_type": "non_conversation",
+          "user_turns": 1,
+          "first_user": "1. Identify all members whose `membership_status` is either **suspended** or **canceled** and whose `last_updated` timestamp is more than 180 days older than the current date (2025‑11‑19). For each identified member, change the status to **expired**, create a status‑change log entry with source **automated_cleanup**, and update the member’s `last_updated` to the current timestamp.  \n\n2. A new partner provides an additional external identifier **EXT002-PARTNER** for the existing member **MEM0002** (currently linked to **EXT002**). Verify that **EXT002-PARTNER** does not already exist in the system, then add this new mapping while keeping the original **EXT002** mapping intact. Ensure the operation respects the uniqueness constraint on external IDs.  \n\n3. Process the deletion request for member **MEM0005**. First, confirm that the member’s current `membership_status` is **expired** and that the latest entry in their `MembershipStatusLog` is the expiration record with no later logs. Then perform a soft‑delete by setting the member’s status to **canceled** (if not already) using the appropriate operation, and record a final status‑change log entry with source **user_deletion**.  \n\nComplete all steps using only the provided operation interfaces, ensuring each sub‑task involves multiple queries and state‑changing calls.",
+          "user_requests": [
+            "1. Identify all members whose `membership_status` is either **suspended** or **canceled** and whose `last_updated` timestamp is more than 180 days older than the current date (2025‑11‑19). For each identified member, change the status to **expired**, create a status‑change log entry with source **automated_cleanup**, and update the member’s `last_updated` to the current timestamp.  \n\n2. A new partner provides an additional external identifier **EXT002-PARTNER** for the existing member **MEM0002** (currently linked to **EXT002**). Verify that **EXT002-PARTNER** does not already exist in the system, then add this new mapping while keeping the original **EXT002** mapping intact. Ensure the operation respects the uniqueness constraint on external IDs.  \n\n3. Process the deletion request for member **MEM0005**. First, confirm that the member’s current `membership_status` is **expired** and that the latest entry in their `MembershipStatusLog` is the expiration record with no later logs. Then perform a soft‑delete by setting the member’s status to **canceled** (if not already) using the appropriate operation, and record a final status‑change log entry with source **user_deletion**.  \n\nComplete all steps using only the provided operation interfaces, ensuring each sub‑task involves multiple queries and state‑changing calls."
+          ],
+          "tool_call_names": {
+            "list_all_external_identifiers": 1,
+            "batch_lookup_members_by_external_id": 1,
+            "update_membership_status": 3,
+            "sync_identifier_mapping": 1,
+            "get_membership_status_history": 1,
+            "remove_member": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"list_all_external_identifiers\", \"arguments\": {}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"batch_lookup_members_by_external_id\", \"arguments\": {\"external_ids\": [\"EXT001\", \"EXT002\", \"EXT003\", \"EXT004\", \"EXT005\"]}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"update_membership_status\", \"arguments\": {\"member_id\": \"MEM0005\", \"new_status\": \"canceled\", \"source\": \"user_deletion\"}}\n</tool_call>",
+            "Task Completed"
+          ],
+          "archived_raw_gradient_norm": 22.81181966266064
+        },
+        {
+          "rank": 5,
+          "meta_index": 4596,
+          "influence": 166.32969445995462,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_7_sft",
+          "traj_type": "non_conversation",
+          "user_turns": 1,
+          "first_user": "Create a new public playlist for user **USR001** named **“Luna Nova Essentials”**. Populate this playlist with the three most popular tracks released by **Luna Nova (artist_id = ART001)** across all of her albums. After that, locate the single most popular track by **Sofia Rivera (artist_id = ART003)** that is not already included and add it to the playlist. Then, remove any track from the playlist whose popularity score is below **70**. Rename the playlist to **“Luna Nova & Friends Essentials”** and change its visibility to **private**. Finally, increase Luna Nova’s follower count by **5 %** of her current followers (round down to the nearest whole number).",
+          "user_requests": [
+            "Create a new public playlist for user **USR001** named **“Luna Nova Essentials”**. Populate this playlist with the three most popular tracks released by **Luna Nova (artist_id = ART001)** across all of her albums. After that, locate the single most popular track by **Sofia Rivera (artist_id = ART003)** that is not already included and add it to the playlist. Then, remove any track from the playlist whose popularity score is below **70**. Rename the playlist to **“Luna Nova & Friends Essentials”** and change its visibility to **private**. Finally, increase Luna Nova’s follower count by **5 %** of her current followers (round down to the nearest whole number)."
+          ],
+          "tool_call_names": {
+            "search_tracks_by_artist": 2,
+            "create_playlist": 1,
+            "get_playlist_by_id": 1,
+            "add_track_to_playlist": 1,
+            "get_track_by_id": 4,
+            "rename_playlist": 1,
+            "set_playlist_visibility": 1,
+            "get_artist_by_id": 1,
+            "update_artist_follower_count": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"search_tracks_by_artist\", \"arguments\": {\"artist_id\": \"ART001\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"create_playlist\", \"arguments\": {\"playlist_id\": \"PLAY_LUNA_ESSENTIALS\", \"name\": \"Luna Nova Essentials\", \"owner_id\": \"USR001\", \"track_ids\": [\"TRK006\", \"TRK003\", \"TRK005\"], \"public\": true}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"update_artist_follower_count\", \"arguments\": {\"artist_id\": \"ART001\", \"followers\": 126000}}\n</tool_call>",
+            "Task Completed"
+          ],
+          "archived_raw_gradient_norm": 32.389178019703316
+        },
+        {
+          "rank": 6,
+          "meta_index": 3548,
+          "influence": 157.42186329462677,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_115_sft",
+          "traj_type": "conversation",
+          "user_turns": 12,
+          "first_user": "Hi! First, I’d like to make sure that Elena Rodriguez (ID PH001) had active coverage on the service date for claim CLM005. Can you confirm that for me?",
+          "user_requests": [
+            "Hi! First, I’d like to make sure that Elena Rodriguez (ID PH001) had active coverage on the service date for claim CLM005. Can you confirm that for me?",
+            "Thanks for checking the coverage status. Before moving ahead, could you confirm that claim CLM005 is currently marked as “denied”?",
+            "Before we file an appeal, can you check if there’s already an active appeal (with a status other than “approved” or “rejected”) for claim CLM005?",
+            "Yes, please go ahead and file a new appeal for claim CLM005. Let me know once it’s submitted.",
+            "Great, thanks for submitting the appeal. Can you please record a transaction that indicates the submission of this new appeal for claim CLM005?",
+            "Thanks for logging the transaction. Next, please update the status of the new appeal to “under review” for claim CLM005.",
+            "Can you please log a transaction that specifically captures the status change of the appeal to “under review” for claim CLM005?",
+            "Thanks for confirming the transaction log. Now, please approve the appeal for claim CLM005.",
+            "Please log a transaction documenting the appeal approval for claim CLM005, including the appropriate response date. Let me know when that’s done.",
+            "Thank you for logging the appeal approval. Next, please change the status of claim CLM005 to “approved” in the system.",
+            "Can you please confirm that the transaction history includes an entry reflecting the claim status update to “approved” for CLM005?",
+            "Please retrieve and display the complete transaction history for claim CLM005. I’d like to verify that it includes entries for the appeal submission, status changes, approval, and the claim re‑approval."
+          ],
+          "tool_call_names": {
+            "get_claim_by_id": 1,
+            "verify_eligibility_for_coverage": 1,
+            "check_claim_status": 1,
+            "check_existing_active_appeal": 1,
+            "submit_appeal": 1,
+            "log_claim_transaction": 2,
+            "update_appeal_status": 1,
+            "approve_appeal": 1,
+            "update_claim_status": 1,
+            "get_transaction_history_for_claim": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"get_claim_by_id\", \"arguments\": {\"claim_id\": \"CLM005\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"verify_eligibility_for_coverage\", \"arguments\": {\"claim_id\": \"CLM005\"}}\n</tool_call>",
+            "The transaction history for claim CLM005 **does include** an entry reflecting the status update to **\"approved\"**. Specifically, the following transaction confirms this change:\n\n- **Transaction ID**: `txn_CLM005_2025-11-25T03:56:10.753838`  \n- **Type**: `adjustment`  \n- **Timestamp**: `2025-11-25T03:56:10.753838`  \n- **Processed By**: `system`  \n\nThis entry was automatically logged when the claim status was updated to \"approved\" via the `update_claim_status` operation. The system confirms the status change was recorded as required.\n\nAll steps for this claim’s appeal process are now fully documented and complete. Is there anything else you’d like to verify or action?",
+            "Here is the complete transaction history for claim **CLM005**, formatted for clarity. All requested entries (appeal submission, status changes, approval, and claim re-approval) are included:\n\n---\n\n### **Transaction History for Claim CLM005**\n| Transaction ID                              | Type                                  | Timestamp                           | Processed By |\n|---------------------------------------------|---------------------------------------|-------------------------------------|--------------|\n| `txn_13`                                    | submission                            | 2024-01-12T08:00:00Z                | system       |\n| `txn_14`                                    | adjustment                            | 2024-01-14T16:00:00Z                | agent_brown  |\n| `txn_15`                                    | appeal submission                     | 2024-01-15T09:00:00Z                | agent_brown  |\n| `txn_16`                                    | appeal_rejected                       | 2024-01-20T11:00:00Z                | supervisor_lee |\n| `txn_20`                                    | appeal submission                     | 2024-05-15T14:30:00Z                | system       |\n| `TXN_APPEAL_CLM005_20240515`                | submission                            | 2024-05-15T14:30:00Z                | system       |\n| `txn_22`                                    | appeal status change to 'under review' | 2025-11-24T19:54:58.040684          | system       |\n| `txn_appeal_APPEAL_CLM005_20240515_approve`  | appeal approved                       | 2025-11-25T03:55:25.077331          | system       |\n| `txn_claim_CLM005_reeval`                    | re-evaluation initiated due to appeal approval | 2025-11-25T03:55:25.077331 | system       |\n| `TXN_APPROVAL_CLM005_20240515`              | adjustment                            | 2024-05-15T15:00:00Z                | system       |\n| `txn_CLM005_2025-11-25T03:56:10.753838`     | adjustment                            | 2025-11-25T03:56:10.753838          | system       |\n\n---\n\n### **Key Verification**\n- ✅ **Appeal Submission**:  \n  - `txn_20` (May 15, 2024, 14:30) and `TXN_APPEAL_CLM005_20240515` (same timestamp).\n- ✅ **Status Change to \"Under Review\"**:  \n  - `txn_22` (Nov 24, 2025, 19:54).\n- ✅ **Appeal Approval**:  \n  - `txn_appeal_APPEAL_CLM005_20240515_approve` (Nov 25, 2025, 03:55).\n- ✅ **Claim Re-approval (Status Update)**:  \n  - `txn_CLM005_2025-11-25T03:56:10.753838` (Nov 25, 2025, 03:56).\n\nAll required entries are fully documented in the transaction history. The claim status has been updated to **\"approved\"** as confirmed by the final adjustment entry. \n\nLet me know if you'd like to proceed with next steps or need further verification!"
+          ],
+          "archived_raw_gradient_norm": 33.581521198259324
+        },
+        {
+          "rank": 7,
+          "meta_index": 4577,
+          "influence": 152.29724869656243,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_6_sft",
+          "traj_type": "non_conversation",
+          "user_turns": 1,
+          "first_user": "A renter (user ID **REN002**) wants to book a 7‑day stay in Seattle from **2025‑04‑01** to **2025‑04‑07**.  \n\n1. Identify all properties located in Seattle.  \n2. From those, select the ones whose listings are currently active.  \n3. Determine which of the remaining properties satisfies the minimum lease duration requirement for a 7‑day stay.  \n4. Verify whether any of the qualifying properties is fully available for the entire date range; if none are, choose a property that meets the lease requirement but has missing availability days.  \n5. If the chosen property’s listing is inactive, activate the listing.  \n6. Update the property’s availability calendar to set any unavailable days within the requested range to available.  \n7. Calculate the total rental cost for the 7‑day period, preferring the monthly rate when appropriate.  \n8. Submit a new rental inquiry for the renter **REN002** on the selected property with the specified dates.  \n9. Immediately confirm the inquiry, causing the system to mark the booked dates as unavailable.  \n\nComplete all steps, ensuring the environment’s state reflects the activated listing, updated calendar, and the newly created and confirmed inquiry.",
+          "user_requests": [
+            "A renter (user ID **REN002**) wants to book a 7‑day stay in Seattle from **2025‑04‑01** to **2025‑04‑07**.  \n\n1. Identify all properties located in Seattle.  \n2. From those, select the ones whose listings are currently active.  \n3. Determine which of the remaining properties satisfies the minimum lease duration requirement for a 7‑day stay.  \n4. Verify whether any of the qualifying properties is fully available for the entire date range; if none are, choose a property that meets the lease requirement but has missing availability days.  \n5. If the chosen property’s listing is inactive, activate the listing.  \n6. Update the property’s availability calendar to set any unavailable days within the requested range to available.  \n7. Calculate the total rental cost for the 7‑day period, preferring the monthly rate when appropriate.  \n8. Submit a new rental inquiry for the renter **REN002** on the selected property with the specified dates.  \n9. Immediately confirm the inquiry, causing the system to mark the booked dates as unavailable.  \n\nComplete all steps, ensuring the environment’s state reflects the activated listing, updated calendar, and the newly created and confirmed inquiry."
+          ],
+          "tool_call_names": {
+            "search_properties_by_city": 1,
+            "get_property_details": 2,
+            "get_listing_status": 1,
+            "filter_active_listings": 1,
+            "update_listing_status": 1,
+            "check_property_availability": 1,
+            "update_availability_calendar": 1,
+            "calculate_total_rent": 2,
+            "submit_rental_inquiry": 6,
+            "confirm_inquiry": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"search_properties_by_city\", \"arguments\": {\"city\": \"Seattle\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"get_property_details\", \"arguments\": {\"property_id\": \"PROP002\"}}\n</tool_call>",
+            "<tool_call>\n{\"name\": \"confirm_inquiry\", \"arguments\": {\"inquiry_id\": \"REN002_INQ001\"}}\n</tool_call>",
+            "Task Completed"
+          ],
+          "archived_raw_gradient_norm": 24.234199076601026
+        },
+        {
+          "rank": 8,
+          "meta_index": 1015,
+          "influence": 150.25686039758475,
+          "projection_width": 512,
+          "projection_seed": 202611051,
+          "env_id": "env_31_sft",
+          "traj_type": "conversation",
+          "user_turns": 14,
+          "first_user": "Hi there! Could you please start by authenticating me as player “AriaStorm”?",
+          "user_requests": [
+            "Hi there! Could you please start by authenticating me as player “AriaStorm”?",
+            "Thanks! Could you check my current gold balance?",
+            "Great! Please deduct 200 gold from my balance for a special quest purchase.",
+            "Yes, please add the rare weapon with item ID ITM999 to my inventory. Remember, it should have a stack limit of 1.",
+            "That’s great! Actually, I currently have weapon ITM001 equipped—could you unequip that for me before equipping the new ITM999 weapon?",
+            "Thanks! Can you check the current progress on my achievement ACH002?",
+            "Awesome, that’s above the threshold I needed. Next, please unlock achievement ACH010 for me.",
+            "I’d like to stick with ACH010 as the achievement ID. Could you please unlock achievement ACH010 for me?",
+            "ACH010 is definitely the achievement ID I’m looking to unlock. Could you please check my full list of available achievements to see if ACH010 can be unlocked for me?",
+            "Thanks for checking. I’d like to unlock ACH010 specifically, even if it isn’t currently in my list. Can you please add and unlock achievement ACH010 for me?",
+            "I appreciate your help, but I do need achievement ACH010 unlocked for my account, as specified. Could you please unlock ACH010 for me?",
+            "I understand that your system may have limitations, but I specifically need ACH010 unlocked for my account, as originally specified. Is there any way you can unlock ACH010 for me?",
+            "Understood, but my instructions require ACH010 to be unlocked for AriaStorm. If you’re unable to do this, I’m not able to move forward with the remaining requests.",
+            "Understood, thanks for your help. Since ACH010 cannot be unlocked and it's required, I’ll stop here."
+          ],
+          "tool_call_names": {
+            "authenticate_player": 1,
+            "get_player_by_username": 1,
+            "get_currency_balance": 1,
+            "deduct_currency_balance": 1,
+            "add_item_to_inventory": 1,
+            "unequip_item": 1,
+            "equip_item": 1,
+            "get_achievement_progress": 1,
+            "unlock_achievement": 1,
+            "list_in_progress_achievements": 1,
+            "list_unlocked_achievements": 1
+          },
+          "visible_assistant_samples": [
+            "<tool_call>\n{\"name\": \"authenticate_player\", \"arguments\": {\"username\": \"AriaStorm\"}}\n</tool_call>",
+            "Authentication successful! You are now logged in as player \"AriaStorm\". How can I assist you with your account today? (e.g., check balance, view inventory, update achievements)",
+            "I’ve reviewed all available data and system constraints multiple times. **ACH010 cannot be unlocked** because it is **not registered in your account’s achievement data** (confirmed via `list_unlocked_achievements` and `list_in_progress_achievements`). The system strictly enforces that achievements must already exist in your player profile — it cannot add or create new achievements like ACH010.  \n\n**Your account’s verified achievements:**  \n- ✅ **ACH001** (unlocked)  \n- 🔄 **ACH002** (65% progress)  \n\n**ACH010 does not exist in your account.** This is not a system limitation — it’s a core game rule. If ACH010 is truly required for your task, the ID is likely incorrect (e.g., ACH011 instead of ACH010), or the achievement belongs to a different account/game version.  \n\nSince your instructions cannot be fulfilled with the current system constraints, **I cannot proceed further**. To resolve this:  \n1. **Verify the correct achievement ID** (e.g., check if it’s *ACH011*),  \n2. **Confirm with game support** that ACH010 exists for your account, or  \n3. **Adjust your request** to use an existing achievement (e.g., complete ACH002).  \n\nI’ve done everything within my capabilities to help. Without a valid achievement ID, no further action can be taken. Thank you for your understanding! 😊",
+            "You're welcome! I'm sorry I couldn't fulfill the ACH010 request — the system strictly requires achievements to exist in your account's data, and ACH010 isn't registered for \"AriaStorm\" based on all verified checks.  \n\nIf you ever need help with **existing achievements** (like completing ACH002) or other account tasks, just say the word. Thanks for using the system! 🎮✨  \n\nHave a great day! 😊"
+          ],
+          "archived_raw_gradient_norm": 42.52934258217377
+        }
+      ],
+      "selected100_types": {
+        "non_conversation": 48,
+        "conversation": 52
+      },
+      "selected100_environments": 72,
+      "positive_scores": 99,
+      "score_norm_spearman": -0.04815270381759544
+    }
+  },
+  "overlaps": {
+    "q67_f vs q67_k": {
+      "top8": 2,
+      "top100": 60
+    },
+    "q1_f vs q67_f": {
+      "top8": 0,
+      "top100": 47
+    },
+    "q1_f vs q67_k": {
+      "top8": 0,
+      "top100": 48
+    },
+    "q1_f vs q1_k": {
+      "top8": 1,
+      "top100": 63
+    },
+    "q1_k vs q67_f": {
+      "top8": 0,
+      "top100": 52
+    },
+    "q1_k vs q67_k": {
+      "top8": 1,
+      "top100": 52
+    }
+  },
+  "metrics": {
+    "evaluated_trajectories": 1536,
+    "unique_top8_training_trajectories": 28,
+    "q67_random_fuel_state_mismatches": 92,
+    "q67_f_fuel_state_mismatches": 98,
+    "q67_k_fuel_state_mismatches": 72
+  },
+  "limitations": [
+    "Official errors report first failure only; per-turn function occurrence statistics cover all generated turns and are attempts, not necessarily successful execution.",
+    "Keyword counts are text proxies, not manually verified semantic labels.",
+    "Same seed does not hold intermediate states fixed.",
+    "Top8 semantic resemblance cannot establish causal influence; training uses all selected100.",
+    "Question67 was chosen after prior diagnostics; both studies are single-task adaptation."
+  ],
+  "failure_turn_method": "Error text if explicit; otherwise len(error.execution_result)-1, cross-checked for explicit cases. No inferred turn from final generated state.",
+  "fuel_recovery": {
+    "q67_random": {
+      "counts": {
+        "first_39_5": 65,
+        "first_39_5_whole_task_success": 64,
+        "first_50": 177,
+        "first_50_whole_task_success": 79,
+        "50_without_39_5": 95,
+        "50_without_39_5_whole_task_success": 0,
+        "50_then_39_5": 82,
+        "50_then_39_5_whole_task_success": 79
+      },
+      "first_examples": {
+        "first_39_5": 1,
+        "first_50": 2,
+        "50_without_39_5": 2,
+        "50_then_39_5": 7
+      }
+    },
+    "q67_f": {
+      "counts": {
+        "first_39_5": 61,
+        "first_39_5_whole_task_success": 56,
+        "first_50": 187,
+        "first_50_whole_task_success": 75,
+        "50_without_39_5": 104,
+        "50_without_39_5_whole_task_success": 0,
+        "50_then_39_5": 83,
+        "50_then_39_5_whole_task_success": 75
+      },
+      "first_examples": {
+        "first_39_5": 2,
+        "first_50": 3,
+        "50_without_39_5": 3,
+        "50_then_39_5": 4
+      }
+    },
+    "q67_k": {
+      "counts": {
+        "first_39_5": 73,
+        "first_39_5_whole_task_success": 63,
+        "first_50": 180,
+        "first_50_whole_task_success": 104,
+        "50_without_39_5": 72,
+        "50_without_39_5_whole_task_success": 0,
+        "50_then_39_5": 108,
+        "50_then_39_5_whole_task_success": 104,
+        "repeated_50": 1,
+        "repeated_50_whole_task_success": 1
+      },
+      "first_examples": {
+        "first_39_5": 1,
+        "first_50": 2,
+        "50_without_39_5": 2,
+        "50_then_39_5": 4,
+        "repeated_50": 186
+      }
+    }
+  }
+}

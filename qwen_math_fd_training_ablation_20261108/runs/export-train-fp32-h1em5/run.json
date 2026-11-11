@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "export-train-fp32-h1em5",
+  "title": "FD训练消融 · train-fp32-h1em5 · FP32 checkpoint导出",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T11:25:18.509336+00:00",
+  "updated_at": "2026-11-08T11:25:18.509347+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "gpus": 0,
+    "source_training_run": "train-fp32-h1em5",
+    "source_optimizer_step": 5,
+    "scope": "preserve exact FP32 master; BF16 casting occurs only at eval engine load",
+    "torch_compile_disabled": false
+  },
+  "sources": {
+    "status": "runs/export-train-fp32-h1em5/state.json",
+    "progress": "runs/export-train-fp32-h1em5/progress.json",
+    "results": "runs/export-train-fp32-h1em5/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "FP32 merge provenance",
+      "path": "runs/export-train-fp32-h1em5/model/metadata.json"
+    }
+  ],
+  "tags": [],
+  "notes": "8xH200 restart protocol; upstream train8-*; original unsubmitted plan archived",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-export-fp32h5-1108a",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "planning_revisions": [
+    {
+      "at": "2026-11-08T11:30:46.280169+00:00",
+      "reason": "Before any main training: common explicit eager runtime and correctly labeled generic FP32 export; historical planned source retained",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/export-train-fp32-h1em5/planning-revisions/2026-11-08T11-30-41.182725+00-00/source"
+    },
+    {
+      "at": "2026-11-08T11:39:20.106280+00:00",
+      "reason": "Before main training: all three arms use same H200 class; explicit eager common runtime, original production Triton operators retained; old planned source preserved",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/export-train-fp32-h1em5/planning-revisions/2026-11-08T11-39-15.017246+00-00/source"
+    },
+    {
+      "at": "2026-11-08T12:01:43.065187+00:00",
+      "reason": "Before any main arm: repair Tensor JSON logging and validate existing smoke checkpoint on CPU rather than replaying GPU training",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/export-train-fp32-h1em5/planning-revisions/2026-11-08T12-01-36.241850+00-00/source"
+    },
+    {
+      "at": "2026-11-09T00:07:36.031377+00:00",
+      "reason": "User authorized8xH200; new training run mapping and restored compilation; prior planned source preserved",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/export-train-fp32-h1em5/planning-revisions/2026-11-09T00-07-29.431712+00-00/source"
+    }
+  ]
+}

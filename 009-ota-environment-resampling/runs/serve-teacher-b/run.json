@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "serve-teacher-b",
+  "title": "OTA重采样 · serve-teacher-b",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-07T23:07:01.398063+00:00",
+  "tags": [
+    "environment-resampling",
+    "Qwen3-8B"
+  ],
+  "parameters": {},
+  "sources": {
+    "status": "runs/serve-teacher-b/state.json",
+    "results": "runs/serve-teacher-b/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    }
+  ],
+  "job": {
+    "name": "ota-rs-serve-teacher-b-1107",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

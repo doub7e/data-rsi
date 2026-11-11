@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "generation-runtime-check",
+  "title": "FD可靠性 · vLLM 离线生成依赖与词表校验",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T00:33:08.324939+00:00",
+  "updated_at": "2026-11-08T00:33:08.324949+00:00",
+  "parameters": {
+    "image": "vllm/vllm-openai@sha256:6ee133356d49ed24cee03dd0cda3d3980279a11c107ce3e752c89e76540f41c9",
+    "gpu_count": 0,
+    "pyarrow": "23.0.1"
+  },
+  "sources": {
+    "status": "runs/generation-runtime-check/state.json",
+    "progress": "runs/generation-runtime-check/progress.json",
+    "results": "runs/generation-runtime-check/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "依赖与 grader 检查",
+      "path": "runs/generation-runtime-check/result.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-gencheck-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

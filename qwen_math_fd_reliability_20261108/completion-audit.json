@@ -1,0 +1,131 @@
+{
+  "audited_at": "2026-11-08T10:41:14.299150+00:00",
+  "overall": "available_checkpoint_work_complete; exact_best_checkpoint_validation_blocked",
+  "previous_goal_turn_classification": "progress: completed analysis, final primary aggregation, source-backed report and verified board; launched independent validation and calibrated trained checkpoint h",
+  "requirements": [
+    {
+      "requirement": "Use inf-token-reweight and preserve existing unrelated work",
+      "status": "verified",
+      "evidence": [
+        "protocol.json",
+        "provenance/EXPERIMENT_HANDOFF.md"
+      ],
+      "limits": "Dedicated worktree; original dirty qs-dev checkout preserved; no push or commit made."
+    },
+    {
+      "requirement": "Use best completed Math20-step numerical configuration",
+      "status": "verified_with_material_scope_limit",
+      "evidence": [
+        "provenance/EXPERIMENT_HANDOFF.md:132",
+        "provenance/run_clipped_sigmoid3s_screened_random20.py",
+        "runs/audit-base-homotopy/audit_config.json"
+      ],
+      "limits": "N64 clipped score/loss,sigmoid3s,identity,fallback0 applied. Exact bestN64step20 weights and original frozen screened1600 order unavailable; Base plus other MOPDstep20 cannot establish reliability at the exact best trained state."
+    },
+    {
+      "requirement": "Compare BF16 Richardson, FP32 Richardson and exact autograd at N16/32/128/1024",
+      "status": "verified_on_available_checkpoints",
+      "evidence": [
+        "runs/comparison/comparisons.json",
+        "runs/comparison/paired_primary.csv"
+      ],
+      "limits": "80/80 conditions completed;6 homogeneous precision cases have undefined derivatives and true fallback0. No fake score or replacement draw."
+    },
+    {
+      "requirement": "Separate finite-difference error, probe precision and sampling variability",
+      "status": "verified",
+      "evidence": [
+        "runs/comparison/paired_calibration.csv",
+        "runs/audit-aux-homotopy/gradient_precision_comparisons.json",
+        "runs/dense-repeats-base-homotopy/result.json",
+        "runs/dense-repeats-base-zeros/result.json"
+      ],
+      "limits": "A1024 is noisy independent reference, not population truth. Same-direction FD comparisons and repeated-probe weight SD reported separately."
+    },
+    {
+      "requirement": "Check practical weights, signs and sensitivity to outliers/step size",
+      "status": "verified",
+      "evidence": [
+        "runs/comparison/comparisons.csv",
+        "runs/full-response-weighted-base/result.json",
+        "runs/bf16-target-ad-base/result.json",
+        "runs/center-calibration-aux/result.json"
+      ],
+      "limits": "Token diagnostics and fixed-response gradients; no optimizer, training-accuracy or causal reward-improvement claim."
+    },
+    {
+      "requirement": "Check implementation and hardware consistency",
+      "status": "verified_with_scope_limits",
+      "evidence": [
+        "runs/fsdp-real-base-n32/result.json",
+        "runs/fsdp-real-base-n32-fa2/result.json",
+        "runs/replay-base-homotopy-hopper/result.json"
+      ],
+      "limits": "Actual4B2rankFULL_SHARD; BF16FA2 and productionFP32SDPA fallback. Unpadded single-target tests do not establish whole-trainer equivalence."
+    },
+    {
+      "requirement": "Adapt based on evidence and independent teacher-screened validation",
+      "status": "verified",
+      "evidence": [
+        "runs/validation-screened/result.json",
+        "runs/full-prefix-screened-validation/result.json",
+        "runs/prefix-weighted-screened-validation-v2/result.json"
+      ],
+      "limits": "20/20 newconditions complete with14homogeneousfallbacks;2048/2304prefix only; firstscopeguardfailure preserved."
+    },
+    {
+      "requirement": "Use only authorized RunAI GPU resources and honor ~12h budget",
+      "status": "verified",
+      "evidence": [
+        "dispatch-plan.json",
+        "runs/validation-screened/dispatch/submission.json",
+        "compute-accounting.json"
+      ],
+      "limits": "All compute ended before11:59:52UTC; partial resource accounting explicitly limited to known GPU declarations."
+    },
+    {
+      "requirement": "Register and verify experiment board and actual samples",
+      "status": "verified",
+      "evidence": [
+        "board-final-verification.json",
+        "artifact-api-verification.json"
+      ],
+      "limits": "38/38 currentterminalrun records and17actualreport/figure/samplefiles verified through API; failed/cancelled states retained."
+    },
+    {
+      "requirement": "Produce final evidence-backed report and preserve reproducibility",
+      "status": "verified_available_scope",
+      "evidence": [
+        "REPORT.md",
+        "synthesis-evidence.json",
+        "synthesis-source.json",
+        "software-tests-final.log"
+      ],
+      "limits": "107CPUcontracttests passed with9skips; numericGPUtests and4prefixscopecontracttests passed onworkers. Full report preserves exact-best-checkpoint limitation."
+    },
+    {
+      "requirement": "Archive and clean owned RunAI jobs, stop owned supervisor",
+      "status": "verified",
+      "evidence": [
+        "cleanup-verification.json",
+        "supervisor-stopped.json",
+        "monitoring/final-cleanup.log"
+      ],
+      "limits": "Only experiment-owned jobs cleaned. Unrelated OTA workload remains untouched."
+    }
+  ],
+  "outstanding_material_scope_limit": "Exact best N64 step20 checkpoint unavailable; do not claim tested it.",
+  "blocker_audit": {
+    "condition": "Exact best N64 clipped sigmoid3s Math step20 checkpoint not found in inspected roots; old /volume/pt-dev/users/qshan is unmounted.",
+    "current_recheck_old_mount_exists": false,
+    "repeated_across_consecutive_goal_turns": 3,
+    "prior_turn_disclosures": [
+      "Previous goal turn ending about09:16UTC:bestcheckpoint unavailable",
+      "Previous goal turn ending about10:01UTC:same missingcheckpoint"
+    ],
+    "current_turn_evidence": "read-only filesystem recheck plus all available computation and recording now finished",
+    "cannot_claim": "Direct validation of the best N64step20 trained weights",
+    "needed_external_change": "Accessible exactcheckpoint path or oldmachine/mount access; optional question already sent, no answer received",
+    "not_due_to_time_exhaustion": true
+  }
+}

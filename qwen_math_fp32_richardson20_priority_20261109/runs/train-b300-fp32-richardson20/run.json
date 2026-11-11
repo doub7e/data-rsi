@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "train-b300-fp32-richardson20",
+  "title": "优先FP32-20 · 4×B300 · FP32 Richardson h1e-5 · 互斥备选训练",
+  "kind": "training",
+  "status": "planned",
+  "created_at": "2026-11-10T23:20:20.690595+00:00",
+  "tags": [
+    "priority1",
+    "FP32",
+    "20step"
+  ],
+  "parameters": {
+    "protocol": "protocol.json",
+    "priority": 1,
+    "gpus": 4,
+    "steps": 20,
+    "fd_precision": "fp32",
+    "h_rel": 1e-05,
+    "sigmoid": "sigmoid(3s)",
+    "fallback": 0,
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "data_pool": "new320; original1600 unavailable",
+    "selection_run": "select320-v2",
+    "candidate_budget_current": 1408,
+    "pool": "b300",
+    "alternative_to": "train-fp32-richardson20",
+    "compiler": "CUDA12.9 ptxas",
+    "preclaim_gate": "4 GPUs compile+Triton cross-entropy backward; no optimizer updates",
+    "exclusive_claim": "training-winner atomic directory"
+  },
+  "sources": {
+    "status": "runs/train-b300-fp32-richardson20/state.json",
+    "progress": "runs/train-b300-fp32-richardson20/progress.json",
+    "results": "runs/train-b300-fp32-richardson20/result.json",
+    "metrics": "runs/train-b300-fp32-richardson20/metrics.jsonl",
+    "training_data": "runs/train-b300-fp32-richardson20/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "完整协议",
+      "path": "protocol.json"
+    },
+    {
+      "label": "B300 编译器来源",
+      "path": "dual-queue/compiler.json"
+    },
+    {
+      "label": "B300兼容性检查",
+      "path": "runs/train-b300-fp32-richardson20/b300-compat-gate.json"
+    },
+    {
+      "label": "训练结果",
+      "path": "runs/train-b300-fp32-richardson20/result.json"
+    },
+    {
+      "label": "训练配置",
+      "path": "runs/train-b300-fp32-richardson20/resolved-launch.json"
+    },
+    {
+      "label": "中断原因及7步证据",
+      "path": "runs/train-b300-fp32-richardson20/interruption-audit/evidence.json"
+    },
+    {
+      "label": "重试pod实际日志",
+      "path": "runs/train-b300-fp32-richardson20/interruption-audit/retry-pod.log"
+    },
+    {
+      "label": "11月11日状态与中断说明",
+      "path": "STATUS_20261111.md"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "opd-p20-b300-1111a",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "planning_revisions": [
+    {
+      "at": "2026-11-09T20:45:22.252766+00:00",
+      "reason": "Dedup produced274unique. Append384candidate suffix before any training submission; training settings unchanged.",
+      "preserved_spec": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fp32_richardson20_priority_20261109/revisions/extension1408-20261109/training-spec.json"
+    }
+  ],
+  "operational_revisions": [
+    {
+      "at": "2026-11-10T23:20:20.690595+00:00",
+      "what": "atomic shared claim added before training entrypoint, preserving queued job; original frozen files retained in dual-queue/h200-guard-revision"
+    }
+  ],
+  "updated_at": "2026-11-10T23:20:20.690595+00:00"
+}

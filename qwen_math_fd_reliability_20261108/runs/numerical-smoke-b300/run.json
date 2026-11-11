@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "numerical-smoke-b300",
+  "title": "FD可靠性 · Qwen3-4B Base · B300 数值实现烟测",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T00:16:34.251079+00:00",
+  "updated_at": "2026-11-08T00:16:34.251086+00:00",
+  "parameters": {
+    "pool": "b300",
+    "gpu_count": 1,
+    "initialization": "Qwen3-4B Base",
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a"
+  },
+  "sources": {
+    "status": "runs/numerical-smoke-b300/state.json",
+    "progress": "runs/numerical-smoke-b300/progress.json",
+    "results": "runs/numerical-smoke-b300/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "执行配置",
+      "path": "runs/numerical-smoke-b300/spec.json"
+    },
+    {
+      "label": "运行环境",
+      "path": "runs/numerical-smoke-b300/runtime.json"
+    },
+    {
+      "label": "结果",
+      "path": "runs/numerical-smoke-b300/result.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-smoke-b300-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

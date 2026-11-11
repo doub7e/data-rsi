@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-08T10:41:14.293496+00:00",
+  "remaining_owned_jobs": [],
+  "remaining_owned_pods": [],
+  "owned_supervisor_live": false,
+  "unrelated_jobs_untouched": [
+    "ota-qwen3-8b-10k-4h200-1030"
+  ],
+  "verified": true
+}

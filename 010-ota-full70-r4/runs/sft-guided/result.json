@@ -1,0 +1,20 @@
+{
+  "finished_at": "2026-11-10T06:40:40.470165+00:00",
+  "checkpoint": "/scratch/cvlab/home/shuli/data-rsi/010-ota-full70-r4/runs/sft-guided/checkpoint",
+  "epoch": 1.0,
+  "global_step": 23,
+  "source_trajectories": 728,
+  "sft_rows": 728,
+  "metrics": {
+    "epoch": 1.0,
+    "loss_nan_ranks": 0,
+    "loss_rank_avg": 0.15028157830238342,
+    "total_flos": 2.1431911905755136e+16,
+    "train_loss": 0.4146526766859967,
+    "train_runtime": 480.808,
+    "train_samples_per_second": 1.514,
+    "train_steps_per_second": 0.048,
+    "valid_targets_mean": 7372.8,
+    "valid_targets_min": 4847
+  }
+}

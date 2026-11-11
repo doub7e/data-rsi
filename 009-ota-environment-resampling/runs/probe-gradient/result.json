@@ -1,0 +1,8 @@
+{
+  "finished_at": "2026-11-07T22:07:51.727935+00:00",
+  "metrics": {
+    "valid_probe_questions": 2,
+    "excluded_questions": 12,
+    "probe_norm": 0.11931669121982601
+  }
+}

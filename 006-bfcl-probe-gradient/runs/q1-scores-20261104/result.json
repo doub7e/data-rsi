@@ -1,0 +1,79 @@
+{
+  "at": "2026-11-04T02:26:30.264156+00:00",
+  "candidate_count": 200,
+  "all_six_scores_complete": true,
+  "cross_mode_candidate_gradient_norms_identical": true,
+  "selections": [
+    {
+      "variant": "f008",
+      "trajectories": 100,
+      "expanded_rows": 1904,
+      "original100_overlap": 50,
+      "unique_environments": 66,
+      "selection_score_min": 0.145807806942728,
+      "selection_score_max": 0.1661726673243646
+    },
+    {
+      "variant": "f032",
+      "trajectories": 100,
+      "expanded_rows": 1813,
+      "original100_overlap": 47,
+      "unique_environments": 65,
+      "selection_score_min": -0.024145596940603732,
+      "selection_score_max": -0.010102319342308761
+    },
+    {
+      "variant": "f128",
+      "trajectories": 100,
+      "expanded_rows": 1597,
+      "original100_overlap": 48,
+      "unique_environments": 69,
+      "selection_score_min": -0.02349272012124846,
+      "selection_score_max": -0.0022574040446115273
+    },
+    {
+      "variant": "k008",
+      "trajectories": 100,
+      "expanded_rows": 1865,
+      "original100_overlap": 51,
+      "unique_environments": 69,
+      "selection_score_min": 0.015650306179615662,
+      "selection_score_max": 0.02605928499462076
+    },
+    {
+      "variant": "k032",
+      "trajectories": 100,
+      "expanded_rows": 1919,
+      "original100_overlap": 57,
+      "unique_environments": 68,
+      "selection_score_min": -0.002705412658206546,
+      "selection_score_max": 0.01070207610428087
+    },
+    {
+      "variant": "k128",
+      "trajectories": 100,
+      "expanded_rows": 1843,
+      "original100_overlap": 53,
+      "unique_environments": 63,
+      "selection_score_min": -0.06818875418383051,
+      "selection_score_max": -0.045949781691414456
+    }
+  ],
+  "overlap": {
+    "f008__f032": 47,
+    "f008__f128": 27,
+    "f008__k008": 56,
+    "f008__k032": 67,
+    "f008__k128": 27,
+    "f032__f128": 62,
+    "f032__k008": 49,
+    "f032__k032": 51,
+    "f032__k128": 55,
+    "f128__k008": 46,
+    "f128__k032": 48,
+    "f128__k128": 68,
+    "k008__k032": 52,
+    "k008__k128": 43,
+    "k032__k128": 56
+  }
+}

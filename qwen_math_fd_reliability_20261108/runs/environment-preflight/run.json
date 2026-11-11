@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "environment-preflight",
+  "title": "Qwen Math · 1×H200 环境与缓存资产预检",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T00:08:05.773381+00:00",
+  "tags": [
+    "diagnostic",
+    "planned",
+    "Math",
+    "step20"
+  ],
+  "parameters": {
+    "gpu_count": 1,
+    "node_pool": "h200",
+    "checks": [
+      "torch",
+      "transformers",
+      "vllm",
+      "flash_attn",
+      "cached_model_assets"
+    ],
+    "source_revision": "8634274d5ecf076d96bb976eee1239232263b33c",
+    "trained_checkpoint_status": "pending_discovery",
+    "statistical_result": false
+  },
+  "sources": {
+    "status": "runs/environment-preflight/state.json",
+    "progress": "runs/environment-preflight/progress.json",
+    "results": "runs/environment-preflight/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "诊断协议（计划，待冻结）",
+      "path": "protocol.json"
+    }
+  ],
+  "notes": "计划检查 torch/transformers/vllm/FA2 与缓存资产；尚未提交。 job.name 为预登记名称，真实提交及重试时更新；此预检不产生统计结论。",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-preflight-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "prepare-smoke",
+  "title": "FD训练消融 · prepare-smoke",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T11:18:32.814367+00:00",
+  "updated_at": "2026-11-08T11:18:32.814378+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "arm": null,
+    "steps": 0,
+    "prompts_per_step": 0,
+    "rollout_n": 64,
+    "gpus": 0,
+    "pool": "CPU",
+    "scope": "paired short-run pilot, not historical47.27 reproduction",
+    "probe_precision": "bf16",
+    "clip_residual": 1,
+    "sigmoid": "sigmoid(3s)",
+    "same_frozen_promptstream": false
+  },
+  "sources": {
+    "status": "runs/prepare-smoke/state.json",
+    "progress": "runs/prepare-smoke/progress.json",
+    "results": "runs/prepare-smoke/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/prepare-smoke/result.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-smokedata-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

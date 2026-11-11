@@ -1,0 +1,141 @@
+{
+  "finished_at": "2026-11-06T14:34:07.321250+00:00",
+  "group_counts": {
+    "f_top": {
+      "yes": 8,
+      "no": 0,
+      "uncertain": 0
+    },
+    "f_bottom": {
+      "yes": 7,
+      "no": 0,
+      "uncertain": 1
+    },
+    "k_top": {
+      "yes": 7,
+      "no": 1,
+      "uncertain": 0
+    },
+    "k_bottom": {
+      "yes": 7,
+      "no": 0,
+      "uncertain": 1
+    }
+  },
+  "n_per_group": 8,
+  "unique_trajectories": 28,
+  "labels": "Post-hoc manual; strict returned-information dependence supporting state-changing action. Uncertain cases kept separate.",
+  "cross_question_ranks": {
+    "q1_f": {
+      "8710": {
+        "rank": 4,
+        "influence": 595.5669290114612
+      },
+      "4582": {
+        "rank": 88,
+        "influence": 47.285937728603436
+      },
+      "1594": {
+        "rank": 12,
+        "influence": 351.6470362709354
+      },
+      "6099": {
+        "rank": 157,
+        "influence": -200.09814662075553
+      },
+      "4357": {
+        "rank": 200,
+        "influence": -1110.3422950150612
+      },
+      "4034": {
+        "rank": 40,
+        "influence": 231.67347926182345
+      }
+    },
+    "q1_k": {
+      "8710": {
+        "rank": 184,
+        "influence": -115.93296648608626
+      },
+      "4582": {
+        "rank": 1,
+        "influence": 240.5077531696577
+      },
+      "1594": {
+        "rank": 26,
+        "influence": 91.97486788166036
+      },
+      "6099": {
+        "rank": 127,
+        "influence": -32.151966302635
+      },
+      "4357": {
+        "rank": 193,
+        "influence": -159.05038984577382
+      },
+      "4034": {
+        "rank": 73,
+        "influence": 32.329275017077904
+      }
+    },
+    "q67_f": {
+      "8710": {
+        "rank": 197,
+        "influence": -492.50972625609603
+      },
+      "4582": {
+        "rank": 200,
+        "influence": -828.1105825061245
+      },
+      "1594": {
+        "rank": 199,
+        "influence": -542.5964103106312
+      },
+      "6099": {
+        "rank": 1,
+        "influence": 768.4161687972953
+      },
+      "4357": {
+        "rank": 195,
+        "influence": -423.2981371588305
+      },
+      "4034": {
+        "rank": 85,
+        "influence": 58.209882144935584
+      }
+    },
+    "q67_k": {
+      "8710": {
+        "rank": 200,
+        "influence": -312.74434664231313
+      },
+      "4582": {
+        "rank": 92,
+        "influence": 7.877997437669967
+      },
+      "1594": {
+        "rank": 127,
+        "influence": -33.10147033041962
+      },
+      "6099": {
+        "rank": 10,
+        "influence": 172.88090203053392
+      },
+      "4357": {
+        "rank": 197,
+        "influence": -271.1607221083959
+      },
+      "4034": {
+        "rank": 193,
+        "influence": -195.88401051204931
+      }
+    }
+  },
+  "conclusion": "This broad trait is prevalent in both top and bottom extremes; the prior top-only qualitative explanation has no demonstrated discriminative support. This audit does not estimate prevalence over all200.",
+  "metrics": {
+    "f_top_confirmed_percent": 100.0,
+    "f_bottom_confirmed_percent": 87.5,
+    "k_top_confirmed_percent": 87.5,
+    "k_bottom_confirmed_percent": 87.5
+  }
+}

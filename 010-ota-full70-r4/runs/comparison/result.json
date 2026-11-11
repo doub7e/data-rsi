@@ -1,0 +1,5620 @@
+{
+  "finished_at": "2026-11-10T14:36:44.764850+00:00",
+  "score_policy": "missing_verifier_as_zero",
+  "feedback_tasks": 70,
+  "independent_heldout_tasks": 0,
+  "summary": {
+    "epoch1": {
+      "evaluated_trials": 280,
+      "verifier_scored_trials": 278,
+      "missing_verifier_scored_zero": 2,
+      "verifier_score_coverage_percent": 99.28571428571429,
+      "mean_score": 0.10208828042328041,
+      "full_passes": 23,
+      "full_pass_percent": 8.214285714285714,
+      "tasks_with_any_full_pass_in4": 14,
+      "tasks_with_all4_full_passes": 0,
+      "per_task_full_pass_histogram": {
+        "0": 56,
+        "1": 9,
+        "2": 1,
+        "3": 4,
+        "4": 0
+      }
+    },
+    "uniform": {
+      "evaluated_trials": 280,
+      "verifier_scored_trials": 276,
+      "missing_verifier_scored_zero": 4,
+      "verifier_score_coverage_percent": 98.57142857142857,
+      "mean_score": 0.1468443152218152,
+      "full_passes": 36,
+      "full_pass_percent": 12.857142857142858,
+      "tasks_with_any_full_pass_in4": 18,
+      "tasks_with_all4_full_passes": 3,
+      "per_task_full_pass_histogram": {
+        "0": 52,
+        "1": 9,
+        "2": 3,
+        "3": 3,
+        "4": 3
+      }
+    },
+    "guided": {
+      "evaluated_trials": 280,
+      "verifier_scored_trials": 278,
+      "missing_verifier_scored_zero": 2,
+      "verifier_score_coverage_percent": 99.28571428571429,
+      "mean_score": 0.09311148758648759,
+      "full_passes": 18,
+      "full_pass_percent": 6.428571428571429,
+      "tasks_with_any_full_pass_in4": 14,
+      "tasks_with_all4_full_passes": 0,
+      "per_task_full_pass_histogram": {
+        "0": 56,
+        "1": 11,
+        "2": 2,
+        "3": 1,
+        "4": 0
+      }
+    }
+  },
+  "pairwise": {
+    "uniform_minus_epoch1": {
+      "tasks": 70,
+      "repeats_per_task": 4,
+      "score_difference": 0.0447560347985348,
+      "score_difference_task_bootstrap95": [
+        0.0033391488095238105,
+        0.09167142857142857
+      ],
+      "success_rate_difference_pp": 4.642857142857143,
+      "success_rate_difference_task_bootstrap95_pp": [
+        0.35714285714285715,
+        9.285714285714286
+      ],
+      "improved_task_means": 15,
+      "worsened_task_means": 6,
+      "tied_task_means": 49,
+      "bootstrap_unit": "Question: each model averaged over4 repeats before resampling the same70 task indices; never treat280 rollouts as280 independent questions."
+    },
+    "guided_minus_epoch1": {
+      "tasks": 70,
+      "repeats_per_task": 4,
+      "score_difference": -0.008976792836792837,
+      "score_difference_task_bootstrap95": [
+        -0.04238072654660155,
+        0.02219190242165242
+      ],
+      "success_rate_difference_pp": -1.7857142857142856,
+      "success_rate_difference_task_bootstrap95_pp": [
+        -5.714285714285714,
+        1.7857142857142856
+      ],
+      "improved_task_means": 9,
+      "worsened_task_means": 10,
+      "tied_task_means": 51,
+      "bootstrap_unit": "Question: each model averaged over4 repeats before resampling the same70 task indices; never treat280 rollouts as280 independent questions."
+    },
+    "guided_minus_uniform": {
+      "tasks": 70,
+      "repeats_per_task": 4,
+      "score_difference": -0.053732827635327635,
+      "score_difference_task_bootstrap95": [
+        -0.09684912723850223,
+        -0.016974613349613348
+      ],
+      "success_rate_difference_pp": -6.428571428571428,
+      "success_rate_difference_task_bootstrap95_pp": [
+        -11.428571428571429,
+        -2.142857142857143
+      ],
+      "improved_task_means": 4,
+      "worsened_task_means": 13,
+      "tied_task_means": 53,
+      "bootstrap_unit": "Question: each model averaged over4 repeats before resampling the same70 task indices; never treat280 rollouts as280 independent questions."
+    }
+  },
+  "per_task": {
+    "epoch1": [
+      {
+        "task": "0895cf7d-e27e-4ff7-a984-265d79de",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1800100000,
+          1807100000,
+          1814100000,
+          1821100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0001",
+          "e0071",
+          "e0141",
+          "e0211"
+        ]
+      },
+      {
+        "task": "09d5c141-d065-4d33-a3e6-362dcf5e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1800200000,
+          1807200000,
+          1814200000,
+          1821200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0002",
+          "e0072",
+          "e0142",
+          "e0212"
+        ]
+      },
+      {
+        "task": "0c5c169a-2c85-4120-8e4e-32471b1a",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1800300000,
+          1807300000,
+          1814300000,
+          1821300000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0003",
+          "e0073",
+          "e0143",
+          "e0213"
+        ]
+      },
+      {
+        "task": "0e07948f-c624-4bae-8d02-86081c43",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1800400000,
+          1807400000,
+          1814400000,
+          1821400000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0004",
+          "e0074",
+          "e0144",
+          "e0214"
+        ]
+      },
+      {
+        "task": "1a87dfeb-8ebb-4124-b8ee-b76020ca",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1800500000,
+          1807500000,
+          1814500000,
+          1821500000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0005",
+          "e0075",
+          "e0145",
+          "e0215"
+        ]
+      },
+      {
+        "task": "1c671160-51a2-4496-9099-ee921125",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1800600000,
+          1807600000,
+          1814600000,
+          1821600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0006",
+          "e0076",
+          "e0146",
+          "e0216"
+        ]
+      },
+      {
+        "task": "1d7ab372-5c14-492c-85da-e2a7e7e3",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1800700000,
+          1807700000,
+          1814700000,
+          1821700000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0007",
+          "e0077",
+          "e0147",
+          "e0217"
+        ]
+      },
+      {
+        "task": "235c441d-e785-4e86-9659-a434b9fd",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1800800000,
+          1807800000,
+          1814800000,
+          1821800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 1,
+        "trial_ids": [
+          "e0008",
+          "e0078",
+          "e0148",
+          "e0218"
+        ]
+      },
+      {
+        "task": "35bd72ae-9435-4475-8e33-fa179463",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.4
+        ],
+        "seeds": [
+          1800900000,
+          1807900000,
+          1814900000,
+          1821900000
+        ],
+        "mean_score": 0.1,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0009",
+          "e0079",
+          "e0149",
+          "e0219"
+        ]
+      },
+      {
+        "task": "35e44800-91e3-49cf-92a6-0a714bab",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1801000000,
+          1808000000,
+          1815000000,
+          1822000000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0010",
+          "e0080",
+          "e0150",
+          "e0220"
+        ]
+      },
+      {
+        "task": "3dd9a49b-a9a4-44ac-932f-79899b92",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1801100000,
+          1808100000,
+          1815100000,
+          1822100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0011",
+          "e0081",
+          "e0151",
+          "e0221"
+        ]
+      },
+      {
+        "task": "43210b08-43ab-4949-a091-a8e1dd83",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1801200000,
+          1808200000,
+          1815200000,
+          1822200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0012",
+          "e0082",
+          "e0152",
+          "e0222"
+        ]
+      },
+      {
+        "task": "531e1ca7-c794-4e7f-87cc-6350725e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1801300000,
+          1808300000,
+          1815300000,
+          1822300000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0013",
+          "e0083",
+          "e0153",
+          "e0223"
+        ]
+      },
+      {
+        "task": "63a70070-8102-4261-bfdf-16d15314",
+        "scores": [
+          0.6667,
+          0.3333,
+          0.6666,
+          0.6666
+        ],
+        "seeds": [
+          1801400000,
+          1808400000,
+          1815400000,
+          1822400000
+        ],
+        "mean_score": 0.5832999999999999,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0014",
+          "e0084",
+          "e0154",
+          "e0224"
+        ]
+      },
+      {
+        "task": "67d895a6-8f50-4f8d-a4ff-1a31bdc2",
+        "scores": [
+          0.6885185185185184,
+          0.4,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1801500000,
+          1808500000,
+          1815500000,
+          1822500000
+        ],
+        "mean_score": 0.2721296296296296,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0015",
+          "e0085",
+          "e0155",
+          "e0225"
+        ]
+      },
+      {
+        "task": "6920d458-889d-44cc-afa0-0d29e717",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1801600000,
+          1808600000,
+          1815600000,
+          1822600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0016",
+          "e0086",
+          "e0156",
+          "e0226"
+        ]
+      },
+      {
+        "task": "6a31ce44-db27-42a2-957c-0b25c493",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1801700000,
+          1808700000,
+          1815700000,
+          1822700000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0017",
+          "e0087",
+          "e0157",
+          "e0227"
+        ]
+      },
+      {
+        "task": "71401830-6e66-496c-a946-6eb9616d",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1801800000,
+          1808800000,
+          1815800000,
+          1822800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0018",
+          "e0088",
+          "e0158",
+          "e0228"
+        ]
+      },
+      {
+        "task": "7871a8ce-166a-4b02-9268-5ced8412",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "seeds": [
+          1801900000,
+          1808900000,
+          1815900000,
+          1822900000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0019",
+          "e0089",
+          "e0159",
+          "e0229"
+        ]
+      },
+      {
+        "task": "7a86025b-09d1-4f97-9a2e-f55529f4",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1802000000,
+          1809000000,
+          1816000000,
+          1823000000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0020",
+          "e0090",
+          "e0160",
+          "e0230"
+        ]
+      },
+      {
+        "task": "7b5c7cbb-5182-4d11-9979-2dfa017e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1802100000,
+          1809100000,
+          1816100000,
+          1823100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0021",
+          "e0091",
+          "e0161",
+          "e0231"
+        ]
+      },
+      {
+        "task": "82c37f5b-fbac-48d7-b023-b4472cfd",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1802200000,
+          1809200000,
+          1816200000,
+          1823200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0022",
+          "e0092",
+          "e0162",
+          "e0232"
+        ]
+      },
+      {
+        "task": "855ec91f-5c7d-4863-a07b-232411a7",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1802300000,
+          1809300000,
+          1816300000,
+          1823300000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0023",
+          "e0093",
+          "e0163",
+          "e0233"
+        ]
+      },
+      {
+        "task": "8fd89f74-b0c8-4718-a09d-e4330bd0",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1802400000,
+          1809400000,
+          1816400000,
+          1823400000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0024",
+          "e0094",
+          "e0164",
+          "e0234"
+        ]
+      },
+      {
+        "task": "949155ae-3b77-483c-96c2-7f0f423c",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1802500000,
+          1809500000,
+          1816500000,
+          1823500000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0025",
+          "e0095",
+          "e0165",
+          "e0235"
+        ]
+      },
+      {
+        "task": "9a052f3e-f867-418b-ad6d-41cd056e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1802600000,
+          1809600000,
+          1816600000,
+          1823600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0026",
+          "e0096",
+          "e0166",
+          "e0236"
+        ]
+      },
+      {
+        "task": "9f265505-9475-435e-9abf-e46835a7",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1802700000,
+          1809700000,
+          1816700000,
+          1823700000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0027",
+          "e0097",
+          "e0167",
+          "e0237"
+        ]
+      },
+      {
+        "task": "a7de53df-43da-49ad-9818-1722e92e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1802800000,
+          1809800000,
+          1816800000,
+          1823800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0028",
+          "e0098",
+          "e0168",
+          "e0238"
+        ]
+      },
+      {
+        "task": "ab72149d-33f8-4e69-9088-711bd86c",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.41666666666666663
+        ],
+        "seeds": [
+          1802900000,
+          1809900000,
+          1816900000,
+          1823900000
+        ],
+        "mean_score": 0.10416666666666666,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0029",
+          "e0099",
+          "e0169",
+          "e0239"
+        ]
+      },
+      {
+        "task": "acl-permissions-inheritance",
+        "scores": [
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "seeds": [
+          1803000000,
+          1810000000,
+          1817000000,
+          1824000000
+        ],
+        "mean_score": 0.75,
+        "full_passes": 3,
+        "success_rate": 0.75,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0030",
+          "e0100",
+          "e0170",
+          "e0240"
+        ]
+      },
+      {
+        "task": "af2eb409-fff6-479d-81d6-c29bf13e",
+        "scores": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1803100000,
+          1810100000,
+          1817100000,
+          1824100000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0031",
+          "e0101",
+          "e0171",
+          "e0241"
+        ]
+      },
+      {
+        "task": "amuse-install",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1803200000,
+          1810200000,
+          1817200000,
+          1824200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0032",
+          "e0102",
+          "e0172",
+          "e0242"
+        ]
+      },
+      {
+        "task": "analyze-access-logs",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1803300000,
+          1810300000,
+          1817300000,
+          1824300000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0033",
+          "e0103",
+          "e0173",
+          "e0243"
+        ]
+      },
+      {
+        "task": "b3e41e4e-6d1b-484a-8c8b-1dbf9a09",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1803400000,
+          1810400000,
+          1817400000,
+          1824400000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0034",
+          "e0104",
+          "e0174",
+          "e0244"
+        ]
+      },
+      {
+        "task": "bd1e3aee-64e5-4209-bf0f-b994088c",
+        "scores": [
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "seeds": [
+          1803500000,
+          1810500000,
+          1817500000,
+          1824500000
+        ],
+        "mean_score": 0.75,
+        "full_passes": 3,
+        "success_rate": 0.75,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0035",
+          "e0105",
+          "e0175",
+          "e0245"
+        ]
+      },
+      {
+        "task": "be77281a-bd55-4a6e-8481-6dd04f29",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1803600000,
+          1810600000,
+          1817600000,
+          1824600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0036",
+          "e0106",
+          "e0176",
+          "e0246"
+        ]
+      },
+      {
+        "task": "broken-python",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "seeds": [
+          1803700000,
+          1810700000,
+          1817700000,
+          1824700000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0037",
+          "e0107",
+          "e0177",
+          "e0247"
+        ]
+      },
+      {
+        "task": "c0e954b0-e4cc-41f1-9cd1-672947ce",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1803800000,
+          1810800000,
+          1817800000,
+          1824800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0038",
+          "e0108",
+          "e0178",
+          "e0248"
+        ]
+      },
+      {
+        "task": "c3e50747-1d94-4050-ae66-a35c7ecf",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1803900000,
+          1810900000,
+          1817900000,
+          1824900000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0039",
+          "e0109",
+          "e0179",
+          "e0249"
+        ]
+      },
+      {
+        "task": "c725d931-2893-4dfa-a4a8-186cfa1e",
+        "scores": [
+          1.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "seeds": [
+          1804000000,
+          1811000000,
+          1818000000,
+          1825000000
+        ],
+        "mean_score": 0.75,
+        "full_passes": 3,
+        "success_rate": 0.75,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0040",
+          "e0110",
+          "e0180",
+          "e0250"
+        ]
+      },
+      {
+        "task": "caf7699c-9d49-4206-9bad-673cc36c",
+        "scores": [
+          0.0,
+          0.5333333333333333,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1804100000,
+          1811100000,
+          1818100000,
+          1825100000
+        ],
+        "mean_score": 0.13333333333333333,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0041",
+          "e0111",
+          "e0181",
+          "e0251"
+        ]
+      },
+      {
+        "task": "cb5bcfba-9d5e-419d-9ff1-47cdc224",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1804200000,
+          1811200000,
+          1818200000,
+          1825200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0042",
+          "e0112",
+          "e0182",
+          "e0252"
+        ]
+      },
+      {
+        "task": "cf794b03-f8b8-4469-b70f-86f77ab4",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1804300000,
+          1811300000,
+          1818300000,
+          1825300000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0043",
+          "e0113",
+          "e0183",
+          "e0253"
+        ]
+      },
+      {
+        "task": "d0dda5fa-b4e8-4a32-8304-68f5d993",
+        "scores": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1804400000,
+          1811400000,
+          1818400000,
+          1825400000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0044",
+          "e0114",
+          "e0184",
+          "e0254"
+        ]
+      },
+      {
+        "task": "d4c9e7d7-20a3-4081-bea3-52b900ac",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1804500000,
+          1811500000,
+          1818500000,
+          1825500000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0045",
+          "e0115",
+          "e0185",
+          "e0255"
+        ]
+      },
+      {
+        "task": "d84deb8a-5043-49e0-96ab-817e2104",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1804600000,
+          1811600000,
+          1818600000,
+          1825600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0046",
+          "e0116",
+          "e0186",
+          "e0256"
+        ]
+      },
+      {
+        "task": "d8d92009-1ee1-40b2-8c4f-e7b63e31",
+        "scores": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seeds": [
+          1804700000,
+          1811700000,
+          1818700000,
+          1825700000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0047",
+          "e0117",
+          "e0187",
+          "e0257"
+        ]
+      },
+      {
+        "task": "e1f1bbca-fb42-4ef8-8367-cdacd3c2",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1804800000,
+          1811800000,
+          1818800000,
+          1825800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0048",
+          "e0118",
+          "e0188",
+          "e0258"
+        ]
+      },
+      {
+        "task": "e803529c-e3aa-4be9-91bb-46555582",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1804900000,
+          1811900000,
+          1818900000,
+          1825900000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0049",
+          "e0119",
+          "e0189",
+          "e0259"
+        ]
+      },
+      {
+        "task": "e81b357a-a7d1-47f5-936f-bbe7185a",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1805000000,
+          1812000000,
+          1819000000,
+          1826000000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0050",
+          "e0120",
+          "e0190",
+          "e0260"
+        ]
+      },
+      {
+        "task": "f19460df-fb63-414d-9b32-9b88ac5e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1805100000,
+          1812100000,
+          1819100000,
+          1826100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0051",
+          "e0121",
+          "e0191",
+          "e0261"
+        ]
+      },
+      {
+        "task": "f4c905fc-4ad8-4509-a669-90eb8299",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1805200000,
+          1812200000,
+          1819200000,
+          1826200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0052",
+          "e0122",
+          "e0192",
+          "e0262"
+        ]
+      },
+      {
+        "task": "f91e56f8-120c-4a77-9328-fdb1385c",
+        "scores": [
+          0.29500000000000004,
+          0.518,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1805300000,
+          1812300000,
+          1819300000,
+          1826300000
+        ],
+        "mean_score": 0.20325000000000001,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0053",
+          "e0123",
+          "e0193",
+          "e0263"
+        ]
+      },
+      {
+        "task": "flood-monitoring-basic",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1805400000,
+          1812400000,
+          1819400000,
+          1826400000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0054",
+          "e0124",
+          "e0194",
+          "e0264"
+        ]
+      },
+      {
+        "task": "gomoku-planner",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1805500000,
+          1812500000,
+          1819500000,
+          1826500000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0055",
+          "e0125",
+          "e0195",
+          "e0265"
+        ]
+      },
+      {
+        "task": "hdfs-deployment",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1805600000,
+          1812600000,
+          1819600000,
+          1826600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0056",
+          "e0126",
+          "e0196",
+          "e0266"
+        ]
+      },
+      {
+        "task": "hydra-debug-slurm-mode",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1805700000,
+          1812700000,
+          1819700000,
+          1826700000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0057",
+          "e0127",
+          "e0197",
+          "e0267"
+        ]
+      },
+      {
+        "task": "jq-data-processing",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1805800000,
+          1812800000,
+          1819800000,
+          1826800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0058",
+          "e0128",
+          "e0198",
+          "e0268"
+        ]
+      },
+      {
+        "task": "jsonl-aggregator",
+        "scores": [
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "seeds": [
+          1805900000,
+          1812900000,
+          1819900000,
+          1826900000
+        ],
+        "mean_score": 0.75,
+        "full_passes": 3,
+        "success_rate": 0.75,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0059",
+          "e0129",
+          "e0199",
+          "e0269"
+        ]
+      },
+      {
+        "task": "log-summary",
+        "scores": [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seeds": [
+          1806000000,
+          1813000000,
+          1820000000,
+          1827000000
+        ],
+        "mean_score": 0.5,
+        "full_passes": 2,
+        "success_rate": 0.5,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0060",
+          "e0130",
+          "e0200",
+          "e0270"
+        ]
+      },
+      {
+        "task": "mlflow-register",
+        "scores": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seeds": [
+          1806100000,
+          1813100000,
+          1820100000,
+          1827100000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0061",
+          "e0131",
+          "e0201",
+          "e0271"
+        ]
+      },
+      {
+        "task": "mnist-learning-fix",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1806200000,
+          1813200000,
+          1820200000,
+          1827200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0062",
+          "e0132",
+          "e0202",
+          "e0272"
+        ]
+      },
+      {
+        "task": "pandas-etl",
+        "scores": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1806300000,
+          1813300000,
+          1820300000,
+          1827300000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0063",
+          "e0133",
+          "e0203",
+          "e0273"
+        ]
+      },
+      {
+        "task": "pandas-sql-query",
+        "scores": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1806400000,
+          1813400000,
+          1820400000,
+          1827400000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0064",
+          "e0134",
+          "e0204",
+          "e0274"
+        ]
+      },
+      {
+        "task": "png-generation",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1806500000,
+          1813500000,
+          1820500000,
+          1827500000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0065",
+          "e0135",
+          "e0205",
+          "e0275"
+        ]
+      },
+      {
+        "task": "recover-accuracy-log",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1806600000,
+          1813600000,
+          1820600000,
+          1827600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0066",
+          "e0136",
+          "e0206",
+          "e0276"
+        ]
+      },
+      {
+        "task": "schedule-vacation",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1806700000,
+          1813700000,
+          1820700000,
+          1827700000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0067",
+          "e0137",
+          "e0207",
+          "e0277"
+        ]
+      },
+      {
+        "task": "setup-custom-dev-env",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1806800000,
+          1813800000,
+          1820800000,
+          1827800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 1,
+        "trial_ids": [
+          "e0068",
+          "e0138",
+          "e0208",
+          "e0278"
+        ]
+      },
+      {
+        "task": "sparql-professors-universities",
+        "scores": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1806900000,
+          1813900000,
+          1820900000,
+          1827900000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0069",
+          "e0139",
+          "e0209",
+          "e0279"
+        ]
+      },
+      {
+        "task": "vimscript-vim-quine",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1807000000,
+          1814000000,
+          1821000000,
+          1828000000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0070",
+          "e0140",
+          "e0210",
+          "e0280"
+        ]
+      }
+    ],
+    "uniform": [
+      {
+        "task": "0895cf7d-e27e-4ff7-a984-265d79de",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900100000,
+          1907100000,
+          1914100000,
+          1921100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0001",
+          "e0071",
+          "e0141",
+          "e0211"
+        ]
+      },
+      {
+        "task": "09d5c141-d065-4d33-a3e6-362dcf5e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900200000,
+          1907200000,
+          1914200000,
+          1921200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0002",
+          "e0072",
+          "e0142",
+          "e0212"
+        ]
+      },
+      {
+        "task": "0c5c169a-2c85-4120-8e4e-32471b1a",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900300000,
+          1907300000,
+          1914300000,
+          1921300000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0003",
+          "e0073",
+          "e0143",
+          "e0213"
+        ]
+      },
+      {
+        "task": "0e07948f-c624-4bae-8d02-86081c43",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900400000,
+          1907400000,
+          1914400000,
+          1921400000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0004",
+          "e0074",
+          "e0144",
+          "e0214"
+        ]
+      },
+      {
+        "task": "1a87dfeb-8ebb-4124-b8ee-b76020ca",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900500000,
+          1907500000,
+          1914500000,
+          1921500000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0005",
+          "e0075",
+          "e0145",
+          "e0215"
+        ]
+      },
+      {
+        "task": "1c671160-51a2-4496-9099-ee921125",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900600000,
+          1907600000,
+          1914600000,
+          1921600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 1,
+        "trial_ids": [
+          "e0006",
+          "e0076",
+          "e0146",
+          "e0216"
+        ]
+      },
+      {
+        "task": "1d7ab372-5c14-492c-85da-e2a7e7e3",
+        "scores": [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900700000,
+          1907700000,
+          1914700000,
+          1921700000
+        ],
+        "mean_score": 0.5,
+        "full_passes": 2,
+        "success_rate": 0.5,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0007",
+          "e0077",
+          "e0147",
+          "e0217"
+        ]
+      },
+      {
+        "task": "235c441d-e785-4e86-9659-a434b9fd",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900800000,
+          1907800000,
+          1914800000,
+          1921800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 1,
+        "trial_ids": [
+          "e0008",
+          "e0078",
+          "e0148",
+          "e0218"
+        ]
+      },
+      {
+        "task": "35bd72ae-9435-4475-8e33-fa179463",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900900000,
+          1907900000,
+          1914900000,
+          1921900000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0009",
+          "e0079",
+          "e0149",
+          "e0219"
+        ]
+      },
+      {
+        "task": "35e44800-91e3-49cf-92a6-0a714bab",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901000000,
+          1908000000,
+          1915000000,
+          1922000000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0010",
+          "e0080",
+          "e0150",
+          "e0220"
+        ]
+      },
+      {
+        "task": "3dd9a49b-a9a4-44ac-932f-79899b92",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901100000,
+          1908100000,
+          1915100000,
+          1922100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 1,
+        "trial_ids": [
+          "e0011",
+          "e0081",
+          "e0151",
+          "e0221"
+        ]
+      },
+      {
+        "task": "43210b08-43ab-4949-a091-a8e1dd83",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901200000,
+          1908200000,
+          1915200000,
+          1922200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0012",
+          "e0082",
+          "e0152",
+          "e0222"
+        ]
+      },
+      {
+        "task": "531e1ca7-c794-4e7f-87cc-6350725e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901300000,
+          1908300000,
+          1915300000,
+          1922300000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0013",
+          "e0083",
+          "e0153",
+          "e0223"
+        ]
+      },
+      {
+        "task": "63a70070-8102-4261-bfdf-16d15314",
+        "scores": [
+          0.6666,
+          1.0,
+          0.0,
+          0.6667
+        ],
+        "seeds": [
+          1901400000,
+          1908400000,
+          1915400000,
+          1922400000
+        ],
+        "mean_score": 0.583325,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0014",
+          "e0084",
+          "e0154",
+          "e0224"
+        ]
+      },
+      {
+        "task": "67d895a6-8f50-4f8d-a4ff-1a31bdc2",
+        "scores": [
+          0.0,
+          0.7319800569800569,
+          0.5534615384615384,
+          0.4
+        ],
+        "seeds": [
+          1901500000,
+          1908500000,
+          1915500000,
+          1922500000
+        ],
+        "mean_score": 0.42136039886039883,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0015",
+          "e0085",
+          "e0155",
+          "e0225"
+        ]
+      },
+      {
+        "task": "6920d458-889d-44cc-afa0-0d29e717",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901600000,
+          1908600000,
+          1915600000,
+          1922600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0016",
+          "e0086",
+          "e0156",
+          "e0226"
+        ]
+      },
+      {
+        "task": "6a31ce44-db27-42a2-957c-0b25c493",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901700000,
+          1908700000,
+          1915700000,
+          1922700000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0017",
+          "e0087",
+          "e0157",
+          "e0227"
+        ]
+      },
+      {
+        "task": "71401830-6e66-496c-a946-6eb9616d",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901800000,
+          1908800000,
+          1915800000,
+          1922800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0018",
+          "e0088",
+          "e0158",
+          "e0228"
+        ]
+      },
+      {
+        "task": "7871a8ce-166a-4b02-9268-5ced8412",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901900000,
+          1908900000,
+          1915900000,
+          1922900000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0019",
+          "e0089",
+          "e0159",
+          "e0229"
+        ]
+      },
+      {
+        "task": "7a86025b-09d1-4f97-9a2e-f55529f4",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902000000,
+          1909000000,
+          1916000000,
+          1923000000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0020",
+          "e0090",
+          "e0160",
+          "e0230"
+        ]
+      },
+      {
+        "task": "7b5c7cbb-5182-4d11-9979-2dfa017e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902100000,
+          1909100000,
+          1916100000,
+          1923100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0021",
+          "e0091",
+          "e0161",
+          "e0231"
+        ]
+      },
+      {
+        "task": "82c37f5b-fbac-48d7-b023-b4472cfd",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902200000,
+          1909200000,
+          1916200000,
+          1923200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0022",
+          "e0092",
+          "e0162",
+          "e0232"
+        ]
+      },
+      {
+        "task": "855ec91f-5c7d-4863-a07b-232411a7",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902300000,
+          1909300000,
+          1916300000,
+          1923300000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0023",
+          "e0093",
+          "e0163",
+          "e0233"
+        ]
+      },
+      {
+        "task": "8fd89f74-b0c8-4718-a09d-e4330bd0",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902400000,
+          1909400000,
+          1916400000,
+          1923400000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0024",
+          "e0094",
+          "e0164",
+          "e0234"
+        ]
+      },
+      {
+        "task": "949155ae-3b77-483c-96c2-7f0f423c",
+        "scores": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seeds": [
+          1902500000,
+          1909500000,
+          1916500000,
+          1923500000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0025",
+          "e0095",
+          "e0165",
+          "e0235"
+        ]
+      },
+      {
+        "task": "9a052f3e-f867-418b-ad6d-41cd056e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902600000,
+          1909600000,
+          1916600000,
+          1923600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0026",
+          "e0096",
+          "e0166",
+          "e0236"
+        ]
+      },
+      {
+        "task": "9f265505-9475-435e-9abf-e46835a7",
+        "scores": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seeds": [
+          1902700000,
+          1909700000,
+          1916700000,
+          1923700000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0027",
+          "e0097",
+          "e0167",
+          "e0237"
+        ]
+      },
+      {
+        "task": "a7de53df-43da-49ad-9818-1722e92e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902800000,
+          1909800000,
+          1916800000,
+          1923800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0028",
+          "e0098",
+          "e0168",
+          "e0238"
+        ]
+      },
+      {
+        "task": "ab72149d-33f8-4e69-9088-711bd86c",
+        "scores": [
+          0.0,
+          0.4666666666666667,
+          0.0,
+          0.55
+        ],
+        "seeds": [
+          1902900000,
+          1909900000,
+          1916900000,
+          1923900000
+        ],
+        "mean_score": 0.25416666666666665,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0029",
+          "e0099",
+          "e0169",
+          "e0239"
+        ]
+      },
+      {
+        "task": "acl-permissions-inheritance",
+        "scores": [
+          1.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "seeds": [
+          1903000000,
+          1910000000,
+          1917000000,
+          1924000000
+        ],
+        "mean_score": 0.75,
+        "full_passes": 3,
+        "success_rate": 0.75,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0030",
+          "e0100",
+          "e0170",
+          "e0240"
+        ]
+      },
+      {
+        "task": "af2eb409-fff6-479d-81d6-c29bf13e",
+        "scores": [
+          0.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "seeds": [
+          1903100000,
+          1910100000,
+          1917100000,
+          1924100000
+        ],
+        "mean_score": 0.5,
+        "full_passes": 2,
+        "success_rate": 0.5,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0031",
+          "e0101",
+          "e0171",
+          "e0241"
+        ]
+      },
+      {
+        "task": "amuse-install",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903200000,
+          1910200000,
+          1917200000,
+          1924200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0032",
+          "e0102",
+          "e0172",
+          "e0242"
+        ]
+      },
+      {
+        "task": "analyze-access-logs",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903300000,
+          1910300000,
+          1917300000,
+          1924300000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0033",
+          "e0103",
+          "e0173",
+          "e0243"
+        ]
+      },
+      {
+        "task": "b3e41e4e-6d1b-484a-8c8b-1dbf9a09",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903400000,
+          1910400000,
+          1917400000,
+          1924400000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0034",
+          "e0104",
+          "e0174",
+          "e0244"
+        ]
+      },
+      {
+        "task": "bd1e3aee-64e5-4209-bf0f-b994088c",
+        "scores": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903500000,
+          1910500000,
+          1917500000,
+          1924500000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0035",
+          "e0105",
+          "e0175",
+          "e0245"
+        ]
+      },
+      {
+        "task": "be77281a-bd55-4a6e-8481-6dd04f29",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903600000,
+          1910600000,
+          1917600000,
+          1924600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0036",
+          "e0106",
+          "e0176",
+          "e0246"
+        ]
+      },
+      {
+        "task": "broken-python",
+        "scores": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seeds": [
+          1903700000,
+          1910700000,
+          1917700000,
+          1924700000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0037",
+          "e0107",
+          "e0177",
+          "e0247"
+        ]
+      },
+      {
+        "task": "c0e954b0-e4cc-41f1-9cd1-672947ce",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903800000,
+          1910800000,
+          1917800000,
+          1924800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0038",
+          "e0108",
+          "e0178",
+          "e0248"
+        ]
+      },
+      {
+        "task": "c3e50747-1d94-4050-ae66-a35c7ecf",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903900000,
+          1910900000,
+          1917900000,
+          1924900000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0039",
+          "e0109",
+          "e0179",
+          "e0249"
+        ]
+      },
+      {
+        "task": "c725d931-2893-4dfa-a4a8-186cfa1e",
+        "scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "seeds": [
+          1904000000,
+          1911000000,
+          1918000000,
+          1925000000
+        ],
+        "mean_score": 1.0,
+        "full_passes": 4,
+        "success_rate": 1.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0040",
+          "e0110",
+          "e0180",
+          "e0250"
+        ]
+      },
+      {
+        "task": "caf7699c-9d49-4206-9bad-673cc36c",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1904100000,
+          1911100000,
+          1918100000,
+          1925100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0041",
+          "e0111",
+          "e0181",
+          "e0251"
+        ]
+      },
+      {
+        "task": "cb5bcfba-9d5e-419d-9ff1-47cdc224",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1904200000,
+          1911200000,
+          1918200000,
+          1925200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0042",
+          "e0112",
+          "e0182",
+          "e0252"
+        ]
+      },
+      {
+        "task": "cf794b03-f8b8-4469-b70f-86f77ab4",
+        "scores": [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "seeds": [
+          1904300000,
+          1911300000,
+          1918300000,
+          1925300000
+        ],
+        "mean_score": 0.5,
+        "full_passes": 2,
+        "success_rate": 0.5,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0043",
+          "e0113",
+          "e0183",
+          "e0253"
+        ]
+      },
+      {
+        "task": "d0dda5fa-b4e8-4a32-8304-68f5d993",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "seeds": [
+          1904400000,
+          1911400000,
+          1918400000,
+          1925400000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0044",
+          "e0114",
+          "e0184",
+          "e0254"
+        ]
+      },
+      {
+        "task": "d4c9e7d7-20a3-4081-bea3-52b900ac",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1904500000,
+          1911500000,
+          1918500000,
+          1925500000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0045",
+          "e0115",
+          "e0185",
+          "e0255"
+        ]
+      },
+      {
+        "task": "d84deb8a-5043-49e0-96ab-817e2104",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1904600000,
+          1911600000,
+          1918600000,
+          1925600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0046",
+          "e0116",
+          "e0186",
+          "e0256"
+        ]
+      },
+      {
+        "task": "d8d92009-1ee1-40b2-8c4f-e7b63e31",
+        "scores": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1904700000,
+          1911700000,
+          1918700000,
+          1925700000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0047",
+          "e0117",
+          "e0187",
+          "e0257"
+        ]
+      },
+      {
+        "task": "e1f1bbca-fb42-4ef8-8367-cdacd3c2",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1904800000,
+          1911800000,
+          1918800000,
+          1925800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0048",
+          "e0118",
+          "e0188",
+          "e0258"
+        ]
+      },
+      {
+        "task": "e803529c-e3aa-4be9-91bb-46555582",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1904900000,
+          1911900000,
+          1918900000,
+          1925900000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0049",
+          "e0119",
+          "e0189",
+          "e0259"
+        ]
+      },
+      {
+        "task": "e81b357a-a7d1-47f5-936f-bbe7185a",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905000000,
+          1912000000,
+          1919000000,
+          1926000000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0050",
+          "e0120",
+          "e0190",
+          "e0260"
+        ]
+      },
+      {
+        "task": "f19460df-fb63-414d-9b32-9b88ac5e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905100000,
+          1912100000,
+          1919100000,
+          1926100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0051",
+          "e0121",
+          "e0191",
+          "e0261"
+        ]
+      },
+      {
+        "task": "f4c905fc-4ad8-4509-a669-90eb8299",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905200000,
+          1912200000,
+          1919200000,
+          1926200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0052",
+          "e0122",
+          "e0192",
+          "e0262"
+        ]
+      },
+      {
+        "task": "f91e56f8-120c-4a77-9328-fdb1385c",
+        "scores": [
+          0.359,
+          0.0,
+          0.21,
+          0.5119999999999999
+        ],
+        "seeds": [
+          1905300000,
+          1912300000,
+          1919300000,
+          1926300000
+        ],
+        "mean_score": 0.27025,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0053",
+          "e0123",
+          "e0193",
+          "e0263"
+        ]
+      },
+      {
+        "task": "flood-monitoring-basic",
+        "scores": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905400000,
+          1912400000,
+          1919400000,
+          1926400000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0054",
+          "e0124",
+          "e0194",
+          "e0264"
+        ]
+      },
+      {
+        "task": "gomoku-planner",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905500000,
+          1912500000,
+          1919500000,
+          1926500000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0055",
+          "e0125",
+          "e0195",
+          "e0265"
+        ]
+      },
+      {
+        "task": "hdfs-deployment",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905600000,
+          1912600000,
+          1919600000,
+          1926600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0056",
+          "e0126",
+          "e0196",
+          "e0266"
+        ]
+      },
+      {
+        "task": "hydra-debug-slurm-mode",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905700000,
+          1912700000,
+          1919700000,
+          1926700000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0057",
+          "e0127",
+          "e0197",
+          "e0267"
+        ]
+      },
+      {
+        "task": "jq-data-processing",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905800000,
+          1912800000,
+          1919800000,
+          1926800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0058",
+          "e0128",
+          "e0198",
+          "e0268"
+        ]
+      },
+      {
+        "task": "jsonl-aggregator",
+        "scores": [
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "seeds": [
+          1905900000,
+          1912900000,
+          1919900000,
+          1926900000
+        ],
+        "mean_score": 0.75,
+        "full_passes": 3,
+        "success_rate": 0.75,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0059",
+          "e0129",
+          "e0199",
+          "e0269"
+        ]
+      },
+      {
+        "task": "log-summary",
+        "scores": [
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "seeds": [
+          1906000000,
+          1913000000,
+          1920000000,
+          1927000000
+        ],
+        "mean_score": 0.75,
+        "full_passes": 3,
+        "success_rate": 0.75,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0060",
+          "e0130",
+          "e0200",
+          "e0270"
+        ]
+      },
+      {
+        "task": "mlflow-register",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906100000,
+          1913100000,
+          1920100000,
+          1927100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0061",
+          "e0131",
+          "e0201",
+          "e0271"
+        ]
+      },
+      {
+        "task": "mnist-learning-fix",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906200000,
+          1913200000,
+          1920200000,
+          1927200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0062",
+          "e0132",
+          "e0202",
+          "e0272"
+        ]
+      },
+      {
+        "task": "pandas-etl",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906300000,
+          1913300000,
+          1920300000,
+          1927300000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0063",
+          "e0133",
+          "e0203",
+          "e0273"
+        ]
+      },
+      {
+        "task": "pandas-sql-query",
+        "scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "seeds": [
+          1906400000,
+          1913400000,
+          1920400000,
+          1927400000
+        ],
+        "mean_score": 1.0,
+        "full_passes": 4,
+        "success_rate": 1.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0064",
+          "e0134",
+          "e0204",
+          "e0274"
+        ]
+      },
+      {
+        "task": "png-generation",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906500000,
+          1913500000,
+          1920500000,
+          1927500000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0065",
+          "e0135",
+          "e0205",
+          "e0275"
+        ]
+      },
+      {
+        "task": "recover-accuracy-log",
+        "scores": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906600000,
+          1913600000,
+          1920600000,
+          1927600000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0066",
+          "e0136",
+          "e0206",
+          "e0276"
+        ]
+      },
+      {
+        "task": "schedule-vacation",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906700000,
+          1913700000,
+          1920700000,
+          1927700000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 1,
+        "trial_ids": [
+          "e0067",
+          "e0137",
+          "e0207",
+          "e0277"
+        ]
+      },
+      {
+        "task": "setup-custom-dev-env",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906800000,
+          1913800000,
+          1920800000,
+          1927800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0068",
+          "e0138",
+          "e0208",
+          "e0278"
+        ]
+      },
+      {
+        "task": "sparql-professors-universities",
+        "scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "seeds": [
+          1906900000,
+          1913900000,
+          1920900000,
+          1927900000
+        ],
+        "mean_score": 1.0,
+        "full_passes": 4,
+        "success_rate": 1.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0069",
+          "e0139",
+          "e0209",
+          "e0279"
+        ]
+      },
+      {
+        "task": "vimscript-vim-quine",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1907000000,
+          1914000000,
+          1921000000,
+          1928000000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0070",
+          "e0140",
+          "e0210",
+          "e0280"
+        ]
+      }
+    ],
+    "guided": [
+      {
+        "task": "0895cf7d-e27e-4ff7-a984-265d79de",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900100000,
+          1907100000,
+          1914100000,
+          1921100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0001",
+          "e0071",
+          "e0141",
+          "e0211"
+        ]
+      },
+      {
+        "task": "09d5c141-d065-4d33-a3e6-362dcf5e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900200000,
+          1907200000,
+          1914200000,
+          1921200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0002",
+          "e0072",
+          "e0142",
+          "e0212"
+        ]
+      },
+      {
+        "task": "0c5c169a-2c85-4120-8e4e-32471b1a",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900300000,
+          1907300000,
+          1914300000,
+          1921300000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0003",
+          "e0073",
+          "e0143",
+          "e0213"
+        ]
+      },
+      {
+        "task": "0e07948f-c624-4bae-8d02-86081c43",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900400000,
+          1907400000,
+          1914400000,
+          1921400000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0004",
+          "e0074",
+          "e0144",
+          "e0214"
+        ]
+      },
+      {
+        "task": "1a87dfeb-8ebb-4124-b8ee-b76020ca",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900500000,
+          1907500000,
+          1914500000,
+          1921500000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0005",
+          "e0075",
+          "e0145",
+          "e0215"
+        ]
+      },
+      {
+        "task": "1c671160-51a2-4496-9099-ee921125",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900600000,
+          1907600000,
+          1914600000,
+          1921600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0006",
+          "e0076",
+          "e0146",
+          "e0216"
+        ]
+      },
+      {
+        "task": "1d7ab372-5c14-492c-85da-e2a7e7e3",
+        "scores": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900700000,
+          1907700000,
+          1914700000,
+          1921700000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0007",
+          "e0077",
+          "e0147",
+          "e0217"
+        ]
+      },
+      {
+        "task": "235c441d-e785-4e86-9659-a434b9fd",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900800000,
+          1907800000,
+          1914800000,
+          1921800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0008",
+          "e0078",
+          "e0148",
+          "e0218"
+        ]
+      },
+      {
+        "task": "35bd72ae-9435-4475-8e33-fa179463",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1900900000,
+          1907900000,
+          1914900000,
+          1921900000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0009",
+          "e0079",
+          "e0149",
+          "e0219"
+        ]
+      },
+      {
+        "task": "35e44800-91e3-49cf-92a6-0a714bab",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901000000,
+          1908000000,
+          1915000000,
+          1922000000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0010",
+          "e0080",
+          "e0150",
+          "e0220"
+        ]
+      },
+      {
+        "task": "3dd9a49b-a9a4-44ac-932f-79899b92",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901100000,
+          1908100000,
+          1915100000,
+          1922100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0011",
+          "e0081",
+          "e0151",
+          "e0221"
+        ]
+      },
+      {
+        "task": "43210b08-43ab-4949-a091-a8e1dd83",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901200000,
+          1908200000,
+          1915200000,
+          1922200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0012",
+          "e0082",
+          "e0152",
+          "e0222"
+        ]
+      },
+      {
+        "task": "531e1ca7-c794-4e7f-87cc-6350725e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "seeds": [
+          1901300000,
+          1908300000,
+          1915300000,
+          1922300000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0013",
+          "e0083",
+          "e0153",
+          "e0223"
+        ]
+      },
+      {
+        "task": "63a70070-8102-4261-bfdf-16d15314",
+        "scores": [
+          1.0,
+          0.6667,
+          0.0,
+          0.3333
+        ],
+        "seeds": [
+          1901400000,
+          1908400000,
+          1915400000,
+          1922400000
+        ],
+        "mean_score": 0.5,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0014",
+          "e0084",
+          "e0154",
+          "e0224"
+        ]
+      },
+      {
+        "task": "67d895a6-8f50-4f8d-a4ff-1a31bdc2",
+        "scores": [
+          0.680128205128205,
+          0.7319800569800569,
+          0.35846153846153844,
+          0.711980056980057
+        ],
+        "seeds": [
+          1901500000,
+          1908500000,
+          1915500000,
+          1922500000
+        ],
+        "mean_score": 0.6206374643874644,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0015",
+          "e0085",
+          "e0155",
+          "e0225"
+        ]
+      },
+      {
+        "task": "6920d458-889d-44cc-afa0-0d29e717",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901600000,
+          1908600000,
+          1915600000,
+          1922600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0016",
+          "e0086",
+          "e0156",
+          "e0226"
+        ]
+      },
+      {
+        "task": "6a31ce44-db27-42a2-957c-0b25c493",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901700000,
+          1908700000,
+          1915700000,
+          1922700000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0017",
+          "e0087",
+          "e0157",
+          "e0227"
+        ]
+      },
+      {
+        "task": "71401830-6e66-496c-a946-6eb9616d",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901800000,
+          1908800000,
+          1915800000,
+          1922800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0018",
+          "e0088",
+          "e0158",
+          "e0228"
+        ]
+      },
+      {
+        "task": "7871a8ce-166a-4b02-9268-5ced8412",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1901900000,
+          1908900000,
+          1915900000,
+          1922900000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0019",
+          "e0089",
+          "e0159",
+          "e0229"
+        ]
+      },
+      {
+        "task": "7a86025b-09d1-4f97-9a2e-f55529f4",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902000000,
+          1909000000,
+          1916000000,
+          1923000000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0020",
+          "e0090",
+          "e0160",
+          "e0230"
+        ]
+      },
+      {
+        "task": "7b5c7cbb-5182-4d11-9979-2dfa017e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902100000,
+          1909100000,
+          1916100000,
+          1923100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0021",
+          "e0091",
+          "e0161",
+          "e0231"
+        ]
+      },
+      {
+        "task": "82c37f5b-fbac-48d7-b023-b4472cfd",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902200000,
+          1909200000,
+          1916200000,
+          1923200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0022",
+          "e0092",
+          "e0162",
+          "e0232"
+        ]
+      },
+      {
+        "task": "855ec91f-5c7d-4863-a07b-232411a7",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902300000,
+          1909300000,
+          1916300000,
+          1923300000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0023",
+          "e0093",
+          "e0163",
+          "e0233"
+        ]
+      },
+      {
+        "task": "8fd89f74-b0c8-4718-a09d-e4330bd0",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902400000,
+          1909400000,
+          1916400000,
+          1923400000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0024",
+          "e0094",
+          "e0164",
+          "e0234"
+        ]
+      },
+      {
+        "task": "949155ae-3b77-483c-96c2-7f0f423c",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902500000,
+          1909500000,
+          1916500000,
+          1923500000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0025",
+          "e0095",
+          "e0165",
+          "e0235"
+        ]
+      },
+      {
+        "task": "9a052f3e-f867-418b-ad6d-41cd056e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902600000,
+          1909600000,
+          1916600000,
+          1923600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0026",
+          "e0096",
+          "e0166",
+          "e0236"
+        ]
+      },
+      {
+        "task": "9f265505-9475-435e-9abf-e46835a7",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902700000,
+          1909700000,
+          1916700000,
+          1923700000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0027",
+          "e0097",
+          "e0167",
+          "e0237"
+        ]
+      },
+      {
+        "task": "a7de53df-43da-49ad-9818-1722e92e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902800000,
+          1909800000,
+          1916800000,
+          1923800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0028",
+          "e0098",
+          "e0168",
+          "e0238"
+        ]
+      },
+      {
+        "task": "ab72149d-33f8-4e69-9088-711bd86c",
+        "scores": [
+          0.0,
+          0.4666666666666667,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1902900000,
+          1909900000,
+          1916900000,
+          1923900000
+        ],
+        "mean_score": 0.11666666666666667,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0029",
+          "e0099",
+          "e0169",
+          "e0239"
+        ]
+      },
+      {
+        "task": "acl-permissions-inheritance",
+        "scores": [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903000000,
+          1910000000,
+          1917000000,
+          1924000000
+        ],
+        "mean_score": 0.5,
+        "full_passes": 2,
+        "success_rate": 0.5,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0030",
+          "e0100",
+          "e0170",
+          "e0240"
+        ]
+      },
+      {
+        "task": "af2eb409-fff6-479d-81d6-c29bf13e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903100000,
+          1910100000,
+          1917100000,
+          1924100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0031",
+          "e0101",
+          "e0171",
+          "e0241"
+        ]
+      },
+      {
+        "task": "amuse-install",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903200000,
+          1910200000,
+          1917200000,
+          1924200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0032",
+          "e0102",
+          "e0172",
+          "e0242"
+        ]
+      },
+      {
+        "task": "analyze-access-logs",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903300000,
+          1910300000,
+          1917300000,
+          1924300000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0033",
+          "e0103",
+          "e0173",
+          "e0243"
+        ]
+      },
+      {
+        "task": "b3e41e4e-6d1b-484a-8c8b-1dbf9a09",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903400000,
+          1910400000,
+          1917400000,
+          1924400000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0034",
+          "e0104",
+          "e0174",
+          "e0244"
+        ]
+      },
+      {
+        "task": "bd1e3aee-64e5-4209-bf0f-b994088c",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "seeds": [
+          1903500000,
+          1910500000,
+          1917500000,
+          1924500000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0035",
+          "e0105",
+          "e0175",
+          "e0245"
+        ]
+      },
+      {
+        "task": "be77281a-bd55-4a6e-8481-6dd04f29",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903600000,
+          1910600000,
+          1917600000,
+          1924600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0036",
+          "e0106",
+          "e0176",
+          "e0246"
+        ]
+      },
+      {
+        "task": "broken-python",
+        "scores": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903700000,
+          1910700000,
+          1917700000,
+          1924700000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0037",
+          "e0107",
+          "e0177",
+          "e0247"
+        ]
+      },
+      {
+        "task": "c0e954b0-e4cc-41f1-9cd1-672947ce",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903800000,
+          1910800000,
+          1917800000,
+          1924800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0038",
+          "e0108",
+          "e0178",
+          "e0248"
+        ]
+      },
+      {
+        "task": "c3e50747-1d94-4050-ae66-a35c7ecf",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1903900000,
+          1910900000,
+          1917900000,
+          1924900000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0039",
+          "e0109",
+          "e0179",
+          "e0249"
+        ]
+      },
+      {
+        "task": "c725d931-2893-4dfa-a4a8-186cfa1e",
+        "scores": [
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "seeds": [
+          1904000000,
+          1911000000,
+          1918000000,
+          1925000000
+        ],
+        "mean_score": 0.75,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0040",
+          "e0110",
+          "e0180",
+          "e0250"
+        ]
+      },
+      {
+        "task": "caf7699c-9d49-4206-9bad-673cc36c",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1904100000,
+          1911100000,
+          1918100000,
+          1925100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0041",
+          "e0111",
+          "e0181",
+          "e0251"
+        ]
+      },
+      {
+        "task": "cb5bcfba-9d5e-419d-9ff1-47cdc224",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "seeds": [
+          1904200000,
+          1911200000,
+          1918200000,
+          1925200000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0042",
+          "e0112",
+          "e0182",
+          "e0252"
+        ]
+      },
+      {
+        "task": "cf794b03-f8b8-4469-b70f-86f77ab4",
+        "scores": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seeds": [
+          1904300000,
+          1911300000,
+          1918300000,
+          1925300000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0043",
+          "e0113",
+          "e0183",
+          "e0253"
+        ]
+      },
+      {
+        "task": "d0dda5fa-b4e8-4a32-8304-68f5d993",
+        "scores": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seeds": [
+          1904400000,
+          1911400000,
+          1918400000,
+          1925400000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0044",
+          "e0114",
+          "e0184",
+          "e0254"
+        ]
+      },
+      {
+        "task": "d4c9e7d7-20a3-4081-bea3-52b900ac",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1904500000,
+          1911500000,
+          1918500000,
+          1925500000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0045",
+          "e0115",
+          "e0185",
+          "e0255"
+        ]
+      },
+      {
+        "task": "d84deb8a-5043-49e0-96ab-817e2104",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1904600000,
+          1911600000,
+          1918600000,
+          1925600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0046",
+          "e0116",
+          "e0186",
+          "e0256"
+        ]
+      },
+      {
+        "task": "d8d92009-1ee1-40b2-8c4f-e7b63e31",
+        "scores": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "seeds": [
+          1904700000,
+          1911700000,
+          1918700000,
+          1925700000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0047",
+          "e0117",
+          "e0187",
+          "e0257"
+        ]
+      },
+      {
+        "task": "e1f1bbca-fb42-4ef8-8367-cdacd3c2",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1904800000,
+          1911800000,
+          1918800000,
+          1925800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0048",
+          "e0118",
+          "e0188",
+          "e0258"
+        ]
+      },
+      {
+        "task": "e803529c-e3aa-4be9-91bb-46555582",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1904900000,
+          1911900000,
+          1918900000,
+          1925900000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0049",
+          "e0119",
+          "e0189",
+          "e0259"
+        ]
+      },
+      {
+        "task": "e81b357a-a7d1-47f5-936f-bbe7185a",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905000000,
+          1912000000,
+          1919000000,
+          1926000000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0050",
+          "e0120",
+          "e0190",
+          "e0260"
+        ]
+      },
+      {
+        "task": "f19460df-fb63-414d-9b32-9b88ac5e",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905100000,
+          1912100000,
+          1919100000,
+          1926100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0051",
+          "e0121",
+          "e0191",
+          "e0261"
+        ]
+      },
+      {
+        "task": "f4c905fc-4ad8-4509-a669-90eb8299",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905200000,
+          1912200000,
+          1919200000,
+          1926200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0052",
+          "e0122",
+          "e0192",
+          "e0262"
+        ]
+      },
+      {
+        "task": "f91e56f8-120c-4a77-9328-fdb1385c",
+        "scores": [
+          0.275,
+          0.255,
+          0.0,
+          0.592
+        ],
+        "seeds": [
+          1905300000,
+          1912300000,
+          1919300000,
+          1926300000
+        ],
+        "mean_score": 0.28049999999999997,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0053",
+          "e0123",
+          "e0193",
+          "e0263"
+        ]
+      },
+      {
+        "task": "flood-monitoring-basic",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905400000,
+          1912400000,
+          1919400000,
+          1926400000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0054",
+          "e0124",
+          "e0194",
+          "e0264"
+        ]
+      },
+      {
+        "task": "gomoku-planner",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905500000,
+          1912500000,
+          1919500000,
+          1926500000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0055",
+          "e0125",
+          "e0195",
+          "e0265"
+        ]
+      },
+      {
+        "task": "hdfs-deployment",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905600000,
+          1912600000,
+          1919600000,
+          1926600000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0056",
+          "e0126",
+          "e0196",
+          "e0266"
+        ]
+      },
+      {
+        "task": "hydra-debug-slurm-mode",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905700000,
+          1912700000,
+          1919700000,
+          1926700000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0057",
+          "e0127",
+          "e0197",
+          "e0267"
+        ]
+      },
+      {
+        "task": "jq-data-processing",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1905800000,
+          1912800000,
+          1919800000,
+          1926800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0058",
+          "e0128",
+          "e0198",
+          "e0268"
+        ]
+      },
+      {
+        "task": "jsonl-aggregator",
+        "scores": [
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "seeds": [
+          1905900000,
+          1912900000,
+          1919900000,
+          1926900000
+        ],
+        "mean_score": 0.75,
+        "full_passes": 3,
+        "success_rate": 0.75,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0059",
+          "e0129",
+          "e0199",
+          "e0269"
+        ]
+      },
+      {
+        "task": "log-summary",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906000000,
+          1913000000,
+          1920000000,
+          1927000000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 1,
+        "trial_ids": [
+          "e0060",
+          "e0130",
+          "e0200",
+          "e0270"
+        ]
+      },
+      {
+        "task": "mlflow-register",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906100000,
+          1913100000,
+          1920100000,
+          1927100000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0061",
+          "e0131",
+          "e0201",
+          "e0271"
+        ]
+      },
+      {
+        "task": "mnist-learning-fix",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906200000,
+          1913200000,
+          1920200000,
+          1927200000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0062",
+          "e0132",
+          "e0202",
+          "e0272"
+        ]
+      },
+      {
+        "task": "pandas-etl",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906300000,
+          1913300000,
+          1920300000,
+          1927300000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0063",
+          "e0133",
+          "e0203",
+          "e0273"
+        ]
+      },
+      {
+        "task": "pandas-sql-query",
+        "scores": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906400000,
+          1913400000,
+          1920400000,
+          1927400000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0064",
+          "e0134",
+          "e0204",
+          "e0274"
+        ]
+      },
+      {
+        "task": "png-generation",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906500000,
+          1913500000,
+          1920500000,
+          1927500000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 1,
+        "trial_ids": [
+          "e0065",
+          "e0135",
+          "e0205",
+          "e0275"
+        ]
+      },
+      {
+        "task": "recover-accuracy-log",
+        "scores": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906600000,
+          1913600000,
+          1920600000,
+          1927600000
+        ],
+        "mean_score": 0.25,
+        "full_passes": 1,
+        "success_rate": 0.25,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0066",
+          "e0136",
+          "e0206",
+          "e0276"
+        ]
+      },
+      {
+        "task": "schedule-vacation",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906700000,
+          1913700000,
+          1920700000,
+          1927700000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0067",
+          "e0137",
+          "e0207",
+          "e0277"
+        ]
+      },
+      {
+        "task": "setup-custom-dev-env",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1906800000,
+          1913800000,
+          1920800000,
+          1927800000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0068",
+          "e0138",
+          "e0208",
+          "e0278"
+        ]
+      },
+      {
+        "task": "sparql-professors-universities",
+        "scores": [
+          0.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "seeds": [
+          1906900000,
+          1913900000,
+          1920900000,
+          1927900000
+        ],
+        "mean_score": 0.5,
+        "full_passes": 2,
+        "success_rate": 0.5,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0069",
+          "e0139",
+          "e0209",
+          "e0279"
+        ]
+      },
+      {
+        "task": "vimscript-vim-quine",
+        "scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "seeds": [
+          1907000000,
+          1914000000,
+          1921000000,
+          1928000000
+        ],
+        "mean_score": 0.0,
+        "full_passes": 0,
+        "success_rate": 0.0,
+        "missing_verifier_scored_zero": 0,
+        "trial_ids": [
+          "e0070",
+          "e0140",
+          "e0210",
+          "e0280"
+        ]
+      }
+    ]
+  },
+  "probe": {
+    "finished_at": "2026-11-08T20:40:01.842956+00:00",
+    "valid_questions": 20,
+    "excluded_questions": 50,
+    "probe_norm": 0.07920901160028299,
+    "gradient_file": "runs/probe-gradient/probe-accumulator.pt",
+    "loss_reference_sha256": "6f6a9d01c5f7ec87838056d1bfb6e89b98e65371343917f30616d273615e9dcc",
+    "no_signal": false,
+    "shards": 4,
+    "forward_precision": "training_bf16",
+    "gradient_accumulation": "FP32",
+    "reduction": "SUM of per-shard vectors already divided by GLOBAL valid-question count; FP32 accumulation, full parameter dimension."
+  },
+  "sampling": {
+    "candidate_trajectories": 728,
+    "generated_trajectories_planned": 728,
+    "unique_sampled_environments": 328,
+    "effective_sample_size": 53.73383878439908,
+    "max_probability": 0.08862036076174189,
+    "max_environment_repeats": 72
+  },
+  "training": {
+    "epoch1": {
+      "source": "/scratch/cvlab/home/shuli/data-rsi/009-ota-environment-resampling/runs/sft-epoch1",
+      "epoch": 1.0,
+      "cumulative_training_stages": 1,
+      "steps": 23,
+      "target_tokens": 4895804,
+      "sft_rows": 728,
+      "loss": 0.954004951145338
+    },
+    "uniform": {
+      "source": "/scratch/cvlab/home/shuli/data-rsi/009-ota-environment-resampling/runs/sft-uniform",
+      "epoch": 1.0,
+      "cumulative_training_stages": 2,
+      "steps": 23,
+      "target_tokens": 4837691,
+      "sft_rows": 728,
+      "loss": 0.7462578623191171
+    },
+    "guided": {
+      "source": "/scratch/cvlab/home/shuli/data-rsi/010-ota-full70-r4/runs/sft-guided",
+      "epoch": 1.0,
+      "cumulative_training_stages": 2,
+      "steps": 23,
+      "target_tokens": 4882779,
+      "sft_rows": 728,
+      "loss": 0.4146526766859967
+    }
+  },
+  "teacher_data": {
+    "uniform": {
+      "evaluated_trials": 728,
+      "full_pass_percent": 77.60989010989012,
+      "mean_score": 0.7760989010989011,
+      "sft_rows": 728
+    },
+    "guided": {
+      "evaluated_trials": 728,
+      "verifier_scored_trials": 727,
+      "missing_verifier_scored_zero": 1,
+      "verifier_score_coverage_percent": 99.86263736263736,
+      "mean_score": 0.7225274725274725,
+      "full_passes": 526,
+      "full_pass_percent": 72.25274725274726,
+      "sft_rows": 728,
+      "empty_sft_exports": 0,
+      "resource_budget_failures": 0
+    }
+  },
+  "top_environment_regeneration": [
+    {
+      "task": "task_3480",
+      "probability": 0.08862036076174189,
+      "draws": 53,
+      "fresh_teacher": {
+        "evaluated_trials": 53,
+        "verifier_scored_trials": 53,
+        "missing_verifier_scored_zero": 0,
+        "verifier_score_coverage_percent": 100.0,
+        "mean_score": 0.7924528301886793,
+        "full_passes": 42,
+        "full_pass_percent": 79.24528301886792
+      }
+    },
+    {
+      "task": "task_9288",
+      "probability": 0.08862036076174189,
+      "draws": 72,
+      "fresh_teacher": {
+        "evaluated_trials": 72,
+        "verifier_scored_trials": 71,
+        "missing_verifier_scored_zero": 1,
+        "verifier_score_coverage_percent": 98.61111111111111,
+        "mean_score": 0.013888888888888888,
+        "full_passes": 1,
+        "full_pass_percent": 1.3888888888888888
+      }
+    },
+    {
+      "task": "task_2507",
+      "probability": 0.021310413747740266,
+      "draws": 19,
+      "fresh_teacher": {
+        "evaluated_trials": 19,
+        "verifier_scored_trials": 19,
+        "missing_verifier_scored_zero": 0,
+        "verifier_score_coverage_percent": 100.0,
+        "mean_score": 0.3157894736842105,
+        "full_passes": 6,
+        "full_pass_percent": 31.57894736842105
+      }
+    },
+    {
+      "task": "task_9487",
+      "probability": 0.01918086348531193,
+      "draws": 18,
+      "fresh_teacher": {
+        "evaluated_trials": 18,
+        "verifier_scored_trials": 18,
+        "missing_verifier_scored_zero": 0,
+        "verifier_score_coverage_percent": 100.0,
+        "mean_score": 0.9444444444444444,
+        "full_passes": 17,
+        "full_pass_percent": 94.44444444444444
+      }
+    },
+    {
+      "task": "task_7374",
+      "probability": 0.014254405373682081,
+      "draws": 13,
+      "fresh_teacher": {
+        "evaluated_trials": 13,
+        "verifier_scored_trials": 13,
+        "missing_verifier_scored_zero": 0,
+        "verifier_score_coverage_percent": 100.0,
+        "mean_score": 0.9230769230769231,
+        "full_passes": 12,
+        "full_pass_percent": 92.3076923076923
+      }
+    },
+    {
+      "task": "task_4995",
+      "probability": 0.01109650792425383,
+      "draws": 9,
+      "fresh_teacher": {
+        "evaluated_trials": 9,
+        "verifier_scored_trials": 9,
+        "missing_verifier_scored_zero": 0,
+        "verifier_score_coverage_percent": 100.0,
+        "mean_score": 1.0,
+        "full_passes": 9,
+        "full_pass_percent": 100.0
+      }
+    },
+    {
+      "task": "task_6646",
+      "probability": 0.009715583139000996,
+      "draws": 6,
+      "fresh_teacher": {
+        "evaluated_trials": 6,
+        "verifier_scored_trials": 6,
+        "missing_verifier_scored_zero": 0,
+        "verifier_score_coverage_percent": 100.0,
+        "mean_score": 1.0,
+        "full_passes": 6,
+        "full_pass_percent": 100.0
+      }
+    },
+    {
+      "task": "task_4680",
+      "probability": 0.008363959860466608,
+      "draws": 5,
+      "fresh_teacher": {
+        "evaluated_trials": 5,
+        "verifier_scored_trials": 5,
+        "missing_verifier_scored_zero": 0,
+        "verifier_score_coverage_percent": 100.0,
+        "mean_score": 1.0,
+        "full_passes": 5,
+        "full_pass_percent": 100.0
+      }
+    },
+    {
+      "task": "task_2799",
+      "probability": 0.008328730688777776,
+      "draws": 4,
+      "fresh_teacher": {
+        "evaluated_trials": 4,
+        "verifier_scored_trials": 4,
+        "missing_verifier_scored_zero": 0,
+        "verifier_score_coverage_percent": 100.0,
+        "mean_score": 0.75,
+        "full_passes": 3,
+        "full_pass_percent": 75.0
+      }
+    },
+    {
+      "task": "task_4755",
+      "probability": 0.007804060020590009,
+      "draws": 5,
+      "fresh_teacher": {
+        "evaluated_trials": 5,
+        "verifier_scored_trials": 5,
+        "missing_verifier_scored_zero": 0,
+        "verifier_score_coverage_percent": 100.0,
+        "mean_score": 0.6,
+        "full_passes": 3,
+        "full_pass_percent": 60.0
+      }
+    }
+  ],
+  "metrics": {
+    "epoch1_mean_score": 0.10208828042328041,
+    "epoch1_full_pass_percent": 8.214285714285714,
+    "epoch1_full_passes": 23,
+    "epoch1_missing_verifier_scored_zero": 2,
+    "epoch1_tasks_with_any_full_pass_in4": 14,
+    "uniform_mean_score": 0.1468443152218152,
+    "uniform_full_pass_percent": 12.857142857142858,
+    "uniform_full_passes": 36,
+    "uniform_missing_verifier_scored_zero": 4,
+    "uniform_tasks_with_any_full_pass_in4": 18,
+    "guided_mean_score": 0.09311148758648759,
+    "guided_full_pass_percent": 6.428571428571429,
+    "guided_full_passes": 18,
+    "guided_missing_verifier_scored_zero": 2,
+    "guided_tasks_with_any_full_pass_in4": 14,
+    "uniform_minus_epoch1_mean_score_delta": 0.0447560347985348,
+    "uniform_minus_epoch1_success_rate_delta_pp": 4.642857142857143,
+    "guided_minus_epoch1_mean_score_delta": -0.008976792836792837,
+    "guided_minus_epoch1_success_rate_delta_pp": -1.7857142857142856,
+    "guided_minus_uniform_mean_score_delta": -0.053732827635327635,
+    "guided_minus_uniform_success_rate_delta_pp": -6.428571428571428
+  },
+  "limitations": [
+    "All70 tasks provided probe feedback; this is feedback-used benchmark performance, not independent heldout generalization.",
+    "Only one training seed. Four inference repeats reduce single-rollout noise but do not measure training-seed variance.",
+    "Missing terminal verifier scores explicitly count as0 per user; original rewards/errors and missingness counts are retained.",
+    "Uniform repeats1 are reused from009, repeats2–4 are new; same pinned checkpoint, harness, task images, sampling and post-training seeds.",
+    "Epoch1/probe seeds differ from post-training seeds; Uniform and newGuided share task-repeat seeds.",
+    "Equal728 regenerated teacher trajectories, not necessarily equal unique environments or target tokens.",
+    "Raw full-parameter SFT-loss gradient dots; not exact AdamW-preconditioned influence."
+  ]
+}

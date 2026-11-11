@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "auth-diagnosis-20261101",
+  "title": "RunAI凭证刷新失效排查",
+  "kind": "analysis",
+  "created_at": "2026-11-01T09:11:58.671751+00:00",
+  "status": "succeeded",
+  "parameters": {
+    "scope": "Read-only authentication diagnosis"
+  },
+  "results": {
+    "id_token_lifetime_seconds": 1800
+  },
+  "notes": "确认是主机OIDC刷新返回invalid_grant，所需客户端会话不可用；服务端具体原因需管理员日志确认。记录仅包含非秘密时间和配置字段。 2026-11-01已收敛为单一后台凭证刷新服务；观察到自然刷新成功，四个评测相关pod UID未改变。",
+  "artifacts": [
+    {
+      "label": "凭证排查证据与建议",
+      "path": "runs/auth-diagnosis-20261101/result.json"
+    },
+    {
+      "label": "单一刷新入口部署与验证",
+      "path": "runs/auth-diagnosis-20261101/single-publisher-migration.json"
+    },
+    {
+      "label": "凭证刷新事件（不含token）",
+      "path": "runs/auth-diagnosis-20261101/auth-refresh-events.jsonl"
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "datasets": [
+    {
+      "dataset": "OpenThoughts-Agent-SFT-1K",
+      "revision": "704dc6620eb61c0e4bef5a4943416866081beea6",
+      "rows": 1000,
+      "distinct_run_ids": 106,
+      "distinct_trial_ids": 997,
+      "distinct_task_ids": 993,
+      "distinct_task_ids_without_copy_suffix": 978,
+      "retained_rows_per_represented_trial_mean": 1.0030090270812437,
+      "retained_rows_per_trial_histogram": {
+        "1": 994,
+        "2": 3
+      },
+      "trace_source_counts": {
+        "main": 789,
+        "summarization-1-answers": 19,
+        "summarization-1-summary": 27,
+        "summarization-7-summary": 1,
+        "summarization-3-answers": 5,
+        "summarization-5-answers": 5,
+        "summarization-7-answers": 1,
+        "summarization-3-summary": 7,
+        "summarization-5-summary": 1,
+        "None": 145
+      },
+      "summary_subtrace_rows": 66,
+      "result_counts": {
+        "None": 638,
+        "AgentTimeoutError": 347,
+        "RuntimeError": 2,
+        "CancelledError": 2,
+        "ContextLengthExceededError": 10,
+        "DaytonaError": 1
+      },
+      "by_task_prefix": {
+        "issue": {
+          "rows": 248,
+          "distinct_task_ids": 248,
+          "distinct_task_ids_without_copy_suffix": 236,
+          "distinct_trial_ids": 248
+        },
+        "superuser": {
+          "rows": 235,
+          "distinct_task_ids": 234,
+          "distinct_task_ids_without_copy_suffix": 232,
+          "distinct_trial_ids": 234
+        },
+        "swesmith": {
+          "rows": 264,
+          "distinct_task_ids": 262,
+          "distinct_task_ids_without_copy_suffix": 262,
+          "distinct_trial_ids": 262
+        },
+        "tezos": {
+          "rows": 253,
+          "distinct_task_ids": 249,
+          "distinct_task_ids_without_copy_suffix": 248,
+          "distinct_trial_ids": 253
+        }
+      },
+      "task_id_examples": [
+        "issue-000000_copy0008",
+        "issue-000015_copy0007",
+        "issue-000092_copy0016",
+        "issue-000168_copy0006",
+        "issue-000178_copy0004",
+        "issue-000180_copy0000",
+        "issue-000201_copy0004",
+        "issue-000224_copy0001",
+        "issue-000255_copy0007",
+        "issue-000262_copy0000",
+        "issue-000307_copy0014",
+        "issue-000322_copy0001",
+        "issue-000382_copy0001",
+        "issue-000395_copy0001",
+        "issue-000404_copy0006"
+      ],
+      "files": [
+        {
+          "path": "/scratch/cvlab/home/shuli/data-rsi/003-openthoughts-qwen3-8b-1k/data/train-00000-of-00001.parquet",
+          "rows": 1000
+        }
+      ],
+      "limitations": [
+        "Distinct task IDs are not distinct environment images or semantic problems. Removing _copyNNNN only collapses explicit repetition IDs.",
+        "Rows per represented trial measure retained exported samples after filtering, not original trajectory segment counts.",
+        "Only metadata columns were read; no task image manifests or original full rollout histories are included in these files."
+      ]
+    },
+    {
+      "dataset": "OpenThoughts-Agent-SFT-10K",
+      "revision": "d0f898f7b65290c9312f59089a7e9265fdaed00c",
+      "rows": 10000,
+      "distinct_run_ids": 122,
+      "distinct_trial_ids": 9907,
+      "distinct_task_ids": 9787,
+      "distinct_task_ids_without_copy_suffix": 8360,
+      "retained_rows_per_represented_trial_mean": 1.009387301907742,
+      "retained_rows_per_trial_histogram": {
+        "1": 9821,
+        "2": 80,
+        "3": 5,
+        "4": 1
+      },
+      "trace_source_counts": {
+        "main": 8083,
+        "None": 1222,
+        "summarization-1-summary": 323,
+        "summarization-3-answers": 47,
+        "summarization-1-answers": 252,
+        "summarization-5-answers": 11,
+        "summarization-3-summary": 44,
+        "summarization-5-summary": 11,
+        "summarization-11-answers": 1,
+        "summarization-7-summary": 3,
+        "summarization-7-answers": 3
+      },
+      "summary_subtrace_rows": 695,
+      "result_counts": {
+        "None": 6366,
+        "AgentTimeoutError": 3516,
+        "ContextLengthExceededError": 85,
+        "DaytonaError": 18,
+        "DaytonaNotFoundError": 8,
+        "AgentEnvironmentTimeoutError": 1,
+        "CancelledError": 5,
+        "RuntimeError": 1
+      },
+      "by_task_prefix": {
+        "issue": {
+          "rows": 2675,
+          "distinct_task_ids": 2674,
+          "distinct_task_ids_without_copy_suffix": 1963,
+          "distinct_trial_ids": 2674
+        },
+        "superuser": {
+          "rows": 2390,
+          "distinct_task_ids": 2374,
+          "distinct_task_ids_without_copy_suffix": 2020,
+          "distinct_trial_ids": 2374
+        },
+        "swesmith": {
+          "rows": 2688,
+          "distinct_task_ids": 2608,
+          "distinct_task_ids_without_copy_suffix": 2545,
+          "distinct_trial_ids": 2612
+        },
+        "tezos": {
+          "rows": 2247,
+          "distinct_task_ids": 2131,
+          "distinct_task_ids_without_copy_suffix": 1832,
+          "distinct_trial_ids": 2247
+        }
+      },
+      "task_id_examples": [
+        "issue-000002_copy0002",
+        "issue-000002_copy0011",
+        "issue-000004_copy0005",
+        "issue-000006_copy0004",
+        "issue-000008_copy0002",
+        "issue-000009_copy0005",
+        "issue-000009_copy0010",
+        "issue-000011_copy0001",
+        "issue-000011_copy0002",
+        "issue-000012_copy0013",
+        "issue-000013_copy0001",
+        "issue-000014_copy0005",
+        "issue-000014_copy0008",
+        "issue-000015_copy0001",
+        "issue-000020_copy0003"
+      ],
+      "files": [
+        {
+          "path": "/scratch/cvlab/home/shuli/data-rsi/002-openthoughts-qwen3-8b/data/train-00000-of-00002.parquet",
+          "rows": 5000
+        },
+        {
+          "path": "/scratch/cvlab/home/shuli/data-rsi/002-openthoughts-qwen3-8b/data/train-00001-of-00002.parquet",
+          "rows": 5000
+        }
+      ],
+      "limitations": [
+        "Distinct task IDs are not distinct environment images or semantic problems. Removing _copyNNNN only collapses explicit repetition IDs.",
+        "Rows per represented trial measure retained exported samples after filtering, not original trajectory segment counts.",
+        "Only metadata columns were read; no task image manifests or original full rollout histories are included in these files."
+      ]
+    },
+    {
+      "dataset": "OpenThoughts-Agent-SFT-100K",
+      "revision": "45fb28fcc38d352133cb28a1c8a43a2f14fea97b",
+      "rows": 94334,
+      "distinct_run_ids": 123,
+      "distinct_trial_ids": 89056,
+      "distinct_task_ids": 82999,
+      "distinct_task_ids_without_copy_suffix": 37186,
+      "retained_rows_per_represented_trial_mean": 1.0592660797700324,
+      "retained_rows_per_trial_histogram": {
+        "1": 86080,
+        "2": 1777,
+        "3": 759,
+        "4": 99,
+        "5": 190,
+        "6": 43,
+        "7": 75,
+        "8": 16,
+        "9": 10,
+        "10": 3,
+        "11": 3,
+        "13": 1
+      },
+      "trace_source_counts": {
+        "main": 75879,
+        "summarization-1-summary": 3149,
+        "summarization-1-answers": 2170,
+        "summarization-3-summary": 430,
+        "summarization-3-answers": 421,
+        "summarization-5-answers": 150,
+        "summarization-5-summary": 160,
+        "summarization-7-answers": 32,
+        "summarization-7-summary": 33,
+        "summarization-9-answers": 7,
+        "summarization-9-summary": 6,
+        "summarization-11-answers": 1,
+        "summarization-11-summary": 1,
+        "None": 11895
+      },
+      "summary_subtrace_rows": 6560,
+      "result_counts": {
+        "None": 60296,
+        "AgentTimeoutError": 32764,
+        "DaytonaError": 136,
+        "DaytonaNotFoundError": 143,
+        "ContextLengthExceededError": 916,
+        "RuntimeError": 27,
+        "AgentEnvironmentTimeoutError": 6,
+        "CancelledError": 46
+      },
+      "by_task_prefix": {
+        "issue": {
+          "rows": 25000,
+          "distinct_task_ids": 24924,
+          "distinct_task_ids_without_copy_suffix": 4669,
+          "distinct_trial_ids": 24924
+        },
+        "superuser": {
+          "rows": 22848,
+          "distinct_task_ids": 21700,
+          "distinct_task_ids_without_copy_suffix": 8342,
+          "distinct_trial_ids": 21700
+        },
+        "swesmith": {
+          "rows": 25000,
+          "distinct_task_ids": 20679,
+          "distinct_task_ids_without_copy_suffix": 17323,
+          "distinct_trial_ids": 20946
+        },
+        "tezos": {
+          "rows": 21486,
+          "distinct_task_ids": 15696,
+          "distinct_task_ids_without_copy_suffix": 6852,
+          "distinct_trial_ids": 21486
+        }
+      },
+      "task_id_examples": [
+        "issue-000000_copy0001",
+        "issue-000000_copy0004",
+        "issue-000000_copy0005",
+        "issue-000000_copy0006",
+        "issue-000000_copy0007",
+        "issue-000000_copy0008",
+        "issue-000000_copy0009",
+        "issue-000000_copy0012",
+        "issue-000000_copy0013",
+        "issue-000001_copy0002",
+        "issue-000001_copy0008",
+        "issue-000001_copy0013",
+        "issue-000002_copy0000",
+        "issue-000002_copy0001",
+        "issue-000002_copy0002"
+      ],
+      "files": [
+        {
+          "path": "data/train-00000-of-00010.parquet",
+          "rows": 9434
+        },
+        {
+          "path": "data/train-00001-of-00010.parquet",
+          "rows": 9434
+        },
+        {
+          "path": "data/train-00002-of-00010.parquet",
+          "rows": 9434
+        },
+        {
+          "path": "data/train-00003-of-00010.parquet",
+          "rows": 9434
+        },
+        {
+          "path": "data/train-00004-of-00010.parquet",
+          "rows": 9433
+        },
+        {
+          "path": "data/train-00005-of-00010.parquet",
+          "rows": 9433
+        },
+        {
+          "path": "data/train-00006-of-00010.parquet",
+          "rows": 9433
+        },
+        {
+          "path": "data/train-00007-of-00010.parquet",
+          "rows": 9433
+        },
+        {
+          "path": "data/train-00008-of-00010.parquet",
+          "rows": 9433
+        },
+        {
+          "path": "data/train-00009-of-00010.parquet",
+          "rows": 9433
+        }
+      ],
+      "limitations": [
+        "Distinct task IDs are not distinct environment images or semantic problems. Removing _copyNNNN only collapses explicit repetition IDs.",
+        "Rows per represented trial measure retained exported samples after filtering, not original trajectory segment counts.",
+        "Only metadata columns were read; no task image manifests or original full rollout histories are included in these files."
+      ]
+    }
+  ],
+  "paper_findings": {
+    "paper": "arXiv:2606.24855v1",
+    "figure4": [
+      {
+        "source": "SWE-Smith",
+        "source_tasks": 9998,
+        "retained_training_rows": 25000
+      },
+      {
+        "source": "IssueTasks",
+        "source_tasks": 4830,
+        "retained_training_rows": 25000
+      },
+      {
+        "source": "StackExchange SuperUser",
+        "source_tasks": 12817,
+        "retained_training_rows": 22848
+      },
+      {
+        "source": "StackExchange Tezos",
+        "source_tasks": 997,
+        "retained_training_rows": 21486
+      }
+    ],
+    "sum_source_task_counts_in_figure4": 28642,
+    "final_retained_rows_figure4": 94334,
+    "teacher": "GLM-4.7-AWQ",
+    "harness": "Terminus-2 in Daytona sandboxes",
+    "filter": "At least five model turns",
+    "augmentation": "Task descriptions repeated with score-weighted sampling; Tezos rewritten. Figure 4 labels 997 unique × 11 aug.; section 4 describes more than 21K surface forms. These statements alone do not specify a fully reconstructible task-to-variant mapping.",
+    "not_reported": [
+      "Total distinct Docker images / environment definitions used for final SFT generation",
+      "Total rollout attempts before filtering, including failed or discarded attempts",
+      "Mean/median number of continuation segments per original rollout"
+    ],
+    "export_caveat": "Current public export defaults to episodes=last and export_filter=None; it follows continuation chains then keeps the last episode. Summary subagents can be exported separately. Current code is not proof of the exact historical release command."
+  },
+  "source_urls": [
+    "https://arxiv.org/pdf/2606.24855#page=9",
+    "https://huggingface.co/datasets/open-thoughts/OpenThoughts-Agent-SFT-100K/tree/45fb28fcc38d352133cb28a1c8a43a2f14fea97b",
+    "https://github.com/open-thoughts/OpenThoughts-Agent/blob/3bd1917e62c9d03d73063b433f5c442c279c0563/scripts/harbor/run_and_export_traces.py",
+    "https://github.com/marin-community/harbor/blob/2b53c2beea0e06d0a864b9cf81cfc4fbd576f7e4/src/harbor/utils/traces_utils.py"
+  ],
+  "completed_at": "2026-11-01T16:24:36.865690+00:00"
+}

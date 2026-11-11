@@ -1,0 +1,239 @@
+{
+  "verified_at": "2026-11-09T20:47:07.264836+00:00",
+  "base": "http://127.0.0.1:18765",
+  "require_terminal": false,
+  "verified": false,
+  "runs": [
+    {
+      "run_id": "eval-base",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "eval20",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "export20",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "prepare-data",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "prepare-more",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "screen-0",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/screen-0/sample.json",
+          "download_matches_disk": true,
+          "sha256": "ef2136a379da5b73594f2c5e8a0c565b74e2eb2abd91e33b7ed28bdfd07ea9a7",
+          "preview_truncated": false,
+          "downloaded_json_parses": true,
+          "preview_matches_disk": true
+        }
+      ],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "screen-1",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/screen-1/sample.json",
+          "download_matches_disk": true,
+          "sha256": "1f8b133b3034110289964827f38e41dc5188c619f294ae9cbb9729d33cfdd0f9",
+          "preview_truncated": false,
+          "downloaded_json_parses": true,
+          "preview_matches_disk": true
+        }
+      ],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "screen-2",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "cancelled",
+      "verified": true
+    },
+    {
+      "run_id": "screen-3",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "cancelled",
+      "verified": true
+    },
+    {
+      "run_id": "screen-more-0",
+      "checks": {
+        "live_state_matches_disk": false,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "running",
+      "verified": false
+    },
+    {
+      "run_id": "screen-more-1",
+      "checks": {
+        "live_state_matches_disk": false,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "running",
+      "verified": false
+    },
+    {
+      "run_id": "select320",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "failed",
+      "verified": true
+    },
+    {
+      "run_id": "select320-v2",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "storage-preflight",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "summary",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    },
+    {
+      "run_id": "train-fp32-richardson20",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "planned",
+      "verified": true
+    }
+  ],
+  "metrics": {
+    "runs_checked": 16,
+    "runs_verified": 14,
+    "artifacts_downloaded": 2
+  }
+}

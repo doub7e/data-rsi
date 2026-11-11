@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "prepare-more",
+  "title": "优先FP32-20 · 1024题前缀不变，追加384候选并复用全部已有判题",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-09T20:45:14.394250+00:00",
+  "updated_at": "2026-11-09T20:45:14.394261+00:00",
+  "parameters": {
+    "priority": 1,
+    "scope": "append384candidates; preserve all1024completed screens and insufficient-pool failure",
+    "gpus": 0,
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d"
+  },
+  "sources": {
+    "status": "runs/prepare-more/state.json",
+    "progress": "runs/prepare-more/progress.json",
+    "results": "runs/prepare-more/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/prepare-more/result.json"
+    },
+    {
+      "label": "candidates.json",
+      "path": "runs/prepare-more/candidates.json"
+    },
+    {
+      "label": "candidates.parquet",
+      "path": "runs/prepare-more/candidates.parquet"
+    },
+    {
+      "label": "known-screen.json",
+      "path": "runs/prepare-more/known-screen.json"
+    },
+    {
+      "label": "historical-screen.json",
+      "path": "runs/prepare-more/historical-screen.json"
+    },
+    {
+      "label": "协议",
+      "path": "protocol.json"
+    },
+    {
+      "label": "题目重复数核验",
+      "path": "deduplication-audit.json"
+    }
+  ],
+  "tags": [
+    "priority1",
+    "data-extension"
+  ],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-p20-moredata-1109a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

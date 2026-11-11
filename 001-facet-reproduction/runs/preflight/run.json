@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "preflight",
+  "title": "公开资源与环境核查",
+  "kind": "analysis",
+  "created_at": "2026-10-30T17:33:56.618022+00:00",
+  "status": "succeeded",
+  "parameters": {},
+  "results": {
+    "public_tasks": 6020
+  },
+  "notes": "公开 6,020 个任务，未找到论文原始 1,200 条训练轨迹。后续严格复现仍依赖原始轨迹。",
+  "tags": [],
+  "artifacts": [
+    {
+      "label": "预研记录",
+      "path": "README.md"
+    }
+  ],
+  "sources": {
+    "status": "runs/preflight/state.json"
+  }
+}

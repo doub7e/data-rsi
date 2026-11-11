@@ -1,0 +1,10 @@
+{
+  "experiment": "002-openthoughts-qwen3-8b",
+  "run_id": "eval-native-10k-20261031",
+  "training_run": "repro-10k-4h200-20261030",
+  "training_rows": 10000,
+  "model_name": "ota-qwen3-8b",
+  "serve_job": "ota-qwen3-8b-repro-eval-1030",
+  "worker_job": "ota-native-eval-10k-1031",
+  "parallel_evaluation": true
+}

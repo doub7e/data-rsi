@@ -1,0 +1,8 @@
+{
+  "status": "succeeded",
+  "passed": 1,
+  "tasks": 1,
+  "accuracy_pct": 100.0,
+  "errors": {},
+  "result_path": "/scratch/cvlab/home/shuli/data-rsi/002-openthoughts-qwen3-8b/runs/daytona-worker-preflight-20261031b/jobs/daytona-oracle-smoke/result.json"
+}

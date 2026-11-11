@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "qwen_math_fd_training_ablation_20261108",
+  "title": "Qwen Math · BF16/FP32 FD 配对短程训练消融",
+  "description": "Qwen Math FD三组5-step消融：用户授权8×H200重新运行，TP4、torch.compile恢复、实际worker长序列预检。旧四卡OOM及全部重试保留。",
+  "tags": [
+    "Math",
+    "training",
+    "FD",
+    "paired-ablation"
+  ],
+  "created_at": "2026-11-08T10:52:47.605372+00:00",
+  "updated_at": "2026-11-08T13:29:44.335336+00:00"
+}

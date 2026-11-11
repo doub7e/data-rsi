@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "gpu-smoke-1030b",
+  "title": "双 H200 · 训练链路验证",
+  "kind": "validation",
+  "created_at": "2026-10-30T17:33:56.618022+00:00",
+  "status": "succeeded",
+  "parameters": {
+    "gpus": 2,
+    "gpu_type": "H200",
+    "cutoff_len": 2048,
+    "steps": 2,
+    "method": "full SFT / ZeRO-3"
+  },
+  "results": {
+    "loss_step_1": 1.3406,
+    "loss_step_2": 1.3477
+  },
+  "notes": "Qwen3-8B 全参数 ZeRO-3 两步训练、checkpoint 保存与重载均通过。2048 cutoff，不代表 32k 容量验证。",
+  "tags": [],
+  "artifacts": [
+    {
+      "label": "验证结果",
+      "path": "evidence/gpu-validation/validation.json"
+    },
+    {
+      "label": "运行日志",
+      "path": "evidence/gpu-validation/run.log"
+    }
+  ],
+  "sources": {
+    "status": "runs/gpu-smoke-1030b/state.json",
+    "metrics": "outputs/data-rsi-sft-smoke-1030b/checkpoint/trainer_log.jsonl"
+  },
+  "updated_at": "2026-10-30T17:38:58.887129+00:00"
+}

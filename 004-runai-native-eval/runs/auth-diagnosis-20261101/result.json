@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-11-01T09:11:58.671751+00:00",
+  "credential_values_included": false,
+  "confirmed": {
+    "host_auth": "OIDC auth-provider, client runai-cli",
+    "issuer": "https://app.run.ai/auth/realms/rcpepfl",
+    "runai_cli_version": "2.24.86",
+    "kubectl_version": "v1.31.14",
+    "id_token_lifetime_seconds": 1800,
+    "current_id_token_issued_local": "2026-11-01T09:55:21+01:00",
+    "current_id_token_expires_local": "2026-11-01T10:25:21+01:00",
+    "refresh_token_type": "Offline",
+    "current_refresh_token_expires_local": "2026-11-30T13:56:38+01:00",
+    "refresh_client_matches_host_client": true,
+    "worker_has_refresh_token": false,
+    "worker_credential_staging_interval_seconds": 5,
+    "error": "invalid_grant: Session does not have required client",
+    "failure_layer": "Host OIDC refresh, followed by inability to renew worker token",
+    "server_configuration_read_access": false
+  },
+  "timeline_local": [
+    {
+      "time": "2026-11-01T08:22:12+01:00",
+      "event": "Dashboard observes invalid_grant"
+    },
+    {
+      "time": "2026-11-01T08:22:42+01:00",
+      "event": "Cluster access recovers"
+    },
+    {
+      "time": "2026-11-01T08:52:06+01:00",
+      "event": "Persistent invalid_grant begins"
+    },
+    {
+      "time": "2026-11-01T09:55:24+01:00",
+      "event": "Cluster access recovers after user login"
+    }
+  ],
+  "interpretation": "The exact Keycloak error means the refresh path cannot find the required authenticated client session. It is not explained solely by a 30-minute ID token lifetime. Claims from the replacement refresh token do not establish the lifetime of the lost session.",
+  "unconfirmed_hypotheses": [
+    "Server-side offline client session idle/max policy or revocation",
+    "Client-session cache/persistence inconsistency or server restart",
+    "Concurrent refreshes from independent host processes may contribute; causality is unproven"
+  ],
+  "next_steps": [
+    "Administrator should inspect REFRESH_TOKEN_ERROR for realm rcpepfl / client runai-cli at the incident timestamps, offline-client timeout policy, and session cache events",
+    "For unattended evaluation, evaluate an administrator-supported RunAI user access key or service account instead of a personal browser SSO session",
+    "Centralize token refreshing into one writer and let monitoring consumers use the staged short-lived token to reduce concurrent refresh races"
+  ],
+  "sources": [
+    "https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/protocol/oidc/TokenManager.java",
+    "https://github.com/keycloak/keycloak/issues/41034",
+    "https://github.com/keycloak/keycloak/issues/21402",
+    "https://docs.nvidia.com/run-ai/self-hosted/v3.0/documentation/platform-management/settings/user-settings/user-access-keys"
+  ],
+  "editor_and_concurrency_followup": {
+    "checked_at": "2026-11-01T09:18:15.499797+00:00",
+    "confirmed_remote_vscode_extensions": [
+      "openai.codex-audio",
+      "openai.chatgpt"
+    ],
+    "confirmed_remote_cursor_extensions": [
+      "openai.chatgpt",
+      "anthropic.claude-code"
+    ],
+    "remote_kubernetes_extension_found": false,
+    "current_remote_vscode_logs_have_kubernetes_or_invalid_grant_matches": false,
+    "local_desktop_extensions_inspectable": false,
+    "refresh_capable_default_kubeconfig_consumers": [
+      "experiment-board.service",
+      "data-rsi-native-auth.service",
+      "data-rsi-native-1k-evaluation.service",
+      "data-rsi-native-10k-evaluation.service"
+    ],
+    "dashboard_parallel_kubectl_processes": 2,
+    "mechanism": "client-go v0.31.14 OIDC uses an in-process mutex around refresh and then persists refreshed tokens; independent kubectl processes are not serialized by that mutex.",
+    "assessment": "Concurrent refresh is a credible investigation direction. Current evidence confirms multiple backend refresh-capable consumers, but does not prove VS Code participation or causation of the server-side error.",
+    "recommended_controlled_test": [
+      "Centralize refresh in the credential sync service; other automation consumers use only staged short-lived tokens",
+      "Independently compare periods with the local Kubernetes extension/attach disabled and enabled across multiple 30-minute refresh boundaries",
+      "Record sanitized refresh timestamps, caller PID, and kubeconfig write timing; never log tokens"
+    ],
+    "sources": [
+      "https://github.com/vscode-kubernetes-tools/vscode-kubernetes-tools#working-with-kubeconfigs",
+      "https://github.com/kubernetes/client-go/blob/v0.31.14/plugin/pkg/client/auth/oidc/oidc.go",
+      "https://github.com/keycloak/keycloak/issues/50721"
+    ]
+  }
+}

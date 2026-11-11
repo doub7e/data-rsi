@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "c01-rollouts-20261105",
+  "title": "OTA · 简单题筛查 · csv-json-jsonl-merger · 8rollouts",
+  "kind": "evaluation",
+  "status": "planned",
+  "created_at": "2026-11-05T22:13:03.706630+00:00",
+  "tags": [
+    "OpenThoughts-Agent",
+    "base",
+    "Qwen3-8B",
+    "easy-tasks",
+    "reward-gradient"
+  ],
+  "parameters": {
+    "model": "Qwen/Qwen3-8B",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "rollouts": 8,
+    "phase": "screening",
+    "probe_reward": "official_score_v1"
+  },
+  "sources": {
+    "status": "runs/c01-rollouts-20261105/state.json",
+    "results": "runs/c01-rollouts-20261105/result.json",
+    "progress": "runs/c01-rollouts-20261105/progress.json",
+    "trajectories": "runs/c01-rollouts-20261105/jobs",
+    "evaluation_plan": "runs/c01-rollouts-20261105/evaluation-plan.json",
+    "training_data": "runs/c01-rollouts-20261105/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "协议与筛选规则",
+      "path": "runs/easy-probes-20261105/protocol.json"
+    }
+  ],
+  "job": {
+    "name": "ota-easy-c01-rollouts-1105",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

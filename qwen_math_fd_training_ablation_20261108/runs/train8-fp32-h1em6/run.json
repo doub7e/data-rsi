@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "train8-fp32-h1em6",
+  "title": "Qwen Math FD · 8×H200 · fp32-h1em6 · 5step编译恢复重跑",
+  "kind": "training",
+  "status": "planned",
+  "created_at": "2026-11-09T00:07:14.528844+00:00",
+  "updated_at": "2026-11-09T00:07:14.528855+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "arm": "fp32-h1em6",
+    "steps": 5,
+    "prompts_per_step": 16,
+    "rollout_n": 64,
+    "gpus": 8,
+    "pool": "h200",
+    "scope": "paired short-run pilot, not historical47.27 reproduction",
+    "probe_precision": "bf16",
+    "clip_residual": 1,
+    "sigmoid": "sigmoid(3s)",
+    "same_frozen_promptstream": true,
+    "torch_compile_disabled": false,
+    "rollout_tensor_parallel_size": 4,
+    "preflight": "4 sequences per GPU,2048 prompt+16384 response,production old_log_prob+entropy before update1",
+    "replaces_run": "train-fp32-h1em6"
+  },
+  "sources": {
+    "status": "runs/train8-fp32-h1em6/state.json",
+    "progress": "runs/train8-fp32-h1em6/progress.json",
+    "results": "runs/train8-fp32-h1em6/result.json",
+    "metrics": "runs/train8-fp32-h1em6/metrics.jsonl",
+    "training_data": "runs/train8-fp32-h1em6/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/train8-fp32-h1em6/result.json"
+    },
+    {
+      "label": "resolved-launch.json",
+      "path": "runs/train8-fp32-h1em6/resolved-launch.json"
+    },
+    {
+      "label": "long-sequence-preflight.json",
+      "path": "runs/train8-fp32-h1em6/long-sequence-preflight.json"
+    }
+  ],
+  "tags": [
+    "8h200",
+    "fd-training",
+    "rerun"
+  ],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd8-fp32h6-1109a",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "planning_revisions": [
+    {
+      "at": "2026-11-09T00:09:05.408880+00:00",
+      "reason": "Before any submission: shell sets TORCH_COMPILE_DISABLE=0; avoid Hydra integer-valued Ray environment entry",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/train8-fp32-h1em6/planning-revisions/2026-11-09T00-08-59.398116+00-00/source"
+    }
+  ]
+}

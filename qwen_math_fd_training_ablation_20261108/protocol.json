@@ -1,0 +1,105 @@
+{
+  "status": "training_workflow_started",
+  "arms": [
+    {
+      "id": "bf16-h1em5",
+      "fd_precision": "bf16",
+      "h": 1e-05
+    },
+    {
+      "id": "fp32-h1em5",
+      "fd_precision": "fp32",
+      "h": 1e-05
+    },
+    {
+      "id": "fp32-h1em6",
+      "fd_precision": "fp32",
+      "h": 1e-06
+    }
+  ],
+  "common": {
+    "initialization": "Qwen3-4B Base 1cfa9a7208912126459214e8b04321603b3df60c",
+    "probe_precision": "bf16",
+    "rollout_n": 64,
+    "prompts_per_step": 16,
+    "pilot_steps": 5,
+    "lr": 1e-05,
+    "residual_clip": 1,
+    "sigmoid_tau": 3,
+    "sigmoid_shift": 0,
+    "geometry": "identity",
+    "homogeneous_weight": 0,
+    "max_response_tokens": 16384,
+    "seed": 27115,
+    "torch_compile_disabled": false,
+    "training_pool": "h200",
+    "runtime_image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "training_gpus": 8,
+    "rollout_tensor_parallel_size": 4,
+    "long_sequence_preflight": true
+  },
+  "pairing": "identical init,promptstream,seeds,budget; policies generate their own on-policy responses after divergence",
+  "data": "new frozen teacher-screened pool; original historical frozen1600 unavailable; no direct comparison to47.27 historical score",
+  "eval": "AIME24,AIME25,HMMT Feb,HMMT Nov;32generations/question;16384token cap; seedpaired across checkpoints; staging pending",
+  "compute_guard": {
+    "max_active_gpus": 8,
+    "initial_pilot_steps": 5,
+    "no_auto_extension_to20_without_reviewingpilot": true,
+    "controller_deadline": "2026-11-09T12:06:58.915677+00:00"
+  },
+  "known_risks": [
+    "short training effect may be below evaluation noise",
+    "samehFP32 arm separatesdtype fromh change",
+    "FP32h1e-6 calibration must be monitored on updatedcheckpoint"
+  ],
+  "runtime_notes": {
+    "sampler": "PyTorch native for allarms; pinnedvLLM0.11",
+    "grader": "unchangedproject MathVerify0.9 inisolatedchild; nativeHydraANTLR4.9 remainsintact",
+    "compilation": "H200 torch.compile restored; TORCH_COMPILE_DISABLE=0; per-arm full-length real-worker forward gate",
+    "source": "https://raw.githubusercontent.com/pytorch/pytorch/v2.8.0/torch/_dynamo/config.py",
+    "training_hardware": "H200 fixed across allarms; B300 teacher screening independent of trainarm"
+  },
+  "screening_adaptation": {
+    "initial_candidates": 384,
+    "conditional_extra_candidates": 256,
+    "maximum_candidates": 640,
+    "condition": "initialeligible<80 only",
+    "rule": "same seeded permutation, same1..7/8 screen, first80eligible; checkoriginalprefixidentity; no thresholdrelaxation",
+    "prefix_stop": {
+      "declared_at": "2026-11-08T12:56:13.793541+00:00",
+      "rule": "Stop only after a fully observed contiguous prefix contains>=80eligible; selection first80 is then identical for every possible outcome of remaining candidates. Preserve all published chunks; verify selected data onCPU before cancelling any active tail jobs.",
+      "training_scope_unchanged": "80prompts,5steps,N64,three arms",
+      "initial_eligible": 78
+    }
+  },
+  "selected_training_data": {
+    "run": "select-training-fixed",
+    "prompts": 80,
+    "train_parquet_sha256": "6bd41544d127e15d792645567c7d34e78fa72ff2c6313c4ebca5d43455dae4e0",
+    "prefix_verified": 432,
+    "last_selected_candidate": 388,
+    "first80_rule_unchanged": true
+  },
+  "production_gate": {
+    "actual_update_source": "smoke-training-h200",
+    "process_exit": "failed only at post-save TensorJSON logging; originalfailure preserved",
+    "verification_run": "verify-smoke-checkpoint",
+    "optimizer_steps_verified": 1,
+    "actual_rollouts_verified": 128,
+    "new_gpu_replay_for_logging": false,
+    "fp32_export": "export-smoke-training",
+    "logger_fix": "serialize Tensor/NumPy metrics preserving values and flush; actualCPUtests passed"
+  },
+  "training_runs": {
+    "bf16-h1em5": "train8-bf16-h1em5",
+    "fp32-h1em5": "train8-fp32-h1em5",
+    "fp32-h1em6": "train8-fp32-h1em6"
+  },
+  "restart": {
+    "authorized_at": "2026-11-09T00:06:58.941619+00:00",
+    "reason": "user confirmed historical8xH200 and requested rerun",
+    "failed_predecessor": "train-bf16-h1em5",
+    "fresh_base": true,
+    "old_states_preserved": true
+  }
+}

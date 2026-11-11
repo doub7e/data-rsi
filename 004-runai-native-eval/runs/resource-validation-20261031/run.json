@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "resource-validation-20261031",
+  "title": "原生Pod资源约束验证",
+  "kind": "validation",
+  "created_at": "2026-10-31T13:15:54.284479+00:00",
+  "status": "planned",
+  "parameters": {
+    "cpu": 1,
+    "memory_mb": 4096,
+    "storage_mb": 10240,
+    "gpus": 0
+  },
+  "results": {},
+  "job": {
+    "name": "ota-native-resource-1031",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  },
+  "sources": {
+    "status": "runs/resource-validation-20261031/state.json"
+  },
+  "notes": "预先验证RunAI能否应用CPU/RAM/ephemeral-storage硬限制，不运行模型。"
+}

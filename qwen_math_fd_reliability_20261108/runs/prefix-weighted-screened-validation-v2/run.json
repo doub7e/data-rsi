@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "prefix-weighted-screened-validation-v2",
+  "title": "FD可靠性 · 新题2048/2304 token prefix · 加权梯度（显式范围）",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T09:49:52.590698+00:00",
+  "updated_at": "2026-11-08T09:49:52.590709+00:00",
+  "parameters": {
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+    "row": 46947,
+    "scope": "all2048frozenprefix positions out of2304originalresponse; no newprobes/generation/optimizer",
+    "prior_failed_run": "prefix-weighted-screened-validation",
+    "failure_reason": "default complete-response guard rejected an explicitly intended prefix before model loading",
+    "fix": "explicit --allow-frozen-prefix, validate contiguous fullfrozenprefix and originalextent; default still rejects prefixes",
+    "recipes": "same five preregistered recipes as prior run; unchanged after viewing FD outcomes"
+  },
+  "sources": {
+    "status": "runs/prefix-weighted-screened-validation-v2/state.json",
+    "progress": "runs/prefix-weighted-screened-validation-v2/progress.json",
+    "results": "runs/prefix-weighted-screened-validation-v2/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/prefix-weighted-screened-validation-v2/result.json"
+    },
+    {
+      "label": "report.md",
+      "path": "runs/prefix-weighted-screened-validation-v2/report.md"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-weight-screen-1108b",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

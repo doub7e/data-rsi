@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-05T20:15:10.736880+00:00",
+  "original_dataset_processor_exact_ids_and_labels": true,
+  "both_assistant_reasoning_blocks_supervised": true,
+  "adjacent_user_merge": true,
+  "cutoff_fixture_length": 32768,
+  "targets": [
+    18,
+    14
+  ],
+  "estimator": {
+    "token_weighted_centering_and_three_partitions_verified": true,
+    "constant_reward_zero_verified": true
+  },
+  "metrics": {
+    "encoder_fixtures_passed": 2,
+    "cutoff_test_tokens": 32768
+  }
+}

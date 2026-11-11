@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "completion-audit",
+  "title": "Independent completion audit and scorer replay",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-03T07:36:58.934263+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "pg-completion-audit-1103",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "sources": {
+    "status": "runs/completion-audit/state.json",
+    "results": "runs/completion-audit/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "Completion audit",
+      "path": "runs/completion-audit/result.json"
+    }
+  ]
+}

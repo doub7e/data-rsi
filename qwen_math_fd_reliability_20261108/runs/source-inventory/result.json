@@ -1,0 +1,10 @@
+{
+  "metrics": {
+    "verified_artifacts": 1
+  },
+  "artifacts": [
+    "inventory/inventory.json"
+  ],
+  "scope": null,
+  "elapsed_seconds": 22.510272726416588
+}

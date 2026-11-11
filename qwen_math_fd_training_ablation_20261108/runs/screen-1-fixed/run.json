@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "screen-1-fixed",
+  "title": "FD训练消融 · 教师筛选分片1（显式模型revision）",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T11:22:35.610022+00:00",
+  "updated_at": "2026-11-08T11:22:35.610039+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "previous_failed_run": "screen-1",
+    "fix": "explicit modelrevision for unchanged identity helper; no model/generation had run before failure",
+    "same_candidates_and_seeds": true
+  },
+  "sources": {
+    "status": "runs/screen-1-fixed/state.json",
+    "progress": "runs/screen-1-fixed/progress.json",
+    "results": "runs/screen-1-fixed/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/screen-1-fixed/result.json"
+    },
+    {
+      "label": "screen-config.json",
+      "path": "runs/screen-1-fixed/screen-config.json"
+    },
+    {
+      "label": "sample.json",
+      "path": "runs/screen-1-fixed/sample.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-screen1-1108b",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-10T23:22:56.280363+00:00",
+  "winner": "train-b300-fp32-richardson20",
+  "changed_dependencies": [
+    "export20",
+    "eval20",
+    "eval-base",
+    "summary"
+  ],
+  "training_data_or_scientific_parameters_changed": false,
+  "runtime_change": "4 B300 vs 8 H200; hardware and distributed topology differ"
+}

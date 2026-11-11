@@ -1,0 +1,11 @@
+**原训练题目的记录与恢复边界**
+
+原启动器要求prompt_screens/math_screened_random1600_seed27115/train.json和train.parquet，manifest含1600条prompts；训练只取前320条。构建脚本来自tools/build_screened_math1600_random.py。原上游扩池含按worker完成顺序接收候选，因此seed27115不足以重新生成同一名单。
+
+已搜索当前/旧工作树、Git可达历史和本地备份；未发现原random1600/curriculum1600清单。用户确认/volume/pt-dev/users/qshan/G-OPD已不可访问。
+
+Git a9f8d8b确实保留math_teacher_seed27115_n16_0_1024的8个shard：1024个题目、206个accuracy[.125,.875]合格题，teacher revision05d82d02780d4a6f8295b2909dbbd89e8a8b5aaa。副本保存在inputs/historical-screening。它不是原random1600名单。
+
+新实验复用这些n16记录和本轮已有n8记录；新筛选只补冻结1024候选中尚未完成的回答。题目去重、排除benchmark精确重合，seed27115打乱后固定320题。最终逐题prompt hash、原始行号、teacher答对数/总数、来源及训练顺序写入runs/select320/train.jsonl。n16与n8的抽样不确定性不同，分别保留。
+
+2026-11-09补充：1024候选与历史206合格记录去重后只有274个不同题目，原select320失败保留。冻结并追加384候选至1408，总体筛选规则不变；所有先前回答复用，训练输入改为select320-v2。

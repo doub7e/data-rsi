@@ -1,0 +1,7 @@
+{
+  "source_experiment": "007-openthoughts-probe-gradient",
+  "source": "runs/loss-parity-20261105/result.json",
+  "sha256": "06504099c20d5e8e0b80d6faf045acfdd5b649989dc383b14886fb1800eaa318",
+  "verified_completed": true,
+  "note": "Reuse existing validated original training stack; this is not a new validation execution."
+}

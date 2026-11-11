@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "sft-uniform",
+  "title": "OTA重采样 · 同一checkpoint续训 · uniform · 1epoch",
+  "kind": "training",
+  "status": "planned",
+  "created_at": "2026-11-06T23:02:56.143306+00:00",
+  "tags": [
+    "environment-resampling",
+    "Qwen3-8B"
+  ],
+  "parameters": {
+    "teacher": "Qwen/Qwen3.8-27B",
+    "teacher_revision": "8c0b3d30f3ae96f5c7f774de704bf0ada83e422a",
+    "student": "Qwen/Qwen3-8B",
+    "seed": 20261107
+  },
+  "sources": {
+    "status": "runs/sft-uniform/state.json",
+    "results": "runs/sft-uniform/result.json",
+    "training_data": "runs/teacher-uniform/data/train.jsonl",
+    "metrics": "runs/sft-uniform/checkpoint/trainer_log.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "固定资源版本",
+      "path": "configs/resources.json"
+    },
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "实际训练配置",
+      "path": "runs/sft-uniform/train.yaml"
+    },
+    {
+      "label": "用户批准的存储清理记录",
+      "path": "runs/sft-uniform/storage-cleanup-20261109.json"
+    }
+  ],
+  "job": {
+    "name": "ota-rs-sft-uniform-1107",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

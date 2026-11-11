@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "image-build",
+  "title": "训练镜像构建与发布",
+  "kind": "validation",
+  "created_at": "2026-10-30T17:33:56.618022+00:00",
+  "status": "succeeded",
+  "parameters": {},
+  "results": {},
+  "notes": "镜像构建、push、digest 核验与 pip check 已通过。",
+  "tags": [],
+  "artifacts": [
+    {
+      "label": "构建报告",
+      "path": "evidence/build-report.json"
+    }
+  ],
+  "sources": {
+    "status": "runs/image-build/state.json"
+  }
+}

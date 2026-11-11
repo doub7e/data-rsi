@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "bf16-target-ad-base",
+  "title": "FD可靠性 · 全515tokens · BF16 AD surrogate 与 FD误差分离",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T02:40:33.895393+00:00",
+  "updated_at": "2026-11-08T02:40:33.895404+00:00",
+  "parameters": {
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+    "source_full_prefix": "full-prefix-base-homotopy",
+    "reference_probe_n": 1024,
+    "new_rollouts": 0,
+    "scope": "BF16 floating-point autograd surrogate; not mathematical derivative of quantization staircase",
+    "purpose": "separate target arithmetic precision from finite-h/quantized FD effects"
+  },
+  "sources": {
+    "status": "runs/bf16-target-ad-base/state.json",
+    "progress": "runs/bf16-target-ad-base/progress.json",
+    "results": "runs/bf16-target-ad-base/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "目标梯度精度对照",
+      "path": "runs/bf16-target-ad-base/result.json"
+    },
+    {
+      "label": "配置",
+      "path": "runs/bf16-target-ad-base/spec.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-targetad-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

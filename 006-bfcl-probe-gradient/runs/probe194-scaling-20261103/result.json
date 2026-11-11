@@ -1,0 +1,128 @@
+{
+  "finished_at": "2026-11-03T19:08:37.905191+00:00",
+  "analysis_device": "cpu",
+  "probe_id": "multi_turn_miss_func_194",
+  "rollouts": 128,
+  "history_protocol": "strict-v2",
+  "curve": [
+    {
+      "total_rollouts": 8,
+      "per_half": 4,
+      "successes_a": 1,
+      "successes_b": 1,
+      "norm_a": 8542.661542412965,
+      "norm_b": 7977.013274687941,
+      "dot": 2671525.0790605517,
+      "cosine": 0.03920358115710705
+    },
+    {
+      "total_rollouts": 16,
+      "per_half": 8,
+      "successes_a": 2,
+      "successes_b": 2,
+      "norm_a": 5833.423957399963,
+      "norm_b": 5816.390007285341,
+      "dot": 551188.6173792552,
+      "cosine": 0.01624512957746403
+    },
+    {
+      "total_rollouts": 32,
+      "per_half": 16,
+      "successes_a": 6,
+      "successes_b": 7,
+      "norm_a": 4461.215693767391,
+      "norm_b": 4528.157775759323,
+      "dot": 281682.73105043283,
+      "cosine": 0.013943938248143124
+    },
+    {
+      "total_rollouts": 64,
+      "per_half": 32,
+      "successes_a": 13,
+      "successes_b": 14,
+      "norm_a": 3162.418663727044,
+      "norm_b": 3409.265073202129,
+      "dot": 456594.89464069856,
+      "cosine": 0.042349756485162475
+    },
+    {
+      "total_rollouts": 128,
+      "per_half": 64,
+      "successes_a": 25,
+      "successes_b": 25,
+      "norm_a": 2208.416956847505,
+      "norm_b": 2274.2998447283376,
+      "dot": 66858.60679546237,
+      "cosine": 0.013311546931689665
+    }
+  ],
+  "final_three_partitions": [
+    {
+      "partition": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "successes_a": 25,
+      "successes_b": 25,
+      "norm_a": 2208.4169569250216,
+      "norm_b": 2274.299844679492,
+      "dot": 66858.60658590462,
+      "cosine": 0.013311546889785376
+    },
+    {
+      "partition": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "successes_a": 27,
+      "successes_b": 23,
+      "norm_a": 2373.850451410842,
+      "norm_b": 2161.1474130232937,
+      "dot": -73570.92881026994,
+      "cosine": -0.014340638621803894
+    },
+    {
+      "partition": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "successes_a": 24,
+      "successes_b": 26,
+      "norm_a": 2166.6471096725772,
+      "norm_b": 2268.397064467051,
+      "dot": 162813.68022502348,
+      "cosine": 0.033127116478573776
+    }
+  ],
+  "baseline": "Independent empirical mean reward in each half/prefix.",
+  "auxiliary_storage_recovery": "Final negative sums reconstructed as F=((1-r)P-n*g)/r from complete FP32 P64 and g64 after disk quota interrupted auxiliary serialization. Primary cosine uses stored g64 directly; first reconstructed partition is checked against it.",
+  "old_balanced8_reference_cosine": -0.0014266804162391365,
+  "limitations": [
+    "One selected probe; this is not a statement about all BFCL tasks.",
+    "Nested prefixes and the3final partitions share data; they are not independent statistical replicates.",
+    "Old8 differs in balancing, seeding and handler; use the new8-to128 curve for the controlled comparison."
+  ],
+  "metrics": {
+    "rollouts": 128,
+    "split_half_cosine_128": 0.013311546931689665,
+    "min_final_partition_cosine": -0.014340638621803894
+  }
+}

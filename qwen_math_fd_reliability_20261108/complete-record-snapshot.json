@@ -1,0 +1,317 @@
+{
+  "created_at": "2026-11-09T11:54:16.141092+00:00",
+  "user_timezone": "Europe/Zurich",
+  "report": "COMPLETE_RECORD_20261108.md",
+  "report_sha256": "4eb30f56ca1dd68bfc73707c96ef335400530da68333dd46e8a3752cf82f61c2",
+  "rewrite_reason": "Explain question, controlled comparison, observation and inference for each experiment; task inventory in appendix",
+  "training_states": {
+    "comparison": {
+      "disk_state": "planned",
+      "reported_state": "planned",
+      "progress": {}
+    },
+    "eval-base": {
+      "disk_state": "planned",
+      "reported_state": "planned",
+      "progress": {
+        "updated_at": "2026-11-08T11:52:36.187482+00:00",
+        "stage": "registered evaluation; waiting all training arms and model export",
+        "done": 0,
+        "total": 3840
+      }
+    },
+    "eval-bf16-h1em5": {
+      "disk_state": "planned",
+      "reported_state": "planned",
+      "progress": {
+        "updated_at": "2026-11-08T11:52:41.320383+00:00",
+        "stage": "registered evaluation; waiting all training arms and model export",
+        "done": 0,
+        "total": 3840
+      }
+    },
+    "eval-fp32-h1em5": {
+      "disk_state": "planned",
+      "reported_state": "planned",
+      "progress": {
+        "updated_at": "2026-11-08T11:52:45.965357+00:00",
+        "stage": "registered evaluation; waiting all training arms and model export",
+        "done": 0,
+        "total": 3840
+      }
+    },
+    "eval-fp32-h1em6": {
+      "disk_state": "planned",
+      "reported_state": "planned",
+      "progress": {
+        "updated_at": "2026-11-08T11:52:51.143336+00:00",
+        "stage": "registered evaluation; waiting all training arms and model export",
+        "done": 0,
+        "total": 3840
+      }
+    },
+    "evaluation-scorer-check": {
+      "disk_state": "succeeded",
+      "reported_state": "succeeded",
+      "progress": {
+        "done": 1,
+        "total": 1,
+        "stage": "saved validation artifact verified",
+        "updated_at": "2026-11-09T04:40:31.595504+00:00"
+      }
+    },
+    "export-smoke-training": {
+      "disk_state": "succeeded",
+      "reported_state": "succeeded",
+      "progress": {
+        "updated_at": "2026-11-08T13:39:24.840610+00:00",
+        "stage": "FP32 output shards roundtrip-verified; model export complete",
+        "done": 5,
+        "total": 5
+      }
+    },
+    "export-train-bf16-h1em5": {
+      "disk_state": "planned",
+      "reported_state": "planned",
+      "progress": {}
+    },
+    "export-train-fp32-h1em5": {
+      "disk_state": "planned",
+      "reported_state": "planned",
+      "progress": {}
+    },
+    "export-train-fp32-h1em6": {
+      "disk_state": "planned",
+      "reported_state": "planned",
+      "progress": {}
+    },
+    "prepare-data": {
+      "disk_state": "failed",
+      "reported_state": "failed",
+      "progress": {}
+    },
+    "prepare-data-extended": {
+      "disk_state": "succeeded",
+      "reported_state": "succeeded",
+      "progress": {
+        "updated_at": "2026-11-08T12:12:13.649870+00:00",
+        "stage": "source-only candidates and exact benchmark snapshots frozen",
+        "done": 640,
+        "total": 640
+      }
+    },
+    "prepare-data-selected": {
+      "disk_state": "succeeded",
+      "reported_state": "succeeded",
+      "progress": {
+        "updated_at": "2026-11-08T11:07:47.915355+00:00",
+        "stage": "source-only candidates and exact benchmark snapshots frozen",
+        "done": 384,
+        "total": 384
+      }
+    },
+    "prepare-smoke": {
+      "disk_state": "succeeded",
+      "reported_state": "succeeded",
+      "progress": {
+        "updated_at": "2026-11-08T11:19:09.113605+00:00",
+        "stage": "smoke prompts staged; not main training selection",
+        "done": 2,
+        "total": 2
+      }
+    },
+    "runtime-preflight": {
+      "disk_state": "failed",
+      "reported_state": "failed",
+      "progress": {}
+    },
+    "runtime-preflight-isolated": {
+      "disk_state": "failed",
+      "reported_state": "failed",
+      "progress": {
+        "updated_at": "2026-11-08T10:59:28.317132+00:00",
+        "stage": "production imports passed; tiny Qwen3 rollout",
+        "done": 1,
+        "total": 2
+      }
+    },
+    "runtime-preflight-native": {
+      "disk_state": "failed",
+      "reported_state": "failed",
+      "progress": {}
+    },
+    "runtime-preflight-pytorch": {
+      "disk_state": "succeeded",
+      "reported_state": "succeeded",
+      "progress": {
+        "done": 1,
+        "total": 1,
+        "stage": "saved validation artifact verified",
+        "updated_at": "2026-11-09T04:40:31.699269+00:00"
+      }
+    },
+    "screen-0": {
+      "disk_state": "failed",
+      "reported_state": "failed",
+      "progress": {}
+    },
+    "screen-0-fixed": {
+      "disk_state": "succeeded",
+      "reported_state": "succeeded",
+      "progress": {
+        "updated_at": "2026-11-08T12:38:10.316994+00:00",
+        "stage": "teacher screening responses graded; all truncations retained",
+        "done": 1536,
+        "total": 1536
+      }
+    },
+    "screen-1": {
+      "disk_state": "failed",
+      "reported_state": "failed",
+      "progress": {}
+    },
+    "screen-1-fixed": {
+      "disk_state": "succeeded",
+      "reported_state": "succeeded",
+      "progress": {
+        "updated_at": "2026-11-08T12:36:03.392543+00:00",
+        "stage": "teacher screening responses graded; all truncations retained",
+        "done": 1536,
+        "total": 1536
+      }
+    },
+    "screen-extra-0": {
+      "disk_state": "cancelled",
+      "reported_state": "cancelled",
+      "progress": {
+        "updated_at": "2026-11-08T13:09:18.677470+00:00",
+        "stage": "cancelled unused tail; all published data retained; selected80prompts already verified",
+        "done": 384,
+        "total": 1024
+      }
+    },
+    "screen-extra-1": {
+      "disk_state": "cancelled",
+      "reported_state": "cancelled",
+      "progress": {
+        "updated_at": "2026-11-08T13:09:19.040967+00:00",
+        "stage": "cancelled unused tail; all published data retained; selected80prompts already verified",
+        "done": 448,
+        "total": 1024
+      }
+    },
+    "select-training": {
+      "disk_state": "cancelled",
+      "reported_state": "cancelled",
+      "progress": {}
+    },
+    "select-training-fixed": {
+      "disk_state": "succeeded",
+      "reported_state": "succeeded",
+      "progress": {
+        "updated_at": "2026-11-08T13:01:57.479272+00:00",
+        "stage": "identical80-prompt stream verified; unseen tail provably cannot change membership",
+        "done": 80,
+        "total": 80
+      }
+    },
+    "smoke-training": {
+      "disk_state": "failed",
+      "reported_state": "failed",
+      "progress": {
+        "updated_at": "2026-11-08T11:22:58.859466+00:00",
+        "stage": "launching production trainer; rolloutN64, clipping1,sigmoid3s",
+        "done": 0,
+        "total": 1
+      }
+    },
+    "smoke-training-eager": {
+      "disk_state": "failed",
+      "reported_state": "failed",
+      "progress": {
+        "updated_at": "2026-11-08T11:31:07.519492+00:00",
+        "stage": "launching production trainer; rolloutN64, clipping1,sigmoid3s",
+        "done": 0,
+        "total": 1
+      }
+    },
+    "smoke-training-h200": {
+      "disk_state": "failed",
+      "reported_state": "failed",
+      "progress": {
+        "updated_at": "2026-11-08T11:41:00.045916+00:00",
+        "stage": "launching production trainer; rolloutN64, clipping1,sigmoid3s",
+        "done": 0,
+        "total": 1
+      }
+    },
+    "train-bf16-h1em5": {
+      "disk_state": "failed",
+      "reported_state": "failed",
+      "progress": {
+        "updated_at": "2026-11-08T16:19:46.679001+00:00",
+        "stage": "production OPD training steps; separate evaluation follows",
+        "done": 2,
+        "total": 5
+      }
+    },
+    "train-fp32-h1em5": {
+      "disk_state": "cancelled",
+      "reported_state": "cancelled",
+      "progress": {}
+    },
+    "train-fp32-h1em6": {
+      "disk_state": "cancelled",
+      "reported_state": "cancelled",
+      "progress": {}
+    },
+    "train8-bf16-h1em5": {
+      "disk_state": "queued",
+      "reported_state": "failed（集群核实；本地仍queued）",
+      "progress": {
+        "updated_at": "2026-11-09T00:06:58.966407+00:00",
+        "stage": "registered8xH200; long-sequence memory gate before first update",
+        "done": 0,
+        "total": 5
+      }
+    },
+    "train8-fp32-h1em5": {
+      "disk_state": "planned",
+      "reported_state": "planned",
+      "progress": {
+        "updated_at": "2026-11-09T00:07:08.434333+00:00",
+        "stage": "registered8xH200; long-sequence memory gate before first update",
+        "done": 0,
+        "total": 5
+      }
+    },
+    "train8-fp32-h1em6": {
+      "disk_state": "planned",
+      "reported_state": "planned",
+      "progress": {
+        "updated_at": "2026-11-09T00:07:14.545300+00:00",
+        "stage": "registered8xH200; long-sequence memory gate before first update",
+        "done": 0,
+        "total": 5
+      }
+    },
+    "verify-smoke-checkpoint": {
+      "disk_state": "succeeded",
+      "reported_state": "succeeded",
+      "progress": {
+        "updated_at": "2026-11-08T12:02:18.534569+00:00",
+        "stage": "existing update/checkpoint/rollouts verified; repaired logger tested separately",
+        "done": 1,
+        "total": 1
+      }
+    }
+  },
+  "cluster_observation": {
+    "train8-bf16-h1em5": {
+      "state": "Failed",
+      "finished_at": "2026-11-09T05:14:42Z",
+      "reason": "Disk quota exceeded before training, during runtime.json/log write"
+    }
+  },
+  "training_state_correction_recorded_at": "2026-11-09T11:54:55.720708+00:00"
+}

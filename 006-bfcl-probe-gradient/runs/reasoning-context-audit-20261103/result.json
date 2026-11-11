@@ -1,0 +1,430 @@
+{
+  "finished_at": "2026-11-03T14:48:21.886411+00:00",
+  "elapsed_seconds": 5.419611928984523,
+  "counts": {
+    "rollouts": 256,
+    "calls": 2535,
+    "calls_with_history": 2279,
+    "history_assistant_messages": 12842,
+    "nonempty_history_think_blocks": 0,
+    "unclosed_history_think_blocks": 148,
+    "calls_with_history_think": 148,
+    "calls_with_think_delimiters_in_prompt_tokens": 148,
+    "calls_with_prior_reasoning_token_prefix": 3,
+    "sampled_tokenizer_roundtrips": 32,
+    "sampled_prompt_id_mismatches": 0,
+    "sampled_prompt_decode_mismatches": 0,
+    "history_tokens_in_loss": 0,
+    "completion_tokens_in_loss": 1758213
+  },
+  "nonzero_advantage_calls": 1183,
+  "nonzero_advantage_history_leak_calls": 21,
+  "examples": [
+    {
+      "id": "multi_turn_base_36",
+      "repeat": 1,
+      "step": 9,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let's see. The user wants to archive the 'project_summary.txt' by copying it into the archive folder and renaming it to 'summary_2024.txt'. \n\nFirst, I tried using the cp command to copy 'project_summary.txt' to 'archive/summary_2024.txt', but got an error about invalid destination path"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_base_36",
+      "repeat": 1,
+      "step": 10,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let's see. The user wants to archive the 'project_summary.txt' by copying it into the archive folder and renaming it to 'summary_2024.txt'. \n\nFirst, I tried using the cp command to copy 'project_summary.txt' to 'archive/summary_2024.txt', but got an error about invalid destination path"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_base_36",
+      "repeat": 1,
+      "step": 11,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let's see. The user wants to archive the 'project_summary.txt' by copying it into the archive folder and renaming it to 'summary_2024.txt'. \n\nFirst, I tried using the cp command to copy 'project_summary.txt' to 'archive/summary_2024.txt', but got an error about invalid destination path"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_base_36",
+      "repeat": 1,
+      "step": 12,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let's see. The user wants to archive the 'project_summary.txt' by copying it into the archive folder and renaming it to 'summary_2024.txt'. \n\nFirst, I tried using the cp command to copy 'project_summary.txt' to 'archive/summary_2024.txt', but got an error about invalid destination path"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_base_36",
+      "repeat": 1,
+      "step": 13,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let's see. The user wants to archive the 'project_summary.txt' by copying it into the archive folder and renaming it to 'summary_2024.txt'. \n\nFirst, I tried using the cp command to copy 'project_summary.txt' to 'archive/summary_2024.txt', but got an error about invalid destination path"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_base_36",
+      "repeat": 1,
+      "step": 14,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let's see. The user wants to archive the 'project_summary.txt' by copying it into the archive folder and renaming it to 'summary_2024.txt'. \n\nFirst, I tried using the cp command to copy 'project_summary.txt' to 'archive/summary_2024.txt', but got an error about invalid destination path"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_base_36",
+      "repeat": 1,
+      "step": 15,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let's see. The user wants to archive the 'project_summary.txt' by copying it into the archive folder and renaming it to 'summary_2024.txt'. \n\nFirst, I tried using the cp command to copy 'project_summary.txt' to 'archive/summary_2024.txt', but got an error about invalid destination path"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_base_36",
+      "repeat": 1,
+      "step": 16,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let's see. The user wants to archive the 'project_summary.txt' by copying it into the archive folder and renaming it to 'summary_2024.txt'. \n\nFirst, I tried using the cp command to copy 'project_summary.txt' to 'archive/summary_2024.txt', but got an error about invalid destination path"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_base_36",
+      "repeat": 1,
+      "step": 17,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let's see. The user wants to archive the 'project_summary.txt' by copying it into the archive folder and renaming it to 'summary_2024.txt'. \n\nFirst, I tried using the cp command to copy 'project_summary.txt' to 'archive/summary_2024.txt', but got an error about invalid destination path"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_base_36",
+      "repeat": 1,
+      "step": 18,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let's see. The user wants to archive the 'project_summary.txt' by copying it into the archive folder and renaming it to 'summary_2024.txt'. \n\nFirst, I tried using the cp command to copy 'project_summary.txt' to 'archive/summary_2024.txt', but got an error about invalid destination path"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_base_36",
+      "repeat": 1,
+      "step": 19,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let's see. The user wants to archive the 'project_summary.txt' by copying it into the archive folder and renaming it to 'summary_2024.txt'. \n\nFirst, I tried using the cp command to copy 'project_summary.txt' to 'archive/summary_2024.txt', but got an error about invalid destination path"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_base_36",
+      "repeat": 1,
+      "step": 20,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let's see. The user wants to archive the 'project_summary.txt' by copying it into the archive folder and renaming it to 'summary_2024.txt'. \n\nFirst, I tried using the cp command to copy 'project_summary.txt' to 'archive/summary_2024.txt', but got an error about invalid destination path"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_miss_func_45",
+      "repeat": 1,
+      "step": 6,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let me try to figure out what's going on here. The user wants to copy a file called summary_draft.docx into the ResearchDocs directory and name it ultimate_draft.docx. But when I tried using the cp tool, it gave an error saying the file wasn't found. Hmm.\n\nFirst, I should check if the "
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_miss_func_45",
+      "repeat": 1,
+      "step": 7,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let me try to figure out what's going on here. The user wants to copy a file called summary_draft.docx into the ResearchDocs directory and name it ultimate_draft.docx. But when I tried using the cp tool, it gave an error saying the file wasn't found. Hmm.\n\nFirst, I should check if the "
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_miss_func_45",
+      "repeat": 1,
+      "step": 8,
+      "advantage": 0.0,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, let me try to figure out what's going on here. The user wants to copy a file called summary_draft.docx into the ResearchDocs directory and name it ultimate_draft.docx. But when I tried using the cp tool, it gave an error saying the file wasn't found. Hmm.\n\nFirst, I should check if the "
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_miss_func_48",
+      "repeat": 1,
+      "step": 4,
+      "advantage": 0.375,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, the user is asking for the character count of all text files with \"test\" in their names. Let me see.\n\nFirst, I need to figure out which files in the current directory have \"test\" in their names. The user mentioned the \"test\" directory, which we previously checked and found test_file1.t"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_miss_func_48",
+      "repeat": 1,
+      "step": 5,
+      "advantage": 0.375,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, the user is asking for the character count of all text files with \"test\" in their names. Let me see.\n\nFirst, I need to figure out which files in the current directory have \"test\" in their names. The user mentioned the \"test\" directory, which we previously checked and found test_file1.t"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_miss_func_48",
+      "repeat": 1,
+      "step": 6,
+      "advantage": 0.375,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, the user is asking for the character count of all text files with \"test\" in their names. Let me see.\n\nFirst, I need to figure out which files in the current directory have \"test\" in their names. The user mentioned the \"test\" directory, which we previously checked and found test_file1.t"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_miss_func_48",
+      "repeat": 1,
+      "step": 7,
+      "advantage": 0.375,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, the user is asking for the character count of all text files with \"test\" in their names. Let me see.\n\nFirst, I need to figure out which files in the current directory have \"test\" in their names. The user mentioned the \"test\" directory, which we previously checked and found test_file1.t"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    },
+    {
+      "id": "multi_turn_miss_func_48",
+      "repeat": 1,
+      "step": 8,
+      "advantage": 0.375,
+      "nonempty_history_blocks": [],
+      "unclosed_history_blocks": [
+        "<think>\nOkay, the user is asking for the character count of all text files with \"test\" in their names. Let me see.\n\nFirst, I need to figure out which files in the current directory have \"test\" in their names. The user mentioned the \"test\" directory, which we previously checked and found test_file1.t"
+      ],
+      "prior_prefix_matches": 0,
+      "sampled_ids_match": null,
+      "sampled_decode_match": null
+    }
+  ],
+  "length_diagnostics": {
+    "mixed_questions": 15,
+    "mixed_questions_failures_longer": 10,
+    "mixed_success_mean_output_tokens": 5352.560606060606,
+    "mixed_failure_mean_output_tokens": 8307.444444444445,
+    "mean_within_question_failure_minus_success_tokens": 1144.8433333333332,
+    "length_stop_calls": 32
+  },
+  "within_question_lengths": [
+    {
+      "id": "multi_turn_base_13",
+      "success_tokens_mean": 4427.857142857143,
+      "failure_tokens_mean": 9206,
+      "success_calls_mean": 5.571428571428571,
+      "failure_calls_mean": 7,
+      "advantage_weighted_tokens": -522.609375
+    },
+    {
+      "id": "multi_turn_base_130",
+      "success_tokens_mean": 4728.571428571428,
+      "failure_tokens_mean": 3196,
+      "success_calls_mean": 13.285714285714286,
+      "failure_calls_mean": 12,
+      "advantage_weighted_tokens": 167.625
+    },
+    {
+      "id": "multi_turn_base_157",
+      "success_tokens_mean": 3003.5,
+      "failure_tokens_mean": 3683,
+      "success_calls_mean": 6.166666666666667,
+      "failure_calls_mean": 6.5,
+      "advantage_weighted_tokens": -127.40625
+    },
+    {
+      "id": "multi_turn_base_158",
+      "success_tokens_mean": 2867.5,
+      "failure_tokens_mean": 3082,
+      "success_calls_mean": 7.166666666666667,
+      "failure_calls_mean": 5.5,
+      "advantage_weighted_tokens": -40.21875
+    },
+    {
+      "id": "multi_turn_base_179",
+      "success_tokens_mean": 6929,
+      "failure_tokens_mean": 7583,
+      "success_calls_mean": 9.714285714285714,
+      "failure_calls_mean": 9,
+      "advantage_weighted_tokens": -71.53125
+    },
+    {
+      "id": "multi_turn_base_22",
+      "success_tokens_mean": 4487,
+      "failure_tokens_mean": 9373.666666666666,
+      "success_calls_mean": 11,
+      "failure_calls_mean": 12.166666666666666,
+      "advantage_weighted_tokens": -916.25
+    },
+    {
+      "id": "multi_turn_base_41",
+      "success_tokens_mean": 9242,
+      "failure_tokens_mean": 15162,
+      "success_calls_mean": 12,
+      "failure_calls_mean": 10.571428571428571,
+      "advantage_weighted_tokens": -647.5
+    },
+    {
+      "id": "multi_turn_base_45",
+      "success_tokens_mean": 3335.1666666666665,
+      "failure_tokens_mean": 3197,
+      "success_calls_mean": 5.666666666666667,
+      "failure_calls_mean": 4,
+      "advantage_weighted_tokens": 25.90625
+    },
+    {
+      "id": "multi_turn_base_65",
+      "success_tokens_mean": 5334,
+      "failure_tokens_mean": 4950.2,
+      "success_calls_mean": 7.333333333333333,
+      "failure_calls_mean": 4.2,
+      "advantage_weighted_tokens": 89.953125
+    },
+    {
+      "id": "multi_turn_miss_func_164",
+      "success_tokens_mean": 7851,
+      "failure_tokens_mean": 8309.4,
+      "success_calls_mean": 11.666666666666666,
+      "failure_calls_mean": 11,
+      "advantage_weighted_tokens": -107.4375
+    },
+    {
+      "id": "multi_turn_miss_func_194",
+      "success_tokens_mean": 7594.75,
+      "failure_tokens_mean": 7703.5,
+      "success_calls_mean": 14.25,
+      "failure_calls_mean": 13,
+      "advantage_weighted_tokens": -27.1875
+    },
+    {
+      "id": "multi_turn_miss_func_48",
+      "success_tokens_mean": 7481.2,
+      "failure_tokens_mean": 10830.333333333334,
+      "success_calls_mean": 8.4,
+      "failure_calls_mean": 10.666666666666666,
+      "advantage_weighted_tokens": -784.953125
+    },
+    {
+      "id": "multi_turn_miss_func_80",
+      "success_tokens_mean": 10751,
+      "failure_tokens_mean": 11144.42857142857,
+      "success_calls_mean": 18,
+      "failure_calls_mean": 17.857142857142858,
+      "advantage_weighted_tokens": -43.03125
+    },
+    {
+      "id": "multi_turn_miss_param_189",
+      "success_tokens_mean": 6294.666666666667,
+      "failure_tokens_mean": 4962.5,
+      "success_calls_mean": 10.166666666666666,
+      "failure_calls_mean": 8,
+      "advantage_weighted_tokens": 249.78125
+    },
+    {
+      "id": "multi_turn_miss_param_52",
+      "success_tokens_mean": 5679.5,
+      "failure_tokens_mean": 4796.333333333333,
+      "success_calls_mean": 11.5,
+      "failure_calls_mean": 11.5,
+      "advantage_weighted_tokens": 165.59375
+    }
+  ],
+  "ranking_pearson_correlations": {
+    "steps": 0.26469300444627913,
+    "input_tokens": 0.2996358579840452,
+    "target_tokens": 0.14239600677919867,
+    "gradient_norm": 0.2539860575782875,
+    "mean_turn_nll": 0.0785477082287368
+  },
+  "scope": "All2535 recorded prompt texts and token-ID delimiter/prefix checks; 32 sampled tokenizer roundtrips; exact selector mask boundary. No model execution or all-call retokenization.",
+  "limitation": "Cannot semantically identify all untagged reasoning. Length associations do not establish the cause of negative cosine. RunAI full retokenization job could not be submitted because credentials expired.",
+  "gradient_source_sha256": "e9a86edc5cff22cd16c96766f7d92fdeb841389c89391c71445d28fb76a90853",
+  "metrics": {
+    "audited_calls": 2535,
+    "history_reasoning_calls": 148,
+    "sampled_prompt_id_mismatches": 0,
+    "history_tokens_in_loss": 0
+  }
+}

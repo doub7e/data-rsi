@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "008-openthoughts-easier-probes",
+  "title": "OTA · 原始Qwen3-8B · 简单任务probe梯度",
+  "description": "六题独立筛查，三题新采样；训练loss对齐的reward gradient与成功失败分解",
+  "tags": [
+    "OpenThoughts-Agent",
+    "base",
+    "Qwen3-8B",
+    "easy-tasks",
+    "reward-gradient"
+  ],
+  "created_at": "2026-11-05T22:13:03.665288+00:00"
+}

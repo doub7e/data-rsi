@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "q1d-k008-train-20261105",
+  "title": "Q1 · Base · DOT · K8 · 训练",
+  "kind": "training",
+  "status": "planned",
+  "created_at": "2026-11-04T23:54:40.683270+00:00",
+  "sources": {
+    "status": "runs/q1d-k008-train-20261105/state.json",
+    "results": "runs/q1d-k008-train-20261105/result.json",
+    "metrics": "runs/q1d-k008-train-20261105/checkpoint/trainer_log.jsonl",
+    "training_data": "runs/q1d-k008-train-20261105/data/train.jsonl"
+  },
+  "parameters": {
+    "epochs": 2,
+    "learning_rate": 5e-06,
+    "batch_size": 32,
+    "micro_batch": 1,
+    "gradient_accumulation": 16,
+    "gpus": 2,
+    "cutoff": 16384,
+    "seed": 42,
+    "initialization": "original Qwen3-4B, never random100 continuation",
+    "save_steps": 20,
+    "save_total_limit": 1,
+    "completed_resume_checkpoint_policy": "After final exported weights are verified, remove only this new run checkpoint-* resume copies; retain final weights, logs and trainer state. Record cleanup.",
+    "data_rows": 100,
+    "expanded_rows": 1940,
+    "sampling": "dot_top100"
+  },
+  "artifacts": [
+    {
+      "label": "Frozen study protocol",
+      "path": "runs/q1-dot-20261105/protocol.json"
+    },
+    {
+      "label": "Selection audit",
+      "path": "runs/q1d-k008-train-20261105/data/audit.json"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "q1d-k008-train-1105",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "tags": [
+    "Q1",
+    "base",
+    "dot",
+    "K8",
+    "top100"
+  ]
+}

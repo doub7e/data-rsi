@@ -1,0 +1,14 @@
+{
+  "finished_at": "2026-11-07T17:38:47.864195+00:00",
+  "task": "be77281a-bd55-4a6e-8481-6dd04f29",
+  "gradient_file": "runs/probe-question-b789784dfa/question-gradient.pt",
+  "data_sha256": "8e047d6b4f7dee57bbdbe3f61d307a24809a9202a547504de91e94b6e7f4d401",
+  "forward_precision": "training_bf16",
+  "gradient_accumulation": "FP32",
+  "global_question_average_applied": false,
+  "metrics": {
+    "rollouts": 32,
+    "probe_question_norm": 0.06051613134951474,
+    "target_tokens": 1054273
+  }
+}

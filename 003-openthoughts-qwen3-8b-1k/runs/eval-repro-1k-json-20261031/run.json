@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "eval-repro-1k-json-20261031",
+  "title": "Qwen3-8B · 1K JSON 评测",
+  "kind": "evaluation",
+  "created_at": "2026-10-31T10:52:26.401825+00:00",
+  "status": "planned",
+  "parameters": {
+    "training_run": "repro-1k-4gpu-20261031",
+    "inference_gpus": 4,
+    "inference_node_pool": "h200",
+    "tensor_parallel_size": 4,
+    "sandbox_backend": "Daytona",
+    "benchmarks": {
+      "swebench100": 100,
+      "tblite": 100,
+      "tb2": 89
+    },
+    "repeats": 3,
+    "total_trials": 867,
+    "planned_concurrency": {
+      "swebench100": 2,
+      "tblite": 1,
+      "tb2": 1
+    },
+    "max_context": 32768,
+    "max_output_tokens": 16384,
+    "temperature": 0.6,
+    "served_model_name": "ota-qwen3-8b-1k",
+    "model_readiness": "passed",
+    "daytona_serialization": "workspace file lock",
+    "parser": "json",
+    "supersedes": "eval-repro-1k-20261031",
+    "real_swe_format_validation": {
+      "passed": true,
+      "agent_steps": 39,
+      "parse_errors": 0,
+      "executed_steps": 29,
+      "diagnostic_only": true,
+      "agent_timeout_sec": 120,
+      "verifier_disabled": true
+    }
+  },
+  "results": {},
+  "notes": "SWE已改用与训练数据匹配的JSON parser。真实astropy SWE任务120秒诊断：39轮agent交互、29轮执行命令、0解析错误；诊断不计分。完整867次评测已重新开始，旧XML轮次保留并标为无效。",
+  "sources": {
+    "status": "runs/eval-repro-1k-json-20261031/state.json",
+    "metrics": "runs/eval-repro-1k-json-20261031/metrics.jsonl",
+    "results": "runs/eval-repro-1k-json-20261031/result.json",
+    "trajectories": "runs/eval-repro-1k-json-20261031/jobs",
+    "evaluation_plan": "runs/eval-repro-1k-json-20261031/evaluation-plan.json"
+  },
+  "artifacts": [
+    {
+      "label": "评测配置",
+      "path": "eval/harbor-template.json"
+    },
+    {
+      "label": "修正原因",
+      "path": "runs/eval-repro-1k-20261031/parser-mismatch.json"
+    },
+    {
+      "label": "真实SWE格式验证",
+      "path": "runs/eval-repro-1k-json-20261031/swe-format-probe.json"
+    },
+    {
+      "label": "协议修正记录",
+      "path": "runs/eval-repro-1k-json-20261031/protocol-correction.json"
+    }
+  ],
+  "job": {
+    "name": "ota-daytona-1k-json-eval-1031",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  },
+  "serving_job": {
+    "name": "ota-qwen3-8b-1k-eval-1031",
+    "namespace": "runai-cvlab-shuli",
+    "gpus": 4,
+    "node_pool": "h200"
+  }
+}

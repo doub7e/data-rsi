@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "select320",
+  "title": "优先FP32-20 · 核验历史题目hash并冻结320个不同题及顺序",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-09T18:38:09.917472+00:00",
+  "tags": [
+    "priority1",
+    "FP32",
+    "20step"
+  ],
+  "parameters": {
+    "protocol": "protocol.json",
+    "priority": 1,
+    "gpus": 0,
+    "steps": null,
+    "fd_precision": "fp32",
+    "h_rel": 1e-05,
+    "sigmoid": "sigmoid(3s)",
+    "fallback": 0,
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "data_pool": "new320; original1600 unavailable"
+  },
+  "sources": {
+    "status": "runs/select320/state.json",
+    "progress": "runs/select320/progress.json",
+    "results": "runs/select320/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "完整协议",
+      "path": "protocol.json"
+    },
+    {
+      "label": "result.json",
+      "path": "runs/select320/result.json"
+    },
+    {
+      "label": "train.parquet",
+      "path": "runs/select320/train.parquet"
+    },
+    {
+      "label": "train.jsonl",
+      "path": "runs/select320/train.jsonl"
+    },
+    {
+      "label": "题目记录与原清单缺失的证据",
+      "path": "DATA_PROVENANCE.md"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "opd-p20-select-1109a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

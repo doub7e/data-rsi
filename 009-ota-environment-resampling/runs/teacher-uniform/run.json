@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "teacher-uniform",
+  "title": "OTA重采样 · 每环境再一条 · uniform第二批",
+  "kind": "evaluation",
+  "status": "planned",
+  "created_at": "2026-11-06T23:02:56.111382+00:00",
+  "tags": [
+    "environment-resampling",
+    "Qwen3-8B"
+  ],
+  "parameters": {
+    "teacher": "Qwen/Qwen3.8-27B",
+    "teacher_revision": "8c0b3d30f3ae96f5c7f774de704bf0ada83e422a",
+    "student": "Qwen/Qwen3-8B",
+    "seed": 20261107,
+    "planned_rollouts": 728,
+    "served_model": "ota-resample-teacher"
+  },
+  "sources": {
+    "status": "runs/teacher-uniform/state.json",
+    "results": "runs/teacher-uniform/result.json",
+    "progress": "runs/teacher-uniform/progress.json",
+    "trajectories": "runs/teacher-uniform/jobs",
+    "evaluation_plan": "runs/teacher-uniform/evaluation-plan.json",
+    "training_data": "runs/teacher-uniform/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "固定资源版本",
+      "path": "configs/resources.json"
+    },
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    }
+  ],
+  "job": {
+    "name": "ota-rs-teacher-uniform-1107",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

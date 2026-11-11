@@ -1,0 +1,130 @@
+{
+  "gpu_sampling": {
+    "0": {
+      "samples": 90,
+      "utilization.gpu [%]": {
+        "mean": 99.84,
+        "min": 93.0,
+        "max": 100.0
+      },
+      "memory.used [MiB]": {
+        "mean": 56169.0,
+        "min": 56169.0,
+        "max": 56169.0
+      },
+      "power.draw [W]": {
+        "mean": 461.55,
+        "min": 194.19,
+        "max": 689.25
+      },
+      "clocks.current.sm [MHz]": {
+        "mean": 1908.83,
+        "min": 1455.0,
+        "max": 1980.0
+      }
+    },
+    "1": {
+      "samples": 90,
+      "utilization.gpu [%]": {
+        "mean": 99.9,
+        "min": 94.0,
+        "max": 100.0
+      },
+      "memory.used [MiB]": {
+        "mean": 56329.0,
+        "min": 56329.0,
+        "max": 56329.0
+      },
+      "power.draw [W]": {
+        "mean": 441.47,
+        "min": 190.07,
+        "max": 686.81
+      },
+      "clocks.current.sm [MHz]": {
+        "mean": 1904.0,
+        "min": 1530.0,
+        "max": 1980.0
+      }
+    },
+    "2": {
+      "samples": 90,
+      "utilization.gpu [%]": {
+        "mean": 99.9,
+        "min": 94.0,
+        "max": 100.0
+      },
+      "memory.used [MiB]": {
+        "mean": 56627.0,
+        "min": 56627.0,
+        "max": 56627.0
+      },
+      "power.draw [W]": {
+        "mean": 459.74,
+        "min": 217.39,
+        "max": 691.77
+      },
+      "clocks.current.sm [MHz]": {
+        "mean": 1894.17,
+        "min": 1440.0,
+        "max": 1980.0
+      }
+    },
+    "3": {
+      "samples": 90,
+      "utilization.gpu [%]": {
+        "mean": 99.9,
+        "min": 98.0,
+        "max": 100.0
+      },
+      "memory.used [MiB]": {
+        "mean": 56113.0,
+        "min": 56113.0,
+        "max": 56113.0
+      },
+      "power.draw [W]": {
+        "mean": 533.81,
+        "min": 197.36,
+        "max": 694.21
+      },
+      "clocks.current.sm [MHz]": {
+        "mean": 1834.33,
+        "min": 1425.0,
+        "max": 1980.0
+      }
+    }
+  },
+  "latest_progress": {
+    "current_steps": 152,
+    "total_steps": 735,
+    "loss": 0.2931,
+    "lr": 3.867557990181482e-05,
+    "epoch": 1.4512,
+    "percentage": 20.68,
+    "elapsed_time": "5:32:49",
+    "remaining_time": "21:16:34"
+  },
+  "recent_30_step_median_sec": 128.0,
+  "slowest_steps": [
+    {
+      "step": 101,
+      "seconds": 218.0
+    },
+    {
+      "step": 31,
+      "seconds": 158.0
+    },
+    {
+      "step": 136,
+      "seconds": 157.0
+    },
+    {
+      "step": 102,
+      "seconds": 150.0
+    },
+    {
+      "step": 53,
+      "seconds": 148.0
+    }
+  ],
+  "interpretation": "High device utilization and power with NVLink connectivity; no obvious prolonged GPU idleness in this sample. Device utilization is not a measurement of model FLOP utilization. Memory measurements are sampled, not an instrumented allocator peak."
+}

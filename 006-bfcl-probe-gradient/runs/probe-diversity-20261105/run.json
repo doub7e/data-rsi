@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "probe-diversity-20261105",
+  "title": "BFCL · Base · 8题 probe梯度稳定性",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-05T10:16:24.533898+00:00",
+  "sources": {
+    "status": "runs/probe-diversity-20261105/state.json",
+    "results": "runs/probe-diversity-20261105/result.json",
+    "progress": "runs/probe-diversity-20261105/progress.json"
+  },
+  "tags": [
+    "base",
+    "BFCL",
+    "probe-diversity",
+    "split-half"
+  ],
+  "parameters": {
+    "questions": 8,
+    "rollouts_per_question": 128,
+    "total_rollouts": 1024,
+    "primary_gradient": "all tokens including reasoning"
+  },
+  "artifacts": [
+    {
+      "label": "Frozen diagnostic protocol",
+      "path": "runs/probe-diversity-20261105/protocol.json"
+    },
+    {
+      "label": "诊断设计与执行协议",
+      "path": "runs/probe-diversity-20261105/PROTOCOL.md"
+    },
+    {
+      "label": "8题任务内容与环境",
+      "path": "runs/probe-diversity-20261105/question-content.json"
+    },
+    {
+      "label": "分析报告",
+      "path": "runs/probe-diversity-20261105/REPORT.md"
+    },
+    {
+      "label": "完整统计",
+      "path": "runs/probe-diversity-20261105/result.json"
+    },
+    {
+      "label": "对比图",
+      "path": "runs/probe-diversity-20261105/comparison.png"
+    }
+  ]
+}

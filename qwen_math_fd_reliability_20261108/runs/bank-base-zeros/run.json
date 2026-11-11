@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "bank-base-zeros",
+  "title": "FD可靠性 · Base · 不可数零和题 · 2048 probes +16 targets",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T00:51:18.938667+00:00",
+  "updated_at": "2026-11-08T00:51:18.938678+00:00",
+  "parameters": {
+    "image": "vllm/vllm-openai@sha256:6ee133356d49ed24cee03dd0cda3d3980279a11c107ce3e752c89e76540f41c9",
+    "model": "/scratch/cvlab/home/shuli/.cache/huggingface/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
+    "checkpoint_scope": "Base or explicitly auxiliary MOPD; not bestN64trained checkpoint",
+    "physical_row": 39906,
+    "probe_responses": 2048,
+    "target_responses": 16,
+    "seed_start": 681160000,
+    "dtype": "bfloat16",
+    "max_tokens": 16384,
+    "selection": "frozen before this run outcomes; no correctness filtering",
+    "generation_chunk_size": 128,
+    "max_num_seqs": 128
+  },
+  "sources": {
+    "status": "runs/bank-base-zeros/state.json",
+    "progress": "runs/bank-base-zeros/progress.json",
+    "results": "runs/bank-base-zeros/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结生成协议",
+      "path": "runs/bank-base-zeros/bank/manifest.json"
+    },
+    {
+      "label": "题目",
+      "path": "runs/bank-base-zeros/bank/row_00039906/prompt.json"
+    },
+    {
+      "label": "完成统计",
+      "path": "runs/bank-base-zeros/bank/row_00039906/complete.json"
+    },
+    {
+      "label": "依赖/词表/编码检查",
+      "path": "runs/bank-base-zeros/tokenization-preflight.json"
+    },
+    {
+      "label": "首个 seed 的真实 probe 样本（原始评分）",
+      "path": "runs/bank-base-zeros/first_probe_sample.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-bank-base-p2-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

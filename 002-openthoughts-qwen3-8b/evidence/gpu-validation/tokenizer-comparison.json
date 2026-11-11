@@ -1,0 +1,9 @@
+{
+  "pre_tokenizer_identical": true,
+  "model_identical": true,
+  "normalizer_identical": true,
+  "decoder_identical": true,
+  "test_strings": 4,
+  "raw_token_ids_identical": true,
+  "scope": "CPU tokenizer JSON and raw encoding comparison; does not assert saved inference chat template equals original template."
+}

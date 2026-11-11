@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "weighted-base-homotopy-n32",
+  "title": "FD可靠性 · Base同伦题 · N32 BF16 probe · 子集加权梯度",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T01:16:59.324155+00:00",
+  "updated_at": "2026-11-08T01:16:59.324168+00:00",
+  "parameters": {
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+    "source_audit": "audit-base-homotopy",
+    "scope": "follow-up numerical diagnostic; no training or accuracy claim",
+    "reason": "Initial BF16 high correlation masks score-scale error; test full-prefix/subset-gradient/hardware robustness"
+  },
+  "sources": {
+    "status": "runs/weighted-base-homotopy-n32/state.json",
+    "progress": "runs/weighted-base-homotopy-n32/progress.json",
+    "results": "runs/weighted-base-homotopy-n32/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "结果",
+      "path": "runs/weighted-base-homotopy-n32/result.json"
+    },
+    {
+      "label": "执行配置",
+      "path": "runs/weighted-base-homotopy-n32/spec.json"
+    },
+    {
+      "label": "源码清单",
+      "path": "runs/weighted-base-homotopy-n32/source/source-manifest.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-weight-p1n32-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "verified_at": "2026-11-08T13:41:26.367980+00:00",
+  "checks": [
+    {
+      "run": "runtime-preflight-pytorch",
+      "path": "runs/runtime-preflight-pytorch/sample.json",
+      "download_matches_disk": true,
+      "sha256": "ac089226867dbbac5a7681b87978594e682f3a32e97b5e1ee69b1adf022800ee",
+      "preview_truncated": false,
+      "downloaded_json_parses": true,
+      "preview_matches_disk": true
+    },
+    {
+      "run": "screen-0-fixed",
+      "path": "runs/screen-0-fixed/sample.json",
+      "download_matches_disk": true,
+      "sha256": "0caa56d703f970c2f0a3761d000dfcbef13546b26067945165041419d5d9497b",
+      "preview_truncated": false,
+      "downloaded_json_parses": true,
+      "preview_matches_disk": true
+    },
+    {
+      "run": "screen-1-fixed",
+      "path": "runs/screen-1-fixed/sample.json",
+      "download_matches_disk": true,
+      "sha256": "1a479c95da8233852b9f90d43302b6c9ed79344b14784ea59290caca3c369962",
+      "preview_truncated": false,
+      "downloaded_json_parses": true,
+      "preview_matches_disk": true
+    },
+    {
+      "run": "screen-extra-0",
+      "path": "runs/screen-extra-0/sample.json",
+      "download_matches_disk": true,
+      "sha256": "745c5ea0a890626ebf7ac25b087b2108674393df7aa48cab04de8d7bf2278ec9",
+      "preview_truncated": false,
+      "downloaded_json_parses": true,
+      "preview_matches_disk": true
+    },
+    {
+      "run": "screen-extra-1",
+      "path": "runs/screen-extra-1/sample.json",
+      "download_matches_disk": true,
+      "sha256": "c9bb2a0b82bf8e1c15bd1470ef586af90ba72285a8203020a028b0a625cbe3ad",
+      "preview_truncated": false,
+      "downloaded_json_parses": true,
+      "preview_matches_disk": true
+    },
+    {
+      "run": "verify-smoke-checkpoint",
+      "path": "runs/verify-smoke-checkpoint/sample.json",
+      "download_matches_disk": true,
+      "sha256": "b4f43be568d6d4e04bba8bc8a56f76ecfb89a817d74cc725b800a63d3e8f7cb8",
+      "preview_truncated": false,
+      "downloaded_json_parses": true,
+      "preview_matches_disk": true
+    }
+  ],
+  "verified": true
+}

@@ -1,0 +1,121 @@
+{
+  "metrics": {
+    "verified_artifacts": 3,
+    "probe_records": 2048,
+    "probe_correct": 9,
+    "probe_accuracy_percent": 0.439453125,
+    "probe_truncations": 0,
+    "probe_mean_tokens": 2428.52587890625,
+    "target_records": 16,
+    "target_correct": 0,
+    "target_accuracy_percent": 0.0,
+    "target_truncations": 0,
+    "target_mean_tokens": 2544.5
+  },
+  "artifacts": [
+    "bank/manifest.json",
+    "bank/row_00046947/complete.json",
+    "tokenization-preflight.json"
+  ],
+  "scope": "Base · 源文本预选硬币题; not bestN64trained checkpoint",
+  "elapsed_seconds": 1410.5485021118075,
+  "bank_recording": {
+    "fingerprints_verified": true,
+    "verified_at": "2026-11-08T09:05:53.394350+00:00",
+    "config_fingerprint": "d87fd6a1844a38ba4dc41f2a6f3fd663f728666ba9a44701e707c28e2593464f",
+    "source_inventory": {
+      "manifest_sha256": "75dacb932b8e99d16465e12e0ae0c73079ea5ef3e1e25ca1f116b4b71c73974b",
+      "rows": {
+        "46947": {
+          "prompt.json": "477629880770d323b8548203d6f192b5f21a008efb6f2b0de44f3a7955b97251",
+          "complete.json": "96a13bdb0c68c05f4454529c4ded48967fae017a36c9959ff3facc282424dcab"
+        }
+      },
+      "chunks": {
+        "bank/row_00046947/probe/chunk_000000_000128.json": {
+          "size_bytes": 4792475,
+          "mtime_ns": 1794127486511567234
+        },
+        "bank/row_00046947/probe/chunk_000128_000256.json": {
+          "size_bytes": 5100336,
+          "mtime_ns": 1794127574386877459
+        },
+        "bank/row_00046947/probe/chunk_000256_000384.json": {
+          "size_bytes": 5048477,
+          "mtime_ns": 1794127657799538175
+        },
+        "bank/row_00046947/probe/chunk_000384_000512.json": {
+          "size_bytes": 4982172,
+          "mtime_ns": 1794127738071854417
+        },
+        "bank/row_00046947/probe/chunk_000512_000640.json": {
+          "size_bytes": 4856262,
+          "mtime_ns": 1794127800270430460
+        },
+        "bank/row_00046947/probe/chunk_000640_000768.json": {
+          "size_bytes": 4703396,
+          "mtime_ns": 1794127890155123798
+        },
+        "bank/row_00046947/probe/chunk_000768_000896.json": {
+          "size_bytes": 4816998,
+          "mtime_ns": 1794127959576304671
+        },
+        "bank/row_00046947/probe/chunk_000896_001024.json": {
+          "size_bytes": 5172153,
+          "mtime_ns": 1794128043889767711
+        },
+        "bank/row_00046947/probe/chunk_001024_001152.json": {
+          "size_bytes": 4822245,
+          "mtime_ns": 1794128112485222869
+        },
+        "bank/row_00046947/probe/chunk_001152_001280.json": {
+          "size_bytes": 4990805,
+          "mtime_ns": 1794128198018875315
+        },
+        "bank/row_00046947/probe/chunk_001280_001408.json": {
+          "size_bytes": 5008010,
+          "mtime_ns": 1794128285833336398
+        },
+        "bank/row_00046947/probe/chunk_001408_001536.json": {
+          "size_bytes": 4865559,
+          "mtime_ns": 1794128375158381514
+        },
+        "bank/row_00046947/probe/chunk_001536_001664.json": {
+          "size_bytes": 4937811,
+          "mtime_ns": 1794128443690245333
+        },
+        "bank/row_00046947/probe/chunk_001664_001792.json": {
+          "size_bytes": 4718597,
+          "mtime_ns": 1794128507114469477
+        },
+        "bank/row_00046947/probe/chunk_001792_001920.json": {
+          "size_bytes": 4812216,
+          "mtime_ns": 1794128601990934769
+        },
+        "bank/row_00046947/probe/chunk_001920_002048.json": {
+          "size_bytes": 4942972,
+          "mtime_ns": 1794128689345101704
+        },
+        "bank/row_00046947/target/chunk_000000_000016.json": {
+          "size_bytes": 645439,
+          "mtime_ns": 1794128743245240661
+        }
+      }
+    },
+    "metrics": {
+      "probe_records": 2048,
+      "probe_correct": 9,
+      "probe_accuracy_percent": 0.439453125,
+      "probe_truncations": 0,
+      "probe_mean_tokens": 2428.52587890625,
+      "target_records": 16,
+      "target_correct": 0,
+      "target_accuracy_percent": 0.0,
+      "target_truncations": 0,
+      "target_mean_tokens": 2544.5
+    },
+    "sample_artifact": "runs/bank-screened-validation/first_probe_sample.json",
+    "sample_sha256": "7d3ccc5a64be689e2a5ff9e1d853aca7132eef157549ef12b474cb2e569f8978",
+    "scope": "Existing generated records and unchanged project-verifier outcomes; no new generation or relabeling"
+  }
+}

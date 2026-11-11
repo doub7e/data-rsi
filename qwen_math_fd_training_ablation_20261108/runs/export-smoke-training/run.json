@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "export-smoke-training",
+  "title": "FD训练消融 · H200 smoke checkpoint · FP32导出",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T11:25:07.200875+00:00",
+  "updated_at": "2026-11-08T11:25:07.200890+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "gpus": 0,
+    "source_training_run": "smoke-training-h200",
+    "source_optimizer_step": 1,
+    "scope": "preserve exact FP32 master; BF16 casting occurs only at eval engine load",
+    "torch_compile_disabled": true
+  },
+  "sources": {
+    "status": "runs/export-smoke-training/state.json",
+    "progress": "runs/export-smoke-training/progress.json",
+    "results": "runs/export-smoke-training/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "FP32 merge provenance",
+      "path": "runs/export-smoke-training/model/metadata.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-export-smoke-1108a",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "planning_revisions": [
+    {
+      "at": "2026-11-08T11:30:35.915974+00:00",
+      "reason": "Before any main training: common explicit eager runtime and correctly labeled generic FP32 export; historical planned source retained",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/export-smoke-training/planning-revisions/2026-11-08T11-30-30.886096+00-00/source"
+    },
+    {
+      "at": "2026-11-08T11:39:09.749598+00:00",
+      "reason": "Before main training: all three arms use same H200 class; explicit eager common runtime, original production Triton operators retained; old planned source preserved",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/export-smoke-training/planning-revisions/2026-11-08T11-39-03.593705+00-00/source"
+    },
+    {
+      "at": "2026-11-08T12:01:29.556804+00:00",
+      "reason": "Before any main arm: repair Tensor JSON logging and validate existing smoke checkpoint on CPU rather than replaying GPU training",
+      "preserved_prior_source": "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/export-smoke-training/planning-revisions/2026-11-08T12-01-23.093604+00-00/source"
+    }
+  ]
+}

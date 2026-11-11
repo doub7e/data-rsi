@@ -1,0 +1,45 @@
+{
+  "checked_at_utc": "2026-10-30T00:29:56.722715+00:00",
+  "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft:qwen3-cu128-torch280-v1",
+  "digest": "sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+  "build_job": "data-rsi-sft-build-1030b",
+  "build_status": "Succeeded",
+  "registry_digest_verified": true,
+  "build_checks": {
+    "uv_pip_check": "passed",
+    "torch_transformers_deepspeed_flash_attn_liger_llamafactory_imports": "passed",
+    "qwen3_template_registered": "passed",
+    "torch_cuda_build_version": "12.8"
+  },
+  "gpu_validation": {
+    "status": "passed",
+    "model": "Qwen/Qwen3-8B",
+    "full_sft_steps": 2,
+    "world_size": 2,
+    "sequence_cutoff": 2048,
+    "training_losses": [
+      1.3406,
+      1.3477
+    ],
+    "reloaded_checkpoint_loss": 6.48185396194458,
+    "limitations": "8 selected records and short context; not a 32k capacity test or full 10K training run",
+    "job": "data-rsi-sft-smoke-1030b",
+    "node": "gpu303.rcp.epfl.ch",
+    "pod_status": "Succeeded",
+    "exit_code": 0,
+    "cleanup": "Completed job deleted after archiving logs and results",
+    "evidence": "gpu-validation/validation.json",
+    "checked_at_utc": "2026-10-30T07:27:42.940668+00:00"
+  },
+  "source_sha256": {
+    "docker/Dockerfile": "897d7a2a6b487fddd511837d6d448285a9d4a75b76a98236036edd2750adec6b",
+    "docker/requirements.in": "5f43c0aca8fdc9f8ada223fe73b16e598d7d71b944f3d4b208e75b61b09dd7fd",
+    "docker/requirements.lock": "fff0516725e3f0662915ca9b92a41b0bb7364402aec89fc6e84138484712d1ba"
+  },
+  "gpu_validation_previous_attempt": {
+    "status": "not_run",
+    "reason": "All 72 H200 GPUs on nine nodes occupied; 2-GPU job Pending/Unschedulable",
+    "job": "data-rsi-sft-smoke-1030a",
+    "cleanup": "Cancelled before pod start; no GPU training executed"
+  }
+}

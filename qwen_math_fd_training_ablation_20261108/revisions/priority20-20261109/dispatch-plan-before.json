@@ -1,0 +1,609 @@
+{
+  "deadline_utc": "2026-11-09T12:06:58.915677+00:00",
+  "max_active_gpus": 8,
+  "entries": [
+    {
+      "run_id": "runtime-preflight",
+      "job_name": "opd-fdtrain-runtime-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/runtime-preflight/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "runtime-preflight-native",
+      "job_name": "opd-fdtrain-runtime-1108b",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/runtime-preflight-native/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "runtime-preflight-isolated",
+      "job_name": "opd-fdtrain-runtime-1108c",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/runtime-preflight-isolated/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "runtime-preflight-pytorch",
+      "job_name": "opd-fdtrain-runtime-1108d",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/runtime-preflight-pytorch/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "prepare-data",
+      "job_name": "opd-fdtrain-data-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 8,
+      "memory": "32G",
+      "run_as_user": true,
+      "dependencies": [],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/prepare-data/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "prepare-data-selected",
+      "job_name": "opd-fdtrain-data-1108b",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 8,
+      "memory": "32G",
+      "run_as_user": true,
+      "dependencies": [],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/prepare-data-selected/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "screen-0",
+      "job_name": "opd-fdtrain-screen0-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/prepare-data-selected/result.json",
+        "runs/runtime-preflight-pytorch/result.json",
+        "runs/prepare-data-selected/state.json",
+        "runs/runtime-preflight-pytorch/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/screen-0/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "screen-1",
+      "job_name": "opd-fdtrain-screen1-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/prepare-data-selected/result.json",
+        "runs/runtime-preflight-pytorch/result.json",
+        "runs/prepare-data-selected/state.json",
+        "runs/runtime-preflight-pytorch/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/screen-1/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "select-training",
+      "job_name": "opd-fdtrain-select-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 8,
+      "memory": "32G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/screen-0/result.json",
+        "runs/screen-1/result.json",
+        "runs/screen-0/state.json",
+        "runs/screen-1/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/select-training/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "prepare-smoke",
+      "job_name": "opd-fdtrain-smokedata-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 4,
+      "memory": "16G",
+      "run_as_user": true,
+      "dependencies": [],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/prepare-smoke/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "smoke-training",
+      "job_name": "opd-fdtrain-smoke-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "b300",
+      "gpu": 2,
+      "cpu": 16,
+      "memory": "128G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/runtime-preflight-pytorch/result.json",
+        "runs/prepare-smoke/result.json",
+        "runs/runtime-preflight-pytorch/state.json",
+        "runs/prepare-smoke/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/smoke-training/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "train-bf16-h1em5",
+      "job_name": "opd-fdtrain-bf16-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200",
+      "gpu": 4,
+      "cpu": 16,
+      "memory": "192G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/runtime-preflight-pytorch/result.json",
+        "runs/select-training-fixed/result.json",
+        "runs/verify-smoke-checkpoint/result.json",
+        "runs/runtime-preflight-pytorch/state.json",
+        "runs/select-training-fixed/state.json",
+        "runs/verify-smoke-checkpoint/state.json",
+        "runs/export-smoke-training/result.json",
+        "runs/export-smoke-training/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/train-bf16-h1em5/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "train-fp32-h1em5",
+      "job_name": "opd-fdtrain-fp32h5-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200",
+      "gpu": 4,
+      "cpu": 16,
+      "memory": "192G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/runtime-preflight-pytorch/result.json",
+        "runs/select-training-fixed/result.json",
+        "runs/verify-smoke-checkpoint/result.json",
+        "runs/train-bf16-h1em5/result.json",
+        "runs/runtime-preflight-pytorch/state.json",
+        "runs/select-training-fixed/state.json",
+        "runs/verify-smoke-checkpoint/state.json",
+        "runs/train-bf16-h1em5/state.json",
+        "runs/export-smoke-training/result.json",
+        "runs/export-smoke-training/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/train-fp32-h1em5/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "train-fp32-h1em6",
+      "job_name": "opd-fdtrain-fp32h6-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200",
+      "gpu": 4,
+      "cpu": 16,
+      "memory": "192G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/runtime-preflight-pytorch/result.json",
+        "runs/select-training-fixed/result.json",
+        "runs/verify-smoke-checkpoint/result.json",
+        "runs/train-fp32-h1em5/result.json",
+        "runs/runtime-preflight-pytorch/state.json",
+        "runs/select-training-fixed/state.json",
+        "runs/verify-smoke-checkpoint/state.json",
+        "runs/train-fp32-h1em5/state.json",
+        "runs/export-smoke-training/result.json",
+        "runs/export-smoke-training/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/train-fp32-h1em6/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "screen-0-fixed",
+      "job_name": "opd-fdtrain-screen0-1108b",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/prepare-data-selected/result.json",
+        "runs/runtime-preflight-pytorch/result.json",
+        "runs/prepare-data-selected/state.json",
+        "runs/runtime-preflight-pytorch/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/screen-0-fixed/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "screen-1-fixed",
+      "job_name": "opd-fdtrain-screen1-1108b",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/prepare-data-selected/result.json",
+        "runs/runtime-preflight-pytorch/result.json",
+        "runs/prepare-data-selected/state.json",
+        "runs/runtime-preflight-pytorch/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/screen-1-fixed/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "select-training-fixed",
+      "job_name": "opd-fdtrain-select-1108b",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 8,
+      "memory": "32G",
+      "run_as_user": true,
+      "dependencies": [
+        "screening-prefix-request.json",
+        "runs/prepare-data-extended/result.json",
+        "runs/prepare-data-extended/state.json",
+        "runs/prepare-data-selected/result.json",
+        "runs/prepare-data-selected/state.json",
+        "runs/screen-0-fixed/result.json",
+        "runs/screen-0-fixed/state.json",
+        "runs/screen-1-fixed/result.json",
+        "runs/screen-1-fixed/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/select-training-fixed/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "export-smoke-training",
+      "job_name": "opd-fdtrain-export-smoke-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/verify-smoke-checkpoint/result.json",
+        "runs/verify-smoke-checkpoint/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/export-smoke-training/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "export-train-bf16-h1em5",
+      "job_name": "opd-fdtrain-export-bf16-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/train8-bf16-h1em5/result.json",
+        "runs/train8-bf16-h1em5/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/export-train-bf16-h1em5/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "export-train-fp32-h1em5",
+      "job_name": "opd-fdtrain-export-fp32h5-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/train8-fp32-h1em5/result.json",
+        "runs/train8-fp32-h1em5/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/export-train-fp32-h1em5/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "export-train-fp32-h1em6",
+      "job_name": "opd-fdtrain-export-fp32h6-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/train8-fp32-h1em6/result.json",
+        "runs/train8-fp32-h1em6/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/export-train-fp32-h1em6/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "smoke-training-eager",
+      "job_name": "opd-fdtrain-smoke-1108b",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "b300",
+      "gpu": 2,
+      "cpu": 16,
+      "memory": "128G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/runtime-preflight-pytorch/result.json",
+        "runs/prepare-smoke/result.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/smoke-training-eager/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "smoke-training-h200",
+      "job_name": "opd-fdtrain-smoke-1108c",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200",
+      "gpu": 2,
+      "cpu": 16,
+      "memory": "128G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/runtime-preflight-pytorch/result.json",
+        "runs/prepare-smoke/result.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/smoke-training-h200/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "eval-base",
+      "job_name": "opd-fdtrain-eval-base-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "b300",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/train8-fp32-h1em6/result.json",
+        "runs/train8-fp32-h1em6/state.json",
+        "runs/evaluation-scorer-check/result.json",
+        "runs/evaluation-scorer-check/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/eval-base/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "eval-bf16-h1em5",
+      "job_name": "opd-fdtrain-eval-bf16-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "b300",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/train8-fp32-h1em6/result.json",
+        "runs/train8-fp32-h1em6/state.json",
+        "runs/export-train-bf16-h1em5/result.json",
+        "runs/export-train-bf16-h1em5/state.json",
+        "runs/evaluation-scorer-check/result.json",
+        "runs/evaluation-scorer-check/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/eval-bf16-h1em5/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "eval-fp32-h1em5",
+      "job_name": "opd-fdtrain-eval-fp32h5-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "b300",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/train8-fp32-h1em6/result.json",
+        "runs/train8-fp32-h1em6/state.json",
+        "runs/export-train-fp32-h1em5/result.json",
+        "runs/export-train-fp32-h1em5/state.json",
+        "runs/evaluation-scorer-check/result.json",
+        "runs/evaluation-scorer-check/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/eval-fp32-h1em5/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "eval-fp32-h1em6",
+      "job_name": "opd-fdtrain-eval-fp32h6-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "b300",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/train8-fp32-h1em6/result.json",
+        "runs/train8-fp32-h1em6/state.json",
+        "runs/export-train-fp32-h1em6/result.json",
+        "runs/export-train-fp32-h1em6/state.json",
+        "runs/evaluation-scorer-check/result.json",
+        "runs/evaluation-scorer-check/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/eval-fp32-h1em6/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "comparison",
+      "job_name": "opd-fdtrain-report-1108a",
+      "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 4,
+      "memory": "16G",
+      "run_as_user": false,
+      "dependencies": [
+        "runs/eval-base/result.json",
+        "runs/eval-base/state.json",
+        "runs/eval-bf16-h1em5/result.json",
+        "runs/eval-bf16-h1em5/state.json",
+        "runs/eval-fp32-h1em5/result.json",
+        "runs/eval-fp32-h1em5/state.json",
+        "runs/eval-fp32-h1em6/result.json",
+        "runs/eval-fp32-h1em6/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/comparison/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "verify-smoke-checkpoint",
+      "job_name": "opd-fdtrain-smokeverify-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 8,
+      "memory": "64G",
+      "run_as_user": true,
+      "dependencies": [],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/verify-smoke-checkpoint/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "prepare-data-extended",
+      "job_name": "opd-fdtrain-extenddata-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 8,
+      "memory": "32G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/prepare-data-selected/result.json",
+        "runs/prepare-data-selected/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/prepare-data-extended/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "screen-extra-0",
+      "job_name": "opd-fdtrain-extra0-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "screening-extension-required.json",
+        "runs/prepare-data-extended/result.json",
+        "runs/prepare-data-extended/state.json",
+        "runs/runtime-preflight-pytorch/result.json",
+        "runs/runtime-preflight-pytorch/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/screen-extra-0/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "screen-extra-1",
+      "job_name": "opd-fdtrain-extra1-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 1,
+      "cpu": 8,
+      "memory": "96G",
+      "run_as_user": true,
+      "dependencies": [
+        "screening-extension-required.json",
+        "runs/prepare-data-extended/result.json",
+        "runs/prepare-data-extended/state.json",
+        "runs/runtime-preflight-pytorch/result.json",
+        "runs/runtime-preflight-pytorch/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/screen-extra-1/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "evaluation-scorer-check",
+      "job_name": "opd-fdtrain-evalcheck-1108a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200,b300,h100",
+      "gpu": 0,
+      "cpu": 4,
+      "memory": "16G",
+      "run_as_user": true,
+      "dependencies": [],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/evaluation-scorer-check/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "train8-bf16-h1em5",
+      "job_name": "opd-fd8-bf16-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200",
+      "gpu": 8,
+      "cpu": 32,
+      "memory": "384G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/select-training-fixed/result.json",
+        "runs/select-training-fixed/state.json",
+        "runs/evaluation-scorer-check/result.json",
+        "runs/evaluation-scorer-check/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/train8-bf16-h1em5/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "train8-fp32-h1em5",
+      "job_name": "opd-fd8-fp32h5-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200",
+      "gpu": 8,
+      "cpu": 32,
+      "memory": "384G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/select-training-fixed/result.json",
+        "runs/select-training-fixed/state.json",
+        "runs/evaluation-scorer-check/result.json",
+        "runs/evaluation-scorer-check/state.json",
+        "runs/train8-bf16-h1em5/result.json",
+        "runs/train8-bf16-h1em5/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/train8-fp32-h1em5/source/scripts/run_fd_training_job.sh"
+    },
+    {
+      "run_id": "train8-fp32-h1em6",
+      "job_name": "opd-fd8-fp32h6-1109a",
+      "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+      "node_pools": "h200",
+      "gpu": 8,
+      "cpu": 32,
+      "memory": "384G",
+      "run_as_user": true,
+      "dependencies": [
+        "runs/select-training-fixed/result.json",
+        "runs/select-training-fixed/state.json",
+        "runs/evaluation-scorer-check/result.json",
+        "runs/evaluation-scorer-check/state.json",
+        "runs/train8-fp32-h1em5/result.json",
+        "runs/train8-fp32-h1em5/state.json"
+      ],
+      "entrypoint": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/runs/train8-fp32-h1em6/source/scripts/run_fd_training_job.sh"
+    }
+  ],
+  "before_dispatch_command": [
+    "/usr/bin/python",
+    "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/controller-v3/source/tools/fd_training_before_dispatch.py",
+    "--experiment",
+    "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108"
+  ],
+  "completion_run_id": "comparison",
+  "finalize_command": [
+    "/usr/bin/python",
+    "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108/controller-v3/source/tools/fd_training_finalize.py",
+    "--experiment",
+    "/mnt/cvlab/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_training_ablation_20261108"
+  ]
+}

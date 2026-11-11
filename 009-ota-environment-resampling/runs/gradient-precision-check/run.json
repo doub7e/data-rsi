@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "gradient-precision-check",
+  "title": "OTA重采样 · Checkpoint1 · 实际BF16前向与诊断精度核验",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-07T01:48:52.798104+00:00",
+  "tags": [
+    "environment-resampling",
+    "Qwen3-8B"
+  ],
+  "parameters": {},
+  "sources": {
+    "status": "runs/gradient-precision-check/state.json",
+    "results": "runs/gradient-precision-check/result.json",
+    "training_data": "runs/teacher-batch1/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    }
+  ],
+  "job": {
+    "name": "ota-rs-gradient-precision-check-1107",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

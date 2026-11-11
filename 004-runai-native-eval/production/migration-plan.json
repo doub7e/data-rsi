@@ -1,0 +1,29 @@
+{
+  "backend": "runai-native",
+  "models": [
+    "1k",
+    "10k"
+  ],
+  "benchmarks": {
+    "swebench100": 100,
+    "tblite": 100,
+    "tb2": 89
+  },
+  "evaluation_concurrency": 32,
+  "inference_gpus": 4,
+  "inference_gpu_type": "H200",
+  "image_preparation": {
+    "existing_verified_native_images": 1,
+    "new_task_images": 199,
+    "published_images_needing_native_wrapper": 89,
+    "total_new_builds": 288,
+    "max_concurrent_builds": 2,
+    "cpu_per_build": 2,
+    "memory_per_build": "12G",
+    "gpu_per_build": 0,
+    "destination": "registry.rcp.epfl.ch/shuli/ota-eval-native-all",
+    "entrypoint": "scripts/prepare_all.py",
+    "timing_approval": "Explicitly authorized immediate start on 2026-10-31"
+  },
+  "cutover": "After all 100 SWE images are prepared, stop/clean Daytona and start native SWE evaluation. Continue preparing TBLite/TB2 in the background; each benchmark waits for its full task image set before execution. Preserve all tasks and three repeats."
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "comparison",
+  "title": "OTA全70×4 · 第一轮、Uniform、新Guided · 全70×4对照",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T10:39:26.621660+00:00",
+  "tags": [
+    "full70-r4",
+    "missing-as-zero",
+    "Qwen3-8B"
+  ],
+  "parameters": {},
+  "sources": {
+    "status": "runs/comparison/state.json",
+    "results": "runs/comparison/result.json",
+    "progress": "runs/comparison/progress.json"
+  },
+  "artifacts": [
+    {
+      "label": "冻结实验协议",
+      "path": "configs/protocol.json"
+    },
+    {
+      "label": "模型和数据版本",
+      "path": "configs/resources.json"
+    },
+    {
+      "label": "完整报告",
+      "path": "runs/comparison/REPORT.md"
+    },
+    {
+      "label": "模型对照图",
+      "path": "runs/comparison/comparison.png"
+    },
+    {
+      "label": "采样分布",
+      "path": "runs/comparison/sampling.png"
+    },
+    {
+      "label": "训练曲线",
+      "path": "runs/comparison/training-curves.png"
+    },
+    {
+      "label": "逐题四次结果",
+      "path": "runs/comparison/per-task.csv"
+    },
+    {
+      "label": "详细结果与置信区间",
+      "path": "runs/comparison/result.json"
+    }
+  ],
+  "job": {
+    "name": "ota-r4-comparison-1108",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  }
+}

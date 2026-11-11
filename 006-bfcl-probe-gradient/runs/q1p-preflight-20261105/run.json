@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "q1p-preflight-20261105",
+  "title": "Projected influence integration preflight",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-05T00:04:28.706601+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "q1p-preflight-1105",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "sources": {
+    "status": "runs/q1p-preflight-20261105/state.json",
+    "results": "runs/q1p-preflight-20261105/result.json"
+  }
+}

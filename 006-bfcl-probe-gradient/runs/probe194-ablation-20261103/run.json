@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "probe194-ablation-20261103",
+  "title": "multi_turn_miss_func_194 · token/turn ablation and layer cosine",
+  "kind": "analysis",
+  "status": "succeeded",
+  "created_at": "2026-11-03T20:43:50.797021+00:00",
+  "parameters": {
+    "probe": "multi_turn_miss_func_194",
+    "rollouts": 128,
+    "gpus": 2,
+    "key_turn": 5
+  },
+  "sources": {
+    "status": "runs/probe194-ablation-20261103/state.json",
+    "results": "runs/probe194-ablation-20261103/result.json",
+    "trajectories": "runs/probe194-scaling-20261103/jobs",
+    "evaluation_plan": "runs/probe194-scaling-20261103/evaluation-plan.json"
+  },
+  "artifacts": [
+    {
+      "label": "Protocol",
+      "path": "runs/probe194-ablation-20261103/protocol.json"
+    },
+    {
+      "label": "Ablation and layer figure",
+      "path": "runs/probe194-ablation-20261103/ablation.png"
+    },
+    {
+      "label": "Mask audit",
+      "path": "runs/probe194-ablation-20261103/mask-audit.json"
+    },
+    {
+      "label": "Case report",
+      "path": "runs/probe194-ablation-20261103/REPORT.md"
+    },
+    {
+      "label": "Layer table",
+      "path": "runs/probe194-ablation-20261103/layer-cosines.csv"
+    },
+    {
+      "label": "Actual decode likelihood",
+      "path": "runs/probe194-ablation-20261103/likelihood-aggregate.json"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "pg194-ablate-1103",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "completed_at": "2026-11-03T21:20:41.347906+00:00"
+}

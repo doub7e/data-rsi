@@ -1,0 +1,10 @@
+{
+  "metrics": {
+    "smoke_prompts": 2
+  },
+  "rows": [
+    20589,
+    39906
+  ],
+  "purpose": "known mixed-reward prompts for production-path smoke only; excluded from main pairedtraining pool"
+}

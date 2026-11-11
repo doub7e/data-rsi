@@ -1,0 +1,1468 @@
+{
+  "swebench100": {
+    "count": 100,
+    "prebuilt": 0,
+    "compose": 0,
+    "tasks": [
+      {
+        "task": "astropy__astropy-13236",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "astropy__astropy-14369",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "astropy__astropy-14508",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "astropy__astropy-14598",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "astropy__astropy-14995",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "astropy__astropy-8872",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-10097",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-11138",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-11141",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-11206",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-11276",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-11333",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-11433",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-11477",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-11490",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-11728",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-11820",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-12050",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-12276",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-12308",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-12406",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-13109",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-13128",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-13315",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-13346",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-13363",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-13401",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-13410",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-13449",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-13516",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-13670",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-13925",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-13933",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-14017",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-14053",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-14238",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-14315",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-14855",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-14999",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-15037",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-15128",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-15252",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-15277",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-15278",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-15368",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-15467",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-15499",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-15987",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-16082",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-16485",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-16527",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "django__django-16595",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "matplotlib__matplotlib-20826",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "matplotlib__matplotlib-24870",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "matplotlib__matplotlib-25332",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "matplotlib__matplotlib-25960",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "matplotlib__matplotlib-26466",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "psf__requests-2317",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pydata__xarray-3151",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pydata__xarray-3305",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pydata__xarray-4629",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pydata__xarray-4687",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pydata__xarray-6938",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pylint-dev__pylint-4551",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pylint-dev__pylint-6386",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pylint-dev__pylint-6903",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pytest-dev__pytest-10051",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pytest-dev__pytest-10081",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pytest-dev__pytest-5840",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pytest-dev__pytest-7324",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pytest-dev__pytest-7521",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pytest-dev__pytest-8399",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "scikit-learn__scikit-learn-12973",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "scikit-learn__scikit-learn-13135",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "scikit-learn__scikit-learn-13142",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "scikit-learn__scikit-learn-14087",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "scikit-learn__scikit-learn-15100",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "scikit-learn__scikit-learn-25931",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "scikit-learn__scikit-learn-26194",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sphinx-doc__sphinx-11445",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sphinx-doc__sphinx-7440",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sphinx-doc__sphinx-7757",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sphinx-doc__sphinx-8721",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sphinx-doc__sphinx-9229",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sphinx-doc__sphinx-9230",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sphinx-doc__sphinx-9698",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy__sympy-13372",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy__sympy-13480",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy__sympy-14531",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy__sympy-15017",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy__sympy-16450",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy__sympy-16597",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy__sympy-18199",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy__sympy-19495",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy__sympy-20801",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy__sympy-21379",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy__sympy-21847",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy__sympy-22456",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy__sympy-23413",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy__sympy-24443",
+        "prebuilt_image": null,
+        "compose": false
+      }
+    ]
+  },
+  "tblite": {
+    "count": 100,
+    "prebuilt": 0,
+    "compose": 0,
+    "tasks": [
+      {
+        "task": "acl-permissions-inheritance",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "amuse-install",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "anomaly-detection-ranking",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "api-endpoint-permission-canonicalizer",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "application-debug",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "auth_token_race_condition",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "bandit-delayed-feedback",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "bash-log-processor-fix",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "basic-message-queue",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "battery-charging-optimization",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "bloom-filter-cache-penetration-prevention",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "book-portfolio-analysis",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "bracket-sequence-restoration",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "breast-cancer-mlflow",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "broken-python",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "build-merkle-tree-cli-sha512",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "build-system-task-ordering",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "california-housing-api",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "chained-forensic-extraction_20260101_011957",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "competitive-programming-solver",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "container-registry-optimization",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "convolutional-layers",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "corrupted-filesystem-recovery",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "cosign-keyless-signing",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "cpp-daemon-sighup-segfault",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "cryptographic-protocol-verifier",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "csv-json-jsonl-merger",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "db-migration-local-storage",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "distributed-test-execution-scheduler",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "ekf-localization",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "etl_checkpoint_resume_bug",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "fix-js-network-controller",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "fix_async_worker_queue",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "floor-plan-geometry",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "game-of-stones",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "git-repo-forensics",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "grid-pathfinding",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "grpc-plant-position-server",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "html-index-analysis",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "hydra-debug-slurm-mode",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "image-tile-identification",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "industrial-kiln-controller",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "iot-device-registration-server",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "iris-dataset-classification",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "jq-data-processing",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "jsonl-aggregator",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "legal-summary-extraction",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "log-summary",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "malicious-package-forensics",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "maven-slf4j-conflict",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "mech-system",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "mlflow-register",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "monorepo-changelog-cli",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "mtls-cert-rotation",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "multi-labeller",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "multi-server-configuration",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "network-log-normalization",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "neural-architecture-search-final",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "neutron-submission",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "okhttp-trailers-crash",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pandas-etl",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pandas-numpy-data-analysis",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "parking-lot-pathfinding",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pdf-table-parsing",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "permutation-construction-100k",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "pgn-chess-repair-puzzles",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "playing-card-recognition",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "prediction-model-evaluation",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "protein-sequence",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "publisher-market-analysis",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "publisher-market-analysis-v2",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "python-api-rate-limit",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "raft-log-repair-concurrent-access",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "react-typescript-debugg",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "reproducibility-and-envsetup",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "reverse-engineer-stack-vm",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "rsa-jwt-token-api-redis-blacklist",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sakila-sqlite-queries",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sales-data-csv-analysis",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "scan-linux-persistence-artifacts",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "schedule-vacation",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "security-breach-incident-response",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "security-incident-log-analysis",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "server-log-analysis",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "service-deployment-wave-planner",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sign-vector-game",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "simple-database-query-tool",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "smiles-data-lab",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sql-injection-forensics",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "submission_a63937a5_20251224_152124",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "supply-chain-fulfillment",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "symlink-chain-traversal",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "sympy-bug-fix",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "systemd-log-monitoring",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "task-xxe-exploit",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "todos-api",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "token-auth-websocket",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "tsl-test-case-generation",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "vimscript-vim-quine",
+        "prebuilt_image": null,
+        "compose": false
+      },
+      {
+        "task": "word-derangement-mapping",
+        "prebuilt_image": null,
+        "compose": false
+      }
+    ]
+  },
+  "tb2": {
+    "count": 89,
+    "prebuilt": 89,
+    "compose": 0,
+    "tasks": [
+      {
+        "task": "adaptive-rejection-sampler",
+        "prebuilt_image": "alexgshaw/adaptive-rejection-sampler:20251031",
+        "compose": false
+      },
+      {
+        "task": "bn-fit-modify",
+        "prebuilt_image": "alexgshaw/bn-fit-modify:20251031",
+        "compose": false
+      },
+      {
+        "task": "break-filter-js-from-html",
+        "prebuilt_image": "alexgshaw/break-filter-js-from-html:20251031",
+        "compose": false
+      },
+      {
+        "task": "build-cython-ext",
+        "prebuilt_image": "alexgshaw/build-cython-ext:20251031",
+        "compose": false
+      },
+      {
+        "task": "build-pmars",
+        "prebuilt_image": "alexgshaw/build-pmars:20251031",
+        "compose": false
+      },
+      {
+        "task": "build-pov-ray",
+        "prebuilt_image": "alexgshaw/build-pov-ray:20251031",
+        "compose": false
+      },
+      {
+        "task": "caffe-cifar-10",
+        "prebuilt_image": "alexgshaw/caffe-cifar-10:20251031",
+        "compose": false
+      },
+      {
+        "task": "cancel-async-tasks",
+        "prebuilt_image": "alexgshaw/cancel-async-tasks:20251031",
+        "compose": false
+      },
+      {
+        "task": "chess-best-move",
+        "prebuilt_image": "alexgshaw/chess-best-move:20251031",
+        "compose": false
+      },
+      {
+        "task": "circuit-fibsqrt",
+        "prebuilt_image": "alexgshaw/circuit-fibsqrt:20251031",
+        "compose": false
+      },
+      {
+        "task": "cobol-modernization",
+        "prebuilt_image": "alexgshaw/cobol-modernization:20251031",
+        "compose": false
+      },
+      {
+        "task": "code-from-image",
+        "prebuilt_image": "alexgshaw/code-from-image:20251031",
+        "compose": false
+      },
+      {
+        "task": "compile-compcert",
+        "prebuilt_image": "alexgshaw/compile-compcert:20251031",
+        "compose": false
+      },
+      {
+        "task": "configure-git-webserver",
+        "prebuilt_image": "alexgshaw/configure-git-webserver:20251031",
+        "compose": false
+      },
+      {
+        "task": "constraints-scheduling",
+        "prebuilt_image": "alexgshaw/constraints-scheduling:20251031",
+        "compose": false
+      },
+      {
+        "task": "count-dataset-tokens",
+        "prebuilt_image": "alexgshaw/count-dataset-tokens:20251031",
+        "compose": false
+      },
+      {
+        "task": "crack-7z-hash",
+        "prebuilt_image": "alexgshaw/crack-7z-hash:20251031",
+        "compose": false
+      },
+      {
+        "task": "custom-memory-heap-crash",
+        "prebuilt_image": "alexgshaw/custom-memory-heap-crash:20251031",
+        "compose": false
+      },
+      {
+        "task": "db-wal-recovery",
+        "prebuilt_image": "alexgshaw/db-wal-recovery:20251031",
+        "compose": false
+      },
+      {
+        "task": "distribution-search",
+        "prebuilt_image": "alexgshaw/distribution-search:20251031",
+        "compose": false
+      },
+      {
+        "task": "dna-assembly",
+        "prebuilt_image": "alexgshaw/dna-assembly:20251031",
+        "compose": false
+      },
+      {
+        "task": "dna-insert",
+        "prebuilt_image": "alexgshaw/dna-insert:20251031",
+        "compose": false
+      },
+      {
+        "task": "extract-elf",
+        "prebuilt_image": "alexgshaw/extract-elf:20251031",
+        "compose": false
+      },
+      {
+        "task": "extract-moves-from-video",
+        "prebuilt_image": "alexgshaw/extract-moves-from-video:20251031",
+        "compose": false
+      },
+      {
+        "task": "feal-differential-cryptanalysis",
+        "prebuilt_image": "alexgshaw/feal-differential-cryptanalysis:20251031",
+        "compose": false
+      },
+      {
+        "task": "feal-linear-cryptanalysis",
+        "prebuilt_image": "alexgshaw/feal-linear-cryptanalysis:20251031",
+        "compose": false
+      },
+      {
+        "task": "filter-js-from-html",
+        "prebuilt_image": "alexgshaw/filter-js-from-html:20251031",
+        "compose": false
+      },
+      {
+        "task": "financial-document-processor",
+        "prebuilt_image": "alexgshaw/financial-document-processor:20251031",
+        "compose": false
+      },
+      {
+        "task": "fix-code-vulnerability",
+        "prebuilt_image": "alexgshaw/fix-code-vulnerability:20251031",
+        "compose": false
+      },
+      {
+        "task": "fix-git",
+        "prebuilt_image": "alexgshaw/fix-git:20251031",
+        "compose": false
+      },
+      {
+        "task": "fix-ocaml-gc",
+        "prebuilt_image": "alexgshaw/fix-ocaml-gc:20251031",
+        "compose": false
+      },
+      {
+        "task": "gcode-to-text",
+        "prebuilt_image": "alexgshaw/gcode-to-text:20251031",
+        "compose": false
+      },
+      {
+        "task": "git-leak-recovery",
+        "prebuilt_image": "alexgshaw/git-leak-recovery:20251031",
+        "compose": false
+      },
+      {
+        "task": "git-multibranch",
+        "prebuilt_image": "alexgshaw/git-multibranch:20251031",
+        "compose": false
+      },
+      {
+        "task": "gpt2-codegolf",
+        "prebuilt_image": "alexgshaw/gpt2-codegolf:20251031",
+        "compose": false
+      },
+      {
+        "task": "headless-terminal",
+        "prebuilt_image": "alexgshaw/headless-terminal:20251031",
+        "compose": false
+      },
+      {
+        "task": "hf-model-inference",
+        "prebuilt_image": "alexgshaw/hf-model-inference:20251031",
+        "compose": false
+      },
+      {
+        "task": "install-windows-3.11",
+        "prebuilt_image": "alexgshaw/install-windows-3.11:20251031",
+        "compose": false
+      },
+      {
+        "task": "kv-store-grpc",
+        "prebuilt_image": "alexgshaw/kv-store-grpc:20251031",
+        "compose": false
+      },
+      {
+        "task": "large-scale-text-editing",
+        "prebuilt_image": "alexgshaw/large-scale-text-editing:20251031",
+        "compose": false
+      },
+      {
+        "task": "largest-eigenval",
+        "prebuilt_image": "alexgshaw/largest-eigenval:20251031",
+        "compose": false
+      },
+      {
+        "task": "llm-inference-batching-scheduler",
+        "prebuilt_image": "alexgshaw/llm-inference-batching-scheduler:20251031",
+        "compose": false
+      },
+      {
+        "task": "log-summary-date-ranges",
+        "prebuilt_image": "alexgshaw/log-summary-date-ranges:20251031",
+        "compose": false
+      },
+      {
+        "task": "mailman",
+        "prebuilt_image": "alexgshaw/mailman:20251031",
+        "compose": false
+      },
+      {
+        "task": "make-doom-for-mips",
+        "prebuilt_image": "alexgshaw/make-doom-for-mips:20251031",
+        "compose": false
+      },
+      {
+        "task": "make-mips-interpreter",
+        "prebuilt_image": "alexgshaw/make-mips-interpreter:20251031",
+        "compose": false
+      },
+      {
+        "task": "mcmc-sampling-stan",
+        "prebuilt_image": "alexgshaw/mcmc-sampling-stan:20251031",
+        "compose": false
+      },
+      {
+        "task": "merge-diff-arc-agi-task",
+        "prebuilt_image": "alexgshaw/merge-diff-arc-agi-task:20251031",
+        "compose": false
+      },
+      {
+        "task": "model-extraction-relu-logits",
+        "prebuilt_image": "alexgshaw/model-extraction-relu-logits:20251031",
+        "compose": false
+      },
+      {
+        "task": "modernize-scientific-stack",
+        "prebuilt_image": "alexgshaw/modernize-scientific-stack:20251031",
+        "compose": false
+      },
+      {
+        "task": "mteb-leaderboard",
+        "prebuilt_image": "alexgshaw/mteb-leaderboard:20251031",
+        "compose": false
+      },
+      {
+        "task": "mteb-retrieve",
+        "prebuilt_image": "alexgshaw/mteb-retrieve:20251031",
+        "compose": false
+      },
+      {
+        "task": "multi-source-data-merger",
+        "prebuilt_image": "alexgshaw/multi-source-data-merger:20251031",
+        "compose": false
+      },
+      {
+        "task": "nginx-request-logging",
+        "prebuilt_image": "alexgshaw/nginx-request-logging:20251031",
+        "compose": false
+      },
+      {
+        "task": "openssl-selfsigned-cert",
+        "prebuilt_image": "alexgshaw/openssl-selfsigned-cert:20251031",
+        "compose": false
+      },
+      {
+        "task": "overfull-hbox",
+        "prebuilt_image": "alexgshaw/overfull-hbox:20251031",
+        "compose": false
+      },
+      {
+        "task": "password-recovery",
+        "prebuilt_image": "alexgshaw/password-recovery:20251031",
+        "compose": false
+      },
+      {
+        "task": "path-tracing",
+        "prebuilt_image": "alexgshaw/path-tracing:20251031",
+        "compose": false
+      },
+      {
+        "task": "path-tracing-reverse",
+        "prebuilt_image": "alexgshaw/path-tracing-reverse:20251031",
+        "compose": false
+      },
+      {
+        "task": "polyglot-c-py",
+        "prebuilt_image": "alexgshaw/polyglot-c-py:20251031",
+        "compose": false
+      },
+      {
+        "task": "polyglot-rust-c",
+        "prebuilt_image": "alexgshaw/polyglot-rust-c:20251031",
+        "compose": false
+      },
+      {
+        "task": "portfolio-optimization",
+        "prebuilt_image": "alexgshaw/portfolio-optimization:20251031",
+        "compose": false
+      },
+      {
+        "task": "protein-assembly",
+        "prebuilt_image": "alexgshaw/protein-assembly:20251031",
+        "compose": false
+      },
+      {
+        "task": "prove-plus-comm",
+        "prebuilt_image": "alexgshaw/prove-plus-comm:20251031",
+        "compose": false
+      },
+      {
+        "task": "pypi-server",
+        "prebuilt_image": "alexgshaw/pypi-server:20251031",
+        "compose": false
+      },
+      {
+        "task": "pytorch-model-cli",
+        "prebuilt_image": "alexgshaw/pytorch-model-cli:20251031",
+        "compose": false
+      },
+      {
+        "task": "pytorch-model-recovery",
+        "prebuilt_image": "alexgshaw/pytorch-model-recovery:20251031",
+        "compose": false
+      },
+      {
+        "task": "qemu-alpine-ssh",
+        "prebuilt_image": "alexgshaw/qemu-alpine-ssh:20251031",
+        "compose": false
+      },
+      {
+        "task": "qemu-startup",
+        "prebuilt_image": "alexgshaw/qemu-startup:20251031",
+        "compose": false
+      },
+      {
+        "task": "query-optimize",
+        "prebuilt_image": "alexgshaw/query-optimize:20251031",
+        "compose": false
+      },
+      {
+        "task": "raman-fitting",
+        "prebuilt_image": "alexgshaw/raman-fitting:20251031",
+        "compose": false
+      },
+      {
+        "task": "regex-chess",
+        "prebuilt_image": "alexgshaw/regex-chess:20251031",
+        "compose": false
+      },
+      {
+        "task": "regex-log",
+        "prebuilt_image": "alexgshaw/regex-log:20251031",
+        "compose": false
+      },
+      {
+        "task": "reshard-c4-data",
+        "prebuilt_image": "alexgshaw/reshard-c4-data:20251031",
+        "compose": false
+      },
+      {
+        "task": "rstan-to-pystan",
+        "prebuilt_image": "alexgshaw/rstan-to-pystan:20251031",
+        "compose": false
+      },
+      {
+        "task": "sam-cell-seg",
+        "prebuilt_image": "alexgshaw/sam-cell-seg:20251031",
+        "compose": false
+      },
+      {
+        "task": "sanitize-git-repo",
+        "prebuilt_image": "alexgshaw/sanitize-git-repo:20251031",
+        "compose": false
+      },
+      {
+        "task": "schemelike-metacircular-eval",
+        "prebuilt_image": "alexgshaw/schemelike-metacircular-eval:20251031",
+        "compose": false
+      },
+      {
+        "task": "sparql-university",
+        "prebuilt_image": "alexgshaw/sparql-university:20251031",
+        "compose": false
+      },
+      {
+        "task": "sqlite-db-truncate",
+        "prebuilt_image": "alexgshaw/sqlite-db-truncate:20251031",
+        "compose": false
+      },
+      {
+        "task": "sqlite-with-gcov",
+        "prebuilt_image": "alexgshaw/sqlite-with-gcov:20251031",
+        "compose": false
+      },
+      {
+        "task": "torch-pipeline-parallelism",
+        "prebuilt_image": "alexgshaw/torch-pipeline-parallelism:20251031",
+        "compose": false
+      },
+      {
+        "task": "torch-tensor-parallelism",
+        "prebuilt_image": "alexgshaw/torch-tensor-parallelism:20251031",
+        "compose": false
+      },
+      {
+        "task": "train-fasttext",
+        "prebuilt_image": "alexgshaw/train-fasttext:20251031",
+        "compose": false
+      },
+      {
+        "task": "tune-mjcf",
+        "prebuilt_image": "alexgshaw/tune-mjcf:20251031",
+        "compose": false
+      },
+      {
+        "task": "video-processing",
+        "prebuilt_image": "alexgshaw/video-processing:20251031",
+        "compose": false
+      },
+      {
+        "task": "vulnerable-secret",
+        "prebuilt_image": "alexgshaw/vulnerable-secret:20251031",
+        "compose": false
+      },
+      {
+        "task": "winning-avg-corewars",
+        "prebuilt_image": "alexgshaw/winning-avg-corewars:20251031",
+        "compose": false
+      },
+      {
+        "task": "write-compressor",
+        "prebuilt_image": "alexgshaw/write-compressor:20251031",
+        "compose": false
+      }
+    ]
+  }
+}

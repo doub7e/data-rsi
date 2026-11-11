@@ -1,0 +1,12 @@
+{
+  "status": "succeeded",
+  "completed": 289,
+  "total": 289,
+  "counts": {
+    "swebench100": 100,
+    "tblite": 100,
+    "tb2": 89
+  },
+  "failures": [],
+  "updated_at": "2026-10-31T21:52:32.144558+00:00"
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "comparison",
+  "title": "comparison",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-02T23:09:09.343311+00:00",
+  "sources": {
+    "status": "runs/comparison/state.json",
+    "results": "runs/comparison/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "Frozen method protocol",
+      "path": "PROTOCOL.md"
+    },
+    {
+      "label": "Comparison chart",
+      "path": "runs/comparison/comparison.png"
+    },
+    {
+      "label": "Report",
+      "path": "runs/comparison/REPORT.md"
+    },
+    {
+      "label": "Full result",
+      "path": "runs/comparison/result.json"
+    },
+    {
+      "label": "Independent completion audit",
+      "path": "runs/completion-audit/result.json"
+    },
+    {
+      "label": "Post-experiment context diagnosis",
+      "path": "runs/reasoning-context-audit-20261103/REPORT.md"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "pg-compare-1103",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

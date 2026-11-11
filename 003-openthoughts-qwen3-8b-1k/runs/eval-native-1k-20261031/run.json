@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "eval-native-1k-20261031",
+  "title": "Qwen3-8B · 1K · 原生RunAI评测",
+  "kind": "evaluation",
+  "created_at": "2026-10-31T15:45:26.052987+00:00",
+  "status": "planned",
+  "parameters": {
+    "backend": "runai-native",
+    "inference_gpus": 4,
+    "gpu_type": "H200",
+    "tensor_parallel_size": 4,
+    "concurrency": 32,
+    "repeats": 3,
+    "trials": 867,
+    "parser": "json",
+    "training_rows": 1000
+  },
+  "results": {},
+  "notes": "用户要求所有评测改用RunAI。等待全量镜像准备和Daytona清理确认后启动；旧结果单独保留。",
+  "sources": {
+    "status": "runs/eval-native-1k-20261031/state.json",
+    "metrics": "runs/eval-native-1k-20261031/metrics.jsonl",
+    "results": "runs/eval-native-1k-20261031/result.json",
+    "trajectories": "runs/eval-native-1k-20261031/jobs",
+    "evaluation_plan": "runs/eval-native-1k-20261031/evaluation-plan.json"
+  },
+  "artifacts": [
+    {
+      "label": "GPU利用率与吞吐采样",
+      "path": "runs/eval-native-1k-20261031/monitoring/gpu-window-summary.json"
+    },
+    {
+      "label": "10分钟GPU持续监测",
+      "path": "runs/eval-native-1k-20261031/monitoring/gpu-observation-summary.json"
+    },
+    {
+      "label": "卡住重试的恢复与结果保留记录",
+      "path": "runs/eval-native-1k-20261031/recovery/pre-restart-20261101/repair.json"
+    },
+    {
+      "label": "恢复后的GPU利用率与吞吐",
+      "path": "runs/eval-native-1k-20261031/monitoring/gpu-recovery-summary.json"
+    },
+    {
+      "label": "第一轮SWE轨迹长度统计",
+      "path": "runs/analysis-swe-round1-length-20261101/result.json"
+    },
+    {
+      "label": "第一轮SWE长度分布图",
+      "path": "runs/analysis-swe-round1-length-20261101/length-distribution.png"
+    },
+    {
+      "label": "训练长度与评测重复行为核查",
+      "path": "runs/analysis-swe-round1-length-20261101/behavior-check.json"
+    },
+    {
+      "label": "认证过期影响范围与补跑记录",
+      "path": "runs/eval-native-1k-20261031/recovery/auth-expiry-20261101/audit.json"
+    }
+  ],
+  "job": {
+    "name": "ota-native-eval-1k-1031",
+    "namespace": "runai-cvlab-shuli",
+    "provider": "runai"
+  },
+  "serving_job": {
+    "name": "ota-qwen3-8b-1k-eval-1031",
+    "namespace": "runai-cvlab-shuli",
+    "gpus": 4
+  }
+}

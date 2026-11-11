@@ -1,0 +1,253 @@
+{
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "metadata": {
+        "annotations": {
+            "pod-group-name": "pg-data-rsi-sft-smoke-1030a-0-5d7c8920-e6b4-4ebb-b0e5-52d1de625a97",
+            "runai-allocated-gpu-memory": "0",
+            "runai-allocated-gpus": "0",
+            "runai-allocated-mig-gpus": "0",
+            "runai-calculated-status": "Pending",
+            "runai-cli-command": "runai submit --name data-rsi-sft-smoke-1030a --image registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a --node-pool h200 --gpu 2 --cpu 16 --memory 128G --large-shm --existing-pvc claimname=cvlab-scratch,path=/scratch --command -- /bin/bash /scratch/cvlab/home/shuli/data-rsi/002-openthoughts-qwen3-8b/scripts/run_image_smoke.sh image-smoke-1030a",
+            "runai-nodepools": "h200",
+            "user": "shuangqi.li@epfl.ch"
+        },
+        "creationTimestamp": "2026-10-30T00:28:08Z",
+        "generateName": "data-rsi-sft-smoke-1030a-",
+        "generation": 1,
+        "labels": {
+            "app": "runaijob",
+            "controller-uid": "5d7c8920-e6b4-4ebb-b0e5-52d1de625a97",
+            "createdBy": "RunaiJob",
+            "project": "cvlab-shuli",
+            "release": "data-rsi-sft-smoke-1030a",
+            "run.ai/top-owner-uid": "8f4c6bac-4834-4768-a892-321cf6c08708",
+            "runai/pod-index": "0-0",
+            "workloadKind": "TrainingWorkload",
+            "workloadName": "data-rsi-sft-smoke-1030a"
+        },
+        "name": "data-rsi-sft-smoke-1030a-0-0",
+        "namespace": "runai-cvlab-shuli",
+        "ownerReferences": [
+            {
+                "apiVersion": "run.ai/v1",
+                "blockOwnerDeletion": true,
+                "controller": true,
+                "kind": "RunaiJob",
+                "name": "data-rsi-sft-smoke-1030a",
+                "uid": "5d7c8920-e6b4-4ebb-b0e5-52d1de625a97"
+            }
+        ],
+        "resourceVersion": "4277269485",
+        "uid": "5769b76e-72d0-417c-9bf9-12e24c16348f"
+    },
+    "spec": {
+        "affinity": {
+            "nodeAffinity": {
+                "requiredDuringSchedulingIgnoredDuringExecution": {
+                    "nodeSelectorTerms": [
+                        {
+                            "matchExpressions": [
+                                {
+                                    "key": "rcp.epfl.ch/runai-node-pool",
+                                    "operator": "In",
+                                    "values": [
+                                        "H200"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "containers": [
+            {
+                "command": [
+                    "/bin/bash",
+                    "/scratch/cvlab/home/shuli/data-rsi/002-openthoughts-qwen3-8b/scripts/run_image_smoke.sh",
+                    "image-smoke-1030a"
+                ],
+                "env": [
+                    {
+                        "name": "POD_INDEX",
+                        "value": "0"
+                    },
+                    {
+                        "name": "jobUUID",
+                        "value": "5d7c8920-e6b4-4ebb-b0e5-52d1de625a97"
+                    },
+                    {
+                        "name": "JOB_UUID",
+                        "value": "5d7c8920-e6b4-4ebb-b0e5-52d1de625a97"
+                    },
+                    {
+                        "name": "jobName",
+                        "value": "data-rsi-sft-smoke-1030a"
+                    },
+                    {
+                        "name": "JOB_NAME",
+                        "value": "data-rsi-sft-smoke-1030a"
+                    },
+                    {
+                        "name": "RUNAI_NUM_OF_GPUS",
+                        "value": "2"
+                    },
+                    {
+                        "name": "podUUID",
+                        "valueFrom": {
+                            "fieldRef": {
+                                "apiVersion": "v1",
+                                "fieldPath": "metadata.uid"
+                            }
+                        }
+                    },
+                    {
+                        "name": "POD_UUID",
+                        "valueFrom": {
+                            "fieldRef": {
+                                "apiVersion": "v1",
+                                "fieldPath": "metadata.uid"
+                            }
+                        }
+                    },
+                    {
+                        "name": "NODE_NAME",
+                        "valueFrom": {
+                            "fieldRef": {
+                                "apiVersion": "v1",
+                                "fieldPath": "spec.nodeName"
+                            }
+                        }
+                    }
+                ],
+                "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+                "imagePullPolicy": "Always",
+                "name": "data-rsi-sft-smoke-1030a",
+                "resources": {
+                    "limits": {
+                        "nvidia.com/gpu": "2"
+                    },
+                    "requests": {
+                        "cpu": "16",
+                        "memory": "128G",
+                        "nvidia.com/gpu": "2"
+                    }
+                },
+                "securityContext": {
+                    "allowPrivilegeEscalation": true,
+                    "seccompProfile": {
+                        "type": "RuntimeDefault"
+                    }
+                },
+                "terminationMessagePath": "/dev/termination-log",
+                "terminationMessagePolicy": "File",
+                "volumeMounts": [
+                    {
+                        "mountPath": "/scratch",
+                        "name": "pvc-volume-0"
+                    },
+                    {
+                        "mountPath": "/dev/shm",
+                        "name": "dshm"
+                    },
+                    {
+                        "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                        "name": "kube-api-access-cx2dp",
+                        "readOnly": true
+                    }
+                ]
+            }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "enableServiceLinks": true,
+        "preemptionPolicy": "PreemptLowerPriority",
+        "priority": 0,
+        "restartPolicy": "Never",
+        "schedulerName": "runai-scheduler",
+        "securityContext": {},
+        "serviceAccount": "default",
+        "serviceAccountName": "default",
+        "terminationGracePeriodSeconds": 30,
+        "tolerations": [
+            {
+                "effect": "NoExecute",
+                "key": "node.kubernetes.io/not-ready",
+                "operator": "Exists",
+                "tolerationSeconds": 300
+            },
+            {
+                "effect": "NoExecute",
+                "key": "node.kubernetes.io/unreachable",
+                "operator": "Exists",
+                "tolerationSeconds": 300
+            }
+        ],
+        "volumes": [
+            {
+                "name": "pvc-volume-0",
+                "persistentVolumeClaim": {
+                    "claimName": "cvlab-scratch"
+                }
+            },
+            {
+                "emptyDir": {
+                    "medium": "Memory"
+                },
+                "name": "dshm"
+            },
+            {
+                "name": "kube-api-access-cx2dp",
+                "projected": {
+                    "defaultMode": 420,
+                    "sources": [
+                        {
+                            "serviceAccountToken": {
+                                "expirationSeconds": 3607,
+                                "path": "token"
+                            }
+                        },
+                        {
+                            "configMap": {
+                                "items": [
+                                    {
+                                        "key": "ca.crt",
+                                        "path": "ca.crt"
+                                    }
+                                ],
+                                "name": "kube-root-ca.crt"
+                            }
+                        },
+                        {
+                            "downwardAPI": {
+                                "items": [
+                                    {
+                                        "fieldRef": {
+                                            "apiVersion": "v1",
+                                            "fieldPath": "metadata.namespace"
+                                        },
+                                        "path": "namespace"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "status": {
+        "conditions": [
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2026-10-30T00:28:10Z",
+                "message": "\n\u003cgpu301.rcp.epfl.ch\u003e: Node didn't have enough resources: GPUs, requested: 2, used: 8, capacity: 8.\n\u003cgpu302.rcp.epfl.ch\u003e: Node didn't have enough resources: GPUs, requested: 2, used: 8, capacity: 8.\n\u003cgpu303.rcp.epfl.ch\u003e: Node didn't have enough resources: GPUs, requested: 2, used: 8, capacity: 8.\n\u003cgpu304.rcp.epfl.ch\u003e: Node didn't have enough resources: GPUs, requested: 2, used: 8, capacity: 8, Node didn't have enough resources: memory, requested: 128, used: 1520.467, capacity: 1588.65.\n\u003cgpu305.rcp.epfl.ch\u003e: Node didn't have enough resources: GPUs, requested: 2, used: 8, capacity: 8.\n\u003cgpu306.rcp.epfl.ch\u003e: Node didn't have enough resources: GPUs, requested: 2, used: 8, capacity: 8.\n\u003cgpu307.rcp.epfl.ch\u003e: Node didn't have enough resources: GPUs, requested: 2, used: 8, capacity: 8.\n\u003cgpu308.rcp.epfl.ch\u003e: Node didn't have enough resources: GPUs, requested: 2, used: 8, capacity: 8, Node didn't have enough resources: memory, requested: 128, used: 1520.667, capacity: 1588.65.\n\u003cgpu309.rcp.epfl.ch\u003e: Node didn't have enough resources: GPUs, requested: 2, used: 8, capacity: 8.\nno nodes with enough resources were found.",
+                "reason": "Unschedulable",
+                "status": "False",
+                "type": "PodScheduled"
+            }
+        ],
+        "phase": "Pending",
+        "qosClass": "Burstable"
+    }
+}

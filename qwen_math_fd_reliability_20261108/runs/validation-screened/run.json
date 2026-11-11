@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "validation-screened",
+  "title": "FD可靠性 · 教师筛选合格新题 · N16/32/128/1024",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T08:40:08.515782+00:00",
+  "updated_at": "2026-11-08T08:40:08.515795+00:00",
+  "parameters": {
+    "scope": "Base initialization with best N64 clipped sigmoid3s recipe; not unavailable best step20 weights",
+    "selection": "first previously unused eligible row in preregistered frozen teacher-screening order; row46947 has7/8correct; one truncated screening draw retained",
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a"
+  },
+  "sources": {
+    "status": "runs/validation-screened/state.json",
+    "progress": "runs/validation-screened/progress.json",
+    "results": "runs/validation-screened/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/validation-screened/result.json"
+    },
+    {
+      "label": "report/summary.json",
+      "path": "runs/validation-screened/report/summary.json"
+    }
+  ],
+  "tags": [],
+  "notes": "Base initialization with best N64 clipped sigmoid3s recipe; not unavailable best step20 weights",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-audit-screen-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

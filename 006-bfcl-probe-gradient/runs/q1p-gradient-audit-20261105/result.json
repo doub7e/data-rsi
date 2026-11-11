@@ -1,0 +1,81 @@
+{
+  "initial_settings": {
+    "matmul_precision": "highest",
+    "allow_tf32": false,
+    "allow_bf16_reduced_precision_reduction": true,
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA H200"
+  },
+  "comparisons": [
+    {
+      "meta_index": 1281,
+      "mode": "original_defaults",
+      "target_tokens": 7866,
+      "input_sha256": "ad7afc797db401a45b6153bd76441402d31966aa4733343e04c5a5d04eef23c1",
+      "norm": 37.95736384310452,
+      "old_norm": 37.95855848864817,
+      "relative_norm_difference": -3.14723633146885e-05,
+      "cosine_vs_first": null,
+      "relative_vector_error_vs_first": null
+    },
+    {
+      "meta_index": 1281,
+      "mode": "repeat_original",
+      "target_tokens": 7866,
+      "input_sha256": "ad7afc797db401a45b6153bd76441402d31966aa4733343e04c5a5d04eef23c1",
+      "norm": 37.95738867220945,
+      "old_norm": 37.95855848864817,
+      "relative_norm_difference": -3.0818252465425466e-05,
+      "cosine_vs_first": 0.9999977522856569,
+      "relative_vector_error_vs_first": 0.0021200875290582834
+    },
+    {
+      "meta_index": 1281,
+      "mode": "projection_settings",
+      "target_tokens": 7866,
+      "input_sha256": "ad7afc797db401a45b6153bd76441402d31966aa4733343e04c5a5d04eef23c1",
+      "norm": 37.96792691288016,
+      "old_norm": 37.95855848864817,
+      "relative_norm_difference": 0.0002468066387397716,
+      "cosine_vs_first": 0.9999932272350204,
+      "relative_vector_error_vs_first": 0.0036913801147023155
+    },
+    {
+      "meta_index": 106,
+      "mode": "original_defaults",
+      "target_tokens": 11751,
+      "input_sha256": "2348064bb31c5fa5770a44eeb67734afa2ca45d7edd9d9fbc4737af38787c634",
+      "norm": 33.40089837450123,
+      "old_norm": 33.40254946091865,
+      "relative_norm_difference": -4.942995202661393e-05,
+      "cosine_vs_first": null,
+      "relative_vector_error_vs_first": null
+    },
+    {
+      "meta_index": 106,
+      "mode": "repeat_original",
+      "target_tokens": 11751,
+      "input_sha256": "2348064bb31c5fa5770a44eeb67734afa2ca45d7edd9d9fbc4737af38787c634",
+      "norm": 33.40217555308268,
+      "old_norm": 33.40254946091865,
+      "relative_norm_difference": -1.119399093796325e-05,
+      "cosine_vs_first": 0.9999982435755648,
+      "relative_vector_error_vs_first": 0.0018756594118218201
+    },
+    {
+      "meta_index": 106,
+      "mode": "projection_settings",
+      "target_tokens": 11751,
+      "input_sha256": "2348064bb31c5fa5770a44eeb67734afa2ca45d7edd9d9fbc4737af38787c634",
+      "norm": 33.402211955961384,
+      "old_norm": 33.40254946091865,
+      "relative_norm_difference": -1.0104167577407175e-05,
+      "cosine_vs_first": 0.9999981848394115,
+      "relative_vector_error_vs_first": 0.0019060534878559698
+    }
+  ],
+  "limitations": [
+    "For candidate106, labels original_defaults/repeat_original inherit the previous12-thread setting; candidate1281 performs the intended4-thread to12-thread comparison. Repeated gradients remain meaningful at identical inputs.",
+    "Exact kernel-level cause is not isolated; measured BF16 backward repeat variability is sufficient to show the original norm-only threshold can false-alarm."
+  ]
+}

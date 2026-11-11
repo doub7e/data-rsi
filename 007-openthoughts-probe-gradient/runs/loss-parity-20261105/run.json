@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "loss-parity-20261105",
+  "title": "OTA · Base8B · 训练loss/梯度一致性验证",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-05T19:44:17.442230+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "ota-probe-loss-parity-1105",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "sources": {
+    "status": "runs/loss-parity-20261105/state.json",
+    "results": "runs/loss-parity-20261105/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "Loss contract",
+      "path": "runs/loss-parity-20261105/loss-contract.json"
+    },
+    {
+      "label": "验证结果",
+      "path": "runs/loss-parity-20261105/result.json"
+    }
+  ]
+}

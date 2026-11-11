@@ -1,0 +1,2417 @@
+{
+  "_id": "69336a753d5a6342f67ad891",
+  "id": "open-thoughts/OpenThoughts-TB-dev",
+  "author": "open-thoughts",
+  "sha": "0d54f719f34dca712c8d6ef0f51df4670a2a287a",
+  "lastModified": "2025-12-06T18:13:41.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "task_categories:text-generation",
+    "task_categories:reinforcement-learning",
+    "license:apache-2.0",
+    "region:us",
+    "agents",
+    "terminal",
+    "code",
+    "benchmark"
+  ],
+  "description": "\n    \n\n\n\nProject |\nSFT dataset |\nRL dataset |\nSFT model\nRL model\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tOpenThoughts-TB-Dev\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Description\n\t\n\nOpenThoughts-TB-Dev is our development benchmark for evaluating agent models on terminal and shell-based tasks. This dataset was curated to measure the effectiveness of different data sources, teacher models, and curation approaches during the development of OpenThinker-Agent-v1. We used this benchmark to ablate over many different instruction generation… See the full description on the dataset page: https://huggingface.co/datasets/open-thoughts/OpenThoughts-TB-dev.",
+  "downloads": 6102,
+  "likes": 8,
+  "cardData": {
+    "license": "apache-2.0",
+    "task_categories": [
+      "text-generation",
+      "reinforcement-learning"
+    ],
+    "tags": [
+      "agents",
+      "terminal",
+      "code",
+      "benchmark"
+    ],
+    "library_name": "datasets"
+  },
+  "siblings": [
+    {
+      "rfilename": ".DS_Store"
+    },
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "0895cf7d-e27e-4ff7-a984-265d79de/environment/Dockerfile"
+    },
+    {
+      "rfilename": "0895cf7d-e27e-4ff7-a984-265d79de/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "0895cf7d-e27e-4ff7-a984-265d79de/environment/data/access.log"
+    },
+    {
+      "rfilename": "0895cf7d-e27e-4ff7-a984-265d79de/environment/data/questions.txt"
+    },
+    {
+      "rfilename": "0895cf7d-e27e-4ff7-a984-265d79de/instruction.md"
+    },
+    {
+      "rfilename": "0895cf7d-e27e-4ff7-a984-265d79de/solution/solve.sh"
+    },
+    {
+      "rfilename": "0895cf7d-e27e-4ff7-a984-265d79de/task.toml"
+    },
+    {
+      "rfilename": "0895cf7d-e27e-4ff7-a984-265d79de/tests/grader.py"
+    },
+    {
+      "rfilename": "0895cf7d-e27e-4ff7-a984-265d79de/tests/log_answers.txt"
+    },
+    {
+      "rfilename": "0895cf7d-e27e-4ff7-a984-265d79de/tests/test.sh"
+    },
+    {
+      "rfilename": "0895cf7d-e27e-4ff7-a984-265d79de/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "09d5c141-d065-4d33-a3e6-362dcf5e/environment/Dockerfile"
+    },
+    {
+      "rfilename": "09d5c141-d065-4d33-a3e6-362dcf5e/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "09d5c141-d065-4d33-a3e6-362dcf5e/instruction.md"
+    },
+    {
+      "rfilename": "09d5c141-d065-4d33-a3e6-362dcf5e/solution/solve.sh"
+    },
+    {
+      "rfilename": "09d5c141-d065-4d33-a3e6-362dcf5e/task.toml"
+    },
+    {
+      "rfilename": "09d5c141-d065-4d33-a3e6-362dcf5e/tests/answers.json"
+    },
+    {
+      "rfilename": "09d5c141-d065-4d33-a3e6-362dcf5e/tests/grader.py"
+    },
+    {
+      "rfilename": "09d5c141-d065-4d33-a3e6-362dcf5e/tests/test.sh"
+    },
+    {
+      "rfilename": "09d5c141-d065-4d33-a3e6-362dcf5e/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "0c5c169a-2c85-4120-8e4e-32471b1a/.DS_Store"
+    },
+    {
+      "rfilename": "0c5c169a-2c85-4120-8e4e-32471b1a/environment/Dockerfile"
+    },
+    {
+      "rfilename": "0c5c169a-2c85-4120-8e4e-32471b1a/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "0c5c169a-2c85-4120-8e4e-32471b1a/environment/data/input.txt"
+    },
+    {
+      "rfilename": "0c5c169a-2c85-4120-8e4e-32471b1a/environment/generate_tests.py"
+    },
+    {
+      "rfilename": "0c5c169a-2c85-4120-8e4e-32471b1a/instruction.md"
+    },
+    {
+      "rfilename": "0c5c169a-2c85-4120-8e4e-32471b1a/solution/solve.sh"
+    },
+    {
+      "rfilename": "0c5c169a-2c85-4120-8e4e-32471b1a/task.toml"
+    },
+    {
+      "rfilename": "0c5c169a-2c85-4120-8e4e-32471b1a/tests/grader.py"
+    },
+    {
+      "rfilename": "0c5c169a-2c85-4120-8e4e-32471b1a/tests/solution.py"
+    },
+    {
+      "rfilename": "0c5c169a-2c85-4120-8e4e-32471b1a/tests/test.sh"
+    },
+    {
+      "rfilename": "0c5c169a-2c85-4120-8e4e-32471b1a/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "0e07948f-c624-4bae-8d02-86081c43/environment/Dockerfile"
+    },
+    {
+      "rfilename": "0e07948f-c624-4bae-8d02-86081c43/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "0e07948f-c624-4bae-8d02-86081c43/environment/data/book_prices.json"
+    },
+    {
+      "rfilename": "0e07948f-c624-4bae-8d02-86081c43/environment/data/books.json"
+    },
+    {
+      "rfilename": "0e07948f-c624-4bae-8d02-86081c43/instruction.md"
+    },
+    {
+      "rfilename": "0e07948f-c624-4bae-8d02-86081c43/solution/solve.sh"
+    },
+    {
+      "rfilename": "0e07948f-c624-4bae-8d02-86081c43/task.toml"
+    },
+    {
+      "rfilename": "0e07948f-c624-4bae-8d02-86081c43/tests/book_prices.json"
+    },
+    {
+      "rfilename": "0e07948f-c624-4bae-8d02-86081c43/tests/books_not_corrupted.json"
+    },
+    {
+      "rfilename": "0e07948f-c624-4bae-8d02-86081c43/tests/grader.py"
+    },
+    {
+      "rfilename": "0e07948f-c624-4bae-8d02-86081c43/tests/test.sh"
+    },
+    {
+      "rfilename": "0e07948f-c624-4bae-8d02-86081c43/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "1a87dfeb-8ebb-4124-b8ee-b76020ca/environment/Dockerfile"
+    },
+    {
+      "rfilename": "1a87dfeb-8ebb-4124-b8ee-b76020ca/instruction.md"
+    },
+    {
+      "rfilename": "1a87dfeb-8ebb-4124-b8ee-b76020ca/solution/solve.sh"
+    },
+    {
+      "rfilename": "1a87dfeb-8ebb-4124-b8ee-b76020ca/task.toml"
+    },
+    {
+      "rfilename": "1a87dfeb-8ebb-4124-b8ee-b76020ca/tests/.keep"
+    },
+    {
+      "rfilename": "1a87dfeb-8ebb-4124-b8ee-b76020ca/tests/grader.py"
+    },
+    {
+      "rfilename": "1a87dfeb-8ebb-4124-b8ee-b76020ca/tests/test.sh"
+    },
+    {
+      "rfilename": "1a87dfeb-8ebb-4124-b8ee-b76020ca/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "1c671160-51a2-4496-9099-ee921125/environment/Dockerfile"
+    },
+    {
+      "rfilename": "1c671160-51a2-4496-9099-ee921125/environment/data/Sample.txt"
+    },
+    {
+      "rfilename": "1c671160-51a2-4496-9099-ee921125/instruction.md"
+    },
+    {
+      "rfilename": "1c671160-51a2-4496-9099-ee921125/solution/solve.sh"
+    },
+    {
+      "rfilename": "1c671160-51a2-4496-9099-ee921125/task.toml"
+    },
+    {
+      "rfilename": "1c671160-51a2-4496-9099-ee921125/tests/Sample.txt"
+    },
+    {
+      "rfilename": "1c671160-51a2-4496-9099-ee921125/tests/grader.py"
+    },
+    {
+      "rfilename": "1c671160-51a2-4496-9099-ee921125/tests/test.sh"
+    },
+    {
+      "rfilename": "1c671160-51a2-4496-9099-ee921125/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "1d7ab372-5c14-492c-85da-e2a7e7e3/environment/Dockerfile"
+    },
+    {
+      "rfilename": "1d7ab372-5c14-492c-85da-e2a7e7e3/environment/data/ground_truth_female.csv"
+    },
+    {
+      "rfilename": "1d7ab372-5c14-492c-85da-e2a7e7e3/environment/data/train.csv"
+    },
+    {
+      "rfilename": "1d7ab372-5c14-492c-85da-e2a7e7e3/environment/data/train_split.csv"
+    },
+    {
+      "rfilename": "1d7ab372-5c14-492c-85da-e2a7e7e3/environment/data/validation.csv"
+    },
+    {
+      "rfilename": "1d7ab372-5c14-492c-85da-e2a7e7e3/environment/data/validation_female.csv"
+    },
+    {
+      "rfilename": "1d7ab372-5c14-492c-85da-e2a7e7e3/instruction.md"
+    },
+    {
+      "rfilename": "1d7ab372-5c14-492c-85da-e2a7e7e3/solution/solve.sh"
+    },
+    {
+      "rfilename": "1d7ab372-5c14-492c-85da-e2a7e7e3/task.toml"
+    },
+    {
+      "rfilename": "1d7ab372-5c14-492c-85da-e2a7e7e3/tests/grader.py"
+    },
+    {
+      "rfilename": "1d7ab372-5c14-492c-85da-e2a7e7e3/tests/test.sh"
+    },
+    {
+      "rfilename": "1d7ab372-5c14-492c-85da-e2a7e7e3/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "235c441d-e785-4e86-9659-a434b9fd/environment/.DS_Store"
+    },
+    {
+      "rfilename": "235c441d-e785-4e86-9659-a434b9fd/environment/Dockerfile"
+    },
+    {
+      "rfilename": "235c441d-e785-4e86-9659-a434b9fd/environment/data/main.c"
+    },
+    {
+      "rfilename": "235c441d-e785-4e86-9659-a434b9fd/environment/data/orders.csv"
+    },
+    {
+      "rfilename": "235c441d-e785-4e86-9659-a434b9fd/environment/data/products.csv"
+    },
+    {
+      "rfilename": "235c441d-e785-4e86-9659-a434b9fd/environment/data/validate.s"
+    },
+    {
+      "rfilename": "235c441d-e785-4e86-9659-a434b9fd/instruction.md"
+    },
+    {
+      "rfilename": "235c441d-e785-4e86-9659-a434b9fd/solution/solve.sh"
+    },
+    {
+      "rfilename": "235c441d-e785-4e86-9659-a434b9fd/task.toml"
+    },
+    {
+      "rfilename": "235c441d-e785-4e86-9659-a434b9fd/tests/grader.py"
+    },
+    {
+      "rfilename": "235c441d-e785-4e86-9659-a434b9fd/tests/test.sh"
+    },
+    {
+      "rfilename": "235c441d-e785-4e86-9659-a434b9fd/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/environment/Dockerfile"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/environment/data/both_test.csv"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/environment/data/both_train.csv"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/environment/data/movie_test.csv"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/environment/data/movie_train.csv"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/environment/data/network_test.csv"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/environment/data/network_train.csv"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/environment/data/news_test.csv"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/environment/data/news_train.csv"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/environment/data/sensor_test.csv"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/environment/data/sensor_train.csv"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/instruction.md"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/solution/solve.sh"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/task.toml"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/tests/both_rank_labels.json"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/tests/grader.py"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/tests/movie_rank_labels.json"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/tests/network_labels.json"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/tests/news_rank_labels.json"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/tests/sensor_labels.json"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/tests/test.sh"
+    },
+    {
+      "rfilename": "35bd72ae-9435-4475-8e33-fa179463/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "35e44800-91e3-49cf-92a6-0a714bab/environment/.DS_Store"
+    },
+    {
+      "rfilename": "35e44800-91e3-49cf-92a6-0a714bab/environment/Dockerfile"
+    },
+    {
+      "rfilename": "35e44800-91e3-49cf-92a6-0a714bab/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "35e44800-91e3-49cf-92a6-0a714bab/environment/data/.DS_Store"
+    },
+    {
+      "rfilename": "35e44800-91e3-49cf-92a6-0a714bab/environment/data/coordinates.txt"
+    },
+    {
+      "rfilename": "35e44800-91e3-49cf-92a6-0a714bab/instruction.md"
+    },
+    {
+      "rfilename": "35e44800-91e3-49cf-92a6-0a714bab/solution/solve.sh"
+    },
+    {
+      "rfilename": "35e44800-91e3-49cf-92a6-0a714bab/task.toml"
+    },
+    {
+      "rfilename": "35e44800-91e3-49cf-92a6-0a714bab/tests/grader.py"
+    },
+    {
+      "rfilename": "35e44800-91e3-49cf-92a6-0a714bab/tests/test.sh"
+    },
+    {
+      "rfilename": "35e44800-91e3-49cf-92a6-0a714bab/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/environment/Dockerfile"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/environment/data/problem.txt"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/environment/data/testcase1.txt"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/environment/data/testcase10.txt"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/environment/data/testcase2.txt"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/environment/data/testcase3.txt"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/environment/data/testcase4.txt"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/environment/data/testcase5.txt"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/environment/data/testcase6.txt"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/environment/data/testcase7.txt"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/environment/data/testcase8.txt"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/environment/data/testcase9.txt"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/instruction.md"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/solution/solve.sh"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/task.toml"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/tests/answers.json"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/tests/grader.py"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/tests/test.sh"
+    },
+    {
+      "rfilename": "3dd9a49b-a9a4-44ac-932f-79899b92/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "43210b08-43ab-4949-a091-a8e1dd83/environment/Dockerfile"
+    },
+    {
+      "rfilename": "43210b08-43ab-4949-a091-a8e1dd83/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "43210b08-43ab-4949-a091-a8e1dd83/environment/servers/server1.py"
+    },
+    {
+      "rfilename": "43210b08-43ab-4949-a091-a8e1dd83/environment/servers/server2.py"
+    },
+    {
+      "rfilename": "43210b08-43ab-4949-a091-a8e1dd83/environment/servers/server3.py"
+    },
+    {
+      "rfilename": "43210b08-43ab-4949-a091-a8e1dd83/environment/servers/server4.py"
+    },
+    {
+      "rfilename": "43210b08-43ab-4949-a091-a8e1dd83/environment/supervisord.conf"
+    },
+    {
+      "rfilename": "43210b08-43ab-4949-a091-a8e1dd83/instruction.md"
+    },
+    {
+      "rfilename": "43210b08-43ab-4949-a091-a8e1dd83/solution/solve.sh"
+    },
+    {
+      "rfilename": "43210b08-43ab-4949-a091-a8e1dd83/task.toml"
+    },
+    {
+      "rfilename": "43210b08-43ab-4949-a091-a8e1dd83/tests/grader.py"
+    },
+    {
+      "rfilename": "43210b08-43ab-4949-a091-a8e1dd83/tests/test.sh"
+    },
+    {
+      "rfilename": "43210b08-43ab-4949-a091-a8e1dd83/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "531e1ca7-c794-4e7f-87cc-6350725e/environment/Dockerfile"
+    },
+    {
+      "rfilename": "531e1ca7-c794-4e7f-87cc-6350725e/environment/data/parking.txt"
+    },
+    {
+      "rfilename": "531e1ca7-c794-4e7f-87cc-6350725e/environment/data/sample.txt"
+    },
+    {
+      "rfilename": "531e1ca7-c794-4e7f-87cc-6350725e/instruction.md"
+    },
+    {
+      "rfilename": "531e1ca7-c794-4e7f-87cc-6350725e/solution/solve.sh"
+    },
+    {
+      "rfilename": "531e1ca7-c794-4e7f-87cc-6350725e/task.toml"
+    },
+    {
+      "rfilename": "531e1ca7-c794-4e7f-87cc-6350725e/tests/correct_ans.txt"
+    },
+    {
+      "rfilename": "531e1ca7-c794-4e7f-87cc-6350725e/tests/grader.py"
+    },
+    {
+      "rfilename": "531e1ca7-c794-4e7f-87cc-6350725e/tests/test.sh"
+    },
+    {
+      "rfilename": "531e1ca7-c794-4e7f-87cc-6350725e/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "63a70070-8102-4261-bfdf-16d15314/environment/Dockerfile"
+    },
+    {
+      "rfilename": "63a70070-8102-4261-bfdf-16d15314/environment/data/access_log.txt"
+    },
+    {
+      "rfilename": "63a70070-8102-4261-bfdf-16d15314/environment/data/query_log.txt"
+    },
+    {
+      "rfilename": "63a70070-8102-4261-bfdf-16d15314/environment/data/schema_info.json"
+    },
+    {
+      "rfilename": "63a70070-8102-4261-bfdf-16d15314/environment/data/users_dump.csv"
+    },
+    {
+      "rfilename": "63a70070-8102-4261-bfdf-16d15314/environment/data/web_requests.log"
+    },
+    {
+      "rfilename": "63a70070-8102-4261-bfdf-16d15314/instruction.md"
+    },
+    {
+      "rfilename": "63a70070-8102-4261-bfdf-16d15314/solution/solve.sh"
+    },
+    {
+      "rfilename": "63a70070-8102-4261-bfdf-16d15314/task.toml"
+    },
+    {
+      "rfilename": "63a70070-8102-4261-bfdf-16d15314/tests/answers.json"
+    },
+    {
+      "rfilename": "63a70070-8102-4261-bfdf-16d15314/tests/grader.py"
+    },
+    {
+      "rfilename": "63a70070-8102-4261-bfdf-16d15314/tests/test.sh"
+    },
+    {
+      "rfilename": "63a70070-8102-4261-bfdf-16d15314/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/Dockerfile"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/data/input/empty.log"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/data/input/log1.log"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/data/input/log2.log"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/data/input/log3.log"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/data/input/log4.log"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/data/input/log5.log"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/data/input/log6.log"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/data/input/log7 with space.log"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/data/input/log8-special_#@!.log"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/data/input/subdir1/nested1.log"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/data/input/subdir1/nested2 with space.log"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/data/input/subdir2/deep.log"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/data/input/subdir2/empty2.log"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/environment/data/process_logs.sh"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/instruction.md"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/solution/solve.sh"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/task.toml"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/tests/answers.json"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/tests/grader.py"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/tests/test.sh"
+    },
+    {
+      "rfilename": "67d895a6-8f50-4f8d-a4ff-1a31bdc2/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "6920d458-889d-44cc-afa0-0d29e717/environment/.DS_Store"
+    },
+    {
+      "rfilename": "6920d458-889d-44cc-afa0-0d29e717/environment/Dockerfile"
+    },
+    {
+      "rfilename": "6920d458-889d-44cc-afa0-0d29e717/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "6920d458-889d-44cc-afa0-0d29e717/environment/data/book_prices.json"
+    },
+    {
+      "rfilename": "6920d458-889d-44cc-afa0-0d29e717/environment/data/books.json"
+    },
+    {
+      "rfilename": "6920d458-889d-44cc-afa0-0d29e717/instruction.md"
+    },
+    {
+      "rfilename": "6920d458-889d-44cc-afa0-0d29e717/solution/solve.sh"
+    },
+    {
+      "rfilename": "6920d458-889d-44cc-afa0-0d29e717/task.toml"
+    },
+    {
+      "rfilename": "6920d458-889d-44cc-afa0-0d29e717/tests/book_prices.json"
+    },
+    {
+      "rfilename": "6920d458-889d-44cc-afa0-0d29e717/tests/books_not_corrupted.json"
+    },
+    {
+      "rfilename": "6920d458-889d-44cc-afa0-0d29e717/tests/grader.py"
+    },
+    {
+      "rfilename": "6920d458-889d-44cc-afa0-0d29e717/tests/test.sh"
+    },
+    {
+      "rfilename": "6920d458-889d-44cc-afa0-0d29e717/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "6a31ce44-db27-42a2-957c-0b25c493/environment/Dockerfile"
+    },
+    {
+      "rfilename": "6a31ce44-db27-42a2-957c-0b25c493/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "6a31ce44-db27-42a2-957c-0b25c493/environment/disk.img"
+    },
+    {
+      "rfilename": "6a31ce44-db27-42a2-957c-0b25c493/environment/disk_repaired.img"
+    },
+    {
+      "rfilename": "6a31ce44-db27-42a2-957c-0b25c493/environment/make_diskimg.sh"
+    },
+    {
+      "rfilename": "6a31ce44-db27-42a2-957c-0b25c493/environment/sol.txt"
+    },
+    {
+      "rfilename": "6a31ce44-db27-42a2-957c-0b25c493/environment/spec.txt"
+    },
+    {
+      "rfilename": "6a31ce44-db27-42a2-957c-0b25c493/instruction.md"
+    },
+    {
+      "rfilename": "6a31ce44-db27-42a2-957c-0b25c493/solution/solve.sh"
+    },
+    {
+      "rfilename": "6a31ce44-db27-42a2-957c-0b25c493/task.toml"
+    },
+    {
+      "rfilename": "6a31ce44-db27-42a2-957c-0b25c493/tests/answers.txt"
+    },
+    {
+      "rfilename": "6a31ce44-db27-42a2-957c-0b25c493/tests/grader.py"
+    },
+    {
+      "rfilename": "6a31ce44-db27-42a2-957c-0b25c493/tests/test.sh"
+    },
+    {
+      "rfilename": "6a31ce44-db27-42a2-957c-0b25c493/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "71401830-6e66-496c-a946-6eb9616d/environment/Dockerfile"
+    },
+    {
+      "rfilename": "71401830-6e66-496c-a946-6eb9616d/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "71401830-6e66-496c-a946-6eb9616d/environment/data/config.txt"
+    },
+    {
+      "rfilename": "71401830-6e66-496c-a946-6eb9616d/environment/data/problem.txt"
+    },
+    {
+      "rfilename": "71401830-6e66-496c-a946-6eb9616d/instruction.md"
+    },
+    {
+      "rfilename": "71401830-6e66-496c-a946-6eb9616d/solution/solve.sh"
+    },
+    {
+      "rfilename": "71401830-6e66-496c-a946-6eb9616d/task.toml"
+    },
+    {
+      "rfilename": "71401830-6e66-496c-a946-6eb9616d/tests/answer.txt"
+    },
+    {
+      "rfilename": "71401830-6e66-496c-a946-6eb9616d/tests/grader.py"
+    },
+    {
+      "rfilename": "71401830-6e66-496c-a946-6eb9616d/tests/test.sh"
+    },
+    {
+      "rfilename": "71401830-6e66-496c-a946-6eb9616d/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "7871a8ce-166a-4b02-9268-5ced8412/environment/Dockerfile"
+    },
+    {
+      "rfilename": "7871a8ce-166a-4b02-9268-5ced8412/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "7871a8ce-166a-4b02-9268-5ced8412/environment/data/index.html"
+    },
+    {
+      "rfilename": "7871a8ce-166a-4b02-9268-5ced8412/environment/data/stylechanger.js"
+    },
+    {
+      "rfilename": "7871a8ce-166a-4b02-9268-5ced8412/instruction.md"
+    },
+    {
+      "rfilename": "7871a8ce-166a-4b02-9268-5ced8412/solution/solve.sh"
+    },
+    {
+      "rfilename": "7871a8ce-166a-4b02-9268-5ced8412/task.toml"
+    },
+    {
+      "rfilename": "7871a8ce-166a-4b02-9268-5ced8412/tests/answers.txt"
+    },
+    {
+      "rfilename": "7871a8ce-166a-4b02-9268-5ced8412/tests/grader.py"
+    },
+    {
+      "rfilename": "7871a8ce-166a-4b02-9268-5ced8412/tests/test.sh"
+    },
+    {
+      "rfilename": "7871a8ce-166a-4b02-9268-5ced8412/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "7a86025b-09d1-4f97-9a2e-f55529f4/environment/Dockerfile"
+    },
+    {
+      "rfilename": "7a86025b-09d1-4f97-9a2e-f55529f4/environment/data/README.md"
+    },
+    {
+      "rfilename": "7a86025b-09d1-4f97-9a2e-f55529f4/environment/data/config.json"
+    },
+    {
+      "rfilename": "7a86025b-09d1-4f97-9a2e-f55529f4/environment/data/database.sql"
+    },
+    {
+      "rfilename": "7a86025b-09d1-4f97-9a2e-f55529f4/instruction.md"
+    },
+    {
+      "rfilename": "7a86025b-09d1-4f97-9a2e-f55529f4/solution/solve.sh"
+    },
+    {
+      "rfilename": "7a86025b-09d1-4f97-9a2e-f55529f4/task.toml"
+    },
+    {
+      "rfilename": "7a86025b-09d1-4f97-9a2e-f55529f4/tests/answers.json"
+    },
+    {
+      "rfilename": "7a86025b-09d1-4f97-9a2e-f55529f4/tests/grader.py"
+    },
+    {
+      "rfilename": "7a86025b-09d1-4f97-9a2e-f55529f4/tests/test.sh"
+    },
+    {
+      "rfilename": "7a86025b-09d1-4f97-9a2e-f55529f4/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "7b5c7cbb-5182-4d11-9979-2dfa017e/environment/Dockerfile"
+    },
+    {
+      "rfilename": "7b5c7cbb-5182-4d11-9979-2dfa017e/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "7b5c7cbb-5182-4d11-9979-2dfa017e/environment/data/ground_truth.csv"
+    },
+    {
+      "rfilename": "7b5c7cbb-5182-4d11-9979-2dfa017e/environment/data/test.csv"
+    },
+    {
+      "rfilename": "7b5c7cbb-5182-4d11-9979-2dfa017e/environment/data/train.csv"
+    },
+    {
+      "rfilename": "7b5c7cbb-5182-4d11-9979-2dfa017e/instruction.md"
+    },
+    {
+      "rfilename": "7b5c7cbb-5182-4d11-9979-2dfa017e/solution/solve.sh"
+    },
+    {
+      "rfilename": "7b5c7cbb-5182-4d11-9979-2dfa017e/task.toml"
+    },
+    {
+      "rfilename": "7b5c7cbb-5182-4d11-9979-2dfa017e/tests/grader.py"
+    },
+    {
+      "rfilename": "7b5c7cbb-5182-4d11-9979-2dfa017e/tests/test.sh"
+    },
+    {
+      "rfilename": "7b5c7cbb-5182-4d11-9979-2dfa017e/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "82c37f5b-fbac-48d7-b023-b4472cfd/environment/Dockerfile"
+    },
+    {
+      "rfilename": "82c37f5b-fbac-48d7-b023-b4472cfd/environment/data/Sample.txt"
+    },
+    {
+      "rfilename": "82c37f5b-fbac-48d7-b023-b4472cfd/instruction.md"
+    },
+    {
+      "rfilename": "82c37f5b-fbac-48d7-b023-b4472cfd/solution/solve.sh"
+    },
+    {
+      "rfilename": "82c37f5b-fbac-48d7-b023-b4472cfd/task.toml"
+    },
+    {
+      "rfilename": "82c37f5b-fbac-48d7-b023-b4472cfd/tests/grader.py"
+    },
+    {
+      "rfilename": "82c37f5b-fbac-48d7-b023-b4472cfd/tests/min_energy.txt"
+    },
+    {
+      "rfilename": "82c37f5b-fbac-48d7-b023-b4472cfd/tests/test.sh"
+    },
+    {
+      "rfilename": "82c37f5b-fbac-48d7-b023-b4472cfd/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/environment/.DS_Store"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/environment/Dockerfile"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/environment/data/.DS_Store"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/environment/data/tiles/.DS_Store"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/environment/data/tiles/sample.txt"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/environment/data/tiles/tile_001.png"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/environment/data/tiles/tile_002.png"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/environment/data/tiles/tile_003.png"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/environment/data/tiles/tile_004.png"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/instruction.md"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/solution/solve.sh"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/task.toml"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/tests/.DS_Store"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/tests/expected_simple.json"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/tests/grader.py"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/tests/test.sh"
+    },
+    {
+      "rfilename": "855ec91f-5c7d-4863-a07b-232411a7/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "8fd89f74-b0c8-4718-a09d-e4330bd0/environment/Dockerfile"
+    },
+    {
+      "rfilename": "8fd89f74-b0c8-4718-a09d-e4330bd0/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "8fd89f74-b0c8-4718-a09d-e4330bd0/environment/data/sakila.db"
+    },
+    {
+      "rfilename": "8fd89f74-b0c8-4718-a09d-e4330bd0/environment/data/unoptimized.sql"
+    },
+    {
+      "rfilename": "8fd89f74-b0c8-4718-a09d-e4330bd0/instruction.md"
+    },
+    {
+      "rfilename": "8fd89f74-b0c8-4718-a09d-e4330bd0/solution/solve.sh"
+    },
+    {
+      "rfilename": "8fd89f74-b0c8-4718-a09d-e4330bd0/task.toml"
+    },
+    {
+      "rfilename": "8fd89f74-b0c8-4718-a09d-e4330bd0/tests/golden.sql"
+    },
+    {
+      "rfilename": "8fd89f74-b0c8-4718-a09d-e4330bd0/tests/grader.py"
+    },
+    {
+      "rfilename": "8fd89f74-b0c8-4718-a09d-e4330bd0/tests/test.sh"
+    },
+    {
+      "rfilename": "8fd89f74-b0c8-4718-a09d-e4330bd0/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "949155ae-3b77-483c-96c2-7f0f423c/environment/.DS_Store"
+    },
+    {
+      "rfilename": "949155ae-3b77-483c-96c2-7f0f423c/environment/Dockerfile"
+    },
+    {
+      "rfilename": "949155ae-3b77-483c-96c2-7f0f423c/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "949155ae-3b77-483c-96c2-7f0f423c/environment/build.sh"
+    },
+    {
+      "rfilename": "949155ae-3b77-483c-96c2-7f0f423c/environment/patch.diff"
+    },
+    {
+      "rfilename": "949155ae-3b77-483c-96c2-7f0f423c/environment/run_test.sh"
+    },
+    {
+      "rfilename": "949155ae-3b77-483c-96c2-7f0f423c/instruction.md"
+    },
+    {
+      "rfilename": "949155ae-3b77-483c-96c2-7f0f423c/solution/solve.sh"
+    },
+    {
+      "rfilename": "949155ae-3b77-483c-96c2-7f0f423c/task.toml"
+    },
+    {
+      "rfilename": "949155ae-3b77-483c-96c2-7f0f423c/tests/grader.py"
+    },
+    {
+      "rfilename": "949155ae-3b77-483c-96c2-7f0f423c/tests/test.sh"
+    },
+    {
+      "rfilename": "949155ae-3b77-483c-96c2-7f0f423c/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "9a052f3e-f867-418b-ad6d-41cd056e/environment/Dockerfile"
+    },
+    {
+      "rfilename": "9a052f3e-f867-418b-ad6d-41cd056e/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "9a052f3e-f867-418b-ad6d-41cd056e/environment/data/input.txt"
+    },
+    {
+      "rfilename": "9a052f3e-f867-418b-ad6d-41cd056e/environment/data/large_test.txt"
+    },
+    {
+      "rfilename": "9a052f3e-f867-418b-ad6d-41cd056e/instruction.md"
+    },
+    {
+      "rfilename": "9a052f3e-f867-418b-ad6d-41cd056e/solution/solve.sh"
+    },
+    {
+      "rfilename": "9a052f3e-f867-418b-ad6d-41cd056e/task.toml"
+    },
+    {
+      "rfilename": "9a052f3e-f867-418b-ad6d-41cd056e/tests/grader.py"
+    },
+    {
+      "rfilename": "9a052f3e-f867-418b-ad6d-41cd056e/tests/solution.py"
+    },
+    {
+      "rfilename": "9a052f3e-f867-418b-ad6d-41cd056e/tests/test.sh"
+    },
+    {
+      "rfilename": "9a052f3e-f867-418b-ad6d-41cd056e/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/Dockerfile"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/__pycache__/grader.cpython-312.pyc"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/__pycache__/grader.cpython-313.pyc"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/100/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/31/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/32/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/33/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/34/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/40/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/41/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/42/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/43/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/44/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/45/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/56/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/57/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/58/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/59/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/6/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/64/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/65/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/66/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/67/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/68/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/69/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/7/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/8/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/85/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/86/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/87/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/88/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/89/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/97/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/98/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/cases/99/content.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/introduction.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/summary1.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/summary10.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/summary2.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/summary3.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/summary4.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/summary5.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/summary6.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/summary7.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/summary8.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/environment/data/summary9.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/instruction.md"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/solution/solve.sh"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/task.toml"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/tests/answers.json"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/tests/grader.py"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/tests/sol.csv"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/tests/solutions.txt"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/tests/test.sh"
+    },
+    {
+      "rfilename": "9f265505-9475-435e-9abf-e46835a7/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "a7de53df-43da-49ad-9818-1722e92e/environment/Dockerfile"
+    },
+    {
+      "rfilename": "a7de53df-43da-49ad-9818-1722e92e/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "a7de53df-43da-49ad-9818-1722e92e/environment/data/dict.txt"
+    },
+    {
+      "rfilename": "a7de53df-43da-49ad-9818-1722e92e/instruction.md"
+    },
+    {
+      "rfilename": "a7de53df-43da-49ad-9818-1722e92e/solution/solve.sh"
+    },
+    {
+      "rfilename": "a7de53df-43da-49ad-9818-1722e92e/task.toml"
+    },
+    {
+      "rfilename": "a7de53df-43da-49ad-9818-1722e92e/tests/grader.py"
+    },
+    {
+      "rfilename": "a7de53df-43da-49ad-9818-1722e92e/tests/test.sh"
+    },
+    {
+      "rfilename": "a7de53df-43da-49ad-9818-1722e92e/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "ab72149d-33f8-4e69-9088-711bd86c/environment/Dockerfile"
+    },
+    {
+      "rfilename": "ab72149d-33f8-4e69-9088-711bd86c/environment/data/access.log"
+    },
+    {
+      "rfilename": "ab72149d-33f8-4e69-9088-711bd86c/environment/data/auth.log"
+    },
+    {
+      "rfilename": "ab72149d-33f8-4e69-9088-711bd86c/environment/data/file_changes.txt"
+    },
+    {
+      "rfilename": "ab72149d-33f8-4e69-9088-711bd86c/environment/data/network_connections.csv"
+    },
+    {
+      "rfilename": "ab72149d-33f8-4e69-9088-711bd86c/environment/data/system_processes.json"
+    },
+    {
+      "rfilename": "ab72149d-33f8-4e69-9088-711bd86c/instruction.md"
+    },
+    {
+      "rfilename": "ab72149d-33f8-4e69-9088-711bd86c/solution/solve.sh"
+    },
+    {
+      "rfilename": "ab72149d-33f8-4e69-9088-711bd86c/task.toml"
+    },
+    {
+      "rfilename": "ab72149d-33f8-4e69-9088-711bd86c/tests/expected_iocs.json"
+    },
+    {
+      "rfilename": "ab72149d-33f8-4e69-9088-711bd86c/tests/grader.py"
+    },
+    {
+      "rfilename": "ab72149d-33f8-4e69-9088-711bd86c/tests/test.sh"
+    },
+    {
+      "rfilename": "ab72149d-33f8-4e69-9088-711bd86c/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "acl-permissions-inheritance/.DS_Store"
+    },
+    {
+      "rfilename": "acl-permissions-inheritance/environment/Dockerfile"
+    },
+    {
+      "rfilename": "acl-permissions-inheritance/instruction.md"
+    },
+    {
+      "rfilename": "acl-permissions-inheritance/solution/solve.sh"
+    },
+    {
+      "rfilename": "acl-permissions-inheritance/task.toml"
+    },
+    {
+      "rfilename": "acl-permissions-inheritance/tests/test.sh"
+    },
+    {
+      "rfilename": "acl-permissions-inheritance/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "af2eb409-fff6-479d-81d6-c29bf13e/environment/Dockerfile"
+    },
+    {
+      "rfilename": "af2eb409-fff6-479d-81d6-c29bf13e/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "af2eb409-fff6-479d-81d6-c29bf13e/instruction.md"
+    },
+    {
+      "rfilename": "af2eb409-fff6-479d-81d6-c29bf13e/solution/solve.sh"
+    },
+    {
+      "rfilename": "af2eb409-fff6-479d-81d6-c29bf13e/task.toml"
+    },
+    {
+      "rfilename": "af2eb409-fff6-479d-81d6-c29bf13e/tests/expected.txt"
+    },
+    {
+      "rfilename": "af2eb409-fff6-479d-81d6-c29bf13e/tests/expected_chain.json"
+    },
+    {
+      "rfilename": "af2eb409-fff6-479d-81d6-c29bf13e/tests/grader.py"
+    },
+    {
+      "rfilename": "af2eb409-fff6-479d-81d6-c29bf13e/tests/test.sh"
+    },
+    {
+      "rfilename": "af2eb409-fff6-479d-81d6-c29bf13e/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "amuse-install/environment/Dockerfile"
+    },
+    {
+      "rfilename": "amuse-install/environment/task-deps/test_script.py"
+    },
+    {
+      "rfilename": "amuse-install/instruction.md"
+    },
+    {
+      "rfilename": "amuse-install/solution/solve.sh"
+    },
+    {
+      "rfilename": "amuse-install/task.toml"
+    },
+    {
+      "rfilename": "amuse-install/tests/test.sh"
+    },
+    {
+      "rfilename": "amuse-install/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "analyze-access-logs/environment/Dockerfile"
+    },
+    {
+      "rfilename": "analyze-access-logs/environment/access_log"
+    },
+    {
+      "rfilename": "analyze-access-logs/instruction.md"
+    },
+    {
+      "rfilename": "analyze-access-logs/solution/solve.sh"
+    },
+    {
+      "rfilename": "analyze-access-logs/task.toml"
+    },
+    {
+      "rfilename": "analyze-access-logs/tests/test.sh"
+    },
+    {
+      "rfilename": "analyze-access-logs/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "b3e41e4e-6d1b-484a-8c8b-1dbf9a09/environment/Dockerfile"
+    },
+    {
+      "rfilename": "b3e41e4e-6d1b-484a-8c8b-1dbf9a09/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "b3e41e4e-6d1b-484a-8c8b-1dbf9a09/environment/keyholder.c"
+    },
+    {
+      "rfilename": "b3e41e4e-6d1b-484a-8c8b-1dbf9a09/environment/vulnerable_program.c"
+    },
+    {
+      "rfilename": "b3e41e4e-6d1b-484a-8c8b-1dbf9a09/instruction.md"
+    },
+    {
+      "rfilename": "b3e41e4e-6d1b-484a-8c8b-1dbf9a09/solution/solve.sh"
+    },
+    {
+      "rfilename": "b3e41e4e-6d1b-484a-8c8b-1dbf9a09/task.toml"
+    },
+    {
+      "rfilename": "b3e41e4e-6d1b-484a-8c8b-1dbf9a09/tests/grader.py"
+    },
+    {
+      "rfilename": "b3e41e4e-6d1b-484a-8c8b-1dbf9a09/tests/test.sh"
+    },
+    {
+      "rfilename": "b3e41e4e-6d1b-484a-8c8b-1dbf9a09/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "bd1e3aee-64e5-4209-bf0f-b994088c/environment/Dockerfile"
+    },
+    {
+      "rfilename": "bd1e3aee-64e5-4209-bf0f-b994088c/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "bd1e3aee-64e5-4209-bf0f-b994088c/environment/data/plan.txt"
+    },
+    {
+      "rfilename": "bd1e3aee-64e5-4209-bf0f-b994088c/instruction.md"
+    },
+    {
+      "rfilename": "bd1e3aee-64e5-4209-bf0f-b994088c/solution/solve.sh"
+    },
+    {
+      "rfilename": "bd1e3aee-64e5-4209-bf0f-b994088c/task.toml"
+    },
+    {
+      "rfilename": "bd1e3aee-64e5-4209-bf0f-b994088c/tests/correct.json"
+    },
+    {
+      "rfilename": "bd1e3aee-64e5-4209-bf0f-b994088c/tests/grader.py"
+    },
+    {
+      "rfilename": "bd1e3aee-64e5-4209-bf0f-b994088c/tests/test.sh"
+    },
+    {
+      "rfilename": "bd1e3aee-64e5-4209-bf0f-b994088c/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "be77281a-bd55-4a6e-8481-6dd04f29/environment/Dockerfile"
+    },
+    {
+      "rfilename": "be77281a-bd55-4a6e-8481-6dd04f29/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "be77281a-bd55-4a6e-8481-6dd04f29/instruction.md"
+    },
+    {
+      "rfilename": "be77281a-bd55-4a6e-8481-6dd04f29/solution/solve.sh"
+    },
+    {
+      "rfilename": "be77281a-bd55-4a6e-8481-6dd04f29/task.toml"
+    },
+    {
+      "rfilename": "be77281a-bd55-4a6e-8481-6dd04f29/tests/grader.py"
+    },
+    {
+      "rfilename": "be77281a-bd55-4a6e-8481-6dd04f29/tests/test.sh"
+    },
+    {
+      "rfilename": "be77281a-bd55-4a6e-8481-6dd04f29/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "broken-python/environment/Dockerfile"
+    },
+    {
+      "rfilename": "broken-python/instruction.md"
+    },
+    {
+      "rfilename": "broken-python/solution/solve.sh"
+    },
+    {
+      "rfilename": "broken-python/task.toml"
+    },
+    {
+      "rfilename": "broken-python/tests/test.sh"
+    },
+    {
+      "rfilename": "broken-python/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "c0e954b0-e4cc-41f1-9cd1-672947ce/environment/Dockerfile"
+    },
+    {
+      "rfilename": "c0e954b0-e4cc-41f1-9cd1-672947ce/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "c0e954b0-e4cc-41f1-9cd1-672947ce/environment/expected.json"
+    },
+    {
+      "rfilename": "c0e954b0-e4cc-41f1-9cd1-672947ce/environment/input.txt"
+    },
+    {
+      "rfilename": "c0e954b0-e4cc-41f1-9cd1-672947ce/environment/ontology.json"
+    },
+    {
+      "rfilename": "c0e954b0-e4cc-41f1-9cd1-672947ce/environment/run_test.sh"
+    },
+    {
+      "rfilename": "c0e954b0-e4cc-41f1-9cd1-672947ce/instruction.md"
+    },
+    {
+      "rfilename": "c0e954b0-e4cc-41f1-9cd1-672947ce/solution/solve.sh"
+    },
+    {
+      "rfilename": "c0e954b0-e4cc-41f1-9cd1-672947ce/task.toml"
+    },
+    {
+      "rfilename": "c0e954b0-e4cc-41f1-9cd1-672947ce/tests/grader.py"
+    },
+    {
+      "rfilename": "c0e954b0-e4cc-41f1-9cd1-672947ce/tests/test.sh"
+    },
+    {
+      "rfilename": "c0e954b0-e4cc-41f1-9cd1-672947ce/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "c3e50747-1d94-4050-ae66-a35c7ecf/environment/Dockerfile"
+    },
+    {
+      "rfilename": "c3e50747-1d94-4050-ae66-a35c7ecf/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "c3e50747-1d94-4050-ae66-a35c7ecf/environment/data/book_prices.json"
+    },
+    {
+      "rfilename": "c3e50747-1d94-4050-ae66-a35c7ecf/environment/data/books.json"
+    },
+    {
+      "rfilename": "c3e50747-1d94-4050-ae66-a35c7ecf/instruction.md"
+    },
+    {
+      "rfilename": "c3e50747-1d94-4050-ae66-a35c7ecf/solution/solve.sh"
+    },
+    {
+      "rfilename": "c3e50747-1d94-4050-ae66-a35c7ecf/task.toml"
+    },
+    {
+      "rfilename": "c3e50747-1d94-4050-ae66-a35c7ecf/tests/book_prices.json"
+    },
+    {
+      "rfilename": "c3e50747-1d94-4050-ae66-a35c7ecf/tests/books_not_corrupted.json"
+    },
+    {
+      "rfilename": "c3e50747-1d94-4050-ae66-a35c7ecf/tests/grader.py"
+    },
+    {
+      "rfilename": "c3e50747-1d94-4050-ae66-a35c7ecf/tests/test.sh"
+    },
+    {
+      "rfilename": "c3e50747-1d94-4050-ae66-a35c7ecf/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "c725d931-2893-4dfa-a4a8-186cfa1e/environment/Dockerfile"
+    },
+    {
+      "rfilename": "c725d931-2893-4dfa-a4a8-186cfa1e/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "c725d931-2893-4dfa-a4a8-186cfa1e/environment/data/Iris.csv"
+    },
+    {
+      "rfilename": "c725d931-2893-4dfa-a4a8-186cfa1e/instruction.md"
+    },
+    {
+      "rfilename": "c725d931-2893-4dfa-a4a8-186cfa1e/solution/solve.sh"
+    },
+    {
+      "rfilename": "c725d931-2893-4dfa-a4a8-186cfa1e/task.toml"
+    },
+    {
+      "rfilename": "c725d931-2893-4dfa-a4a8-186cfa1e/tests/grader.py"
+    },
+    {
+      "rfilename": "c725d931-2893-4dfa-a4a8-186cfa1e/tests/test.sh"
+    },
+    {
+      "rfilename": "c725d931-2893-4dfa-a4a8-186cfa1e/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "caf7699c-9d49-4206-9bad-673cc36c/environment/Dockerfile"
+    },
+    {
+      "rfilename": "caf7699c-9d49-4206-9bad-673cc36c/environment/data/games.pgn"
+    },
+    {
+      "rfilename": "caf7699c-9d49-4206-9bad-673cc36c/environment/data/puzzles.json"
+    },
+    {
+      "rfilename": "caf7699c-9d49-4206-9bad-673cc36c/environment/data/sample.txt"
+    },
+    {
+      "rfilename": "caf7699c-9d49-4206-9bad-673cc36c/instruction.md"
+    },
+    {
+      "rfilename": "caf7699c-9d49-4206-9bad-673cc36c/solution/solve.sh"
+    },
+    {
+      "rfilename": "caf7699c-9d49-4206-9bad-673cc36c/task.toml"
+    },
+    {
+      "rfilename": "caf7699c-9d49-4206-9bad-673cc36c/tests/expected_analysis.json"
+    },
+    {
+      "rfilename": "caf7699c-9d49-4206-9bad-673cc36c/tests/grader.py"
+    },
+    {
+      "rfilename": "caf7699c-9d49-4206-9bad-673cc36c/tests/test.sh"
+    },
+    {
+      "rfilename": "caf7699c-9d49-4206-9bad-673cc36c/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "cb5bcfba-9d5e-419d-9ff1-47cdc224/environment/Dockerfile"
+    },
+    {
+      "rfilename": "cb5bcfba-9d5e-419d-9ff1-47cdc224/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "cb5bcfba-9d5e-419d-9ff1-47cdc224/environment/data/input.txt"
+    },
+    {
+      "rfilename": "cb5bcfba-9d5e-419d-9ff1-47cdc224/instruction.md"
+    },
+    {
+      "rfilename": "cb5bcfba-9d5e-419d-9ff1-47cdc224/solution/solve.sh"
+    },
+    {
+      "rfilename": "cb5bcfba-9d5e-419d-9ff1-47cdc224/task.toml"
+    },
+    {
+      "rfilename": "cb5bcfba-9d5e-419d-9ff1-47cdc224/tests/answers.txt"
+    },
+    {
+      "rfilename": "cb5bcfba-9d5e-419d-9ff1-47cdc224/tests/grader.py"
+    },
+    {
+      "rfilename": "cb5bcfba-9d5e-419d-9ff1-47cdc224/tests/test.sh"
+    },
+    {
+      "rfilename": "cb5bcfba-9d5e-419d-9ff1-47cdc224/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/environment/.DS_Store"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/environment/Dockerfile"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/environment/data/.DS_Store"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/environment/data/ground_truth_for_model_eval.csv"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/environment/data/runs1_to_runs3.zip"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/environment/data/runs4_to_6.zip"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/environment/data/sample.txt"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/instruction.md"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/solution/solve.sh"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/task.toml"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/tests/correct_metrics.csv"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/tests/grader.py"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/tests/test.sh"
+    },
+    {
+      "rfilename": "cf794b03-f8b8-4469-b70f-86f77ab4/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "d0dda5fa-b4e8-4a32-8304-68f5d993/environment/Dockerfile"
+    },
+    {
+      "rfilename": "d0dda5fa-b4e8-4a32-8304-68f5d993/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "d0dda5fa-b4e8-4a32-8304-68f5d993/instruction.md"
+    },
+    {
+      "rfilename": "d0dda5fa-b4e8-4a32-8304-68f5d993/solution/solve.sh"
+    },
+    {
+      "rfilename": "d0dda5fa-b4e8-4a32-8304-68f5d993/task.toml"
+    },
+    {
+      "rfilename": "d0dda5fa-b4e8-4a32-8304-68f5d993/tests/.keep"
+    },
+    {
+      "rfilename": "d0dda5fa-b4e8-4a32-8304-68f5d993/tests/grader.py"
+    },
+    {
+      "rfilename": "d0dda5fa-b4e8-4a32-8304-68f5d993/tests/test.sh"
+    },
+    {
+      "rfilename": "d0dda5fa-b4e8-4a32-8304-68f5d993/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "d4c9e7d7-20a3-4081-bea3-52b900ac/environment/Dockerfile"
+    },
+    {
+      "rfilename": "d4c9e7d7-20a3-4081-bea3-52b900ac/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "d4c9e7d7-20a3-4081-bea3-52b900ac/environment/data/dict.txt"
+    },
+    {
+      "rfilename": "d4c9e7d7-20a3-4081-bea3-52b900ac/instruction.md"
+    },
+    {
+      "rfilename": "d4c9e7d7-20a3-4081-bea3-52b900ac/solution/solve.sh"
+    },
+    {
+      "rfilename": "d4c9e7d7-20a3-4081-bea3-52b900ac/task.toml"
+    },
+    {
+      "rfilename": "d4c9e7d7-20a3-4081-bea3-52b900ac/tests/grader.py"
+    },
+    {
+      "rfilename": "d4c9e7d7-20a3-4081-bea3-52b900ac/tests/test.sh"
+    },
+    {
+      "rfilename": "d4c9e7d7-20a3-4081-bea3-52b900ac/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "d84deb8a-5043-49e0-96ab-817e2104/environment/Dockerfile"
+    },
+    {
+      "rfilename": "d84deb8a-5043-49e0-96ab-817e2104/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "d84deb8a-5043-49e0-96ab-817e2104/environment/data/Edge_List.csv"
+    },
+    {
+      "rfilename": "d84deb8a-5043-49e0-96ab-817e2104/environment/data/questions.txt"
+    },
+    {
+      "rfilename": "d84deb8a-5043-49e0-96ab-817e2104/instruction.md"
+    },
+    {
+      "rfilename": "d84deb8a-5043-49e0-96ab-817e2104/solution/solve.sh"
+    },
+    {
+      "rfilename": "d84deb8a-5043-49e0-96ab-817e2104/task.toml"
+    },
+    {
+      "rfilename": "d84deb8a-5043-49e0-96ab-817e2104/tests/grader.py"
+    },
+    {
+      "rfilename": "d84deb8a-5043-49e0-96ab-817e2104/tests/graph_answers.txt"
+    },
+    {
+      "rfilename": "d84deb8a-5043-49e0-96ab-817e2104/tests/test.sh"
+    },
+    {
+      "rfilename": "d84deb8a-5043-49e0-96ab-817e2104/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "d8d92009-1ee1-40b2-8c4f-e7b63e31/environment/Dockerfile"
+    },
+    {
+      "rfilename": "d8d92009-1ee1-40b2-8c4f-e7b63e31/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "d8d92009-1ee1-40b2-8c4f-e7b63e31/environment/test_grpc.py"
+    },
+    {
+      "rfilename": "d8d92009-1ee1-40b2-8c4f-e7b63e31/instruction.md"
+    },
+    {
+      "rfilename": "d8d92009-1ee1-40b2-8c4f-e7b63e31/solution/solve.sh"
+    },
+    {
+      "rfilename": "d8d92009-1ee1-40b2-8c4f-e7b63e31/task.toml"
+    },
+    {
+      "rfilename": "d8d92009-1ee1-40b2-8c4f-e7b63e31/tests/grader.py"
+    },
+    {
+      "rfilename": "d8d92009-1ee1-40b2-8c4f-e7b63e31/tests/plant_position.txt"
+    },
+    {
+      "rfilename": "d8d92009-1ee1-40b2-8c4f-e7b63e31/tests/sprinker_position.txt"
+    },
+    {
+      "rfilename": "d8d92009-1ee1-40b2-8c4f-e7b63e31/tests/test.sh"
+    },
+    {
+      "rfilename": "d8d92009-1ee1-40b2-8c4f-e7b63e31/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "e1f1bbca-fb42-4ef8-8367-cdacd3c2/environment/Dockerfile"
+    },
+    {
+      "rfilename": "e1f1bbca-fb42-4ef8-8367-cdacd3c2/environment/data/table.pdf"
+    },
+    {
+      "rfilename": "e1f1bbca-fb42-4ef8-8367-cdacd3c2/instruction.md"
+    },
+    {
+      "rfilename": "e1f1bbca-fb42-4ef8-8367-cdacd3c2/solution/solve.sh"
+    },
+    {
+      "rfilename": "e1f1bbca-fb42-4ef8-8367-cdacd3c2/task.toml"
+    },
+    {
+      "rfilename": "e1f1bbca-fb42-4ef8-8367-cdacd3c2/tests/grader.py"
+    },
+    {
+      "rfilename": "e1f1bbca-fb42-4ef8-8367-cdacd3c2/tests/table.csv"
+    },
+    {
+      "rfilename": "e1f1bbca-fb42-4ef8-8367-cdacd3c2/tests/test.sh"
+    },
+    {
+      "rfilename": "e1f1bbca-fb42-4ef8-8367-cdacd3c2/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/environment/Dockerfile"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/environment/data/cards/card_1.png"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/environment/data/cards/card_2.png"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/environment/data/cards/card_3.png"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/environment/data/cards/card_4.png"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/environment/data/cards/card_5.png"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/environment/data/cards/card_6.png"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/environment/data/sample.txt"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/instruction.md"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/solution/solve.sh"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/task.toml"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/tests/expected_cards.json"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/tests/grader.py"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/tests/test.sh"
+    },
+    {
+      "rfilename": "e803529c-e3aa-4be9-91bb-46555582/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "e81b357a-a7d1-47f5-936f-bbe7185a/environment/Dockerfile"
+    },
+    {
+      "rfilename": "e81b357a-a7d1-47f5-936f-bbe7185a/environment/data/Sample.txt"
+    },
+    {
+      "rfilename": "e81b357a-a7d1-47f5-936f-bbe7185a/instruction.md"
+    },
+    {
+      "rfilename": "e81b357a-a7d1-47f5-936f-bbe7185a/solution/solve.sh"
+    },
+    {
+      "rfilename": "e81b357a-a7d1-47f5-936f-bbe7185a/task.toml"
+    },
+    {
+      "rfilename": "e81b357a-a7d1-47f5-936f-bbe7185a/tests/Sample.txt"
+    },
+    {
+      "rfilename": "e81b357a-a7d1-47f5-936f-bbe7185a/tests/grader.py"
+    },
+    {
+      "rfilename": "e81b357a-a7d1-47f5-936f-bbe7185a/tests/test.sh"
+    },
+    {
+      "rfilename": "e81b357a-a7d1-47f5-936f-bbe7185a/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "f19460df-fb63-414d-9b32-9b88ac5e/environment/Dockerfile"
+    },
+    {
+      "rfilename": "f19460df-fb63-414d-9b32-9b88ac5e/environment/README.md"
+    },
+    {
+      "rfilename": "f19460df-fb63-414d-9b32-9b88ac5e/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "f19460df-fb63-414d-9b32-9b88ac5e/environment/data/command_spec.md"
+    },
+    {
+      "rfilename": "f19460df-fb63-414d-9b32-9b88ac5e/environment/data/input_tsl.txt"
+    },
+    {
+      "rfilename": "f19460df-fb63-414d-9b32-9b88ac5e/instruction.md"
+    },
+    {
+      "rfilename": "f19460df-fb63-414d-9b32-9b88ac5e/solution/solve.sh"
+    },
+    {
+      "rfilename": "f19460df-fb63-414d-9b32-9b88ac5e/task.toml"
+    },
+    {
+      "rfilename": "f19460df-fb63-414d-9b32-9b88ac5e/tests/expected_test_cases.json"
+    },
+    {
+      "rfilename": "f19460df-fb63-414d-9b32-9b88ac5e/tests/grader.py"
+    },
+    {
+      "rfilename": "f19460df-fb63-414d-9b32-9b88ac5e/tests/test.sh"
+    },
+    {
+      "rfilename": "f19460df-fb63-414d-9b32-9b88ac5e/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "f4c905fc-4ad8-4509-a669-90eb8299/environment/Dockerfile"
+    },
+    {
+      "rfilename": "f4c905fc-4ad8-4509-a669-90eb8299/environment/__pycache__/grader.cpython-311.pyc"
+    },
+    {
+      "rfilename": "f4c905fc-4ad8-4509-a669-90eb8299/environment/files/sales_data.csv"
+    },
+    {
+      "rfilename": "f4c905fc-4ad8-4509-a669-90eb8299/instruction.md"
+    },
+    {
+      "rfilename": "f4c905fc-4ad8-4509-a669-90eb8299/solution/solve.sh"
+    },
+    {
+      "rfilename": "f4c905fc-4ad8-4509-a669-90eb8299/task.toml"
+    },
+    {
+      "rfilename": "f4c905fc-4ad8-4509-a669-90eb8299/tests/grader.py"
+    },
+    {
+      "rfilename": "f4c905fc-4ad8-4509-a669-90eb8299/tests/test.sh"
+    },
+    {
+      "rfilename": "f4c905fc-4ad8-4509-a669-90eb8299/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "f91e56f8-120c-4a77-9328-fdb1385c/environment/Dockerfile"
+    },
+    {
+      "rfilename": "f91e56f8-120c-4a77-9328-fdb1385c/environment/data/auth.log"
+    },
+    {
+      "rfilename": "f91e56f8-120c-4a77-9328-fdb1385c/environment/data/database.log"
+    },
+    {
+      "rfilename": "f91e56f8-120c-4a77-9328-fdb1385c/environment/data/firewall.log"
+    },
+    {
+      "rfilename": "f91e56f8-120c-4a77-9328-fdb1385c/environment/data/system.log"
+    },
+    {
+      "rfilename": "f91e56f8-120c-4a77-9328-fdb1385c/environment/data/web_server.log"
+    },
+    {
+      "rfilename": "f91e56f8-120c-4a77-9328-fdb1385c/instruction.md"
+    },
+    {
+      "rfilename": "f91e56f8-120c-4a77-9328-fdb1385c/solution/solve.sh"
+    },
+    {
+      "rfilename": "f91e56f8-120c-4a77-9328-fdb1385c/task.toml"
+    },
+    {
+      "rfilename": "f91e56f8-120c-4a77-9328-fdb1385c/tests/answers.json"
+    },
+    {
+      "rfilename": "f91e56f8-120c-4a77-9328-fdb1385c/tests/grader.py"
+    },
+    {
+      "rfilename": "f91e56f8-120c-4a77-9328-fdb1385c/tests/test.sh"
+    },
+    {
+      "rfilename": "f91e56f8-120c-4a77-9328-fdb1385c/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "flood-monitoring-basic/environment/Dockerfile"
+    },
+    {
+      "rfilename": "flood-monitoring-basic/environment/station_A.csv"
+    },
+    {
+      "rfilename": "flood-monitoring-basic/environment/station_B.csv"
+    },
+    {
+      "rfilename": "flood-monitoring-basic/environment/station_C.csv"
+    },
+    {
+      "rfilename": "flood-monitoring-basic/instruction.md"
+    },
+    {
+      "rfilename": "flood-monitoring-basic/solution/solve.sh"
+    },
+    {
+      "rfilename": "flood-monitoring-basic/task.toml"
+    },
+    {
+      "rfilename": "flood-monitoring-basic/tests/test.sh"
+    },
+    {
+      "rfilename": "flood-monitoring-basic/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "gomoku-planner/environment/Dockerfile"
+    },
+    {
+      "rfilename": "gomoku-planner/environment/make.py"
+    },
+    {
+      "rfilename": "gomoku-planner/instruction.md"
+    },
+    {
+      "rfilename": "gomoku-planner/solution/solve.sh"
+    },
+    {
+      "rfilename": "gomoku-planner/task.toml"
+    },
+    {
+      "rfilename": "gomoku-planner/tests/test.sh"
+    },
+    {
+      "rfilename": "gomoku-planner/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "hdfs-deployment/environment/Dockerfile"
+    },
+    {
+      "rfilename": "hdfs-deployment/instruction.md"
+    },
+    {
+      "rfilename": "hdfs-deployment/solution/solve.sh"
+    },
+    {
+      "rfilename": "hdfs-deployment/task.toml"
+    },
+    {
+      "rfilename": "hdfs-deployment/tests/test.sh"
+    },
+    {
+      "rfilename": "hdfs-deployment/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "hydra-debug-slurm-mode/environment/Dockerfile"
+    },
+    {
+      "rfilename": "hydra-debug-slurm-mode/environment/src/config/config.yaml"
+    },
+    {
+      "rfilename": "hydra-debug-slurm-mode/environment/src/main.py"
+    },
+    {
+      "rfilename": "hydra-debug-slurm-mode/instruction.md"
+    },
+    {
+      "rfilename": "hydra-debug-slurm-mode/solution/solve.sh"
+    },
+    {
+      "rfilename": "hydra-debug-slurm-mode/task.toml"
+    },
+    {
+      "rfilename": "hydra-debug-slurm-mode/tests/ref_config.yaml"
+    },
+    {
+      "rfilename": "hydra-debug-slurm-mode/tests/ref_debug.yaml"
+    },
+    {
+      "rfilename": "hydra-debug-slurm-mode/tests/ref_main.py"
+    },
+    {
+      "rfilename": "hydra-debug-slurm-mode/tests/ref_original.yaml"
+    },
+    {
+      "rfilename": "hydra-debug-slurm-mode/tests/ref_slurm_hydra.yaml"
+    },
+    {
+      "rfilename": "hydra-debug-slurm-mode/tests/test.sh"
+    },
+    {
+      "rfilename": "hydra-debug-slurm-mode/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "jq-data-processing/environment/Dockerfile"
+    },
+    {
+      "rfilename": "jq-data-processing/environment/task-deps/generate_data.py"
+    },
+    {
+      "rfilename": "jq-data-processing/instruction.md"
+    },
+    {
+      "rfilename": "jq-data-processing/solution/solve.sh"
+    },
+    {
+      "rfilename": "jq-data-processing/task.toml"
+    },
+    {
+      "rfilename": "jq-data-processing/tests/test.sh"
+    },
+    {
+      "rfilename": "jq-data-processing/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "jsonl-aggregator/environment/Dockerfile"
+    },
+    {
+      "rfilename": "jsonl-aggregator/environment/task-deps/generate_records.py"
+    },
+    {
+      "rfilename": "jsonl-aggregator/instruction.md"
+    },
+    {
+      "rfilename": "jsonl-aggregator/solution/solve.sh"
+    },
+    {
+      "rfilename": "jsonl-aggregator/task.toml"
+    },
+    {
+      "rfilename": "jsonl-aggregator/tests/test.sh"
+    },
+    {
+      "rfilename": "jsonl-aggregator/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "log-summary/environment/Dockerfile"
+    },
+    {
+      "rfilename": "log-summary/environment/logs/app1.log"
+    },
+    {
+      "rfilename": "log-summary/environment/logs/app2.log"
+    },
+    {
+      "rfilename": "log-summary/environment/logs/db.log"
+    },
+    {
+      "rfilename": "log-summary/instruction.md"
+    },
+    {
+      "rfilename": "log-summary/solution/solve.sh"
+    },
+    {
+      "rfilename": "log-summary/task.toml"
+    },
+    {
+      "rfilename": "log-summary/tests/test.sh"
+    },
+    {
+      "rfilename": "log-summary/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "mlflow-register/environment/Dockerfile"
+    },
+    {
+      "rfilename": "mlflow-register/instruction.md"
+    },
+    {
+      "rfilename": "mlflow-register/solution/solve.sh"
+    },
+    {
+      "rfilename": "mlflow-register/task.toml"
+    },
+    {
+      "rfilename": "mlflow-register/tests/test.sh"
+    },
+    {
+      "rfilename": "mlflow-register/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "mnist-learning-fix/environment/Dockerfile"
+    },
+    {
+      "rfilename": "mnist-learning-fix/environment/create_dataset.py"
+    },
+    {
+      "rfilename": "mnist-learning-fix/environment/deps/fix.py"
+    },
+    {
+      "rfilename": "mnist-learning-fix/environment/model.py"
+    },
+    {
+      "rfilename": "mnist-learning-fix/instruction.md"
+    },
+    {
+      "rfilename": "mnist-learning-fix/solution/solve.sh"
+    },
+    {
+      "rfilename": "mnist-learning-fix/task.toml"
+    },
+    {
+      "rfilename": "mnist-learning-fix/tests/create_dataset.py"
+    },
+    {
+      "rfilename": "mnist-learning-fix/tests/model.py"
+    },
+    {
+      "rfilename": "mnist-learning-fix/tests/test.sh"
+    },
+    {
+      "rfilename": "mnist-learning-fix/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "ota-logo.png"
+    },
+    {
+      "rfilename": "pandas-etl/environment/Dockerfile"
+    },
+    {
+      "rfilename": "pandas-etl/environment/data.csv"
+    },
+    {
+      "rfilename": "pandas-etl/instruction.md"
+    },
+    {
+      "rfilename": "pandas-etl/solution/solve.sh"
+    },
+    {
+      "rfilename": "pandas-etl/task.toml"
+    },
+    {
+      "rfilename": "pandas-etl/tests/test.sh"
+    },
+    {
+      "rfilename": "pandas-etl/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "pandas-sql-query/environment/Dockerfile"
+    },
+    {
+      "rfilename": "pandas-sql-query/environment/generate_data.py"
+    },
+    {
+      "rfilename": "pandas-sql-query/instruction.md"
+    },
+    {
+      "rfilename": "pandas-sql-query/solution/solve.sh"
+    },
+    {
+      "rfilename": "pandas-sql-query/task.toml"
+    },
+    {
+      "rfilename": "pandas-sql-query/tests/generate_data.py"
+    },
+    {
+      "rfilename": "pandas-sql-query/tests/test.sh"
+    },
+    {
+      "rfilename": "pandas-sql-query/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "png-generation/environment/Dockerfile"
+    },
+    {
+      "rfilename": "png-generation/instruction.md"
+    },
+    {
+      "rfilename": "png-generation/solution/solve.sh"
+    },
+    {
+      "rfilename": "png-generation/task.toml"
+    },
+    {
+      "rfilename": "png-generation/tests/test.sh"
+    },
+    {
+      "rfilename": "png-generation/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "recover-accuracy-log/environment/Dockerfile"
+    },
+    {
+      "rfilename": "recover-accuracy-log/environment/task_deps/generator.log"
+    },
+    {
+      "rfilename": "recover-accuracy-log/environment/task_deps/judge.log"
+    },
+    {
+      "rfilename": "recover-accuracy-log/instruction.md"
+    },
+    {
+      "rfilename": "recover-accuracy-log/solution/solve.sh"
+    },
+    {
+      "rfilename": "recover-accuracy-log/task.toml"
+    },
+    {
+      "rfilename": "recover-accuracy-log/tests/test.sh"
+    },
+    {
+      "rfilename": "recover-accuracy-log/tests/test_data/results.json"
+    },
+    {
+      "rfilename": "recover-accuracy-log/tests/test_data/run_1_generator.jsonl"
+    },
+    {
+      "rfilename": "recover-accuracy-log/tests/test_data/run_1_judge.jsonl"
+    },
+    {
+      "rfilename": "recover-accuracy-log/tests/test_data/run_2_generator.jsonl"
+    },
+    {
+      "rfilename": "recover-accuracy-log/tests/test_data/run_2_judge.jsonl"
+    },
+    {
+      "rfilename": "recover-accuracy-log/tests/test_data/run_3_generator.jsonl"
+    },
+    {
+      "rfilename": "recover-accuracy-log/tests/test_data/run_3_judge.jsonl"
+    },
+    {
+      "rfilename": "recover-accuracy-log/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "schedule-vacation/environment/Dockerfile"
+    },
+    {
+      "rfilename": "schedule-vacation/environment/find_overlap.py"
+    },
+    {
+      "rfilename": "schedule-vacation/environment/get_schedule.py"
+    },
+    {
+      "rfilename": "schedule-vacation/instruction.md"
+    },
+    {
+      "rfilename": "schedule-vacation/solution/solve.sh"
+    },
+    {
+      "rfilename": "schedule-vacation/task.toml"
+    },
+    {
+      "rfilename": "schedule-vacation/tests/test.sh"
+    },
+    {
+      "rfilename": "schedule-vacation/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "setup-custom-dev-env/environment/Dockerfile"
+    },
+    {
+      "rfilename": "setup-custom-dev-env/instruction.md"
+    },
+    {
+      "rfilename": "setup-custom-dev-env/solution/solve.sh"
+    },
+    {
+      "rfilename": "setup-custom-dev-env/task.toml"
+    },
+    {
+      "rfilename": "setup-custom-dev-env/tests/test.sh"
+    },
+    {
+      "rfilename": "setup-custom-dev-env/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "sparql-professors-universities/environment/Dockerfile"
+    },
+    {
+      "rfilename": "sparql-professors-universities/environment/university_graph.ttl"
+    },
+    {
+      "rfilename": "sparql-professors-universities/instruction.md"
+    },
+    {
+      "rfilename": "sparql-professors-universities/solution/solve.sh"
+    },
+    {
+      "rfilename": "sparql-professors-universities/task.toml"
+    },
+    {
+      "rfilename": "sparql-professors-universities/tests/test.sh"
+    },
+    {
+      "rfilename": "sparql-professors-universities/tests/test_outputs.py"
+    },
+    {
+      "rfilename": "sparql-professors-universities/tests/university_graph_test.ttl"
+    },
+    {
+      "rfilename": "vimscript-vim-quine/environment/Dockerfile"
+    },
+    {
+      "rfilename": "vimscript-vim-quine/instruction.md"
+    },
+    {
+      "rfilename": "vimscript-vim-quine/solution/solve.sh"
+    },
+    {
+      "rfilename": "vimscript-vim-quine/task.toml"
+    },
+    {
+      "rfilename": "vimscript-vim-quine/tests/test.sh"
+    },
+    {
+      "rfilename": "vimscript-vim-quine/tests/test_outputs.py"
+    }
+  ],
+  "createdAt": "2025-12-05T23:27:49.000Z",
+  "usedStorage": 23739221
+}

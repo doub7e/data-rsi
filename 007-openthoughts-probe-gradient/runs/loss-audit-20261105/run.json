@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "loss-audit-20261105",
+  "title": "OTA · Base8B · 训练loss与轨迹映射审计",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-05T19:29:21.153482+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "ota-probe-loss-audit-1105",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "sources": {
+    "status": "runs/loss-audit-20261105/state.json",
+    "results": "runs/loss-audit-20261105/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "Loss实现审计",
+      "path": "runs/loss-audit-20261105/result.json"
+    }
+  ]
+}

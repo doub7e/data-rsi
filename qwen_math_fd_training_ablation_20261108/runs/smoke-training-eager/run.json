@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "smoke-training-eager",
+  "title": "FD训练消融 · 2 B300完整生产链路 · eager smoke",
+  "kind": "training",
+  "status": "planned",
+  "created_at": "2026-11-08T11:30:08.902363+00:00",
+  "updated_at": "2026-11-08T11:30:08.902377+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "gpus": 2,
+    "arm": "fp32-h1em6",
+    "steps": 1,
+    "prompts_per_step": 2,
+    "rollout_n": 64,
+    "previous_failed_run": "smoke-training",
+    "fix": "explicit TORCH_COMPILE_DISABLE=1 for all paired arms; B300 bundledptxas lacks sm103a; no error suppression",
+    "scope": "pipeline smoke only; not an efficacy result"
+  },
+  "sources": {
+    "status": "runs/smoke-training-eager/state.json",
+    "progress": "runs/smoke-training-eager/progress.json",
+    "results": "runs/smoke-training-eager/result.json",
+    "metrics": "runs/smoke-training-eager/metrics.jsonl",
+    "training_data": "runs/smoke-training-eager/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/smoke-training-eager/result.json"
+    },
+    {
+      "label": "resolved-launch.json",
+      "path": "runs/smoke-training-eager/resolved-launch.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-smoke-1108b",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

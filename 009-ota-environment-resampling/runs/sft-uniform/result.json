@@ -1,0 +1,20 @@
+{
+  "finished_at": "2026-11-07T02:20:43.847882+00:00",
+  "checkpoint": "/scratch/cvlab/home/shuli/data-rsi/009-ota-environment-resampling/runs/sft-uniform/checkpoint",
+  "epoch": 1.0,
+  "global_step": 23,
+  "source_trajectories": 728,
+  "sft_rows": 728,
+  "metrics": {
+    "epoch": 1.0,
+    "loss_nan_ranks": 0,
+    "loss_rank_avg": 0.12526652216911316,
+    "total_flos": 2.1196605042458624e+16,
+    "train_loss": 0.7462578623191171,
+    "train_runtime": 803.7988,
+    "train_samples_per_second": 0.906,
+    "train_steps_per_second": 0.029,
+    "valid_targets_mean": 5827.8,
+    "valid_targets_min": 2444
+  }
+}

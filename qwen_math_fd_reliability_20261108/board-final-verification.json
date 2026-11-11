@@ -1,0 +1,649 @@
+{
+  "verified_at": "2026-11-08T10:38:58.700453+00:00",
+  "base": "http://127.0.0.1:18765",
+  "require_terminal": true,
+  "verified": true,
+  "runs": [
+    {
+      "run_id": "audit-aux-homotopy",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "audit-base-coin",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "audit-base-homotopy",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "audit-base-zeros",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "auxiliary-master-merge",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "bank-aux-homotopy",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/bank-aux-homotopy/first_probe_sample.json",
+          "download_matches_disk": true,
+          "sha256": "45fcb4cd3d95568f85d9814d2ea8af8a3d157c75b7404ddfbb50350ca93d54f5",
+          "preview_matches_disk": true,
+          "preview_truncated": false
+        }
+      ],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "bank-base-coin",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/bank-base-coin/first_probe_sample.json",
+          "download_matches_disk": true,
+          "sha256": "76eaf8600874c655fdbb0e36bc0c830b5548606aff7897c308188af0f7d995c1",
+          "preview_matches_disk": true,
+          "preview_truncated": false
+        }
+      ],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "bank-base-homotopy",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/bank-base-homotopy/first_probe_sample.json",
+          "download_matches_disk": true,
+          "sha256": "69e3f5c04c353f7cc162fc3c4eca6c5661de3ae171e82abdbd38c22c500933e6",
+          "preview_matches_disk": true,
+          "preview_truncated": false
+        }
+      ],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "bank-base-zeros",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/bank-base-zeros/first_probe_sample.json",
+          "download_matches_disk": true,
+          "sha256": "c80b7fa9557a22dde3c1c98055e8ba611cae061e59ff2eeb2e2357e2c29a1602",
+          "preview_matches_disk": true,
+          "preview_truncated": false
+        }
+      ],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "bank-screened-validation",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/bank-screened-validation/first_probe_sample.json",
+          "download_matches_disk": true,
+          "sha256": "7d3ccc5a64be689e2a5ff9e1d853aca7132eef157549ef12b474cb2e569f8978",
+          "preview_matches_disk": true,
+          "preview_truncated": false
+        }
+      ],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "bank-teacher-screening",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/bank-teacher-screening/first_probe_sample.json",
+          "download_matches_disk": true,
+          "sha256": "cf1ee3333576ca0d298f4889f5d402a9b7b3ac8a565e757a82665c2fac80f5f4",
+          "preview_matches_disk": true,
+          "preview_truncated": false
+        }
+      ],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "bf16-target-ad-base",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "center-audit-aux-homotopy",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "center-calibration-aux",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "comparison",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [
+        {
+          "path": "runs/comparison/figures/error_vs_h.png",
+          "download_matches_disk": true,
+          "sha256": "c8630b2b2d620bc42532543eea2d65cbe00495b4b5bd9a53909e0c070c3bcb52"
+        },
+        {
+          "path": "runs/comparison/figures/error_vs_h.pdf",
+          "download_matches_disk": true,
+          "sha256": "8c506431caf6c7b9f43c2e1ab8d2e9474956f4aa5f077e6edc05b454e53f0886"
+        },
+        {
+          "path": "runs/comparison/figures/weight_mae_vs_n.png",
+          "download_matches_disk": true,
+          "sha256": "4e2dd964cb88a2d6e2d0964e0ec84f497d654a8f1a1d811bdb30bc2b07e25e9f"
+        },
+        {
+          "path": "runs/comparison/figures/weight_mae_vs_n.pdf",
+          "download_matches_disk": true,
+          "sha256": "077ec5134fa5160462def6defeb80d2f4d6a24320dc0c2c3ffea537746aee7f5"
+        },
+        {
+          "path": "runs/comparison/figures/gradient_cosine_vs_n.png",
+          "download_matches_disk": true,
+          "sha256": "e60f6317d2a083c9d1145fcf27567d612110bd583bd30046702977290eec5d99"
+        },
+        {
+          "path": "runs/comparison/figures/gradient_cosine_vs_n.pdf",
+          "download_matches_disk": true,
+          "sha256": "fb3ae8152a7a397ab02bf789cd641aadc87397a889c710a8bd4497d4fbe70896"
+        },
+        {
+          "path": "runs/comparison/figures/practical_weight_stability_vs_n.png",
+          "download_matches_disk": true,
+          "sha256": "6a9cae75bccb45801c04d3e5142fdcc541a55e1a3636748513cb303acc092f68"
+        },
+        {
+          "path": "runs/comparison/figures/practical_weight_stability_vs_n.pdf",
+          "download_matches_disk": true,
+          "sha256": "578b7ccab260e2f42018ee13d018579d3cb377ea8eac352d21716031bf4e4d03"
+        },
+        {
+          "path": "runs/comparison/figures/selected_scatter_panels.png",
+          "download_matches_disk": true,
+          "sha256": "e8c957c52f32f81bf00287fe0392977bd3d7de1db3610476744cd6f65af12203"
+        },
+        {
+          "path": "runs/comparison/figures/selected_scatter_panels.pdf",
+          "download_matches_disk": true,
+          "sha256": "9f218888d960b87e667b506a47313770378c357440a768bdaa378e08c25e347b"
+        },
+        {
+          "path": "REPORT.md",
+          "download_matches_disk": true,
+          "sha256": "6a923073d4680623cf728eba1b63fb986fe085ef5c7e6af66f3d4e40675b8eeb"
+        }
+      ],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "comparison-interim-01",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "dense-repeats-base-homotopy",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "dense-repeats-base-zeros",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "environment-preflight",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "cancelled",
+      "verified": true
+    },
+    {
+      "run_id": "environment-preflight-b300",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "environment-preflight-cpu",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "environment-preflight-h100",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "fsdp-cache-smoke",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "fsdp-real-base-n32",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "fsdp-real-base-n32-fa2",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "full-prefix-base-homotopy",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "full-prefix-screened-validation",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "full-response-weighted-base",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "generation-runtime-check",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "grader-staging",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "numerical-smoke-b300",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "prefix-weighted-screened-validation",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "failed",
+      "verified": true
+    },
+    {
+      "run_id": "prefix-weighted-screened-validation-v2",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "replay-base-homotopy-hopper",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "source-inventory",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "validation-screened",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "weighted-base-homotopy-n1024",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    },
+    {
+      "run_id": "weighted-base-homotopy-n32",
+      "checks": {
+        "live_state_matches_disk": true,
+        "run_identity": true,
+        "terminal": true,
+        "skill_verifier_passed": true,
+        "artifact_content_verified": true
+      },
+      "errors": [],
+      "artifacts": [],
+      "state": "succeeded",
+      "verified": true
+    }
+  ],
+  "metrics": {
+    "runs_checked": 38,
+    "runs_verified": 38,
+    "artifacts_downloaded": 17
+  }
+}

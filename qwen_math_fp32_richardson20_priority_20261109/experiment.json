@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "qwen_math_fp32_richardson20_priority_20261109",
+  "title": "最高优先级 · Qwen Math FP32 Richardson · sigmoid(3s)/fallback0 · 20-step训练与评测",
+  "description": "最高优先级FP32 Richardson20-step，sigmoid(3s)/fallback0。用户确认旧目录不可访问；原1600题清单不在Git。复用Git中的206个合格n16题和已完成n8筛选，补齐后冻结新320题；非原题集复现。其他FD训练后置。",
+  "created_at": "2026-11-09T18:38:09.917472+00:00",
+  "tags": [
+    "priority1",
+    "Math",
+    "FP32",
+    "Richardson",
+    "20step",
+    "sigmoid3s",
+    "fallback0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "source": "User-provided Daytona Limits page, 2026-10-31",
+  "recorded_at": "2026-10-30T23:57:58.922388+00:00",
+  "totalCpuQuota": 10,
+  "totalMemoryQuota": 10,
+  "totalDiskQuota": 30,
+  "maxCpuPerSandbox": 4,
+  "maxMemoryPerSandbox": 8,
+  "maxDiskPerSandbox": 10,
+  "used_at_report": {
+    "cpu": 0,
+    "memory_gib": 0,
+    "disk_gib": 0
+  }
+}

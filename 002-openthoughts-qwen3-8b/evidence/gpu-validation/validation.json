@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "model": "Qwen/Qwen3-8B",
+  "full_sft_steps": 2,
+  "world_size": 2,
+  "sequence_cutoff": 2048,
+  "training_losses": [
+    1.3406,
+    1.3477
+  ],
+  "reloaded_checkpoint_loss": 6.48185396194458,
+  "limitations": "8 selected records and short context; not a 32k capacity test or full 10K training run"
+}

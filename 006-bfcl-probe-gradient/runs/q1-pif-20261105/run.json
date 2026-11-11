@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "q1-pif-20261105",
+  "title": "Q1 · Base · 投影归因 + 预条件 · 六组实验汇总",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-04T23:54:40.761066+00:00",
+  "sources": {
+    "status": "runs/q1-pif-20261105/state.json",
+    "results": "runs/q1-pif-20261105/result.json"
+  },
+  "parameters": {},
+  "artifacts": [
+    {
+      "label": "Frozen study protocol",
+      "path": "runs/q1-pif-20261105/protocol.json"
+    },
+    {
+      "label": "Method and execution protocol",
+      "path": "runs/q1-pif-20261105/PROTOCOL.md"
+    },
+    {
+      "label": "预条件选样与dot/cosine的交集",
+      "path": "runs/q1-pif-20261105/selection-preview.json"
+    },
+    {
+      "label": "投影诊断的具体数值与解释",
+      "path": "runs/q1-pif-20261105/PROJECTION_DIAGNOSTICS.md"
+    },
+    {
+      "label": "Results report",
+      "path": "runs/q1-pif-20261105/REPORT.md"
+    },
+    {
+      "label": "Comparison",
+      "path": "runs/q1-pif-20261105/comparison.png"
+    }
+  ],
+  "tags": [
+    "Q1",
+    "base",
+    "pif",
+    "comparison"
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "q1p-compare-1105",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

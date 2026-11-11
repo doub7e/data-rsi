@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "select-training",
+  "title": "FD训练消融 · 冻结三组共用80条训练prompt",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T11:08:56.004740+00:00",
+  "updated_at": "2026-11-08T11:08:56.004752+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "rule": "frozen candidate order,teacher8draws,keep1..7correct;first80;no student-outcome selection"
+  },
+  "sources": {
+    "status": "runs/select-training/state.json",
+    "progress": "runs/select-training/progress.json",
+    "results": "runs/select-training/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/select-training/result.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-select-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

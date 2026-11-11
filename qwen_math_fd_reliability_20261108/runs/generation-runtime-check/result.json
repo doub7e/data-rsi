@@ -1,0 +1,99 @@
+{
+  "grader": {
+    "description": "verbatim project math_verify.compute_score, same DeepMath default dispatch",
+    "project_source": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_reliability_20261108/runs/generation-runtime-check/source/verl/verl/utils/reward_score/math_verify.py",
+    "project_source_sha256": "779aaebe576c022f6206d29d058fe103cb3052d1fea7882185c96866bbd810bd",
+    "dispatch_source": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_reliability_20261108/runs/generation-runtime-check/source/verl/verl/utils/reward_score/__init__.py",
+    "dispatch_source_sha256": "ec7a936517bd5788b994ea29728447472fb8a7b8843f043e0242515e6eb82fb2",
+    "module_name": "_opd_fd_verbatim_math_verify_779aaebe576c022f",
+    "module_file": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_reliability_20261108/runs/generation-runtime-check/source/verl/verl/utils/reward_score/math_verify.py",
+    "module_spec_origin": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_reliability_20261108/runs/generation-runtime-check/source/verl/verl/utils/reward_score/math_verify.py",
+    "dependency_module_file": "/scratch/cvlab/home/shuli/data-rsi/qwen_math_fd_reliability_20261108/runtime/grader/math_verify/__init__.py",
+    "dependency_module_sha256": "b98dfd79aa33cbb6ee36476a717aca4546b56704af6343b9eb790dca9960c706",
+    "sanity": {
+      "boxed2_ground_truth2": 1.0,
+      "boxed3_ground_truth2": 0.0,
+      "passed": true
+    }
+  },
+  "student": {
+    "path": "/scratch/cvlab/home/shuli/.cache/huggingface/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "metadata_sha256": {
+      "config.json": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+      "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+      "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "model.safetensors.index.json": "6dc0981b8829fead746441f68f38f24c5ca4a3a66351f652c26c6df0efc43ab2"
+    },
+    "weight_identity_kind": "resolved_path_size_mtime",
+    "weights": [
+      {
+        "name": "model-00001-of-00003.safetensors",
+        "resolved_path": "/scratch/cvlab/home/shuli/.cache/huggingface/models--Qwen--Qwen3-4B/blobs/328a91d3122359d5547f9d79521205bc0a46e1f79a792dfe650e99fc2d651223",
+        "size_bytes": 3957900840,
+        "mtime_ns": 1783879912291875102
+      },
+      {
+        "name": "model-00002-of-00003.safetensors",
+        "resolved_path": "/scratch/cvlab/home/shuli/.cache/huggingface/models--Qwen--Qwen3-4B/blobs/6cd087b316306a68c562436b5492edbcf6e16c6dba3a1308279caa5a58e21ca5",
+        "size_bytes": 3987450520,
+        "mtime_ns": 1783879910392793645
+      },
+      {
+        "name": "model-00003-of-00003.safetensors",
+        "resolved_path": "/scratch/cvlab/home/shuli/.cache/huggingface/models--Qwen--Qwen3-4B/blobs/e4bf436957184f4eeb86a80e9db394503f1f56446b2e6b7edeac5b81470f4ca1",
+        "size_bytes": 99630640,
+        "mtime_ns": 1783879871115672980
+      }
+    ]
+  },
+  "teacher": {
+    "path": "/scratch/cvlab/home/shuli/.cache/huggingface/models--Keven16--Qwen3-4B-Non-Thinking-RL-Math-Step500/snapshots/05d82d02780d4a6f8295b2909dbbd89e8a8b5aaa",
+    "revision": "05d82d02780d4a6f8295b2909dbbd89e8a8b5aaa",
+    "metadata_sha256": {
+      "config.json": "61629ab4fa90a46df792dc0af2aa5d61940172db929f072f157e6f8e4febfbe9",
+      "generation_config.json": "81864f5bf08f4ffb95de1c787348d6804ae5e96af6942969e2bca5503edb5908",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "tokenizer_config.json": "3c0884a30471f4f542dc89630f62a380bb70a341fafda826136a7be921fec7ea",
+      "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+      "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+      "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "model.safetensors.index.json": "128b32618e75004d27852da601f179cf3703ed78ea980eb72c9c02408f89c631"
+    },
+    "weight_identity_kind": "resolved_path_size_mtime",
+    "weights": [
+      {
+        "name": "model-00001-of-00002.safetensors",
+        "resolved_path": "/scratch/cvlab/home/shuli/.cache/huggingface/models--Keven16--Qwen3-4B-Non-Thinking-RL-Math-Step500/blobs/c08b74e9aeadbf9e0308a236506ce78be8dcf61583745a5ee2b704037cde1fae",
+        "size_bytes": 4996089088,
+        "mtime_ns": 1783879921570871030
+      },
+      {
+        "name": "model-00002-of-00002.safetensors",
+        "resolved_path": "/scratch/cvlab/home/shuli/.cache/huggingface/models--Keven16--Qwen3-4B-Non-Thinking-RL-Math-Step500/blobs/d6a640e3c273f8e081c8541d5e94cc5e5f1ca8e995f2b4a3b778e7103b506f37",
+        "size_bytes": 3826805416,
+        "mtime_ns": 1783879908567179275
+      }
+    ]
+  },
+  "packages": {
+    "torch": "2.13.0+cu130",
+    "transformers": "5.19.0",
+    "vllm": "0.32.0",
+    "pyarrow": "23.0.1",
+    "math-verify": "0.9.0",
+    "latex2sympy2_extended": "1.11.0",
+    "sympy": "1.14.0"
+  },
+  "metrics": {
+    "student_vocab_entries": 151669,
+    "teacher_vocab_entries": 151669,
+    "token_id_mismatches": 0,
+    "grader_sanity_passed": 1
+  },
+  "scope": "CPU import/tokenizer/grader compatibility; does not validate GPU kernels"
+}

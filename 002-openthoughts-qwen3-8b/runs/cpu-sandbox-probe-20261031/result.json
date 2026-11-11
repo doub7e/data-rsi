@@ -1,0 +1,15 @@
+{
+  "user_namespace_exit": 1,
+  "podman_info_exit": 125,
+  "nested_run_exit": 125,
+  "node": "gpu231.rcp.epfl.ch",
+  "phase": "Succeeded",
+  "image": "quay.io/podman/stable@sha256:940f7a96a8f7ee2ac512e09cb4069d1bd14a139ff7f90f0353b880e17e2b45ff",
+  "security_context": {
+    "allowPrivilegeEscalation": true,
+    "seccompProfile": {
+      "type": "RuntimeDefault"
+    }
+  },
+  "interpretation": "CPU-only allocation works. Nested Podman/user namespaces fail under default policy. Docker-in-Docker has not been validated."
+}

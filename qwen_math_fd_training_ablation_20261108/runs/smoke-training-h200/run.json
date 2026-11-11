@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "smoke-training-h200",
+  "title": "FD训练消融 · 2 H200完整生产链路验证",
+  "kind": "training",
+  "status": "planned",
+  "created_at": "2026-11-08T11:38:42.570842+00:00",
+  "updated_at": "2026-11-08T11:38:42.570853+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "gpus": 2,
+    "pool": "h200",
+    "arm": "fp32-h1em6",
+    "steps": 1,
+    "prompts_per_step": 2,
+    "rollout_n": 64,
+    "previous_failed_run": "smoke-training-eager",
+    "fix": "Hopper hardware supported by pinned compiler for direct Triton kernels; preserve native production operators",
+    "torch_compile_disabled": true,
+    "scope": "pipeline smoke only"
+  },
+  "sources": {
+    "status": "runs/smoke-training-h200/state.json",
+    "progress": "runs/smoke-training-h200/progress.json",
+    "results": "runs/smoke-training-h200/result.json",
+    "metrics": "runs/smoke-training-h200/metrics.jsonl",
+    "training_data": "runs/smoke-training-h200/data/train.jsonl"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/smoke-training-h200/result.json"
+    },
+    {
+      "label": "resolved-launch.json",
+      "path": "runs/smoke-training-h200/resolved-launch.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-smoke-1108c",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

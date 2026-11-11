@@ -1,0 +1,177 @@
+{
+  "created_at": "2026-11-11T00:24:41.773601+00:00",
+  "status": "frozen_before_new_rollouts",
+  "resources": "configs/resources.json",
+  "student": "Qwen/Qwen3-8B",
+  "student_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "student_base_path": "/scratch/cvlab/home/shuli/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218",
+  "teacher": "Qwen/Qwen3.8-27B",
+  "n_environments": 728,
+  "benchmark_tasks": 70,
+  "probe_questions": 70,
+  "probe_rollouts_per_question": 4,
+  "seed_bases": {
+    "teacher_batch1": 1100000000,
+    "teacher_uniform": 1300000000,
+    "teacher_guided": 1500000000,
+    "probe": 1800000000,
+    "eval_uniform": 1900000000,
+    "eval_guided": 1900000000
+  },
+  "sampling_seed": 20261109,
+  "train_image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a",
+  "student_serve_image": "vllm/vllm-openai@sha256:6ee133356d49ed24cee03dd0cda3d3980279a11c107ce3e752c89e76540f41c9",
+  "teacher_serve_image": "vllm/vllm-openai@sha256:6ee133356d49ed24cee03dd0cda3d3980279a11c107ce3e752c89e76540f41c9",
+  "teacher_serve_tag_reference": "v0.32.0 default CUDA13.0.2, amd64 manifest",
+  "harness_revision": "2b53c2beea0e06d0a864b9cf81cfc4fbd576f7e4",
+  "agent": "Terminus2 JSON / nativeRunAI",
+  "context": 32768,
+  "max_output_tokens": 16384,
+  "agent_timeout_sec": 1800,
+  "verifier_timeout_sec": 1800,
+  "timeout_multiplier": 1.0,
+  "enable_summarize": true,
+  "interleaved_thinking": false,
+  "teacher_sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0
+  },
+  "student_sampling": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20
+  },
+  "concurrent_sandboxes": 32,
+  "max_concurrent_image_builds": 2,
+  "serving_gpus": 4,
+  "training_gpus": 4,
+  "gradient_gpus_per_worker": 1,
+  "max_candidate_gradient_workers": 2,
+  "training": {
+    "epochs_per_stage": 1,
+    "template": "qwen3_nothink",
+    "cutoff_len": 32768,
+    "mask_history": false,
+    "train_on_prompt": false,
+    "packing": false,
+    "per_device_batch": 1,
+    "gradient_accumulation_steps": 8,
+    "global_batch": 32,
+    "learning_rate": 4e-05,
+    "warmup_ratio": 0.1,
+    "lr_scheduler_type": "cosine",
+    "optim": "adamw_torch_fused",
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.98,
+    "weight_decay": 0.04,
+    "max_grad_norm": 1.0,
+    "bf16": true,
+    "trainable_parameters": "Full-parameter DeepSpeed ZeRO3 BF16 model forward with FP32 optimizer state",
+    "shuffle": true,
+    "seed": 42,
+    "continuation_optimizer": "Both branches reset optimizer and scheduler identically, initialize weights from exact same first-epoch final checkpoint.",
+    "trajectory_policy": "Retain teacher outcomes including failed/partial trajectories. No success-only filtering. Infrastructure interruptions get bounded recovery; a terminal attempt still missing verifier reward scores0. Export only actual model conversations; report zero-supervision cases.",
+    "save_steps": 10,
+    "save_total_limit": 1
+  },
+  "probe": {
+    "model": "sft-epoch1 final checkpoint",
+    "reward": "Original verifier numeric score; missing reward maps to0 per explicit user instruction, raw score/error preserved. Center scores over4rollouts per question.",
+    "drop": "Constant-score questions only; missing scores are0, not a reason to discard a whole question.",
+    "per_question_gradient": "g_q=-sum_i(score_i-mean_q score)*grad CE_sum(rollout_i)/T_q",
+    "average": "Arithmetic mean over valid question gradients, no norm weighting",
+    "candidate_update": "d_i=-grad CE_sum(first_teacher_rollout_i)/T_i at same checkpoint",
+    "score": "dot(g_avg,d_i), full trainable parameters, no projection or preconditioning",
+    "no_valid_questions": "If all70 questions have constant scores, record no signal and use uniform environment probabilities; no replacement probes.",
+    "parallel_execution": "Up to4 single-H200 full-parameter gradient shards after all280 probe rollouts; each question equal weight. At most4 FP32 shard vectors stored; no projection.",
+    "forward_precision": "BF16 model, matching actual DeepSpeed module.bfloat16(); actualTrainer/LigerCE. Per-row gradients accumulated in FP32 external buffers.",
+    "numerical_audit": "Reused010 completed training_bf16 full-parameter gradients and dot scores, referenced by input hashes; no new gradient execution."
+  },
+  "environment_resampling": {
+    "draws": 728,
+    "replacement": "limited replacement: at most3 occurrences per environment",
+    "probability": "old p=0.1/N+0.9*softmax(clip(z(dot),-5,5)); capped q_i=min(3/N,lambda*p_i), sum(q)=1",
+    "zero_variance": "Uniform probability if all candidate dots equal",
+    "audit": [
+      "raw dots",
+      "probabilities",
+      "effective sample size",
+      "draw multiplicities",
+      "unique environments",
+      "tokens per branch"
+    ],
+    "maximum_draws_per_environment": 3,
+    "rounding": "Randomly permuted systematic dependent rounding of N*q: counts in floor/ceil(expected), sum728, each<=3; random shuffle occurrence order",
+    "sampling_seed": 20261109
+  },
+  "evaluation": {
+    "tasks": 70,
+    "repeats_per_model": 4,
+    "models": [
+      "epoch1_reused",
+      "uniform_reused",
+      "uncapped_guided_reused",
+      "cap3_guided"
+    ],
+    "uniform_reuse": "Reuse completed010 280outcomes for all prior baselines; only cap3 Guided280new",
+    "paired_post_training_seeds": true,
+    "baseline_probe_seed_distinct_from_post_training": true,
+    "subsets": [
+      "all70_feedback_used"
+    ],
+    "metrics": [
+      "mean score over280 attempted rollouts",
+      "full-pass rate over280",
+      "per-task mean and success count out of4",
+      "paired task-level differences and task bootstrap CIs"
+    ],
+    "note": "All70tasks supplied previous probe feedback. Same post-training task-repeat seeds. Not heldout."
+  },
+  "environment_runtime": {
+    "source_experiment": "009-ota-environment-resampling",
+    "prepared_tasks_reused": 798,
+    "new_image_builds": 0,
+    "rl_common_base": true,
+    "semantics": "Read-only reuse of original prepared task definitions/images and task-specific seed injection with byte/mode/root-ownership verification."
+  },
+  "max_simultaneous_serving_jobs": 1,
+  "maximum_total_rollout_sandboxes": 32,
+  "maximum_total_requested_gpus": 4,
+  "pipeline_scheduling": "Sequential4H200 teacher inference ->4H200 full SFT ->4H200 student inference. CPU32sandboxes. No new images or gradients.",
+  "pilot_gate": "Reuse validated harness and start32-way after per-pod student concurrent-generation smoke; no new first-batch teacher pilot.",
+  "worker_image": "registry.rcp.epfl.ch/shuli/ota-resample-worker@sha256:9fe543d474e27cd9d29c1f192a4ca8e043a9aaf0aebafde3ba426212829bc6d4",
+  "max_probe_gradient_workers": 4,
+  "student_serving_execution": {
+    "enforce_eager": true,
+    "disable_custom_all_reduce": true,
+    "reason": "Reuse the validated009 vLLM0.32CUDA13 student stack and flags; no serving-method change in this experiment."
+  },
+  "empty_sft_export_policy": {
+    "scope": "Terminal attempted rollout with no accepted assistant generation available for original SFT export",
+    "outcome": "Keep raw verifier reward/null and raw API/error history; missing reward maps to0 per user. Do not invent an assistant turn.",
+    "export": "Zero SFT rows and zero gradient contribution; score still enters the four-rollout question mean."
+  },
+  "reward_authority": {
+    "user_instruction": "第一轮完整70题每题4次，据此算probe；缺verifier分数判0；新guided与Uniform均完整70题每题4次",
+    "policy": "Score=original numeric verifier reward when present; otherwise0 for a terminal attempted rollout. Preserve raw_score=null, exception and imputed flag. Apply identically to all3 models, including reused Uniform repeat1. Genuine interrupted infrastructure attempts retain bounded recovery and raw history."
+  },
+  "experiment_version": "cap3-full70-r4",
+  "origin_experiment": "010-ota-full70-r4",
+  "model_paths": {
+    "teacher": "/scratch/cvlab/home/shuli/data-rsi/009-ota-environment-resampling/assets/teacher",
+    "sft-epoch1": "/scratch/cvlab/home/shuli/data-rsi/009-ota-environment-resampling/runs/sft-epoch1/checkpoint",
+    "sft-uniform": "/scratch/cvlab/home/shuli/data-rsi/009-ota-environment-resampling/runs/sft-uniform/checkpoint",
+    "sft-guided": "/scratch/cvlab/home/shuli/data-rsi/011-ota-cap3-resampling/runs/sft-guided/checkpoint"
+  },
+  "probe_task_selection": "All70tasks; no random question subsampling.",
+  "documentation_updated_at": "2026-11-11T00:24:41.773601+00:00",
+  "gradient_reuse": {
+    "source": "010-ota-full70-r4/runs/attribution/probabilities.json",
+    "same_first_epoch_checkpoint": true,
+    "probe_questions_used": 20,
+    "new_gradient_computation": false
+  }
+}

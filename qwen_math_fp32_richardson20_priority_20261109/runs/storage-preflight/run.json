@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "storage-preflight",
+  "title": "优先FP32-20 · 容器实际存储写入与训练/判题依赖检查",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-09T18:38:09.917472+00:00",
+  "tags": [
+    "priority1",
+    "FP32",
+    "20step"
+  ],
+  "parameters": {
+    "protocol": "protocol.json",
+    "priority": 1,
+    "gpus": 0,
+    "steps": null,
+    "fd_precision": "fp32",
+    "h_rel": 1e-05,
+    "sigmoid": "sigmoid(3s)",
+    "fallback": 0,
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "data_pool": "new320; original1600 unavailable"
+  },
+  "sources": {
+    "status": "runs/storage-preflight/state.json",
+    "progress": "runs/storage-preflight/progress.json",
+    "results": "runs/storage-preflight/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "完整协议",
+      "path": "protocol.json"
+    },
+    {
+      "label": "result.json",
+      "path": "runs/storage-preflight/result.json"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "opd-p20-storage-1109a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

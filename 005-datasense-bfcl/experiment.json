@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "005-datasense-bfcl",
+  "title": "DataSense-Bench · BFCL Tool-Use",
+  "description": "EnvScaler数据选择、Qwen3-4B SFT及BFCL V3评测。当前执行随机100轨迹训练与完整评测。",
+  "created_at": "2026-11-02T17:15:58.496913+00:00",
+  "tags": [
+    "DataSense-Bench",
+    "BFCL",
+    "data-selection",
+    "Qwen3-4B"
+  ]
+}

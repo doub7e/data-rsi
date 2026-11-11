@@ -1,0 +1,7 @@
+{
+  "metrics": {
+    "valid_probe_questions": 5,
+    "excluded_questions": 50,
+    "probe_norm": 0.04467537235896143
+  }
+}

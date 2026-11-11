@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "probe-diagnostics-20261103",
+  "title": "Probe diagnostics \u00b7 gradient replay and HF/vLLM likelihood",
+  "kind": "analysis",
+  "status": "succeeded",
+  "created_at": "2026-11-03T20:29:02.055211+00:00",
+  "job": {
+    "provider": "runai",
+    "name": "pg-diagnose-1103",
+    "namespace": "runai-cvlab-shuli"
+  },
+  "parameters": {
+    "gpu": "1 H200",
+    "gradient_replay_trajectories": [
+      1,
+      2,
+      23
+    ]
+  },
+  "sources": {
+    "status": "runs/probe-diagnostics-20261103/state.json",
+    "results": "runs/probe-diagnostics-20261103/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "Protocol",
+      "path": "runs/probe-diagnostics-20261103/protocol.json"
+    },
+    {
+      "label": "Gradient replay",
+      "path": "runs/probe-diagnostics-20261103/gradient-repeat-summary.json"
+    },
+    {
+      "label": "Likelihood follow-up",
+      "path": "runs/probe-diagnostics-20261103/likelihood-followup.json"
+    },
+    {
+      "label": "Diagnostic report",
+      "path": "runs/probe-diagnostics-20261103/REPORT.md"
+    }
+  ]
+}

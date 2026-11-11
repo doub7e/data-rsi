@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "center-calibration-aux",
+  "title": "FD可靠性 · 训练后权重小步长校准（固定方向）",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-08T08:41:02.708542+00:00",
+  "updated_at": "2026-11-08T08:41:02.708550+00:00",
+  "parameters": {
+    "scope": "posthoc calibration on same auxiliary target/direction, no new probes; cannot generalize selected h",
+    "h_grid": [
+      3e-07,
+      1e-07,
+      3e-08,
+      1e-08
+    ],
+    "image": "registry.rcp.epfl.ch/shuli/data-rsi-sft@sha256:d15905bbc491f0f5a7c65e36524b2b83e345e7b7031153824e64667804081d1a"
+  },
+  "sources": {
+    "status": "runs/center-calibration-aux/state.json",
+    "progress": "runs/center-calibration-aux/progress.json",
+    "results": "runs/center-calibration-aux/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "result.json",
+      "path": "runs/center-calibration-aux/result.json"
+    },
+    {
+      "label": "cross_center_exact.json",
+      "path": "runs/center-calibration-aux/cross_center_exact.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fd-center-cal-1108a",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "screen-2",
+  "title": "优先FP32-20 · 补充teacher筛选 · 分片2/4",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-09T18:38:09.917472+00:00",
+  "tags": [
+    "priority1",
+    "FP32",
+    "20step"
+  ],
+  "parameters": {
+    "protocol": "protocol.json",
+    "priority": 1,
+    "gpus": 1,
+    "steps": null,
+    "fd_precision": "fp32",
+    "h_rel": 1e-05,
+    "sigmoid": "sigmoid(3s)",
+    "fallback": 0
+  },
+  "sources": {
+    "status": "runs/screen-2/state.json",
+    "progress": "runs/screen-2/progress.json",
+    "results": "runs/screen-2/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "实验协议",
+      "path": "protocol.json"
+    },
+    {
+      "label": "结果",
+      "path": "runs/screen-2/result.json"
+    }
+  ]
+}

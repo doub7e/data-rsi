@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "runtime-preflight-native",
+  "title": "FD训练消融 · 原生镜像依赖与生产链路验证",
+  "kind": "validation",
+  "status": "planned",
+  "created_at": "2026-11-08T10:55:53.342441+00:00",
+  "updated_at": "2026-11-08T10:55:53.342451+00:00",
+  "parameters": {
+    "image": "verlai/verl@sha256:3ce56ff018516b28ab9c4f4fc09d3aa67589074495ace75e2674b720aa4d0e5d",
+    "previous_failed_run": "runtime-preflight",
+    "fix": "remove previous standalone audit grader PYTHONPATH overlay; preserve native image ANTLR/Hydra dependency stack; verify original project grader sanity"
+  },
+  "sources": {
+    "status": "runs/runtime-preflight-native/state.json",
+    "progress": "runs/runtime-preflight-native/progress.json",
+    "results": "runs/runtime-preflight-native/result.json"
+  },
+  "artifacts": [
+    {
+      "label": "inventory.json",
+      "path": "runs/runtime-preflight-native/inventory.json"
+    },
+    {
+      "label": "result.json",
+      "path": "runs/runtime-preflight-native/result.json"
+    },
+    {
+      "label": "sample.json",
+      "path": "runs/runtime-preflight-native/sample.json"
+    }
+  ],
+  "tags": [],
+  "notes": "",
+  "job": {
+    "provider": "runai",
+    "name": "opd-fdtrain-runtime-1108b",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

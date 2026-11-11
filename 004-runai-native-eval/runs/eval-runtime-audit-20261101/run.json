@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "eval-runtime-audit-20261101",
+  "title": "评测耗时与官方配置对照",
+  "kind": "analysis",
+  "created_at": "2026-11-01T16:50:12.682681+00:00",
+  "status": "succeeded",
+  "parameters": {
+    "official_comparison": "OpenThoughts-TBLite runtime blog and arXiv 2606.24855 Appendix G"
+  },
+  "results": {
+    "tblite_tasks_timeout_checked": 100,
+    "timeout_definition_differences": 0,
+    "1k_tblite_repeat2_minutes": 214.15829293333334,
+    "tail_minutes_1_to_4_agents": 73.29819888273875
+  },
+  "artifacts": [
+    {
+      "label": "耗时分解及超时配置核查",
+      "path": "runs/eval-runtime-audit-20261101/result.json"
+    },
+    {
+      "label": "各benchmark阶段耗时（含恢复等待）",
+      "path": "runs/eval-runtime-audit-20261101/stage-wall-times.json"
+    }
+  ],
+  "notes": "官方TBLite表使用默认超时；论文8B复现使用2倍超时及3次重复。100个任务基础超时与官方仓库一致。净运行耗时需排除认证中断等历史时间；保留完整分解与证据。"
+}

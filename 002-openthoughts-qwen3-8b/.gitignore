@@ -1,0 +1,14 @@
+data/
+outputs/
+__pycache__/
+
+# Large reproducible inputs, checkpoints, local environments and tool binaries
+runs/*/data/
+runs/*/checkpoint/
+runs/*/dataset_cache/
+runs/*/torch_extensions/
+eval/.venv/
+eval/benchmarks/
+eval/bin/
+eval/docker-cli.tgz
+eval/docker-config/cli-plugins/

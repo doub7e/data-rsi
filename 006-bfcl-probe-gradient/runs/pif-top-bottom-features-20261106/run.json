@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "pif-top-bottom-features-20261106",
+  "title": "第二题67 · 全200条top/bottom · 轨迹结构与错误恢复对照",
+  "kind": "analysis",
+  "status": "planned",
+  "created_at": "2026-11-06T15:48:00.540638+00:00",
+  "parameters": {
+    "created_at": "2026-11-06T15:48:00.498196+00:00",
+    "scope": "Fixed candidate200, question67 F128 and K128 PIF rankings. Top100/bottom100 main; top20/bottom20 sensitivity.",
+    "features": [
+      "supervised_tokens",
+      "gradient_norm",
+      "conversation",
+      "human_turns",
+      "tool_calls",
+      "calls_per_human_turn",
+      "distinct_tools",
+      "reasoning_char_fraction",
+      "no_tool_turn_fraction",
+      "tool_error_rate",
+      "duplicate_call_rate",
+      "string_arguments_fraction",
+      "task_completed_only",
+      "has_tool_error"
+    ],
+    "conditional_features": [
+      "changed_args_retry_success_rate among candidates with explicit tool failures"
+    ],
+    "definitions": {
+      "no_tool_turn_fraction": "Human request segments with assistant response but zero tool calls; a structural proxy, not a semantic clarification label.",
+      "tool_error_rate": "Explicit parsed top-level success=False or nonempty error among parsed tool responses.",
+      "duplicate_call_rate": "Exact repeated function+arguments within one human request segment divided by calls; may be valid checking, not necessarily looping.",
+      "changed_args_retry_success_rate": "After explicit tool failure, same function succeeds with different arguments within next five calls in same human segment. Tool success does not establish task correctness.",
+      "reasoning_char_fraction": "Chars preceding </think> divided by all assistant chars; no new tokenization, not a token fraction."
+    },
+    "statistics": "Full-pool Spearman with BH FDR across 2x14 primary correlations; medians/means top100 vs bottom100, same for extremes20. Within conversation/non-conversation correlations as descriptive controls; partial rank correlation adjusted for log supervised tokens and conversation, no inferential claim. Conditional recovery descriptive only.",
+    "limitations": [
+      "Post-hoc exploratory analysis, not causal mediation.",
+      "Features derived from saved text/protocol metadata; semantic quality not inferred from counts.",
+      "Same200 used by both selectors, F/K contrasts are dependent."
+    ],
+    "candidate_sha256": "cec309acd0e0ae87b3e0b5112d711479e9c4d2653c7eae8eabcd71439fc957ba"
+  },
+  "sources": {
+    "status": "runs/pif-top-bottom-features-20261106/state.json",
+    "results": "runs/pif-top-bottom-features-20261106/result.json",
+    "progress": "runs/pif-top-bottom-features-20261106/progress.json"
+  },
+  "artifacts": [
+    {
+      "label": "定量分析报告",
+      "path": "runs/pif-top-bottom-features-20261106/REPORT.md"
+    },
+    {
+      "label": "逐轨迹特征",
+      "path": "runs/pif-top-bottom-features-20261106/features.jsonl"
+    },
+    {
+      "label": "完整比较",
+      "path": "runs/pif-top-bottom-features-20261106/comparisons.json"
+    },
+    {
+      "label": "固定分析方案",
+      "path": "runs/pif-top-bottom-features-20261106/protocol.json"
+    },
+    {
+      "label": "排名相关性图",
+      "path": "runs/pif-top-bottom-features-20261106/correlations.png"
+    },
+    {
+      "label": "恢复统计口径敏感性",
+      "path": "runs/pif-top-bottom-features-20261106/recovery-sensitivity.json"
+    }
+  ],
+  "job": {
+    "provider": "runai",
+    "name": "pif-features-1106",
+    "namespace": "runai-cvlab-shuli"
+  }
+}

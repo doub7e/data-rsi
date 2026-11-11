@@ -1,0 +1,8 @@
+{
+  "finished_at": "2026-11-05T21:49:13.291467+00:00",
+  "model": "ota-probe-qwen3-8b-base",
+  "rollouts_finished": 96,
+  "metrics": {
+    "completed_rollouts": 96
+  }
+}
