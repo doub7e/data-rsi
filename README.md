@@ -2,6 +2,8 @@
 
 This repository tracks the experiment code, configurations, documentation, run manifests, and lightweight results for the Data Self-Improvement workspace. Each immediate experiment directory is an experiment node.
 
+**New collaborator? Start with [HANDOFF.md](HANDOFF.md)** for the current findings, experiment lineage, artifact locations, operational workflow, and open questions.
+
 **Model checkpoints are not managed by Git or Git LFS.** Model weights, optimizer states, full gradient tensors, raw datasets and rollout traces, caches, downloaded dependencies, sandbox/build directories, logs, and credentials stay on shared storage. This repository is not a backup of those artifacts.
 
 ## Experiment index
